@@ -1,0 +1,39 @@
+{
+  "communicationNumber": "commnumber_001",
+  "requester": "AMLYZE",
+  "operationExtId": "opExtId_001",
+  "operationType": "SEPA",
+  "riskManagementCategory": "TRANSFER_OPERATION",
+  "screeningLists": [
+    "SANCTIONS"
+  ],
+  "sourceOfRiskLevel": "IMPORT",
+  "operationStatus": "EXECUTED",
+  "operationDateTime": "2023-08-21T11:57:33.966Z",
+  "destinationCountry": "LT",
+  "sourceCountry": "LT",
+  "currency": "EUR",
+  "amount": 123,
+  "financialFlowDirection": "OUTGOING",
+  "description": "invoice 'asdfg123456'",
+  "listOperationParty": [
+    {
+      "partyRole": "DEBTOR",
+      "accountNumber": "testingOperations_001",
+      "currency": "EUR",
+      "bic": "TEST",
+      "entityType": "INDIVIDUAL",
+      "firstName": "Testas",
+      "lastName": "Testauskas"
+    },
+    {
+      "partyRole": "CREDITOR",
+      "accountNumber": "someCounterpary",
+      "currency": "EUR",
+      "bic": "ZXCVBN",
+      "bankTitle": "blah",
+      "entityType": "UNKNOWN",
+      "title": "otherParty"
+    }
+  ]
+}

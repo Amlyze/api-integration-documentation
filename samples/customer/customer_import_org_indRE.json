@@ -1,0 +1,242 @@
+{
+    "communicationNumber": "customerOrgTestOrgRE{{ISOtimestamp}}",
+    "requester": "testas",
+    "riskManagementCategory": "ORG_PK",
+    "riskLevel": "NONE",
+    "sourceOfRiskLevel": "IMPORT",
+    "customerStatus": "ACTIVE",
+    "customerExtId": "customerOrgTestFull{{ISOtimestamp}}",
+    "entityType": "ORGANIZATION",
+    "nationalCode": "123456789",
+    "applicationDate": "2012-10-01T09:45:00.000+02:00",
+    "approvalDate": "2012-10-01T09:45:00.000+02:00",
+    "closingDate": null,
+    "title": "UAB Brotherhood",
+    "tradingName": "Brotherhood",
+    "establishmentDate": "2012-10-01T09:45:00.000+02:00",
+    "registrationCountry": "LT",
+    "legalForm": "COOPERATIVE",
+    "isListed": true,
+    "isAudited": true,
+    "numberOfAudits": 2,
+    "periodsOfAuditsInYears": 1,
+    "isFined": true,
+    "periodsOfFiningInYears": 0,
+    "isRegulated": true,
+    "companyAssetValue": 123456789,
+    "numberOfEmployees": 321,
+    "LEI": "LEI124545",
+    "GIIN": "GIIN123445",
+    "noMajorShareHolders": true,
+    "isDirectlyManaged": true,
+    "hasMultiLayerStructure": true,
+    "organizationalStructureDescription": "chaos",
+    "regionOfActivityDescription": "Middleearth",
+    "activityInRestrictedRegionDescription": "quest",
+    "isLicenseRequired": true,
+    "licenseDescription": "promise",
+    "isFinancialInstitution": true,
+    "thirdPartyServicesUsed": true,
+    "thirdPartyServicesUsedDescription": "equipment",
+    "isSanctioned": true,
+    "isActualAddressDeclared": true,
+    "isCorrespondenceAddressDeclared": true,
+    "activityDescription": "Logistics",
+    "incomeSourceDescription": "adventure",
+    "initialDepositSource": "promise",
+    "initialDepositAmount": "1234",
+    "initialDepositCurrency": "EUR",
+    "initialDepositBank": "pocket",
+    "initialDepositAccount": "leather bag",
+    "doesCashDominate": true,
+    "incomingPaymentDescription": "for services",
+    "outgoingPaymentDescription": "none",
+    "listContact": [
+        {
+            "contactType": "EMAIL",
+            "contactDetails": "butterfly voicemessage",
+            "useForCommunication": true
+        }
+    ],
+    "listAddress": [
+        {
+            "addressType": "HEADQUARTERS",
+            "addressDetails": "Shire",
+            "country": "LT",
+            "region": "EU",
+            "city": null,
+            "streetAddress": null,
+            "zipCode": null,
+            "useForCorrespondence": true
+        }
+    ],
+    "listBusinessEntityDocument": [
+        {
+            "entityType": "ORGANIZATION",
+            "identityDocumentType": "OTHER",
+            "documentNumber": "1",
+            "documentIssueDate": "2000-01-03",
+            "documentExpiryDate": null,
+            "documentIssueCountry": "LT",
+            "documentIssueAuthority": "king",
+            "description": "agreement"
+        }
+    ],
+    "listAppealReason": [
+        {
+            "appealReasonType": "RECOMMENDATIONS"
+        }
+    ],
+    "listIntroductionSource": [
+        {
+            "introductionSource": "Internet"
+        }
+    ],
+    "listOrderedService": [
+        {
+            "serviceType": "OUT_INTERNATIONAL_PAYMENT"
+        }
+    ],
+    "listDeclaredTurnover": [
+        {
+            "turnoverType": "PLANNED_FUTURE_INCOME",
+            "turnoverRange": "MONTHLY",
+            "from": 1000,
+            "to": 2000
+        }
+    ],
+    "listIncomeSource": [
+        {
+            "incomeSourceType": "BUSINESS_REVENUE_OR_ASSET_SALE",
+            "incomePercentage": 100,
+            "from": 121564,
+            "to": 23457
+        }
+    ],
+    "listPaymentPurpose": [
+        {
+            "turnoverDirection": "OUT",
+            "paymentPurposeType": "RENT_AND_UTILITIES"
+        }
+    ],
+    "listPaymentCountry": [
+        {
+            "country": "LT",
+            "turnoverDirection": "IN"
+        }
+    ],
+    "listActivity": [
+        {
+            "activityType": "ACTIVITY_OTHER",
+            "incomePercentage": 50
+        }
+    ],
+    "listRegionOfActivity": [
+        {
+            "region": "EU"
+        }
+    ],
+    "listCountryOfActivity": [
+        {
+            "country": "LT"
+        }
+    ],
+    "listCountryOfTaxPayment": [
+        {
+            "country": "LV",
+            "taxpayerNumber": "123456789"
+        }
+    ],
+    "listRelatedEntity": [
+        {
+			"extId": "organization",
+            "entityType": "INDIVIDUAL",
+            "relationType": "HOST",
+            "relationDescription": "founder",
+            "share": 10,
+            "votePercentage": 10,
+            "nationalCode": "123456",
+            "activityDescription": "BEARER",
+            "country": "LT",
+            "registrationCountry": "LT",
+            "countryOfBusinessOperations": "LV",
+            "birthCountry": "LT",
+            "firstName": "Frodo",
+            "lastName": "Baggins",
+            "birthDate": "1998-04-07",
+            "isPEP": true,
+            "regionOfActivityDescription": "everywhere",
+            "listContact": [
+                {
+                    "contactType": "EMAIL",
+                    "contactDetails": "blah",
+                    "useForCommunication": true
+                }
+            ],
+            "listAddress": [
+                {
+                    "addressType": "HEADQUARTERS",
+                    "addressDetails": "Shire",
+                    "country": "LT",
+                    "region": "EU",
+                    "city": null,
+                    "streetAddress": null,
+                    "zipCode": null,
+                    "useForCorrespondence": true
+                }
+            ],
+            "listBusinessEntityDocument": [
+                {
+                    "entityType": "ORGANIZATION",
+                    "identityDocumentType": "OTHER",
+                    "documentNumber": "1",
+                    "documentIssueDate": "2000-01-03",
+                    "documentExpiryDate": null,
+                    "documentIssueCountry": "LT",
+                    "documentIssueAuthority": "king",
+                    "description": "agreement"
+                }
+            ],
+            "listIncomeSource": [
+                {
+                    "incomeSourceType": "BUSINESS_REVENUE_OR_ASSET_SALE",
+                    "incomePercentage": 10,
+                    "from": 10,
+                    "to": 100
+                }
+            ],
+            "listActivity": [
+                {
+                    "activityType": "ACTIVITY_OTHER",
+                    "incomePercentage": 50
+                }
+            ],
+            "listRegionOfActivity": [
+                {
+                    "region": "EU"
+                }
+            ],
+            "listCountryOfActivity": [
+                {
+                    "country": "LV"
+                }
+            ],
+            "listAdditionalValues": [
+                {
+                    "code": "test.string",
+                    "description": "testas",
+                    "datatype": "STRING",
+                    "value": "ASDFG"
+                }
+            ]
+        }
+    ],
+    "listAdditionalValues": [
+        {
+            "code": "test.string",
+            "description": "testas",
+            "datatype": "STRING",
+            "value": "ASDFG"
+        }
+    ]
+}

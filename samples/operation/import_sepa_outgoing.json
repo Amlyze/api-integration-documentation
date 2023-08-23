@@ -1,0 +1,39 @@
+{
+    "communicationNumber": "{{$isoTimestamp}}",
+    "requester": "testing",
+    "operationExtId": "testing{{$isoTimestamp}}",
+    "operationType": "SEPA",
+    "riskManagementCategory": "OP_INST",
+    "screeningLists": [
+        "SANCTIONS"
+    ],
+    "sourceOfRiskLevel": "IMPORT",
+    "operationStatus": "EXECUTED",
+    "operationDateTime": "{{$isoTimestamp}}",
+    "destinationCountry": "LT",
+    "currency": "EUR",
+    "amount": 123,
+    "financialFlowDirection": "OUTGOING",
+    "description": "invoice 'qwerty123456'",
+    "listOperationParty": [
+        {
+            "partyRole": "DEBTOR",
+            "accountNumber": "testingOperations_001",
+            "currency": "EUR",
+            "bic": "TEST",
+            "bankTitle": "blah",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Testas",
+            "lastName": "Testauskas"
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "12345678901234567890",
+            "currency": "EUR",
+            "bic": "ABCDE",
+            "bankTitle": "blah",
+            "entityType": "UNKNOWN",
+            "title": "asdfg"
+        }
+    ]
+}
