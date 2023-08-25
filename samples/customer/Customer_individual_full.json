@@ -5,7 +5,7 @@
 	"riskLevel": "EXTREME",
 	"sourceOfRiskLevel": "IMPORT",
 	"customerStatus": "ACTIVE",
-	"customerExtId": "rs_test{{ISOtimestamp}}",
+	"customerExtId": "ind_full",
 	"entityType": "INDIVIDUAL",
 	"nationalCode": "123456789123",
 	"applicationDate": "2012-10-01T09:45:00.000+02:00",
