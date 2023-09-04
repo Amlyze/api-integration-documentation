@@ -10,6 +10,9 @@ Accounts used to identify customers in operationParties
 
 *api-doc* `GET /v2/api-docs`
 
+*swagger* `GET /swagger-ui/`
+
+
 ## Control fields
 
 SourceOfRiskLevel - specify if assessment should be created or risk level provided 
