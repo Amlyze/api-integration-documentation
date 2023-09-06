@@ -35,6 +35,8 @@ adds account to customer profile, used to find customer in operation party
 }
 ```
 
+possible fields
+[fields.md](fields.md)
 
 ## Success Response
 
@@ -73,7 +75,7 @@ adds account to customer profile, used to find customer in operation party
 * `Cannot register account for lead customer`
 * `Currency does not exist in Amlyze`
 * `Account already linked with other customer`
-* `when using external account, bic is mandatory`
+* `When using external account, bic is mandatory`
 * `Given bic does not belong to your institution`
 * `openingDate is mandatory`
 * `Given AccountType does not exist in Amlyze`

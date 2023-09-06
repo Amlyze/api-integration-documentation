@@ -8,6 +8,11 @@ Customer contain identifying information and KYC data like declared turnover
 
 Accounts used to identify customers in operationParties
 
+*api-doc* `GET /v2/api-docs`
+
+*swagger* `GET /swagger-ui/`
+
+
 ## Control fields
 
 SourceOfRiskLevel - specify if assessment should be created or risk level provided 
@@ -15,6 +20,7 @@ SourceOfRiskLevel - specify if assessment should be created or risk level provid
 InitializeScreeningProcesses - specify if screening process should be initialized given object 
 
 RiskManagementCategory - specify how object should be handled in Amlyze
+
 
 ## Endpoints
 

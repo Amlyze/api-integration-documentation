@@ -40,9 +40,12 @@ Creates Customer profile or updates questionaire, if customer already exists.
 }
 ```
 
+possible fields description
+[fields.md](fields.md)
+
 **prefilled samples**
 * [INDIVIDUAL_ALL_FIELDS](samples%2Fcustomer%2FCustomer_individual_full.json)
-* [ORGANIZATION_ALL_FIELDS](samples%2Fcustomer%2FCustomer_Organization_full.json)[0_preparation_customer.json](samples%2Fquick%2F0_preparation_customer.json)
+* [ORGANIZATION_ALL_FIELDS](samples%2Fcustomer%2FCustomer_Organization_full.json)
 * [ORGANIZATION_IND_related_entity](samples%2Fcustomer%2Fcustomer_import_org_indRE.json)
 * [ORGANIZATION_ORG_related_entity](samples%2Fcustomer%2Fcustomer_import_org_orgRE.json)
 
