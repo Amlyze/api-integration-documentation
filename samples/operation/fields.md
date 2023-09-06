@@ -3,11 +3,16 @@
 
 | field | type | mandatory | example | description |
 |---|---|---|---|---|
+| communicationNumber | String | true | ComNr_0011 | Unique number of communication.
+| requester | String | true | Branch Name | Name of the system requesting web service |
+| operationExtId |String | true | Op_22xx22 | External identifier of operation |
+| operationType | String | true | SEPA | Notifies about what kind of operation was performed |
+| action | String | false | UPDATE | Element is used to change the data of an existing Customer|
+| action | String | false | UPDATE | Element is used to change the data of an existing Customer|
 | action | String | false | UPDATE | Element is used to change the data of an existing Customer|
 | amount | BigDecimal | true | 1499 | Field for the money amount sent in an operation|
 | amountInEuro | BigDecimal | true/ false | 1399 | **MANDATORY** when currency is not *eur* <br/> **NOT MANDATORY** when currency is  *eur*
-|cardOperationSubType| String | true | CARD_PURCHASE | *CardOperationSubType code from classifier:*<br/>[*Check CardOperationSubType Classifier](https://github.com/Amlyze/api-integration-documentation/blob/main/README.md#Classifiers) |
-| communicationNumber | String | true | ComNr_0011 | Unique number of communication.
+|cardOperationSubType| String | true/false | CARD_PURCHASE |**MANDATORY** when *operationType* = "**CARD_PAYMENT**" or "**CARD_CASH**" <br/>   *CardOperationSubType code from classifier:*<br/>[*Check CardOperationSubType Classifier](https://github.com/Amlyze/api-integration-documentation/blob/main/README.md#Classifiers) |
 | currency | String | true | EUR | *Currency code from classifier:*</br>  [*Check Currency Classifier](https://github.com/Amlyze/api-integration-documentation/blob/main/README.md#Classifiers) |
 | dateAuthorized | Date | false | 2023-05-10T12:10:11+02:00 | Date and Time of operation |
 | dateSettled | Date | false | 2023-05-101T15:10:11+02:00 | Date and Time of operation |
@@ -26,10 +31,7 @@
 | merchantExtId | String | false| External_0112 | External identifier of the seller-mediator |
 | merchantName | String | false | Costco | Name of the seller-mediator |
 | operationDateTime | Date <br/> Format:<br/> ***ISO 8601*** | true | 2023-03-16T13:00:00Z | The operation date and time show when the operation proceeded with |
-| operationExtId |String | true | Op_22xx22 | External identifier of operation |
 | operationStatus | ENUM<br/>[**EXECUTED**,<br/>**REJECTED**] | true/false | EXECUTED | Either operation was successfully executed, or the operation was rejected |
-| operationType | String | true | SEPA | Notifies about what kind of operation was performed |
-| requester | String | true | Branch Name | Name of the system requesting web service |
 |riskLevel | ENUM<br/>[**NONE**,<br/>**LOW**,<br/>**MEDIUM**,<br/>**HIGH**,<br/>**EXTREME**] | true/false| LOW | The risk level of imported operation<br/>**MANDATORY** when *sourceOfRiskLEvel* is ***IMPORT*** is not *eur* <br/> **NOT MANDATORY** when sourceOfRiskLEvel* is ***EVALUATE***
 | riskManagementCategory | String | true | OP_PK | Code of risk management category of object<br/> Risk Management Category code from classifier:*</br>  [*Check RiskManagementCategory Classifier](https://github.com/Amlyze/api-integration-documentation/blob/main/README.md#Classifiers) |
 | salesPointCode | String | false | 54574 | External code of the sales point | 

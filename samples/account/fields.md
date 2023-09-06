@@ -2,7 +2,9 @@
 ​
 | field | type | mandatory | example | description |
 |---|---|---|---|---|
-| accountExtId | String | true | ComNr_0011 | A unique number of communication |
+| communicationNumber | String | true | ComNr_012 | A unique number of communication |
+| requester | String | true | Financial_Institution | Name of the system requesting web service |
+| accountExtId | String | true | Acc_0011 | External account identification number used to track activity regarding the specific account. |
 | accountNumber | String | true | Branch Name | Name of the system requesting web service |
 | accountPurpose | String | false | PURPOSE_INVEST | The purpose of owning the account in question |
 | accountStatus | ENUM <br/>**[ACTIVE, SUSPENDED, CLOSED]** | true | ACTIVE | Refers to the current condition or state of an account |
