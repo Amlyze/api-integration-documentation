@@ -3,7 +3,7 @@
 
 | field | type | mandatory | example | description |
 |---|---|---|---|---|
-| communicationNumber | String | true | ComNr_0011 | Unique number of communication.
+| communicationNumber | String | true | ComNr_0011 | Unique number of communication |
 | requester | String | true | Branch Name | Name of the system requesting web service |
 | operationExtId |String | true | Op_22xx22 | External identifier of operation |
 | operationType | String | true | SEPA | Notifies about what kind of operation was performed |

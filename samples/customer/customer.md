@@ -10,13 +10,53 @@ Creates Customer profile or updates questionaire, if customer already exists.
 
 **Permissions required** : None
 
-**Data constraints** : 
+## Mandatory Fields
+*The bare minimum - essential data necessary to create a Customer:*
 
-* communicationNumber unique
-* customerExtId  identification
-* action CREATE/UPDATE 
+<table>
+	<thead>
+		<tr>
+			<td>
+				-
+			</td>
+			<td>
+				Name
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				ENUM <br/><b>[PENDING<br/>**ACTIVE**,<br/>**REJECTED**,<br/>**SUSPENDED**,<br/>**CLOSED**]</b>
+			</td>
+			<td>
+				ENUM <br/><i>[PENDING<br/>**ACTIVE**,<br/>**REJECTED**,<br/>**SUSPENDED**,<br/>**CLOSED**]</i>
+			</td>
+		</tr>
+	</tbody>
+</table>
 
-## Minimalistic request:
+| field | type | mandatory | example | description |
+|---|---|---|---|---|
+| communicationNumber | String | true | ComNr_000321 | Unique number of communication. used for risk assessment callback |
+ customerExtId | String | true| cust_123243| Unique external customer identifier. The identifier corresponds to the client's identifier in the financial institution |     
+ | action | ENUM <br/>[ **CREATE** (*default*), <br/>**UPDATE**] |false | UPDATE | Element is used to change the data of an existing Customer. </br>❗ NOTE: all data will be replaced with newly received ones |    
+ | customerStatus | ENUM <br/>[**PENDING**,<br/>**ACTIVE**,<br/>**REJECTED**,<br/>**SUSPENDED**,<br/>**CLOSED**] | true | PENDING| Customer status represents the current standing or state of a customer's relationship with a business or organization. </br>**PENDING** - Customer application is received,</br>**ACTIVE** - Customer is onboarded ( *account is provided or customer assessment case is resolved*)</br>**REJECTED** - the customer for some reasons was rejected before opening an account for him.</br>**SUSPENDED** - Customer's activities for some reasons are restricted</br>**CLOSED** - Customer's profile is changed to being disabled |           
+ | riskManagementCategory | String (*classifier*) | true| IND </br> ORG| Code of risk management category for evaluation of the object </br>💡 Possible values here are given just as an example, in the configuration period these could be updated | 
+ | sourceOfRiskLevel | ENUM<br/>[**IMPORT**, <br/>**EVALUATE**] | true | IMPORT | Source of risk level. </br> The value **"EVALUATE"** should be used for normal business processes - <br/>*risk assessment will be performed*</br>The value **"IMPORT"** should be used for migration purposes only – <br/>*the customer and it's questionnaire will be imported without risk assessment* |          
+ | riskLevel | ENUM <br/>[**NONE**,<br/>**LOW**,<br/>**MEDIUM**,<br/>**HIGH**,<br/>**EXTREME**] | true/false | NONE | **MANDATORY** when sourceOfRiskLevel = ***IMPORT*** <br/> **NOT MANDATORY** when sourceOfRiskLevel = ***EVALUATE*** |
+| entityType | ENUM <br/>[**INDIVIDUAL**,<br/>**ORGANIZATION**] | true | INDIVIDUAL | Whether bussines or individual entity |
+| applicationDate | Date | true | 2000-01-03 | Date when customer first applied |
+| firstName | String | true/false | John |  **MANDATORY** when entityType = ***INDIVIDUAL*** <br/> **NOT MANDATORY** when entityType = ***ORGANIZATION*** |
+| lastName | String | true/false | Andrew |  **MANDATORY** when entityType = ***INDIVIDUAL*** <br/> **NOT MANDATORY** when entityType = ***ORGANIZATION*** |
+| birthDate | Date | false | 1995-05-24| Date of birth of individual entity |  
+| citizenshipCountry | String | false | LT | Country of citizenship of individual entity |        
+
+#### All fields 
+		| Ability to inspect all relevant fields when creating or modifying a customer profile. |
+[*ALL FIELDS*](fields.md) 
+
+### Minimalistic request:
 
 ```json
 {
@@ -30,18 +70,14 @@ Creates Customer profile or updates questionaire, if customer already exists.
 	"riskLevel": "NONE",
 	"entityType": "INDIVIDUAL",
 	"applicationDate": "2012-10-01",
-	"approvalDate": "2012-10-01",
 	"firstName": "Testas",
 	"lastName": "Testauskas",
-	"nationalCode": "1234567890123",
 	"birthDate": "2000-05-10",
-	"birthCountry": "LT",
 	"citizenshipCountry": "LT"
 }
 ```
 
-possible fields description
-[fields.md](fields.md)
+
 
 **prefilled samples**
 * [INDIVIDUAL_ALL_FIELDS](samples%2Fcustomer%2FCustomer_individual_full.json)
