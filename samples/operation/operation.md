@@ -9,7 +9,7 @@ An operation is a transaction between two or more parties, where one of the part
 *swagger*  `GET / swagger-ui/`
 
 `POST /amlyze-ws-rest/operation (application/json)`
-**URL** : `/amlyze-ws-rest/operation`
+
 
 The request body contains the data that you are sending to the API. The data documentation can be found [*here*](fields.md)
 
@@ -17,6 +17,7 @@ The request body contains the data that you are sending to the API. The data doc
 
 * [import_sepa_incoming.json](samples%2Foperation%2Fimport_sepa_incoming.json)
 * [import_sepa_outgoing.json](samples%2Foperation%2Fimport_sepa_outgoing.json)
+
 
 
 ## Responses
@@ -35,7 +36,7 @@ The request body contains the data that you are sending to the API. The data doc
 				<td style="text-align:center"><i>OK<i></td>
 				<td>
 					<pre><b>{
-  "resultType": "REQUEST_ACCEPTED"
+  "resultType": "OK"
 }
 				</td>
 			</tr>
@@ -66,7 +67,7 @@ The request body contains the data that you are sending to the API. The data doc
 				<td><b>500<b></td>
 				<td style="text-align:center"><i>Internal Server Error<i></td>
 				<td> <pre><b>{
-    "resultType": "REQUEST_REJECTED",
+    "resultType": "ERROR",
     "errorDescription": "duplicate communicationNumber"
 }
 				</td>
@@ -88,44 +89,35 @@ The Minimalistic request example below shows the minimum required fields to succ
 
 ```json
 {
-    "communicationNumber": "ComNr_0012",
+    "communicationNumber": "ComNr_0012{{seq}}",
     "requester": "Financial_Institution",
-    "operationExtId": "Op_0013",
+    "operationExtId": "Op_0013{{seq}}",
     "operationType": "SEPA",
     "riskManagementCategory": "OP_INST",
-    "screeningLists": [
-        "SANCTIONS",
-        "PEP",
-        "ADVERSE_MEDIA"
-    ],
+  
     "sourceOfRiskLevel": "IMPORT",
     "operationStatus":"EXECUTED",
     "operationDateTime": "2023-09-23T15:09:33+02:00",
-    "sourceCountry": "LT",
-    "destinationCountry": "LV",
     "currency": "EUR",
-    "amount": 123,
-    "financialFlowDirection": "INCOMING",
+    "amount": 125,
+    "financialFlowDirection": "OUTGOING",
     "description": "invoice '123456'",
     "listOperationParty": [
          {
             "partyRole": "DEBTOR",
-            "accountNumber": "12345678901234567890",
+            "accountNumber": "LT5630800200000011112",
             "currency": "EUR",
-            "bic": "ABCDE",
-            "bankTitle": "blah",
-            "entityType": "UNKNOWN",
-            "title": "asdfg"
+            "bic": "BIC22XX",
+            "entityType": "ORGANIZATION",
+            "title": "Komapnele"
         },
         {
             "partyRole": "CREDITOR",
-            "accountNumber": "testingOperations_001",
+            "accountNumber": "LV11245541148212335",
             "currency": "EUR",
-            "bic": "TEST",
-            "bankTitle": "blah",
             "entityType": "INDIVIDUAL",
-            "firstName": "Testas",
-            "lastName": "Testauskas"
+            "firstName": "Testio",
+            "lastName": "Testonio"
         }
        
     ]

@@ -1,0 +1,15 @@
+{
+    "communicationNumber": "COM216a",
+    "requester": "Financial_Institution",
+    "accountExtId": "Ext87887",
+    "accountNumber": "LI9208800274335945522",
+    "accountPurpose": "PURPOSE_INVEST",
+    "accountStatus": "ACTIVE",
+    "accountType": "ORG_B2B",
+    "bankTitle": "TBC",
+    "bic": "VABAL22",
+    "businessEntityExtId": "ExtId_65657999999345",
+    "currencyCode": "EUR",
+    "isOtherFinInstAccount": true,
+    "openingDate": "2023-09-05T08:07:34.605Z"
+  }
