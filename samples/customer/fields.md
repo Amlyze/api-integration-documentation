@@ -1,5 +1,32 @@
 # Customers fields
 
+<table>
+	<thead>
+		<tr>
+			<td>
+				-
+			</td>
+			<td>
+				Name
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				ENUM <br/><b>[PENDING<br/>**ACTIVE**,<br/>**REJECTED**,<br/>**SUSPENDED**,<br/>**CLOSED**]</b>
+			</td>
+			<td>
+				ENUM <br/><i>[PENDING<br/>**ACTIVE**,<br/>**REJECTED**,<br/>**SUSPENDED**,<br/>**CLOSED**]</i>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+# Customers fields
+
 | field | type | mandatory | example | description |
 |---|---|---|---|---|
 | communicationNumber | String | true | ComNr_000321 | Unique number of communication. used for risk assessment callback |                                                                                                                                                                                                                                                                                                                                                                                                                                     

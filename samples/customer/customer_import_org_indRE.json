@@ -7,6 +7,11 @@
     "customerStatus": "ACTIVE",
     "customerExtId": "customerOrgTestFull{{ISOtimestamp}}",
     "entityType": "ORGANIZATION",
+    "screeningLists": [
+        "SANCTIONS",
+        "ADVERSE_MEDIA",
+        "PEP"
+    ],
     "nationalCode": "123456789",
     "applicationDate": "2012-10-01T09:45:00.000+02:00",
     "approvalDate": "2012-10-01T09:45:00.000+02:00",
@@ -149,7 +154,7 @@
     ],
     "listRelatedEntity": [
         {
-			"extId": "organization",
+			"extId": "extid1245",
             "entityType": "INDIVIDUAL",
             "relationType": "HOST",
             "relationDescription": "founder",

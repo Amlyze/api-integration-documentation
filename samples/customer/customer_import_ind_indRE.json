@@ -1,11 +1,11 @@
 {
 	"communicationNumber": "testas{{ISOtimestamp}}",
-	"requester": "testavimas",
+	"requester": "FInancial_ Institution",
 	"riskManagementCategory": "IND_PK",
 	"riskLevel": "EXTREME",
 	"sourceOfRiskLevel": "IMPORT",
 	"customerStatus": "ACTIVE",
-	"customerExtId": "ind_full",
+	"customerExtId": "ind_full_RE",
 	"entityType": "INDIVIDUAL",
 	"screeningLists": [
         "SANCTIONS",
@@ -57,6 +57,92 @@
 		}
 	},
 	    "listRelatedEntity": [
+        {
+            "entityType": "INDIVIDUAL",
+            "relationType": "DIRECTOR",
+            "relationDescription": "founder",
+            "extId": "EXTDIT",
+            "share": 10,
+            "votePercentage": 10,
+            "nationalCode": "123456",
+            "activityDescription": "Represents an organization",
+            "country": "AF",
+            "countryOfBusinessOperations": "LV",
+            "registrationCountry":"LT",
+            "birthCountry": "LT",
+            "firstName": "Teodor",
+            "lastName": "Mariko",
+            "birthDate": "1998-04-07",
+            "isPEP": true,
+            "isSanctioned": true,
+            "isInAdverseMedia": true,
+            "regionOfActivityDescription": "Western Region",
+            "listContact": [
+                {
+                    "contactType": "EMAIL",
+                    "contactDetails": "blah",
+                    "useForCommunication": false
+                }
+            ],
+            "listAddress": [
+                {
+                    "addressType": "HEADQUARTERS",
+                    "addressDetails": "Shire",
+                    "country": "LT",
+                    "region": "EU",
+                    "city": null,
+                    "streetAddress": null,
+                    "zipCode": null,
+                    "useForCorrespondence": true
+                }
+            ],
+            "listBusinessEntityDocument": [
+                {
+                    "entityType": "ORGANIZATION",
+                    "identityDocumentType": "OTHER",
+                    "documentNumber": "1",
+                    "documentIssueDate": "2000-01-03",
+                    "documentExpiryDate": null,
+                    "documentIssueCountry": "LT",
+                    "documentIssueAuthority": "king",
+                    "description": "agreement"
+                }
+            ],
+            "listIncomeSource": [
+                {
+                    "incomeSourceType": "BUSINESS_REVENUE_OR_ASSET_SALE",
+                    "incomePercentage": 10,
+                    "from": 10,
+                    "to": 100
+                }
+            ],
+            "listActivity": [
+                {
+                    "activityType": "ACTIVITY_OTHER",
+                    "incomePercentage": 50
+                }
+            ],
+            "listRegionOfActivity": [
+                {
+                    "region": "EU"
+                }
+            ],
+            "listCountryOfActivity": [
+                {
+                    "country": "LV"
+                }
+            ],
+            "listAdditionalValues": [
+                {
+                    "code": "Relation",
+                    "description": "Is related to US?",
+                    "datatype": "BOOLEAN",
+                    "value": "false"
+                }
+            ]
+        }
+    ],
+    "listRelatedEntity": [
         {
             "entityType": "INDIVIDUAL",
             "relationType": "DIRECTOR",

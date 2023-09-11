@@ -46,6 +46,7 @@ listOperationParty: #Operation-Party
 
 # Operation Party
 
+At least one operation party account must exist in Amlyze (identified by accountNumber, BIC, Currency)
 
 | field | type | mandatory | example | description |
 |---|---|---|---|---|
