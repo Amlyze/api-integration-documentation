@@ -15,8 +15,8 @@ The request body contains the data that you are sending to the API. The data doc
 
 ## Samples
 
-* [import_sepa_incoming.json](samples%2Foperation%2Fimport_sepa_incoming.json)
-* [import_sepa_outgoing.json](samples%2Foperation%2Fimport_sepa_outgoing.json)
+* [import_sepa_incoming.json](samples/operation/import_sepa_incoming.json)
+* [import_sepa_outgoing.json](samples/operation/import_sepa_outgoing.json)
 
 
 

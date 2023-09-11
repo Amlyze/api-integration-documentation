@@ -16,11 +16,11 @@ Customers contain identifying information and KYC data. This section provides in
 The request body contains the data that you are sending to the API. The data documentation can be found [*here*](fields.md) 
 
 **Samples**
-* [INDIVIDUAL_All_Fields](samples%2Fcustomer%2FCustomer_individual_full.json)
-* [ORGANIZATION_All_Fields](samples%2Fcustomer%2FCustomer_Organization_full.json)
-* [INDIVIDUAL_IND_related_entity](samples%2Fcustomer%2Fcustomer_import_ind_indRE.json)
-* [ORGANIZATION_IND_related_entity](samples%2Fcustomer%2Fcustomer_import_org_indRE.json)
-* [ORGANIZATION_ORG_related_entity](samples%2Fcustomer%2Fcustomer_import_org_orgRE.json)
+* [Import_INDIVIDUAL_All_Fields](samples%2Fcustomer%2Fimport_Individual_full.json)
+* [Evaluate_ORGANIZATION_All_Fields](samples%2Fcustomer%2Fevaluate_Organization_full.json)
+* [INDIVIDUAL_related_IND_entity](samples%2Fcustomer%2Fcustomer_import_ind_indRE.json)
+* [ORGANIZATION_related_IND_entity](samples%2Fcustomer%2Fcustomer_import_org_indRE.json)
+* [ORGANIZATION_related_ORG_entity](samples%2Fcustomer%2FOrganization_import_orgRE.json)
 
 ----------------------
 

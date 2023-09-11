@@ -154,7 +154,7 @@
     ],
     "listRelatedEntity": [
         {
-			"extId": "organization",
+			"extId": "Org_1451as",
             "entityType": "INDIVIDUAL",
             "relationType": "HOST",
             "relationDescription": "founder",

@@ -1,11 +1,9 @@
 {
-    "communicationNumber": "commNr{{ISOtimestamp}}",
-    "requester": "testas",
+    "communicationNumber": "commNr_1142",
+    "requester": "FInancial Branch",
     "riskManagementCategory": "ORG_PK",
-    "riskLevel": "NONE",
-    "sourceOfRiskLevel": "IMPORT",
-    "customerStatus": "ACTIVE",
-    "customerExtId": "FO{{ISOtimestamp}}",
+    "sourceOfRiskLevel": "EVALUATE",
+    "customerExtId": "Ext_1457",
     "entityType": "ORGANIZATION",
     "screeningLists": [
         "SANCTIONS",
