@@ -1,0 +1,34 @@
+{
+    "communicationNumber": "Com_458",
+    "requester": "Financial_Institution",
+    "operationExtId": "ExtId_748",
+    "operationType": "CARD_CASH",
+    "cardOperationSubType": "CARD_CASH_WITHDRAWAL",
+    "riskManagementCategory": "OP_PK",
+    "sourceOfRiskLevel": "IMPORT",
+    "operationStatus":"EXECUTED",
+    "riskLevel": "LOW",
+    "operationDateTime": "2023-09-23T15:09:33+02:00",
+    "currency": "EUR",
+    "amount": 760,
+    "financialFlowDirection": "OUTGOING",
+    "description": "invoice 'LT523460'",
+    "listOperationParty": [
+        {
+            "partyRole": "DEBTOR",
+            "accountNumber": "LT933520036948858623",
+            "currency": "EUR",
+            "bic": "UANFLT21XXX",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Geli",
+            "lastName": "Deliono"
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LT12345678901234567890",
+            "currency": "EUR",
+            "entityType": "ORGANIZATION",
+            "title": "HAMMER"
+        }
+    ]
+}

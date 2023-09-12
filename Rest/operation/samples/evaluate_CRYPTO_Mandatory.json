@@ -1,0 +1,32 @@
+{
+    "communicationNumber": "Com_147",
+    "requester": "Financial_Institution",
+    "operationExtId": "OpExt_145",
+    "operationType": "CRYPTO",
+    "riskManagementCategory": "OP_INST",
+    "sourceOfRiskLevel": "EVALUATE",
+    "operationDateTime": "2023-09-23T15:09:33+02:00",
+    "currency": "ETH",
+    "amount": "14.5",
+    "amountInEuro": "1450",
+    "euroExchangeRate": "100",
+    "financialFlowDirection": "INCOMING",
+    "description": "invoice 'eth1256'",
+    "listOperationParty": [
+        {
+            "partyRole": "DEBTOR",
+            "accountNumber": "12345678901234567890",
+            "currency": "EUR",
+            "entityType": "UNKNOWN",
+            "title": "GONDO"
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "aaaz00145C9aa785aaz0C3fDd7197B6777b55b8ebc1BfE758fC7",
+            "currency": "ETH",
+            "bic": "KRYPXX",
+            "entityType": "ORGANIZATION",
+            "title": "RyptoKrypto"
+        }
+    ]
+}

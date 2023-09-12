@@ -1,0 +1,35 @@
+{
+    "communicationNumber": "ComNr_0018",
+    "requester": "Financial_Institution",
+    "operationExtId": "Op_0018",
+    "operationType": "INTERNAL",
+    "riskManagementCategory": "OP_INST",
+    "sourceOfRiskLevel": "IMPORT",
+    "operationStatus":"EXECUTED",
+    "riskLevel": "LOW",
+    "operationDateTime": "2023-09-23T15:09:33+02:00",
+    "currency": "EUR",
+    "amount": 200,
+    "financialFlowDirection": "INCOMING",
+    "description": "invoice '123456'",
+    "listOperationParty": [
+         {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LV5630800200000018112",
+            "currency": "EUR",
+            "bic": "BICXX22",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Geli",
+            "lastName": "Deliono"
+        },
+        {
+            "partyRole": "DEBTOR",
+            "accountNumber": "LT933520036948858623",
+            "currency": "EUR",
+            "bic": "UANFLT21XXX",
+            "entityType": "ORGANIZATION",
+            "title": "KryptoCrypto"
+        }
+       
+    ]
+}

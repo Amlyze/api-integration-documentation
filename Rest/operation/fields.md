@@ -121,7 +121,7 @@
             <td style="text-align:center"><b> fastPayment </td>
             <td style="text-align:center"> Boolean </td>
             <td style="text-align:center"> false </td>
-            <td style="text-align:center"> <b> true </td>
+            <td style="text-align:center"> true </td>
             <td> Identification if payment should be processed immediately<br/> <i>Default value is false </td>
         </tr>
         <tr>

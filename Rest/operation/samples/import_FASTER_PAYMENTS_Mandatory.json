@@ -1,26 +1,35 @@
 {
-    "communicationNumber": "ComNr_0017",
+    "communicationNumber": "ComNr_0045",
     "requester": "Financial_Institution",
-    "operationExtId": "Op_0017",
-    "operationType": "PIS",
+    "operationExtId": "Op_00175",
+    "operationType": "FASTER_PAYMENTS",
     "riskManagementCategory": "OP_INST",
     "sourceOfRiskLevel": "IMPORT",
     "operationStatus":"EXECUTED",
-    "riskLevel": "LOW",
+    "riskLevel": "HIGH",
     "operationDateTime": "2023-09-23T15:09:33+02:00",
     "currency": "EUR",
-    "amount": 550,
-    "financialFlowDirection": "INCOMING",
+    "amount": 200,
+    "financialFlowDirection": "OUTGOING",
     "description": "invoice '123456'",
     "listOperationParty": [
          {
-            "partyRole": "CREDITOR",
+            "partyRole": "DEBTOR",
             "accountNumber": "LV5630800200000018112",
             "currency": "EUR",
             "bic": "BICXX22",
             "entityType": "INDIVIDUAL",
             "firstName": "Geli",
             "lastName": "Deliono"
-        }       
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LT5630800200000745112",
+            "currency": "EUR",
+            "bic": "CIBXX23",
+            "entityType": "ORGANIZATION",
+            "title": "Komele"
+        }
+       
     ]
 }

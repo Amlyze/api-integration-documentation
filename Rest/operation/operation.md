@@ -25,40 +25,40 @@ The request body contains the data that you are sending to the API. The data doc
 * [Import_SWIFT_Full.json](samples/Import_SWIFT_Full.json)
 * [Import_SWIFT_Mandatory.json](samples/Import_SWIFT_Mandatory.json)
 ---
-* [.json](samples/.json)
-* [.json](samples/.json)
-* [.json](samples/.json)
-* [.json](samples/.json)
+* [Evaluate_PIS_Full.json](samples/Evaluate_PIS_Full.json)
+* [Evaluate_PIS_Mandatory.json](samples/Evaluate_PIS_Mandatory.json)
+* [Import_PIS_Full.json](samples/Import_PIS_Full.json)
+* [Import_PIS_Mandatory.json](samples/Import_PIS_Mandatory.json)
 ---
-* [.json](samples/.json)
-* [.json](samples/.json)
-* [.json](samples/.json)
-* [.json](samples/.json)
+* [Evaluate_INTERNAL_Full.json](samples/Evaluate_INTERNAL_Full.json)
+* [Evaluate_INTERNAL_Mandatory.json](samples/Evaluate_INTERNAL_Mandatory.json)
+* [Import_INTERNAL_Full.json](samples/Import_INTERNAL_Full.json)
+* [Import_INTERNAL_Mandatory.json](samples/Import_INTERNAL_Mandatory.json)
 ---
-* [.json](samples/.json)
-* [.json](samples/.json)
-* [.json](samples/.json)
-* [.json](samples/.json)
+* [Evaluate_CARD_PAYMENT_Full.json](samples/Evaluate_CARD_PAYMENT_Full.json)
+* [Evaluate_CARD_PAYMENT_Mandatory.json](samples/Evaluate_CARD_PAYMENT_Mandatory.json)
+* [Import_CARD_PAYMENT_Full.json](samples/Import_CARD_PAYMENT_Full.json)
+* [Import_CARD_PAYMENT_Mandatory.json](samples/Import_CARD_PAYMENT_Mandatory.json)
 ---
-* [.json](samples/.json)
-* [.json](samples/.json)
-* [.json](samples/.json)
-* [.json](samples/.json)
+* [Evaluate_CARD_CASH_Full.json](samples/Evaluate_CARD_PAYMENT_Full.json)
+* [Evaluate_CARD_CASH_Mandatory.json](samples/Evaluate_CARD_CASH_Mandatory.json)
+* [Import_CARD_CASH_Full.json](samples/Import_CARD_CASH_Full.json)
+* [Import_CARD_CASH_Mandatory.json](samples/Import_CARD_CASH_Mandatory.json)
 ---
-* [.json](samples/.json)
-* [.json](samples/.json)
-* [.json](samples/.json)
-* [.json](samples/.json)
+* [Evaluate_FASTER_PAYMENTS_Full.json](samples/Evaluate_FASTER_PAYMENTS_Full.json)
+* [Evaluate_FASTER_PAYMENTS_Mandatory.json](samples/Evaluate_FASTER_PAYMENTS_Mandatory.json)
+* [Import_FASTER_PAYMENTS_Full.json](samples/Import_FASTER_PAYMENTS_Full.json)
+* [Import_FASTER_PAYMENTS_Mandatory.json](samples/Import_FASTER_PAYMENTS_Mandatory.json)
 ---
-* [.json](samples/.json)
-* [.json](samples/.json)
-* [.json](samples/.json)
-* [.json](samples/.json)
+* [Evaluate_CRYPTO_Full.json](samples/Evaluate_CRYPTO_Full.json)
+* [Evaluate_CRYPTO_Mandatory.json](samples/Evaluate_CRYPTO_Mandatory.json)
+* [Import_CRYPTO_Full.json](samples/Import_CRYPTO_Full.json)
+* [Import_CRYPTO_Mandatory.json](samples/Import_CRYPTO_Mandatory.json)
 ---
-* [.json](samples/.json)
-* [.json](samples/.json)
-* [.json](samples/.json)
-* [.json](samples/.json)
+* [Evaluate_CRYPTO_EXCHANGE_Full.json](samples/Evaluate_CRYPTO_EXCHANGE_Full.json)
+* [Evaluate_CRYPTO_EXCHANGE_Mandatory.json](samples/Evaluate_CRYPTO_EXCHANGE_Mandatory.json)
+* [Import_CRYPTO_EXCHANGE_Full.json](samples/Import_CRYPTO_EXCHANGE_Full.json)
+* [Import_CRYPTO_EXCHANGE_Mandatory.json](samples/Import_CRYPTO_EXCHANGE_Mandatory.json)
 ---
 
 
@@ -131,9 +131,9 @@ The Minimalistic request example below shows the minimum required fields to succ
 
 ```json
 {
-    "communicationNumber": "ComNr_0012{{seq}}",
+    "communicationNumber": "ComNr_0012",
     "requester": "Financial_Institution",
-    "operationExtId": "Op_0013{{seq}}",
+    "operationExtId": "Op_0013",
     "operationType": "SEPA",
     "riskManagementCategory": "OP_INST",
   

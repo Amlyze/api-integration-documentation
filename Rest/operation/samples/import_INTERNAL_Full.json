@@ -1,0 +1,50 @@
+{
+    "communicationNumber": "ComNr_0025",
+    "requester": "Financial_Institution",
+    "operationExtId": "Op_0025",
+    "operationType": "INTERNAL",
+    "riskManagementCategory": "OP_PK",
+    "screeningLists": [
+        "SANCTIONS",
+        "PEP",
+        "ADVERSE_MEDIA"
+    ],
+    "sourceOfRiskLevel": "IMPORT",
+    "operationStatus":"EXECUTED",
+    "riskLevel": "HIGH",
+    "operationDateTime": "2023-09-23T15:09:33+02:00",
+    "sourceCountry": "LT",
+    "destinationCountry": "LV",
+    "currency": "GBP",
+    "amount": 123,
+    "euroExchangeRate": 1.16,
+    "amountInEuro": 143,
+    "financialFlowDirection": "INCOMING",
+    "description": "invoice '123458'",
+    "dateAuthorized": "2023-09-24T15:09:33+02:00" ,
+    "dateSettled": "2023-09-24T15:09:33+02:00",
+    "ipAddress": "555.222.4545.144",
+    "ipAddressCountry": "LT",
+    "listOperationParty": [
+         {
+            "partyRole": "DEBTOR",
+            "accountNumber": "LT5630800200000011112",
+            "currency": "EUR",
+            "bic": "BIC22XX",
+            "bankTitle": "TBC",
+            "entityType": "ORGANIZATION",
+            "title": "Komapnele"
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LI6708800888347331888",
+            "currency": "EUR",
+            "bic": "VABAL22",
+            "bankTitle": "TBC",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Amfora",
+            "lastName": "Fora"
+        }
+       
+    ]
+}

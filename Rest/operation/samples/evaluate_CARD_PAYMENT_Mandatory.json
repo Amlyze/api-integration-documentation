@@ -1,0 +1,33 @@
+{
+    "communicationNumber": "Com_1454",
+    "requester": "Financial_Institution",
+    "operationExtId": "ExtId_878",
+    "operationType": "CARD_PAYMENT",
+    "cardOperationSubType": "CARD_PURCHASE",
+    "riskManagementCategory": "OP_PK",
+    "sourceOfRiskLevel": "EVALUATE",
+    "operationDateTime": "2023-09-23T15:09:33+02:00",
+    "currency": "EUR",
+    "amount": 999,
+    "financialFlowDirection": "OUTGOING",
+    "description": "invoice 'LT5234599'",
+    "listOperationParty": [
+        {
+            "partyRole": "DEBTOR",
+            "accountNumber": "LT933520036948858623",
+            "currency": "EUR",
+            "bic": "UANFLT21XXX",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Geli",
+            "lastName": "Deliono"
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LT12345678901234567890",
+            "currency": "EUR",
+            "entityType": "ORGANIZATION",
+            "title": "LAMEER"
+            
+        }
+    ]
+}

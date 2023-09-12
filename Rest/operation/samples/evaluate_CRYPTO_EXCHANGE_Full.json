@@ -1,0 +1,47 @@
+{
+    "communicationNumber": "ComNr_0030",
+    "requester": "Financial_Institution",
+    "operationExtId": "Op_0030",
+    "operationType": "CRYPTO_EXCHANGE",
+    "riskManagementCategory": "OP_PK",
+    "screeningLists": [
+        "SANCTIONS",
+        "PEP",
+        "ADVERSE_MEDIA"
+    ],
+    "sourceOfRiskLevel": "EVALUATE",
+    "operationDateTime": "2023-09-23T15:09:33+02:00",
+    "sourceCountry": "LT",
+    "destinationCountry": "LV",
+    "currency": "ETH",
+    "amount": 14.5,
+    "euroExchangeRate": 100,
+    "amountInEuro": 1450,
+    "financialFlowDirection": "INCOMING",
+    "description": "crypto invoice '123487'",
+    "dateAuthorized": "2023-09-24T15:09:33+02:00" ,
+    "dateSettled": "2023-09-24T15:09:33+02:00",
+    "ipAddress": "555.222.4545.144",
+    "ipAddressCountry": "LT",
+    "listOperationParty": [
+         {
+              "partyRole": "DEBTOR",
+            "accountNumber": "ZZ55ZZ3fDd7197B6777b55b8ebc1BfE7ZZZ",
+            "currency": "BTC",
+            "bic": "BICXX22",
+            "bankTitle": "TBC",
+            "entityType": "ORGANIZATION",
+            "title": "RyptoKrypto"
+        },
+        {
+           "partyRole": "CREDITOR",
+            "accountNumber": "aaaz00145C9aa785aaz0C3fDd7197B6777b55b8ebc1BfE758fC7",
+            "currency": "ETH_222",
+            "bic": "KRYPXX",
+            "bankTitle": "TBC",
+            "entityType": "ORGANIZATION",
+            "title": "RyptoKrypto"
+        }
+       
+    ]
+}

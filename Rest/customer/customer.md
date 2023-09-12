@@ -94,9 +94,9 @@ The Minimalistic request example below shows the minimum required fields to succ
 
 ```json
 {
-	"communicationNumber": "testing_001",
-	"customerExtId": "testingOperations_001",
-	"requester": "AMLYZE",
+	"communicationNumber": "ComNr_002",
+	"customerExtId": "Cust_ext145",
+	"requester": "Financial Institution",
 	"action": "CREATE",
 	"customerStatus": "ACTIVE",
 	"riskManagementCategory": "IND_PK",
@@ -104,10 +104,10 @@ The Minimalistic request example below shows the minimum required fields to succ
 	"riskLevel": "NONE",
 	"entityType": "INDIVIDUAL",
 	"applicationDate": "2012-10-01",
-	"firstName": "Testas",
-	"lastName": "Testauskas",
+	"firstName": "Geli",
+	"lastName": "Deliono",
 	"birthDate": "2000-05-10",
-	"citizenshipCountry": "LT"
+	"citizenshipCountry": "LV"
 }
 ```
 

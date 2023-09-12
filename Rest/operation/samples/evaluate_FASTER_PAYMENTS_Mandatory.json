@@ -1,32 +1,33 @@
 {
-    "communicationNumber": "Com_457",
+    "communicationNumber": "ComNr_0045",
     "requester": "Financial_Institution",
-    "operationExtId": "ExtId_747",
-    "operationType": "CARD_CASH",
-    "cardOperationSubType": "CARD_CASH_WITHDRAWAL",
-    "riskManagementCategory": "OP_PK",
+    "operationExtId": "Op_00175",
+    "operationType": "FASTER_PAYMENTS",
+    "riskManagementCategory": "OP_INST",
     "sourceOfRiskLevel": "EVALUATE",
     "operationDateTime": "2023-09-23T15:09:33+02:00",
     "currency": "EUR",
-    "amount": 760,
+    "amount": 200,
     "financialFlowDirection": "OUTGOING",
-    "description": "invoice 'LT523460'",
+    "description": "invoice '123456'",
     "listOperationParty": [
-        {
+         {
             "partyRole": "DEBTOR",
-            "accountNumber": "LT933520036948858623",
+            "accountNumber": "LV5630800200000018112",
             "currency": "EUR",
-            "bic": "UANFLT21XXX",
+            "bic": "BICXX22",
             "entityType": "INDIVIDUAL",
             "firstName": "Geli",
             "lastName": "Deliono"
         },
         {
             "partyRole": "CREDITOR",
-            "accountNumber": "LT12345678901234567890",
+            "accountNumber": "LT5630800200000745112",
             "currency": "EUR",
+            "bic": "CIBXX23",
             "entityType": "ORGANIZATION",
-            "title": "HAMMER"
+            "title": "Komele"
         }
+       
     ]
 }
