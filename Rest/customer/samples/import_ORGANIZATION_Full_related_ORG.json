@@ -1,11 +1,11 @@
 {
-    "communicationNumber": "customerOrgTestOrgRE{{$isoTimestamp}}",
-    "requester": "testas",
+    "communicationNumber": "ComNr_123",
+    "requester": "Financial Institution",
     "riskManagementCategory": "ORG_PK",
     "riskLevel": "NONE",
     "sourceOfRiskLevel": "IMPORT",
     "customerStatus": "ACTIVE",
-    "customerExtId": "customerOrgTestOrgRE{{$isoTimestamp}}",
+    "customerExtId": "Cust_142",
     "entityType": "ORGANIZATION",
     "screeningLists": [
         "SANCTIONS",

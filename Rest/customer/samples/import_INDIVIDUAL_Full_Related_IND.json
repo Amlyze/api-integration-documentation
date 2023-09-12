@@ -1,11 +1,11 @@
 {
-	"communicationNumber": "testas{{ISOtimestamp}}",
-	"requester": "FInancial_ Institution",
+	"communicationNumber": "ComNr_79",
+	"requester": "Financial_ Institution",
 	"riskManagementCategory": "IND_PK",
 	"riskLevel": "EXTREME",
 	"sourceOfRiskLevel": "IMPORT",
 	"customerStatus": "ACTIVE",
-	"customerExtId": "ind_full_RE",
+	"customerExtId": "Cust_525",
 	"entityType": "INDIVIDUAL",
 	"screeningLists": [
         "SANCTIONS",
@@ -24,6 +24,8 @@
 	"permanentResidenceCountry": "LT",
 	"isLegalResident": true,
 	"isPEP": true,
+    "isSanctioned": true,
+    "isInAdverseMedia": true,
 	"isFamilyPEP": true,
 	"isLitigated": true,
 	"amlOfficer": true,

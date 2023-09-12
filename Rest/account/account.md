@@ -15,9 +15,9 @@ The request body contains the data that you are sending to the API. The data doc
 
 ## Samples
 
-* [account_active.json](samples%2Faccount%2Faccount_active.json)
-* [account_suspended.json](samples/account/account_suspended.json)
-* [account_closed.json](samples%2Faccount%2Faccount_closed.json)
+* [account_active.json](samples/account_active.json)
+* [account_suspended.json](samples/account_suspended.json)
+* [account_closed.json](samples/account_closed.json)
 
 ---
 

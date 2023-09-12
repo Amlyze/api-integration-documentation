@@ -1,9 +1,9 @@
 {
-    "communicationNumber": "commNr_1142",
-    "requester": "FInancial Branch",
+    "communicationNumber": "ComNr_145",
+    "requester": "Financial Institution",
     "riskManagementCategory": "ORG_PK",
     "sourceOfRiskLevel": "EVALUATE",
-    "customerExtId": "Ext_1457",
+    "customerExtId": "customer1451",
     "entityType": "ORGANIZATION",
     "screeningLists": [
         "SANCTIONS",
@@ -19,31 +19,31 @@
     "establishmentDate": "2012-10-01T09:45:00.000+02:00",
     "registrationCountry": "LT",
     "legalForm": "COOPERATIVE",
-    "isListed": false,
+    "isListed": true,
     "isAudited": true,
     "numberOfAudits": 2,
     "periodsOfAuditsInYears": 1,
-    "isFined": false,
+    "isFined": true,
     "periodsOfFiningInYears": 0,
-    "isRegulated": false,
+    "isRegulated": true,
     "companyAssetValue": 123456789,
     "numberOfEmployees": 321,
     "LEI": "LEI124545",
     "GIIN": "GIIN123445",
     "noMajorShareHolders": true,
     "isDirectlyManaged": true,
-    "hasMultiLayerStructure": false,
+    "hasMultiLayerStructure": true,
     "organizationalStructureDescription": "chaos",
     "regionOfActivityDescription": "Middleearth",
-    "activityInRestrictedRegionDescription": "text",
+    "activityInRestrictedRegionDescription": "quest",
     "isLicenseRequired": true,
-    "licenseDescription": "ring",
-    "isFinancialInstitution": false,
+    "licenseDescription": "promise",
+    "isFinancialInstitution": true,
     "thirdPartyServicesUsed": true,
     "thirdPartyServicesUsedDescription": "equipment",
-    "isSanctioned": false,
+    "isSanctioned": true,
     "isActualAddressDeclared": true,
-    "isCorrespondenceAddressDeclared": false,
+    "isCorrespondenceAddressDeclared": true,
     "activityDescription": "Logistics",
     "incomeSourceDescription": "adventure",
     "initialDepositSource": "promise",
@@ -57,7 +57,7 @@
     "listContact": [
         {
             "contactType": "EMAIL",
-            "contactDetails": "scanned letters only",
+            "contactDetails": "butterfly voicemessage",
             "useForCommunication": true
         }
     ],
@@ -112,8 +112,8 @@
         {
             "incomeSourceType": "BUSINESS_REVENUE_OR_ASSET_SALE",
             "incomePercentage": 100,
-            "from": 1000000,
-            "to": 1000000
+            "from": 121564,
+            "to": 23457
         }
     ],
     "listPaymentPurpose": [
@@ -142,9 +142,6 @@
     "listCountryOfActivity": [
         {
             "country": "LT"
-        },
-        {
-            "country": "LV"
         }
     ],
     "listCountryOfTaxPayment": [
@@ -155,6 +152,7 @@
     ],
     "listRelatedEntity": [
         {
+			"extId": "extid1245",
             "entityType": "INDIVIDUAL",
             "relationType": "HOST",
             "relationDescription": "founder",
@@ -169,13 +167,13 @@
             "firstName": "Frodo",
             "lastName": "Baggins",
             "birthDate": "1998-04-07",
-            "isPEP": false,
+            "isPEP": true,
             "regionOfActivityDescription": "everywhere",
             "listContact": [
                 {
                     "contactType": "EMAIL",
                     "contactDetails": "blah",
-                    "useForCommunication": false
+                    "useForCommunication": true
                 }
             ],
             "listAddress": [

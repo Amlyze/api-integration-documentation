@@ -15,9 +15,51 @@ The request body contains the data that you are sending to the API. The data doc
 
 ## Samples
 
-* [import_sepa_incoming.json](samples/operation/import_sepa_incoming.json)
-* [import_sepa_outgoing.json](samples/operation/import_sepa_outgoing.json)
-
+* [Evaluate_SEPA_Full.json](samples/evaluate_SEPA_Full.json)
+* [Evaluate_SEPA_Mandatory.json](samples/evaluate_SEPA_Mandatory.json)
+* [Import_SEPA_Full.json](samples/import_SEPA_Full.json)
+* [Import_SEPA_Mandatory.json](samples/import_SEPA_Mandatory.json)
+---
+* [Evaluate_SWIFT_Full.json](samples/Evaluate_SWIFT_Full.json)
+* [Evaluate_SWIFT_Mandatory.json](samples/Evaluate_SWIFT_Mandatory.json)
+* [Import_SWIFT_Full.json](samples/Import_SWIFT_Full.json)
+* [Import_SWIFT_Mandatory.json](samples/Import_SWIFT_Mandatory.json)
+---
+* [.json](samples/.json)
+* [.json](samples/.json)
+* [.json](samples/.json)
+* [.json](samples/.json)
+---
+* [.json](samples/.json)
+* [.json](samples/.json)
+* [.json](samples/.json)
+* [.json](samples/.json)
+---
+* [.json](samples/.json)
+* [.json](samples/.json)
+* [.json](samples/.json)
+* [.json](samples/.json)
+---
+* [.json](samples/.json)
+* [.json](samples/.json)
+* [.json](samples/.json)
+* [.json](samples/.json)
+---
+* [.json](samples/.json)
+* [.json](samples/.json)
+* [.json](samples/.json)
+* [.json](samples/.json)
+---
+* [.json](samples/.json)
+* [.json](samples/.json)
+* [.json](samples/.json)
+* [.json](samples/.json)
+---
+* [.json](samples/.json)
+* [.json](samples/.json)
+* [.json](samples/.json)
+* [.json](samples/.json)
+---
 
 
 ## Responses

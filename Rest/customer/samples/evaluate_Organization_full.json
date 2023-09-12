@@ -1,11 +1,9 @@
 {
-    "communicationNumber": "customerOrgTestOrgRE{{ISOtimestamp}}",
-    "requester": "testas",
+    "communicationNumber": "commNr_1142",
+    "requester": "FInancial Branch",
     "riskManagementCategory": "ORG_PK",
-    "riskLevel": "NONE",
-    "sourceOfRiskLevel": "IMPORT",
-    "customerStatus": "ACTIVE",
-    "customerExtId": "customerOrgTestFull{{ISOtimestamp}}",
+    "sourceOfRiskLevel": "EVALUATE",
+    "customerExtId": "Ext_1457",
     "entityType": "ORGANIZATION",
     "screeningLists": [
         "SANCTIONS",
@@ -21,31 +19,31 @@
     "establishmentDate": "2012-10-01T09:45:00.000+02:00",
     "registrationCountry": "LT",
     "legalForm": "COOPERATIVE",
-    "isListed": true,
+    "isListed": false,
     "isAudited": true,
     "numberOfAudits": 2,
     "periodsOfAuditsInYears": 1,
-    "isFined": true,
+    "isFined": false,
     "periodsOfFiningInYears": 0,
-    "isRegulated": true,
+    "isRegulated": false,
     "companyAssetValue": 123456789,
     "numberOfEmployees": 321,
     "LEI": "LEI124545",
     "GIIN": "GIIN123445",
     "noMajorShareHolders": true,
     "isDirectlyManaged": true,
-    "hasMultiLayerStructure": true,
+    "hasMultiLayerStructure": false,
     "organizationalStructureDescription": "chaos",
     "regionOfActivityDescription": "Middleearth",
-    "activityInRestrictedRegionDescription": "quest",
+    "activityInRestrictedRegionDescription": "text",
     "isLicenseRequired": true,
-    "licenseDescription": "promise",
-    "isFinancialInstitution": true,
+    "licenseDescription": "ring",
+    "isFinancialInstitution": false,
     "thirdPartyServicesUsed": true,
     "thirdPartyServicesUsedDescription": "equipment",
-    "isSanctioned": true,
+    "isSanctioned": false,
     "isActualAddressDeclared": true,
-    "isCorrespondenceAddressDeclared": true,
+    "isCorrespondenceAddressDeclared": false,
     "activityDescription": "Logistics",
     "incomeSourceDescription": "adventure",
     "initialDepositSource": "promise",
@@ -59,7 +57,7 @@
     "listContact": [
         {
             "contactType": "EMAIL",
-            "contactDetails": "butterfly voicemessage",
+            "contactDetails": "scanned letters only",
             "useForCommunication": true
         }
     ],
@@ -114,8 +112,8 @@
         {
             "incomeSourceType": "BUSINESS_REVENUE_OR_ASSET_SALE",
             "incomePercentage": 100,
-            "from": 121564,
-            "to": 23457
+            "from": 1000000,
+            "to": 1000000
         }
     ],
     "listPaymentPurpose": [
@@ -144,96 +142,15 @@
     "listCountryOfActivity": [
         {
             "country": "LT"
+        },
+        {
+            "country": "LV"
         }
     ],
     "listCountryOfTaxPayment": [
         {
             "country": "LV",
             "taxpayerNumber": "123456789"
-        }
-    ],
-    "listRelatedEntity": [
-        {
-			"extId": "extid1245",
-            "entityType": "INDIVIDUAL",
-            "relationType": "HOST",
-            "relationDescription": "founder",
-            "share": 10,
-            "votePercentage": 10,
-            "nationalCode": "123456",
-            "activityDescription": "BEARER",
-            "country": "LT",
-            "registrationCountry": "LT",
-            "countryOfBusinessOperations": "LV",
-            "birthCountry": "LT",
-            "firstName": "Frodo",
-            "lastName": "Baggins",
-            "birthDate": "1998-04-07",
-            "isPEP": true,
-            "regionOfActivityDescription": "everywhere",
-            "listContact": [
-                {
-                    "contactType": "EMAIL",
-                    "contactDetails": "blah",
-                    "useForCommunication": true
-                }
-            ],
-            "listAddress": [
-                {
-                    "addressType": "HEADQUARTERS",
-                    "addressDetails": "Shire",
-                    "country": "LT",
-                    "region": "EU",
-                    "city": null,
-                    "streetAddress": null,
-                    "zipCode": null,
-                    "useForCorrespondence": true
-                }
-            ],
-            "listBusinessEntityDocument": [
-                {
-                    "entityType": "ORGANIZATION",
-                    "identityDocumentType": "OTHER",
-                    "documentNumber": "1",
-                    "documentIssueDate": "2000-01-03",
-                    "documentExpiryDate": null,
-                    "documentIssueCountry": "LT",
-                    "documentIssueAuthority": "king",
-                    "description": "agreement"
-                }
-            ],
-            "listIncomeSource": [
-                {
-                    "incomeSourceType": "BUSINESS_REVENUE_OR_ASSET_SALE",
-                    "incomePercentage": 10,
-                    "from": 10,
-                    "to": 100
-                }
-            ],
-            "listActivity": [
-                {
-                    "activityType": "ACTIVITY_OTHER",
-                    "incomePercentage": 50
-                }
-            ],
-            "listRegionOfActivity": [
-                {
-                    "region": "EU"
-                }
-            ],
-            "listCountryOfActivity": [
-                {
-                    "country": "LV"
-                }
-            ],
-            "listAdditionalValues": [
-                {
-                    "code": "test.string",
-                    "description": "testas",
-                    "datatype": "STRING",
-                    "value": "ASDFG"
-                }
-            ]
         }
     ],
     "listAdditionalValues": [
