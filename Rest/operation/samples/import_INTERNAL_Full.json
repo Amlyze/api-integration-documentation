@@ -19,7 +19,7 @@
     "amount": 123,
     "euroExchangeRate": 1.16,
     "amountInEuro": 143,
-    "financialFlowDirection": "INCOMING",
+    "financialFlowDirection": "NULL",
     "description": "invoice '123458'",
     "dateAuthorized": "2023-09-24T15:09:33+02:00" ,
     "dateSettled": "2023-09-24T15:09:33+02:00",

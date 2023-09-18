@@ -129,7 +129,9 @@
             <td style="text-align:center"> FinancialFlowDirectionApi </td>
             <td style="text-align:center"> <b> true </td>
             <td style="text-align:center"> INCOMING </td>
-            <td> Refers to the movement of money between entities or accounts  </td>
+            <td> Refers to the movement of money between entities or accounts</br> when direction = <b>INCOMING</b> your customer = <b>CREDITOR</b> 
+            </br> when direction = <b>OUTGOING</b> your customer = <b>DEBTOR</b>
+            </br> when direction = <b>NULL</b> your customers = <b>CREDITOR</b> and <b>DEBTOR</b> (only during <i>INTERNAL</i> operations</td>
         </tr>
         <tr>
             <td style="text-align:center"><b> initializeScreeningProcesses </td>
