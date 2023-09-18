@@ -1,18 +1,19 @@
 {
-    "communicationNumber": "ComNr_123",
+    "communicationNumber": "ComNr_225",
     "requester": "Financial Institution",
     "riskManagementCategory": "ORG_PK",
+    "action": "UPDATE",
     "riskLevel": "NONE",
     "sourceOfRiskLevel": "IMPORT",
     "customerStatus": "ACTIVE",
-    "customerExtId": "Cust_142",
+    "customerExtId": "Cust_837",
     "entityType": "ORGANIZATION",
     "screeningLists": [
         "SANCTIONS",
         "ADVERSE_MEDIA",
         "PEP"
     ],
-    "nationalCode": "123456789",
+    "nationalCode": "5114575122",
     "applicationDate": "2012-10-01T09:45:00.000+02:00",
     "approvalDate": "2012-10-01T09:45:00.000+02:00",
     "closingDate": null,
@@ -37,54 +38,61 @@
     "hasMultiLayerStructure": true,
     "organizationalStructureDescription": "chaos",
     "regionOfActivityDescription": "Middleearth",
-    "activityInRestrictedRegionDescription": "quest",
+    "activityInRestrictedRegionDescription": "Logistic managing",
     "isLicenseRequired": true,
-    "licenseDescription": "promise",
+    "licenseDescription": "License N.0457",
     "isFinancialInstitution": true,
     "thirdPartyServicesUsed": true,
     "thirdPartyServicesUsedDescription": "equipment",
     "isSanctioned": true,
-    "isActualAddressDeclared": true,
+    "isPEP": true,
+    "isInAdverseMedia": true,
+    "isActualAddressaDeclared": true,
     "isCorrespondenceAddressDeclared": true,
     "activityDescription": "Logistics",
     "incomeSourceDescription": "adventure",
     "initialDepositSource": "promise",
-    "initialDepositAmount": "1234",
+    "initialDepositAmount": "1000",
     "initialDepositCurrency": "EUR",
-    "initialDepositBank": "pocket",
-    "initialDepositAccount": "leather bag",
+    "initialDepositBank": "TBC",
+    "initialDepositAccount": "LT166147423635315679",
     "doesCashDominate": true,
     "incomingPaymentDescription": "for services",
     "outgoingPaymentDescription": "none",
     "listContact": [
         {
             "contactType": "EMAIL",
-            "contactDetails": "butterfly voicemessage",
+            "contactDetails": "brotherhood@gmail.com",
             "useForCommunication": true
+        },
+        {
+            "contactType": "MOBILEPHONE",
+            "contactDetails": "+370687125587",
+            "useForCommunication": false
         }
     ],
     "listAddress": [
         {
             "addressType": "HEADQUARTERS",
-            "addressDetails": "Shire",
+            "addressDetails": "Saulės g.15 ",
             "country": "LT",
             "region": "EU",
-            "city": null,
-            "streetAddress": null,
-            "zipCode": null,
+            "city": "Vilnius",
+            "streetAddress": "Saulės g.",
+            "zipCode": "04157",
             "useForCorrespondence": true
         }
     ],
     "listBusinessEntityDocument": [
         {
             "entityType": "ORGANIZATION",
-            "identityDocumentType": "OTHER",
-            "documentNumber": "1",
-            "documentIssueDate": "2000-01-03",
-            "documentExpiryDate": null,
+            "identityDocumentType": "REGISTRATIONCERTIFICATE",
+            "documentNumber": "5004574412-LT47",
+            "documentIssueDate": "2020-01-03",
+            "documentExpiryDate": "2024-01-03",
             "documentIssueCountry": "LT",
-            "documentIssueAuthority": "king",
-            "description": "agreement"
+            "documentIssueAuthority": "VMI",
+            "description": "Registration Certificate"
         }
     ],
     "listAppealReason": [
@@ -128,6 +136,14 @@
         {
             "country": "LT",
             "turnoverDirection": "IN"
+        },
+        {
+            "country": "US",
+            "turnoverDirection": "OUT"
+        },
+        {
+            "country": "LV",
+            "turnoverDirection": "OUT"
         }
     ],
     "listActivity": [
@@ -154,8 +170,8 @@
     ],
     "listRelatedEntity": [
         {
-			"extId": "Org_1451as",
-            "entityType": "INDIVIDUAL",
+			"extId": "Org_1451",
+            "entityType": "ORGANIZATION",
             "relationType": "HOST",
             "relationDescription": "founder",
             "share": 10,
@@ -165,41 +181,41 @@
             "country": "LT",
             "registrationCountry": "LT",
             "countryOfBusinessOperations": "LV",
-            "birthCountry": "LT",
-            "firstName": "Frodo",
-            "lastName": "Baggins",
-            "birthDate": "1998-04-07",
+            "title": "UAB Karuna",
+            "legalForm": "LTD",
+            "establishmentDate": "1998-04-07",
             "isPEP": true,
+            "region": "LT",
             "regionOfActivityDescription": "everywhere",
             "listContact": [
                 {
                     "contactType": "EMAIL",
-                    "contactDetails": "blah",
+                    "contactDetails": "Karuna.info@gmail.com",
                     "useForCommunication": true
                 }
             ],
             "listAddress": [
                 {
                     "addressType": "HEADQUARTERS",
-                    "addressDetails": "Shire",
+                    "addressDetails": "Panemunių g. 15-4",
                     "country": "LT",
                     "region": "EU",
-                    "city": null,
-                    "streetAddress": null,
-                    "zipCode": null,
+                    "city": "Vilnius",
+                    "streetAddress": "Panemunių g.",
+                    "zipCode": "048715",
                     "useForCorrespondence": true
                 }
             ],
             "listBusinessEntityDocument": [
                 {
                     "entityType": "ORGANIZATION",
-                    "identityDocumentType": "OTHER",
-                    "documentNumber": "1",
-                    "documentIssueDate": "2000-01-03",
-                    "documentExpiryDate": null,
+                    "identityDocumentType": "REGISTRATIONCERTIFICATE",
+                    "documentNumber": "LT-4574551121",
+                    "documentIssueDate": "2015-01-03",
+                    "documentExpiryDate": "2025-01-03",
                     "documentIssueCountry": "LT",
-                    "documentIssueAuthority": "king",
-                    "description": "agreement"
+                    "documentIssueAuthority": "VMI",
+                    "description": "Certificate of Registration"
                 }
             ],
             "listIncomeSource": [
@@ -228,20 +244,21 @@
             ],
             "listAdditionalValues": [
                 {
-                    "code": "test.string",
-                    "description": "testas",
-                    "datatype": "STRING",
-                    "value": "ASDFG"
+                    "code": "Related_to_USA",
+                    "description": "Is related to usa?",
+                    "datatype": "BOOLEAN",
+                    "value": "true"
                 }
             ]
         }
     ],
     "listAdditionalValues": [
         {
-            "code": "test.string",
-            "description": "testas",
-            "datatype": "STRING",
-            "value": "ASDFG"
+            "code": "Average_age_of_employee",
+            "description": "The average age of current employee",
+            "datatype": "INTEGER",
+            "value": 27
         }
     ]
 }
+
