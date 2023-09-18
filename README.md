@@ -2,6 +2,6 @@
 
 ## Introduction
 
-Move to one of API Documentation:
+Move to one of API Documentations:
 
-* [JSON](Rest/README.md)
+* [REST API](Rest/README.md)
