@@ -5,7 +5,7 @@
     "sourceOfRiskLevel": "EVALUATE",
     "customerExtId": "Ext_1457",
     "entityType": "ORGANIZATION",
-    "screeningLists": [
+    "initializeScreeningProcesses": [
         "SANCTIONS",
         "ADVERSE_MEDIA",
         "PEP"

@@ -7,7 +7,7 @@
 	"customerStatus": "ACTIVE",
 	"customerExtId": "Cust_665",
 	"entityType": "INDIVIDUAL",
-	"screeningLists": [
+	"initializeScreeningProcesses": [
         "SANCTIONS",
         "ADVERSE_MEDIA",
         "PEP"
@@ -27,6 +27,7 @@
 	"isFamilyPEP": true,
 	"isLitigated": true,
 	"amlOfficer": true,
+	"listPurpose": "BLACK",
 	"sourcesOfWealth": [
 		{
 			"amount": 123,

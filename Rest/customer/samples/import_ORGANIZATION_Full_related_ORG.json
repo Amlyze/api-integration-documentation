@@ -8,7 +8,7 @@
     "customerStatus": "ACTIVE",
     "customerExtId": "Cust_837",
     "entityType": "ORGANIZATION",
-    "screeningLists": [
+    "initializeScreeningProcesses": [
         "SANCTIONS",
         "ADVERSE_MEDIA",
         "PEP"

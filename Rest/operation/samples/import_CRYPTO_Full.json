@@ -4,7 +4,7 @@
     "operationExtId": "Op_0028{{seq}}",
     "operationType": "CRYPTO",
     "riskManagementCategory": "OP_INST",
-    "screeningLists": [
+    "initializeScreeningProcesses": [
         "SANCTIONS",
         "PEP",
         "ADVERSE_MEDIA"

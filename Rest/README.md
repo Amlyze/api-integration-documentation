@@ -8,9 +8,11 @@ Customer contain identifying information and KYC data like declared turnover
 
 Accounts used to identify customers in operationParties
 
+*swagger UI* `GET /swagger-ui/`
+
 *api-doc* `GET /v2/api-docs`
 
-*swagger* `GET /swagger-ui/`
+
 
 
 ## Control fields

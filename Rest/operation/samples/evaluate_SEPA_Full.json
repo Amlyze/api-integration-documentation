@@ -4,7 +4,7 @@
     "operationExtId": "Op_0020",
     "operationType": "SEPA",
     "riskManagementCategory": "OP_INST",
-    "screeningLists": [
+    "initializeScreeningProcesses": [
         "SANCTIONS",
         "PEP",
         "ADVERSE_MEDIA"

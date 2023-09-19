@@ -5,7 +5,7 @@
     "operationType": "CARD_CASH",
     "cardOperationSubType": "CARD_CASH_WITHDRAWAL",
     "riskManagementCategory": "OP_PK",
-    "screeningLists": [
+    "initializeScreeningProcesses": [
         "SANCTIONS",
         "ADVERSE_MEDIA",
         "PEP"

@@ -5,7 +5,7 @@
     "sourceOfRiskLevel": "EVALUATE",
     "customerExtId": "customer1451",
     "entityType": "ORGANIZATION",
-    "screeningLists": [
+    "initializeScreeningProcesses": [
         "SANCTIONS",
         "ADVERSE_MEDIA",
         "PEP"
@@ -151,6 +151,88 @@
         }
     ],
     "listRelatedEntity": [
+        {
+			"extId": "Org_1451",
+            "entityType": "ORGANIZATION",
+            "relationType": "HOST",
+            "relationDescription": "founder",
+            "share": 10,
+            "votePercentage": 10,
+            "nationalCode": "123456",
+            "activityDescription": "BEARER",
+            "country": "LT",
+            "registrationCountry": "LT",
+            "countryOfBusinessOperations": "LV",
+            "title": "UAB Karuna",
+            "legalForm": "LTD",
+            "establishmentDate": "1998-04-07",
+            "isPEP": true,
+            "region": "LT",
+            "regionOfActivityDescription": "everywhere",
+            "listContact": [
+                {
+                    "contactType": "EMAIL",
+                    "contactDetails": "Karuna.info@gmail.com",
+                    "useForCommunication": true
+                }
+            ],
+            "listAddress": [
+                {
+                    "addressType": "HEADQUARTERS",
+                    "addressDetails": "Panemunių g. 15-4",
+                    "country": "LT",
+                    "region": "EU",
+                    "city": "Vilnius",
+                    "streetAddress": "Panemunių g.",
+                    "zipCode": "048715",
+                    "useForCorrespondence": true
+                }
+            ],
+            "listBusinessEntityDocument": [
+                {
+                    "entityType": "ORGANIZATION",
+                    "identityDocumentType": "REGISTRATIONCERTIFICATE",
+                    "documentNumber": "LT-4574551121",
+                    "documentIssueDate": "2015-01-03",
+                    "documentExpiryDate": "2025-01-03",
+                    "documentIssueCountry": "LT",
+                    "documentIssueAuthority": "VMI",
+                    "description": "Certificate of Registration"
+                }
+            ],
+            "listIncomeSource": [
+                {
+                    "incomeSourceType": "BUSINESS_REVENUE_OR_ASSET_SALE",
+                    "incomePercentage": 10,
+                    "from": 10,
+                    "to": 100
+                }
+            ],
+            "listActivity": [
+                {
+                    "activityType": "ACTIVITY_OTHER",
+                    "incomePercentage": 50
+                }
+            ],
+            "listRegionOfActivity": [
+                {
+                    "region": "EU"
+                }
+            ],
+            "listCountryOfActivity": [
+                {
+                    "country": "LV"
+                }
+            ],
+            "listAdditionalValues": [
+                {
+                    "code": "Related_to_USA",
+                    "description": "Is related to usa?",
+                    "datatype": "BOOLEAN",
+                    "value": "true"
+                }
+            ]
+        },
         {
 			"extId": "extid1245",
             "entityType": "INDIVIDUAL",

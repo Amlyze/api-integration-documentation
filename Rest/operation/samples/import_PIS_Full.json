@@ -4,7 +4,7 @@
     "operationExtId": "Op_0024",
     "operationType": "PIS",
     "riskManagementCategory": "OP_INST",
-    "screeningLists": [
+    "initializeScreeningProcesses": [
         "SANCTIONS",
         "PEP",
         "ADVERSE_MEDIA"

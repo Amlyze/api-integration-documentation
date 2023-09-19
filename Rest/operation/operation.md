@@ -6,7 +6,7 @@ An operation is a transaction between two or more parties, where one of the part
 
 ## EndPoints
 
-*swagger*  `GET / swagger-ui/`
+*swagger UI*  `GET / swagger-ui/`
 
 `POST /amlyze-ws-rest/operation (application/json)`
 
@@ -136,7 +136,6 @@ The Minimalistic request example below shows the minimum required fields to succ
     "operationExtId": "Op_0013",
     "operationType": "SEPA",
     "riskManagementCategory": "OP_INST",
-  
     "sourceOfRiskLevel": "IMPORT",
     "operationStatus":"EXECUTED",
     "operationDateTime": "2023-09-23T15:09:33+02:00",

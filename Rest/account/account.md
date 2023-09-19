@@ -7,7 +7,7 @@ This section provides detailed information on the endpoints that can be used to 
 
 ## EndPoints
 
-*swagger*  `GET / swagger-ui/`
+*swagger UI*  `GET / swagger-ui/`
 
 `POST /amlyze-ws-rest/account (application/json)`
 

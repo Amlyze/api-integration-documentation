@@ -9,17 +9,21 @@ Customers contain identifying information and KYC data. This section provides in
 
 ## EndPoints
 
-*swagger* `GET /swagger-ui/`
+*swagger UI* `GET /swagger-ui/`
 
 `POST /amlyze-ws-rest/customer (application/json)`
 
 The request body contains the data that you are sending to the API. The data documentation can be found [*here*](fields.md) 
 
 **Samples**
-* [Import_INDIVIDUAL_Full](samples/import_Individual_full.json) 
+* [Evaluate_ORGANIZATION_Mandatory](samples/Evaluate_ORGANIZATION_Mandatory.json) 
+* [Import_INDIVIDUAL_Mandatory](samples/Import_INDIVIDUAL_Mandatory.json) 
+---
 * [Evaluate_ORGANIZATION_Full](samples/evaluate_ORGANIZATION_Full.json)
-* [Evaluate_INDIVIDUAL_Full_Related_IND](samples/import_INDIVIDUAL_Full_Related_IND.json)
-* [Import_ORGANIZATION_Full_related_IND](samples/evaluate_ORGANIZATION_Full_related_IND.json)
+* [Import_INDIVIDUAL_Full](samples/import_INDIVIDUAL_full.json) 
+---
+* [Evaluate_ORGANIZATION_Full_Related_ORG_IND](samples/Evaluate_ORGANIZATION_Full_Related_ORG_IND.json)
+* [Import_INDVIDUAL_Full_Related_IND](samples/Import_INDVIDUAL_Full_Related_IND.json)
 * [Import_ORGANIZATION_Full_related_ORG](samples/import_ORGANIZATION_Full_related_ORG.json)
 
 ----------------------

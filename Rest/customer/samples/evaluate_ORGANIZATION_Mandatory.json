@@ -1,0 +1,13 @@
+{
+	"communicationNumber": "ComNr_002",
+	"customerExtId": "Cust_extt112",
+	"requester": "Financial Institution",
+	"riskManagementCategory": "ORG_PK",
+	"sourceOfRiskLevel": "EVALUATE",
+	"entityType": "ORGANIZATION",
+	"applicationDate": "2012-10-01",
+	"title": "UAB 'Bull",
+    "legalForm": "LTD",
+	"establishmentDate": "2000-05-10",
+	"registrationCountry": "LV"
+}

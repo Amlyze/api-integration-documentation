@@ -1,0 +1,15 @@
+{
+	"communicationNumber": "ComNr_0022",
+	"customerExtId": "Cust_ext1456",
+	"requester": "Financial Institution",
+	"customerStatus": "ACTIVE",
+	"riskManagementCategory": "IND_PK",
+	"sourceOfRiskLevel": "IMPORT",
+	"riskLevel": "NONE",
+	"entityType": "INDIVIDUAL",
+	"applicationDate": "2012-10-01",
+	"firstName": "Geli",
+	"lastName": "Deliono",
+	"birthDate": "2000-05-10",
+	"citizenshipCountry": "LV"
+}

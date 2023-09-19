@@ -4,7 +4,7 @@
     "operationExtId": "Op_0025",
     "operationType": "INTERNAL",
     "riskManagementCategory": "OP_PK",
-    "screeningLists": [
+    "initializeScreeningProcesses": [
         "SANCTIONS",
         "PEP",
         "ADVERSE_MEDIA"

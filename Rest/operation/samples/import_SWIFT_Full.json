@@ -4,7 +4,7 @@
     "operationExtId": "Op_0021",
     "operationType": "SWIFT",
     "riskManagementCategory": "OP_INST",
-    "screeningLists": [
+    "initializeScreeningProcesses": [
         "SANCTIONS",
         "PEP",
         "ADVERSE_MEDIA"
