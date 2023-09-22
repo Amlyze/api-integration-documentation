@@ -13,14 +13,6 @@ Accounts used to identify customers in operationParties
 *api-doc* `GET /v2/api-docs`
 
 
-## Control fields
-
-<b>SourceOfRiskLevel</b> - specify if assessment should be created or risk level provided 
-
-<b>InitializeScreeningProcesses</b> - specify if screening process should be initialized given object 
-
-<b>RiskManagementCategory</b> - specify how object should be handled in Amlyze
-
 
 ## Endpoints
 

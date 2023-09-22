@@ -13,20 +13,24 @@ Customers contain identifying information and KYC data. This section provides in
 
 `POST /amlyze-ws-rest/customer (application/json)`
 
-The request body contains the data that you are sending to the API. The data documntation can be found [*here*](fields.md) 
 
 **Samples**
-* [Evaluate_ORGANIZATION_Mandatory](samples/evaluate_ORGANIZATION_Mandatory.json) 
-* [Import_INDIVIDUAL_Mandatory](samples/import_INDIVIDUAL_Mandatory.json) 
----
-* [Evaluate_ORGANIZATION_Full](samples/evaluate_ORGANIZATION_Full.json)
-* [Import_INDIVIDUAL_Full](samples/import_INDIVIDUAL_Full.json)
+
+[<b>INDIVIDUAL Fields</b>](INDIVIDUAL/INDIVIDUAL_Fields.md)
+
+* [Import_INDIVIDUAL_Mandatory](INDIVIDUAL/INDIVIDUAL_Samples/import_INDIVIDUAL_Mandatory.json) 
+* [Import_INDIVIDUAL_Full](INDIVIDUAL/INDIVIDUAL_Samples/import_INDIVIDUAL_Full.json)
+* [Import_INDIVIDUAL_Full_Related_IND](INDIVIDUAL/INDIVIDUAL_Samples/import_INDIVIDUAL_Full_Related_IND.json)
+
 --- 
-* [Evaluate_ORGANIZATION_Full_Related_ORG_IND](samples/evaluate_ORGANIZATION_Full_Related_ORG_IND.json)
-* [Import_INDIVIDUAL_Full_Related_IND](samples/import_INDIVIDUAL_Full_Related_IND.json)
-* [Import_ORGANIZATION_Full_Related_ORG](samples/import_ORGANIZATION_Full_Related_ORG.json)
+[<b>ORGANIZATION Fields</b>](ORGANIZATION/ORGANIZATION_Fields.md)
+* [Evaluate_ORGANIZATION_Mandatory](ORGANIZATION/ORGANIZATION_Samples/evaluate_ORGANIZATION_Mandatory.json) 
+* [Evaluate_ORGANIZATION_Full](ORGANIZATION/ORGANIZATION_Samples/evaluate_ORGANIZATION_Full.json)
+* [Import_ORGANIZATION_Full_Related_ORG](ORGANIZATION/ORGANIZATION_Samples/import_ORGANIZATION_Full_Related_ORG.json)
+* [Evaluate_ORGANIZATION_Full_Related_ORG/IND](ORGANIZATION/ORGANIZATION_Samples/evaluate_ORGANIZATION_Full_Related_ORG_IND.json)
+
 ----------------------
-Rest/customer/samples/evaluate_ORGANIZATION_Full.json
+
 ## Responses
 
 <table>
@@ -91,7 +95,7 @@ All possible errors can be found [*here*](cust_possible_errors.md)
 
 ## Minimalistic request
 
-The Minimalistic request example below shows the minimum required fields to successfully create a customer. Other fields may be optionally included, as specified in the API documentation which that can be found [*here*](fields.md).
+The Minimalistic request example below shows the minimum required fields to successfully create a customer. Other fields may be optionally included, as specified in the API documentation.
 
 
 

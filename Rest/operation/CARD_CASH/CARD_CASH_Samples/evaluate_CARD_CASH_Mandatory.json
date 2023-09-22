@@ -1,33 +1,32 @@
 {
-    "communicationNumber": "Com_1454",
+    "communicationNumber": "Com_457",
     "requester": "Financial_Institution",
-    "operationExtId": "ExtId_878",
-    "operationType": "CARD_PAYMENT",
-    "cardOperationSubType": "CARD_PURCHASE",
+    "operationExtId": "ExtId_747",
+    "operationType": "CARD_CASH",
+    "cardOperationSubType": "CARD_CASH_WITHDRAWAL",
     "riskManagementCategory": "OP_PK",
     "sourceOfRiskLevel": "EVALUATE",
     "operationDateTime": "2023-09-22T15:09:33+02:00",
     "currency": "EUR",
-    "amount": 999,
-    "financialFlowDirection": "OUTGOING",
-    "description": "invoice 'LT5234599'",
+    "amount": 760,
+    "financialFlowDirection": "INCOMING",
+    "description": "invoice 'LT523460'",
     "listOperationParty": [
         {
             "partyRole": "DEBTOR",
+            "accountNumber": "LT12345678901234567890",
+            "currency": "EUR",
+            "entityType": "ORGANIZATION",
+            "title": "HAMMER"
+        },
+        {
+            "partyRole": "CREDITOR",
             "accountNumber": "LT933520036948858623",
             "currency": "EUR",
             "bic": "UANFLT21XXX",
             "entityType": "INDIVIDUAL",
             "firstName": "Geli",
             "lastName": "Deliono"
-        },
-        {
-            "partyRole": "CREDITOR",
-            "accountNumber": "LT12345678901234567890",
-            "currency": "EUR",
-            "entityType": "ORGANIZATION",
-            "title": "LAMEER"
-            
         }
     ]
 }

@@ -1,5 +1,9 @@
 # Operation
+In any type of operation between two or more parties, one of the parties is always the customer. The other party(ies) are called counterparties. Every possible operation with its own mandatory and possible fields is provided below.
 
+---
+
+# CARD_CASH
 <table>
     <thead>
         <tr>
@@ -36,7 +40,7 @@
             <td ><b> operationType  </td>
             <td > String </td>
             <td > <b> true  </td>
-            <td > SEPA </td>
+            <td > CARD_CASH </td>
             <td> Notifies about what kind of operation was performed </td>
         </tr>
         <tr>
@@ -45,6 +49,57 @@
             <td > <b> true </td>
             <td > EVALUATE </td>
             <td> Source of risk level<br> The value <b>"EVALUATE"</b> should be used for normal business processes - risk assessment will be performed. </br> The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and it's questionnaire will be imported without risk assessment </td>
+        </tr>
+          <tr>
+            <td ><b> operationDateTime </td>
+            <td > Date </td>
+            <td > <b> true </td>
+            <td > 2023-03-16T13:00:00Z </td>
+            <td> The operation date and time show when the operation proceeded with  </td>
+        </tr>
+        <tr>
+            <td ><b> operationStatus </td>
+            <td ><b> ENUM</b><br/>[EXECUTED,<br/>REJECTED] </td>
+            <td > true/false </td>
+            <td > EXECUTED </td>
+            <td> Either operation was successfully executed, or the operation was rejected </br> <b> Mandatory</b> when sourceOfRiskLevel = IMPORT </td> </td>
+        </tr>
+        <tr>
+            <td ><b> riskLevel </td>
+            <td > ENUM</b><br/>[NONE,<br/>LOW,<br/>NEDIUM,<br/>HIGH,<br/>EXTREME] </td>
+            <td > false </td>
+            <td > LOW </td>
+            <td>The risk level of imported operation</td>
+        </tr>
+        <tr>
+            <td ><b> riskManagementCategory </td>
+            <td > String </td>
+            <td > <b> true </td>
+            <td > OP_PK </td>
+            <td> Code of risk management category of object. Risk management category code from classifier can be checked <a href="https://github.com/Amlyze/api-integration-documentation/blob/main/README.md#Classifiers">here</a></td>
+        </tr>
+        <tr>
+            <td ><b> financialFlowDirection </td>
+            <td > FinancialFlowDirectionApi </td>
+            <td > <b> true </td>
+            <td > INCOMING </td>
+            <td> Refers to the movement of money between entities or accounts</br>  direction = <b>INCOMING</b> your customer = <b>CREDITOR</b> 
+            </br> direction = <b>OUTGOING</b> your customer = <b>DEBTOR</b>
+            </td>
+        </tr>
+        <tr>
+            <td ><b> initializeScreeningProcesses </td>
+            <td > List<string> </td>
+            <td > false </td>
+            <td > PEP,</br>ADVERSE_MEDIA,</br> SANCTIONS </td>
+            <td> Defines which lists to check during screening process<br/> ScreeningList code from classifier can be checked <a href="https://github.com/Amlyze/api-integration-documentation/blob/main/README.md#Classifiers">here</a></td>
+        </tr>
+        <tr>
+            <td ><b> cardOperationSubType </td>
+            <td > String </td>
+            <td > true/false </td>
+            <td > CARD_CASH_WITHDRAWAL </td>
+            <td> CardOperationSubType code from classifier can be checked <a href="https://github.com/Amlyze/api-integration-documentation/blob/main/README.md#Classifiers">here</a></td>
         </tr>
         <tr>
             <td ><b> amount </td>
@@ -61,32 +116,11 @@
             <td> amount of money in euro currency </td>
         </tr>
         <tr>
-            <td ><b> cardOperationSubType </td>
-            <td > String </td>
-            <td > true/false </td>
-            <td > CARD_PURCHASE </td>
-            <td> <b>Mandatory</b> when operationType = CARD_PAYMENT or CARD_CASH <br/>   CardOperationSubType code from classifier can be checked <a href="https://github.com/Amlyze/api-integration-documentation/blob/main/README.md#Classifiers">here</a></td>
-        </tr>
-        <tr>
             <td ><b> currency </td>
             <td > String </td>
             <td > <b> true</td>
             <td > EUR </td>
-            <td> Currency code from classifier:*</br> Currency code from classifier can be checked <a href="https://github.com/Amlyze/api-integration-documentation/blob/main/README.md#Classifiers">here</a></td> 
-        </tr>
-        <tr>
-            <td ><b> dateAuthorized </td>
-            <td > Date </td>
-            <td > false </td>
-            <td > 2023-05-10T12:10:11+02:00 </td>
-            <td> Date and Time of operation </td>
-        </tr>
-        <tr>
-            <td ><b> dateSettled </td>
-            <td > Date </td>
-            <td > false </td>
-            <td > 2023-05-101T15:10:11+02:00 </td>
-            <td> Date and Time of operation </td>
+            <td>Currency code from classifier.</br> Currency code from classifier can be checked <a href="https://github.com/Amlyze/api-integration-documentation/blob/main/README.md#Classifiers">here</a></td> 
         </tr>
         <tr>
             <td ><b> description </td>
@@ -118,29 +152,6 @@
             <b>Mandatory</b> when currency =! <b>eur</b></br> <b>Not Used</b> when currency = <b>eur</b></td>
         </tr>
         <tr>
-            <td ><b> fastPayment </td>
-            <td > Boolean </td>
-            <td > false </td>
-            <td > true </td>
-            <td> Identification if payment should be processed immediately<br/> <i>Default value is false </td>
-        </tr>
-        <tr>
-            <td ><b> financialFlowDirection </td>
-            <td > FinancialFlowDirectionApi </td>
-            <td > <b> true </td>
-            <td > INCOMING </td>
-            <td> Refers to the movement of money between entities or accounts</br> when direction = <b>INCOMING</b> your customer = <b>CREDITOR</b> 
-            </br> when direction = <b>OUTGOING</b> your customer = <b>DEBTOR</b>
-            </br> when direction = <b>NULL</b> your customers = <b>CREDITOR</b> and <b>DEBTOR</b> (only during <i>INTERNAL</i> operations</td>
-        </tr>
-        <tr>
-            <td ><b> initializeScreeningProcesses </td>
-            <td > List<string> </td>
-            <td > false </td>
-            <td > PEP,</br>ADVERSE_MEDIA,</br> SANCTIONS </td>
-            <td> Defines which lists to check during screening process<br/> ScreeningList code from classifier can be checked <a href="https://github.com/Amlyze/api-integration-documentation/blob/main/README.md#Classifiers">here</a></td>
-        </tr>
-        <tr>
             <td ><b> ipAddress </td>
             <td > String </td>
             <td > false </td>
@@ -153,13 +164,6 @@
             <td > false </td>
             <td > LT </td>
             <td> Country of an IP address of the operation </td>
-        </tr>
-        <tr>
-            <td ><b><a href="#operation-party">[ListOperationParty]</a> </td>
-            <td > OperationPartyApi </td>
-            <td > <b> true </td>
-            <td > - </td>
-            <td> List of entities that belong to one operation| </td>
         </tr>
         <tr>
             <td ><b> merchantCode </td>
@@ -196,35 +200,6 @@
             <td > Costco </td>
             <td> Name of the seller-mediator </td>
         </tr>
-        <tr>
-            <td ><b> operationDateTime </td>
-            <td > Date </td>
-            <td > <b> true </td>
-            <td > 2023-03-16T13:00:00Z </td>
-            <td> The operation date and time show when the operation proceeded with  </td>
-        </tr>
-        <tr>
-            <td ><b> operationStatus </td>
-            <td ><b> ENUM</b><br/>[EXECUTED,<br/>REJECTED] </td>
-            <td > true/false </td>
-            <td > EXECUTED </td>
-            <td> Either operation was successfully executed, or the operation was rejected </td>
-        </tr>
-        <tr>
-            <td ><b> riskLevel </td>
-            <td > ENUM</b><br/>[NONE,<br/>LOW,<br/>NEDIUM,<br/>HIGH,<br/>EXTREME] </td>
-            <td > <b> true </td>
-            <td > LOW </td>
-            <td>The risk level of imported operation <br/> 
-            <b>Mandatory</b> when sourceOfRiskLEvel = <b>IMPORT</b></br> <b>Not Used</b> when sourceOfRiskLEvel = <b>EVALUATE</b> </td>
-        </tr>
-        <tr>
-            <td ><b> riskManagementCategory </td>
-            <td > String </td>
-            <td > <b> true </td>
-            <td > OP_PK </td>
-            <td> Code of risk management category of object. Risk management category code from classifier can be checked <a href="https://github.com/Amlyze/api-integration-documentation/blob/main/README.md#Classifiers">here</a></td>
-        </tr>
          <tr>
             <td ><b> salesPointCode </td>
             <td > String </td>
@@ -253,11 +228,18 @@
             <td > t_extid_145 </td>
             <td> External identifier of the terminal </td>
         </tr>
+         <tr>
+            <td ><b>[ListOperationParty]</td>
+            <td > OperationPartyApi </td>
+            <td > <b> true </td>
+            <td > - </td>
+            <td> List of entities that belong to one operation| </td>
+        </tr>
     </tbody>
 </table>
 
 
-# Operation Party
+## Operation Party
 
 At least one operation party account must exist in Amlyze (identified by accountNumber, BIC, Currency)
 
@@ -310,7 +292,7 @@ At least one operation party account must exist in Amlyze (identified by account
         </tr>
         <tr>
             <td ><b> partyRole </td>
-            <td >  <b>ENUM</b> <br/>[DEBTOR,<br/>CREDITOR,<br/>ULTIMATE_DEBTOR,<br/>ULTIMATE_CREDITOR]  </td>
+            <td >  <b>ENUM</b> <br/>[DEBTOR,<br/>CREDITOR] </td>
             <td > <b>true </td>
             <td > CREDITOR </td>
             <td> The role of the party in on-going operation </td>

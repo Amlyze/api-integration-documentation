@@ -1,8 +1,8 @@
 {
-    "communicationNumber": "ComNr_0033",
+    "communicationNumber": "ComNr_0022",
     "requester": "Financial_Institution",
-    "operationExtId": "Op_0033",
-    "operationType": "FASTER_PAYMENTS",
+    "operationExtId": "Op_0022",
+    "operationType": "SWIFT",
     "riskManagementCategory": "OP_INST",
     "initializeScreeningProcesses": [
         "SANCTIONS",
@@ -17,8 +17,7 @@
     "amount": 123,
     "euroExchangeRate": 1.16,
     "amountInEuro": 143,
-    "fastPayment": "true",
-    "financialFlowDirection": "OUTGOING",
+    "financialFlowDirection": "INCOMING",
     "description": "invoice '123456'",
     "dateAuthorized": "2023-09-24T15:09:33+02:00" ,
     "dateSettled": "2023-09-24T15:09:33+02:00",
@@ -27,15 +26,6 @@
     "listOperationParty": [
          {
             "partyRole": "DEBTOR",
-            "accountNumber": "LT5630800200000011112",
-            "currency": "EUR",
-            "bic": "BIC22XX",
-            "bankTitle": "TBC",
-            "entityType": "ORGANIZATION",
-            "title": "Komapnele"
-        },
-        {
-            "partyRole": "CREDITOR",
             "accountNumber": "LV11245541148212335",
             "currency": "EUR",
             "bic": "BIC22XX",
@@ -43,6 +33,15 @@
             "entityType": "INDIVIDUAL",
             "firstName": "Antonio",
             "lastName": "Murara"
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LT5630800200000011112",
+            "currency": "EUR",
+            "bic": "BIC22XX",
+            "bankTitle": "TBC",
+            "entityType": "ORGANIZATION",
+            "title": "Komapnele"
         }
        
     ]

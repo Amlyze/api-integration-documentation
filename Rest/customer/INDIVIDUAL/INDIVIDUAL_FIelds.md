@@ -1,4 +1,5 @@
-# Customers fields 
+# INDIVIDUAL Fields 
+
 <table>
 	<thead>
 		<tr>
@@ -77,8 +78,7 @@ PEP,</br> ADVERSE_MEDIA </td>
 		</tr>
 		<tr>
 			<td><b> entityType </td>
-			<td> <b>ENUM</b></br>[INDIVIDUAL, </br>
-ORGANIZATION] </td>
+			<td> <b>ENUM</b></br>[INDIVIDUAL] </td>
 			<td><b> true </td>
 			<td> INDIVIDUAL </td>
 			<td> Whether bussines or individual entity </td>
@@ -128,26 +128,23 @@ ORGANIZATION] </td>
 		<tr>
 			<td><b> birthCountry  </td>
 			<td>String </td>
-			<td> true/false  </td>
+			<td> <b>true  </td>
 			<td> LT </td>
-			<td> Country of birth of individual entity </br><b>Mandatory</b> when entityType = INDIVIDUAL</br>
-<b>Not Used</b>  when entityType = ORGANIZATION</td>
+			<td> Country of birth of individual entity </td>
 		</tr>
 		<tr>
 			<td><b> birthDate   </td>
 			<td> Date  </td>
-			<td> true/false  </td>
+			<td> <b>true  </td>
 			<td> 1995-05-24  </td>
-			<td> Date of birth of individual entity </br><b>Mandatory</b> when entityType = INDIVIDUAL</br>
-<b>Not Used</b>  when entityType = ORGANIZATION </td>
+			<td> Date of birth of individual entity</td>
 		</tr>
 		<tr>
 			<td><b> citizenshipCountry  </td>
 			<td> String </td>
-			<td> true/false </td>
+			<td><b> true </td>
 			<td> LT  </td>
-			<td> Country of citizenship of individual entity </br><b>Mandatory</b> when entityType = INDIVIDUAL</br>
-<b>Not Used</b>  when entityType = ORGANIZATION </td>
+			<td> Country of citizenship of individual entity </td>
 		</tr>
 		<tr>
 			<td><b> closingDate  </td>
@@ -156,49 +153,28 @@ ORGANIZATION] </td>
 			<td> 1995-05-24  </td>
 			<td> Date of closure of all accounts </br><b>Mandatory</b> when customerStatus = CLOSED</br><b>Not Mandatory</b>  when customerStatus = PENDING, ACTIVE, REJECTED, SUSPENDED </td>
 		</tr>
-		<tr>
-			<td><b> companyAssetValue  </td>
-			<td> BigInteger  </td>
-			<td> false  </td>
-			<td> 100000   </td>
-			<td> value of companies assets </td>
-		</tr>
-		<tr>
+        <tr>
 			<td><b> doesCashDominate </td>
 			<td> Boolean  </td>
 			<td> false  </td>
 			<td> true   </td>
 			<td> Indicator for cash being the main income source </td>
 		</tr>
-		<tr>
-			<td><b> establishmentDate  </td>
-			<td> Date  </td>
-			<td> false </td>
-			<td> 2001-02-23  </td>
-			<td> Establishment date for organization type entities </td>
-		</tr>
-		<tr>
+        <tr>
 			<td><b> firstName </td>
 			<td> String </td>
-			<td> true/false </td>
+			<td> <b>true </td>
 			<td> Jose  </td>
-			<td> First name of individual entity </br><b>Mandatory</b> when customerStatus = CLOSED</br><b>Not Mandatory</b>  when customerStatus = PENDING, ACTIVE, REJECTED, SUSPENDED </td>
+			<td> First name of individual entity </td>
 		</tr>
-		<tr>
-			<td><b> GIIN  </td>
-			<td> String </td>
-			<td> false </td>
-			<td> GIN548745122   </td>
-			<td> Global intermediary identification number. </td>
+        <tr>
+			<td ><b> lastName  </td>
+			<td > String </td>
+			<td > <b>true </td>
+			<td > Rodriguez </td>
+			<td> Last name of individual entity  </td>
 		</tr>
-		<tr>
-			<td><b> hasMultiLayerStructure  </td>
-			<td> Boolean  </td>
-			<td> false  </td>
-			<td> false   </td>
-			<td> Check for multi-layer organizational structure </td>
-		</tr>
-		<tr>
+        <tr>
 			<td><b> incomeSourceDescription </td>
 			<td> String </td>
 			<td>false </td>
@@ -254,49 +230,14 @@ ORGANIZATION] </td>
 			<td> false  </td>
 			<td> Whether customer declared ActualAddress  </td>
 		</tr>
-		<tr>
-			<td><b> isAudited  </td>
-			<td> Boolean  </td>
-			<td> false </td>
-			<td> false  </td>
-			<td> Indicator for the business entity being audited </td>
-		</tr>
-		<tr>
-			<td><b> isCorrespondenceAddressDeclared  </td>
-			<td> Boolean  </td>
-			<td> false </td>
-			<td> true  </td>
-			<td> Indicator for correspondence address declaration. </td>
-		</tr>
-		<tr>
-			<td><b> isDirectlyManaged </td>
-			<td> Boolean  </td>
-			<td> false </td>
-			<td> false </td>
-			<td> Check for direct management </td>
-		</tr>
-		<tr>
+        <tr>
 			<td><b> isFamilyPEP  </td>
 			<td> Boolean </td>
 			<td> false </td>
 			<td> false </td>
 			<td> Identification of whether or not a family member of an Individual entity is politically exposed </td>
 		</tr>
-		<tr>
-			<td><b> isFinancialInstitution  </td>
-			<td> Boolean  </td>
-			<td> false </td>
-			<td > false </td>
-			<td> Whether entity is financial institution </td>
-		</tr>
-		<tr>
-			<td><b> isFined  </td>
-			<td> Boolean </td>
-			<td> false </td>
-			<td> false </td>
-			<td> Whether entity has fines </td>
-		</tr>
-		<tr>
+        <tr>
 			<td><b> isInAdverseMedia  </td>
 			<td> Boolean </td>
 			<td> false </td>
@@ -310,21 +251,7 @@ ORGANIZATION] </td>
 			<td > true </td>
 			<td> Indicator for whether or not the individual entity is a legal resident </td>
 		</tr>
-		<tr>
-			<td><b> isLicenseRequired  </td>
-			<td> Boolean  </td>
-			<td> false </td>
-			<td> true  </td>
-			<td> Whether entity activity requires license </td>
-		</tr>
-		<tr>
-			<td ><b> isListed  </td>
-			<td > Boolean </td>
-			<td > false </td>
-			<td > false </td>
-			<td> Indicator for the business entity is listed in stock exchange companies </td>
-		</tr>
-		<tr>
+        <tr>
 			<td ><b> isLitigated  </td>
 			<td > Boolean </td>
 			<td > false </td>
@@ -338,147 +265,28 @@ ORGANIZATION] </td>
 			<td > false </td>
 			<td> Identification for whether or not a person is politically exposed </td>
 		</tr>
-		<tr>
-			<td ><b> isRegulated  </td>
-			<td > Boolean </td>
-			<td > false </td>
-			<td > true </td>
-			<td> Indicator for the business entity being regulated by third-party authorities </td>
-		</tr>
-		<tr>
+        <tr>
 			<td ><b> isSanctioned  </td>
 			<td > Boolean </td>
 			<td > false </td>
 			<td > true </td>
 			<td> Whether entity is sanctioned  </td>
 		</tr>
-		<tr>
-			<td ><b> lastName  </td>
-			<td > String </td>
-			<td > true/false </td>
-			<td > Rodriguez </td>
-			<td> Last name of individual </br><b>Mandatory</b> when entityType = INDIVIDUAL</br><b>Not Used</b>  when entityType = ORGANIZATION </td> </td>
-		</tr>
-		<tr>
-			<td ><b> legalForm  </td>
-			<td > String  </td>
-			<td > <b> true </td>
-			<td > LTD </td>
-			<td> Legal form of organization </br><b>Mandatory</b> when entityType = ORGANIZATION</br><b>Not Used</b>  when entityType = INDIVIDUAL  </td>
-		</tr>
-		<tr>
-			<td ><b> LEI  </td>
-			<td > String </td>
-			<td > false </td>
-			<td > LEI54511548  </td>
-			<td>  LEI stands for Legal Entity Identifier, which is a unique code used to identify legal entities that participate in financial transactions </td>
-		</tr>
-		<tr>
-			<td ><b> licenseDescription  </td>
-			<td > String </td>
-			<td > false </td>
-			<td > Licence No.4012 </td>
-			<td> Business entities license description </td>
-		</tr>
-		<tr>
-			<td ><b>  noMajorShareHolders </td>
-			<td > Boolean </td>
-			<td > false </td>
-			<td > true </td>
-			<td> Check for no major shareholders involved </td>
-		</tr>
-		<tr>
-			<td ><b> numberOfAudits </td>
-			<td > Integer </td>
-			<td > false </td>
-			<td > 6 </td>
-			<td> The number of times a business entity has been audited </td>
-		</tr>
-		<tr>
-			<td ><b> numberOfEmployees </td>
-			<td > Integer </td>
-			<td > false </td>
-			<td > 25 </td>
-			<td> The number of employees in the company </td>
-		</tr>
-		<tr>
-			<td ><b> organizationalStructureDescription </td>
-			<td > String </td>
-			<td > false </td>
-			<td > Hierarchical </td>
-			<td> Description of organization structure </td>
-		</tr>
-		<tr>
-			<td ><b> outgoingPaymentDescription </td>
-			<td > String </td>
-			<td > false </td>
-			<td > Payment for the No.412 agreement </td>
-			<td> Description of outgoing payment operation </td>
-		</tr>
-		<tr>
-			<td ><b> periodsOfAuditsInYears </td>
-			<td > integer </td>
-			<td > false </td>
-			<td > 3 </td>
-			<td> The number of years that are in question for being audited </td>
-		</tr>
-		<tr>
-			<td ><b> periodsOfFiningInYears </td>
-			<td > integer </td>
-			<td > false </td>
-			<td > 3 </td>
-			<td> The number of years that are in question for being fined </td>
-		</tr>
-		<tr>
+        <tr>
 			<td ><b> permanentResidenceCountry </td>
 			<td > String </td>
 			<td > false </td>
 			<td > LT </td>
 			<td> Country of permanent residency of an individual entity </td>
 		</tr>
-		<tr>
-			<td ><b> regionOfActivityDescription </td>
-			<td > String </td>
-			<td > false </td>
-			<td s> Customer service </td>
-			<td> Description of the region for activities </td>
-		</tr>
-		<tr>
-			<td ><b> registrationCountry </td>
-			<td > String </td>
-			<td > true/false </td>
-			<td > LT </td>
-			<td> Country of registration of the organization </br><b>Mandatory</b> when entityType = ORGANIZATION</br><b>Not Mandatory</b>  when entityType = INDIVIDUAL </td>
-		</tr>
-		<tr>
+        <tr>
 			<td ><b> secondCitizenshipCountry </td>
 			<td > String </td>
 			<td > false </td>
 			<td > LT </td>
 			<td> Country of second citizenship of individual entity </td>
 		</tr>
-		<tr>
-			<td ><b> thirdPartyServicesUsed </td>
-			<td > String </td>
-			<td > false </td>
-			<td > true </td>
-			<td> Whether client is using third party services </td>
-		</tr>
-		<tr>
-			<td ><b> thirdPartyServicesUsedDescription </td>
-			<td > String </td>
-			<td > false </td>
-			<td > hosting </td>
-			<td> Description of third party services </td>
-		</tr>
-		<tr>
-			<td ><b> title </td>
-			<td > String </td>
-			<td > true/false </td>
-			<td > Moller </td>
-			<td> Title of organization entity</br> for individual generated (firstName + "  + lastName) </br><b>Mandatory</b> when entityType = ORGANIZATION</br><b>Not Used</b>  when entityType = INDIVIDUAL </td>
-		</tr>
-		<tr>
+        <tr>
 			<td ><b> listPurpose </td>
 			<td > ENUM <br/><b>[BLACK,<br/> WHITE] </td>
 			<td > false </td>
@@ -613,12 +421,6 @@ ORGANIZATION] </td>
 		</tr>
 	</tbody>
 </table>
-
-
-
-# Customers fields
-                                                           
-
 
 ## FieldOfActivityApi
 
@@ -1019,7 +821,7 @@ ORGANIZATION] </td>
 			<td > INDIVIDUAL </td>
 			<td> Entity type describes client status </td>
 	</tr>
-	<<tr>
+	<tr>
 			<td > <b> identityDocumentType </td>
 			<td > <b>ENUM</b></br>[PASSPORT, </br> IDENTITYCARD,</br> RESIDENCEPERMIT,</br> DRIVINGLICENSE,</br> REGISTRATIONCERTIFICATE,</br> OTHER] </td>
 			<td ><b> true </td>
@@ -1444,4 +1246,5 @@ At least one value (<From> or <To>)  must be specified </td>
 	</tr>
 	</tbody>
 </table>
+		
 
