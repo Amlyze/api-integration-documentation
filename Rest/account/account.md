@@ -15,9 +15,10 @@ The request body contains the data that you are sending to the API. The data doc
 
 ## Samples
 
-* [account_active.json](samples/account_active.json)
-* [account_suspended.json](samples/account_suspended.json)
-* [account_closed.json](samples/account_closed.json)
+* [account_Active.json](samples/account_Active.json)
+* [account_Suspended.json](samples/account_Suspended.json)
+* [account_Closed.json](samples/account_Closed.json)
+* [account_Minimalistic.json](samples/account_Minimalistic.json)
 
 ---
 
@@ -90,13 +91,13 @@ The Minimalistic request example below shows the minimum required fields to succ
 
 ```json
 {
-  "communicationNumber": "COM216l{{seq}}",
+  "communicationNumber": "Com_1545",
   "requester": "Financial_Institution",
   "accountExtId": "Ext87887",
   "accountNumber": "LI9208800274335945522",
   "accountStatus": "ACTIVE",
   "bic": "VABAL22",
-  "businessEntityExtId": "ExtId_65657999999345",
+  "businessEntityExtId": "ExtId_6565",
   "currencyCode": "EUR",
   "isOtherFinInstAccount": true,
   "openingDate": "2023-09-05T08:07:34.605Z"

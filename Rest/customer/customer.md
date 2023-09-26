@@ -18,7 +18,7 @@ Customers contain identifying information and KYC data. This section provides in
 
 [<b>INDIVIDUAL Fields</b>](INDIVIDUAL/INDIVIDUAL_Fields.md)
 
-* [Import_INDIVIDUAL_Mandatory](INDIVIDUAL/INDIVIDUAL_Samples/import_INDIVIDUAL_Mandatory.json) 
+* [Evaluate_INDIVIDUAL_Mandatory](INDIVIDUAL/INDIVIDUAL_Samples/evaluate_INDIVIDUAL_Mandatory.json) 
 * [Import_INDIVIDUAL_Full](INDIVIDUAL/INDIVIDUAL_Samples/import_INDIVIDUAL_Full.json)
 * [Import_INDIVIDUAL_Full_Related_IND](INDIVIDUAL/INDIVIDUAL_Samples/import_INDIVIDUAL_Full_Related_IND.json)
 

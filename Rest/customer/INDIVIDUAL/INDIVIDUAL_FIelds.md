@@ -88,7 +88,7 @@ PEP,</br> ADVERSE_MEDIA </td>
 			<td> String </td>
 			<td> false </td>
 			<td> REG74121101 </td>
-			<td>National code or national identification number of individual or organization. If a country does not issue national code, any other unique identifier can be used:</br> <i>* Passport number;</br>* Social security number of person; </br> * A number of taxpayer or registration certificate of the company, etc </br> * A number of taxpayer or registration certificate of the company</td>
+			<td>National code or national identification number of individual. If a country does not issue national code, any other unique identifier can be used:</br> <i>* Passport number;</br>* Social security number of person; </br> * A number of taxpayer or registration certificate of the company, etc </br> * A number of taxpayer or registration certificate of the company</td>
 		</tr>
 		<tr>
 			<td><b> applicationDate </td>
@@ -1158,7 +1158,7 @@ At least one value (<From> or <To>)  must be specified </td>
 			<td > String </td>
 			<td > false </td>
 			<td > 123456789 </td>
-			<td> National code or national identification number of individual or organization. If a country does not issue national code, any other unique identifier can be used </td>
+			<td> National code or national identification number of individual. If a country does not issue national code, any other unique identifier can be used </td>
 	</tr>
 	<tr>
 			<td > <b> regionOfActivityDescription </td>
@@ -1186,7 +1186,7 @@ At least one value (<From> or <To>)  must be specified </td>
 			<td > String </td>
 			<td > true/ false </td>
 			<td > Beko </td>
-			<td> </br><b>Mandatory</b> when entityType = INDIVIDUAL </br><b>Not Used</b>  when entityType = ORGANIZATION </td>
+			<td> </br><b>Mandatory</b> when entityType = ORGANIZATION </br><b>Not Used</b>  when entityType = INDIVIDUAL </td>
 	</tr>
 	<tr>
 			<td > <b> listActivity </td>

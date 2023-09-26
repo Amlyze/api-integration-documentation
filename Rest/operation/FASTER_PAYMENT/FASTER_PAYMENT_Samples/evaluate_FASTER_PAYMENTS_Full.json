@@ -17,11 +17,8 @@
     "amount": 123,
     "euroExchangeRate": 1.16,
     "amountInEuro": 143,
-    "fastPayment": "true",
     "financialFlowDirection": "INCOMING",
     "description": "invoice '123456'",
-    "dateAuthorized": "2023-09-24T15:09:33+02:00" ,
-    "dateSettled": "2023-09-24T15:09:33+02:00",
     "ipAddress": "555.222.4545.144",
     "ipAddressCountry": "LT",
     "listOperationParty": [

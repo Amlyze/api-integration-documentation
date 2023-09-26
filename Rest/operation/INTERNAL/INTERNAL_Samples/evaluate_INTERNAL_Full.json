@@ -19,8 +19,6 @@
     "amountInEuro": 143,
     "financialFlowDirection": "NULL",
     "description": "invoice '123459'",
-    "dateAuthorized": "2023-09-24T15:09:33+02:00" ,
-    "dateSettled": "2023-09-24T15:09:33+02:00",
     "ipAddress": "555.222.4545.144",
     "ipAddressCountry": "LT",
     "listOperationParty": [
