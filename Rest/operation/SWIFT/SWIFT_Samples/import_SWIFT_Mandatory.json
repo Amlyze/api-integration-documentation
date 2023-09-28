@@ -16,7 +16,6 @@
         {
             "partyRole": "DEBTOR",
             "accountNumber": "LV5630800200000018112",
-            // "currency": "EUR",
             "bic": "BICXX22",
             "entityType": "INDIVIDUAL",
             "firstName": "Geli",
@@ -25,7 +24,6 @@
         {
             "partyRole": "CREDITOR",
             "accountNumber": "LT5630800200000745112",
-            // "currency": "EUR",
             "entityType": "ORGANIZATION",
             "title": "Komele"
         }

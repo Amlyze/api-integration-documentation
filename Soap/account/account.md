@@ -15,10 +15,10 @@ The request body contains the data that you are sending to the API. The data doc
 
 ## Samples
 
-* [account_Active.json](samples/account_Active.xml)
-* [account_Suspended.json](samples/account_Suspended.xml)
-* [account_Closed.json](samples/account_Closed.xml)
-* [account_Minimalistic.json](samples/account_Minimalistic.xml)
+* [account_Active](samples/account_Active.xml)
+* [account_Suspended](samples/account_Suspended.xml)
+* [account_Closed](samples/account_Closed.xml)
+* [account_Minimalistic](samples/account_Minimalistic.xml)
 ---
 
 ## Responses
@@ -122,8 +122,7 @@ The Minimalistic request example below shows the minimum required fields to succ
                     <AccountExtId>Extid_004</AccountExtId>
                     <AccountNumber>LT5630800200000011112</AccountNumber>
                     <CurrencyCode>EUR</CurrencyCode>
-                    <isOtherFinInstAccount>true</isOtherFinInstAccount>
-                    <BIC>CRYPXX</BIC>
+                    <isOtherFinInstAccount>false</isOtherFinInstAccount>
                     <OpeningDate>2023-09-16T12:10:11+02:00</OpeningDate>
                     <AccountStatus>ACTIVE</AccountStatus> 
                 </Account>

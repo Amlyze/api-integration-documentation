@@ -14,7 +14,7 @@ Customers contain identifying information and KYC data. This section provides in
 `POST /amlyze-ws-rest/customer (application/json)`
 
 
-**Samples**
+## Samples
 
 [<b>INDIVIDUAL Fields</b>](INDIVIDUAL/INDIVIDUAL_Fields.md)
 

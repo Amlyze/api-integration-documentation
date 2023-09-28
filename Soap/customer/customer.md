@@ -15,7 +15,7 @@ Customers contain identifying information and KYC data. This section provides in
 
 The request body contains the data that you are sending to the API. The data documentation can be found [*here*](fields.md) 
 
-**Samples**
+## Samples
 [<b>INDIVIDUAL Fields</b>](INDIVIDUAL/INDIVIDUAL_Fields.md)
 
 * [Evaluate_INDIVIDUAL_Mandatory](INDIVIDUAL/INDIVIDUAL_Samples/evaluate_INDIVIDUAL_Mandatory.xml) 

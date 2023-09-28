@@ -16,7 +16,6 @@
          {
             "partyRole": "CREDITOR",
             "accountNumber": "LV5630800200000018112",
-            // "currency": "EUR",
             "bic": "BICXX22",
             "entityType": "INDIVIDUAL",
             "firstName": "Geli",
@@ -25,7 +24,6 @@
         {
             "partyRole": "DEBTOR",
             "accountNumber": "LT933520036948858623",
-            // "currency": "EUR",
             "bic": "UANFLT21XXX",
             "entityType": "ORGANIZATION",
             "title": "KryptoCrypto"

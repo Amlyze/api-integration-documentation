@@ -163,7 +163,6 @@ The Minimalistic request example below shows the minimum required fields to succ
          {
             "partyRole": "DEBTOR",
             "accountNumber": "LT5630800200000011112",
-            "currency": "EUR",
             "bic": "BIC22XX",
             "entityType": "ORGANIZATION",
             "title": "Komapnele"
@@ -171,7 +170,6 @@ The Minimalistic request example below shows the minimum required fields to succ
         {
             "partyRole": "CREDITOR",
             "accountNumber": "LV11245541148212335",
-            "currency": "EUR",
             "entityType": "INDIVIDUAL",
             "firstName": "Testio",
             "lastName": "Testonio"
