@@ -77,7 +77,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td > String </td>
             <td > <b> true </td>
             <td > OP_PK </td>
-            <td> Code of risk management category of object. Risk management category code from classifier can be checked <a href="https://github.com/Amlyze/api-integration-documentation/Soap/README.md#Classifiers">here</a></td>
+            <td> Code of risk management category of object. Risk management category code from classifier can be checked <a href="../../README.md">here</a></td>
         </tr>
          <tr>
             <td ><b> FinancialFlowDirection </td>
@@ -93,7 +93,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td > List<string> </td>
             <td > false </td>
             <td > PEP,</br>ADVERSE_MEDIA,</br> SANCTIONS </td>
-            <td> Defines which lists to check during screening process<br/> ScreeningList code from classifier can be checked <a href="https://github.com/Amlyze/api-integration-documentation/Soap/README.md#Classifiers">here</a></td>
+            <td> Defines which lists to check during screening process<br/> ScreeningList code from classifier can be checked <a href="../../README.md">here</a></td>
         </tr>
         <tr>
             <td ><b> Amount </td>
@@ -115,7 +115,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td > String </td>
             <td > <b> true</td>
             <td > EUR </td>
-            <td> Currency code from classifier.</br> Currency code from classifier can be checked <a href="https://github.com/Amlyze/api-integration-documentation/Soap/README.md#Classifiers">here</a></td> 
+            <td> Currency code from classifier.</br> Currency code from classifier can be checked <a href="../../README.md">here</a></td> 
         </tr>
         <tr>
             <td ><b> Description </td>
