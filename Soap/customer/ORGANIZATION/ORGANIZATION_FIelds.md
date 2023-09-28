@@ -1,6 +1,5 @@
 # ORGANIZATION Fields 
 
-
 <table>
 	<thead>
 		<tr>

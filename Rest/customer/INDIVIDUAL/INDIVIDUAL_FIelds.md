@@ -816,7 +816,7 @@ PEP,</br> ADVERSE_MEDIA </td>
 	</tr>
 	<tr>
 			<td > <b> entityType </td>
-			<td > <b>ENUM</b></br> [INDIVIDUAL, </br> ORGANIZATION] </td>
+			<td > <b>ENUM</b></br> [INDIVIDUAL, ORGANIZATION] </td>
 			<td ><b> true </td>
 			<td > INDIVIDUAL </td>
 			<td> Entity type describes client status </td>
@@ -1158,7 +1158,7 @@ At least one value (<From> or <To>)  must be specified </td>
 			<td > String </td>
 			<td > false </td>
 			<td > 123456789 </td>
-			<td> National code or national identification number of individual. If a country does not issue national code, any other unique identifier can be used </td>
+			<td> National code or national identification number of individual or organization. If a country does not issue national code, any other unique identifier can be used </td>
 	</tr>
 	<tr>
 			<td > <b> regionOfActivityDescription </td>
