@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <AMLYZE_OPERATION xmlns="urn:amlyze-services:EvaluateOperationService_v2r0">
+            <CommunicationNumber>ComNr_0060/CommunicationNumber>
+            <Requester>Financial_Institution</Requester>
+            <OperationExtId>Op_0061</OperationExtId>
+            <OperationType>CRYPTO</OperationType>
+            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <InitializeScreeningProcesses>
+                <Process>SANCTIONS</Process>
+                <Process>ADVERSE_MEDIA</Process>
+                <Process>PEP</Process>
+            </InitializeScreeningProcesses>
+            <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
+            <OperationDateTime>2023-09-23T15:09:33+02:00</OperationDateTime>
+            <SourceCountry>LT</SourceCountry>
+            <DestinationCountry>LT</DestinationCountry>
+            <Currency>ETH</Currency>
+            <Amount>14.5</Amount>
+            <EuroExchangeRate>100</EuroExchangeRate>
+            <AmountInEuro>1450</AmountInEuro>
+            <FinancialFlowDirection>INCOMING</FinancialFlowDirection>
+            <Description>invoice 1234527</Description>
+            <IPAddress>555.222.4545.144</IPAddress>
+            <IPAddressCountry>LT</IPAddressCountry>
+            <ListOperationParty>
+                <OperationParty>
+                    <PartyRole>DEBTOR</PartyRole>
+                    <AccountNumber>ldkd445514asdasd555rwerwetthgrh</AccountNumber>
+                    <Currency>EUR</Currency>
+                    <BIC>BICXX22</BIC>
+                    <BankTitle>TBC</BankTitle>
+                    <EntityType>ORGANIZATION</EntityType>
+                    <Title>LONDO</Title>
+                </OperationParty>
+                <OperationParty>
+                    <PartyRole>CREDITOR</PartyRole>
+                    <AccountNumber>aaaz00145C9aa785aaz0C3fDd7197B6777b55b8ebc1BfE758fC7</AccountNumber>
+                    <Currency>ETH_222</Currency>
+                    <BIC>KRYPXX</BIC>
+                    <BankTitle>TBC</BankTitle>
+                    <EntityType>ORGANIZATION</EntityType>
+                    <Title>RyptoKrypto</Title>
+                </OperationParty>
+            </ListOperationParty>
+        </AMLYZE_OPERATION>
+    </soap:Body>
+</soap:Envelope>

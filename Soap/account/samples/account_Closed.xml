@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <AMLYZE_ACCOUNT xmlns="urn:amlyze-services:ImportAccountService_v1r0">
+            <CommunicationNumber>ComNr_1146</CommunicationNumber>
+            <Requester>Financial_Bank</Requester>
+            <ListAccount>
+                <Account>
+                    <BusinessEntityExtId>Cust_1145</BusinessEntityExtId>
+                    <AccountExtId>Extid_003</AccountExtId>
+                    <AccountNumber>LT5630800200000011112</AccountNumber>
+                    <CurrencyCode>EUR</CurrencyCode>
+                    <AccountPurpose>PURPOSE_INVEST</AccountPurpose>
+                    <isOtherFinInstAccount>true</isOtherFinInstAccount>
+                    <BIC>CRYPXX</BIC>
+                    <OpeningDate>2023-09-16T12:10:11+02:00</OpeningDate>
+                    <AccountStatus>CLOSED</AccountStatus>
+                    <ClosingDate>2023-04-20T12:10:11Z</ClosingDate>
+                    <AccountType>IND_COMMERCIAL</AccountType>
+                </Account>
+            </ListAccount>
+        </AMLYZE_ACCOUNT>
+    </soap:Body>
+</soap:Envelope>

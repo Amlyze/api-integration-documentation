@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <AMLYZE_OPERATION xmlns="urn:amlyze-services:EvaluateOperationService_v2r0">
+            <CommunicationNumber>Com_9924</CommunicationNumber>
+            <Requester>Financial_institution</Requester>
+            <OperationType>SEPA</OperationType>
+            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
+            <OperationExtId>Op_009924</OperationExtId>
+            <InitializeScreeningProcesses>
+                <Process>SANCTIONS</Process>
+                <Process>ADVERSE_MEDIA</Process>
+                <Process>PEP</Process>
+            </InitializeScreeningProcesses>
+            <FinancialFlowDirection>INCOMING</FinancialFlowDirection>
+            <OperationDateTime>2023-01-08T09:09:33+02:00</OperationDateTime>
+            <Currency>EUR</Currency>
+            <Amount>2222</Amount>
+            <SourceCountry>LT</SourceCountry>
+            <DestinationCountry>LT</DestinationCountry>
+            <Description>Agreement Nr 1001, 2022-10-01</Description>
+            <IPAddress>555.222.757.222</IPAddress>
+            <IPAddressCountry>LT</IPAddressCountry>
+            <ListOperationParty>
+            <OperationParty>
+                    <PartyRole>ULTIMATE_DEBTOR</PartyRole>
+                    <AccountNumber>LV112455411487874</AccountNumber>
+                    <Currency>EUR</Currency>
+                    <BIC>XBIX22</BIC>
+                    <BankTitle>Finland Bank</BankTitle>
+                    <EntityType>INDIVIDUAL</EntityType>
+                    <FirstName>Luca</FirstName>
+                    <LastName>Murara</LastName>
+                </OperationParty>
+                <OperationParty>
+                    <PartyRole>DEBTOR</PartyRole>
+                    <AccountNumber>LV11245541148212335</AccountNumber>
+                    <Currency>EUR</Currency>
+                    <BIC>BIC22XX</BIC>
+                    <BankTitle>Finland Bank</BankTitle>
+                    <EntityType>INDIVIDUAL</EntityType>
+                    <FirstName>Antonio</FirstName>
+                    <LastName>Murara</LastName>
+                </OperationParty>
+                <OperationParty>
+                    <PartyRole>CREDITOR</PartyRole>
+                    <AccountNumber>LT5630800200000011112</AccountNumber>
+                    <Currency>EUR</Currency>
+                    <BIC>BIC22XX</BIC>
+                    <BankTitle>TBC</BankTitle>
+                    <EntityType>ORGANIZATION</EntityType>
+                    <Title>Komapnele</Title>
+                </OperationParty>
+                <OperationParty>
+                    <PartyRole>ULTIMATE_CREDITOR</PartyRole>
+                    <AccountNumber>LV11245541148212475</AccountNumber>
+                    <Currency>EUR</Currency>
+                    <BIC>XBIX22</BIC>
+                    <BankTitle>TBC</BankTitle>
+                    <EntityType>INDIVIDUAL</EntityType>
+                    <FirstName>Jose</FirstName>
+                    <LastName>Murara</LastName>
+                </OperationParty>
+        </ListOperationParty>
+    </AMLYZE_OPERATION>
+</soap:Body>
+</soap:Envelope>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <AMLYZE_OPERATION xmlns="urn:amlyze-services:EvaluateOperationService_v2r0">
+            <CommunicationNumber>Com_991</CommunicationNumber>
+            <Requester>Financial_institution</Requester>
+            <OperationExtId>Op_00991</OperationExtId>
+            <OperationType>SWIFT</OperationType>
+            <RiskManagementCategory>OP_PK</RiskManagementCategory>
+            <SourceOfRiskLevel>IMPORT</SourceOfRiskLevel>
+            <OperationStatus>EXECUTED</OperationStatus>
+            <RiskLevel>HIGH</RiskLevel>
+            <OperationDateTime>2023-01-08T09:09:33+02:00</OperationDateTime>
+            <FinancialFlowDirection>OUTGOING</FinancialFlowDirection>
+            <Currency>EUR</Currency>
+            <Amount>2254.54</Amount>
+            <Description>Agreement Nr 1005</Description>
+            <ListOperationParty>
+                <OperationParty>
+                    <PartyRole>DEBTOR</PartyRole>
+                    <AccountNumber>LV5630800200000018112</AccountNumber>
+                    <BIC>BICXX22</BIC>
+                    <EntityType>INDIVIDUAL</EntityType>
+                    <FirstName>Geli</FirstName>
+                    <LastName>Deliono</LastName>
+                </OperationParty>
+                <OperationParty>
+                    <PartyRole>CREDITOR</PartyRole>
+                    <AccountNumber>LT5630800200000011512</AccountNumber>
+                    <EntityType>ORGANIZATION</EntityType>
+                    <Title>UAB 'KomKom'</Title>
+                </OperationParty>
+            </ListOperationParty>
+        </AMLYZE_OPERATION>
+    </soap:Body>
+</soap:Envelope>

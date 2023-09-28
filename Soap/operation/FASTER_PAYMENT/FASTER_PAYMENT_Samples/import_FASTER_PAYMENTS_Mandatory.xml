@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <AMLYZE_OPERATION xmlns="urn:amlyze-services:EvaluateOperationService_v2r0">
+            <CommunicationNumber>Com_1125</CommunicationNumber>
+            <Requester>Financial_institution</Requester>
+            <OperationType>FASTER_PAYMENTS</OperationType>
+            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <SourceOfRiskLevel>IMPORT</SourceOfRiskLevel>
+            <OperationStatus>EXECUTED</OperationStatus>
+            <RiskLevel>HIGH</RiskLevel>
+            <OperationExtId>Op_001125</OperationExtId>
+            <FinancialFlowDirection>OUTGOING</FinancialFlowDirection>
+            <OperationDateTime>2023-01-08T09:09:33+02:00</OperationDateTime>
+            <Currency>EUR</Currency>
+            <Amount>2222</Amount>
+            <Description>Agreement Nr 1005, 2022-10-01</Description>
+            <ListOperationParty>
+                <OperationParty>
+                    <PartyRole>DEBTOR</PartyRole>
+                    <AccountNumber>LV5630800200000018112</AccountNumber>
+                    <BIC>BICXX22</BIC>
+                    <BankTitle>Finland Bank</BankTitle>
+                    <EntityType>INDIVIDUAL</EntityType>
+                    <FirstName>Geli</FirstName>
+                    <LastName>Deliono</LastName>
+                </OperationParty>
+                <OperationParty>
+                    <PartyRole>CREDITOR</PartyRole>
+                    <AccountNumber>LT5630800200000011512</AccountNumber>
+                    <EntityType>ORGANIZATION</EntityType>
+                    <Title>Komele</Title>
+                </OperationParty>
+        </ListOperationParty>
+    </AMLYZE_OPERATION>
+</soap:Body>
+</soap:Envelope>

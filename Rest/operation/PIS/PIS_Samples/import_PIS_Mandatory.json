@@ -16,7 +16,7 @@
          {
             "partyRole": "CREDITOR",
             "accountNumber": "LV5630800200000018112",
-            "currency": "EUR",
+            // "currency": "EUR",
             "bic": "BICXX22",
             "entityType": "INDIVIDUAL",
             "firstName": "Geli",

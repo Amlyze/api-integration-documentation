@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <AMLYZE_OPERATION xmlns="urn:amlyze-services:EvaluateOperationService_v2r0">
+            <CommunicationNumber>ComNr_0053</CommunicationNumber>
+            <Requester>Financial_Institution</Requester>
+            <OperationExtId>Op_54</OperationExtId>
+            <OperationType>CRYPTO_EXCHANGE</OperationType>
+            <RiskManagementCategory>OP_PK</RiskManagementCategory>
+            <SourceOfRiskLevel>IMPORT</SourceOfRiskLevel>
+            <OperationStatus>EXECUTED</OperationStatus>
+            <RiskLevel>HIGH</RiskLevel>
+            <OperationDateTime>2023-09-23T15:09:33+02:00</OperationDateTime>
+            <Currency>EUR</Currency>
+            <Amount>760</Amount>
+            <FinancialFlowDirection>OUTGOING</FinancialFlowDirection>
+            <Description>invoice 'LT711142'</Description>
+            <ListOperationParty>
+                <OperationParty>
+                    <PartyRole>DEBTOR</PartyRole>
+                    <AccountNumber>ZZ55ZZ3fDd7197B6777b55b8ebc1BfE7ZZZ</AccountNumber>
+                    <Currency>BTC</Currency>
+                    <BIC>BICXX22</BIC>
+                    <EntityType>ORGANIZATION</EntityType>
+                    <Title>RyptoKrypto</Title>
+                </OperationParty>
+                <OperationParty>
+                    <PartyRole>CREDITOR</PartyRole>
+                    <AccountNumber>aaaz00145C9aa785aaz0C3fDd7197B6777b55b8ebc1BfE758fC7</AccountNumber>
+                    <Currency>ETH_222</Currency>
+                    <BIC>KRYPXX</BIC>
+                    <EntityType>ORGANIZATION</EntityType>
+                    <Title>RyptoKrypto</Title>
+                </OperationParty>
+            </ListOperationParty>
+        </AMLYZE_OPERATION>
+    </soap:Body>
+</soap:Envelope>

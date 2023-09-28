@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <AMLYZE_OPERATION xmlns="urn:amlyze-services:EvaluateOperationService_v2r0">
+            <CommunicationNumber>Com_1122</CommunicationNumber>
+            <Requester>Financial_institution</Requester>
+            <OperationType>FASTER_PAYMENTS</OperationType>
+            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
+            <OperationExtId>Op_001122</OperationExtId>
+            <InitializeScreeningProcesses>
+                <Process>SANCTIONS</Process>
+                <Process>ADVERSE_MEDIA</Process>
+                <Process>PEP</Process>
+            </InitializeScreeningProcesses>
+            <FinancialFlowDirection>INCOMING</FinancialFlowDirection>
+            <OperationDateTime>2023-01-08T09:09:33+02:00</OperationDateTime>
+            <Currency>EUR</Currency>
+            <Amount>2222</Amount>
+            <SourceCountry>LT</SourceCountry>
+            <DestinationCountry>LT</DestinationCountry>
+            <Description>Agreement Nr 1001, 2022-10-01</Description>
+            <IPAddress>555.222.757.222</IPAddress>
+            <IPAddressCountry>LT</IPAddressCountry>
+            <ListOperationParty>
+                <OperationParty>
+                    <PartyRole>DEBTOR</PartyRole>
+                    <AccountNumber>LV11245541148212335</AccountNumber>
+                    <Currency>EUR</Currency>
+                    <BIC>BIC22XX</BIC>
+                    <BankTitle>Finland Bank</BankTitle>
+                    <EntityType>INDIVIDUAL</EntityType>
+                    <FirstName>Antonio</FirstName>
+                    <LastName>Murara</LastName>
+                </OperationParty>
+                <OperationParty>
+                    <PartyRole>CREDITOR</PartyRole>
+                    <AccountNumber>LT5630800200000011112</AccountNumber>
+                    <Currency>EUR</Currency>
+                    <BIC>BIC22XX</BIC>
+                    <BankTitle>TBC</BankTitle>
+                    <EntityType>ORGANIZATION</EntityType>
+                    <Title>Komapnele</Title>
+                </OperationParty>
+        </ListOperationParty>
+    </AMLYZE_OPERATION>
+</soap:Body>
+</soap:Envelope>

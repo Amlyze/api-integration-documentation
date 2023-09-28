@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <AMLYZE_CUSTOMER xmlns="urn:amlyze-services:EvaluateCustomerService_v2r0">
+            <CommunicationNumber>ComNr_4541</CommunicationNumber>
+            <Requester>Bank_system</Requester>
+            <RiskManagementCategory>IND_PK</RiskManagementCategory>
+            <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
+            <InitializeScreeningProcesses>
+                <Process>SANCTIONS</Process>
+                <Process>PEP</Process>
+                <Process>ADVERSE_MEDIA</Process>
+            </InitializeScreeningProcesses>
+            <CustomerExtId>ExtId_65657aa</CustomerExtId>
+            <EntityType>INDIVIDUAL</EntityType>
+            <NationalCode>50007145428</NationalCode>
+            <ListPurpose>BLACK</ListPurpose>
+            <ApplicationDate>2023-01-20</ApplicationDate>
+            <ApprovalDate>2023-01-20</ApprovalDate>
+            <FirstName>Lafora</FirstName>
+            <LastName>Fora</LastName>
+            <BirthDate>1975-09-20</BirthDate>
+            <BirthCountry>LT</BirthCountry>
+            <CitizenshipCountry>JP</CitizenshipCountry>
+            <SecondCitizenshipCountry>RU</SecondCitizenshipCountry>
+            <PermanentResidenceCountry>AT</PermanentResidenceCountry>
+            <IsLegalResident>true</IsLegalResident>
+            <IsFamilyPEP>true</IsFamilyPEP>
+            <IsLitigated>true</IsLitigated>
+            <AmlOfficer>false</AmlOfficer>
+            <IsPEP>true</IsPEP>
+            <IsSanctioned>true</IsSanctioned>
+            <IsInAdverseMedia>true</IsInAdverseMedia>
+            <FieldOfActivity>
+                <Student>
+                    <IsStudent>true</IsStudent>
+                    <HigherSchoolTitle>Vilnius Tech</HigherSchoolTitle>
+                    <HigherSchoolCountry>LT</HigherSchoolCountry>
+                </Student>
+                <Pension>
+                    <IsPensioner>true</IsPensioner>
+                    <PensionCountry>LT</PensionCountry>
+                </Pension>
+                <Employment>
+                    <IsUnemployed>false</IsUnemployed>
+                    <IsSelfEmployed>true</IsSelfEmployed>
+                    <IsEmployee>true</IsEmployee>
+                    <EmployerTitle>JpnBank</EmployerTitle>
+                    <EmploymentPositionDescription>Accountant</EmploymentPositionDescription>
+                </Employment>
+                <Other>
+                    <IsOtherStatus>false</IsOtherStatus>
+                    <OtherStatusDescription></OtherStatusDescription>
+                </Other>
+            </FieldOfActivity>
+            <IsActualAddressDeclared>true</IsActualAddressDeclared>
+            <IsCorrespondenceAddressDeclared>true</IsCorrespondenceAddressDeclared>
+            <ActivityDescription>financial activity</ActivityDescription>
+            <IncomeSourceDescription>Current Job</IncomeSourceDescription>
+            <InitialDepositSource>Current Job</InitialDepositSource>
+            <InitialDepositAmount>50</InitialDepositAmount>
+            <InitialDepositCurrency>EUR</InitialDepositCurrency>
+            <InitialDepositBank>JPBank</InitialDepositBank>
+            <InitialDepositAccount>LT046443885928794486</InitialDepositAccount>
+            <DoesCashDominate>true</DoesCashDominate>
+            <IncomingPaymentDescription>Replenishment of funds</IncomingPaymentDescription>
+            <OutgoingPaymentDescription>Replenishment of funds</OutgoingPaymentDescription>
+            <ListContact>
+                <Contact>
+                    <ContactType>EMAIL</ContactType>
+                    <ContactDetails>labalabalab@gmail.com</ContactDetails>
+                    <UseForCommunication>true</UseForCommunication>
+                </Contact>
+            </ListContact>
+            <ListAddress>
+                <Address>
+                    <AddressType>RESIDENCE</AddressType>
+                    <AddressDetails>Narimaka st 2</AddressDetails>
+                    <Country>JP</Country>
+                    <Region>EU</Region>
+                    <City>Tokyo</City>
+                    <StreetAddress>Narimaka st. 2</StreetAddress>
+                    <ZipCode>04127</ZipCode>
+                    <UseForCorrespondence>true</UseForCorrespondence>
+                </Address>
+            </ListAddress>
+            <ListBusinessEntityDocument>
+                <BusinessEntityDocument>
+                    <EntityType>INDIVIDUAL</EntityType>
+                    <IdentityDocumentType>PASSPORT</IdentityDocumentType>
+                    <DocumentNumber>555123148</DocumentNumber>
+                    <DocumentIssueDate>2020-09-20Z</DocumentIssueDate>
+                    <DocumentExpiryDate>2022-09-20Z</DocumentExpiryDate>
+                    <DocumentIssueCountry>JP</DocumentIssueCountry>
+                    <DocumentIssueAuthority>JP</DocumentIssueAuthority>
+                    <Description>Main identification document</Description>
+                </BusinessEntityDocument>
+            </ListBusinessEntityDocument>
+            <ListAppealReason>
+                <AppealReason>
+                    <AppealReasonType>PURPOSE_GET_LOAN</AppealReasonType>
+                </AppealReason>
+            </ListAppealReason>
+            <ListIntroductionSource>
+                <IntroductionSource>
+                    <IntroductionSource>Internet</IntroductionSource>
+                </IntroductionSource>
+            </ListIntroductionSource>
+            <ListOrderedService>
+                <OrderedService>
+                    <ServiceType>LOANS</ServiceType>
+                </OrderedService>
+            </ListOrderedService>
+            <ListDeclaredTurnover>
+                <DeclaredTurnover>
+                    <TurnoverType>EXPECTED_TOTAL_INCOME</TurnoverType>
+                    <TurnoverRange>MONTHLY</TurnoverRange>
+                    <From>1500</From>
+                    <To>3000</To>
+                </DeclaredTurnover>
+            </ListDeclaredTurnover>
+            <ListIncomeSource>
+                <IncomeSource>
+                    <IncomeSourceType>SALARY</IncomeSourceType>
+                    <IncomePercentage>68</IncomePercentage>
+                    <From>6</From>
+                    <To>26</To>
+                </IncomeSource>
+            </ListIncomeSource>
+            <ListPaymentPurpose>
+                <PaymentPurpose>
+                    <TurnoverDirection>IN</TurnoverDirection>
+                    <PaymentPurposeType>TAXES</PaymentPurposeType>
+                </PaymentPurpose>
+            </ListPaymentPurpose>
+            <ListPaymentCountry>
+                <PaymentCountry>
+                    <Country>IE</Country>
+                    <TurnoverDirection>OUT</TurnoverDirection>
+                </PaymentCountry>
+                <PaymentCountry>
+                    <Country>US</Country>
+                    <TurnoverDirection>OUT</TurnoverDirection>
+                </PaymentCountry>
+                <PaymentCountry>
+                    <Country>US</Country>
+                    <TurnoverDirection>IN</TurnoverDirection>
+                </PaymentCountry>
+                <PaymentCountry>
+                    <Country>IE</Country>
+                    <TurnoverDirection>IN</TurnoverDirection>
+                </PaymentCountry>
+            </ListPaymentCountry>
+            <ListActivity>
+                <Activity>
+                    <ActivityType>7</ActivityType>
+                    <IncomePercentage>48</IncomePercentage>
+                </Activity>
+            </ListActivity>
+            <ListRegionOfActivity>
+                <RegionOfActivity>
+                    <Region>EU</Region>
+                </RegionOfActivity>
+            </ListRegionOfActivity>
+            <ListAdditionalValues>
+                <AdditionalValue>
+                    <Code>isvip</Code>
+                    <Description>Very important customer</Description>
+                    <Datatype>BOOLEAN</Datatype >
+                    <Value>true</Value>
+                </AdditionalValue>
+                <AdditionalValue>
+                    <Code>number_users</Code>
+                    <Description>THe number ofusers</Description>
+                    <Datatype>INTEGER</Datatype >
+                    <Value>500</Value>
+                </AdditionalValue>
+                <AdditionalValue>
+                    <Code>lastonlinesupport</Code>
+                    <Description>Date and time last online support</Description>
+                    <Datatype>TIMESTAMP</Datatype >
+                    <Value>2022-12-11T12:10:11Z</Value>
+                </AdditionalValue>
+                <AdditionalValue>
+                    <Code>cotractenddate</Code>
+                    <Description>Date of contract ending</Description>
+                    <Datatype>DATE</Datatype >
+                    <Value>2024-10-11</Value>
+                </AdditionalValue>
+                <AdditionalValue>
+                    <Code>numberrestrictions</Code>
+                    <Description>Number of restrictions has applyed</Description>
+                    <Datatype>INTEGER</Datatype >
+                    <Value>12</Value>
+                </AdditionalValue>
+                <AdditionalValue>
+                    <Code>predictableincome</Code>
+                    <Description>Predictable customer incoms</Description>
+                    <Datatype>DECIMAL</Datatype >
+                    <Value>1954.12</Value>
+                </AdditionalValue>
+            </ListAdditionalValues>
+        </AMLYZE_CUSTOMER>
+    </soap:Body>
+</soap:Envelope>

@@ -17,7 +17,6 @@
         {
             "partyRole": "DEBTOR",
             "accountNumber": "LT933520036948858623",
-            "currency": "EUR",
             "bic": "UANFLT21XXX",
             "entityType": "INDIVIDUAL",
             "firstName": "Geli",
@@ -26,7 +25,6 @@
         {
             "partyRole": "CREDITOR",
             "accountNumber": "LT12345678901234567890",
-            "currency": "EUR",
             "entityType": "ORGANIZATION",
             "title": "HAMMER"
         }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <AMLYZE_OPERATION xmlns="urn:amlyze-services:EvaluateOperationService_v2r0">
+            <CommunicationNumber>Com_92</CommunicationNumber>
+            <Requester>Financial_institution</Requester>
+            <OperationType>PIS</OperationType>
+            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <SourceOfRiskLevel>IMPORT</SourceOfRiskLevel>
+            <OperationStatus>EXECUTED</OperationStatus>
+            <RiskLevel>MEDIUM</RiskLevel>
+            <OperationExtId>Op_0092</OperationExtId>
+            <OperationDateTime>2023-01-08T09:09:33+02:00</OperationDateTime>
+            <Currency>EUR</Currency>
+            <Amount>2222</Amount>
+            <FinancialFlowDirection>INCOMING</FinancialFlowDirection>
+            <Description>Agreement Nr 1005, 2022-10-01</Description>
+            <ListOperationParty>
+                <OperationParty>
+                    <PartyRole>CREDITOR</PartyRole>
+                    <AccountNumber>LV5630800200000018112</AccountNumber>
+                    <BIC>BICXX22</BIC>
+                    <EntityType>INDIVIDUAL</EntityType>
+                    <FirstName>Geli</FirstName>
+                    <LastName>Deliono</LastName>
+                </OperationParty>
+            </ListOperationParty>
+        </AMLYZE_OPERATION>
+    </soap:Body>
+</soap:Envelope>

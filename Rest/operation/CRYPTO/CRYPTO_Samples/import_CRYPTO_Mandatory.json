@@ -18,7 +18,6 @@
         {
             "partyRole": "DEBTOR",
             "accountNumber": "12345678901234567890",
-            "currency": "EUR",
             "entityType": "UNKNOWN",
             "title": "GONDO"
         },

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <AMLYZE_OPERATION xmlns="urn:amlyze-services:EvaluateOperationService_v2r0">
+            <CommunicationNumber>ComNr_0070</CommunicationNumber>
+            <Requester>Financial_Institution</Requester>
+            <OperationExtId>Op_0070</OperationExtId>
+            <OperationType>CARD_PAYMENT</OperationType>
+            <CardOperationSubType>CARD_PURCHASE</CardOperationSubType>
+            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <InitializeScreeningProcesses>
+                <Process>SANCTIONS</Process>
+                <Process>ADVERSE_MEDIA</Process>
+                <Process>PEP</Process>
+            </InitializeScreeningProcesses>
+            <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
+            <OperationDateTime>2023-09-23T15:09:33+02:00</OperationDateTime>
+            <SourceCountry>LT</SourceCountry>
+            <DestinationCountry>LT</DestinationCountry>
+            <Currency>EUR</Currency>
+            <Amount>200</Amount>
+            <FinancialFlowDirection>OUTGOING</FinancialFlowDirection>
+            <Description>invoice 1234527</Description>
+            <IPAddress>555.222.4545.144</IPAddress>
+            <IPAddressCountry>LT</IPAddressCountry>
+            <TerminalExtId>AOZ_AOC541</TerminalExtId>
+            <TerminalCode>400154</TerminalCode>
+            <MerchantExtId>400155</MerchantExtId>
+            <MerchantDescription>Financial Terminal</MerchantDescription>
+            <MerchantName>XYZ Bank Group - Terminal 1</MerchantName>
+            <MerchantCountryCode>UA</MerchantCountryCode>
+            <SalesPointExtId>AOZ_AOC541ZZ41</SalesPointExtId>
+            <SalesPointCode>87400154</SalesPointCode>
+            <ListOperationParty>
+                <OperationParty>
+                    <PartyRole>DEBTOR</PartyRole>
+                    <AccountNumber>LV5630800200000018112</AccountNumber>
+                    <Currency>EUR</Currency>
+                    <BIC>BICXX22</BIC>
+                    <EntityType>INDIVIDUAL</EntityType>
+                    <FirstName>Geli</FirstName>
+                    <LastName>Deliono</LastName>
+                </OperationParty>
+                <OperationParty>
+                    <PartyRole>CREDITOR</PartyRole>
+                    <AccountNumber>LT5630800200000745112</AccountNumber>
+                    <Currency>EUR</Currency>
+                    <BIC>CIBXX23</BIC>
+                    <EntityType>ORGANIZATION</EntityType>
+                    <Title>Komele</Title>
+                </OperationParty>
+            </ListOperationParty>
+        </AMLYZE_OPERATION>
+    </soap:Body>
+</soap:Envelope>

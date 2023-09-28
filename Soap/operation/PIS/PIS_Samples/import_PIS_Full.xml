@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <AMLYZE_OPERATION xmlns="urn:amlyze-services:EvaluateOperationService_v2r0">
+            <CommunicationNumber>Com_93</CommunicationNumber>
+            <Requester>Financial_institution</Requester>
+            <OperationType>PIS</OperationType>
+            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <OperationExtId>Op_0093</OperationExtId>
+            <SourceOfRiskLevel>IMPORT</SourceOfRiskLevel>
+            <OperationStatus>EXECUTED</OperationStatus>
+            <RiskLevel>LOW</RiskLevel>
+            <InitializeScreeningProcesses>
+                <Process>SANCTIONS</Process>
+                <Process>ADVERSE_MEDIA</Process>
+                <Process>PEP</Process>
+            </InitializeScreeningProcesses>
+            <FinancialFlowDirection>INCOMING</FinancialFlowDirection>
+            <OperationDateTime>2023-01-08T09:09:33+02:00</OperationDateTime>
+            <Currency>EUR</Currency>
+            <Amount>2222</Amount>
+            <SourceCountry>LT</SourceCountry>
+            <DestinationCountry>LT</DestinationCountry>
+            <Description>Agreement Nr 1001, 2022-10-01</Description>
+            <IPAddress>555.222.757.222</IPAddress>
+            <IPAddressCountry>LT</IPAddressCountry>
+            <ListOperationParty>
+                <OperationParty>
+                    <PartyRole>CREDITOR</PartyRole>
+                    <AccountNumber>LV5630800200000018112</AccountNumber>
+                    <Currency>EUR</Currency>
+                    <BIC>BICXX22</BIC>
+                    <BankTitle>TBC</BankTitle>
+                    <EntityType>INDIVIDUAL</EntityType>
+                    <FirstName>Geli</FirstName>
+                    <LastName>Deliono</LastName>
+                </OperationParty>
+                <OperationParty>
+                    <PartyRole>ULTIMATE_CREDITOR</PartyRole>
+                    <AccountNumber>LT93352003694887453</AccountNumber>
+                    <Currency>EUR</Currency>
+                    <BIC>BICXX23</BIC>
+                    <BankTitle>TBC</BankTitle>
+                    <EntityType>ORGANIZATION</EntityType>
+                    <Title>KryptoCrypto</Title>
+                </OperationParty>
+            </ListOperationParty>
+        </AMLYZE_OPERATION>
+    </soap:Body>
+</soap:Envelope>
