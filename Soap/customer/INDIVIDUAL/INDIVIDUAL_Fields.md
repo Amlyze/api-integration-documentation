@@ -3,7 +3,7 @@
 <table>
 	<thead>
 		<tr>
-			<td><b> ield </td>
+			<td><b> field </td>
 			<td><b> type </td>
 			<td><b> mandatory </td>
 			<td><b> example </td>
