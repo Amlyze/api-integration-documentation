@@ -1,4 +1,4 @@
-# INDIVIDUAL Fields 
+# ORGANIZATION Fields 
 
 <table>
 	<thead>
@@ -36,23 +36,15 @@
 			<td><b> RiskManagementCategory </td>
 			<td> String <br>(classifier) </td>
 			<td><b> true </td>
-			<td>IND_PK</td>
+			<td>LEAD_ORG</td>
 			<td>Code of risk management category for evaluation of the object.<br>💡 Possible values here are given just as an example, in the configuration period these could be updated</td>
 		</tr>
 		<tr>
 			<td><b> SourceOfRiskLevel </td>
-			<td> <b>ENUM</b><br>[IMPORT,EVALUATE] </td>
+			<td> <b>ENUM</b><br>[EVALUATE] </td>
 			<td><b> true </td>
 			<td>IMPORT </td>
-			<td>Source of risk level<br> The value <b>"EVALUATE"</b> should be used for normal business processes - risk assessment will be performed. </br> The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and it's questionnaire will be imported without risk assessment</td>
-		</tr>
-		<tr>
-			<td><b> RiskLevel </td>
-			<td> <b>ENUM</b></br>[NONE,</br> LOW,</br> MEDIUM,</br> HIGH,</br> EXTREME]  </td>
-			<td> true/false </b> </td>
-			<td> HIGH </td>
-			<td>The Risk Level of the customer during IMPORT</br><b>Mandatory</b> when sourceOfRiskLevel = IMPORT</br>
-<b>Not Mandatory</b>  when sourceOfRiskLevel = EVALUATE</td>
+			<td>Source of risk level<br> The value <b>"EVALUATE"</b> should be used for normal business processes - risk assessment will be performed</td>
 		</tr>
 		<tr>
 			<td><b> InitializeScreeningProcesses </td>
@@ -63,13 +55,6 @@ PEP,</br> ADVERSE_MEDIA </td>
 			<td>Defines which screening processes to initiate</td>
 		</tr>
 		<tr>
-			<td><b> CustomerStatus</td>
-			<td> <b>ENUM</b></br>[PENDING,</br>ACTIVE,</br> REJECTED,</br> SUSPENDED,</br>CLOSED] </td>
-			<td><b> true </td>
-			<td> ACTIVE</td>
-			<td> Customer status represents the current standing or state of a customer's relationship with a business or organization </br> <i> PENDING - Customer application is received.</br> ACTIVE - Customer is onboarded ( account is provided or customer assessment case is resolved)</br> REJECTED - the customer for some reasons was rejected before opening an account for him. </br>SUSPENDED - Customer's activities for some reasons are restricted </br> CLOSED - Customer's profile is changed to being disabled </td>
-		</tr>
-		<tr>
 			<td><b> CustomerExtId </td>
 			<td> String </td>
 			<td><b> true </td>
@@ -78,17 +63,17 @@ PEP,</br> ADVERSE_MEDIA </td>
 		</tr>
 		<tr>
 			<td><b> EntityType </td>
-			<td> <b>ENUM</b></br>[INDIVIDUAL] </td>
+			<td> <b>ENUM</b></br>[ORGANIZATION] </td>
 			<td><b> true </td>
-			<td> INDIVIDUAL </td>
-			<td> Whether bussines or individual entity </td>
+			<td> ORGANIZATION </td>
+			<td> Type bussines  entity </td>
 		</tr>
 		<tr>
 			<td><b> NationalCode </td>
 			<td> String </td>
 			<td> false </td>
 			<td> REG74121101 </td>
-			<td>National code or national identification number of individual. If a country does not issue national code, any other unique identifier can be used:</br> <i>* Passport number;</br>* Social security number of person; </br> * A number of taxpayer or registration certificate of the company, etc </br> * A number of taxpayer or registration certificate of the company</td>
+			<td>National code or national identification number of organization. If a country does not issue national code, any other unique identifier can be used:</br> <i>* Passport number;</br>* Social security number of person; </br> * A number of taxpayer or registration certificate of the company, etc </br> * A number of taxpayer or registration certificate of the company</td>
 		</tr>
 		<tr>
 			<td><b> ApplicationDate </td>
@@ -111,68 +96,54 @@ PEP,</br> ADVERSE_MEDIA </td>
 			<td> logistics </td>
 			<td> Description of business entities' activities in a restricted region </td>
 		</tr>
-		<tr>
-			<td><b> AmlOfficer</td>
-			<td>Boolean </td>
-			<td><b> false </td>
-			<td> false </td>
-			<td> Indicator for the person being AML officer </td>
-		</tr>
-		<tr>
-			<td><b> AapprovalDate </td>
+        <tr>
+			<td><b> ApprovalDate </td>
 			<td> Date  </td>
 			<td>false  </td>
 			<td> 2000-01-03  </td>
 			<td> Date of application approval </td>
 		</tr>
-		<tr>
-			<td><b> BirthCountry  </td>
-			<td>String </td>
-			<td> <b>true  </td>
-			<td> LT </td>
-			<td> Country of birth of individual entity </td>
-		</tr>
-		<tr>IiI
-			<td><b> BirthDate   </td>
-			<td> Date  </td>
-			<td> <b>true  </td>
-			<td> 1995-05-24  </td>
-			<td> Date of birth of individual entity</td>
-		</tr>
-		<tr>
-			<td><b> CitizenshipCountry  </td>
-			<td> String </td>
-			<td><b> true </td>
-			<td> LT  </td>
-			<td> Country of citizenship of individual entity </td>
-		</tr>
-		<tr>
+        <tr>
 			<td><b> ClosingDate  </td>
 			<td>Date  </td>
 			<td> true/false  </td>
 			<td> 1995-05-24  </td>
 			<td> Date of closure of all accounts </br><b>Mandatory</b> when customerStatus = CLOSED</br><b>Not Mandatory</b>  when customerStatus = PENDING, ACTIVE, REJECTED, SUSPENDED </td>
 		</tr>
-        <tr>
+		<tr>
+			<td><b> CompanyAssetValue  </td>
+			<td> BigInteger  </td>
+			<td> false  </td>
+			<td> 100000   </td>
+			<td> value of companies assets </td>
+		</tr>
+		<tr>
 			<td><b> DoesCashDominate </td>
 			<td> Boolean  </td>
 			<td> false  </td>
 			<td> true   </td>
 			<td> Indicator for cash being the main income source </td>
 		</tr>
-        <tr>
-			<td><b> FirstName </td>
-			<td> String </td>
-			<td> <b>true </td>
-			<td> Jose  </td>
-			<td> First name of individual entity </td>
+		<tr>
+			<td><b> EstablishmentDate  </td>
+			<td> Date  </td>
+			<td> false </td>
+			<td> 2001-02-23  </td>
+			<td> Establishment date for organization type entities </td>
 		</tr>
         <tr>
-			<td ><b> LastName  </td>
-			<td > String </td>
-			<td > <b>true </td>
-			<td > Rodriguez </td>
-			<td> Last name of individual entity  </td>
+			<td><b> GIIN  </td>
+			<td> String </td>
+			<td> false </td>
+			<td> GIN548745122   </td>
+			<td> Global intermediary identification number. </td>
+		</tr>
+		<tr>
+			<td><b> HasMultiLayerStructure  </td>
+			<td> Boolean  </td>
+			<td> false  </td>
+			<td> false   </td>
+			<td> Check for multi-layer organizational structure </td>
 		</tr>
         <tr>
 			<td><b> IncomeSourceDescription </td>
@@ -180,13 +151,6 @@ PEP,</br> ADVERSE_MEDIA </td>
 			<td>false </td>
 			<td> work </td>
 			<td> Description of income source of the entity </td>
-		</tr>
-		<tr>
-			<td><b> IncomingPaymentDescription </td>
-			<td> String </td>
-			<td> false </td>
-			<td> payment for work </td>
-			<td> Description of incoming payment operation </td>
 		</tr>
 		<tr>
 			<td><b> InitialDepositAccount </td>
@@ -223,49 +187,77 @@ PEP,</br> ADVERSE_MEDIA </td>
 			<td> Dividend  </td>
 			<td> Source of initial deposit </td>
 		</tr>
-		<tr>
+        <tr>
 			<td><b> IsActualAddressDeclared </td>
 			<td> Boolean  </td>
 			<td> false </td>
 			<td> false  </td>
 			<td> Whether customer declared ActualAddress  </td>
 		</tr>
+		<tr>
+			<td><b> IsAudited  </td>
+			<td> Boolean  </td>
+			<td> false </td>
+			<td> false  </td>
+			<td> Indicator for the business entity being audited </td>
+		</tr>
+		<tr>
+			<td><b> IsCorrespondenceAddressDeclared  </td>
+			<td> Boolean  </td>
+			<td> false </td>
+			<td> true  </td>
+			<td> Indicator for correspondence address declaration. </td>
+		</tr>
+		<tr>
+			<td><b> IsDirectlyManaged </td>
+			<td> Boolean  </td>
+			<td> false </td>
+			<td> false </td>
+			<td> Check for direct management </td>
+		</tr>
         <tr>
-			<td><b> IsFamilyPEP  </td>
+			<td><b> IsFinancialInstitution  </td>
+			<td> Boolean  </td>
+			<td> false </td>
+			<td > false </td>
+			<td> Whether entity is financial institution </td>
+		</tr>
+		<tr>
+			<td><b> IsFined  </td>
 			<td> Boolean </td>
 			<td> false </td>
 			<td> false </td>
-			<td> Identification of whether or not a family member of an Individual entity is politically exposed </td>
+			<td> Whether entity has fines </td>
 		</tr>
-        <tr>
+		<tr>
 			<td><b> IsInAdverseMedia  </td>
 			<td> Boolean </td>
 			<td> false </td>
 			<td> true </td>
 			<td> An indication of the existence of information for an adverse media entity </td>
 		</tr>
-		<tr>
-			<td><b> IsLegalResident  </td>
+        <tr>
+			<td><b> IsLicenseRequired  </td>
 			<td> Boolean  </td>
 			<td> false </td>
-			<td > true </td>
-			<td> Indicator for whether or not the individual entity is a legal resident </td>
+			<td> true  </td>
+			<td> Whether entity activity requires license </td>
 		</tr>
-        <tr>
-			<td ><b> IsLitigated  </td>
+		<tr>
+			<td ><b> IsListed  </td>
 			<td > Boolean </td>
 			<td > false </td>
 			<td > false </td>
-			<td> Indicator for the person being litigated </td>
-		</tr>
-		<tr>
-			<td ><b> IsPEP  </td>
-			<td > Boolean  </td>
-			<td > false </td>
-			<td > false </td>
-			<td> Identification for whether or not a person is politically exposed </td>
+			<td> Indicator for the business entity is listed in stock exchange companies </td>
 		</tr>
         <tr>
+			<td ><b> IsRegulated  </td>
+			<td > Boolean </td>
+			<td > false </td>
+			<td > true </td>
+			<td> Indicator for the business entity being regulated by third-party authorities </td>
+		</tr>
+		<tr>
 			<td ><b> IsSanctioned  </td>
 			<td > Boolean </td>
 			<td > false </td>
@@ -273,18 +265,102 @@ PEP,</br> ADVERSE_MEDIA </td>
 			<td> Whether entity is sanctioned  </td>
 		</tr>
         <tr>
-			<td ><b> PermanentResidenceCountry </td>
+			<td ><b> LegalForm  </td>
+			<td > String  </td>
+			<td > <b> true </td>
+			<td > LTD </td>
+			<td> Legal form of organization </td>
+		</tr>
+		<tr>
+			<td ><b> LEI  </td>
 			<td > String </td>
 			<td > false </td>
-			<td > LT </td>
-			<td> Country of permanent residency of an individual entity </td>
+			<td > LEI54511548  </td>
+			<td>  LEI stands for Legal Entity Identifier, which is a unique code used to identify legal entities that participate in financial transactions </td>
+		</tr>
+		<tr>
+			<td ><b> LicenseDescription  </td>
+			<td > String </td>
+			<td > false </td>
+			<td > Licence No.4012 </td>
+			<td> Business entities license description </td>
+		</tr>
+		<tr>
+			<td ><b>  NoMajorShareHolders </td>
+			<td > Boolean </td>
+			<td > false </td>
+			<td > true </td>
+			<td> Check for no major shareholders involved </td>
+		</tr>
+		<tr>
+			<td ><b> NumberOfAudits </td>
+			<td > Integer </td>
+			<td > false </td>
+			<td > 6 </td>
+			<td> The number of times a business entity has been audited </td>
+		</tr>
+		<tr>
+			<td ><b> NumberOfEmployees </td>
+			<td > Integer </td>
+			<td > false </td>
+			<td > 25 </td>
+			<td> The number of employees in the company </td>
+		</tr>
+		<tr>
+			<td ><b> OrganizationalStructureDescription </td>
+			<td > String </td>
+			<td > false </td>
+			<td > Hierarchical </td>
+			<td> Description of organization structure </td>
+		</tr>
+		<tr>
+			<td ><b> PeriodsOfAuditsInYears </td>
+			<td > integer </td>
+			<td > false </td>
+			<td > 3 </td>
+			<td> The number of years that are in question for being audited </td>
+		</tr>
+		<tr>
+			<td ><b> PeriodsOfFiningInYears </td>
+			<td > integer </td>
+			<td > false </td>
+			<td > 3 </td>
+			<td> The number of years that are in question for being fined </td>
 		</tr>
         <tr>
-			<td ><b> SecondCitizenshipCountry </td>
+			<td ><b> RegionOfActivityDescription </td>
 			<td > String </td>
 			<td > false </td>
+			<td s> Customer service </td>
+			<td> Description of the region for activities </td>
+		</tr>
+		<tr>
+			<td ><b> RegistrationCountry </td>
+			<td > String </td>
+			<td ><b> true </td>
 			<td > LT </td>
-			<td> Country of second citizenship of individual entity </td>
+			<td> Country of registration of the organization </td>
+		</tr>
+        <tr>
+			<td ><b> ThirdPartyServicesUsed </td>
+			<td > String </td>
+			<td > false </td>
+			<td > true </td>
+			<td> Whether client is using third party services </td>
+		</tr>
+		<tr>
+			<td ><b> ThirdPartyServicesUsedDescription </td>
+			<td > String </td>
+			<td > false </td>
+			<td > hosting </td>
+			<td> Description of third party services </td>
+		</tr>
+		<tr>
+			<td ><b> Title </td>
+			<td > String </td>
+			<td > <b>true</td>
+			<td > Moller </td>
+			<td> Title of organization entity</td>
 		</tr>
         <tr>
 			<td ><b> ListPurpose </td>
@@ -293,14 +369,7 @@ PEP,</br> ADVERSE_MEDIA </td>
 			<td > - </td>
 			<td> Whether entity is black/white listed </td>
 		</tr>
-		<tr>
-			<td ><b> FieldOfActivity </td>
-			<td > FieldOfActivityApi </td>
-			<td > false </td>
-			<td > - </td>
-			<td> Information about the activities </td>
-		</tr>
-		<tr>
+        <tr>
 			<td ><b> ListActivity </td>
 			<td > [ActivityApi] </td>
 			<td > false </td>
@@ -422,192 +491,6 @@ PEP,</br> ADVERSE_MEDIA </td>
 	</tbody>
 </table>
 
-## FieldOfActivityApi
-
-<table>
-	<thead>
-		<tr>
-			<td > <b> field </td>
-			<td > <b> type </td>
-			<td > <b> mandatory </td>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td > <b> Employment </td>
-			<td > FieldEmploymentApi </td>
-			<td > false </td>
-		</tr>
-		<tr>
-			<td > <b> Other </td>
-			<td > FieldOtherApi </td>
-			<td > false </td>
-		</tr>
-		<tr>
-			<td > <b> Pension </td>
-			<td > FieldPensionApi </td>
-			<td > false </td>
-		</tr>
-		<tr>
-			<td > <b> Student </td>
-			<td > FieldStudentApi </td>
-			<td > false </td>
-		</tr>
-	</tbody>
-</table>
-
-**FieldEmploymentApi**
-
-<table>
-	<thead>
-		<tr>
-			<td > <b> field </td>
-			<td > <b> type </td>
-			<td > <b> mandatory </td>
-			<td > <b> example </td>
-			<td > <b> description </td>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td ><b> EmployerTitle </td>
-			<td > String </td>
-			<td > false </td>
-			<td > CompanyB  </td>
-			<td> Title of the individual employer. </td>
-		</tr>
-		<tr>
-			<td ><b> EmploymentPositionDescription </td>
-			<td > String </td>
-			<td > false </td>
-			<td > Software Engineer  </td>
-			<td> Description of the individual employment position.  </td>
-		</tr>
-		<tr>
-			<td ><b> IsEmployee </td>
-			<td > Boolean </td>
-			<td > false </td>
-			<td > false  </td>
-			<td> Indicator for the individual entity being an employee </td>
-		</tr>
-		<tr>
-			<td ><b> IsSelfEmployed </td>
-			<td > Boolean </td>
-			<td > false </td>
-			<td > false  </td>
-			<td> Indicator for the individual entity being self-employed </td>
-		</tr>
-		<tr>
-			<td ><b> IsUnemployed </td>
-			<td > Boolean </td>
-			<td > false </td>
-			<td > false  </td>
-			<td> Indicator for the individual entity being unemployed </td>
-		</tr>
-	</tbody>
-</table>
-
-
-
-**FieldOtherApi**
-
-<table>
-	<thead>
-		<tr>
-			<td > <b> field </td>
-			<td > <b> type </td>
-			<td > <b> mandatory </td>
-			<td > <b> example </td>
-			<td > <b> description </td>
-		</tr>
-	</thead>
-	<tbody>
-	<tr>
-			<td > <b> IsOtherStatus </td>
-			<td > Boolean </td>
-			<td > false </td>
-			<td > true </td>
-			<td> Indicator for other status individual </td>
-	</tr>
-	<tr>
-			<td > <b> OtherStatusDescription </td>
-			<td > String </td>
-			<td > false </td>
-			<td > consultation </td>
-			<td> Description of other status </td>
-	</tr>
-	</tbody>
-</table>
-
-
-**FieldPensionApi**
-
-<table>
-	<thead>
-		<tr>
-			<td > <b> field </td>
-			<td > <b> type </td>
-			<td > <b> mandatory </td>
-			<td > <b> example </td>
-			<td > <b> description </td>
-		</tr>
-	</thead>
-	<tbody>
-	<tr>
-			<td > <b> IsPensioner </td>
-			<td > Boolean </td>
-			<td > false </td>
-			<td > true </td>
-			<td> Indicator for the individual entity being a pensioner </td>
-	</tr>
-	<tr>
-			<td > <b> PensionCountry </td>
-			<td > String </td>
-			<td > false </td>
-			<td > LT </td>
-			<td> The country is responsible for paying an individual's pension </td>
-	</tr>
-	</tbody>
-</table>
-
-
-**FieldStudentApi**
-
-<table>
-	<thead>
-		<tr>
-			<td > <b> field </td>
-			<td > <b> type </td>
-			<td > <b> mandatory </td>
-			<td > <b> example </td>
-			<td > <b> description </td>
-		</tr>
-	</thead>
-	<tbody>
-	<tr>
-			<td > <b> HigherSchoolCountry </td>
-			<td > String </td>
-			<td > false </td>
-			<td > LT </td>
-			<td> Indicator for individual entity being a studen </td>
-	</tr>
-	<tr>
-			<td > <b> HigherSchoolTitle </td>
-			<td > String </td>
-			<td > false </td>
-			<td > Vilniaus Universitetas MIF </td>
-			<td> Title of higher school of the student </td>
-	</tr>
-	<tr>
-			<td > <b> IsStudent </td>
-			<td > Boolean </td>
-			<td > false </td>
-			<td > true </td>
-			<td> Country of higher school of the student </td>
-	</tr>
-	</tbody>
-</table>
-
 ## ActivityApi
 
 <table>
@@ -682,7 +565,6 @@ PEP,</br> ADVERSE_MEDIA </td>
 			<td> value of field </td>
 	</tr>
 	</tbody>
-	
 </table>
 
 
@@ -818,18 +700,17 @@ PEP,</br> ADVERSE_MEDIA </td>
 			<td > <b> EntityType </td>
 			<td > <b>ENUM</b></br> [INDIVIDUAL, </br> ORGANIZATION] </td>
 			<td ><b> true </td>
-			<td > INDIVIDUAL </td>
+			<td > ORGANIZATION </td>
 			<td> Entity type describes client status </td>
 	</tr>
 	<tr>
 			<td > <b> IdentityDocumentType </td>
 			<td > <b>ENUM</b></br>[PASSPORT, </br> IDENTITYCARD,</br> RESIDENCEPERMIT,</br> DRIVINGLICENSE,</br> REGISTRATIONCERTIFICATE,</br> OTHER] </td>
 			<td ><b> true </td>
-			<td > PASSPORT </td>
+			<td > REGISTRATIONCERTIFICATE </td>
 			<td> Identification document </td>
 	</tr>
 	</tbody>
-
 </table>
 
 
@@ -952,7 +833,6 @@ At least one value (<From> or <To>)  must be specified </td>
 	</tr>
 	</tbody>
 </table>
-
 
 ## PaymentPurposeApi
 
@@ -1186,7 +1066,7 @@ At least one value (<From> or <To>)  must be specified </td>
 			<td > String </td>
 			<td > true/ false </td>
 			<td > Beko </td>
-			<td> </br><b>Mandatory</b> when entityType = ORGANIZATION </br><b>Not Used</b>  when entityType = INDIVIDUAL </td>
+			<td> </br><b>Mandatory</b> when entityType = INDIVIDUAL </br><b>Not Used</b>  when entityType = ORGANIZATION </td>
 	</tr>
 	<tr>
 			<td > <b> ListActivity </td>
@@ -1246,5 +1126,3 @@ At least one value (<From> or <To>)  must be specified </td>
 	</tr>
 	</tbody>
 </table>
-		
-

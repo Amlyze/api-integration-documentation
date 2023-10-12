@@ -3,6 +3,22 @@
 An operation is a transaction between two or more parties, where one of the parties is always the customer. The other party(ies) are called counterparties. The documentation provides information on the endpoints, responses, and possible errors for API requests for operations. It also includes minimalistic request examples.
 
 ---
+## EndPoint
+
+**swagger** `GET /swagger-ui/`
+
+**URL structure:** `http://[host][port][path][service]`
+
+**Example:** `http://[host]:8878/amlyze-ws/EvaluateOperationV2Service
+
+---
+
+## Additional Info
+
+* METHOD ` POST ` 
+* Auth required: `NO`
+* Content-Type: `text/xml`
+---
 
 ## EndPoints
 
@@ -93,42 +109,52 @@ An operation is a transaction between two or more parties, where one of the part
 				<td><b>200<b></td>
 				<td style="text-align:center"><i>OK<i></td>
 				<td>
-					<pre><b>{
-  "resultType": "OK"
-}
-				</td>
+      				<pre>
+						<code>
+&lt;ns2:ResultType&gt;REQUEST_ACCEPTED&lt;/ns2:ResultType&gt;
+&lt;ns2:CommunicationStatus&gt;COMPLETED&lt;/ns2:CommunicationStatus&gt;
+						</code>
+    				 </pre>
+   				 </td>
+			</tr>
+            <tr>
+				<td><b>200<b></td>
+				<td style="text-align:center"><i>OK<i></td>
+				<td>
+      				<pre>
+						<code>
+&lt;ns2:ResultType&gt;REQUEST_REJECTED&lt;/ns2:ResultType&gt;
+&lt;ns2:CommunicationStatus&gt;INVALID&lt;/ns2:CommunicationStatus&gt;
+&lt;ns2:ErrorCode&gt;O006.Ot02.Op04&lt;/ns2:ErrorCode&gt;
+&lt;ns2:ErrorDescription&gt;Error: Problem with OperationType.  Problem with OperationParties.  No operation party account related to your institution BIC, or Customer&lt;/ns2:ErrorDescription&gt;
+						</code>
+    				 </pre>
+   				 </td>
 			</tr>
 			<tr>
 				<td><b>400<b></td>
 				<td style="text-align:center"><i>Bad Request<i></td>
-				<td> <pre><b>
-{
-    "errors": [
-        "entityType is mandatory"
-  ]
-}
-				</td>
-			</tr>
-            <tr>
-				<td><b>404<b></td>
-				<td style="text-align:center"><i>Not Found<i></td>
-				<td> <pre><b>
-{
-    "timestamp": "2023-09-08T05:55:12.219+00:00",
-    "status": 404,
-    "error": "Not Found",
-    "path": "/amlyze-ws-rest/operationn"
-}
-				</td>
+				<td>
+      				<pre>
+						<code>
+                        -
+						</code>
+    				 </pre>
+   				 </td>
 			</tr>
 			<tr>
 				<td><b>500<b></td>
 				<td style="text-align:center"><i>Internal Server Error<i></td>
-				<td> <pre><b>{
-    "resultType": "ERROR",
-    "errorDescription": "duplicate communicationNumber"
-}
-				</td>
+				<td>
+      				<pre>
+						<code>
+&lt;faultstring xml:lang=&quot;en&quot;&gt;Validation error&lt;/faultstring&gt;
+&lt;detail&gt;
+&lt;spring-ws:ValidationError xmlns:spring-ws=&quot;http://springframework.org/spring-ws&quot;&gt;cvc-complex-type.2.4.b: The content of element 'OperationParty' is not complete. One of '{&quot;urn:amlyze-services:EvaluateOperationService_v2r0&quot;:ELEMENT}' is expected.&lt;/spring-ws:ValidationError&gt;
+&lt;/detail&gt;
+						</code>
+    				 </pre>
+   				 </td>
 			</tr>
 		</tbody>
 </table>

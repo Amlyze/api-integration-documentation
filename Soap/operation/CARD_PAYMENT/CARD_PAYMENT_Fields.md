@@ -2,6 +2,20 @@
 In any type of operation between two or more parties, one of the parties is always the customer. The other party(ies) are called counterparties. Every possible operation with its own mandatory and possible fields is provided below.
 
 ---
+## CARD_PAYMENT conditions
+* CARD_PAYMENT operations can have up to two <b>"OperationParty" </b> members, where one of them will always be your customer
+* During `OUTGOING` financial flow operation→ your Customer 's <b>"PartyRole"</b> can be:
+    * DEBTOR
+* During `INCOMING` financial flow operation→ your Customer 's <b>"PartyRole"</b> can be:
+    * CREDITOR
+* Field <b>"Action"</b> with value `UPDATE` → is not possible for operations
+* Field <b>"CardOperationSubType" </b> becomes Mandatory for CARD operations
+
+## CARD_PAYMENT WorkFlow
+* Creating a new operation → value for a field <b>"SourceOfRiskLevel"</b> is `EVALUATE`
+* An operation that took place in the past → value for a field <b>"SourceOfRiskLevel"</b> is `IMPORT`
+* If during `EVALUATE`, case was generated → Human decision is required
+---
 
 # CARD_PAYMENT
 <table>

@@ -26,22 +26,23 @@
     "listOperationParty": [
          {
             "partyRole": "DEBTOR",
-            "accountNumber": "LT5630800200000011112",
+            "accountNumber": "LV6630800200000018155",
             "currency": "EUR",
-            "bic": "BIC22XX",
+            "bic": "UANFLT21XXX",
             "bankTitle": "TBC",
-            "entityType": "ORGANIZATION",
-            "title": "Komapnele"
+            "entityType": "INDIVIDUAL",
+            "firstName": "Geli",
+            "lastName": "Deliono"
         },
         {
             "partyRole": "CREDITOR",
-            "accountNumber": "LI6708800888347331888",
+            "accountNumber": "LV7730800200000018166",
             "currency": "EUR",
-            "bic": "VABAL22",
+            "bic": "UANFLT21XXX",
             "bankTitle": "TBC",
             "entityType": "INDIVIDUAL",
-            "firstName": "Amfora",
-            "lastName": "Fora"
+            "firstName": "Geli",
+            "lastName": "Deliono"
         }
        
     ]

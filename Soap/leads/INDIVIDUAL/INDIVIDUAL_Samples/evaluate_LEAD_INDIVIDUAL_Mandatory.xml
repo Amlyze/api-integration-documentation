@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <AMLYZE_CUSTOMER xmlns="urn:amlyze-services:EvaluateCustomerService_v2r0">
+            <CommunicationNumber>ComNr_45{{seq}}</CommunicationNumber>
+            <Requester>Bank_system</Requester>
+            <RiskManagementCategory>LEAD_IND</RiskManagementCategory>
+            <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
+            <CustomerExtId>Lead_ExtaId_TESTaa</CustomerExtId>
+            <EntityType>INDIVIDUAL</EntityType>
+            <ApplicationDate>2023-01-20</ApplicationDate>
+            <FirstName>Larosa</FirstName>
+            <LastName>Rosa</LastName>
+            <BirthDate>1975-09-20</BirthDate>
+            <CitizenshipCountry>JP</CitizenshipCountry>
+            </AMLYZE_CUSTOMER>
+    </soap:Body>
+</soap:Envelope>

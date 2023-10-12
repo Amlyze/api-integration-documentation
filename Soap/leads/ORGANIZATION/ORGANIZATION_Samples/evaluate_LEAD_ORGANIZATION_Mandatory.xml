@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <AMLYZE_CUSTOMER xmlns="urn:amlyze-services:EvaluateCustomerService_v2r0">
+            <CommunicationNumber>ComNr_00221</CommunicationNumber>
+            <Requester>Financial_Institution</Requester>
+            <RiskManagementCategory>LEAD_ORG</RiskManagementCategory>
+            <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
+            <CustomerExtId>Lead_extid01</CustomerExtId>
+            <EntityType>ORGANIZATION</EntityType>
+            <ApplicationDate>2023-05-12</ApplicationDate>
+            <Title>Lead_Uab'Roxy'</Title>
+            <RegistrationCountry>LT</RegistrationCountry>
+            <LegalForm>LTD</LegalForm>
+        </AMLYZE_CUSTOMER>
+    </soap:Body>
+</soap:Envelope>

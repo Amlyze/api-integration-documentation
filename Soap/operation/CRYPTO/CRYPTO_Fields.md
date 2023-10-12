@@ -2,6 +2,21 @@
 In any type of operation between two or more parties, one of the parties is always the customer. The other party(ies) are called counterparties. Every possible operation with its own mandatory and possible fields is provided below.
 
 ---
+## CRYPTO conditions
+* CRYPTO operations can have up to two <b>"OperationParty" </b> members, where one of them will always be your customer
+* During `OUTGOING` financial flow operation→ your Customer 's <b>"PartyRole"</b> can be:
+    * DEBTOR
+* During `INCOMING` financial flow operation→ your Customer 's <b>"PartyRole"</b> can be:
+    * CREDITOR
+* Field <b>"Action"</b> with value `UPDATE` → is not possible for operations
+* CRYPTO Operation Currency =! `EUR` → two mandatory fields appear:
+    * <b>"EuroExchangeRate"</b> and <b>"AmountInEuro"</b>
+
+## CRYPTO WorkFlow
+* Creating a new operation → value for a field <b>"SourceOfRiskLevel"</b> is `EVALUATE`
+* An operation that took place in the past → value for a field <b>"SourceOfRiskLevel"</b> is `IMPORT`
+* If during `EVALUATE`, case was generated → Human decision is required
+---
 
 # CRYPTO
 

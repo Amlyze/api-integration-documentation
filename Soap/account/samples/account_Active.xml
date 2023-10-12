@@ -11,8 +11,7 @@
                     <AccountNumber>LT5630800200000011112</AccountNumber>
                     <CurrencyCode>EUR</CurrencyCode>
                     <AccountPurpose>PURPOSE_INVEST</AccountPurpose>
-                    <isOtherFinInstAccount>true</isOtherFinInstAccount>
-                    <BIC>CRYPXX</BIC>
+                    <isOtherFinInstAccount>false</isOtherFinInstAccount>
                     <OpeningDate>2023-09-16T12:10:11+02:00</OpeningDate>
                     <AccountStatus>ACTIVE</AccountStatus>
                     <AccountType>IND_COMMERCIAL</AccountType>

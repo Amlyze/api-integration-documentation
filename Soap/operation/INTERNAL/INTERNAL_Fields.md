@@ -2,7 +2,55 @@
 In any type of operation between two or more parties, one of the parties is always the customer. The other party(ies) are called counterparties. Every possible operation with its own mandatory and possible fields is provided below.
 
 ---
+## INTERNAL conditions
+* INTERNAL operations can have two <b>"OperationParty" </b> members, where  where both of them will be your customers
+* Field <b>"FinancialFlowDirection"</b> value → `NULL`
+* Field <b>"Action"</b> with value `UPDATE` → is not possible for operations
+* INTERNAL operation happens between:
+    * Customer accounts within the same financial institution;
+    * Inter-customer transactions within the same financial institution
+* The system recognizes that customers belong to the same Financial institution:
+    * By provided fields  <b>"isOtherFinInstAccount"</b> during account creation:
+        * if values = false → it indicates that accounts do not belong to different financial institutions
+* Evaluating INTERNAL operation always creates two assessments and/or two cases
+    * For these two assessments/cases, one callback is received
+    * If these cases were resolved by human → one callback is received
+---
 
+`Internal Case Decision and Final Callback Examples`
+<table>
+    <thead>
+        <tr>
+            <td ><b> Case_1- Decision </td>
+            <td ><b> Callback </td>
+            <td ><b> Case_2- Decision </td>
+        </tr>
+    <tbody>
+        <tr>
+            <td > ACCEPTED </td>
+            <td ><b> ACCEPTED </td>
+            <td > ACCEPTED </td>
+        </tr>
+        <tr>
+            <td > ACCEPTED </td>
+            <td ><b> REJECTED </td>
+            <td > REJECTED </td>
+        </tr>
+        <tr>
+            <td > REJECTED </td>
+            <td ><b> REJECTED </td>
+            <td > REJECTED </td>
+        </tr>
+    </tbody>
+</table>
+
+---
+
+## INTERNAL WorkFlow
+* Creating a new operation → value for a field <b>"SourceOfRiskLevel"</b> is `EVALUATE`
+* An operation that took place in the past → value for a field <b>"SourceOfRiskLevel"</b> is `IMPORT`
+* If during `EVALUATE`, case was generated → Human decision is required
+---
 # INTERNAL
 <table>
     <thead>

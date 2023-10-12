@@ -894,24 +894,24 @@ At least one value (<From> or <To>)  must be specified </td>
 	</thead>
 	<tbody>
 	<tr>
-			<td > <b> Amount </td>
+			<td > <b> Value </td>
 			<td > BigDecimal </td>
 			<td > false </td>
 			<td > 100000 </td>
 			<td> Collected monetary amount </td>
 	</tr>
 	<tr>
-			<td > <b> Code </td>
+			<td > <b> SourceOfWealthCode </td>
 			<td > String </td>
 			<td > true </td>
-			<td > INHERITANCE </td>
+			<td > 6 </td>
 			<td> source of wealth type classifier </td>
 	</tr>
 	<tr>
 			<td > <b> Comment </td>
 			<td > String </td>
 			<td > false </td>
-			<td >  </td>
+			<td > Wealth received from Inheritance </td>
 			<td> Additional details about the source of wealth </td>
 	</tr>
 	</tbody>

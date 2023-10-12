@@ -4,9 +4,9 @@
     "operationExtId": "Op_0018",
     "operationType": "INTERNAL",
     "riskManagementCategory": "OP_INST",
-    "sourceOfRiskLevel": "IMPORT",
+   "sourceOfRiskLevel": "IMPORT",
     "operationStatus":"EXECUTED",
-    "riskLevel": "LOW",
+    "riskLevel": "HIGH",
     "operationDateTime": "2023-09-22T15:09:33+02:00",
     "currency": "EUR",
     "amount": 200,
@@ -14,19 +14,22 @@
     "description": "invoice '123456'",
     "listOperationParty": [
          {
-            "partyRole": "CREDITOR",
-            "accountNumber": "LV5630800200000018112",
-            "bic": "BICXX22",
+            "partyRole": "DEBTOR",
+            "accountNumber": "LV6630800200000018155",
+            "currency": "EUR",
+            "bic": "UANFLT21XXX",
             "entityType": "INDIVIDUAL",
             "firstName": "Geli",
             "lastName": "Deliono"
         },
         {
-            "partyRole": "DEBTOR",
-            "accountNumber": "LT933520036948858623",
+            "partyRole": "CREDITOR",
+           "accountNumber": "LV7730800200000018166",
+            "currency": "EUR",
             "bic": "UANFLT21XXX",
-            "entityType": "ORGANIZATION",
-            "title": "KryptoCrypto"
+            "entityType": "INDIVIDUAL",
+            "firstName": "Geli",
+            "lastName": "Deliono"
         }
        
     ]

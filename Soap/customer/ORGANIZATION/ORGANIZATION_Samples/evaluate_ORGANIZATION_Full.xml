@@ -165,6 +165,13 @@
                     <To>26</To>
                 </IncomeSource>
             </ListIncomeSource>
+            <ListSourceOfWealth>
+                <SourceOfWealth>
+                    <SourceOfWealthCode>6</SourceOfWealthCode>
+                    <Value>1250</Value>
+                    <Comment>Wealth received from Inheritance</Comment>
+                </SourceOfWealth>
+            </ListSourceOfWealth>
             <ListPaymentPurpose>
                 <PaymentPurpose>
                     <TurnoverDirection>OUT</TurnoverDirection>

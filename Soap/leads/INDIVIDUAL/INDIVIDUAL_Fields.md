@@ -1,5 +1,4 @@
 # INDIVIDUAL Fields 
-
 <table>
 	<thead>
 		<tr>

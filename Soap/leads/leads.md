@@ -1,9 +1,5 @@
-# Create customer
-
-Customers contain identifying information and KYC data. This section provides information on how to generate a customer using the POST method. The documentation covers all aspects of API requests, including endpoints, responses, possible errors, and a minimalistic request example.
-
-------------
-
+# Create a Lead
+---
 
 ## EndPoint
 
@@ -22,35 +18,33 @@ Customers contain identifying information and KYC data. This section provides in
 * Content-Type: `text/xml`
 ---
 
-## Customer conditions
-* Providing only Mandatory fields → Minimalistic Customer profile is created
-* During <b>IMPORT</b> two additional fields become mandatory:
-	* <b>"CustomerStatus" </b> and <b>"RiskLevel"</b>
-
-## Customer WorkFlow
-* Creating a new customer → <b>"SourceOfRiskLevel"</b> = `EVALUATE`
-* Creating a customer with historical data → <b>"SourceOfRiskLevel"</b> = `IMPORT`
-* Adding additional information for already created Customer → <b>"Action"</b> = `UPDATE`
-	*With each API call, all newly submitted data for existing customer will be overwritten.
-* After Customer is created → Add an Account for him  (More about Accounts → [<b>Here</b>](../account/account.md))
+## Lead conditions
+* Leads are NOT customers yet
+* For a Lead, only <b>"SourceOfRiskLevel"</b> = `EVALUATE` is possible
+* <b>"RiskManagementCategory"</b> is specified with a prefix or suffix LEAD_ (example - `LEAD_IND / LEAD_ORG`)
+* The following fields must be completed in the same manner as for a [<b>Customer</b>](../customer/customer.md.md)
+* Lead status will always stay `PENDING` regardless of the decision made
 ---
 
-The request body contains the data that you are sending to the API. The data documentation can be found [*here*](fields.md) 
+## Lead WorkFlow
+* For a Lead to become a Customer → an <b>"Action"</b> = `UPDATE` must take place
+* During `UPDATE` → <b>"RiskManagementCategory"</b> must be changed into Customer's one
+* With the <b>"UPDATE"</b>, additional information should be provided including an important one → <b>"ApprovalDate"</b>
+* After successful <b>"UPDATE"</b> → LEAD becomes a Customer and casual Customer Workflow takes place.
+ ( More about the Customer → [<b>Here</b>](../customer/customer.md))
+
+ ---
+ ![Alt text](image.png)
 
 ## Samples
-[<b>INDIVIDUAL Fields</b>](INDIVIDUAL/INDIVIDUAL_Fields.md)
+[<b>LEAD_INDIVIDUAL Fields</b>](INDIVIDUAL/INDIVIDUAL_Fields.md)
 
-* [Evaluate_INDIVIDUAL_Mandatory](INDIVIDUAL/INDIVIDUAL_Samples/evaluate_INDIVIDUAL_Mandatory.xml) 
-* [Evaluate_INDIVIDUAL_Full](INDIVIDUAL/INDIVIDUAL_Samples/evaluate_INDIVIDUAL_Full.xml)
-* [Import_INDIVIDUAL_Full_Related_IND](INDIVIDUAL/INDIVIDUAL_Samples/import_INDIVIDUAL_Full_Related_IND.xml)
+* [Evaluate_LEAD_INDIVIDUAL_Mandatory](INDIVIDUAL/INDIVIDUAL_Samples/evaluate_LEAD_INDIVIDUAL_Mandatory.xml) 
 
---- 
-[<b>ORGANIZATION Fields</b>](ORGANIZATION\ORGANIZATION_Fields.md) 
-* [Evaluate_ORGANIZATION_Mandatory](ORGANIZATION/ORGANIZATION_Samples/evaluate_ORGANIZATION_Mandatory.xml) 
-* [Evaluate_ORGANIZATION_Full](ORGANIZATION/ORGANIZATION_Samples/evaluate_ORGANIZATION_Full.xml)
-* [Import_ORGANIZATION_Full_Related_IND](ORGANIZATION/ORGANIZATION_Samples/import_ORGANIZATION_Full_Related_IND.xml)
-* [Import_ORGANIZATION_Full_Related_ORG/IND](ORGANIZATION/ORGANIZATION_Samples/import_ORGANIZATION_Full_Related_ORG_IND.xml)
-----------------------
+[<b>LEAD_ORGANIZATION Fields</b>](ORGANIZATION\ORGANIZATION_Fields.md) 
+* [Evaluate_LEAD_ORGANIZATION_Mandatory](ORGANIZATION/ORGANIZATION_Samples/evaluate_LEAD_ORGANIZATION_Mandatory.xml) 
+
+---
 
 ## Expected Response from your system
 
@@ -68,14 +62,14 @@ The request body contains the data that you are sending to the API. The data doc
 		<tbody>
 			<tr>
 				<td><b>ResultType<b></td>
-				<td style="text-align:center">String</br>Enum:</br>
-[REQUEST_ACCEPTED]</td>
+				<td style="text-align:center"><i> String</br>Enum:</br>
+[REQUEST_ACCEPTED]<i></td>
 				<td>Result type returns the answer that the action was successful</td>
 			</tr>
 			<tr>
 				<td><b>CommunicationStatus<b></td>
-				<td style="text-align:center">String</br>Enum:</br>
-[COMPLETED]</td>
+				<td style="text-align:center"><i>String</br>Enum:</br>
+[COMPLETED]<i></td>
 				<td>Indicates that Communication was successful</td>
 		</tbody>
 </table>
@@ -136,12 +130,13 @@ The request body contains the data that you are sending to the API. The data doc
             <ns2:ErrorDescription>Bad Request</ns2:ErrorDescription>
         </ns2:Result>
 ```
+
 ------
 
 
 ## Minimalistic request
 
-The Minimalistic request example below shows the minimum required fields to successfully create a customer. Other fields may be optionally included, as specified in the API documentation which that can be found [*here*](fields.md).
+The Minimalistic request example below shows the minimum required fields to successfully create a lead. Other fields may be optionally included, as specified in the API documentation.
 
 
 
@@ -150,17 +145,18 @@ The Minimalistic request example below shows the minimum required fields to succ
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
     <soap:Body>
         <AMLYZE_CUSTOMER xmlns="urn:amlyze-services:EvaluateCustomerService_v2r0">
-            <CommunicationNumber>ComNr_001</CommunicationNumber>
-            <Requester>Bank system</Requester>
-            <RiskManagementCategory>ORG_PK</RiskManagementCategory>
+            <CommunicationNumber>ComNr_45</CommunicationNumber>
+            <Requester>Bank_system</Requester>
+            <RiskManagementCategory>LEAD_IND</RiskManagementCategory>
             <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
-            <CustomerExtId>Cust_4541</CustomerExtId>
-            <EntityType>ORGANIZATION</EntityType>
-            <ApplicationDate>2023-09-15</ApplicationDate>
-            <Title>BitBit</Title>
-            <RegistrationCountry>LT</RegistrationCountry>
-            <LegalForm>COOPERATIVE</LegalForm>
-        </AMLYZE_CUSTOMER>
+            <CustomerExtId>Lead_ExtaIdaa</CustomerExtId>
+            <EntityType>INDIVIDUAL</EntityType>
+            <ApplicationDate>2023-01-20</ApplicationDate>
+            <FirstName>Larosa</FirstName>
+            <LastName>Rosa</LastName>
+            <BirthDate>1975-09-20</BirthDate>
+            <CitizenshipCountry>JP</CitizenshipCountry>
+            </AMLYZE_CUSTOMER>
     </soap:Body>
 </soap:Envelope>
 ```
