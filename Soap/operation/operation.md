@@ -94,78 +94,100 @@ An operation is a transaction between two or more parties, where one of the part
 ---
 
 
-## Responses
+## Expected Response from your system
+
+**<span style="color: green;">"Accepted request"</span>**
+
+`If request was sent correctly, the <Result> displays  <ResultType> together with <CommunicationStatus>`
 
 <table>
 		<thead>
 			<tr>
-				<td style="text-align:center"><b>Code<b></td>
-				<td style="text-align:center"><b>Status<b></td>
-				<td style="text-align:center"><b>Response<b></td>
+				<td ><b>XML TAG<b></td>
+				<td ><b>TYPE<b></td>
+				<td ><b>DESCRIPTION<b></td>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td><b>200<b></td>
-				<td style="text-align:center"><i>OK<i></td>
-				<td>
-      				<pre>
-						<code>
-&lt;ns2:ResultType&gt;REQUEST_ACCEPTED&lt;/ns2:ResultType&gt;
-&lt;ns2:CommunicationStatus&gt;COMPLETED&lt;/ns2:CommunicationStatus&gt;
-						</code>
-    				 </pre>
-   				 </td>
-			</tr>
-            <tr>
-				<td><b>200<b></td>
-				<td style="text-align:center"><i>OK<i></td>
-				<td>
-      				<pre>
-						<code>
-&lt;ns2:ResultType&gt;REQUEST_REJECTED&lt;/ns2:ResultType&gt;
-&lt;ns2:CommunicationStatus&gt;INVALID&lt;/ns2:CommunicationStatus&gt;
-&lt;ns2:ErrorCode&gt;O006.Ot02.Op04&lt;/ns2:ErrorCode&gt;
-&lt;ns2:ErrorDescription&gt;Error: Problem with OperationType.  Problem with OperationParties.  No operation party account related to your institution BIC, or Customer&lt;/ns2:ErrorDescription&gt;
-						</code>
-    				 </pre>
-   				 </td>
+				<td><b>ResultType<b></td>
+				<td style="text-align:center">String</br>Enum:</br>
+[REQUEST_ACCEPTED]</td>
+				<td>Result type returns the answer that the action was successful</td>
 			</tr>
 			<tr>
-				<td><b>400<b></td>
-				<td style="text-align:center"><i>Bad Request<i></td>
-				<td>
-      				<pre>
-						<code>
-                        -
-						</code>
-    				 </pre>
-   				 </td>
-			</tr>
-			<tr>
-				<td><b>500<b></td>
-				<td style="text-align:center"><i>Internal Server Error<i></td>
-				<td>
-      				<pre>
-						<code>
-&lt;faultstring xml:lang=&quot;en&quot;&gt;Validation error&lt;/faultstring&gt;
-&lt;detail&gt;
-&lt;spring-ws:ValidationError xmlns:spring-ws=&quot;http://springframework.org/spring-ws&quot;&gt;cvc-complex-type.2.4.b: The content of element 'OperationParty' is not complete. One of '{&quot;urn:amlyze-services:EvaluateOperationService_v2r0&quot;:ELEMENT}' is expected.&lt;/spring-ws:ValidationError&gt;
-&lt;/detail&gt;
-						</code>
-    				 </pre>
-   				 </td>
-			</tr>
+				<td><b>CommunicationStatus<b></td>
+				<td style="text-align:center">String</br>Enum:</br>
+[COMPLETED]</td>
+				<td>Indicates that Communication was successful</td>
 		</tbody>
 </table>
 
+**Example:**
+`STATUS: 200 OK`
+```xml
+<ns2:Result xmlns:ns2="urn:amlyze-services:EvaluateOperationService_v2r0">
+            <ns2:ResultType>REQUEST_ACCEPTED</ns2:ResultType>
+            <ns2:CommunicationStatus>COMPLETED</ns2:CommunicationStatus>
+        </ns2:Result>
+```
+---
+**<span style="color: red;">"Rejected request"</span>**
+
+`If the request was sent not properly, the <Result> displays more information.`
+
+<table>
+		<thead>
+			<tr>
+				<td ><b>XML TAG<b></td>
+				<td ><b>TYPE<b></td>
+				<td ><b>DESCRIPTION<b></td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><b>ResultType<b></td>
+				<td style="text-align:center"> String</br>Enum:</br>
+[REQUEST_REJECTED]</td>
+				<td>Result type returns the answer that the action was not successful</td>
+			</tr>
+			<tr>
+				<td><b>CommunicationStatus<b></td>
+				<td style="text-align:center">String</br>Enum:</br>
+[INVALID]</td>
+				<td>"INVALID" Communication status can be received when some errors or mistakes occur</td>
+            </tr>
+            <tr>
+				<td><b>ErrorCode<b></td>
+				<td style="text-align:center">String</td>
+				<td>Error code returns the code of an error</td>
+            </tr>
+            <tr>
+				<td><b>ErrorDescription<b></td>
+				<td style="text-align:center">String</td>
+				<td>Error is described in a more detailed manner in error description field</td>
+            </tr>
+		</tbody>
+</table>
+
+**Example:**
+`STATUS: 400 Bad Request / 500 Internal Server Error`
+```xml
+<ns2:Result xmlns:ns2="urn:amlyze-services:EvaluateOperationService_v2r0">
+            <ns2:ResultType>REQUEST_REJECTED</ns2:ResultType>
+            <ns2:CommunicationStatus>INVALID</ns2:CommunicationStatus>
+            <ns2:ErrorCode>O001</ns2:ErrorCode>
+            <ns2:ErrorDescription>Bad Request</ns2:ErrorDescription>
+        </ns2:Result>
+```
+---
 
 **Possible errorrs**
 
 All possible errors can be found [*here*](op_possible_errors.md)  
 
 
-------
+---
 
 ## Minimalistic request
 

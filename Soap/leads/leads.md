@@ -49,6 +49,7 @@
 ## Expected Response from your system
 
 **<span style="color: green;">"Accepted request"</span>**
+
 `If request was sent correctly, the <Result> displays  <ResultType> together with <CommunicationStatus>`
 
 <table>
@@ -75,6 +76,7 @@
 </table>
 
 **Example:**
+
 `STATUS: 200 OK`
 ```xml
 <ns2:Result xmlns:ns2="urn:amlyze-services:EvaluateOperationService_v2r0">
@@ -84,6 +86,7 @@
 ```
 ---
 **<span style="color: red;">"Rejected request"</span>**
+
 `If the request was sent not properly, the <Result> displays more information.`
 
 <table>
@@ -121,6 +124,7 @@
 </table>
 
 **Example:**
+
 `STATUS: 400 Bad Request / 500 Internal Server Error`
 ```xml
 <ns2:Result xmlns:ns2="urn:amlyze-services:EvaluateOperationService_v2r0">
