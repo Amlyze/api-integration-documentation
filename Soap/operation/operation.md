@@ -171,6 +171,7 @@ An operation is a transaction between two or more parties, where one of the part
 </table>
 
 **Example:**
+
 `STATUS: 400 Bad Request / 500 Internal Server Error`
 ```xml
 <ns2:Result xmlns:ns2="urn:amlyze-services:EvaluateOperationService_v2r0">
