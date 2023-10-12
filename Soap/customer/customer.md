@@ -26,6 +26,7 @@ Customers contain identifying information and KYC data. This section provides in
 * Providing only Mandatory fields → Minimalistic Customer profile is created
 * During <b>IMPORT</b> two additional fields become mandatory:
 	* <b>"CustomerStatus" </b> and <b>"RiskLevel"</b>
+---
 
 ## Customer WorkFlow
 * Creating a new customer → <b>"SourceOfRiskLevel"</b> = `EVALUATE`

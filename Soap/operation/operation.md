@@ -28,6 +28,7 @@ An operation is a transaction between two or more parties, where one of the part
 
 
 ## Samples
+`Every operation type has its 'Conditions' and 'Workflows' which are included inside the "Fields" files`
 
 
 [<b>SEPA Fields</b>](SEPA/SEPA_Fields.md)
