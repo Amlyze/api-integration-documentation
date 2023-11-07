@@ -19,7 +19,7 @@ The endpoints for different requests will slightly differ, but the structure of 
 URL structure: `https://[host][port][path][service]`
 
 ---
-###Customer
+##Customer
 
 <b>Endpoint</b>
 
@@ -35,7 +35,8 @@ URL structure: `https://[host][port][path][service]`
 * Checking responses from your system
 * Checking Callbacks (Webhooks)
 ---
-###Account
+##Account
+
 <b>Endpoint</b>
 
 * [Account](account/account.md) : `POST /amlyze-ws-rest/account`
@@ -49,7 +50,8 @@ URL structure: `https://[host][port][path][service]`
 
 ---
 
-###Operations
+##Operations
+
 <b>Endpoint</b>
 
 * [Operation](operation/operation.md) : `POST /amlyze-ws-rest/operation`
