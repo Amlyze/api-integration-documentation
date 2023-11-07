@@ -1,6 +1,6 @@
 # Operations
 
-An operation is a transaction between two or more parties, where one of the parties is always the customer. The other party(ies) are called counterparties. The documentation provides information on the endpoints, responses, and possible errors for API requests for operations. It also includes minimalistic request examples.
+Welcome to the "OPERATION" section, where we provide you with an overview of the tags required for API requests. These tags serve as essential components for interacting with our API and performing various operations. While some tags are mandatory for specific functionalities, it's beneficial to familiarize yourself with the complete set of tags to leverage the full capabilities of our API. Whether you're integrating with our system for the first time or looking to expand your understanding, this comprehensive list will empower you to make the most of our API's features and tailor your requests to suit your specific needs.
 
 ---
 ## EndPoint
