@@ -1,0 +1,19 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <AMLYZE_CUSTOMER xmlns="urn:amlyze-services:EvaluateCustomerService_v2r0">
+            <CommunicationNumber>ComNr_4541</CommunicationNumber>
+            <Requester>Bank_system</Requester>
+            <RiskManagementCategory>IND_PK</RiskManagementCategory>
+            <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
+            <CustomerExtId>ExtId_65657</CustomerExtId>
+            <EntityType>INDIVIDUAL</EntityType>
+            <ApplicationDate>2023-01-20</ApplicationDate>
+            <FirstName>Lafora</FirstName>
+            <LastName>Fora</LastName>
+            <BirthDate>1975-09-20</BirthDate>
+            <CitizenshipCountry>JP</CitizenshipCountry>
+            </AMLYZE_CUSTOMER>
+    </soap:Body>
+</soap:Envelope>
