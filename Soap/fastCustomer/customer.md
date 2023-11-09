@@ -46,8 +46,8 @@ The request body contains the data that you are sending to the API. The data doc
 
 --- 
 [<b>ORGANIZATION Fields</b>](ORGANIZATION\ORGANIZATION_Fields.md) 
-* [Evaluate_ORGANIZATION_Mandatory](ORGANIZATION/ORGANIZATION_Samples/evaluate_ORGANIZATION_Mandatory.xml) 
-* [Evaluate_ORGANIZATION_Full](ORGANIZATION/ORGANIZATION_Samples/evaluate_ORGANIZATION_Full.xml)
+* [Evaluate_ORGANIZATION_Mandatory](ORGANIZATION/ORGANIZATION_Samples/ORGANIZATION_Mandatory.xml) 
+* [Evaluate_ORGANIZATION_Full](ORGANIZATION/ORGANIZATION_Samples/ORGANIZATION_Full.xml)
 ----------------------
 
 ## Expected Response from your system
