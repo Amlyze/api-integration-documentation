@@ -41,16 +41,13 @@ The request body contains the data that you are sending to the API. The data doc
 ## Samples
 [<b>INDIVIDUAL Fields</b>](INDIVIDUAL/INDIVIDUAL_Fields.md)
 
-* [Evaluate_INDIVIDUAL_Mandatory](INDIVIDUAL/INDIVIDUAL_Samples/evaluate_INDIVIDUAL_Mandatory.xml) 
-* [Evaluate_INDIVIDUAL_Full](INDIVIDUAL/INDIVIDUAL_Samples/evaluate_INDIVIDUAL_Full.xml)
-* [Import_INDIVIDUAL_Full_Related_IND](INDIVIDUAL/INDIVIDUAL_Samples/import_INDIVIDUAL_Full_Related_IND.xml)
+* [Evaluate_INDIVIDUAL_Mandatory](INDIVIDUAL/INDIVIDUAL_Samples/INDIVIDUAL_Mandatory.xml) 
+* [Evaluate_INDIVIDUAL_Full](INDIVIDUAL/INDIVIDUAL_Samples/INDIVIDUAL_Full.xml)
 
 --- 
 [<b>ORGANIZATION Fields</b>](ORGANIZATION\ORGANIZATION_Fields.md) 
 * [Evaluate_ORGANIZATION_Mandatory](ORGANIZATION/ORGANIZATION_Samples/evaluate_ORGANIZATION_Mandatory.xml) 
 * [Evaluate_ORGANIZATION_Full](ORGANIZATION/ORGANIZATION_Samples/evaluate_ORGANIZATION_Full.xml)
-* [Import_ORGANIZATION_Full_Related_IND](ORGANIZATION/ORGANIZATION_Samples/import_ORGANIZATION_Full_Related_IND.xml)
-* [Import_ORGANIZATION_Full_Related_ORG/IND](ORGANIZATION/ORGANIZATION_Samples/import_ORGANIZATION_Full_Related_ORG_IND.xml)
 ----------------------
 
 ## Expected Response from your system
@@ -152,20 +149,18 @@ The Minimalistic request example below shows the minimum required fields to succ
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
-    <soap:Body>
-        <AMLYZE_CUSTOMER xmlns="urn:amlyze-services:EvaluateCustomerService_v2r0">
-            <CommunicationNumber>ComNr_001</CommunicationNumber>
-            <Requester>Bank system</Requester>
-            <RiskManagementCategory>ORG_PK</RiskManagementCategory>
-            <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
-            <CustomerExtId>Cust_4541</CustomerExtId>
-            <EntityType>ORGANIZATION</EntityType>
-            <ApplicationDate>2023-09-15</ApplicationDate>
-            <Title>BitBit</Title>
-            <RegistrationCountry>LT</RegistrationCountry>
-            <LegalForm>COOPERATIVE</LegalForm>
-        </AMLYZE_CUSTOMER>
-    </soap:Body>
+	<soap:Body>
+		<AMLYZE_CUSTOMER xmlns="urn:amlyze-services:EvaluateCustomerService_v2r0">
+			<CommunicationNumber>ComNr_000321</CommunicationNumber>
+			<Requester>Bank_system</Requester>
+			<RiskManagementCategory>FAST</RiskManagementCategory>
+			<EntityType>INDIVIDUAL</EntityType>
+			<CustomerExtId>cust_1232</CustomerExtId>
+			<FirstName>Jose</FirstName>
+			<LastName>Rodriguez</LastName>
+			<CustomerStatus>ACTIVE</CustomerStatus>
+		</AMLYZE_CUSTOMER>
+	</soap:Body>
 </soap:Envelope>
 ```
 
