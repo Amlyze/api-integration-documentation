@@ -44,6 +44,37 @@
             <PermanentResidenceCountry>LT</PermanentResidenceCountry>
             <SecondCitizenshipCountry>LT</SecondCitizenshipCountry>
             <ListPurpose>BLACK</ListPurpose>
+            <ListAddress>
+                <Address>
+                    <AddressType>RESIDENCE</AddressType>
+                    <AddressDetails>Verkiu 1, Vilnius</AddressDetails>
+                    <City>Vilnius</City>
+                    <Country>LT</Country>
+                    <Region>EU</Region>
+                    <StreetAddress>Verkiu 1</StreetAddress>
+                    <ZipCode>04127</ZipCode>
+                    <UseForCorrespondence>true</UseForCorrespondence>
+                </Address>
+            </ListAddress>
+            <ListBusinessEntityDocument>
+                <BusinessEntityDocument>
+                    <EntityType>INDIVIDUAL</EntityType>
+                    <IdentityDocumentType>PASSPORT</IdentityDocumentType>
+                    <DocumentNumber>0123456789</DocumentNumber>
+                    <DocumentIssueDate>2022-01-15</DocumentIssueDate>
+                    <DocumentExpiryDate>2032-01-15</DocumentExpiryDate>
+                    <DocumentIssueCountry>LT</DocumentIssueCountry>
+                    <DocumentIssueAuthority>passport department</DocumentIssueAuthority>
+                    <Description>Main identification document</Description>
+                </BusinessEntityDocument>
+            </ListBusinessEntityDocument>
+            <ListContact>
+                <Contact>
+                    <ContactType>EMAIL</ContactType>
+                    <ContactDetails>test@test-amlyze.com</ContactDetails>
+                    <UseForCommunication>true</UseForCommunication>
+                </Contact>
+            </ListContact>
         </AMLYZE_CUSTOMER>
     </soap:Body>
 </soap:Envelope>

@@ -281,4 +281,158 @@ PEP,</br> ADVERSE_MEDIA </td>
 	</tbody>
 </table>
 
+## AddressApi
 
+<table>
+	<thead>
+		<tr>
+			<td > <b> field </td>
+			<td > <b> type </td>
+			<td > <b> mandatory </td>
+			<td > <b> example </td>
+			<td > <b> description </td>
+		</tr>
+	</thead>
+	<tbody>
+        <tr>
+                <td > <b> AddressType </td>
+                <td > String </td>
+                <td > false </td>
+                <td > RESIDENCE </td>
+                <td> Type of entity address. Classifier AddressType </td>
+        </tr>
+        <tr>
+                <td > <b> AddressDetails </td>
+                <td > String </td>
+                <td > <b>true </td>
+                <td > Verkiu 1, Vilnius </td>
+                <td> Full address description </td>
+        </tr>
+        <tr>
+                <td > <b> City </td>
+                <td > String </td>
+                <td > false </td>
+                <td > Vilnius </td>
+                <td> City of given address </td>
+        </tr>
+        <tr>
+                <td > <b> Country </td>
+                <td > String </td>
+                <td > <b>true </td>
+                <td > LT </td>
+                <td> Country of given addres. Classifier Country</td>
+        </tr>
+        <tr>
+                <td > <b> Region </td>
+                <td > String </td>
+                <td > false </td>
+                <td > EU </td>
+                <td> Region of given address </td>
+        </tr>
+        <tr>
+                <td > <b> StreetAddress </td>
+                <td > String </td>
+                <td > false </td>
+                <td > Verkiu 1 </td>
+                <td> Street, house and flat of given address </td>
+        </tr>
+        <tr>
+                <td > <b> ZipCode </td>
+                <td > String </td>
+                <td > false </td>
+                <td > 12345 </td>
+                <td> Zip code of the address </td>
+        </tr>
+        <tr>
+                <td > <b> UseForCorrespondence </td>
+                <td > Boolean </td>
+                <td > false </td>
+                <td > true </td>
+                <td> Check for using the address in correspondence </td>
+        </tr>
+    </tbody>
+</table>
+
+
+## BusinessEntityDocumentApi
+
+<table>
+	<thead>
+		<tr>
+			<td > <b> field </td>
+			<td > <b> type </td>
+			<td > <b> mandatory </td>
+			<td > <b> example </td>
+			<td > <b> description </td>
+		</tr>
+	</thead>
+	<tbody>
+        <tr>
+            <td > <b> Description </td>
+            <td > String </td>
+            <td > false </td>
+            <td > passport </td>
+            <td> Document description </td>
+        </tr>
+        <tr>
+            <td > <b> EntityType </td>
+            <td > <b>ENUM</b></br> [INDIVIDUAL, </br> ORGANIZATION] </td>
+            <td ><b> true </td>
+            <td > INDIVIDUAL </td>
+            <td> Entity type describes client status </td>
+        </tr>
+        <tr>
+            <td > <b> IdentityDocumentType </td>
+            <td > <b>ENUM</b></br>[PASSPORT, </br> IDENTITYCARD,</br> RESIDENCEPERMIT,</br> DRIVINGLICENSE,</br> REGISTRATIONCERTIFICATE,</br> OTHER] </td>
+            <td ><b> true </td>
+            <td > PASSPORT </td>
+            <td> Identification document </td>
+        </tr>
+        <tr>
+            <td > <b> DocumentNumber </td>
+            <td > String </td>
+            <td > <b> true </td>
+            <td > 0123456789 </td>
+            <td> Number of document in question </td>
+        </tr>
+        <tr>
+            <td > <b> DocumentIssueDate </td>
+            <td > Date </td>
+            <td ><b> true </td>
+            <td > 2022-01-15  </td>
+            <td>Issue date of the document in question </td>
+        </tr>
+        <tr>
+            <td > <b> DocumentExpiryDate </td>
+            <td > Date </td>
+            <td > false </td>
+            <td > 2032-01-15  </td>
+            <td> The expiry date of the document in question </td>
+        </tr>
+        <tr>
+            <td > <b> DocumentIssueCountry </td>
+            <td > String </td>
+            <td ><b> true </td>
+            <td > LT </td>
+            <td> A country that issued the document </td>
+        </tr>
+        <tr>
+            <td > <b> DocumentIssueAuthority </td>
+            <td > String </td>
+            <td > <b>true </td>
+            <td > passport department </td>
+            <td> An authority that issued the document. </td>
+        </tr>
+        <tr>
+            <td > <b> Description </td>
+            <td > String </td>
+            <td > <b>false </td>
+            <td > Main identification document </td>
+            <td> Description. </td>
+        </tr>
+	</tbody>
+</table>
+
+## ContactApi
+
+TODO 
