@@ -43,7 +43,6 @@ The second step. Page provides API fields for adding accounts to the customers
 
 <b>Press [here](account/account.md) and move to Account API page</b>
 
-
 <b>Endpoint</b>
 
 * `POST /amlyze-ws-rest/account`
@@ -76,7 +75,7 @@ The Grand Final. Comprehensive overview of operation types, conditions, and work
 * Checking Callbacks (Webhooks)
 ---
 
-## Account
+## Contract
 
 <b>Endpoint</b>
 
