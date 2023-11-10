@@ -12,6 +12,5 @@
             <tr>
 				<td>code is mandatory</td>
 			</tr>
-			</tr>
 		</tbody>
 </table>

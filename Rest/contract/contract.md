@@ -32,43 +32,52 @@ The request body contains the data that you are sending to the API. The data doc
 		<tbody>
 			<tr>
 				<td><b>200</b></td>
-				<td style="text-align:center"><i>OK<i></td>
+				<td style="text-align:center"><i>OK</i></td>
 				<td>
-					<pre>{
+					<pre>
+{
   "resultType": "REQUEST_ACCEPTED"
 }
+                    </pre>
 				</td>
 			</tr>
 			<tr>
 				<td><b>400</b></td>
-				<td style="text-align:center"><i>Bad Request<i></td>
-				<td> <pre>
+				<td style="text-align:center"><i>Bad Request</i></td>
+				<td> 
+                    <pre>
 {
     "errors": [
         "extId is mandatory"
   ]
 }
+                    </pre>
 				</td>
 			</tr>
             <tr>
 				<td><b>404</b></td>
-				<td style="text-align:center"><i>Not Found<i></td>
-				<td> <pre>
+				<td style="text-align:center"><i>Not Found</i></td>
+				<td>
+                    <pre>
 {
     "timestamp": "2023-09-08T05:55:12.219+00:00",
     "status": 404,
     "error": "Not Found",
     "path": "/amlyze-ws-rest/contract"
 }
+                    </pre>
 				</td>
 			</tr>
 			<tr>
 				<td><b>500</b></td>
-				<td style="text-align:center"><i>Internal Server Error<i></td>
-				<td> <pre>{
+				<td style="text-align:center"><i>Internal Server Error</i></td>
+				<td> 
+                    <pre>
+{
     "resultType": "REQUEST_REJECTED",
     "errorDescription": "duplicate communicationNumber"
 }
+                    </pre>
 				</td>
 			</tr>
 		</tbody>
