@@ -33,11 +33,11 @@
 			<td> Element is used to change the data of an existing Contract. </br>❗ NOTE: all data will be replaced with newly received ones </td>
 		</tr>
 		<tr>
-			<td><b> documentType </b></td>
-			<td> String <br>(classifier) </td>
+			<td><b> contractType </b></td>
+			<td> <b> CLASSIFIER </b><br>String </td>
 			<td><b> true </b></td>
 			<td>LOAN_CONTRACT</td>
-			<td>Type of contract for evaluation of the object.<br>💡 Possible values here are given just as an example, in the configuration period these could be updated</td>
+			<td>Type of contract for evaluation of the object.<br>💡 Possible values will be updated during configuration period. <br>💡 [AdditionalProperty] fields should be validated against classifier.</td>
 		</tr>
 		<tr>
 			<td><b> extId </b></td>
@@ -47,11 +47,11 @@
 			<td> Unique external contract identifier. The identifier corresponds to the contract identifier in the financial institution </td>
 		</tr>
 		<tr>
-			<td><b> documentCode </b></td>
+			<td><b> contractCode </b></td>
 			<td> String </td>
 			<td><b> true </b></td>
 			<td> REG74121101 </td>
-			<td> ❗NOTE: should it be unique??? Contract code or number </td>
+			<td> Contract code or number </td>
 		</tr>
 		<tr>
 			<td><b> customerExtId </b></td>
@@ -72,7 +72,7 @@
             <td > String </td>
             <td > false </td>
             <td > DEFAULT </td>
-            <td> Business unit code where contract was signed.❗NOTE: If exists more than one business unit than field is mandatory. In other case default value will be used. </td>
+            <td> Business unit code where contract was signed.❗NOTE: If exists more than one business unit then this field is mandatory. In other case default value will be used. </td>
         </tr>
 		<tr>
 			<td><b> startDate </b></td>
@@ -89,11 +89,11 @@
 			<td> Contract end date or any other date that covers ending point </td>
 		</tr>
 		<tr>
-			<td ><b> additionalProperties</b></td>
+			<td ><b> additionalProperties  </b></td>
 			<td > [AdditionalProperty] </td>
 			<td > false </td>
 			<td > - </td>
-			<td> Additional information about businessEntity </td>
+			<td> Additional properties for contract. </td>
 		</tr>
 	</tbody>
 </table>
