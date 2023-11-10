@@ -79,6 +79,16 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td>OP_PK</td>
             <td>Code of risk management category of object. Risk management category code from classifier can be checked <a href="../../README.md#classifiers">here</a></td>
         </tr>
+		<tr>
+			<td><b>businessUnit</b></td>
+			<td>String <br/>(classifier)</td>
+			<td>true/false</td>
+			<td>BUSINESS_UNIT_NAME</td>
+			<td>
+                Unit data identification for controllability/observability.
+                <br/>❗NOTE: parameter is required only if business unit strict mode enabled
+            </td>
+		</tr>
         <tr>
             <td><b>financialFlowDirection</b></td>
             <td>FinancialFlowDirectionApi</td>

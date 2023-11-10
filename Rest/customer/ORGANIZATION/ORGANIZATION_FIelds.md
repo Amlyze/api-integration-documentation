@@ -49,8 +49,8 @@
 			<td>BUSINESS_UNIT_NAME</td>
 			<td>
                 Unit data identification for controllability/observability.
-                <br/>❗NOTE: parameter is required only is business unit strict mode enabled
-        </td>
+                <br/>❗NOTE: parameter is required only if business unit strict mode enabled
+            </td>
 		</tr>
 		<tr>
 			<td><b>sourceOfRiskLevel</b></td>
