@@ -410,7 +410,7 @@
 		</tr>
 		<tr>
 			<td><b>listAdditionalValues</b></td>
-			<td>[AdditionalValueApi]</td>
+			<td>[AdditionalValueApi]</td> 
 			<td>false</td>
 			<td>-</td>
 			<td>Additional information about businessEntity</td>
@@ -424,7 +424,10 @@
 		</tr>
 		<tr>
 			<td><b>listAppealReason</b></td>
-			<td>[AppealReasonType]</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Appeal reason type classifier)</a>
+            </td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of reasons for the appeal</td>
@@ -445,7 +448,10 @@
 		</tr>
 		<tr>
 			<td><b>listCountryOfActivity</b></td>
-			<td>[countryOfActivity]</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activity regions</td>
@@ -473,21 +479,27 @@
 		</tr>
 		<tr>
 			<td><b>listIntroductionSource</b></td>
-			<td>[IntroductionSource]</td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Introduction source classifier)</a>
+            </td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of sources of introduction</td>
 		</tr>
 		<tr>
 			<td><b>listOrderedService</b></td>
-			<td>[serviceType]</td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Service type classifier)</a>
+            </td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of ordered services</td>
 		</tr>
 		<tr>
 			<td><b>listPaymentCountry</b></td>
-			<td>[country]</td>
+			<td>[PaymentCountryApi]</td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of payment country</td>
@@ -501,7 +513,10 @@
 		</tr>
 		<tr>
 			<td><b>listRegionOfActivity</b></td>
-			<td>[regionOfActivity]</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activity countries of related entity</td>
@@ -538,10 +553,13 @@
 	<tbody>
 	<tr>
 			<td><b>activityType</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Activity type classifier)</a>
+            </td>
 			<td><b>true</b></td>
 			<td>ACTIVITY_OTHER</td>
-			<td>Type of business activity. Code from activity classifier</td>
+			<td>Type of business activity</td>
 	</tr>
 	<tr>
 			<td><b>incomePercentage</b></td>
@@ -685,7 +703,7 @@
 	</thead>
 	<tbody>
 	<tr>
-			<td><b>Description</b></td>
+			<td><b>description</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>passport</td>
@@ -744,6 +762,54 @@
 
 </table>
 
+## ContactApi
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+			<td><b>Example</b></td>
+			<td><b>Description</b></td>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+			<td><b>contactType</b></td>
+            <td>
+                String<br/>
+                <b>ENUM</b><br/> 
+                [MOBILEPHONE, <br/>FIXEDPHONE, <br/>EMAIL,
+                WEBSITE]
+            </td>
+			<td><b>true</b></td>
+			<td>MOBILEPHONE</td>
+			<td>Way of contacting entity.</td>
+	</tr>
+	<tr>
+			<td><b>contactDetails</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>
+                868758585</b>
+                hello@gmail.com</b>
+                www.website.com</b>
+            </td>
+			<td>Details of contact.</td>
+	</tr>
+	<tr>
+			<td><b>useForCommunication</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>
+                true/false
+            </td>
+			<td>Indicator for the usage of communication way.</td>
+	</tr>
+	</tbody>
+</table>
+
 
 ## CountryOfTaxPaymentApi
 
@@ -760,7 +826,10 @@
 	<tbody>
 	<tr>
 			<td><b>country</b></td>
-			<td>String</td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
 			<td><b>true</b></td>
 			<td>LT</td>
 			<td>Country of tax payment</td>
@@ -793,7 +862,7 @@
 			<td>BigInteger</td>
 			<td>true/false</td>
 			<td>1000</td>
-			<td>Amount range from. At least one value (from> or ot) must be specified</td>
+			<td>Amount range from. At least one value (from or to) must be specified</td>
 	</tr>
 	<tr>
 			<td><b>to</b></td>
@@ -811,10 +880,13 @@
 	</tr>
 	<tr>
 			<td><b>turnoverType</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Turnover type classifier)</a>
+            </td>
 			<td><b>true</b></td>
 			<td>TURNOVER_PER_MONTH</td>
-			<td>Type of declared turnover. Classifier turnoverType</td>
+			<td>Type of declared turnover</td>
 	</tr>
 	</tbody>
 </table>
@@ -848,10 +920,13 @@
 	</tr>
 	<tr>
 			<td><b>incomeSourceType</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Income source type classifier)</a>
+            </td>
 			<td><b>true</b></td>
 			<td>SALARY</td>
-			<td>Type of income source. Classifier incomeSourceType</td>
+			<td>Type of income source</td>
 	</tr>
 	<tr>
 			<td><b>to</b></td>
@@ -859,6 +934,40 @@
 			<td>false</td>
 			<td>1000</td>
 			<td>Amount to</td>
+	</tr>
+	</tbody>
+</table>
+
+
+## PaymentCountryApi
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+			<td><b>Example</b></td>
+			<td><b>Description</b></td>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+			<td><b>country</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
+			<td><b>true</b></td>
+			<td>LT</td>
+			<td>Country of payment</td>
+	</tr>
+	<tr>
+			<td><b>turnoverDirection</b></td>
+			<td><b>ENUM </b> <br/> [IN,<br/>OUT]</td>
+			<td><b>true</b></td>
+			<td>OUT</td>
+			<td>The turnover direction of payment</td>
 	</tr>
 	</tbody>
 </table>
@@ -879,14 +988,17 @@
 	<tbody>
 	<tr>
 			<td><b>paymentPurposeType</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Payment purpose type classifier)</a>
+            </td>
 			<td><b>true</b></td>
 			<td>TAXES</td>
-			<td>Type of income source, code of paymentPurposeType classifier</td>
+			<td>Type of income source code.</td>
 	</tr>
 	<tr>
 			<td><b>turnoverDirection</b></td>
-			<td><b>ENUM </b> <br/> [INCOMING,<br/>OUTGOING]</td>
+			<td><b>ENUM </b> <br/> [IN,<br/>OUT]</td>
 			<td><b>true</b></td>
 			<td>OUT</td>
 			<td>The turnover direction of payment</td>
@@ -916,10 +1028,13 @@
 	</tr>
 	<tr>
 			<td><b>code</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Source of wealth type classifier)</a>
+            </td>
 			<td>true</td>
 			<td>INHERITANCE</td>
-			<td>source of wealth type classifier</td>
+			<td>source of wealth code</td>
 	</tr>
 	<tr>
 			<td><b>comment</b></td>
@@ -946,10 +1061,13 @@
 	<tbody>
 	<tr>
 			<td><b>relationType</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Relation type classifier)</a>
+            </td>
 			<td><b>true</b></td>
 			<td>OWNER</td>
-			<td>Type of relationship between entities. RelationType classifier</td>
+			<td>Type of relationship between entities.</td>
 	</tr>
 	<tr>
 			<td><b>share</b></td>
@@ -974,7 +1092,10 @@
 	</tr>
 	<tr>
 			<td><b>birthCountry</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
 			<td>false</td>
 			<td>LT</td>
 			<td>The birth country of the related entity</td>
@@ -988,17 +1109,13 @@
 	</tr>
 	<tr>
 			<td><b>country</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
 			<td>false</td>
 			<td>LT</td>
 			<td>Country of the related entity</td>
-	</tr>
-	<tr>
-			<td><b>countryOfBusinessOperations</b></td>
-			<td>String</td>
-			<td>false</td>
-			<td>LT</td>
-			<td>Country of Business Operations of the related entity</td>
 	</tr>
 	<tr>
 			<td><b>entityType</b></td>
@@ -1079,7 +1196,10 @@
 	</tr>
 	<tr>
 			<td><b>registrationCountry</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
 			<td>false</td>
 			<td>LT</td>
 			<td>Country of registration of related entity</td>
