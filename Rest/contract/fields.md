@@ -33,10 +33,10 @@
 			<td> Element is used to change the data of an existing Contract. </br>❗ NOTE: all data will be replaced with newly received ones </td>
 		</tr>
 		<tr>
-			<td><b> classifierType </b></td>
+			<td><b> documentType </b></td>
 			<td> String <br>(classifier) </td>
 			<td><b> true </b></td>
-			<td>LOAN</td>
+			<td>LOAN_CONTRACT</td>
 			<td>Type of contract for evaluation of the object.<br>💡 Possible values here are given just as an example, in the configuration period these could be updated</td>
 		</tr>
 		<tr>
