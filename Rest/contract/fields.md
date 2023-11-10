@@ -133,7 +133,7 @@
 	    		<td> value of field </td>
 	    </tr>
 	    <tr>
-	    		<td > <b> datatype </b></td>
+	    		<td > <b> dataType </b></td>
 	    		<td > <b>ENUM </b></br>[STRING,</br> INTEGER,</br> DECIMAL,</br> DATE,</br> TIMESTAMP,</br> BOOLEAN,</br> EXTERNAL_LINK] </td>
                 <td > false </td>
 	    		<td > STRING </td>
