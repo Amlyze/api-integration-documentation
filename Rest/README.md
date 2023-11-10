@@ -40,6 +40,7 @@ Is the first step in creating a customer, which is necessary for all subsequent 
 
 ## Account
 The second step. Page provides API fields for adding accounts to the customers
+
 <b>Press [here](account/account.md) and move to Account API page</b>
 
 
@@ -58,7 +59,8 @@ The second step. Page provides API fields for adding accounts to the customers
 
 ## Operations
 The Grand Final. Comprehensive overview of operation types, conditions, and workflows
-   <b> Press [here](operation/operation.md) and move to Operation API page </b>
+
+<b> Press [here](operation/operation.md) and move to Operation API page </b>
 
 <b>Endpoint</b>
 
