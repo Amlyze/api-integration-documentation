@@ -19,13 +19,15 @@ The endpoints for different requests will slightly differ, but the structure of 
 URL structure: `https://[host][port][path][service]`
 
 ---
-##Customer
+## Customer
+
+Is the first step in creating a customer, which is necessary for all subsequent operations in the API. 
+<b> Press [here](customer/customer.md) and move to Customer API page</b>
 
 <b>Endpoint</b>
 
-* [Customer](customer/customer.md) : `POST /amlyze-ws-rest/customer`
-    * Is the first step in creating a customer, which is necessary for all subsequent operations in the API. 
-
+`POST /amlyze-ws-rest/customer`
+    
 <b>Used for:</b>
 * Checking customers against sanctions lists
 * Creating - <i>importing</i> customers with historical data
@@ -35,12 +37,16 @@ URL structure: `https://[host][port][path][service]`
 * Checking responses from your system
 * Checking Callbacks (Webhooks)
 ---
-##Account
+
+## Account
+The second step. Page provides API fields for adding accounts to the customers
+<b>Press [here](account/account.md) and move to Account API page</b>
+
 
 <b>Endpoint</b>
 
-* [Account](account/account.md) : `POST /amlyze-ws-rest/account`
-    * The second step, provides API fields for adding customer accounts
+* `POST /amlyze-ws-rest/account`
+    
 
 
 <b>Used for:</b>
@@ -50,12 +56,14 @@ URL structure: `https://[host][port][path][service]`
 
 ---
 
-##Operations
+## Operations
+The Grand Final. Comprehensive overview of operation types, conditions, and workflows
+   <b> Press [here](operation/operation.md) and move to Operation API page </b>
 
 <b>Endpoint</b>
 
-* [Operation](operation/operation.md) : `POST /amlyze-ws-rest/operation`
-    * The Grand Final, comprehensive overview of operation types, conditions, and workflows
+* `POST /amlyze-ws-rest/operation`
+
 
 <b>Used for:</b>
 * Creating-importing operations with Historical data
@@ -66,6 +74,7 @@ URL structure: `https://[host][port][path][service]`
 * Checking Callbacks (Webhooks)
 ---
 ---
+
 ## Classifiers
 
 Classifiers guide you through extracting needed values for upcoming request fields

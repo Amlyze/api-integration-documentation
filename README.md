@@ -24,3 +24,7 @@ Please note that the `SOAP API is deprecated`. It is recommended to migrate to n
 * [REST API](Rest/README.md)
 
 * [SOAP API](Soap/README.md)
+
+---
+We understand there might be a plenty of questions, therefore - QA section was created
+* [QA]()

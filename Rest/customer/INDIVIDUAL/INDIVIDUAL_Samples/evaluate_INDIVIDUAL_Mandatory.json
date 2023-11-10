@@ -2,7 +2,7 @@
 	"communicationNumber": "ComNr_0022",
 	"customerExtId": "Cust_ext1456",
 	"requester": "Financial Institution",
-	"riskManagementCategory": "IND_PK",
+	"riskManagementCategory": "IND_AMLYZE",
 	"sourceOfRiskLevel": "EVALUATE",
 	"entityType": "INDIVIDUAL",
 	"applicationDate": "2012-10-01",

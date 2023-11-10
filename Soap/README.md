@@ -19,11 +19,12 @@ URL structure: `https://[host][port][path][service]`
 
 ---
 ## Customer
+Is the first step in creating a customer, which is necessary for all subsequent operations in the API. 
+<b> Press [here](customer/customer.md) and move to Customer API page  </b>
 
 <b>Endpoint</b>
 
- [Customer](customer/customer.md) : `POST /amlyze-ws/EvaluateCustomerV2Service`
-*  Is the first step in creating a customer, which is necessary for all subsequent operations in the API. 
+ * `POST /amlyze-ws/EvaluateCustomerV2Service`
 
 <b>Used for:</b>
 * Checking customers against sanctions lists
@@ -36,11 +37,12 @@ URL structure: `https://[host][port][path][service]`
 ---
 
 ## Account
+ The second step. Page provides API fields for adding accounts to the customers
+<b>Press [here](account/account.md) and move to Account API page</b>
 
 <b>Endpoint</b>
 
-* [Account](account/account.md) : `POST /amlyze-ws/ImportAccountV2Service`
-    * The second step, provides API fields for adding customer accounts
+* `POST /amlyze-ws/ImportAccountV2Service`
 
 <b>Used for:</b>
 * Creating a new account for the customer
@@ -50,12 +52,13 @@ URL structure: `https://[host][port][path][service]`
 ---
 
 ## Operations
+ The Grand Final. Comprehensive overview of operation types, conditions, and workflows
+   <b> Press [here](operation/operation.md) and move to Operation API page </b>
 
 <b>Endpoint</b>
 
-* [Operation](operation/operation.md) : `POST /amlyze-ws/EvaluateOperationV2Service`
+* `POST /amlyze-ws/EvaluateOperationV2Service`
 
-    * The Grand Final, comprehensive overview of operation types, conditions, and workflows
 
 <b>Used for:</b>
 * Creating-importing operations with Historical data
@@ -67,12 +70,13 @@ URL structure: `https://[host][port][path][service]`
 ---
 
 ## Leads
+* If a customer is not approved to be a customer yet - this is the API you need
 
 <b>Endpoint</b>
 
 * [Leads](leads/leads.md) : `POST /amlyze-ws/EvaluateCustomerV2Service`
 
-    * The Grand Final, comprehensive overview of operation types, conditions, and workflows
+    
 
 <b>Used for:</b>
 * Creating - evaluating a lead 
