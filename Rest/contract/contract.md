@@ -24,25 +24,25 @@ The request body contains the data that you are sending to the API. The data doc
 <table>
 		<thead>
 			<tr>
-				<td style="text-align:center"><b>Code<b></td>
-				<td style="text-align:center"><b>Status<b></td>
-				<td style="text-align:center"><b>Response<b></td>
+				<td style="text-align:center"><b>Code</b></td>
+				<td style="text-align:center"><b>Status</b></td>
+				<td style="text-align:center"><b>Response</b></td>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td><b>200<b></td>
+				<td><b>200</b></td>
 				<td style="text-align:center"><i>OK<i></td>
 				<td>
-					<pre><b>{
+					<pre>{
   "resultType": "REQUEST_ACCEPTED"
 }
 				</td>
 			</tr>
 			<tr>
-				<td><b>400<b></td>
+				<td><b>400</b></td>
 				<td style="text-align:center"><i>Bad Request<i></td>
-				<td> <pre><b>
+				<td> <pre>
 {
     "errors": [
         "extId is mandatory"
@@ -51,9 +51,9 @@ The request body contains the data that you are sending to the API. The data doc
 				</td>
 			</tr>
             <tr>
-				<td><b>404<b></td>
+				<td><b>404</b></td>
 				<td style="text-align:center"><i>Not Found<i></td>
-				<td> <pre><b>
+				<td> <pre>
 {
     "timestamp": "2023-09-08T05:55:12.219+00:00",
     "status": 404,
@@ -63,9 +63,9 @@ The request body contains the data that you are sending to the API. The data doc
 				</td>
 			</tr>
 			<tr>
-				<td><b>500<b></td>
+				<td><b>500</b></td>
 				<td style="text-align:center"><i>Internal Server Error<i></td>
-				<td> <pre><b>{
+				<td> <pre>{
     "resultType": "REQUEST_REJECTED",
     "errorDescription": "duplicate communicationNumber"
 }

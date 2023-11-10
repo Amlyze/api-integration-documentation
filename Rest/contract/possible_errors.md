@@ -4,7 +4,7 @@
 <table>
 		<thead>
 			<tr>
-				<td style="text-align:center"><b>Error Desctiption</td>
+				<td style="text-align:center"><b>Error Desctiption</b></td>
 		</thead>
 		<tbody>
 			<tr>
