@@ -36,49 +36,60 @@ Customers contain identifying information and KYC data. This section provides in
 <table>
 		<thead>
 			<tr>
-				<td style="text-align:center"><b>Code<b></td>
-				<td style="text-align:center"><b>Status<b></td>
-				<td style="text-align:center"><b>Response<b></td>
+				<td style="text-align:center"><b>Code</b></td>
+				<td style="text-align:center"><b>Status</b></td>
+				<td style="text-align:center"><b>Response</b></td>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td><b>200<b></td>
-				<td style="text-align:center"><i>OK<i></td>
+				<td><b>200</b></td>
+				<td style="text-align:center"><i>OK</i></td>
 				<td>
-					<pre><b>{
+					<pre>
+{
   "resultType": "REQUEST_ACCEPTED"
 }
+                    </pre>
 				</td>
 			</tr>
 			<tr>
-				<td><b>400<b></td>
-				<td style="text-align:center"><i>Bad Request<i></td>
-				<td> <pre><b>{
+				<td><b>400</b></td>
+				<td style="text-align:center"><i>Bad Request</i></td>
+				<td> 
+                    <pre>
+{
 "errors": [
         "CommunicationNumber is mandatory"
    	]
 }
+                    </pre>
 				</td>
 			</tr>
 				<tr>
-				<td><b>404<b></td>
-				<td style="text-align:center"><i>Not Found<i></td>
-				<td> <pre><b>{
+				<td><b>404</b></td>
+				<td style="text-align:center"><i>Not Found</i></td>
+				<td> 
+                    <pre>
+{
   "resultType": "REQUEST_REJECTED",
   "status": 404,
   "error": "Not Found"
 }
+                    </pre>
 				</td>
 			</tr>
 			<tr>
-				<td><b>500<b></td>
-				<td style="text-align:center"><i>Internal Server Error<i></td>
-				<td> <pre><b>{
+				<td><b>500</b></td>
+				<td style="text-align:center"><i>Internal Server Error</i></td>
+				<td> 
+                    <pre>
+{
   "resultType": "REQUEST_REJECTED"
   "status": 500,
   "error": "Internal Server Error"
 }
+                    </pre>
 				</td>
 			</tr>
 		</tbody>
