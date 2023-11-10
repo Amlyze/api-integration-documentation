@@ -56,6 +56,67 @@
             <RegistrationCountry>LT</RegistrationCountry>
             <ThirdPartyServicesUsed>true</ThirdPartyServicesUsed>
             <ThirdPartyServicesUsedDescription>hosting</ThirdPartyServicesUsedDescription>
+            <ListAddress>
+                <Address>
+                    <AddressType>REGISTRATION</AddressType>
+                    <AddressDetails>25/3</AddressDetails>
+                    <Country>LV</Country>
+                    <Region>EA</Region>
+                    <City>Riga</City>
+                    <StreetAddress>Vavilova St.</StreetAddress>
+                    <ZipCode>01105</ZipCode>
+                    <UseForCorrespondence>false</UseForCorrespondence>
+                </Address>
+                <Address>
+                    <AddressType>RESIDENCE</AddressType>
+                    <AddressDetails>19/2</AddressDetails>
+                    <Country>PT</Country>
+                    <Region>EA</Region>
+                    <City>Porto</City>
+                    <StreetAddress>Khashuri St.</StreetAddress>
+                    <ZipCode>01105</ZipCode>
+                    <UseForCorrespondence>true</UseForCorrespondence>
+                </Address>
+            </ListAddress>
+            <ListBusinessEntityDocument>
+                <BusinessEntityDocument>
+                    <EntityType>INDIVIDUAL</EntityType>
+                    <IdentityDocumentType>PASSPORT</IdentityDocumentType>
+                    <DocumentNumber>D0KN045454545</DocumentNumber>
+                    <DocumentIssueDate>2015-09-20</DocumentIssueDate>
+                    <DocumentExpiryDate>2025-09-20</DocumentExpiryDate>
+                    <DocumentIssueCountry>PT</DocumentIssueCountry>
+                    <DocumentIssueAuthority>National Migration Service</DocumentIssueAuthority>
+                    <Description>Main identification document</Description>
+                </BusinessEntityDocument>
+                <BusinessEntityDocument>
+                    <EntityType>ORGANIZATION</EntityType>
+                    <IdentityDocumentType>REGISTRATIONCERTIFICATE</IdentityDocumentType>
+                    <DocumentNumber>D0KN045454545</DocumentNumber>
+                    <DocumentIssueDate>2017-08-20</DocumentIssueDate>
+                    <DocumentExpiryDate>2027-08-20</DocumentExpiryDate>
+                    <DocumentIssueCountry>LV</DocumentIssueCountry>
+                    <DocumentIssueAuthority>Federal Tax Service</DocumentIssueAuthority>
+                    <Description>Main identification document</Description>
+                </BusinessEntityDocument>
+            </ListBusinessEntityDocument>
+            <ListContact>
+                <Contact>
+                    <ContactType>EMAIL</ContactType>
+                    <ContactDetails>PhoneNam@yahoo.com</ContactDetails>
+                    <UseForCommunication>true</UseForCommunication>
+                </Contact>
+                <Contact>
+                    <ContactType>MOBILEPHONE</ContactType>
+                    <ContactDetails>+3504872546</ContactDetails>
+                    <UseForCommunication>true</UseForCommunication>
+                </Contact>
+                <Contact>
+                    <ContactType>MOBILEPHONE</ContactType>
+                    <ContactDetails>+3504872575</ContactDetails>
+                    <UseForCommunication>true</UseForCommunication>
+                </Contact>
+            </ListContact>
         </AMLYZE_CUSTOMER>
     </soap:Body>
 </soap:Envelope>

@@ -4,7 +4,7 @@
         <AMLYZE_CUSTOMER xmlns="urn:amlyze-services:EvaluateCustomerService_v2r0">
             <CommunicationNumber>ComNr_000321</CommunicationNumber>
             <Requester>Bank_system</Requester>
-            <RiskManagementCategory>FAST</RiskManagementCategory>
+            <RiskManagementCategory>OCCASIONAL</RiskManagementCategory>
             <EntityType>INDIVIDUAL</EntityType>
             <CustomerExtId>cust_1232</CustomerExtId>
             <FirstName>Jose</FirstName>
