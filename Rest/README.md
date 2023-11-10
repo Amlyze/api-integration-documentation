@@ -75,6 +75,17 @@ The Grand Final. Comprehensive overview of operation types, conditions, and work
 * Checking responses from your system
 * Checking Callbacks (Webhooks)
 ---
+
+## Account
+
+<b>Endpoint</b>
+
+* [Contract](contract/contract.md) : `POST /amlyze-ws-rest/contract`
+
+<b>Used for:</b>
+* Creating a new contract for the customer
+* Updating data of the contract
+
 ---
 
 ## Classifiers
