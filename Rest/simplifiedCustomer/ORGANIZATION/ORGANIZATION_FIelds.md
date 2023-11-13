@@ -27,7 +27,10 @@
 		</tr>
 		<tr>
 			<td><b>riskManagementCategory</b></td>
-			<td>String <br/>(classifier)</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Risk management category classifier)</a>
+            </td>
 			<td>true</td>
 			<td>FAST</td>
 			<td>
@@ -37,7 +40,10 @@
 		</tr>
 		<tr>
 			<td><b>businessUnit</b></td>
-			<td>String <br/>(classifier)</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Business unit classifier)</a>
+            </td>
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>
 			<td>
@@ -420,10 +426,13 @@
 	    </tr>
 	    <tr>
 			<td><b>addressType</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Address type classifier)</a>
+            </td>
 			<td>false</td>
 			<td>RESIDENCE</td>
-			<td>Type of entity address. Classifier AddressType</td>
+			<td>Type of entity address.</td>
 	    </tr>
 	    <tr>
 			<td><b>city</b></td>
@@ -434,10 +443,13 @@
 	    </tr>
 	    <tr>
 			<td><b>country</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country type classifier)</a>
+            </td>
 			<td>true</td>
 			<td>LT</td>
-			<td>Country of given addres. Classifier Country</td>
+			<td>Country of given address.</td>
 	    </tr>
 	    <tr>
 			<td><b>region</b></td>
@@ -460,13 +472,13 @@
 			<td>true</td>
 			<td>Check for using the address in correspondence</td>
 	    </tr>
-    	<tr>
+	    <tr>
 			<td><b>zipCode</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>12345</td>
 			<td>Zip code of the address</td>
-    	</tr>
+	    </tr>
 	</tbody>
 </table>
 
@@ -498,7 +510,7 @@
 			<td>2032-01-15</td>
 			<td>The expiry date of the document in question</td>
 	    </tr>
-    	<tr>
+	    <tr>
 			<td><b>documentIssueAuthority</b></td>
 			<td>String</td>
 			<td>true</td>

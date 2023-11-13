@@ -34,7 +34,10 @@
 		</tr>
 		<tr>
 			<td><b>riskManagementCategory</b></td>
-			<td>String <br/>(classifier)</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Risk management category classifier)</a>
+            </td>
 			<td>true</td>
 			<td>ORG_AMLYZE</td>
 			<td>
@@ -44,7 +47,10 @@
 		</tr>
 		<tr>
 			<td><b>businessUnit</b></td>
-			<td>String <br/>(classifier)</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Business unit classifier)</a>
+            </td>
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>
 			<td>
@@ -559,7 +565,7 @@
             </td>
 			<td>true</td>
 			<td>ACTIVITY_OTHER</td>
-			<td>Type of business activity</td>
+			<td>Type of business activity.</td>
 	    </tr>
 	    <tr>
 			<td><b>incomePercentage</b></td>
@@ -639,10 +645,13 @@
 	    </tr>
 	    <tr>
 			<td><b>addressType</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Address type classifier)</a>
+            </td>
 			<td>false</td>
 			<td>RESIDENCE</td>
-			<td>Type of entity address. Classifier AddressType</td>
+			<td>Type of entity address.</td>
 	    </tr>
 	    <tr>
 			<td><b>city</b></td>
@@ -653,10 +662,13 @@
 	    </tr>
 	    <tr>
 			<td><b>country</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country type classifier)</a>
+            </td>
 			<td>true</td>
 			<td>LT</td>
-			<td>Country of given addres. Classifier Country</td>
+			<td>Country of given address.</td>
 	    </tr>
 	    <tr>
 			<td><b>region</b></td>
@@ -1129,20 +1141,20 @@
 			<td>2020-05-30</td>
 			<td>Establishment date of related organization entity</td>
 	    </tr>
-    	<tr>
+	    <tr>
 			<td><b>extId</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>12345678912345</td>
 			<td>Used for screening callbacks to identify entity</td>
-    	</tr>
-    	<tr>
+	    </tr>
+	    <tr>
 			<td><b>firstName</b></td>
 			<td>String</td>
 			<td>true/false</td>
 			<td>John</td>
 			<td>First name of related entity br><b>Mandatory</b> when entityType = INDIVIDUAL <br/><b>Not Used</b>  when entityType = ORGANIZATION</td>
-    	</tr>
+	    </tr>
 	    <tr>
 			<td><b>isInAdverseMedia</b></td>
 			<td>Boolean</td>
@@ -1171,20 +1183,20 @@
 			<td>Rodriguez</td>
 			<td>Last name of related entity <br/><b>Mandatory</b> when entityType = INDIVIDUAL <br/><b>Not Used</b>  when entityType = ORGANIZATION</td>
 	    </tr>
-    	<tr>
+	    <tr>
 			<td><b>legalForm</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>COOPERATIVE</td>
 			<td>Legal form of organization</td>
-    	</tr>
+	    </tr>
 	    <tr>
 			<td><b>nationalCode</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>123456789</td>
 			<td>National code or national identification number of individual or organization. If a country does not issue national code, any other unique identifier can be used</td>
-    	</tr>
+	    </tr>
 	    <tr>
 			<td><b>regionOfActivityDescription</b></td>
 			<td>String</td>
@@ -1222,36 +1234,36 @@
 			<td>false</td>
 			<td>-</td>
 			<td>List of activities of related entity</td>
-	    </tr>
-	    <tr>
+    	</tr>
+    	<tr>
 			<td><b>listAdditionalValues</b></td>
 			<td>[AdditionalValueApi]</td>
 			<td>false</td>
 			<td>-</td>
 			<td>Additional information about businessEntity</td>
-	    </tr>
-	    <tr>
+    	</tr>
+    	<tr>
 			<td><b>listAddress</b></td>
 			<td>[AddressApi]</td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of addresses</td>
-	    </tr>
-	    <tr>
+    	</tr>
+    	<tr>
 			<td><b>listBusinessEntityDocument</b></td>
 			<td>[BusinessEntityDocumentApi]</td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of related entity document</td>
-	    </tr>
-	    <tr>
+    	</tr>
+    	<tr>
 			<td><b>listContact</b></td>
 			<td>[ContactApi]</td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of contacts of related entity</td>
-	    </tr>
-	    <tr>
+    	</tr>
+    	<tr>
 			<td><b>listCountryOfActivity</b></td>
 			<td>[countryOfActivity]</td>
 			<td>false</td>

@@ -27,7 +27,10 @@
 		</tr>
 		<tr>
 			<td><b>riskManagementCategory</b></td>
-			<td>String <br/>(classifier)</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Risk management category classifier)</a>
+            </td>
 			<td>true</td>
 			<td>FAST</td>
 			<td>
@@ -37,7 +40,10 @@
 		</tr>
 		<tr>
 			<td><b>businessUnit</b></td>
-			<td>String <br/>(classifier)</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Business unit classifier)</a>
+            </td>
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>
 			<td>
@@ -327,10 +333,13 @@
 	    </tr>
 	    <tr>
 			<td><b>addressType</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Address type classifier)</a>
+            </td>
 			<td>false</td>
 			<td>RESIDENCE</td>
-			<td>Type of entity address. Classifier AddressType</td>
+			<td>Type of entity address.</td>
 	    </tr>
 	    <tr>
 			<td><b>city</b></td>
@@ -341,10 +350,13 @@
 	    </tr>
 	    <tr>
 			<td><b>country</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country type classifier)</a>
+            </td>
 			<td>true</td>
 			<td>LT</td>
-			<td>Country of given addres. Classifier Country</td>
+			<td>Country of given address.</td>
 	    </tr>
 	    <tr>
 			<td><b>region</b></td>
@@ -391,62 +403,62 @@
 		</tr>
 	</thead>
 	<tbody>
-        <tr>
-            <td><b>description</b></td>
-            <td>String</td>
-            <td>false</td>
-            <td>passport</td>
-            <td>Document description</td>
-        </tr>
-        <tr>
-            <td><b>documentExpiryDate</b></td>
-            <td>Date</td>
-            <td>false</td>
-            <td>2032-01-15</td>
-            <td>The expiry date of the document in question</td>
-        </tr>
-        <tr>
-            <td><b>documentIssueAuthority</b></td>
-            <td>String</td>
-            <td>true</td>
-            <td>passport department</td>
-            <td>An authority that issued the document.</td>
-        </tr>
-        <tr>
-            <td><b>documentIssueCountry</b></td>
-            <td>String</td>
-            <td>true</td>
-            <td>LT</td>
-            <td>A country that issued the document</td>
-        </tr>
-        <tr>
-            <td><b>documentIssueDate</b></td>
-            <td>Date</td>
-            <td>true</td>
-            <td>2022-01-15</td>
-            <td>Issue date of the document in question</td>
-        </tr>
-        <tr>
-            <td><b>documentNumber</b></td>
-            <td>String</td>
-            <td>true</td>
-            <td>0123456789</td>
-            <td>Number of document in question</td>
-        </tr>
-        <tr>
-            <td><b>entityType</b></td>
-            <td><b>ENUM</b><br/> [INDIVIDUAL, <br/> ORGANIZATION]</td>
-            <td>true</td>
-            <td>INDIVIDUAL</td>
-            <td>Entity type describes client status</td>
-        </tr>
-        <tr>
-            <td><b>identityDocumentType</b></td>
-            <td><b>ENUM</b><br/>[PASSPORT, <br/> IDENTITYCARD,<br/> RESIDENCEPERMIT,<br/> DRIVINGLICENSE,<br/> REGISTRATIONCERTIFICATE,<br/> OTHER]</td>
-            <td>true</td>
-            <td>PASSPORT</td>
-            <td>Identification document</td>
-        </tr>
+	    <tr>
+			<td><b>description</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>passport</td>
+			<td>Document description</td>
+	    </tr>
+	    <tr>
+			<td><b>documentExpiryDate</b></td>
+			<td>Date</td>
+			<td>false</td>
+			<td>2032-01-15</td>
+			<td>The expiry date of the document in question</td>
+	    </tr>
+	    <tr>
+			<td><b>documentIssueAuthority</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>migration office</td>
+			<td>An authority that issued the document.</td>
+	    </tr>
+	    <tr>
+			<td><b>documentIssueCountry</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>LT</td>
+			<td>A country that issued the document</td>
+	    </tr>
+	    <tr>
+			<td><b>documentIssueDate</b></td>
+			<td>Date</td>
+			<td>true</td>
+			<td>2022-01-15</td>
+			<td>Issue date of the document in question</td>
+	    </tr>
+	    <tr>
+			<td><b>documentNumber</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>0123456789</td>
+			<td>Number of document in question</td>
+	    </tr>
+	    <tr>
+			<td><b>entityType</b></td>
+			<td><b>ENUM</b><br/> [INDIVIDUAL, <br/> ORGANIZATION]</td>
+			<td>true</td>
+			<td>INDIVIDUAL</td>
+			<td>Entity type describes client status</td>
+	    </tr>
+	    <tr>
+			<td><b>identityDocumentType</b></td>
+			<td><b>ENUM</b><br/>[PASSPORT, <br/> IDENTITYCARD,<br/> RESIDENCEPERMIT,<br/> DRIVINGLICENSE,<br/> REGISTRATIONCERTIFICATE,<br/> OTHER]</td>
+			<td>true</td>
+			<td>PASSPORT</td>
+			<td>Identification document</td>
+	    </tr>
 	</tbody>
 </table>
 
