@@ -7,8 +7,6 @@ Welcome to the "OPERATION" section, where we provide you with an overview of the
 
 **wsdl** `/amlyze-ws/EvaluateOperationV2Service.wsdl`
 
-**swagger** `GET /swagger-ui/`
-
 **URL structure:** `http://[host][port][path][service]`
 
 **Example:** `http://[host]:8878/amlyze-ws/EvaluateOperationV2Service
@@ -17,7 +15,7 @@ Welcome to the "OPERATION" section, where we provide you with an overview of the
 
 ## Additional Info
 
-* METHOD ` POST ` 
+* METHOD ` POST ` 
 * Auth required: `NO`
 * Content-Type: `text/xml`
 ---
@@ -186,7 +184,7 @@ Welcome to the "OPERATION" section, where we provide you with an overview of the
 ```
 ---
 
-**Possible errorrs**
+**Possible errors**
 
 All possible errors can be found [*here*](op_possible_errors.md)  
 

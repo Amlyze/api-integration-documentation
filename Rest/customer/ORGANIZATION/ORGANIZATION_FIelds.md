@@ -551,7 +551,7 @@
 		</tr>
 	</thead>
 	<tbody>
-	<tr>
+	    <tr>
 			<td><b>activityType</b></td>
 			<td>
                 String <br/>
@@ -560,14 +560,14 @@
 			<td><b>true</b></td>
 			<td>ACTIVITY_OTHER</td>
 			<td>Type of business activity</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>incomePercentage</b></td>
 			<td>BigInteger</td>
 			<td>false</td>
 			<td>15</td>
 			<td>Percentage of income from certain activity</td>
-	</tr>
+	    </tr>
 	</tbody>
 </table>
 
@@ -585,34 +585,35 @@
 		</tr>
 	</thead>
 	<tbody>
-	<tr>
+	    <tr>
 			<td><b>code</b></td>
 			<td>String</td>
 			<td><b>true</b></td>
 			<td>related_to_usa</td>
 			<td>Identifier for additional field</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>datatype</b></td>
 			<td><b>ENUM </b><br/>[STRING,<br/> INTEGER,<br/> DECIMAL,<br/> DATE,<br/> TIMESTAMP,<br/> BOOLEAN\]</td>
 			<td><b>true</b></td>
 			<td>STRING</td>
 			<td>Type of provided value</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>Description</b></td>
 			<td>String</td>
 			<td><b>true</b></td>
 			<td>entity has relation to USA</td>
 			<td>human readable description of field</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>value</b></td>
 			<td>String</td>
 			<td><b>true</b></td>
 			<td>true</td>
 			<td>value of field</td>
-	</tr>
+	    </tr>
+    </tbody>
 </table>
 
 
@@ -629,62 +630,62 @@
 		</tr>
 	</thead>
 	<tbody>
-	<tr>
+	    <tr>
 			<td><b>addressDetails</b></td>
 			<td>String</td>
 			<td><b>true</b></td>
 			<td>Verkiu 1, Vilnius</td>
 			<td>Full address description</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>addressType</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>RESIDENCE</td>
 			<td>Type of entity address. Classifier AddressType</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>city</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>Vilnius</td>
 			<td>City of given address</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>country</b></td>
 			<td>String</td>
 			<td><b>true</b></td>
 			<td>LT</td>
 			<td>Country of given addres. Classifier Country</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>region</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>EU</td>
 			<td>Region of given address</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>streetAddress</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>Verkiu 1</td>
 			<td>Street, house and flat of given address</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>useForCorrespondence</b></td>
 			<td>Boolean</td>
 			<td>false</td>
 			<td>true</td>
 			<td>Check for using the address in correspondence</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>zipCode</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>12345</td>
 			<td>Zip code of the address</td>
-	</tr>
+	    </tr>
 	</tbody>
 </table>
 
@@ -702,64 +703,63 @@
 		</tr>
 	</thead>
 	<tbody>
-	<tr>
+	    <tr>
 			<td><b>description</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>passport</td>
 			<td>Document description</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>documentExpiryDate</b></td>
 			<td>Date</td>
 			<td>false</td>
 			<td>2032-01-15</td>
 			<td>The expiry date of the document in question</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>documentIssueAuthority</b></td>
 			<td>String</td>
 			<td><b>true</b></td>
 			<td>migration office</td>
 			<td>An authority that issued the document.</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>documentIssueCountry</b></td>
 			<td>String</td>
 			<td><b>true</b></td>
 			<td>LT</td>
 			<td>A country that issued the document</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>documentIssueDate</b></td>
 			<td>Date</td>
 			<td><b>true</b></td>
 			<td>2022-01-15</td>
 			<td>Issue date of the document in question</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>documentNumber</b></td>
 			<td>String</td>
 			<td><b>true</b></td>
 			<td>0123456789</td>
 			<td>Number of document in question</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>entityType</b></td>
 			<td><b>ENUM</b><br/> [INDIVIDUAL, <br/> ORGANIZATION]</td>
 			<td><b>true</b></td>
 			<td>INDIVIDUAL</td>
 			<td>Entity type describes client status</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>identityDocumentType</b></td>
 			<td><b>ENUM</b><br/>[PASSPORT, <br/> IDENTITYCARD,<br/> RESIDENCEPERMIT,<br/> DRIVINGLICENSE,<br/> REGISTRATIONCERTIFICATE,<br/> OTHER]</td>
 			<td><b>true</b></td>
 			<td>REGISTRATIONCERTIFICATE</td>
 			<td>Identification document</td>
-	</tr>
+	    </tr>
 	</tbody>
-
 </table>
 
 ## ContactApi
@@ -775,7 +775,7 @@
 		</tr>
 	</thead>
 	<tbody>
-	<tr>
+	    <tr>
 			<td><b>contactType</b></td>
             <td>
                 String<br/>
@@ -786,8 +786,8 @@
 			<td><b>true</b></td>
 			<td>MOBILEPHONE</td>
 			<td>Way of contacting entity.</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>contactDetails</b></td>
 			<td>String</td>
 			<td>true</td>
@@ -797,16 +797,14 @@
                 www.website.com<br/>
             </td>
 			<td>Details of contact.</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>useForCommunication</b></td>
 			<td>Boolean</td>
 			<td>false</td>
-			<td>
-                true/false
-            </td>
+			<td>true/false</td>
 			<td>Indicator for the usage of communication way.</td>
-	</tr>
+	    </tr>
 	</tbody>
 </table>
 
@@ -824,7 +822,7 @@
 		</tr>
 	</thead>
 	<tbody>
-	<tr>
+	    <tr>
 			<td><b>country</b></td>
             <td>
                 String <br/>
@@ -833,14 +831,14 @@
 			<td><b>true</b></td>
 			<td>LT</td>
 			<td>Country of tax payment</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>taxpayerNumber</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>5541245574</td>
 			<td>The number of tax payer</td>
-	</tr>
+	    </tr>
 	</tbody>
 </table>
 
@@ -857,28 +855,28 @@
 		</tr>
 	</thead>
 	<tbody>
-	<tr>
+	    <tr>
 			<td><b>from</b></td>
 			<td>BigInteger</td>
 			<td>true/false</td>
 			<td>1000</td>
 			<td>Amount range from. At least one value (from or to) must be specified</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>to</b></td>
 			<td>String</td>
 			<td>true/false</td>
 			<td>5000</td>
 			<td>Amount to. At least one value (from or to) must be specified</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>turnoverRange</b></td>
 			<td><b>ENUM </b><br/> [SINGLE,<br/> DAILY, <br/> MONTHLY,<br/> ANNUAL]</td>
 			<td><b>true</b></td>
 			<td>MONTHLY</td>
 			<td>Range of declared turnover</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>turnoverType</b></td>
 			<td>
                 String <br/>
@@ -887,7 +885,7 @@
 			<td><b>true</b></td>
 			<td>TURNOVER_PER_MONTH</td>
 			<td>Type of declared turnover</td>
-	</tr>
+	    </tr>
 	</tbody>
 </table>
 
@@ -904,21 +902,21 @@
 		</tr>
 	</thead>
 	<tbody>
-	<tr>
+	    <tr>
 			<td><b>from</b></td>
 			<td>BigInteger</td>
 			<td>false</td>
 			<td>100</td>
 			<td>Amount from</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>incomePercentage</b></td>
 			<td>BigInteger</td>
 			<td>false</td>
 			<td>5</td>
 			<td>Percentage of income from the source</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>incomeSourceType</b></td>
 			<td>
                 String <br/>
@@ -927,14 +925,14 @@
 			<td><b>true</b></td>
 			<td>SALARY</td>
 			<td>Type of income source</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>to</b></td>
 			<td>BigInteger</td>
 			<td>false</td>
 			<td>1000</td>
 			<td>Amount to</td>
-	</tr>
+	    </tr>
 	</tbody>
 </table>
 
@@ -952,7 +950,7 @@
 		</tr>
 	</thead>
 	<tbody>
-	<tr>
+	    <tr>
 			<td><b>country</b></td>
 			<td>
                 String <br/>
@@ -961,14 +959,14 @@
 			<td><b>true</b></td>
 			<td>LT</td>
 			<td>Country of payment</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>turnoverDirection</b></td>
 			<td><b>ENUM </b> <br/> [IN,<br/>OUT]</td>
 			<td><b>true</b></td>
 			<td>OUT</td>
 			<td>The turnover direction of payment</td>
-	</tr>
+	    </tr>
 	</tbody>
 </table>
 
@@ -986,7 +984,7 @@
 		</tr>
 	</thead>
 	<tbody>
-	<tr>
+	    <tr>
 			<td><b>paymentPurposeType</b></td>
 			<td>
                 String <br/>
@@ -995,14 +993,14 @@
 			<td><b>true</b></td>
 			<td>TAXES</td>
 			<td>Type of income source code.</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>turnoverDirection</b></td>
 			<td><b>ENUM </b> <br/> [IN,<br/>OUT]</td>
 			<td><b>true</b></td>
 			<td>OUT</td>
 			<td>The turnover direction of payment</td>
-	</tr>
+	    </tr>
 	</tbody>
 </table>
 
@@ -1019,14 +1017,14 @@
 		</tr>
 	</thead>
 	<tbody>
-	<tr>
+	    <tr>
 			<td><b>amount</b></td>
 			<td>BigDecimal</td>
 			<td>false</td>
 			<td>100000</td>
 			<td>Collected monetary amount</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>code</b></td>
 			<td>
                 String <br/>
@@ -1035,14 +1033,14 @@
 			<td>true</td>
 			<td>INHERITANCE</td>
 			<td>source of wealth code</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>comment</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td></td>
 			<td>Additional details about the source of wealth</td>
-	</tr>
+	    </tr>
 	</tbody>
 </table>                 
 
@@ -1059,7 +1057,7 @@
 		</tr>
 	</thead>
 	<tbody>
-	<tr>
+	    <tr>
 			<td><b>relationType</b></td>
 			<td>
                 String <br/>
@@ -1068,29 +1066,29 @@
 			<td><b>true</b></td>
 			<td>OWNER</td>
 			<td>Type of relationship between entities.</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>share</b></td>
 			<td>BigInteger</td>
 			<td>false</td>
 			<td>75</td>
 			<td>Shares owned by shareholders in the organization of the business entity</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>votePercentage</b></td>
 			<td>BigInteger</td>
 			<td>false</td>
 			<td>99</td>
 			<td>Vote percentage of shareholders in the organization of business entity</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>activityDescription</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>financial activity</td>
 			<td>Activity description of the related entity</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>birthCountry</b></td>
 			<td>
                 String <br/>
@@ -1099,15 +1097,15 @@
 			<td>false</td>
 			<td>LT</td>
 			<td>The birth country of the related entity</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>birthDate</b></td>
 			<td>Date</td>
 			<td>false</td>
 			<td>2000-05-28</td>
 			<td>Birth date of a related individual entity</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>country</b></td>
 			<td>
                 String <br/>
@@ -1116,85 +1114,85 @@
 			<td>false</td>
 			<td>LT</td>
 			<td>Country of the related entity</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>entityType</b></td>
 			<td> <b>ENUM</b><br/> [INDIVIDUAL, <br/>ORGANIZATION]</td>
 			<td><b>true</b></td>
 			<td>INDIVIDUAL</td>
 			<td>Entity type describes client status</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>establishmentDate</b></td>
 			<td>Date</td>
 			<td>false</td>
 			<td>2020-05-30</td>
 			<td>Establishment date of related organization entity</td>
-	</tr>
-	<tr>
+	    </tr>
+    	<tr>
 			<td><b>extId</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>12345678912345</td>
 			<td>Used for screening callbacks to identify entity</td>
-	</tr>
-	<tr>
+    	</tr>
+    	<tr>
 			<td><b>firstName</b></td>
 			<td>String</td>
 			<td>true/false</td>
 			<td>John</td>
 			<td>First name of related entity br><b>Mandatory</b> when entityType = INDIVIDUAL <br/><b>Not Used</b>  when entityType = ORGANIZATION</td>
-	</tr>
-	<tr>
+    	</tr>
+	    <tr>
 			<td><b>isInAdverseMedia</b></td>
 			<td>Boolean</td>
 			<td>false</td>
 			<td>false</td>
 			<td>An indication of the existence of information for an adverse media entity</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>isPEP</b></td>
 			<td>Boolean</td>
 			<td>false</td>
 			<td>false</td>
 			<td>An indicator for a related individual entity is a politically exposed person</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>isSanctioned</b></td>
 			<td>Boolean</td>
 			<td>false</td>
 			<td>false</td>
 			<td>Indicator for sanctions applied to the entity</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>lastName</b></td>
 			<td>String</td>
 			<td>true/false</td>
 			<td>Rodriguez</td>
 			<td>Last name of related entity <br/><b>Mandatory</b> when entityType = INDIVIDUAL <br/><b>Not Used</b>  when entityType = ORGANIZATION</td>
-	</tr>
-	<tr>
+	    </tr>
+    	<tr>
 			<td><b>legalForm</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>COOPERATIVE</td>
 			<td>Legal form of organization</td>
-	</tr>
-	<tr>
+    	</tr>
+	    <tr>
 			<td><b>nationalCode</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>123456789</td>
 			<td>National code or national identification number of individual or organization. If a country does not issue national code, any other unique identifier can be used</td>
-	</tr>
-	<tr>
+    	</tr>
+	    <tr>
 			<td><b>regionOfActivityDescription</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>EU</td>
 			<td>Description of activity region of related entity</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>registrationCountry</b></td>
 			<td>
                 String <br/>
@@ -1203,76 +1201,76 @@
 			<td>false</td>
 			<td>LT</td>
 			<td>Country of registration of related entity</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>relationDescription</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>founder</td>
 			<td>Description of the relationship between entities</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>title</b></td>
 			<td>String</td>
 			<td>true/ false</td>
 			<td>Beko</td>
 			<td><br/><b>Mandatory</b> when entityType = ORGANIZATION <br/><b>Not Used</b>  when entityType = INDIVIDUAL</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>listActivity</b></td>
 			<td>[ActivityApi]</td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activities of related entity</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>listAdditionalValues</b></td>
 			<td>[AdditionalValueApi]</td>
 			<td>false</td>
 			<td>-</td>
 			<td>Additional information about businessEntity</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>listAddress</b></td>
 			<td>[AddressApi]</td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of addresses</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>listBusinessEntityDocument</b></td>
 			<td>[BusinessEntityDocumentApi]</td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of related entity document</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>listContact</b></td>
 			<td>[ContactApi]</td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of contacts of related entity</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>listCountryOfActivity</b></td>
 			<td>[countryOfActivity]</td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activity countries of related entity</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>listIncomeSource</b></td>
 			<td>[IncomeSourceApi]</td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of income sources</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>listRegionOfActivity</b></td>
 			<td>[regionOfActivity]</td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activity regions of related entity</td>
-	</tr>
+	    </tr>
 	</tbody>
 </table>

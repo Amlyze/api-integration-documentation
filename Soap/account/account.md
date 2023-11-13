@@ -8,8 +8,6 @@ This section provides detailed information on the endpoints that can be used to 
 
 **wsdl** `/amlyze-ws/ImportAccountService.wsdl`
 
-**swagger** `GET /swagger-ui/`
-
 **URL structure:** `http://[host][port][path][service]`
 
 **Example:** `http://[host]:8878/amlyze-ws/ImportAccountV2Service`
@@ -18,7 +16,7 @@ This section provides detailed information on the endpoints that can be used to 
 
 ## Additional Info
 
-* METHOD ` POST ` 
+* METHOD ` POST ` 
 * Auth required: `NO`
 * Content-Type: `text/xml`
 ---
@@ -123,7 +121,7 @@ The request body contains the data that you are sending to the API. The data doc
         </ns2:Result>
 ```
 ----
-**Possible errorrs**
+**Possible errors**
 
 All possible errors can be found [*here*](acc_possible_errors.md)  
 
@@ -156,5 +154,3 @@ The Minimalistic request example below shows the minimum required fields to succ
     </soap:Body>
 </soap:Envelope>
 ```
-
-

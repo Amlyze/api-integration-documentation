@@ -526,20 +526,20 @@
 		</tr>
 	</thead>
 	<tbody>
-	<tr>
+	    <tr>
 			<td><b>ActivityType</b></td>
 			<td>String</td>
 			<td><b>true</b></td>
 			<td>ACTIVITY_OTHER</td>
 			<td>Type of business activity. Code from activity classifier</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>IncomePercentage</b></td>
 			<td>BigInteger</td>
 			<td>false</td>
 			<td>15</td>
 			<td>Percentage of income from certain activity</td>
-	</tr>
+	    </tr>
 	</tbody>
 </table>
 

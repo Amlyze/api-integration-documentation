@@ -93,7 +93,7 @@ Classifiers guide you through extracting needed values for upcoming request fiel
 
 ---
 
-METHOD: `GET`
+METHOD: `GET`
 Auth required: `NO`
 Permissions required: `None`
 

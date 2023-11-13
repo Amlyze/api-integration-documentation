@@ -3,8 +3,6 @@
 
 ## EndPoint
 
-**swagger** `GET /swagger-ui/`
-
 **URL structure:** `http://[host][port][path][service]`
 
 **Example:** `http://[host]:8878/amlyze-ws/EvaluateCustomerV2Service`
@@ -13,7 +11,7 @@
 
 ## Additional Info
 
-* METHOD ` POST ` 
+* METHOD ` POST ` 
 * Auth required: `NO`
 * Content-Type: `text/xml`
 ---
@@ -53,24 +51,24 @@
 `If request was sent correctly, the <Result> displays  <ResultType> together with <CommunicationStatus>`
 
 <table>
-		<thead>
-			<tr>
-				<td><b>XML TAG</b></td>
-				<td><b>TYPE</b></td>
-				<td><b>DESCRIPTION</b></td>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><b>ResultType</b></td>
-				<td>String<br/><b>Enum</b><br/>[REQUEST_ACCEPTED]</td>
-				<td>Result type returns the answer that the action was successful</td>
-			</tr>
-			<tr>
-				<td><b>CommunicationStatus</b></td>
-				<td>String<br/><b>Enum</b><br/>[COMPLETED]</td>
-				<td>Indicates that Communication was successful</td>
-		</tbody>
+ <thead>
+     <tr>
+         <td><b>XML TAG</b></td>
+         <td><b>TYPE</b></td>
+         <td><b>DESCRIPTION</b></td>
+     </tr>
+ </thead>
+ <tbody>
+     <tr>
+         <td><b>ResultType</b></td>
+         <td>String<br/><b>Enum</b><br/>[REQUEST_ACCEPTED]</td>
+         <td>Result type returns the answer that the action was successful</td>
+     </tr>
+     <tr>
+         <td><b>CommunicationStatus</b></td>
+         <td>String<br/><b>Enum</b><br/>[COMPLETED]</td>
+         <td>Indicates that Communication was successful</td>
+ </tbody>
 </table>
 
 **Example:**
@@ -88,35 +86,35 @@
 `If the request was sent not properly, the <Result> displays more information.`
 
 <table>
-		<thead>
-			<tr>
-				<td><b>XML TAG</b></td>
-				<td><b>TYPE</b></td>
-				<td><b>DESCRIPTION</b></td>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><b>ResultType</b></td>
-				<td>String<br/><b>Enum</b><br/>[REQUEST_REJECTED]</td>
-				<td>Result type returns the answer that the action was not successful</td>
-			</tr>
-			<tr>
-				<td><b>CommunicationStatus</b></td>
-				<td>String<br/><b>Enum</b><br/>[INVALID]</td>
-				<td>"INVALID" Communication status can be received when some errors or mistakes occur</td>
-            </tr>
-            <tr>
-				<td><b>ErrorCode</b></td>
-				<td>String</td>
-				<td>Error code returns the code of an error</td>
-            </tr>
-            <tr>
-				<td><b>ErrorDescription</b></td>
-				<td>String</td>
-				<td>Error is described in a more detailed manner in error description field</td>
-            </tr>
-		</tbody>
+     <thead>
+         <tr>
+             <td><b>XML TAG</b></td>
+             <td><b>TYPE</b></td>
+             <td><b>DESCRIPTION</b></td>
+         </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>ResultType</b></td>
+            <td>String<br/><b>Enum</b><br/>[REQUEST_REJECTED]</td>
+            <td>Result type returns the answer that the action was not successful</td>
+        </tr>
+        <tr>
+            <td><b>CommunicationStatus</b></td>
+            <td>String<br/><b>Enum</b><br/>[INVALID]</td>
+            <td>"INVALID" Communication status can be received when some errors or mistakes occur</td>
+        </tr>
+        <tr>
+            <td><b>ErrorCode</b></td>
+            <td>String</td>
+            <td>Error code returns the code of an error</td>
+        </tr>
+        <tr>
+            <td><b>ErrorDescription</b></td>
+            <td>String</td>
+            <td>Error is described in a more detailed manner in error description field</td>
+        </tr>
+    </tbody>
 </table>
 
 **Example:**
@@ -160,7 +158,3 @@ The Minimalistic request example below shows the minimum required fields to succ
     </soap:Body>
 </soap:Envelope>
 ```
-
-
-
-

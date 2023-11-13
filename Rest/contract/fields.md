@@ -115,36 +115,32 @@
 	</thead>
 	<tbody>
 	    <tr>
-	    		<td><b>code</b></td>
-	    		<td>String</td>
-                <td><b>true</b></td>
-	    		<td>'interest' | 'agency' | 'status' | 'principal_amount'</td>
-	    		<td>Unique code</td>
+            <td><b>code</b></td>
+            <td>String</td>
+            <td><b>true</b></td>
+            <td>'interest' | 'agency' | 'status' | 'principal_amount'</td>
+            <td>Unique code</td>
 	    </tr>
 	    <tr>
-	    		<td><b>title</b></td>
-	    		<td>String</td>
-                <td><b>true</b></td>
-	    		<td>Human readable title.</td>
-	    		<td> Description, what kind of data is stored here</td>
+            <td><b>title</b></td>
+            <td>String</td>
+            <td><b>true</b></td>
+            <td>Human readable title.</td>
+            <td> Description, what kind of data is stored here</td>
 	    </tr>
 	    <tr>
-	    		<td><b>value</b></td>
-	    		<td>String</td>
-                <td>false</td>
-	    		<td>10000</td>
-	    		<td>value of field</td>
+            <td><b>value</b></td>
+            <td>String</td>
+            <td>false</td>
+            <td>10000</td>
+            <td>value of field</td>
 	    </tr>
 	    <tr>
-	    		<td><b>dataType</b></td>
-	    		<td><b>ENUM </b><br/>[STRING,<br/> INTEGER,<br/> DECIMAL,<br/> DATE,<br/> TIMESTAMP,<br/> BOOLEAN,<br/> EXTERNAL_LINK]</td>
-                <td>false</td>
-	    		<td>STRING</td>
-	    		<td>Default 'STRING'</td>
+            <td><b>dataType</b></td>
+            <td><b>ENUM </b><br/>[STRING,<br/> INTEGER,<br/> DECIMAL,<br/> DATE,<br/> TIMESTAMP,<br/> BOOLEAN,<br/> EXTERNAL_LINK]</td>
+            <td>false</td>
+            <td>STRING</td>
+            <td>Default 'STRING'</td>
 	    </tr>
 	</tbody>
-	
 </table>
-
-		
-

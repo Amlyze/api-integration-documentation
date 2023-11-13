@@ -29,69 +29,67 @@ Customers contain identifying information and KYC data. This section provides in
 ## Responses
 
 <table>
-		<thead>
-			<tr>
-				<td style="text-align:center"><b>Code</b></td>
-				<td style="text-align:center"><b>Status</b></td>
-				<td style="text-align:center"><b>Response</b></td>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><b>200</b></td>
-				<td style="text-align:center"><i>OK</i></td>
-				<td>
-					<pre>
+    <thead>
+        <tr>
+            <td><b>Code</b></td>
+            <td><b>Status</b></td>
+            <td><b>Response</b></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>200</b></td>
+            <td><i>OK</i></td>
+            <td>
+                <pre>
 {
-  "resultType": "REQUEST_ACCEPTED"
+    "resultType": "REQUEST_ACCEPTED"
 }
-                    </pre>
-				</td>
-			</tr>
-			<tr>
-				<td><b>400</b></td>
-				<td style="text-align:center"><i>Bad Request</i></td>
-				<td> 
-                    <pre>
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td><b>400</b></td>
+            <td><i>Bad Request</i></td>
+            <td> 
+                <pre>
 {
-"errors": [
-        "CommunicationNumber is mandatory"
-   	]
+    "errors": ["CommunicationNumber is mandatory"]
 }
-                    </pre>
-				</td>
-			</tr>
-				<tr>
-				<td><b>404</b></td>
-				<td style="text-align:center"><i>Not Found</i></td>
-				<td> 
-                    <pre>
+                </pre>
+            </td>
+        </tr>
+            <tr>
+            <td><b>404</b></td>
+            <td><i>Not Found</i></td>
+            <td> 
+                <pre>
 {
-  "resultType": "REQUEST_REJECTED",
-  "status": 404,
-  "error": "Not Found"
+    "resultType": "REQUEST_REJECTED",
+    "status": 404,
+    "error": "Not Found"
 }
-                    </pre>
-				</td>
-			</tr>
-			<tr>
-				<td><b>500</b></td>
-				<td style="text-align:center"><i>Internal Server Error</i></td>
-				<td> 
-                    <pre>
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td><b>500</b></td>
+            <td><i>Internal Server Error</i></td>
+            <td> 
+                <pre>
 {
-  "resultType": "REQUEST_REJECTED"
-  "status": 500,
-  "error": "Internal Server Error"
+    "resultType": "REQUEST_REJECTED"
+    "status": 500,
+    "error": "Internal Server Error"
 }
-                    </pre>
-				</td>
-			</tr>
-		</tbody>
+                </pre>
+            </td>
+        </tr>
+    </tbody>
 </table>
 
 
-**Possible errorrs**
+**Possible errors**
 
 All possible errors can be found [*here*](cust_possible_errors.md)  
 

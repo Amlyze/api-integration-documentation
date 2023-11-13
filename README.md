@@ -13,7 +13,7 @@ In order to integrate - many steps must be done, therefore we will try to ease t
 
 ---
 
-Crrently two `SOAP/REST` API integrations are offered. 
+Currently two `SOAP/REST` API integrations are offered. 
 
 ---
 Please note that the `SOAP API is deprecated`. It is recommended to migrate to newer alternative such as REST API.
@@ -24,6 +24,7 @@ Please note that the `SOAP API is deprecated`. It is recommended to migrate to n
 * [REST API](Rest/README.md)
 
 * [SOAP API](Soap/README.md)
+
 
 ---
 We understand there might be a plenty of questions, therefore - QA section was created

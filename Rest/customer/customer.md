@@ -96,7 +96,7 @@ Customers contain identifying information and KYC data. This section provides in
 </table>
 
 
-**Possible errorrs**
+**Possible errors**
 
 All possible errors can be found [*here*](cust_possible_errors.md)  
 

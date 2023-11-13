@@ -318,62 +318,62 @@
 		</tr>
 	</thead>
 	<tbody>
-	<tr>
+	    <tr>
 			<td><b>addressDetails</b></td>
 			<td>String</td>
 			<td><b>true</b></td>
 			<td>Verkiu 1, Vilnius</td>
 			<td>Full address description</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>addressType</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>RESIDENCE</td>
 			<td>Type of entity address. Classifier AddressType</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>city</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>Vilnius</td>
 			<td>City of given address</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>country</b></td>
 			<td>String</td>
 			<td><b>true</b></td>
 			<td>LT</td>
 			<td>Country of given addres. Classifier Country</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>region</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>EU</td>
 			<td>Region of given address</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>streetAddress</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>Verkiu 1</td>
 			<td>Street, house and flat of given address</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>useForCorrespondence</b></td>
 			<td>Boolean</td>
 			<td>false</td>
 			<td>true</td>
 			<td>Check for using the address in correspondence</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>zipCode</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>12345</td>
 			<td>Zip code of the address</td>
-	</tr>
+	    </tr>
 	</tbody>
 </table>
 
@@ -448,7 +448,6 @@
             <td>Identification document</td>
         </tr>
 	</tbody>
-
 </table>
 
 ## ContactApi
@@ -464,7 +463,7 @@
 		</tr>
 	</thead>
 	<tbody>
-	<tr>
+	    <tr>
 			<td><b>contactType</b></td>
             <td>
                 String<br/>
@@ -475,8 +474,8 @@
 			<td><b>true</b></td>
 			<td>MOBILEPHONE</td>
 			<td>Way of contacting entity.</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>contactDetails</b></td>
 			<td>String</td>
 			<td>true</td>
@@ -486,15 +485,13 @@
                 www.website.com<br/>
             </td>
 			<td>Details of contact.</td>
-	</tr>
-	<tr>
+	    </tr>
+	    <tr>
 			<td><b>useForCommunication</b></td>
 			<td>Boolean</td>
 			<td>false</td>
-			<td>
-                true/false
-            </td>
+			<td>true/false</td>
 			<td>Indicator for the usage of communication way.</td>
-	</tr>
+	    </tr>
 	</tbody>
 </table>

@@ -142,7 +142,7 @@ An operation is a transaction between two or more parties, where one of the part
 </table>
 
 
-**Possible errorrs**
+**Possible errors**
 
 All possible errors can be found [*here*](op_possible_errors.md)  
 

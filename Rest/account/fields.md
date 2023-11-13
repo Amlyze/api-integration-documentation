@@ -1,5 +1,5 @@
 # Account
-​
+
 <table>
 	<thead>
 		<tr>
@@ -127,6 +127,4 @@
             <td>A reason for suspension can be provided only if the account status is SUSPENDED</td>
         </tr>
     </tbody>
-  </table>  
-
-
+</table>

@@ -7,8 +7,6 @@ Customers contain identifying information and KYC data. This section provides in
 
 ## EndPoint
 
-**swagger** `GET /swagger-ui/`
-
 **URL structure:** `http://[host][port][path][service]`
 
 **Example:** `http://[host]:8878/amlyze-ws/EvaluateCustomerV2Service`
@@ -17,7 +15,7 @@ Customers contain identifying information and KYC data. This section provides in
 
 ## Additional Info
 
-* METHOD ` POST ` 
+* METHOD ` POST ` 
 * Auth required: `NO`
 * Content-Type: `text/xml`
 ---
