@@ -4,16 +4,17 @@
 <table>
 		<thead>
 			<tr>
-				<td style="text-align:center"><b>Error Desctiption</td>
+				<td><b>Error description</b></td>
+            </tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td >AccountExtId is mandatory</td>
+				<td>AccountExtId is mandatory</td>
             <tr>
 				<td>AccountNumber is mandatory</td>
 			</tr>
             <tr>
-				<td >BusinessEntityExtId is mandatory</td>
+				<td>BusinessEntityExtId is mandatory</td>
 			</tr>
             <tr>
 				<td>BusinessEntity with given extId does not exist in amlyze</td>
@@ -44,7 +45,6 @@
 			</tr>
             <tr>
 				<td>Not closed account cant have closing date</td>
-			</tr>
 			</tr>
 		</tbody>
 </table>

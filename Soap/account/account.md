@@ -42,10 +42,10 @@ The request body contains the data that you are sending to the API. The data doc
 
 ## Samples
 
-* [account_Active](samples/account_Active.xml)
-* [account_Suspended](samples/account_Suspended.xml)
-* [account_Closed](samples/account_Closed.xml)
-* [account_Minimalistic](samples/account_Minimalistic.xml)
+* [account_active](samples/account_active.xml)
+* [account_suspended](samples/account_suspended.xml)
+* [account_closed](samples/account_closed.xml)
+* [account_minimalistic](samples/account_minimalistic.xml)
 ---
 
 ## Expected Response from your system
@@ -57,15 +57,15 @@ The request body contains the data that you are sending to the API. The data doc
 <table>
 		<thead>
 			<tr>
-				<td ><b>XML TAG<b></td>
-				<td ><b>TYPE<b></td>
-				<td ><b>DESCRIPTION<b></td>
+				<td><b>XML TAG</b></td>
+				<td><b>TYPE</b></td>
+				<td><b>DESCRIPTION</b></td>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td><b>ResultType<b></td>
-				<td style="text-align:center">String</br>Enum:</br>
+				<td><b>ResultType</b></td>
+				<td style="text-align:center">String<br/>Enum:<br/>
 [REQUEST_ACCEPTED]</td>
 				<td>Result type returns the answer that the action was successful</td>
 			</tr>
@@ -88,25 +88,24 @@ The request body contains the data that you are sending to the API. The data doc
 <table>
 		<thead>
 			<tr>
-				<td ><b>XML TAG<b></td>
-				<td ><b>TYPE<b></td>
-				<td ><b>DESCRIPTION<b></td>
+				<td><b>XML TAG</b></td>
+				<td><b>TYPE</b></td>
+				<td><b>DESCRIPTION</b></td>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td><b>ResultType<b></td>
-				<td style="text-align:center"> String</br>Enum:</br>
-[ERROR]</td>
+				<td><b>ResultType</b></td>
+				<td> String<br/>Enum:<br/>[ERROR]</td>
 				<td>Result type returns the answer that the action was not successful</td>
 			</tr>
             <tr>
-				<td><b>ErrorCode<b></td>
+				<td><b>ErrorCode</b></td>
 				<td style="text-align:center">String</td>
 				<td>Error code returns the code of an error</td>
             </tr>
             <tr>
-				<td><b>ErrorDescription<b></td>
+				<td><b>ErrorDescription</b></td>
 				<td style="text-align:center">String</td>
 				<td>Error is described in a more detailed manner in error description field</td>
             </tr>
