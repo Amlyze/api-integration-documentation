@@ -720,7 +720,7 @@
 			<td>Type of provided value</td>
 	    </tr>
 	    <tr>
-			<td><b>Description</b></td>
+			<td><b>description</b></td>
 			<td>String</td>
 			<td>true</td>
 			<td>entity has relation to USA</td>

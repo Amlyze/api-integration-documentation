@@ -3,11 +3,11 @@
 <table>
 	<thead>
 		<tr>
-			<td><b>field</b></td>
-			<td><b>type</b></td>
-			<td><b>mandatory</b></td>
-			<td><b>example</b></td>
-			<td style="width:600px"><b> description</b></td>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+			<td><b>Example</b></td>
+			<td style="width:600px"><b>Description</b></td>
 		</tr>
 	</thead>
 	<tbody>
@@ -106,11 +106,11 @@
 <table>
 	<thead>
 		<tr>
-			<td><b>field</b></td>
-			<td><b>type</b></td>
-            <td><b>mandatory</b></td>
-			<td><b>example</b></td>
-			<td><b>description</b></td>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+            <td><b>Mandatory</b></td>
+			<td><b>Example</b></td>
+			<td><b>Description</b></td>
 		</tr>
 	</thead>
 	<tbody>
