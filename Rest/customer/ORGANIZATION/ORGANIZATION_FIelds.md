@@ -64,7 +64,7 @@
 			<td>true</td>
 			<td>IMPORT</td>
 			<td>
-                Source of risk level<br> The value <b>"EVALUATE"</b> 
+                Source of risk level<br/> The value <b>"EVALUATE"</b> 
                 should be used for normal business processes - risk assessment will be performed. <br/> 
                 The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and questionnaire information will be imported without risk assessment
         </td>
@@ -82,7 +82,7 @@
 			<td><b>initializeScreeningProcesses</b></td>
 			<td>String</td>
 			<td>false</td>
-			<td>SANCTIONS,<br>PEP,<br/> ADVERSE_MEDIA</td>
+			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
 			<td>Defines which screening processes to initiate</td>
 		</tr>
 		<tr>

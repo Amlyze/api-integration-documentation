@@ -49,7 +49,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td><b>ENUM</b> <br/>[EVALUATE,<br/>IMPORT]</td>
             <td>true</td>
             <td>EVALUATE</td>
-            <td>Source of risk level<br> The value <b>"EVALUATE"</b> should be used for normal business processes - risk assessment will be performed.<br/> The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and it's questionnaire will be imported without risk assessment</td>
+            <td>Source of risk level<br/> The value <b>"EVALUATE"</b> should be used for normal business processes - risk assessment will be performed.<br/> The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and it's questionnaire will be imported without risk assessment</td>
         </tr>
         <tr>
             <td><b>operationDateTime</b></td>

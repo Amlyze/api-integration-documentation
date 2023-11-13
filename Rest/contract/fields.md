@@ -34,10 +34,10 @@
 		</tr>
 		<tr>
 			<td><b>contractType</b></td>
-			<td><b>CLASSIFIER </b><br>String</td>
+			<td><b>CLASSIFIER </b><br/>String</td>
 			<td>true</td>
 			<td>LOAN_CONTRACT</td>
-			<td>Type of contract for evaluation of the object.<br>💡 Possible values will be updated during configuration period. <br>💡 [AdditionalProperty] fields should be validated against classifier.</td>
+			<td>Type of contract for evaluation of the object.<br/>💡 Possible values will be updated during configuration period. <br/>💡 [AdditionalProperty] fields should be validated against classifier.</td>
 		</tr>
 		<tr>
 			<td><b>extId</b></td>
