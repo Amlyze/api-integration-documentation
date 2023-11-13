@@ -47,7 +47,7 @@
 			<td><b>ENUM</b><br/>[ORGANIZATION]</td>
 			<td><b>true</b></td>
 			<td>ORGANIZATION</td>
-			<td>Type business  entity</td>
+			<td>Type business entity</td>
 		</tr>
 		<tr>
 			<td><b>CustomerExtId</b></td>

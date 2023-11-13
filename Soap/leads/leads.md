@@ -55,22 +55,20 @@
 <table>
 		<thead>
 			<tr>
-				<td ><b>XML TAG<b></td>
-				<td ><b>TYPE<b></td>
-				<td ><b>DESCRIPTION<b></td>
+				<td><b>XML TAG</b></td>
+				<td><b>TYPE</b></td>
+				<td><b>DESCRIPTION</b></td>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td><b>ResultType<b></td>
-				<td style="text-align:center"><i> String</br>Enum:</br>
-[REQUEST_ACCEPTED]<i></td>
+				<td><b>ResultType</b></td>
+				<td>String<br/><b>Enum</b><br/>[REQUEST_ACCEPTED]</td>
 				<td>Result type returns the answer that the action was successful</td>
 			</tr>
 			<tr>
-				<td><b>CommunicationStatus<b></td>
-				<td style="text-align:center"><i>String</br>Enum:</br>
-[COMPLETED]<i></td>
+				<td><b>CommunicationStatus</b></td>
+				<td>String<br/><b>Enum</b><br/>[COMPLETED]</td>
 				<td>Indicates that Communication was successful</td>
 		</tbody>
 </table>
@@ -80,9 +78,9 @@
 `STATUS: 200 OK`
 ```xml
 <ns2:Result xmlns:ns2="urn:amlyze-services:EvaluateOperationService_v2r0">
-            <ns2:ResultType>REQUEST_ACCEPTED</ns2:ResultType>
-            <ns2:CommunicationStatus>COMPLETED</ns2:CommunicationStatus>
-        </ns2:Result>
+    <ns2:ResultType>REQUEST_ACCEPTED</ns2:ResultType>
+    <ns2:CommunicationStatus>COMPLETED</ns2:CommunicationStatus>
+</ns2:Result>
 ```
 ---
 **<span style="color: red;">"Rejected request"</span>**
@@ -92,32 +90,30 @@
 <table>
 		<thead>
 			<tr>
-				<td ><b>XML TAG<b></td>
-				<td ><b>TYPE<b></td>
-				<td ><b>DESCRIPTION<b></td>
+				<td><b>XML TAG</b></td>
+				<td><b>TYPE</b></td>
+				<td><b>DESCRIPTION</b></td>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td><b>ResultType<b></td>
-				<td style="text-align:center"> String</br>Enum:</br>
-[REQUEST_REJECTED]</td>
+				<td><b>ResultType</b></td>
+				<td>String<br/><b>Enum</b><br/>[REQUEST_REJECTED]</td>
 				<td>Result type returns the answer that the action was not successful</td>
 			</tr>
 			<tr>
-				<td><b>CommunicationStatus<b></td>
-				<td style="text-align:center">String</br>Enum:</br>
-[INVALID]</td>
+				<td><b>CommunicationStatus</b></td>
+				<td>String<br/><b>Enum</b><br/>[INVALID]</td>
 				<td>"INVALID" Communication status can be received when some errors or mistakes occur</td>
             </tr>
             <tr>
-				<td><b>ErrorCode<b></td>
-				<td style="text-align:center">String</td>
+				<td><b>ErrorCode</b></td>
+				<td>String</td>
 				<td>Error code returns the code of an error</td>
             </tr>
             <tr>
-				<td><b>ErrorDescription<b></td>
-				<td style="text-align:center">String</td>
+				<td><b>ErrorDescription</b></td>
+				<td>String</td>
 				<td>Error is described in a more detailed manner in error description field</td>
             </tr>
 		</tbody>
@@ -128,11 +124,11 @@
 `STATUS: 400 Bad Request / 500 Internal Server Error`
 ```xml
 <ns2:Result xmlns:ns2="urn:amlyze-services:EvaluateOperationService_v2r0">
-            <ns2:ResultType>REQUEST_REJECTED</ns2:ResultType>
-            <ns2:CommunicationStatus>INVALID</ns2:CommunicationStatus>
-            <ns2:ErrorCode>O001</ns2:ErrorCode>
-            <ns2:ErrorDescription>Bad Request</ns2:ErrorDescription>
-        </ns2:Result>
+    <ns2:ResultType>REQUEST_REJECTED</ns2:ResultType>
+    <ns2:CommunicationStatus>INVALID</ns2:CommunicationStatus>
+    <ns2:ErrorCode>O001</ns2:ErrorCode>
+    <ns2:ErrorDescription>Bad Request</ns2:ErrorDescription>
+</ns2:Result>
 ```
 
 ------
