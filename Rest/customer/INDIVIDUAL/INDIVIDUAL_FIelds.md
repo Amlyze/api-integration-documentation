@@ -1265,7 +1265,10 @@
 	    </tr>
 	    <tr>
 			<td><b>legalForm</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Legal form classifier)</a>
+            </td>
 			<td>false</td>
 			<td>COOPERATIVE</td>
 			<td>Legal form of organization</td>
@@ -1345,7 +1348,10 @@
     	</tr>
     	<tr>
 			<td><b>listCountryOfActivity</b></td>
-			<td>[countryOfActivity]</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activity countries of related entity</td>
@@ -1359,7 +1365,10 @@
 	    </tr>
 	    <tr>
 			<td><b>listRegionOfActivity</b></td>
-			<td>[regionOfActivity]</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activity regions of related entity</td>

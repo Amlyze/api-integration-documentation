@@ -284,7 +284,10 @@
 		</tr>
         <tr>
 			<td><b>legalForm</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Legal form classifier)</a>
+            </td>
 			<td>false</td>
 			<td>LTD</td>
 			<td>Legal form of organization</td>
