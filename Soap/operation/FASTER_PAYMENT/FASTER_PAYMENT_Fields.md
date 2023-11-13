@@ -19,42 +19,42 @@ In any type of operation between two or more parties, one of the parties is alwa
         <tr>
             <td><b>CommunicationNumber</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>ComNr_0011</td>
             <td>Unique number of communication</td>
         </tr>
         <tr>
             <td><b>Requester</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>Branch Name</td>
             <td>Name of the system requesting web service</td>
         </tr>
         <tr>
             <td><b>OperationExtId</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>Op_22xx22</td>
             <td>External identifier of operation</td>
         </tr>
         <tr>
             <td><b>OperationType</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>FASTER_PAYMENT</td>
             <td>Notifies about what kind of operation was performed</td>
         </tr>
         <tr>
             <td><b>SourceOfRiskLevel</b></td>
             <td>String<br/><b>ENUM</b> <br/>[EVALUATE,<br/>IMPORT]</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>EVALUATE</td>
             <td>Source of risk level<br/> The value <b>"EVALUATE"</b> should be used for normal business processes - risk assessment will be performed. <br/> The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and it's questionnaire will be imported without risk assessment</td>
         </tr>
         <tr>
             <td><b>OperationDateTime</b></td>
             <td>Date</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>2023-03-16T13:00:00Z</td>
             <td>The operation date and time show when the operation proceeded with</td>
         </tr>
@@ -75,14 +75,14 @@ In any type of operation between two or more parties, one of the parties is alwa
         <tr>
             <td><b>RiskManagementCategory</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>OP_DEFAULT</td>
             <td>Code of risk management category of object. Risk management category code from classifier can be checked <a href="../../README.md#classifiers">here</a></td>
         </tr>
         <tr>
             <td><b>FinancialFlowDirection</b></td>
             <td>FinancialFlowDirectionApi</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>INCOMING</td>
             <td>Refers to the movement of money between entities or accounts<br/>  direction = <b>INCOMING</b> your customer = <b>CREDITOR</b> 
             <br/>  direction = <b>OUTGOING</b> your customer = <b>DEBTOR</b>
@@ -98,7 +98,7 @@ In any type of operation between two or more parties, one of the parties is alwa
         <tr>
             <td><b>Amount</b></td>
             <td>BigDecimal</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>1499</td>
             <td>Field for the money amount sent in an operation</td>
         </tr>
@@ -112,14 +112,14 @@ In any type of operation between two or more parties, one of the parties is alwa
         <tr>
             <td><b>Currency</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>EUR</td>
             <td>Currency code from classifier.<br/> Currency code from classifier can be checked <a href="../../README.md#classifiers">here</a></td> 
         </tr>
         <tr>
             <td><b>Description</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>"Fund Transfer"</td>
             <td>The purpose of payment is saved under description.<br/> It is necessary for the operation to be proceeded</td>
         </tr>
@@ -162,7 +162,7 @@ In any type of operation between two or more parties, one of the parties is alwa
         <tr>
             <td><b>[ListOperationParty]</b></td>
             <td>OperationPartyApi</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>-</td>
             <td>List of entities that belong to one operation|</td>
         </tr>
@@ -189,7 +189,7 @@ At least one operation party account must exist in Amlyze (identified by account
         <tr>
             <td><b>AccountNumber</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>LT038625979279192518</td>
             <td>Unique account identification number used in performing operations</td>
         </tr>
@@ -210,7 +210,7 @@ At least one operation party account must exist in Amlyze (identified by account
         <tr>
             <td><b>EntityType</b></td>
             <td>String<br/><b>ENUM</b><br/>[INDIVIDUAL,<br/>ORGANIZATION,<br/>UNKNOWN]</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>INDIVIDUAL</td>
             <td>Describes client status.<br/>  UNKNOWN is valid only for counterparty (not a customer)</td>
         </tr>
@@ -224,7 +224,7 @@ At least one operation party account must exist in Amlyze (identified by account
         <tr>
             <td><b>PartyRole</b></td>
             <td>String<br/><b>ENUM</b> <br/>[DEBTOR,<br/>CREDITOR,<br/>ULTIMATE_DEBTOR,<br/>ULTIMATE_CREDITOR]</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>CREDITOR</td>
             <td>The role of the party in ongoing operation</td>
         </tr>

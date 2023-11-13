@@ -14,14 +14,14 @@
 		<tr>
 			<td><b>communicationNumber</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>ComNr_000321</td>
 			<td>Unique number of communication. used for risk assessment callback</td>
 		</tr>
 		<tr>
 			<td><b>requester</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>ComNr_000321</td>
 			<td>Name of the system requesting web service</td>
 		</tr>
@@ -35,7 +35,7 @@
 		<tr>
 			<td><b>riskManagementCategory</b></td>
 			<td>String <br/>(classifier)</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>IND_AMLYZE</td>
 			<td>
                 Code of risk management category for evaluation of the object.<br/>💡 
@@ -55,7 +55,7 @@
 		<tr>
 			<td><b>sourceOfRiskLevel</b></td>
 			<td><b>ENUM</b><br/>[IMPORT,EVALUATE]</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>IMPORT</td>
 			<td>
                 Source of risk level<br> The value <b>"EVALUATE"</b> 
@@ -82,21 +82,21 @@
 		<tr>
 			<td><b>customerStatus</b></td>
 			<td><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>ACTIVE</td>
 			<td>Customer status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received.<br/> ACTIVE - Customer is onboarded ( account is provided or customer assessment case is resolved)<br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is changed to being disabled</i></td>
 		</tr>
 		<tr>
 			<td><b>customerExtId</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>cust_1232</td>
 			<td>Unique external customer identifier. The identifier corresponds to the client's identifier in the financial institution</td>
 		</tr>
 		<tr>
 			<td><b>entityType</b></td>
 			<td><b>ENUM</b><br/>[INDIVIDUAL]</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>INDIVIDUAL</td>
 			<td>Whether business or individual entity</td>
 		</tr>
@@ -110,7 +110,7 @@
 		<tr>
 			<td><b>applicationDate</b></td>
 			<td>Date</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>2000-01-03</td>
 			<td>Date when customer first applied</td>
 		</tr>
@@ -148,14 +148,14 @@
                 String <br/>
                 <a href="../../README.md#classifiers">(Country classifier)</a>
             </td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>LT</td>
 			<td>Country of birth of individual entity</td>
 		</tr>
 		<tr>
 			<td><b>birthDate</b></td>
 			<td>Date</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>1995-05-24</td>
 			<td>Date of birth of individual entity</td>
 		</tr>
@@ -165,7 +165,7 @@
                 String <br/>
                 <a href="../../README.md#classifiers">(Country classifier)</a>
             </td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>LT</td>
 			<td>Country of citizenship of individual entity</td>
 		</tr>
@@ -186,14 +186,14 @@
         <tr>
 			<td><b>firstName</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>Jose</td>
 			<td>First name of individual entity</td>
 		</tr>
         <tr>
 			<td><b>lastName</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>Rodriguez</td>
 			<td>Last name of individual entity</td>
 		</tr>
@@ -671,7 +671,7 @@
                 String <br/>
                 <a href="../../README.md#classifiers">(Activity type classifier)</a>
             </td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>ACTIVITY_OTHER</td>
 			<td>Type of business activity.</td>
 	    </tr>
@@ -702,28 +702,28 @@
 	    <tr>
 			<td><b>code</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>related_to_usa</td>
 			<td>Identifier for additional field</td>
 	    </tr>
 	    <tr>
 			<td><b>datatype</b></td>
 			<td><b>ENUM </b><br/>[STRING,<br/> INTEGER,<br/> DECIMAL,<br/> DATE,<br/> TIMESTAMP,<br/> BOOLEAN\]</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>STRING</td>
 			<td>Type of provided value</td>
 	    </tr>
 	    <tr>
 			<td><b>Description</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>entity has relation to USA</td>
 			<td>human readable description of field</td>
 	    </tr>
 	    <tr>
 			<td><b>value</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>true</td>
 			<td>value of field</td>
 	    </tr>
@@ -747,7 +747,7 @@
 	    <tr>
 			<td><b>addressDetails</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>Verkiu 1, Vilnius</td>
 			<td>Full address description</td>
 	    </tr>
@@ -768,7 +768,7 @@
 	    <tr>
 			<td><b>country</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>LT</td>
 			<td>Country of given addres. Classifier Country</td>
 	    </tr>
@@ -834,42 +834,42 @@
 	    <tr>
 			<td><b>documentIssueAuthority</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>migration office</td>
 			<td>An authority that issued the document.</td>
 	    </tr>
 	    <tr>
 			<td><b>documentIssueCountry</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>LT</td>
 			<td>A country that issued the document</td>
 	    </tr>
 	    <tr>
 			<td><b>documentIssueDate</b></td>
 			<td>Date</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>2022-01-15</td>
 			<td>Issue date of the document in question</td>
 	    </tr>
 	    <tr>
 			<td><b>documentNumber</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>0123456789</td>
 			<td>Number of document in question</td>
 	    </tr>
 	    <tr>
 			<td><b>entityType</b></td>
 			<td><b>ENUM</b><br/> [INDIVIDUAL, <br/> ORGANIZATION]</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>INDIVIDUAL</td>
 			<td>Entity type describes client status</td>
 	    </tr>
 	    <tr>
 			<td><b>identityDocumentType</b></td>
 			<td><b>ENUM</b><br/>[PASSPORT, <br/> IDENTITYCARD,<br/> RESIDENCEPERMIT,<br/> DRIVINGLICENSE,<br/> REGISTRATIONCERTIFICATE,<br/> OTHER]</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>PASSPORT</td>
 			<td>Identification document</td>
 	    </tr>
@@ -897,7 +897,7 @@
                 [MOBILEPHONE, <br/>FIXEDPHONE, <br/>EMAIL,
                 WEBSITE]
             </td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>MOBILEPHONE</td>
 			<td>Way of contacting entity.</td>
 	    </tr>
@@ -942,7 +942,7 @@
                 String <br/>
                 <a href="../../README.md#classifiers">(Country classifier)</a>
             </td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>LT</td>
 			<td>Country of tax payment</td>
 	    </tr>
@@ -986,7 +986,7 @@
 	    <tr>
 			<td><b>turnoverRange</b></td>
 			<td><b>ENUM </b><br/> [SINGLE,<br/> DAILY, <br/> MONTHLY,<br/> ANNUAL]</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>MONTHLY</td>
 			<td>Range of declared turnover</td>
 	    </tr>
@@ -996,7 +996,7 @@
                 String <br/>
                 <a href="../../README.md#classifiers">(Turnover type classifier)</a>
             </td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>TURNOVER_PER_MONTH</td>
 			<td>Type of declared turnover</td>
 	    </tr>
@@ -1036,7 +1036,7 @@
                 String <br/>
                 <a href="../../README.md#classifiers">(Income source type classifier)</a>
             </td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>SALARY</td>
 			<td>Type of income source</td>
 	    </tr>
@@ -1070,14 +1070,14 @@
                 String <br/>
                 <a href="../../README.md#classifiers">(Payment purpose type classifier)</a>
             </td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>TAXES</td>
 			<td>Type of income source code.</td>
 	    </tr>
 	    <tr>
 			<td><b>turnoverDirection</b></td>
 			<td><b>ENUM </b> <br/> [IN,<br/>OUT]</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>OUT</td>
 			<td>The turnover direction of payment</td>
 	    </tr>
@@ -1143,7 +1143,7 @@
                 String <br/>
                 <a href="../../README.md#classifiers">(Relation type classifier)</a>
             </td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>OWNER</td>
 			<td>Type of relationship between entities.</td>
 	    </tr>
@@ -1198,7 +1198,7 @@
 	    <tr>
 			<td><b>entityType</b></td>
 			<td> <b>ENUM</b><br/> [INDIVIDUAL, <br/>ORGANIZATION]</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>INDIVIDUAL</td>
 			<td>Entity type describes client status</td>
 	    </tr>

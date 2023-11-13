@@ -14,14 +14,14 @@
 		<tr>
 			<td><b>CommunicationNumber</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>ComNr_000321</td>
 			<td>Unique number of communication. Used for risk assessment callback</td>
 		</tr>
         <tr>
 			<td><b>Requester</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>ComNr_000321</td>
 			<td>Name of the system requesting web service</td>
 		</tr>
@@ -45,14 +45,14 @@
         <tr>
             <td><b>AccountExtId</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>Acc_0011</td>
             <td>External account identification number used to track activity regarding the specific account</td>
         </tr>
         <tr>
             <td><b>AccountNumber</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>LT705734389447757988</td>
             <td>Unique account identification number used in performing operations</td>
         </tr>
@@ -66,7 +66,7 @@
         <tr>
             <td><b>AccountStatus</b></td>
             <td><b>ENUM</b> <br/> [ACTIVE, <br/>SUSPENDED,<br/> CLOSED]</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>ACTIVE</td>
             <td>Refers to the current condition or state of an account</td>
         </tr>
@@ -80,21 +80,21 @@
         <tr>
             <td><b>BIC</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>BICXX22</td>
             <td>Bank identifier code for account number</td>
         </tr>
         <tr>
             <td><b>BusinessEntityExtId</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>ExtId_0012</td>
             <td>External business entity indicator. Refers to the same value used for the <br/><b>customerExtId</b>, which helps to identify external business entity</td>
         </tr>
         <tr>
             <td><b>OpeningDate</b></td>
             <td>Date</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>2022-12-10T12:10:11+02:00</td>
             <td>Account opening date</td>
         </tr>
@@ -108,7 +108,7 @@
         <tr>
             <td><b>CurrencyCode</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>EUR</td>
             <td>International currency code</td>
         </tr>

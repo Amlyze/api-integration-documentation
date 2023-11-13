@@ -14,14 +14,14 @@
 		<tr>
 			<td><b>CommunicationNumber</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>ComNr_000321</td>
 			<td>Unique number of communication. used for risk assessment callback</td>
 		</tr>
 		<tr>
 			<td><b>Requester</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>ComNr_000321</td>
 			<td>Name of the system requesting web service</td>
 		</tr>
@@ -35,7 +35,7 @@
 		<tr>
 			<td><b>RiskManagementCategory</b></td>
 			<td>String <br/>(classifier)</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>ORG_AMLYZE</td>
 			<td>Code of risk management category for evaluation of the object.<br/>💡 Possible values here are given just as an example, in the configuration period these could be updated</td>
 		</tr>
@@ -50,7 +50,7 @@
 		<tr>
 			<td><b>SourceOfRiskLevel</b></td>
 			<td><b>ENUM</b><br/>[IMPORT,EVALUATE]</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>IMPORT</td>
 			<td>Source of risk level<br/> The value <b>"EVALUATE"</b> should be used for normal business processes - risk assessment will be performed. <br/> The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and it's questionnaire will be imported without risk assessment</td>
 		</tr>
@@ -79,14 +79,14 @@
 		<tr>
 			<td><b>CustomerExtId</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>cust_1232</td>
 			<td>Unique external customer identifier. The identifier corresponds to the client's identifier in the financial institution</td>
 		</tr>
 		<tr>
 			<td><b>EntityType</b></td>
 			<td><b>ENUM</b><br/>[ORGANIZATION]</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>ORGANIZATION</td>
 			<td>Type business entity</td>
 		</tr>
@@ -100,7 +100,7 @@
 		<tr>
 			<td><b>ApplicationDate</b></td>
 			<td>Date</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>2000-01-03</td>
 			<td>Date when customer first applied</td>
 		</tr>
@@ -289,7 +289,7 @@
         <tr>
 			<td><b>LegalForm</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>LTD</td>
 			<td>Legal form of organization</td>
 		</tr>
@@ -359,7 +359,7 @@
 		<tr>
 			<td><b>RegistrationCountry</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>LT</td>
 			<td>Country of registration of the organization</td>
 		</tr>
@@ -380,7 +380,7 @@
 		<tr>
 			<td><b>Title</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>Moller</td>
 			<td>Title of organization entity</td>
 		</tr>
@@ -529,7 +529,7 @@
 	    <tr>
 			<td><b>ActivityType</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>ACTIVITY_OTHER</td>
 			<td>Type of business activity. Code from activity classifier</td>
 	    </tr>
@@ -560,28 +560,28 @@
         <tr>
             <td><b>Code</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>related_to_usa</td>
             <td>Identifier for additional field</td>
         </tr>
         <tr>
             <td><b>Datatype</b></td>
             <td><b>ENUM </b><br/>[STRING,<br/> INTEGER,<br/> DECIMAL,<br/> DATE,<br/> TIMESTAMP,<br/> BOOLEAN]</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>STRING</td>
             <td>Type of provided value</td>
         </tr>
         <tr>
             <td><b>Description</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>entity has relation to USA</td>
             <td>human readable description of field</td>
         </tr>
         <tr>
             <td><b>Value</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>true</td>
             <td>value of field</td>
         </tr>
@@ -605,7 +605,7 @@
         <tr>
             <td><b>AddressDetails</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>Verkiu 1, Vilnius</td>
             <td>Full address description</td>
         </tr>
@@ -626,7 +626,7 @@
         <tr>
             <td><b>Country</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>LT</td>
             <td>Country of given addres. Classifier Country</td>
         </tr>
@@ -692,42 +692,42 @@
         <tr>
             <td><b>DocumentIssueAuthority</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>migration office</td>
             <td>An authority that issued the document.</td>
         </tr>
         <tr>
             <td><b>DocumentIssueCountry</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>LT</td>
             <td>A country that issued the document</td>
         </tr>
         <tr>
             <td><b>DocumentIssueDate</b></td>
             <td>Date</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>2022-01-15</td>
             <td>Issue date of the document in question</td>
         </tr>
         <tr>
             <td><b>DocumentNumber</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>0123456789</td>
             <td>Number of document in question</td>
         </tr>
         <tr>
             <td><b>EntityType</b></td>
             <td><b>ENUM</b><br/> [INDIVIDUAL, <br/> ORGANIZATION]</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>ORGANIZATION</td>
             <td>Entity type describes client status</td>
         </tr>
         <tr>
             <td><b>IdentityDocumentType</b></td>
             <td><b>ENUM</b><br/>[PASSPORT, <br/> IDENTITYCARD,<br/> RESIDENCEPERMIT,<br/> DRIVINGLICENSE,<br/> REGISTRATIONCERTIFICATE,<br/> OTHER]</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>REGISTRATIONCERTIFICATE</td>
             <td>Identification document</td>
         </tr>
@@ -751,7 +751,7 @@
         <tr>
             <td><b>Country</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>LT</td>
             <td>Country of tax payment</td>
         </tr>
@@ -795,14 +795,14 @@
         <tr>
             <td><b>TurnoverRange</b></td>
             <td><b>ENUM </b><br/> [SINGLE,<br/> DAILY, <br/> MONTHLY,<br/> ANNUAL]</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>MONTHLY</td>
             <td>Range of declared turnover</td>
         </tr>
         <tr>
             <td><b>TurnoverType</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>TURNOVER_PER_MONTH</td>
             <td>Type of declared turnover. Classifier turnoverType</td>
         </tr>
@@ -839,7 +839,7 @@
         <tr>
             <td><b>IncomeSourceType</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>SALARY</td>
             <td>Type of income source. Classifier incomeSourceType</td>
         </tr>
@@ -869,14 +869,14 @@
         <tr>
             <td><b>PaymentPurposeType</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>TAXES</td>
             <td>Type of income source, code of paymentPurposeType classifier</td>
         </tr>
         <tr>
             <td><b>TurnoverDirection</b></td>
             <td><b>ENUM </b> <br/> [INCOMING,<br/>OUTGOING]</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>OUT</td>
             <td>The turnover direction of payment</td>
         </tr>
@@ -936,7 +936,7 @@
         <tr>
             <td><b>RelationType</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>OWNER</td>
             <td>Type of relationship between entities. RelationType classifier</td>
         </tr>
@@ -992,7 +992,7 @@
         <tr>
             <td><b>EntityType</b></td>
             <td><b>ENUM</b><br/> [INDIVIDUAL, <br/>ORGANIZATION]</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>INDIVIDUAL</td>
             <td>Entity type describes client status</td>
         </tr>

@@ -14,14 +14,14 @@
 		<tr>
 			<td><b>communicationNumber</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>ComNr_000321</td>
 			<td>Unique number of communication. used for risk assessment callback</td>
 		</tr>
 		<tr>
 			<td><b>requester</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>ComNr_000321</td>
 			<td>Name of the system requesting web service</td>
 		</tr>
@@ -35,21 +35,21 @@
 		<tr>
 			<td><b>contractType</b></td>
 			<td><b>CLASSIFIER </b><br>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>LOAN_CONTRACT</td>
 			<td>Type of contract for evaluation of the object.<br>💡 Possible values will be updated during configuration period. <br>💡 [AdditionalProperty] fields should be validated against classifier.</td>
 		</tr>
 		<tr>
 			<td><b>extId</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>any_contract_1232</td>
 			<td>Unique external contract identifier. The identifier corresponds to the contract identifier in the financial institution</td>
 		</tr>
 		<tr>
 			<td><b>contractCode</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>REG74121101</td>
 			<td>Contract code or number</td>
 		</tr>
@@ -117,14 +117,14 @@
 	    <tr>
             <td><b>code</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>'interest' | 'agency' | 'status' | 'principal_amount'</td>
             <td>Unique code</td>
 	    </tr>
 	    <tr>
             <td><b>title</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>Human readable title.</td>
             <td> Description, what kind of data is stored here</td>
 	    </tr>

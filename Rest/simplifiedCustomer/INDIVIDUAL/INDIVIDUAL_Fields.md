@@ -14,21 +14,21 @@
 		<tr>
 			<td><b>communicationNumber</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>ComNr_000321</td>
 			<td>Unique number of communication. used for risk assessment callback</td>
 		</tr>
 		<tr>
 			<td><b>requester</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>ComNr_000321</td>
 			<td>Name of the system requesting web service</td>
 		</tr>
 		<tr>
 			<td><b>riskManagementCategory</b></td>
 			<td>String <br/>(classifier)</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>FAST</td>
 			<td>
                 Code of risk management category for evaluation of the object.<br/>💡 
@@ -62,21 +62,21 @@
 		<tr>
 			<td><b>customerStatus</b></td>
 			<td><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>ACTIVE</td>
 			<td>Customer status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received.<br/> ACTIVE - Customer is onboarded ( account is provided or customer assessment case is resolved)<br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is changed to being disabled</i></td>
 		</tr>
 		<tr>
 			<td><b>customerExtId</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>cust_1232</td>
 			<td>Unique external customer identifier. The identifier corresponds to the client's identifier in the financial institution</td>
 		</tr>
 		<tr>
 			<td><b>entityType</b></td>
 			<td><b>ENUM</b><br/>[INDIVIDUAL]</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>INDIVIDUAL</td>
 			<td>Whether business or individual entity</td>
 		</tr>
@@ -166,14 +166,14 @@
         <tr>
 			<td><b>firstName</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>Jose</td>
 			<td>First name of individual entity</td>
 		</tr>
         <tr>
 			<td><b>lastName</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>Rodriguez</td>
 			<td>Last name of individual entity</td>
 		</tr>
@@ -321,7 +321,7 @@
 	    <tr>
 			<td><b>addressDetails</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>Verkiu 1, Vilnius</td>
 			<td>Full address description</td>
 	    </tr>
@@ -342,7 +342,7 @@
 	    <tr>
 			<td><b>country</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>LT</td>
 			<td>Country of given addres. Classifier Country</td>
 	    </tr>
@@ -408,42 +408,42 @@
         <tr>
             <td><b>documentIssueAuthority</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>passport department</td>
             <td>An authority that issued the document.</td>
         </tr>
         <tr>
             <td><b>documentIssueCountry</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>LT</td>
             <td>A country that issued the document</td>
         </tr>
         <tr>
             <td><b>documentIssueDate</b></td>
             <td>Date</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>2022-01-15</td>
             <td>Issue date of the document in question</td>
         </tr>
         <tr>
             <td><b>documentNumber</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>0123456789</td>
             <td>Number of document in question</td>
         </tr>
         <tr>
             <td><b>entityType</b></td>
             <td><b>ENUM</b><br/> [INDIVIDUAL, <br/> ORGANIZATION]</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>INDIVIDUAL</td>
             <td>Entity type describes client status</td>
         </tr>
         <tr>
             <td><b>identityDocumentType</b></td>
             <td><b>ENUM</b><br/>[PASSPORT, <br/> IDENTITYCARD,<br/> RESIDENCEPERMIT,<br/> DRIVINGLICENSE,<br/> REGISTRATIONCERTIFICATE,<br/> OTHER]</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>PASSPORT</td>
             <td>Identification document</td>
         </tr>
@@ -471,7 +471,7 @@
                 [MOBILEPHONE, <br/>FIXEDPHONE, <br/>EMAIL,
                 WEBSITE]
             </td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>MOBILEPHONE</td>
 			<td>Way of contacting entity.</td>
 	    </tr>

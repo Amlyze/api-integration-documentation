@@ -14,21 +14,21 @@
 		<tr>
 			<td><b>CommunicationNumber</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>ComNr_000321</td>
 			<td>Unique number of communication. used for risk assessment callback</td>
 		</tr>
 		<tr>
 			<td><b>Requester</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>Bank_system</td>
 			<td>Name of the system requesting web service</td>
 		</tr>
 		<tr>
 			<td><b>RiskManagementCategory</b></td>
 			<td>String <br/>(classifier)</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>FAST</td>
 			<td>Code of risk management category for evaluation of the object.<br/>💡 Possible values here are given just as an example, in the configuration period these could be updated</td>
 		</tr>
@@ -45,35 +45,35 @@
 		<tr>
 			<td><b>EntityType</b></td>
 			<td><b>ENUM</b><br/>[INDIVIDUAL]</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>INDIVIDUAL</td>
 			<td>Whether business or individual entity</td>
 		</tr>
 		<tr>
 			<td><b>CustomerExtId</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>cust_1232</td>
 			<td>Unique external customer identifier. The identifier corresponds to the client's identifier in the financial institution</td>
 		</tr>
         <tr>
 			<td><b>FirstName</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>Jose</td>
 			<td>First name of individual entity</td>
 		</tr>
         <tr>
 			<td><b>LastName</b></td>
 			<td>String</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>Rodriguez</td>
 			<td>Last name of individual entity</td>
 		</tr>
 		<tr>
 			<td><b>CustomerStatus</b></td>
 			<td><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>ACTIVE</td>
 			<td>Customer status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received.<br/> ACTIVE - Customer is onboarded ( account is provided or customer assessment case is resolved)<br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is changed to being disabled</i></td>
 		</tr>
@@ -325,7 +325,7 @@
         <tr>
             <td><b>AddressDetails</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>Verkiu 1, Vilnius</td>
             <td>Full address description</td>
         </tr>
@@ -339,7 +339,7 @@
         <tr>
             <td><b>Country</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>LT</td>
             <td>Country of given addres. Classifier Country</td>
         </tr>
@@ -398,28 +398,28 @@
         <tr>
             <td><b>EntityType</b></td>
             <td><b>ENUM</b><br/> [INDIVIDUAL, <br/> ORGANIZATION]</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>INDIVIDUAL</td>
             <td>Entity type describes client status</td>
         </tr>
         <tr>
             <td><b>IdentityDocumentType</b></td>
             <td><b>ENUM</b><br/>[PASSPORT, <br/> IDENTITYCARD,<br/> RESIDENCEPERMIT,<br/> DRIVINGLICENSE,<br/> REGISTRATIONCERTIFICATE,<br/> OTHER]</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>PASSPORT</td>
             <td>Identification document</td>
         </tr>
         <tr>
             <td><b>DocumentNumber</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>0123456789</td>
             <td>Number of document in question</td>
         </tr>
         <tr>
             <td><b>DocumentIssueDate</b></td>
             <td>Date</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>2022-01-15</td>
             <td>Issue date of the document in question</td>
         </tr>
@@ -433,14 +433,14 @@
         <tr>
             <td><b>DocumentIssueCountry</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>LT</td>
             <td>A country that issued the document</td>
         </tr>
         <tr>
             <td><b>DocumentIssueAuthority</b></td>
             <td>String</td>
-            <td><b>true</b></td>
+            <td>true</td>
             <td>passport department</td>
             <td>An authority that issued the document.</td>
         </tr>
@@ -475,7 +475,7 @@
                 [MOBILEPHONE, <br/>FIXEDPHONE, <br/>EMAIL,
                 WEBSITE]
             </td>
-			<td><b>true</b></td>
+			<td>true</td>
 			<td>MOBILEPHONE</td>
 			<td>Way of contacting entity.</td>
 	    </tr>
