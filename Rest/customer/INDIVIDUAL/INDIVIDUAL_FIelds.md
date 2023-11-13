@@ -906,9 +906,9 @@
 			<td>String</td>
 			<td>true</td>
 			<td>
-                868758585</b>
-                hello@gmail.com</b>
-                www.website.com</b>
+                868758585<br/>
+                hello@gmail.com<br/>
+                www.website.com<br/>
             </td>
 			<td>Details of contact.</td>
 	</tr>
