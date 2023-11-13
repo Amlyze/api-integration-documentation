@@ -5,6 +5,8 @@ Welcome to the "OPERATION" section, where we provide you with an overview of the
 ---
 ## EndPoint
 
+**wsdl** `/amlyze-ws/EvaluateOperationV2Service.wsdl`
+
 **swagger** `GET /swagger-ui/`
 
 **URL structure:** `http://[host][port][path][service]`

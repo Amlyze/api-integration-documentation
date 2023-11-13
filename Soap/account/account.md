@@ -6,6 +6,8 @@ This section provides detailed information on the endpoints that can be used to 
 
 ## EndPoint
 
+**wsdl** `/amlyze-ws/ImportAccountService.wsdl`
+
 **swagger** `GET /swagger-ui/`
 
 **URL structure:** `http://[host][port][path][service]`

@@ -7,6 +7,8 @@ Customers contain identifying information and KYC data. This section provides in
 
 ## EndPoint
 
+**wsdl** `/amlyze-ws/EvaluateCustomerV2Service.wsdl`
+
 **swagger** `GET /swagger-ui/`
 
 **URL structure:** `http://[host][port][path][service]`
