@@ -195,7 +195,7 @@
 			</tr>
             <tr>
 				<td style="text-align:center"><b>C017.C016.AV07</td>
-				<td>roblem with field for ORGANIZATION type customer. Problem with relatedEntity (index: 1 ). bad value for BOOLEAN (values: true false') valueCode: is_related_to_Lithuania</td>
+				<td>Problem with field for ORGANIZATION type customer. Problem with relatedEntity (index: 1 ). bad value for BOOLEAN (values: true false') valueCode: is_related_to_Lithuania</td>
 			</tr>
             <tr>
 				<td style="text-align:center"><b>C014</td>

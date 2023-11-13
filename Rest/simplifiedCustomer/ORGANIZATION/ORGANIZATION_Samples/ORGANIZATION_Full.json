@@ -1,0 +1,87 @@
+{
+    "communicationNumber": "ComNr_000321",
+    "requester": "Bank_system",
+    "riskManagementCategory": "FAST",
+    "entityType": "ORGANIZATION",
+    "customerExtId": "cust_1232",
+    "title": "UAB \"Dockers\"",
+    "customerStatus": "ACTIVE",
+    "riskLevel": "ACTIVE",
+    "initializeScreeningProcesses": [
+        "SANCTIONS",
+        "ADVERSE_MEDIA",
+        "PEP"
+    ],
+    "nationalCode": "123456789",
+    "applicationDate": "2012-10-01T09:45:00.000+02:00",
+    "activityDescription": "Logistics",
+    "activityInRestrictedRegionDescription": "logistics",
+    "approvalDate": "2012-10-01T09:45:00.000+02:00",
+    "closingDate": "2005-05-24",
+    "companyAssetValue": 123456789,
+    "doesCashDominate": true,
+    "establishmentDate": "2012-10-01T09:45:00.000+02:00",
+    "GIIN": "GIIN123445",
+    "hasMultiLayerStructure": false,
+    "incomeSourceDescription": "adventure",
+    "initialDepositAccount": "leather bag",
+    "initialDepositAmount": 10000,
+    "initialDepositBank": "pocket",
+    "initialDepositCurrency": "EUR",
+    "initialDepositSource": "promise",
+    "isActualAddressDeclared": true,
+    "isAudited": true,
+    "isCorrespondenceAddressDeclared": false,
+    "isDirectlyManaged": true,
+    "isFinancialInstitution": false,
+    "isFined": false,
+    "isInAdverseMedia": true,
+    "isLicenseRequired": true,
+    "isListed": false,
+    "isRegulated": false,
+    "isSanctioned": false,
+    "legalForm": "COOPERATIVE",
+    "LEI": "LEI124545",
+    "licenseDescription": "ring",
+    "noMajorShareHolders": true,
+    "numberOfAudits": 2,
+    "numberOfEmployees": 321,
+    "organizationalStructureDescription": "chaos",
+    "periodsOfAuditsInYears": 1,
+    "periodsOfFiningInYears": 0,
+    "regionOfActivityDescription": "Middleearth",
+    "registrationCountry": "LT",
+    "thirdPartyServicesUsed": true,
+    "thirdPartyServicesUsedDescription": "equipment",
+    "listAddress": [
+        {
+            "addressType": "HEADQUARTERS",
+            "addressDetails": "Shire",
+            "country": "LT",
+            "region": "EU",
+            "city": null,
+            "streetAddress": null,
+            "zipCode": null,
+            "useForCorrespondence": true
+        }
+    ],
+    "listBusinessEntityDocument": [
+        {
+            "entityType": "ORGANIZATION",
+            "identityDocumentType": "OTHER",
+            "documentNumber": "1",
+            "documentIssueDate": "2000-01-03",
+            "documentExpiryDate": null,
+            "documentIssueCountry": "LT",
+            "documentIssueAuthority": "king",
+            "description": "agreement"
+        }
+    ],
+    "listContact": [
+        {
+            "contactType": "EMAIL",
+            "contactDetails": "scanned letters only",
+            "useForCommunication": true
+        }
+    ]
+}

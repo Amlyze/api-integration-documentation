@@ -1,0 +1,74 @@
+{
+	"communicationNumber": "ComNr_78",
+	"requester": "Bank_system",
+	"riskManagementCategory": "FAST",
+	"entityType": "INDIVIDUAL",
+	"customerExtId": "cust_1232",
+	"firstName": "Jose",
+	"lastName": "Rodriguez",
+	"customerStatus": "ACTIVE",
+	"riskLevel": "HIGH",
+	"initializeScreeningProcesses": [
+		"SANCTIONS",
+		"ADVERSE_MEDIA",
+		"PEP"
+	],
+	"nationalCode": "123456789123",
+	"applicationDate": "2012-10-01T09:45:00.000+02:00",
+	"activityDescription": "financial activity",
+	"amlOfficer": true,
+	"approvalDate": "2012-10-01T09:45:00.000+02:00",
+	"birthCountry": "LT",
+	"birthDate": "2000-01-01",
+	"citizenshipCountry": "LT",
+	"closingDate": "2000-01-01",
+	"doesCashDominate": false,
+	"incomeSourceDescription": "inheritance",
+	"incomingPaymentDescription": "Replenishment of funds",
+	"initialDepositAccount": "asdfgfds",
+	"initialDepositAmount": 123456,
+	"initialDepositBank": "LB",
+	"initialDepositCurrency": "EUR",
+	"initialDepositSource": "pension",
+	"isActualAddressDeclared": true,
+	"isFamilyPEP": true,
+	"isInAdverseMedia": true,
+	"isLegalResident": true,
+	"isLitigated": true,
+	"isPEP": true,
+	"isSanctioned": false,
+	"permanentResidenceCountry": "LT",
+	"secondCitizenshipCountry": "LV",
+	"listPurpose": "BLACK",
+	"listAddress": [
+		{
+			"addressType": "RESIDENCE",
+			"addressDetails": "Verkiu g. 1",
+			"country": "LT",
+			"region": "EU",
+			"city": "Vilnius",
+			"streetAddress": "Verkiu g. 1",
+			"zipCode": "04127",
+			"useForCorrespondence": true
+		}
+	],
+	"listBusinessEntityDocument": [
+		{
+			"entityType": "INDIVIDUAL",
+			"identityDocumentType": "PASSPORT",
+			"documentNumber": "123456789",
+			"documentIssueDate": "2020-09-20",
+			"documentExpiryDate": "2030-09-20",
+			"documentIssueCountry": "LT",
+			"documentIssueAuthority": "LT",
+			"description": "identification document"
+		}
+	],
+	"listContact": [
+		{
+			"contactType": "MOBILEPHONE",
+			"contactDetails": "+370 68* *****",
+			"useForCommunication": true
+		}
+	]
+}

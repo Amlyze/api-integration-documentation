@@ -15,7 +15,7 @@
 			</tr>
 			<tr>
 				<td><b>C014</b></td>
-				<td >Field not allowed for INDIVIDUAL. Field: CompanyAssetValue</td>
+				<td>Field not allowed for INDIVIDUAL. Field: CompanyAssetValue</td>
 			</tr>
             <tr>
 				<td><b>C016.I06</b></td>
