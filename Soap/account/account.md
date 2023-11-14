@@ -63,7 +63,7 @@ The request body contains the data that you are sending to the API. The data doc
 		<tbody>
 			<tr>
 				<td><b>ResultType</b></td>
-				<td style="text-align:center">String<br/><b>ENUM</b><br/>[REQUEST_ACCEPTED]</td>
+				<td>String<br/><b>ENUM</b><br/>[REQUEST_ACCEPTED]</td>
 				<td>Result type returns the answer that the action was successful</td>
 			</tr>
 		</tbody>
@@ -74,8 +74,8 @@ The request body contains the data that you are sending to the API. The data doc
 `STATUS: 200 OK`
 ```xml
 <ns2:Result xmlns:ns2="urn:amlyze-services:EvaluateOperationService_v2r0">
-            <ns2:ResultType>OK</ns2:ResultType>
-        </ns2:Result>
+	<ns2:ResultType>OK</ns2:ResultType>
+</ns2:Result>
 ```
 ---
 **<span style="color: red;">"Rejected request"</span>**
@@ -114,10 +114,10 @@ The request body contains the data that you are sending to the API. The data doc
 `STATUS: 400 Bad Request / 500 Internal Server Error`
 ```xml
 <ns2:Result xmlns:ns2="urn:amlyze-services:EvaluateOperationService_v2r0">
-            <ns2:ResultType>ERROR</ns2:ResultType>
-            <ns2:ErrorCode>500</ns2:ErrorCode>
-            <ns2:ErrorDescription>Error: failed Processing account</ns2:ErrorDescription>
-        </ns2:Result>
+	<ns2:ResultType>ERROR</ns2:ResultType>
+	<ns2:ErrorCode>500</ns2:ErrorCode>
+	<ns2:ErrorDescription>Error: failed Processing account</ns2:ErrorDescription>
+</ns2:Result>
 ```
 ----
 **Possible errors**
