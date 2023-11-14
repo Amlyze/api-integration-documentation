@@ -36,7 +36,7 @@
 			<td>
                 Code of risk management category for evaluation of the object.<br/>💡 
                 Possible values here are given just as an example, in the configuration period these could be updated
-        </td>
+            </td>
 		</tr>
 		<tr>
 			<td><b>businessUnit</b></td>
