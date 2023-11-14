@@ -669,7 +669,7 @@
         </tr>
         <tr>
             <td><b>Datatype</b></td>
-            <td><b>ENUM </b><br/>[STRING,<br/> INTEGER,<br/> DECIMAL,<br/> DATE,<br/> TIMESTAMP,<br/> BOOLEAN\]</td>
+            <td>String<br/><b>ENUM</b><br/>[STRING,<br/> INTEGER,<br/> DECIMAL,<br/> DATE,<br/> TIMESTAMP,<br/> BOOLEAN]</td>
             <td>true</td>
             <td>STRING</td>
             <td>Type of provided value</td>
@@ -829,7 +829,7 @@
 	    </tr>
 	    <tr>
 			<td><b>IdentityDocumentType</b></td>
-			<td><b>ENUM</b><br/>[PASSPORT, <br/> IDENTITYCARD,<br/> RESIDENCEPERMIT,<br/> DRIVINGLICENSE,<br/> REGISTRATIONCERTIFICATE,<br/> OTHER]</td>
+			<td>String<br/><b>ENUM</b><br/>[PASSPORT, <br/> IDENTITYCARD,<br/> RESIDENCEPERMIT,<br/> DRIVINGLICENSE,<br/> REGISTRATIONCERTIFICATE,<br/> OTHER]</td>
 			<td>true</td>
 			<td>PASSPORT</td>
 			<td>Identification document</td>
@@ -979,7 +979,7 @@
 	    </tr>
 	    <tr>
 			<td><b>TurnoverDirection</b></td>
-			<td><b>ENUM </b> <br/> [INCOMING,<br/>OUTGOING]</td>
+			<td><b>ENUM </b> <br/> [IN,<br/>OUT]</td>
 			<td>true</td>
 			<td>OUT</td>
 			<td>The turnover direction of payment</td>

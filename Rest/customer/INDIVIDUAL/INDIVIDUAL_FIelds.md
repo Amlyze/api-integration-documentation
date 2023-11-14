@@ -27,7 +27,7 @@
 		</tr>
 		<tr>
 			<td><b>action</b></td>
-			<td><b>ENUM</b> <br/>[CREATE (<i>default</i>), <br/> UPDATE]</td>
+			<td>String<br/><b>ENUM</b><br/>[CREATE (<i>default</i>), <br/> UPDATE]</td>
 			<td>false</td>
 			<td>UPDATE</td>
 			<td>Element is used to change the data of an existing Customer. <br/>❗ NOTE: all data will be replaced with newly received ones</td>
@@ -60,7 +60,7 @@
 		</tr>
 		<tr>
 			<td><b>sourceOfRiskLevel</b></td>
-			<td><b>ENUM</b><br/>[IMPORT,EVALUATE]</td>
+			<td>String<br/><b>ENUM</b><br/>[IMPORT,EVALUATE]</td>
 			<td>true</td>
 			<td>IMPORT</td>
 			<td>
@@ -71,7 +71,7 @@
 		</tr>
 		<tr>
 			<td><b>riskLevel</b></td>
-			<td><b>ENUM</b><br/>[NONE,<br/> LOW,<br/> MEDIUM,<br/> HIGH,<br/> EXTREME]</td>
+			<td>String<br/><b>ENUM</b><br/>[NONE,<br/> LOW,<br/> MEDIUM,<br/> HIGH,<br/> EXTREME]</td>
 			<td>true/false</td>
 			<td>HIGH</td>
 			<td>
@@ -87,7 +87,7 @@
 		</tr>
 		<tr>
 			<td><b>customerStatus</b></td>
-			<td><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
+			<td>String<br/><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
 			<td>true</td>
 			<td>ACTIVE</td>
 			<td>Customer status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received.<br/> ACTIVE - Customer is onboarded ( account is provided or customer assessment case is resolved)<br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is changed to being disabled</i></td>
@@ -101,7 +101,7 @@
 		</tr>
 		<tr>
 			<td><b>entityType</b></td>
-			<td><b>ENUM</b><br/>[INDIVIDUAL]</td>
+			<td>String<br/><b>ENUM</b><br/>[INDIVIDUAL]</td>
 			<td>true</td>
 			<td>INDIVIDUAL</td>
 			<td>Whether business or individual entity</td>
@@ -323,7 +323,7 @@
 		</tr>
         <tr>
 			<td><b>listPurpose</b></td>
-			<td><b>ENUM</b> <br/>[BLACK,<br/> WHITE]</td>
+			<td>String<br/><b>ENUM</b><br/>[BLACK,<br/> WHITE]</td>
 			<td>false</td>
 			<td>-</td>
 			<td>Whether entity is black/white listed</td>
@@ -714,7 +714,7 @@
 	    </tr>
 	    <tr>
 			<td><b>datatype</b></td>
-			<td><b>ENUM </b><br/>[STRING,<br/> INTEGER,<br/> DECIMAL,<br/> DATE,<br/> TIMESTAMP,<br/> BOOLEAN\]</td>
+			<td>String<br/><b>ENUM</b><br/>[STRING,<br/> INTEGER,<br/> DECIMAL,<br/> DATE,<br/> TIMESTAMP,<br/> BOOLEAN]</td>
 			<td>true</td>
 			<td>STRING</td>
 			<td>Type of provided value</td>
@@ -873,14 +873,14 @@
 	    </tr>
 	    <tr>
 			<td><b>entityType</b></td>
-			<td><b>ENUM</b><br/> [INDIVIDUAL, <br/> ORGANIZATION]</td>
+			<td>String<br/><b>ENUM</b><br/> [INDIVIDUAL, <br/> ORGANIZATION]</td>
 			<td>true</td>
 			<td>INDIVIDUAL</td>
 			<td>Entity type describes client status</td>
 	    </tr>
 	    <tr>
 			<td><b>identityDocumentType</b></td>
-			<td><b>ENUM</b><br/>[PASSPORT, <br/> IDENTITYCARD,<br/> RESIDENCEPERMIT,<br/> DRIVINGLICENSE,<br/> REGISTRATIONCERTIFICATE,<br/> OTHER]</td>
+			<td>String<br/><b>ENUM</b><br/>[PASSPORT, <br/> IDENTITYCARD,<br/> RESIDENCEPERMIT,<br/> DRIVINGLICENSE,<br/> REGISTRATIONCERTIFICATE,<br/> OTHER]</td>
 			<td>true</td>
 			<td>PASSPORT</td>
 			<td>Identification document</td>
@@ -903,12 +903,7 @@
 	<tbody>
 	    <tr>
 			<td><b>contactType</b></td>
-            <td>
-                String<br/>
-                <b>ENUM</b><br/> 
-                [MOBILEPHONE, <br/>FIXEDPHONE, <br/>EMAIL,
-                WEBSITE]
-            </td>
+            <td>String<br/><b>ENUM</b><br/>[MOBILEPHONE, <br/>FIXEDPHONE, <br/>EMAIL,WEBSITE]</td>
 			<td>true</td>
 			<td>MOBILEPHONE</td>
 			<td>Way of contacting entity.</td>
@@ -997,7 +992,7 @@
 	    </tr>
 	    <tr>
 			<td><b>turnoverRange</b></td>
-			<td><b>ENUM </b><br/> [SINGLE,<br/> DAILY, <br/> MONTHLY,<br/> ANNUAL]</td>
+			<td>String<br/><b>ENUM</b><br/> [SINGLE,<br/> DAILY, <br/> MONTHLY,<br/> ANNUAL]</td>
 			<td>true</td>
 			<td>MONTHLY</td>
 			<td>Range of declared turnover</td>
@@ -1088,7 +1083,7 @@
 	    </tr>
 	    <tr>
 			<td><b>turnoverDirection</b></td>
-			<td><b>ENUM </b> <br/> [IN,<br/>OUT]</td>
+			<td>String<br/><b>ENUM</b><br/> [IN,<br/>OUT]</td>
 			<td>true</td>
 			<td>OUT</td>
 			<td>The turnover direction of payment</td>
@@ -1209,7 +1204,7 @@
 	    </tr>
 	    <tr>
 			<td><b>entityType</b></td>
-			<td> <b>ENUM</b><br/> [INDIVIDUAL, <br/>ORGANIZATION]</td>
+			<td>String<br/><b>ENUM</b><br/> [INDIVIDUAL, <br/>ORGANIZATION]</td>
 			<td>true</td>
 			<td>INDIVIDUAL</td>
 			<td>Entity type describes client status</td>

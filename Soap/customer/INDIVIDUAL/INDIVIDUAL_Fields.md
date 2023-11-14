@@ -319,7 +319,7 @@
 		</tr>
         <tr>
 			<td><b>ListPurpose</b></td>
-			<td><b>ENUM</b> <br/>[BLACK,<br/> WHITE]</td>
+			<td>String<br/><b>ENUM</b><br/>[BLACK,<br/> WHITE]</td>
 			<td>false</td>
 			<td>-</td>
 			<td>Whether entity is black/white listed</td>
@@ -710,7 +710,7 @@
 	    </tr>
 	    <tr>
 			<td><b>Datatype</b></td>
-			<td><b>ENUM </b><br/>[STRING,<br/> INTEGER,<br/> DECIMAL,<br/> DATE,<br/> TIMESTAMP,<br/> BOOLEAN\]</td>
+			<td>String<br/><b>ENUM</b><br/>[STRING,<br/> INTEGER,<br/> DECIMAL,<br/> DATE,<br/> TIMESTAMP,<br/> BOOLEAN]</td>
 			<td>true</td>
 			<td>STRING</td>
 			<td>Type of provided value</td>
@@ -869,14 +869,14 @@
 	    </tr>
 	    <tr>
 			<td><b>EntityType</b></td>
-			<td><b>ENUM</b><br/> [INDIVIDUAL, <br/> ORGANIZATION]</td>
+			<td>String<br/><b>ENUM</b><br/> [INDIVIDUAL, <br/> ORGANIZATION]</td>
 			<td>true</td>
 			<td>INDIVIDUAL</td>
 			<td>Entity type describes client status</td>
 	    </tr>
 	    <tr>
 			<td><b>IdentityDocumentType</b></td>
-			<td><b>ENUM</b><br/>[PASSPORT, <br/> IDENTITYCARD,<br/> RESIDENCEPERMIT,<br/> DRIVINGLICENSE,<br/> REGISTRATIONCERTIFICATE,<br/> OTHER]</td>
+			<td>String<br/><b>ENUM</b><br/>[PASSPORT, <br/> IDENTITYCARD,<br/> RESIDENCEPERMIT,<br/> DRIVINGLICENSE,<br/> REGISTRATIONCERTIFICATE,<br/> OTHER]</td>
 			<td>true</td>
 			<td>PASSPORT</td>
 			<td>Identification document</td>

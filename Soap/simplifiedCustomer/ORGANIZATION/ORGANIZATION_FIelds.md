@@ -44,7 +44,7 @@
 		</tr>
 		<tr>
 			<td><b>EntityType</b></td>
-			<td><b>ENUM</b><br/>[ORGANIZATION]</td>
+			<td>String<br/><b>ENUM</b><br/>[ORGANIZATION]</td>
 			<td>true</td>
 			<td>ORGANIZATION</td>
 			<td>Type business entity</td>

@@ -76,7 +76,7 @@ Crypto_exchange occurs for intra-customer transactions between distinct currency
         </tr>
         <tr>
             <td><b>RiskLevel</b></td>
-            <td>String<br/><b>ENUM</b><br/>[NONE,<br/>LOW,<br/>NEDIUM,<br/>HIGH,<br/>EXTREME]</td>
+            <td>String<br/><b>ENUM</b><br/>[NONE,<br/>LOW,<br/>MEDIUM,<br/>HIGH,<br/>EXTREME]</td>
             <td>false</td>
             <td>LOW</td>
             <td>The risk level of imported operation</td>

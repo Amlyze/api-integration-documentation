@@ -403,7 +403,7 @@
 		</tr>
         <tr>
 			<td><b>ListPurpose</b></td>
-			<td><b>ENUM</b><br/>[BLACK,<br/> WHITE]</td>
+			<td>String<br/><b>ENUM</b><br/>[BLACK,<br/> WHITE]</td>
 			<td>false</td>
 			<td>-</td>
 			<td>Whether entity is black/white listed</td>
@@ -601,7 +601,7 @@
 	    </tr>
 	    <tr>
 			<td><b>Datatype</b></td>
-			<td><b>ENUM </b><br/>[STRING,<br/> INTEGER,<br/> DECIMAL,<br/> DATE,<br/> TIMESTAMP,<br/> BOOLEAN\]</td>
+			<td>String<br/><b>ENUM</b><br/>[STRING,<br/> INTEGER,<br/> DECIMAL,<br/> DATE,<br/> TIMESTAMP,<br/> BOOLEAN]</td>
 			<td>true</td>
 			<td>STRING</td>
 			<td>Type of provided value</td>

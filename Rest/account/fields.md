@@ -65,7 +65,7 @@
         </tr>
         <tr>
             <td><b>accountStatus</b></td>
-            <td><b>ENUM</b> <br/> [ACTIVE, <br/>SUSPENDED,<br/> CLOSED]</td>
+            <td>String<br/><b>ENUM</b><br/> [ACTIVE, <br/>SUSPENDED,<br/> CLOSED]</td>
             <td>true</td>
             <td>ACTIVE</td>
             <td>Refers to the current condition or state of an account</td>

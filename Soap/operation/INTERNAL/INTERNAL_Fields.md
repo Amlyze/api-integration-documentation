@@ -114,7 +114,7 @@ In any type of operation between two or more parties, one of the parties is alwa
         </tr>
         <tr>
             <td><b>RiskLevel</b></td>
-            <td>String<br/><b>ENUM</b><br/>[NONE,<br/>LOW,<br/>NEDIUM,<br/>HIGH,<br/>EXTREME]</td>
+            <td>String<br/><b>ENUM</b><br/>[NONE,<br/>LOW,<br/>MEDIUM,<br/>HIGH,<br/>EXTREME]</td>
             <td>false</td>
             <td>LOW</td>
             <td>The risk level of imported operation</td>
@@ -206,7 +206,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td>Country of an IP address of the operation</td>
         </tr>
         <tr>
-            <td><b>[ListOperationParty]</b></td>
+            <td><b>ListOperationParty</b></td>
             <td>OperationPartyApi</td>
             <td>true</td>
             <td>-</td>
