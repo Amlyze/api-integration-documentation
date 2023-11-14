@@ -43,7 +43,7 @@
 			<td>
                 Code of risk management category for evaluation of the object.<br/>💡 
                 Possible values here are given just as an example, in the configuration period these could be updated
-        </td>
+            </td>
 		</tr>
 		<tr>
 			<td><b>businessUnit</b></td>
@@ -67,7 +67,7 @@
                 Source of risk level<br/> The value <b>"EVALUATE"</b> 
                 should be used for normal business processes - risk assessment will be performed. <br/> 
                 The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and questionnaire information will be imported without risk assessment
-        </td>
+            </td>
 		</tr>
 		<tr>
 			<td><b>riskLevel</b></td>
