@@ -179,7 +179,7 @@
         <tr>
 			<td><b>lastName</b></td>
 			<td>String</td>
-			<td>true</td>
+			<td>false</td>
 			<td>Rodriguez</td>
 			<td>Last name of individual entity</td>
 		</tr>
