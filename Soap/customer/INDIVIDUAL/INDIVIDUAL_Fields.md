@@ -63,7 +63,11 @@
 			<td>String<br/><b>ENUM</b><br/>[IMPORT,EVALUATE]</td>
 			<td>true</td>
 			<td>IMPORT</td>
-			<td>Source of risk level<br/> The value <b>"EVALUATE"</b> should be used for normal business processes - risk assessment will be performed. <br/> The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and it's questionnaire will be imported without risk assessment</td>
+			<td>
+                Source of risk level<br/> The value <b>"EVALUATE"</b> 
+                should be used for normal business processes - risk assessment will be performed. <br/> 
+                The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and questionnaire information will be imported without risk assessment
+            </td>
 		</tr>
 		<tr>
 			<td><b>RiskLevel</b></td>
@@ -236,7 +240,10 @@
 		</tr>
 		<tr>
 			<td><b>InitialDepositCurrency</b></td>
-			<td>String</td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Currency classifier)</a>
+            </td>
 			<td>false</td>
 			<td>EUR</td>
 			<td>Currency field notifies about the currency used in a certain operation.</td>
@@ -326,7 +333,7 @@
 		</tr>
 		<tr>
 			<td><b>FieldOfActivity</b></td>
-			<td>FieldOfActivityApi</td>
+            <td><a href="#FieldOfActivityApi">[FieldOfActivityApi]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>Information about the activities</td>
@@ -340,133 +347,264 @@
 		</tr>
 		<tr>
 			<td><b>ListAdditionalValues</b></td>
-			<td>[AdditionalValueApi]</td>
+			<td><a href="#AdditionalValueApi">AdditionalValueApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>Additional information about businessEntity</td>
 		</tr>
 		<tr>
 			<td><b>ListAddress</b></td>
-			<td>[AddressApi]</td>
+            <td><a href="#AddressApi">AddressApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of addresses</td>
 		</tr>
 		<tr>
 			<td><b>ListAppealReason</b></td>
-			<td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Appeal reason type classifier)</a>
-            </td>
+            <td><a href="#AppealReasonApi">AppealReasonApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of reasons for the appeal</td>
 		</tr>
 		<tr>
 			<td><b>ListBusinessEntityDocument</b></td>
-			<td>[BusinessEntityDocumentApi]</td>
+            <td><a href="#BusinessEntityDocumentApi">BusinessEntityDocumentApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of related entity documents</td>
 		</tr>
 		<tr>
 			<td><b>ListContact</b></td>
-			<td>[ContactApi]</td>
+            <td><a href="#ContactApi">ContactApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of contacts of related entity</td>
 		</tr>
 		<tr>
 			<td><b>ListCountryOfActivity</b></td>
-			<td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
-            </td>
+            <td><a href="#CountryOfActivityApi">CountryOfActivityApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activity regions</td>
 		</tr>
 		<tr>
 			<td><b>ListCountryOfTaxPayment</b></td>
-			<td>[CountryOfTaxPaymentApi]</td>
+            <td><a href="#CountryOfTaxPaymentApi">CountryOfTaxPaymentApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of tax payment country</td>
 		</tr>
 		<tr>
 			<td><b>ListDeclaredTurnover</b></td>
-			<td>[DeclaredTurnoverApi]</td>
+            <td><a href="#DeclaredTurnoverApi">DeclaredTurnoverApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of declared turnover</td>
 		</tr>
 		<tr>
 			<td><b>ListIncomeSource</b></td>
-			<td>[IncomeSourceApi]</td>
+			<td><a href="#IncomeSourceApi">IncomeSourceApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of countries of payment</td>
 		</tr>
 		<tr>
 			<td><b>ListIntroductionSource</b></td>
-            <td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Introduction source classifier)</a>
-            </td>
+            <td><a href="#IntroductionSourceApi">IntroductionSourceApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of sources of introduction</td>
 		</tr>
 		<tr>
 			<td><b>ListOrderedService</b></td>
-            <td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Service type classifier)</a>
-            </td>
+            <td><a href="#OrderedServiceApi">OrderedServiceApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of ordered services</td>
 		</tr>
 		<tr>
 			<td><b>ListPaymentCountry</b></td>
-			<td>[PaymentCountryApi]</td>
+            <td><a href="#PaymentCountryApi">PaymentCountryApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of payment country</td>
 		</tr>
 		<tr>
 			<td><b>ListPaymentPurpose</b></td>
-			<td>[PaymentPurposeApi]</td>
+            <td><a href="#PaymentPurposeApi">PaymentPurposeApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of payment purpose</td>
 		</tr>
 		<tr>
 			<td><b>ListRegionOfActivity</b></td>
-			<td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
-            </td>
+            <td><a href="#RegionOfActivityApi">RegionOfActivityApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activity countries of related entity</td>
 		</tr>
 		<tr>
 			<td><b>ListSourceOfWealth</b></td>
-			<td>[SourceOfWealthApi]</td>
+            <td><a href="#SourceOfWealthApi">SourceOfWealthApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of wealth sources</td>
 		</tr>
 		<tr>
 			<td><b>ListRelatedEntity</b></td>
-			<td>[RelatedEntityApi]</td>
+            <td><a href="#RelatedEntityApi">RelatedEntityApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List for related business entities</td>
 		</tr>
 	</tbody>
 </table>
+
+
+## AppealReasonApi
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><b>AppealReasonType</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Appeal reason type classifier)</a>
+            </td>
+			<td>true</td>
+		</tr>
+	</tbody>
+</table>
+
+## IntroductionSourceApi
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><b>IntroductionSource</b></td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Introduction source classifier)</a>
+            </td>
+			<td>true</td>
+		</tr>
+	</tbody>
+</table>
+
+## OrderedServiceApi
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><b>ServiceType</b></td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Service type classifier)</a>
+            </td>
+			<td>true</td>
+		</tr>
+	</tbody>
+</table>
+
+## RegionOfActivityApi
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><b>Region</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
+			<td>true</td>
+		</tr>
+	</tbody>
+</table>
+
+## CountryOfActivityApi
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><b>Country</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
+			<td>true</td>
+		</tr>
+	</tbody>
+</table>
+
+
+## PaymentCountryApi
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+			<td><b>Example</b></td>
+			<td><b>Description</b></td>
+		</tr>
+	</thead>
+	<tbody>
+	    <tr>
+			<td><b>Country</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
+			<td>true</td>
+			<td>TAXES</td>
+			<td>Type of income source code.</td>
+	    </tr>
+	    <tr>
+			<td><b>TurnoverDirection</b></td>
+			<td>String<br/><b>ENUM</b><br/> [IN,<br/>OUT]</td>
+			<td>true</td>
+			<td>OUT</td>
+			<td>The turnover direction of payment</td>
+	    </tr>
+	</tbody>
+</table>
+
 
 ## FieldOfActivityApi
 
@@ -502,7 +640,7 @@
 	</tbody>
 </table>
 
-**FieldEmploymentApi**
+## FieldEmploymentApi
 
 <table>
 	<thead>
@@ -555,7 +693,7 @@
 
 
 
-**FieldOtherApi**
+## FieldOtherApi
 
 <table>
 	<thead>
@@ -586,7 +724,7 @@
 </table>
 
 
-**FieldPensionApi**
+## FieldPensionApi
 
 <table>
 	<thead>
@@ -617,7 +755,7 @@
 </table>
 
 
-**FieldStudentApi**
+## FieldStudentApi
 
 <table>
 	<thead>
@@ -899,12 +1037,7 @@
 	<tbody>
 	    <tr>
 			<td><b>ContactType</b></td>
-            <td>
-                String<br/>
-                <b>ENUM</b><br/> 
-                [MOBILEPHONE, <br/>FIXEDPHONE, <br/>EMAIL,
-                WEBSITE]
-            </td>
+            <td>String<br/><b>ENUM</b><br/>[MOBILEPHONE, <br/>FIXEDPHONE, <br/>EMAIL,WEBSITE]</td>
 			<td>true</td>
 			<td>MOBILEPHONE</td>
 			<td>Way of contacting entity.</td>
@@ -993,7 +1126,7 @@
 	    </tr>
 	    <tr>
 			<td><b>TurnoverRange</b></td>
-			<td><b>ENUM </b><br/> [SINGLE,<br/> DAILY, <br/> MONTHLY,<br/> ANNUAL]</td>
+			<td>String<br/><b>ENUM</b><br/> [SINGLE,<br/> DAILY, <br/> MONTHLY,<br/> ANNUAL]</td>
 			<td>true</td>
 			<td>MONTHLY</td>
 			<td>Range of declared turnover</td>
@@ -1084,7 +1217,7 @@
 	    </tr>
 	    <tr>
 			<td><b>TurnoverDirection</b></td>
-			<td><b>ENUM </b> <br/> [IN,<br/>OUT]</td>
+			<td>String<br/><b>ENUM</b><br/> [IN,<br/>OUT]</td>
 			<td>true</td>
 			<td>OUT</td>
 			<td>The turnover direction of payment</td>
@@ -1119,8 +1252,8 @@
                 <a href="../../README.md#classifiers">(Source of wealth type classifier)</a>
             </td>
 			<td>true</td>
-			<td>6</td>
-			<td>source of wealth type classifier</td>
+			<td>INHERITANCE</td>
+			<td>source of wealth code</td>
 	    </tr>
 	    <tr>
 			<td><b>Comment</b></td>
@@ -1204,18 +1337,8 @@
 			<td>Country of the related entity</td>
 	    </tr>
 	    <tr>
-			<td><b>CountryOfBusinessOperations</b></td>
-			<td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
-            </td>
-			<td>false</td>
-			<td>LT</td>
-			<td>Country of Business Operations of the related entity</td>
-	    </tr>
-	    <tr>
 			<td><b>EntityType</b></td>
-			<td> <b>ENUM</b><br/> [INDIVIDUAL, <br/>ORGANIZATION]</td>
+			<td>String<br/><b>ENUM</b><br/> [INDIVIDUAL, <br/>ORGANIZATION]</td>
 			<td>true</td>
 			<td>INDIVIDUAL</td>
 			<td>Entity type describes client status</td>
@@ -1319,62 +1442,56 @@
 	    </tr>
 	    <tr>
 			<td><b>ListActivity</b></td>
-			<td>[ActivityApi]</td>
+            <td><a href="#ActivityApi">ActivityApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activities of related entity</td>
     	</tr>
     	<tr>
 			<td><b>ListAdditionalValues</b></td>
-			<td>[AdditionalValueApi]</td>
+            <td><a href="#AdditionalValueApi">AdditionalValueApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>Additional information about businessEntity</td>
     	</tr>
     	<tr>
 			<td><b>ListAddress</b></td>
-			<td>[AddressApi]</td>
+            <td><a href="#AddressApi">AddressApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of addresses</td>
     	</tr>
     	<tr>
 			<td><b>ListBusinessEntityDocument</b></td>
-			<td>[BusinessEntityDocumentApi]</td>
+            <td><a href="#BusinessEntityDocumentApi">BusinessEntityDocumentApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of related entity document</td>
     	</tr>
     	<tr>
 			<td><b>ListContact</b></td>
-			<td>[ContactApi]</td>
+            <td><a href="#ContactApi">ContactApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of contacts of related entity</td>
     	</tr>
     	<tr>
 			<td><b>ListCountryOfActivity</b></td>
-			<td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
-            </td>
+            <td><a href="#CountryOfActivityApi">CountryOfActivityApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activity countries of related entity</td>
 	    </tr>
 	    <tr>
 			<td><b>ListIncomeSource</b></td>
-			<td>[IncomeSourceApi]</td>
+			<td><a href="#IncomeSourceApi">IncomeSourceApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of income sources</td>
 	    </tr>
 	    <tr>
 			<td><b>ListRegionOfActivity</b></td>
-			<td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
-            </td>
+            <td><a href="#RegionOfActivityApi">RegionOfActivityApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activity regions of related entity</td>

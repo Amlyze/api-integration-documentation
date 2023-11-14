@@ -1,4 +1,4 @@
-**# ORGANIZATION Fields
+# ORGANIZATION Fields
 
 <table>
 	<thead>
@@ -1388,4 +1388,4 @@
 			<td>List of activity regions of related entity</td>
 	    </tr>
 	</tbody>
-</table>**
+</table>

@@ -1,4 +1,4 @@
-# ORGANIZATION Fields 
+# ORGANIZATION Fields
 
 <table>
 	<thead>
@@ -22,19 +22,28 @@
 			<td><b>Requester</b></td>
 			<td>String</td>
 			<td>true</td>
-			<td>Bank_system</td>
+			<td>ComNr_000321</td>
 			<td>Name of the system requesting web service</td>
 		</tr>
 		<tr>
 			<td><b>RiskManagementCategory</b></td>
-			<td>String <br/>(classifier)</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Risk management category classifier)</a>
+            </td>
 			<td>true</td>
 			<td>FAST</td>
-			<td>Code of risk management category for evaluation of the object.<br/>💡 Possible values here are given just as an example, in the configuration period these could be updated</td>
+			<td>
+                Code of risk management category for evaluation of the object.<br/>💡 
+                Possible values here are given just as an example, in the configuration period these could be updated
+            </td>
 		</tr>
 		<tr>
 			<td><b>BusinessUnit</b></td>
-			<td>String <br/>(classifier)</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Business unit classifier)</a>
+            </td>
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>
 			<td>
@@ -43,36 +52,8 @@
             </td>
 		</tr>
 		<tr>
-			<td><b>EntityType</b></td>
-			<td>String<br/><b>ENUM</b><br/>[ORGANIZATION]</td>
-			<td>true</td>
-			<td>ORGANIZATION</td>
-			<td>Type business entity</td>
-		</tr>
-		<tr>
-			<td><b>CustomerExtId</b></td>
-			<td>String</td>
-			<td>true</td>
-			<td>cust_1232</td>
-			<td>Unique external customer identifier. The identifier corresponds to the client's identifier in the financial institution</td>
-		</tr>
-		<tr>
-			<td><b>Title</b></td>
-			<td>String</td>
-			<td>true</td>
-			<td>UAB "Dockers"</td>
-			<td>Title of organization entity</td>
-		</tr>
-		<tr>
-			<td><b>CustomerStatus</b></td>
-			<td><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
-			<td>true</td>
-			<td>ACTIVE</td>
-			<td>Customer status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received.<br/> ACTIVE - Customer is onboarded ( account is provided or customer assessment case is resolved)<br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is changed to being disabled</i></td>
-		</tr>
-		<tr>
 			<td><b>RiskLevel</b></td>
-			<td><b>ENUM</b><br/>[NONE,<br/> LOW,<br/> MEDIUM,<br/> HIGH,<br/> EXTREME]</td>
+			<td>String<br/><b>ENUM</b><br/>[NONE,<br/> LOW,<br/> MEDIUM,<br/> HIGH,<br/> EXTREME]</td>
 			<td>false</td>
 			<td>HIGH</td>
 			<td>The Risk Level of the customer. Default value is NONE.</td>
@@ -83,6 +64,27 @@
 			<td>false</td>
 			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
 			<td>Defines which screening processes to initiate</td>
+		</tr>
+		<tr>
+			<td><b>CustomerStatus</b></td>
+			<td>String<br/><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
+			<td>true</td>
+			<td>ACTIVE</td>
+			<td>Customer status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received.<br/> ACTIVE - Customer is onboarded ( account is provided or customer assessment case is resolved)<br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is changed to being disabled</i></td>
+		</tr>
+		<tr>
+			<td><b>CustomerExtId</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>cust_1232</td>
+			<td>Unique external customer identifier. The identifier corresponds to the client's identifier in the financial institution</td>
+		</tr>
+		<tr>
+			<td><b>EntityType</b></td>
+			<td>String<br/><b>ENUM</b><br/>[ORGANIZATION]</td>
+			<td>true</td>
+			<td>ORGANIZATION</td>
+			<td>Type of business entity</td>
 		</tr>
 		<tr>
 			<td><b>NationalCode</b></td>
@@ -191,7 +193,10 @@
 		</tr>
 		<tr>
 			<td><b>InitialDepositCurrency</b></td>
-			<td>String</td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Currency classifier)</a>
+            </td>
 			<td>false</td>
 			<td>EUR</td>
 			<td>Currency field notifies about the currency used in a certain operation.</td>
@@ -282,7 +287,10 @@
 		</tr>
         <tr>
 			<td><b>LegalForm</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Legal form classifier)</a>
+            </td>
 			<td>false</td>
 			<td>LTD</td>
 			<td>Legal form of organization</td>
@@ -347,12 +355,15 @@
 			<td><b>RegionOfActivityDescription</b></td>
 			<td>String</td>
 			<td>false</td>
-			<td> Customer service</td>
+			<td>Customer service</td>
 			<td>Description of the region for activities</td>
 		</tr>
 		<tr>
 			<td><b>RegistrationCountry</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
 			<td>false</td>
 			<td>LT</td>
 			<td>Country of registration of the organization</td>
@@ -371,23 +382,30 @@
 			<td>hosting</td>
 			<td>Description of third party services</td>
 		</tr>
-        <tr>
-            <td><b>ListAddress</b></td>
-            <td>[AddressApi]</td>
-            <td>false</td>
-            <td>-</td>
-            <td>List of addresses</td>
-        </tr>
-        <tr>
-            <td><b>ListBusinessEntityDocument</b></td>
-            <td>[BusinessEntityDocumentApi]</td>
-            <td>false</td>
-            <td>-</td>
-            <td>List of related entity document</td>
-        </tr>
+		<tr>
+			<td><b>Title</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>Moller</td>
+			<td>Title of organization entity</td>
+		</tr>
+		<tr>
+			<td><b>ListAddress</b></td>
+            <td><a href="#AddressApi">AddressApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of addresses</td>
+		</tr>
+		<tr>
+			<td><b>ListBusinessEntityDocument</b></td>
+            <td><a href="#BusinessEntityDocumentApi">BusinessEntityDocumentApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of related entity documents</td>
+		</tr>
 		<tr>
 			<td><b>ListContact</b></td>
-			<td>[ContactApi]</td>
+            <td><a href="#ContactApi">ContactApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of contacts of related entity</td>
@@ -417,10 +435,13 @@
 	    </tr>
 	    <tr>
 			<td><b>AddressType</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Address type classifier)</a>
+            </td>
 			<td>false</td>
 			<td>RESIDENCE</td>
-			<td>Type of entity address. Classifier AddressType</td>
+			<td>Type of entity address.</td>
 	    </tr>
 	    <tr>
 			<td><b>City</b></td>
@@ -431,10 +452,13 @@
 	    </tr>
 	    <tr>
 			<td><b>Country</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country type classifier)</a>
+            </td>
 			<td>true</td>
 			<td>LT</td>
-			<td>Country of given addres. Classifier Country</td>
+			<td>Country of given address.</td>
 	    </tr>
 	    <tr>
 			<td><b>Region</b></td>
@@ -466,6 +490,7 @@
 	    </tr>
 	</tbody>
 </table>
+
 
 ## BusinessEntityDocumentApi
 
@@ -521,17 +546,17 @@
 			<td>true</td>
 			<td>0123456789</td>
 			<td>Number of document in question</td>
-    	</tr>
+	    </tr>
 	    <tr>
 			<td><b>EntityType</b></td>
-			<td><b>ENUM</b><br/> [INDIVIDUAL, <br/> ORGANIZATION]</td>
+			<td>String<br/><b>ENUM</b><br/> [INDIVIDUAL, <br/> ORGANIZATION]</td>
 			<td>true</td>
 			<td>ORGANIZATION</td>
 			<td>Entity type describes client status</td>
 	    </tr>
 	    <tr>
 			<td><b>IdentityDocumentType</b></td>
-			<td><b>ENUM</b><br/>[PASSPORT, <br/> IDENTITYCARD,<br/> RESIDENCEPERMIT,<br/> DRIVINGLICENSE,<br/> REGISTRATIONCERTIFICATE,<br/> OTHER]</td>
+			<td>String<br/><b>ENUM</b><br/>[PASSPORT, <br/> IDENTITYCARD,<br/> RESIDENCEPERMIT,<br/> DRIVINGLICENSE,<br/> REGISTRATIONCERTIFICATE,<br/> OTHER]</td>
 			<td>true</td>
 			<td>REGISTRATIONCERTIFICATE</td>
 			<td>Identification document</td>
@@ -554,16 +579,11 @@
 	<tbody>
 	    <tr>
 			<td><b>ContactType</b></td>
-            <td>
-                String<br/>
-                <b>ENUM</b><br/> 
-                [MOBILEPHONE, <br/>FIXEDPHONE, <br/>EMAIL,
-                WEBSITE]
-            </td>
+            <td>String<br/><b>ENUM</b><br/>[MOBILEPHONE, <br/>FIXEDPHONE, <br/>EMAIL,WEBSITE]</td>
 			<td>true</td>
 			<td>MOBILEPHONE</td>
 			<td>Way of contacting entity.</td>
-    	</tr>
+	    </tr>
 	    <tr>
 			<td><b>ContactDetails</b></td>
 			<td>String</td>
@@ -581,6 +601,6 @@
 			<td>false</td>
 			<td>true/false</td>
 			<td>Indicator for the usage of communication way.</td>
-    	</tr>
+	    </tr>
 	</tbody>
 </table>

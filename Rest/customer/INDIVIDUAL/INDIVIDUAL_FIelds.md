@@ -137,7 +137,7 @@
 		<tr>
 			<td><b>amlOfficer</b></td>
 			<td>Boolean</td>
-			<td><b>false</b></td>
+			<td>false</td>
 			<td>false</td>
 			<td>Indicator for the person being AML officer</td>
 		</tr>

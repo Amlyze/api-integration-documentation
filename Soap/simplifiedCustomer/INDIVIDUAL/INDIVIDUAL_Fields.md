@@ -22,60 +22,34 @@
 			<td><b>Requester</b></td>
 			<td>String</td>
 			<td>true</td>
-			<td>Bank_system</td>
+			<td>ComNr_000321</td>
 			<td>Name of the system requesting web service</td>
 		</tr>
 		<tr>
 			<td><b>RiskManagementCategory</b></td>
-			<td>String <br/>(classifier)</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Risk management category classifier)</a>
+            </td>
 			<td>true</td>
 			<td>FAST</td>
-			<td>Code of risk management category for evaluation of the object.<br/>💡 Possible values here are given just as an example, in the configuration period these could be updated</td>
+			<td>
+                Code of risk management category for evaluation of the object.<br/>💡 
+                Possible values here are given just as an example, in the configuration period these could be updated
+            </td>
 		</tr>
 		<tr>
 			<td><b>BusinessUnit</b></td>
-			<td>String <br/>(classifier)</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Business unit classifier)</a>
+            </td>
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>
 			<td>
                 Unit data identification for controllability/observability.
                 <br/>❗NOTE: parameter is required only if business unit strict mode enabled
             </td>
-		</tr>
-		<tr>
-			<td><b>EntityType</b></td>
-			<td>String<br/><b>ENUM</b><br/>[INDIVIDUAL]</td>
-			<td>true</td>
-			<td>INDIVIDUAL</td>
-			<td>Whether business or individual entity</td>
-		</tr>
-		<tr>
-			<td><b>CustomerExtId</b></td>
-			<td>String</td>
-			<td>true</td>
-			<td>cust_1232</td>
-			<td>Unique external customer identifier. The identifier corresponds to the client's identifier in the financial institution</td>
-		</tr>
-        <tr>
-			<td><b>FirstName</b></td>
-			<td>String</td>
-			<td>true</td>
-			<td>Jose</td>
-			<td>First name of individual entity</td>
-		</tr>
-        <tr>
-			<td><b>LastName</b></td>
-			<td>String</td>
-			<td>true</td>
-			<td>Rodriguez</td>
-			<td>Last name of individual entity</td>
-		</tr>
-		<tr>
-			<td><b>CustomerStatus</b></td>
-			<td>String<br/><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
-			<td>true</td>
-			<td>ACTIVE</td>
-			<td>Customer status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received.<br/> ACTIVE - Customer is onboarded ( account is provided or customer assessment case is resolved)<br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is changed to being disabled</i></td>
 		</tr>
 		<tr>
 			<td><b>RiskLevel</b></td>
@@ -90,6 +64,27 @@
 			<td>false</td>
 			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
 			<td>Defines which screening processes to initiate</td>
+		</tr>
+		<tr>
+			<td><b>CustomerStatus</b></td>
+			<td>String<br/><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
+			<td>true</td>
+			<td>ACTIVE</td>
+			<td>Customer status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received.<br/> ACTIVE - Customer is onboarded ( account is provided or customer assessment case is resolved)<br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is changed to being disabled</i></td>
+		</tr>
+		<tr>
+			<td><b>CustomerExtId</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>cust_1232</td>
+			<td>Unique external customer identifier. The identifier corresponds to the client's identifier in the financial institution</td>
+		</tr>
+		<tr>
+			<td><b>EntityType</b></td>
+			<td>String<br/><b>ENUM</b><br/>[INDIVIDUAL]</td>
+			<td>true</td>
+			<td>INDIVIDUAL</td>
+			<td>Whether business or individual entity</td>
 		</tr>
 		<tr>
 			<td><b>NationalCode</b></td>
@@ -135,7 +130,7 @@
 		</tr>
 		<tr>
 			<td><b>BirthCountry</b></td>
-						<td>
+			<td>
                 String <br/>
                 <a href="../../README.md#classifiers">(Country classifier)</a>
             </td>
@@ -152,7 +147,7 @@
 		</tr>
 		<tr>
 			<td><b>CitizenshipCountry</b></td>
-						<td>
+			<td>
                 String <br/>
                 <a href="../../README.md#classifiers">(Country classifier)</a>
             </td>
@@ -173,6 +168,20 @@
 			<td>false</td>
 			<td>true</td>
 			<td>Indicator for cash being the main income source</td>
+		</tr>
+        <tr>
+			<td><b>FirstName</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>Jose</td>
+			<td>First name of individual entity</td>
+		</tr>
+        <tr>
+			<td><b>LastName</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>Rodriguez</td>
+			<td>Last name of individual entity</td>
 		</tr>
         <tr>
 			<td><b>IncomeSourceDescription</b></td>
@@ -211,7 +220,10 @@
 		</tr>
 		<tr>
 			<td><b>InitialDepositCurrency</b></td>
-			<td>String</td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Currency classifier)</a>
+            </td>
 			<td>false</td>
 			<td>EUR</td>
 			<td>Currency field notifies about the currency used in a certain operation.</td>
@@ -223,7 +235,7 @@
 			<td>Dividend</td>
 			<td>Source of initial deposit</td>
 		</tr>
-		<tr>
+        <tr>
 			<td><b>IsActualAddressDeclared</b></td>
 			<td>Boolean</td>
 			<td>false</td>
@@ -249,7 +261,7 @@
 			<td>Boolean</td>
 			<td>false</td>
 			<td>true</td>
-			<td>Indicator for whether the individual entity is a legal resident</td>
+			<td>Indicator for whether individual entity is a legal resident</td>
 		</tr>
         <tr>
 			<td><b>IsLitigated</b></td>
@@ -274,7 +286,7 @@
 		</tr>
         <tr>
 			<td><b>PermanentResidenceCountry</b></td>
-						<td>
+			<td>
                 String <br/>
                 <a href="../../README.md#classifiers">(Country classifier)</a>
             </td>
@@ -284,7 +296,7 @@
 		</tr>
         <tr>
 			<td><b>SecondCitizenshipCountry</b></td>
-						<td>
+			<td>
                 String <br/>
                 <a href="../../README.md#classifiers">(Country classifier)</a>
             </td>
@@ -301,27 +313,28 @@
 		</tr>
 		<tr>
 			<td><b>ListAddress</b></td>
-			<td>[AddressApi]</td>
+            <td><a href="#AddressApi">AddressApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of addresses</td>
 		</tr>
 		<tr>
 			<td><b>ListBusinessEntityDocument</b></td>
-			<td>[BusinessEntityDocumentApi]</td>
+            <td><a href="#BusinessEntityDocumentApi">BusinessEntityDocumentApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of related entity documents</td>
 		</tr>
 		<tr>
 			<td><b>ListContact</b></td>
-			<td>[ContactApi]</td>
+            <td><a href="#ContactApi">ContactApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of contacts of related entity</td>
 		</tr>
 	</tbody>
 </table>
+
 
 ## AddressApi
 
@@ -336,63 +349,69 @@
 		</tr>
 	</thead>
 	<tbody>
-        <tr>
-            <td><b>AddressType</b></td>
-            <td>String</td>
-            <td>false</td>
-            <td>RESIDENCE</td>
-            <td>Type of entity address. Classifier AddressType</td>
-        </tr>
-        <tr>
-            <td><b>AddressDetails</b></td>
-            <td>String</td>
-            <td>true</td>
-            <td>Verkiu 1, Vilnius</td>
-            <td>Full address description</td>
-        </tr>
-        <tr>
-            <td><b>City</b></td>
-            <td>String</td>
-            <td>false</td>
-            <td>Vilnius</td>
-            <td>City of given address</td>
-        </tr>
-        <tr>
-            <td><b>Country</b></td>
-            <td>String</td>
-            <td>true</td>
-            <td>LT</td>
-            <td>Country of given addres. Classifier Country</td>
-        </tr>
-        <tr>
-            <td><b>Region</b></td>
-            <td>String</td>
-            <td>false</td>
-            <td>EU</td>
-            <td>Region of given address</td>
-        </tr>
-        <tr>
-            <td><b>StreetAddress</b></td>
-            <td>String</td>
-            <td>false</td>
-            <td>Verkiu 1</td>
-            <td>Street, house and flat of given address</td>
-        </tr>
-        <tr>
-            <td><b>ZipCode</b></td>
-            <td>String</td>
-            <td>false</td>
-            <td>12345</td>
-            <td>Zip code of the address</td>
-        </tr>
-        <tr>
-            <td><b>UseForCorrespondence</b></td>
-            <td>Boolean</td>
-            <td>false</td>
-            <td>true</td>
-            <td>Check for using the address in correspondence</td>
-        </tr>
-    </tbody>
+	    <tr>
+			<td><b>AddressDetails</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>Verkiu 1, Vilnius</td>
+			<td>Full address description</td>
+	    </tr>
+	    <tr>
+			<td><b>AddressType</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Address type classifier)</a>
+            </td>
+			<td>false</td>
+			<td>RESIDENCE</td>
+			<td>Type of entity address.</td>
+	    </tr>
+	    <tr>
+			<td><b>City</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>Vilnius</td>
+			<td>City of given address</td>
+	    </tr>
+	    <tr>
+			<td><b>Country</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country type classifier)</a>
+            </td>
+			<td>true</td>
+			<td>LT</td>
+			<td>Country of given address.</td>
+	    </tr>
+	    <tr>
+			<td><b>Region</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>EU</td>
+			<td>Region of given address</td>
+	    </tr>
+	    <tr>
+			<td><b>StreetAddress</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>Verkiu 1</td>
+			<td>Street, house and flat of given address</td>
+	    </tr>
+	    <tr>
+			<td><b>UseForCorrespondence</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>true</td>
+			<td>Check for using the address in correspondence</td>
+	    </tr>
+	    <tr>
+			<td><b>ZipCode</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>12345</td>
+			<td>Zip code of the address</td>
+	    </tr>
+	</tbody>
 </table>
 
 
@@ -409,69 +428,62 @@
 		</tr>
 	</thead>
 	<tbody>
-        <tr>
-            <td><b>Description</b></td>
-            <td>String</td>
-            <td>false</td>
-            <td>passport</td>
-            <td>Document description</td>
-        </tr>
-        <tr>
-            <td><b>EntityType</b></td>
-            <td>String<br/><b>ENUM</b><br/> [INDIVIDUAL, <br/> ORGANIZATION]</td>
-            <td>true</td>
-            <td>INDIVIDUAL</td>
-            <td>Entity type describes client status</td>
-        </tr>
-        <tr>
-            <td><b>IdentityDocumentType</b></td>
-            <td>String<br/><b>ENUM</b><br/>[PASSPORT, <br/> IDENTITYCARD,<br/> RESIDENCEPERMIT,<br/> DRIVINGLICENSE,<br/> REGISTRATIONCERTIFICATE,<br/> OTHER]</td>
-            <td>true</td>
-            <td>PASSPORT</td>
-            <td>Identification document</td>
-        </tr>
-        <tr>
-            <td><b>DocumentNumber</b></td>
-            <td>String</td>
-            <td>true</td>
-            <td>0123456789</td>
-            <td>Number of document in question</td>
-        </tr>
-        <tr>
-            <td><b>DocumentIssueDate</b></td>
-            <td>Date</td>
-            <td>true</td>
-            <td>2022-01-15</td>
-            <td>Issue date of the document in question</td>
-        </tr>
-        <tr>
-            <td><b>DocumentExpiryDate</b></td>
-            <td>Date</td>
-            <td>false</td>
-            <td>2032-01-15</td>
-            <td>The expiry date of the document in question</td>
-        </tr>
-        <tr>
-            <td><b>DocumentIssueCountry</b></td>
-            <td>String</td>
-            <td>true</td>
-            <td>LT</td>
-            <td>A country that issued the document</td>
-        </tr>
-        <tr>
-            <td><b>DocumentIssueAuthority</b></td>
-            <td>String</td>
-            <td>true</td>
-            <td>passport department</td>
-            <td>An authority that issued the document.</td>
-        </tr>
-        <tr>
-            <td><b>Description</b></td>
-            <td>String</td>
-            <td>false</td>
-            <td>Main identification document</td>
-            <td>Description.</td>
-        </tr>
+	    <tr>
+			<td><b>Description</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>passport</td>
+			<td>Document description</td>
+	    </tr>
+	    <tr>
+			<td><b>DocumentExpiryDate</b></td>
+			<td>Date</td>
+			<td>false</td>
+			<td>2032-01-15</td>
+			<td>The expiry date of the document in question</td>
+	    </tr>
+	    <tr>
+			<td><b>DocumentIssueAuthority</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>migration office</td>
+			<td>An authority that issued the document.</td>
+	    </tr>
+	    <tr>
+			<td><b>DocumentIssueCountry</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>LT</td>
+			<td>A country that issued the document</td>
+	    </tr>
+	    <tr>
+			<td><b>DocumentIssueDate</b></td>
+			<td>Date</td>
+			<td>true</td>
+			<td>2022-01-15</td>
+			<td>Issue date of the document in question</td>
+	    </tr>
+	    <tr>
+			<td><b>DocumentNumber</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>0123456789</td>
+			<td>Number of document in question</td>
+	    </tr>
+	    <tr>
+			<td><b>EntityType</b></td>
+			<td>String<br/><b>ENUM</b><br/> [INDIVIDUAL, <br/> ORGANIZATION]</td>
+			<td>true</td>
+			<td>INDIVIDUAL</td>
+			<td>Entity type describes client status</td>
+	    </tr>
+	    <tr>
+			<td><b>IdentityDocumentType</b></td>
+			<td>String<br/><b>ENUM</b><br/>[PASSPORT, <br/> IDENTITYCARD,<br/> RESIDENCEPERMIT,<br/> DRIVINGLICENSE,<br/> REGISTRATIONCERTIFICATE,<br/> OTHER]</td>
+			<td>true</td>
+			<td>PASSPORT</td>
+			<td>Identification document</td>
+	    </tr>
 	</tbody>
 </table>
 
