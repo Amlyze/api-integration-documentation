@@ -213,7 +213,10 @@
 		</tr>
 		<tr>
 			<td><b>initialDepositCurrency</b></td>
-			<td>String</td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Currency classifier)</a>
+            </td>
 			<td>false</td>
 			<td>EUR</td>
 			<td>Currency field notifies about the currency used in a certain operation.</td>
