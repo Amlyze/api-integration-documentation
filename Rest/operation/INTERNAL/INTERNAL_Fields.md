@@ -39,7 +39,10 @@ In any type of operation between two or more parties, one of the parties is alwa
         </tr>
         <tr>
             <td><b>operationType</b></td>
-            <td>String</td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Operation type classifier)</a>
+            </td>
             <td>true</td>
             <td>INTERNAL</td>
             <td>Notifies about what kind of operation was performed</td>
@@ -74,14 +77,20 @@ In any type of operation between two or more parties, one of the parties is alwa
         </tr>
         <tr>
             <td><b>riskManagementCategory</b></td>
-            <td>String</td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Risk management category classifier)</a>
+            </td>
             <td>true</td>
             <td>OP_DEFAULT</td>
             <td>Code of risk management category of object. Risk management category code from classifier can be checked <a href="../../README.md#classifiers">here</a></td>
         </tr>
 		<tr>
 			<td><b>businessUnit</b></td>
-			<td>String <br/>(classifier)</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Business unit classifier)</a>
+            </td>
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>
 			<td>
@@ -91,7 +100,7 @@ In any type of operation between two or more parties, one of the parties is alwa
 		</tr>
         <tr>
             <td><b>financialFlowDirection</b></td>
-            <td>FinancialFlowDirectionApi</td>
+            <td>String<br/><b>ENUM</b><br/>[INCOMING,<br/>LOW,<br/>OUTGOING,<br/>NULL]</td>
             <td>true</td>
             <td>NULL</td>
             <td>Refers to the movement of money between entities or accounts<br/> 
@@ -120,7 +129,10 @@ In any type of operation between two or more parties, one of the parties is alwa
         </tr>
         <tr>
             <td><b>currency</b></td>
-            <td>String</td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Currency classifier)</a>
+            </td>
             <td>true</td>
             <td>EUR</td>
             <td>Currency code from classifier.<br/> Currency code from classifier can be checked <a href="../../README.md#classifiers">here</a></td> 
@@ -134,14 +146,20 @@ In any type of operation between two or more parties, one of the parties is alwa
         </tr>
         <tr>
             <td><b>sourceCountry</b></td>
-            <td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
             <td>false</td>
             <td>LT</td>
             <td>Source country informs about where the operation was initiated</td>
         </tr>
         <tr>
             <td><b>destinationCountry</b></td>
-            <td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
             <td>false</td>
             <td>LT</td>
             <td>Country of operation's destination</td>
@@ -163,14 +181,17 @@ In any type of operation between two or more parties, one of the parties is alwa
         </tr>
         <tr>
             <td><b>ipAddressCountry</b></td>
-            <td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
             <td>false</td>
             <td>LT</td>
             <td>Country of an IP address of the operation</td>
         </tr>
         <tr>
-            <td><b>[ListOperationParty]</b></td>
-            <td>OperationPartyApi</td>
+            <td><b>ListOperationParty</b></td>
+            <td><a href="#OperationPartyApi">OperationPartyApi[]</a></td>
             <td>true</td>
             <td>-</td>
             <td>List of entities that belong to one operation|</td>
@@ -179,7 +200,7 @@ In any type of operation between two or more parties, one of the parties is alwa
 </table>
 
 
-## Operation Party
+## OperationPartyApi
 
 At least one operation party account must exist in Amlyze (identified by accountNumber, BIC, Currency)
 
@@ -225,7 +246,10 @@ At least one operation party account must exist in Amlyze (identified by account
         </tr>
         <tr>
             <td><b>currency</b></td>
-            <td>String</td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Currency classifier)</a>
+            </td>
             <td>false</td>
             <td>GBP</td>
             <td>Currency code of operation</td>

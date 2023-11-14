@@ -193,7 +193,6 @@ In any type of operation between two or more parties, one of the parties is alwa
         <tr>
             <td><b>ListOperationParty</b></td>
             <td><a href="#OperationPartyApi">OperationPartyApi[]</a></td>
-            <td>OperationPartyApi</td>
             <td>true</td>
             <td>-</td>
             <td>List of entities that belong to one operation|</td>
