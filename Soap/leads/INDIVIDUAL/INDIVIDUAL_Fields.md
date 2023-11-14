@@ -6,7 +6,7 @@
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
 			<td><b>Example</b></td>
-			<td style="width:600px"><b>Description</b></td>
+			<td width="600px"><b>Description</b></td>
 		</tr>
 	</thead>
 	<tbody>

@@ -9,7 +9,9 @@ This section provides detailed information on the endpoints that can be used to 
 
 *swagger UI*  `GET / swagger-ui/`
 
-`POST /amlyze-ws-rest/contract (application/json)`
+Create contract `POST /amlyze-ws-rest/contract (application/json)`
+
+Update contract `PUT /amlyze-ws-rest/contract (application/json)`
 
 The request body contains the data that you are sending to the API. The data documentation can be found [*here*](fields.md)
 
