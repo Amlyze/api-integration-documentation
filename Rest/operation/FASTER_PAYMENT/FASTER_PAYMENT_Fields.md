@@ -46,7 +46,7 @@ In any type of operation between two or more parties, one of the parties is alwa
         </tr>
         <tr>
             <td><b>sourceOfRiskLevel</b></td>
-            <td><b>ENUM</b> <br/>[EVALUATE,<br/>IMPORT]</td>
+            <td>String<br/><b>ENUM</b><br/>[EVALUATE,<br/>IMPORT]</td>
             <td>true</td>
             <td>EVALUATE</td>
             <td>Source of risk level<br/> The value <b>"EVALUATE"</b> should be used for normal business processes - risk assessment will be performed.<br/> The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and it's questionnaire will be imported without risk assessment</td>
@@ -60,14 +60,14 @@ In any type of operation between two or more parties, one of the parties is alwa
         </tr>
         <tr>
             <td><b>operationStatus</b></td>
-            <td><b>ENUM</b><br/>[EXECUTED,<br/>REJECTED]</td>
+            <td>String<br/><b>ENUM</b><br/>[EXECUTED,<br/>REJECTED]</td>
             <td>true/false</td>
             <td>EXECUTED</td>
             <td>Either operation was successfully executed, or the operation was rejected<br/> <b> Mandatory</b> when sourceOfRiskLevel = IMPORT</td></td>
         </tr>
         <tr>
             <td><b>riskLevel</b></td>
-            <td>ENUM<b></b><br/>[NONE,<br/>LOW,<br/>NEDIUM,<br/>HIGH,<br/>EXTREME]</td>
+            <td>String<br/><b>ENUM</b><br/>[NONE,<br/>LOW,<br/>NEDIUM,<br/>HIGH,<br/>EXTREME]</td>
             <td>false</td>
             <td>LOW</td>
             <td>The risk level of imported operation</td>
@@ -219,7 +219,7 @@ At least one operation party account must exist in Amlyze (identified by account
         </tr>
         <tr>
             <td><b>entityType</b></td>
-            <td><b>ENUM</b><br/>[INDIVIDUAL,<br/>ORGANIZATION,<br/>UNKNOWN]</td>
+            <td>String<br/><b>ENUM</b><br/>[INDIVIDUAL,<br/>ORGANIZATION,<br/>UNKNOWN]</td>
             <td>true</td>
             <td>INDIVIDUAL</td>
             <td>Describes client status.<br/>  UNKNOWN is valid only for counterparty (not a customer)</td>
@@ -233,7 +233,7 @@ At least one operation party account must exist in Amlyze (identified by account
         </tr>
         <tr>
             <td><b>partyRole</b></td>
-            <td><b>ENUM</b> <br/>[DEBTOR,<br/>CREDITOR,<br/>ULTIMATE_DEBTOR,<br/>ULTIMATE_CREDITOR]</td>
+            <td>String<br/><b>ENUM</b><br/>[DEBTOR,<br/>CREDITOR,<br/>ULTIMATE_DEBTOR,<br/>ULTIMATE_CREDITOR]</td>
             <td>true</td>
             <td>CREDITOR</td>
             <td>The role of the party in ongoing operation</td>

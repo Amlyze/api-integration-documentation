@@ -70,12 +70,12 @@ The request body contains the data that you are sending to the API. The data doc
 		<tbody>
 			<tr>
 				<td><b>ResultType</b></td>
-				<td>String<br/>Enum:<br/>[REQUEST_ACCEPTED]</td>
+				<td>String<br/><b>ENUM</b><br/>[REQUEST_ACCEPTED]</td>
 				<td>Result type returns the answer that the action was successful</td>
 			</tr>
 			<tr>
 				<td><b>CommunicationStatus</b></td>
-				<td>String<br/>Enum:<br/>[COMPLETED]</td>
+				<td>String<br/><b>ENUM</b><br/>[COMPLETED]</td>
 				<td>Indicates that Communication was successful</td>
 		</tbody>
 </table>
@@ -104,12 +104,12 @@ The request body contains the data that you are sending to the API. The data doc
 		<tbody>
 			<tr>
 				<td><b>ResultType</b></td>
-				<td> String<br/>Enum:<br/>[REQUEST_REJECTED]</td>
+				<td>String<br/><b>ENUM</b><br/>[REQUEST_REJECTED]</td>
 				<td>Result type returns the answer that the action was not successful</td>
 			</tr>
 			<tr>
 				<td><b>CommunicationStatus</b></td>
-				<td>String<br/>Enum:<br/>[INVALID]</td>
+				<td>String<br/><b>ENUM</b><br/>[INVALID]</td>
 				<td>"INVALID" Communication status can be received when some errors or mistakes occur</td>
             </tr>
             <tr>

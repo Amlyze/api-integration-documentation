@@ -53,7 +53,7 @@
 		</tr>
 		<tr>
 			<td><b>riskLevel</b></td>
-			<td><b>ENUM</b><br/>[NONE,<br/> LOW,<br/> MEDIUM,<br/> HIGH,<br/> EXTREME]</td>
+			<td>String<br/><b>ENUM</b><br/>[NONE,<br/> LOW,<br/> MEDIUM,<br/> HIGH,<br/> EXTREME]</td>
 			<td>false</td>
 			<td>HIGH</td>
 			<td>The Risk Level of the customer. Default value is NONE.</td>
@@ -67,7 +67,7 @@
 		</tr>
 		<tr>
 			<td><b>customerStatus</b></td>
-			<td><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
+			<td>String<br/><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
 			<td>true</td>
 			<td>ACTIVE</td>
 			<td>Customer status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received.<br/> ACTIVE - Customer is onboarded ( account is provided or customer assessment case is resolved)<br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is changed to being disabled</i></td>
@@ -81,7 +81,7 @@
 		</tr>
 		<tr>
 			<td><b>entityType</b></td>
-			<td><b>ENUM</b><br/>[INDIVIDUAL]</td>
+			<td>String<br/><b>ENUM</b><br/>[INDIVIDUAL]</td>
 			<td>true</td>
 			<td>INDIVIDUAL</td>
 			<td>Whether business or individual entity</td>
@@ -303,7 +303,7 @@
 		</tr>
         <tr>
 			<td><b>listPurpose</b></td>
-			<td><b>ENUM</b> <br/>[BLACK,<br/> WHITE]</td>
+			<td>String<br/><b>ENUM</b><br/>[BLACK,<br/> WHITE]</td>
 			<td>false</td>
 			<td>-</td>
 			<td>Whether entity is black/white listed</td>
@@ -447,14 +447,14 @@
 	    </tr>
 	    <tr>
 			<td><b>entityType</b></td>
-			<td><b>ENUM</b><br/> [INDIVIDUAL, <br/> ORGANIZATION]</td>
+			<td>String<br/><b>ENUM</b><br/> [INDIVIDUAL, <br/> ORGANIZATION]</td>
 			<td>true</td>
 			<td>INDIVIDUAL</td>
 			<td>Entity type describes client status</td>
 	    </tr>
 	    <tr>
 			<td><b>identityDocumentType</b></td>
-			<td><b>ENUM</b><br/>[PASSPORT, <br/> IDENTITYCARD,<br/> RESIDENCEPERMIT,<br/> DRIVINGLICENSE,<br/> REGISTRATIONCERTIFICATE,<br/> OTHER]</td>
+			<td>String<br/><b>ENUM</b><br/>[PASSPORT, <br/> IDENTITYCARD,<br/> RESIDENCEPERMIT,<br/> DRIVINGLICENSE,<br/> REGISTRATIONCERTIFICATE,<br/> OTHER]</td>
 			<td>true</td>
 			<td>PASSPORT</td>
 			<td>Identification document</td>
@@ -477,12 +477,7 @@
 	<tbody>
 	    <tr>
 			<td><b>contactType</b></td>
-            <td>
-                String<br/>
-                <b>ENUM</b><br/> 
-                [MOBILEPHONE, <br/>FIXEDPHONE, <br/>EMAIL,
-                WEBSITE]
-            </td>
+            <td>String<br/><b>ENUM</b><br/>[MOBILEPHONE, <br/>FIXEDPHONE, <br/>EMAIL,WEBSITE]</td>
 			<td>true</td>
 			<td>MOBILEPHONE</td>
 			<td>Way of contacting entity.</td>

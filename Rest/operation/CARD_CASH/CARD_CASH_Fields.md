@@ -46,7 +46,7 @@ In any type of operation between two or more parties, one of the parties is alwa
         </tr>
         <tr>
             <td><b>sourceOfRiskLevel</b></td>
-            <td><b>ENUM</b> <br/>[EVALUATE,<br/>IMPORT]</td>
+            <td>String<br/><b>ENUM</b><br/>[EVALUATE,<br/>IMPORT]</td>
             <td>true</td>
             <td>EVALUATE</td>
             <td>Source of risk level<br/> The value <b>"EVALUATE"</b> should be used for normal business processes - risk assessment will be performed.<br/> The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and it's questionnaire will be imported without risk assessment</td>
@@ -60,7 +60,7 @@ In any type of operation between two or more parties, one of the parties is alwa
         </tr>
         <tr>
             <td><b>operationStatus</b></td>
-            <td><b>ENUM</b><br/>[EXECUTED,<br/>REJECTED]</td>
+            <td>String<br/><b>ENUM</b><br/>[EXECUTED,<br/>REJECTED]</td>
             <td>true/false</td>
             <td>EXECUTED</td>
             <td>Either operation was successfully executed, or the operation was rejected<br/> <b> Mandatory</b> when sourceOfRiskLevel = IMPORT</td></td>

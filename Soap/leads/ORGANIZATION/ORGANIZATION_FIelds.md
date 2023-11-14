@@ -27,7 +27,7 @@
 		</tr>
 		<tr>
 			<td><b>Action</b></td>
-			<td><b>ENUM</b> <br/>[CREATE (<i>default</i>), <br/> UPDATE]</td>
+			<td>String<br/><b>ENUM</b><br/>[CREATE (<i>default</i>), <br/> UPDATE]</td>
 			<td>false</td>
 			<td>UPDATE</td>
 			<td>Element is used to change the data of an existing Customer. <br/>❗ NOTE: all data will be replaced with newly received ones</td>
@@ -51,7 +51,7 @@
 		</tr>
 		<tr>
 			<td><b>SourceOfRiskLevel</b></td>
-			<td><b>ENUM</b><br/>[EVALUATE]</td>
+			<td>String<br/><b>ENUM</b><br/>[EVALUATE]</td>
 			<td>true</td>
 			<td>IMPORT</td>
 			<td>Source of risk level<br/> The value <b>"EVALUATE"</b> should be used for normal business processes - risk assessment will be performed</td>
@@ -72,7 +72,7 @@
 		</tr>
 		<tr>
 			<td><b>EntityType</b></td>
-			<td><b>ENUM</b><br/>[ORGANIZATION]</td>
+			<td>String<br/><b>ENUM</b><br/>[ORGANIZATION]</td>
 			<td>true</td>
 			<td>ORGANIZATION</td>
 			<td>Type business entity</td>
@@ -373,7 +373,7 @@
 		</tr>
         <tr>
 			<td><b>ListPurpose</b></td>
-			<td><b>ENUM</b><br/>[BLACK,<br/> WHITE]</td>
+			<td>String<br/><b>ENUM</b><br/>[BLACK,<br/> WHITE]</td>
 			<td>false</td>
 			<td>-</td>
 			<td>Whether entity is black/white listed</td>

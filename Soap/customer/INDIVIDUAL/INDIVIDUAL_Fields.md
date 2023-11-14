@@ -27,7 +27,7 @@
 		</tr>
 		<tr>
 			<td><b>Action</b></td>
-			<td><b>ENUM</b> <br/>[CREATE (<i>default</i>), <br/> UPDATE]</td>
+			<td>String<br/><b>ENUM</b><br/>[CREATE (<i>default</i>), <br/> UPDATE]</td>
 			<td>false</td>
 			<td>UPDATE</td>
 			<td>Element is used to change the data of an existing Customer. <br/>❗ NOTE: all data will be replaced with newly received ones</td>
@@ -60,14 +60,14 @@
 		</tr>
 		<tr>
 			<td><b>SourceOfRiskLevel</b></td>
-			<td><b>ENUM</b><br/>[IMPORT,EVALUATE]</td>
+			<td>String<br/><b>ENUM</b><br/>[IMPORT,EVALUATE]</td>
 			<td>true</td>
 			<td>IMPORT</td>
 			<td>Source of risk level<br/> The value <b>"EVALUATE"</b> should be used for normal business processes - risk assessment will be performed. <br/> The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and it's questionnaire will be imported without risk assessment</td>
 		</tr>
 		<tr>
 			<td><b>RiskLevel</b></td>
-			<td><b>ENUM</b><br/>[NONE,<br/> LOW,<br/> MEDIUM,<br/> HIGH,<br/> EXTREME]</td>
+			<td>String<br/><b>ENUM</b><br/>[NONE,<br/> LOW,<br/> MEDIUM,<br/> HIGH,<br/> EXTREME]</td>
 			<td>true/false</td>
 			<td>HIGH</td>
 			<td>
@@ -83,7 +83,7 @@
 		</tr>
 		<tr>
 			<td><b>CustomerStatus</b></td>
-			<td><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
+			<td>String<br/><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
 			<td>true</td>
 			<td>ACTIVE</td>
 			<td>Customer status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received.<br/> ACTIVE - Customer is onboarded ( account is provided or customer assessment case is resolved)<br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is changed to being disabled</i></td>
@@ -97,7 +97,7 @@
 		</tr>
 		<tr>
 			<td><b>EntityType</b></td>
-			<td><b>ENUM</b><br/>[INDIVIDUAL]</td>
+			<td>String<br/><b>ENUM</b><br/>[INDIVIDUAL]</td>
 			<td>true</td>
 			<td>INDIVIDUAL</td>
 			<td>Whether business or individual entity</td>

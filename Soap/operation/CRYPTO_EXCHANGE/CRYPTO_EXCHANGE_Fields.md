@@ -55,7 +55,7 @@ Crypto_exchange occurs for intra-customer transactions between distinct currency
         </tr>
         <tr>
             <td><b>SourceOfRiskLevel</b></td>
-            <td>String<br/><b>ENUM</b> <br/>[EVALUATE,<br/>IMPORT]</td>
+            <td>String<br/><b>ENUM</b><br/>[EVALUATE,<br/>IMPORT]</td>
             <td>true</td>
             <td>EVALUATE</td>
             <td>Source of risk level<br/> The value <b>"EVALUATE"</b> should be used for normal business processes - risk assessment will be performed. <br/> The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and it's questionnaire will be imported without risk assessment</td>
@@ -231,7 +231,7 @@ At least one operation party account must exist in Amlyze (identified by account
         </tr>
         <tr>
             <td><b>PartyRole</b></td>
-            <td>String<br/><b>ENUM</b> <br/>[DEBTOR,<br/>CREDITOR]</td>
+            <td>String<br/><b>ENUM</b><br/>[DEBTOR,<br/>CREDITOR]</td>
             <td>true</td>
             <td>CREDITOR</td>
             <td>The role of the party in ongoing operation</td>

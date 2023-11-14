@@ -27,7 +27,7 @@
 		</tr>
 		<tr>
 			<td><b>action</b></td>
-			<td><b>ENUM</b> <br/>[CREATE (<i>default</i>), <br/> UPDATE]</td>
+			<td>String<br/><b>ENUM</b><br/>[CREATE (<i>default</i>), <br/> UPDATE]</td>
 			<td>false</td>
 			<td>CREATE</td>
 			<td>Element is used to change the data of an existing Contract. <br/>❗ NOTE: all data will be replaced with newly received ones</td>
@@ -137,7 +137,7 @@
 	    </tr>
 	    <tr>
             <td><b>dataType</b></td>
-            <td><b>ENUM </b><br/>[STRING,<br/> INTEGER,<br/> DECIMAL,<br/> DATE,<br/> TIMESTAMP,<br/> BOOLEAN,<br/> EXTERNAL_LINK]</td>
+            <td>String<br/><b>ENUM</b><br/>[STRING,<br/> INTEGER,<br/> DECIMAL,<br/> DATE,<br/> TIMESTAMP,<br/> BOOLEAN,<br/> EXTERNAL_LINK]</td>
             <td>false</td>
             <td>STRING</td>
             <td>Default 'STRING'</td>
