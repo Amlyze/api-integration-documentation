@@ -299,6 +299,27 @@
 			<td>-</td>
 			<td>Whether entity is black/white listed</td>
 		</tr>
+		<tr>
+			<td><b>ListAddress</b></td>
+			<td>[AddressApi]</td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of addresses</td>
+		</tr>
+		<tr>
+			<td><b>ListBusinessEntityDocument</b></td>
+			<td>[BusinessEntityDocumentApi]</td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of related entity documents</td>
+		</tr>
+		<tr>
+			<td><b>ListContact</b></td>
+			<td>[ContactApi]</td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of contacts of related entity</td>
+		</tr>
 	</tbody>
 </table>
 

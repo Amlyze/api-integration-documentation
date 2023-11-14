@@ -308,8 +308,30 @@
 			<td>-</td>
 			<td>Whether entity is black/white listed</td>
 		</tr>
+		<tr>
+			<td><b>listAddress</b></td>
+            <td><a href="#AddressApi">AddressApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of addresses</td>
+		</tr>
+		<tr>
+			<td><b>listBusinessEntityDocument</b></td>
+            <td><a href="#BusinessEntityDocumentApi">BusinessEntityDocumentApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of related entity documents</td>
+		</tr>
+		<tr>
+			<td><b>listContact</b></td>
+            <td><a href="#ContactApi">ContactApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of contacts of related entity</td>
+		</tr>
 	</tbody>
 </table>
+
 
 ## AddressApi
 

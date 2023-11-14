@@ -307,7 +307,7 @@
 			<td>Business entities license description</td>
 		</tr>
 		<tr>
-			<td><b> noMajorShareHolders</b></td>
+			<td><b>noMajorShareHolders</b></td>
 			<td>Boolean</td>
 			<td>false</td>
 			<td>true</td>
@@ -357,7 +357,10 @@
 		</tr>
 		<tr>
 			<td><b>registrationCountry</b></td>
-			<td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
 			<td>false</td>
 			<td>LT</td>
 			<td>Country of registration of the organization</td>
@@ -385,21 +388,21 @@
 		</tr>
 		<tr>
 			<td><b>listAddress</b></td>
-			<td>[AddressApi]</td>
+            <td><a href="#AddressApi">AddressApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of addresses</td>
 		</tr>
 		<tr>
 			<td><b>listBusinessEntityDocument</b></td>
-			<td>[BusinessEntityDocumentApi]</td>
+            <td><a href="#BusinessEntityDocumentApi">BusinessEntityDocumentApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of related entity documents</td>
 		</tr>
 		<tr>
 			<td><b>listContact</b></td>
-			<td>[ContactApi]</td>
+            <td><a href="#ContactApi">ContactApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of contacts of related entity</td>

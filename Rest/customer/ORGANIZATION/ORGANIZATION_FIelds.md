@@ -1,4 +1,4 @@
-# ORGANIZATION Fields
+**# ORGANIZATION Fields
 
 <table>
 	<thead>
@@ -897,7 +897,7 @@
 			<td><b>entityType</b></td>
 			<td>String<br/><b>ENUM</b><br/> [INDIVIDUAL, <br/> ORGANIZATION]</td>
 			<td>true</td>
-			<td>INDIVIDUAL</td>
+			<td>ORGANIZATION</td>
 			<td>Entity type describes client status</td>
 	    </tr>
 	    <tr>
@@ -1385,4 +1385,4 @@
 			<td>List of activity regions of related entity</td>
 	    </tr>
 	</tbody>
-</table>
+</table>**
