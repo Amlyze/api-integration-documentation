@@ -1,4 +1,4 @@
-# Contract Registration
+# Contract registration (coming soon❗)
 
 This section provides detailed information on the endpoints that can be used to create and manage contracts. Contracts can be any type of documents with custom set of fields/elements.
 
