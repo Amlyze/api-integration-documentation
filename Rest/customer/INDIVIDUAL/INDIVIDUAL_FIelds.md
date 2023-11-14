@@ -337,119 +337,119 @@
 		</tr>
 		<tr>
 			<td><b>listActivity</b></td>
-			<td><a href="#ActivityApi">[ActivityApi]</a></td>
+			<td><a href="#ActivityApi">ActivityApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activities</td>
 		</tr>
 		<tr>
 			<td><b>listAdditionalValues</b></td>
-			<td><a href="#AdditionalValueApi">[AdditionalValueApi]</a></td>
+			<td><a href="#AdditionalValueApi">AdditionalValueApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>Additional information about businessEntity</td>
 		</tr>
 		<tr>
 			<td><b>listAddress</b></td>
-            <td><a href="#AddressApi">[AddressApi]</a></td>
+            <td><a href="#AddressApi">AddressApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of addresses</td>
 		</tr>
 		<tr>
 			<td><b>listAppealReason</b></td>
-            <td><a href="#AppealReasonApi">[AppealReasonApi]</a></td>
+            <td><a href="#AppealReasonApi">AppealReasonApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of reasons for the appeal</td>
 		</tr>
 		<tr>
 			<td><b>listBusinessEntityDocument</b></td>
-            <td><a href="#BusinessEntityDocumentApi">[BusinessEntityDocumentApi]</a></td>
+            <td><a href="#BusinessEntityDocumentApi">BusinessEntityDocumentApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of related entity documents</td>
 		</tr>
 		<tr>
 			<td><b>listContact</b></td>
-            <td><a href="#ContactApi">[ContactApi]</a></td>
+            <td><a href="#ContactApi">ContactApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of contacts of related entity</td>
 		</tr>
 		<tr>
 			<td><b>listCountryOfActivity</b></td>
-            <td><a href="#CountryOfActivityApi">[CountryOfActivityApi]</a></td>
+            <td><a href="#CountryOfActivityApi">CountryOfActivityApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activity regions</td>
 		</tr>
 		<tr>
 			<td><b>listCountryOfTaxPayment</b></td>
-            <td><a href="#CountryOfTaxPaymentApi">[CountryOfTaxPaymentApi]</a></td>
+            <td><a href="#CountryOfTaxPaymentApi">CountryOfTaxPaymentApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of tax payment country</td>
 		</tr>
 		<tr>
 			<td><b>listDeclaredTurnover</b></td>
-            <td><a href="#DeclaredTurnoverApi">[DeclaredTurnoverApi]</a></td>
+            <td><a href="#DeclaredTurnoverApi">DeclaredTurnoverApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of declared turnover</td>
 		</tr>
 		<tr>
 			<td><b>listIncomeSource</b></td>
-			<td><a href="#IncomeSourceApi">[IncomeSourceApi]</a></td>
+			<td><a href="#IncomeSourceApi">IncomeSourceApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of countries of payment</td>
 		</tr>
 		<tr>
 			<td><b>listIntroductionSource</b></td>
-            <td><a href="#IntroductionSourceApi">[IntroductionSourceApi]</a></td>
+            <td><a href="#IntroductionSourceApi">IntroductionSourceApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of sources of introduction</td>
 		</tr>
 		<tr>
 			<td><b>listOrderedService</b></td>
-            <td><a href="#OrderedServiceApi">[OrderedServiceApi]</a></td>
+            <td><a href="#OrderedServiceApi">OrderedServiceApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of ordered services</td>
 		</tr>
 		<tr>
 			<td><b>listPaymentCountry</b></td>
-            <td><a href="#PaymentCountryApi">[PaymentCountryApi]</a></td>
+            <td><a href="#PaymentCountryApi">PaymentCountryApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of payment country</td>
 		</tr>
 		<tr>
 			<td><b>listPaymentPurpose</b></td>
-            <td><a href="#PaymentPurposeApi">[PaymentPurposeApi]</a></td>
+            <td><a href="#PaymentPurposeApi">PaymentPurposeApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of payment purpose</td>
 		</tr>
 		<tr>
 			<td><b>listRegionOfActivity</b></td>
-            <td><a href="#RegionOfActivityApi">[RegionOfActivityApi]</a></td>
+            <td><a href="#RegionOfActivityApi">RegionOfActivityApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activity countries of related entity</td>
 		</tr>
 		<tr>
 			<td><b>listSourceOfWealth</b></td>
-            <td><a href="#SourceOfWealthApi">[SourceOfWealthApi]</a></td>
+            <td><a href="#SourceOfWealthApi">SourceOfWealthApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of wealth sources</td>
 		</tr>
 		<tr>
 			<td><b>listRelatedEntity</b></td>
-            <td><a href="#RelatedEntityApi">[RelatedEntityApi]</a></td>
+            <td><a href="#RelatedEntityApi">RelatedEntityApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List for related business entities</td>
@@ -1439,56 +1439,56 @@
 	    </tr>
 	    <tr>
 			<td><b>listActivity</b></td>
-            <td><a href="#ActivityApi">[ActivityApi]</a></td>
+            <td><a href="#ActivityApi">ActivityApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activities of related entity</td>
     	</tr>
     	<tr>
 			<td><b>listAdditionalValues</b></td>
-            <td><a href="#AdditionalValueApi">[AdditionalValueApi]</a></td>
+            <td><a href="#AdditionalValueApi">AdditionalValueApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>Additional information about businessEntity</td>
     	</tr>
     	<tr>
 			<td><b>listAddress</b></td>
-            <td><a href="#AddressApi">[AddressApi]</a></td>
+            <td><a href="#AddressApi">AddressApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of addresses</td>
     	</tr>
     	<tr>
 			<td><b>listBusinessEntityDocument</b></td>
-            <td><a href="#BusinessEntityDocumentApi">[BusinessEntityDocumentApi]</a></td>
+            <td><a href="#BusinessEntityDocumentApi">BusinessEntityDocumentApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of related entity document</td>
     	</tr>
     	<tr>
 			<td><b>listContact</b></td>
-            <td><a href="#ContactApi">[ContactApi]</a></td>
+            <td><a href="#ContactApi">ContactApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of contacts of related entity</td>
     	</tr>
     	<tr>
 			<td><b>listCountryOfActivity</b></td>
-            <td><a href="#CountryOfActivityApi">[CountryOfActivityApi]</a></td>
+            <td><a href="#CountryOfActivityApi">CountryOfActivityApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activity countries of related entity</td>
 	    </tr>
 	    <tr>
 			<td><b>listIncomeSource</b></td>
-			<td><a href="#IncomeSourceApi">[IncomeSourceApi]</a></td>
+			<td><a href="#IncomeSourceApi">IncomeSourceApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of income sources</td>
 	    </tr>
 	    <tr>
 			<td><b>listRegionOfActivity</b></td>
-            <td><a href="#RegionOfActivityApi">[RegionOfActivityApi]</a></td>
+            <td><a href="#RegionOfActivityApi">RegionOfActivityApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activity regions of related entity</td>
