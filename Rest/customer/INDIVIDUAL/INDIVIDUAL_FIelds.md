@@ -330,14 +330,14 @@
 		</tr>
 		<tr>
 			<td><b>fieldOfActivity</b></td>
-			<td>[FieldOfActivityApi]</td>
+            <td><a href="#FieldOfActivityApi">[FieldOfActivityApi]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>Information about the activities</td>
 		</tr>
 		<tr>
 			<td><b>listActivity</b></td>
-			<td>[ActivityApi]</td>
+			<td><a href="#ActivityApi">[ActivityApi]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activities</td>
@@ -1439,7 +1439,7 @@
 	    </tr>
 	    <tr>
 			<td><b>listActivity</b></td>
-			<td>[ActivityApi]</td>
+            <td><a href="#ActivityApi">[ActivityApi]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>List of activities of related entity</td>
