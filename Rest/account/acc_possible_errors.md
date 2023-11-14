@@ -1,5 +1,5 @@
 # Possible Errors
-<p>This section lists the possible errors that can occur when making a bad request to the API. </p><p>A bad request is a request that somehow does not follow the API specifications.</p> 
+<p>This section lists the possible errors that can occur when making a bad request to the API. </p><p>A bad request is a request that somehow does not follow the API specifications.</p>
 
 <table>
     <thead>

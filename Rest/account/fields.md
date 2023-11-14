@@ -27,7 +27,10 @@
 		</tr>
 		<tr>
 			<td><b>businessUnit</b></td>
-			<td>String <br/>(classifier)</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Business unit classifier)</a>
+            </td>
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>
 			<td>
@@ -72,7 +75,10 @@
         </tr>
         <tr>
             <td><b>accountType</b></td>
-            <td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Account type classifier)</a>
+            </td>
             <td>false</td>
             <td>ORG_B2B</td>
             <td>Categorizes accounts by their intended purposes and features</td>
@@ -107,7 +113,10 @@
         </tr>
         <tr>
             <td><b>currencyCode</b></td>
-            <td>String</td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Currency classifier)</a>
+            </td>
             <td>true</td>
             <td>EUR</td>
             <td>International currency code</td>
