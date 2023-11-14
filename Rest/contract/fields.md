@@ -7,7 +7,7 @@
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
 			<td><b>Example</b></td>
-			<td style="width:600px"><b>Description</b></td>
+			<td width="600px"><b>Description</b></td>
 		</tr>
 	</thead>
 	<tbody>
@@ -26,15 +26,11 @@
 			<td>Name of the system requesting web service</td>
 		</tr>
 		<tr>
-			<td><b>action</b></td>
-			<td>String<br/><b>ENUM</b><br/>[CREATE (<i>default</i>), <br/> UPDATE]</td>
-			<td>false</td>
-			<td>CREATE</td>
-			<td>Element is used to change the data of an existing Contract. <br/>❗ NOTE: all data will be replaced with newly received ones</td>
-		</tr>
-		<tr>
 			<td><b>contractType</b></td>
-			<td><b>CLASSIFIER </b><br/>String</td>
+			<td>
+                String <br/>
+                <a href="../README.md#classifiers">(Contract type classifier)</a>
+            </td>
 			<td>true</td>
 			<td>LOAN_CONTRACT</td>
 			<td>Type of contract for evaluation of the object.<br/>💡 Possible values will be updated during configuration period. <br/>💡 [AdditionalProperty] fields should be validated against classifier.</td>
@@ -69,7 +65,10 @@
         </tr>
 		<tr>
 			<td><b>businessUnit</b></td>
-			<td>String <br/>(classifier)</td>
+			<td>
+                String <br/>
+                <a href="../README.md#classifiers">(Business unit classifier)</a>
+            </td>
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>
 			<td>
@@ -93,7 +92,7 @@
 		</tr>
 		<tr>
 			<td><b>additionalProperties</b></td>
-			<td>[AdditionalProperty]</td>
+            <td><a href="#AdditionalProperty">[AdditionalProperty]</a></td>
 			<td>false</td>
 			<td>-</td>
 			<td>Additional properties for contract.</td>
