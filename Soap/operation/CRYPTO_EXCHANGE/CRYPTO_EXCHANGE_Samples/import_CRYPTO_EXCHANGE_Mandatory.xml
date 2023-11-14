@@ -6,7 +6,7 @@
             <Requester>Financial_Institution</Requester>
             <OperationExtId>Op_54</OperationExtId>
             <OperationType>CRYPTO_EXCHANGE</OperationType>
-            <RiskManagementCategory>OP_PK</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <SourceOfRiskLevel>IMPORT</SourceOfRiskLevel>
             <OperationStatus>EXECUTED</OperationStatus>
             <RiskLevel>HIGH</RiskLevel>

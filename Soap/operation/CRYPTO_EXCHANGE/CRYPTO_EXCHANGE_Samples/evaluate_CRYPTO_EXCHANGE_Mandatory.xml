@@ -6,7 +6,7 @@
             <Requester>Financial_Institution</Requester>
             <OperationExtId>Op_55</OperationExtId>
             <OperationType>CRYPTO_EXCHANGE</OperationType>
-            <RiskManagementCategory>OP_PK</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
             <OperationDateTime>2023-09-23T15:09:33+02:00</OperationDateTime>
             <Currency>EUR</Currency>

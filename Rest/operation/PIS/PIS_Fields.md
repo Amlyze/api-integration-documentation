@@ -76,7 +76,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td><b>riskManagementCategory</b></td>
             <td>String</td>
             <td><b>true</b></td>
-            <td>OP_PK</td>
+            <td>OP_DEFAULT</td>
             <td>Code of risk management category of object. Risk management category code from classifier can be checked <a href="../../README.md#classifiers">here</a></td>
         </tr>
 		<tr>

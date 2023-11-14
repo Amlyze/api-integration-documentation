@@ -3,7 +3,7 @@
     "requester": "Financial_Institution",
     "operationExtId": "Op_0017",
     "operationType": "PIS",
-    "riskManagementCategory": "OP_INST",
+    "riskManagementCategory": "OP_DEFAULT",
     "sourceOfRiskLevel": "IMPORT",
     "operationStatus":"EXECUTED",
     "riskLevel": "LOW",

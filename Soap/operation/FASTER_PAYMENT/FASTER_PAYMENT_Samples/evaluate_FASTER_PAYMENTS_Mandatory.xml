@@ -5,7 +5,7 @@
             <CommunicationNumber>Com_1123</CommunicationNumber>
             <Requester>Financial_institution</Requester>
             <OperationType>FASTER_PAYMENTS</OperationType>
-            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
             <OperationExtId>Op_001123</OperationExtId>
             <FinancialFlowDirection>OUTGOING</FinancialFlowDirection>

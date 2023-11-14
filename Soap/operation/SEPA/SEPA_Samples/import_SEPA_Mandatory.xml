@@ -5,7 +5,7 @@
             <CommunicationNumber>Com_9921</CommunicationNumber>
             <Requester>Financial_institution</Requester>
             <OperationType>SEPA</OperationType>
-            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <SourceOfRiskLevel>IMPORT</SourceOfRiskLevel>
             <OperationStatus>EXECUTED</OperationStatus>
             <RiskLevel>LOW</RiskLevel>

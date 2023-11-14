@@ -7,7 +7,7 @@
             <OperationExtId>Op_0082</OperationExtId>
             <OperationType>CARD_CASH</OperationType>
             <CardOperationSubType>CARD_CASH_WITHDRAWAL</CardOperationSubType>
-            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <SourceOfRiskLevel>IMPORT</SourceOfRiskLevel>
             <OperationStatus>EXECUTED</OperationStatus>
             <RiskLevel>HIGH</RiskLevel>

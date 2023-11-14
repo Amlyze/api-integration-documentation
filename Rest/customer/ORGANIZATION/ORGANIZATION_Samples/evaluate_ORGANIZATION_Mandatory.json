@@ -2,7 +2,7 @@
 	"communicationNumber": "ComNr_002",
 	"customerExtId": "Cust_extt112",
 	"requester": "Financial Institution",
-	"riskManagementCategory": "ORG_PK",
+	"riskManagementCategory": "ORG_AMLYZE",
 	"sourceOfRiskLevel": "EVALUATE",
 	"entityType": "ORGANIZATION",
 	"applicationDate": "2012-10-01",

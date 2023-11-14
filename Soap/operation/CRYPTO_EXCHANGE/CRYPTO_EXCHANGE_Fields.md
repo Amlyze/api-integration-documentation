@@ -85,7 +85,7 @@ Crypto_exchange occurs for intra-customer transactions between distinct currency
             <td ><b> RiskManagementCategory </td>
             <td > String </td>
             <td > <b> true </td>
-            <td > OP_PK </td>
+        _    <td > OP_DEFAULT </td>
             <td> Code of risk management category of object. Risk management category code from classifier can be checked <a href="../../README.md#classifiers">here</a></td>
         </tr>
          <tr>

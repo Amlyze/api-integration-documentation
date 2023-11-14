@@ -6,7 +6,7 @@
             <Requester>Financial_institution</Requester>
             <OperationExtId>Op_009913</OperationExtId>
             <OperationType>SWIFT</OperationType>
-            <RiskManagementCategory>OP_PK</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
             <OperationDateTime>2023-01-08T09:09:33+02:00</OperationDateTime>
             <FinancialFlowDirection>OUTGOING</FinancialFlowDirection>

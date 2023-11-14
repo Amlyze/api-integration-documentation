@@ -3,7 +3,7 @@
     "requester": "Financial_Institution",
     "operationExtId": "Op_0021",
     "operationType": "SWIFT",
-    "riskManagementCategory": "OP_INST",
+    "riskManagementCategory": "OP_DEFAULT",
     "initializeScreeningProcesses": [
         "SANCTIONS",
         "PEP",

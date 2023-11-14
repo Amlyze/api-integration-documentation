@@ -4,7 +4,7 @@
     "operationExtId": "ExtId_747",
     "operationType": "CARD_CASH",
     "cardOperationSubType": "CARD_CASH_WITHDRAWAL",
-    "riskManagementCategory": "OP_PK",
+    "riskManagementCategory": "OP_DEFAULT",
     "sourceOfRiskLevel": "EVALUATE",
     "operationDateTime": "2023-09-22T15:09:33+02:00",
     "currency": "EUR",

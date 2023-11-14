@@ -5,7 +5,7 @@
             <CommunicationNumber>Com_95</CommunicationNumber>
             <Requester>Financial_institution</Requester>
             <OperationType>PIS</OperationType>
-            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <OperationExtId>Op_0095</OperationExtId>
             <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
             <InitializeScreeningProcesses>

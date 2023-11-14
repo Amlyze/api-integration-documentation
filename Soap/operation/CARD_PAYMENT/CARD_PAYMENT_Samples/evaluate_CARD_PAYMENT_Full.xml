@@ -7,7 +7,7 @@
             <OperationExtId>Op_0070</OperationExtId>
             <OperationType>CARD_PAYMENT</OperationType>
             <CardOperationSubType>CARD_PURCHASE</CardOperationSubType>
-            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <InitializeScreeningProcesses>
                 <Process>SANCTIONS</Process>
                 <Process>ADVERSE_MEDIA</Process>

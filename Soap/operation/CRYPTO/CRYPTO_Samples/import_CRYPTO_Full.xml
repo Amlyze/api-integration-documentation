@@ -6,7 +6,7 @@
             <Requester>Financial_Institution</Requester>
             <OperationExtId>Op_0063</OperationExtId>
             <OperationType>CRYPTO</OperationType>
-            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <InitializeScreeningProcesses>
                 <Process>SANCTIONS</Process>
                 <Process>ADVERSE_MEDIA</Process>

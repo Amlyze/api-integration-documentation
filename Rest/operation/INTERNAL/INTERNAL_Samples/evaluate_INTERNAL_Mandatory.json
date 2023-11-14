@@ -3,7 +3,7 @@
     "requester": "Financial_Institution",
     "operationExtId": "Op_0018",
     "operationType": "INTERNAL",
-    "riskManagementCategory": "OP_INST",
+    "riskManagementCategory": "OP_DEFAULT",
     "sourceOfRiskLevel": "EVALUATE",
     "operationDateTime": "2023-09-22T15:09:33+02:00",
     "currency": "EUR",

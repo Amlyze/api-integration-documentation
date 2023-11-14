@@ -1,7 +1,7 @@
 {
     "communicationNumber": "ComNr_145",
     "requester": "Financial Institution",
-    "riskManagementCategory": "ORG_PK",
+    "riskManagementCategory": "ORG_AMLYZE",
     "sourceOfRiskLevel": "EVALUATE",
     "customerExtId": "customer1451",
     "entityType": "ORGANIZATION",

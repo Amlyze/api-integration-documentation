@@ -3,7 +3,7 @@
     "requester": "Financial_Institution",
     "operationExtId": "Op_0029",
     "operationType": "CRYPTO_EXCHANGE",
-    "riskManagementCategory": "OP_PK",
+    "riskManagementCategory": "OP_DEFAULT",
     "initializeScreeningProcesses": [
         "SANCTIONS",
         "PEP",

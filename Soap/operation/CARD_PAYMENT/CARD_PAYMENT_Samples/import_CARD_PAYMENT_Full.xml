@@ -7,7 +7,7 @@
             <OperationExtId>Op_0073</OperationExtId>
             <OperationType>CARD_PAYMENT</OperationType>
             <CardOperationSubType>CARD_PAYMENT_CREDIT</CardOperationSubType>
-            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <SourceOfRiskLevel>IMPORT</SourceOfRiskLevel>
             <OperationStatus>EXECUTED</OperationStatus>
             <RiskLevel>HIGH</RiskLevel>

@@ -4,7 +4,7 @@
     "operationExtId": "ExtId_879",
     "operationType": "CARD_PAYMENT",
     "cardOperationSubType": "CARD_PURCHASE",
-    "riskManagementCategory": "OP_PK",
+    "riskManagementCategory": "OP_DEFAULT",
     "sourceOfRiskLevel": "IMPORT",
     "operationStatus":"EXECUTED",
     "riskLevel": "LOW",

@@ -7,7 +7,7 @@
             <OperationExtId>Op_0081</OperationExtId>
             <OperationType>CARD_CASH</OperationType>
             <CardOperationSubType>CARD_CASH_WITHDRAWAL</CardOperationSubType>
-            <RiskManagementCategory>OP_PK</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
             <OperationDateTime>2023-09-23T15:09:33+02:00</OperationDateTime>
             <Currency>EUR</Currency>

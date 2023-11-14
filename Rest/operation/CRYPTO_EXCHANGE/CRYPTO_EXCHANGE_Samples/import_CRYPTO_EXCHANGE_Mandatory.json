@@ -3,7 +3,7 @@
     "requester": "Financial_Institution",
     "operationExtId": "ExtId_7478",
     "operationType": "CRYPTO_EXCHANGE",
-    "riskManagementCategory": "OP_PK",
+    "riskManagementCategory": "OP_DEFAULT",
     "sourceOfRiskLevel": "IMPORT",
     "RiskLevel": "HIGH",
     "operationStatus":"EXECUTED",

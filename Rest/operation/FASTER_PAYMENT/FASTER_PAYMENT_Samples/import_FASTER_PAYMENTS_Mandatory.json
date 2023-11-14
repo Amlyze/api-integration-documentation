@@ -3,7 +3,7 @@
     "requester": "Financial_Institution",
     "operationExtId": "Op_00175",
     "operationType": "FASTER_PAYMENTS",
-    "riskManagementCategory": "OP_INST",
+    "riskManagementCategory": "OP_DEFAULT",
     "sourceOfRiskLevel": "IMPORT",
     "operationStatus":"EXECUTED",
     "riskLevel": "HIGH",

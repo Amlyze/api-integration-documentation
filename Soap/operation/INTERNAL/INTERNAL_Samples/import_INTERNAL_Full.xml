@@ -5,7 +5,7 @@
             <CommunicationNumber>Com_98</CommunicationNumber>
             <Requester>Financial_institution</Requester>
             <OperationType>INTERNAL</OperationType>
-            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <OperationExtId>Op_0098</OperationExtId>
             <SourceOfRiskLevel>IMPORT</SourceOfRiskLevel>
             <OperationStatus>EXECUTED</OperationStatus>

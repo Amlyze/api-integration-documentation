@@ -5,7 +5,7 @@
             <CommunicationNumber>Com_93</CommunicationNumber>
             <Requester>Financial_institution</Requester>
             <OperationType>PIS</OperationType>
-            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <OperationExtId>Op_0093</OperationExtId>
             <SourceOfRiskLevel>IMPORT</SourceOfRiskLevel>
             <OperationStatus>EXECUTED</OperationStatus>

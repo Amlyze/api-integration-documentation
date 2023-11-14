@@ -36,7 +36,7 @@
 			<td><b> RiskManagementCategory </td>
 			<td> String <br>(classifier) </td>
 			<td><b> true </td>
-			<td>LEAD_ORG</td>
+			<td>LEAD_AMLYZE</td>
 			<td>Code of risk management category for evaluation of the object.<br>💡 Possible values here are given just as an example, in the configuration period these could be updated</td>
 		</tr>
 		<tr>

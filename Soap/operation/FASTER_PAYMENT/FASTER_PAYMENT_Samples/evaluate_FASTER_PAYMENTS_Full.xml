@@ -5,7 +5,7 @@
             <CommunicationNumber>Com_1122</CommunicationNumber>
             <Requester>Financial_institution</Requester>
             <OperationType>FASTER_PAYMENTS</OperationType>
-            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
             <OperationExtId>Op_001122</OperationExtId>
             <InitializeScreeningProcesses>

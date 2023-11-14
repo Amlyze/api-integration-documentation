@@ -7,7 +7,7 @@
             <OperationExtId>Op_0080</OperationExtId>
             <OperationType>CARD_CASH</OperationType>
             <CardOperationSubType>CARD_CASH_WITHDRAWAL</CardOperationSubType>
-            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
             <InitializeScreeningProcesses>
                 <Process>SANCTIONS</Process>

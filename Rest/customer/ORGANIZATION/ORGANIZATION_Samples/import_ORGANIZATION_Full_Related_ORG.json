@@ -1,7 +1,7 @@
 {
     "communicationNumber": "ComNr_225",
     "requester": "Financial Institution",
-    "riskManagementCategory": "ORG_PK",
+    "riskManagementCategory": "ORG_AMLYZE",
     "action": "UPDATE",
     "riskLevel": "NONE",
     "sourceOfRiskLevel": "IMPORT",
