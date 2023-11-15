@@ -83,7 +83,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             </td>
             <td>true</td>
             <td>OP_DEFAULT</td>
-            <td>Code of risk management category of object. Risk management category code from classifier can be checked <a href="../../README.md#classifiers">here</a></td>
+            <td>Code of risk management category of object.</td>
         </tr>
 		<tr>
 			<td><b>businessUnit</b></td>
@@ -112,7 +112,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td>String[]</td>
             <td>false</td>
             <td>PEP,<br/>ADVERSE_MEDIA,<br/> SANCTIONS</td>
-            <td>Defines which lists to check during screening process<br/> ScreeningList code from classifier can be checked <a href="../../README.md#classifiers">here</a></td>
+            <td>Defines which lists to check during screening process.</td>
         </tr>
         <tr>
             <td><b>amount</b></td>
@@ -136,7 +136,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             </td>
             <td>true</td>
             <td>EUR</td>
-            <td>Currency code from classifier.<br/> Currency code from classifier can be checked <a href="../../README.md#classifiers">here</a></td> 
+            <td>Currency code.</td> 
         </tr>
         <tr>
             <td><b>description</b></td>
@@ -195,7 +195,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td><a href="#OperationPartyApi">OperationPartyApi[]</a></td>
             <td>true</td>
             <td>-</td>
-            <td>List of entities that belong to one operation|</td>
+            <td>List of entities that belong to one operation</td>
         </tr>
     </tbody>
 </table>

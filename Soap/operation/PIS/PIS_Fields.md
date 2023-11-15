@@ -75,7 +75,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td>String<br/><b>ENUM</b><br/>[EXECUTED,<br/>REJECTED]</td>
             <td>true/false</td>
             <td>EXECUTED</td>
-            <td>Either operation was successfully executed, or the operation was rejected <br/> <b> Mandatory</b> when sourceOfRiskLevel = IMPORT</td>
+            <td>Either operation was successfully executed, or the operation was rejected<br/> <b> Mandatory</b> when sourceOfRiskLevel = IMPORT</td>
         </tr>
         <tr>
             <td><b>RiskLevel</b></td>
@@ -86,26 +86,43 @@ In any type of operation between two or more parties, one of the parties is alwa
         </tr>
         <tr>
             <td><b>RiskManagementCategory</b></td>
-            <td>String</td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Risk management category classifier)</a>
+            </td>
             <td>true</td>
             <td>OP_DEFAULT</td>
-            <td>Code of risk management category of object. Risk management category code from classifier can be checked <a href="../../README.md#classifiers">here</a></td>
+            <td>Code of risk management category of object.</td>
         </tr>
+		<tr>
+			<td><b>BusinessUnit</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Business unit classifier)</a>
+            </td>
+			<td>true/false</td>
+			<td>BUSINESS_UNIT_NAME</td>
+			<td>
+                Unit data identification for controllability/observability.
+                <br/>❗NOTE: parameter is required only if business unit strict mode enabled
+            </td>
+		</tr>
         <tr>
             <td><b>FinancialFlowDirection</b></td>
-            <td>FinancialFlowDirectionApi</td>
+            <td>String<br/><b>ENUM</b><br/>[INCOMING,<br/>LOW,<br/>OUTGOING,<br/>NULL]</td>
             <td>true</td>
             <td>INCOMING</td>
-            <td>Refers to the movement of money between entities or accounts<br/> direction = <b>INCOMING</b> your customer = <b>CREDITOR</b>
+            <td>
+                Refers to the movement of money between entities or accounts<br/>  direction = <b>INCOMING</b> your customer = <b>CREDITOR</b> 
         </td>
         </tr>
-        <tr>
-            <td><b>InitializeScreeningProcesses</b></td>
-            <td>String[]</td>
-            <td>false</td>
-            <td>PEP,<br/>ADVERSE_MEDIA,<br/> SANCTIONS</td>
-            <td>Defines which lists to check during screening process<br/> ScreeningList code from classifier can be checked <a href="../../README.md#classifiers">here</a></td>
-        </tr>
+		<tr>
+			<td><b>InitializeScreeningProcesses</b></td>
+			<td>Object</td>
+			<td>false</td>
+            <td><a href="#Process">Process[]</a></td>
+			<td>Defines which lists to check during screening process.</td>
+		</tr>
         <tr>
             <td><b>Amount</b></td>
             <td>BigDecimal</td>
@@ -122,10 +139,13 @@ In any type of operation between two or more parties, one of the parties is alwa
         </tr>
         <tr>
             <td><b>Currency</b></td>
-            <td>String</td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Currency classifier)</a>
+            </td>
             <td>true</td>
             <td>EUR</td>
-            <td>Currency code from classifier.<br/> Currency code from classifier can be checked <a href="../../README.md#classifiers">here</a></td> 
+            <td>Currency code.</td> 
         </tr>
         <tr>
             <td><b>Description</b></td>
@@ -136,14 +156,20 @@ In any type of operation between two or more parties, one of the parties is alwa
         </tr>
         <tr>
             <td><b>SourceCountry</b></td>
-            <td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
             <td>false</td>
             <td>LT</td>
             <td>Source country informs about where the operation was initiated</td>
         </tr>
         <tr>
             <td><b>DestinationCountry</b></td>
-            <td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
             <td>false</td>
             <td>LT</td>
             <td>Country of operation's destination</td>
@@ -165,23 +191,46 @@ In any type of operation between two or more parties, one of the parties is alwa
         </tr>
         <tr>
             <td><b>IPAddressCountry</b></td>
-            <td>String</td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
             <td>false</td>
             <td>LT</td>
             <td>Country of an IP address of the operation</td>
         </tr>
         <tr>
-            <td><b>[ListOperationParty]</b></td>
-            <td>OperationPartyApi</td>
+            <td><b>ListOperationParty</b></td>
+            <td>Object</td>
             <td>true</td>
-            <td>-</td>
-            <td>List of entities that belong to one operation|</td>
+            <td><a href="#OperationParty">OperationParty[]</a></td>
+            <td>List of entities that belong to one operation</td>
         </tr>
     </tbody>
 </table>
 
+## Process
 
-## Operation Party
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+			<td><b>Example/Ref</b></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><b>Process</b></td>
+            <td>String</td>
+            <td>true</td>
+			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
+		</tr>
+	</tbody>
+</table>
+
+## OperationParty
 
 At least one operation party account must exist in Amlyze (identified by accountNumber, BIC, Currency)
 
@@ -192,7 +241,7 @@ At least one operation party account must exist in Amlyze (identified by account
             <td><b>Field</b></td>
             <td><b>Type</b></td>
             <td><b>Mandatory</b></td>
-            <td><b>Example</b></td>
+            <td><b>Example/Ref</b></td>
             <td><b>Description</b></td>
         </tr>
     </thead>
@@ -227,7 +276,10 @@ At least one operation party account must exist in Amlyze (identified by account
         </tr>
         <tr>
             <td><b>Currency</b></td>
-            <td>String</td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Currency classifier)</a>
+            </td>
             <td>false</td>
             <td>GBP</td>
             <td>Currency code of operation</td>
@@ -244,21 +296,21 @@ At least one operation party account must exist in Amlyze (identified by account
             <td>String</td>
             <td>true/false</td>
             <td>Eduardo</td>
-            <td><b>Mandatory</b> when entityType = <b> INDIVIDUAL</b>or <b>UNKNOWN</b> <br/> <b>Not Used</b> when entityType = <b>ORGANIZATION</b></td>
+            <td><b>Mandatory</b> when entityType = <b> INDIVIDUAL</b>or <b>UNKNOWN</b><br/> <b>Not Used</b> when entityType = <b>ORGANIZATION</b></td>
         </tr>
         <tr>
             <td><b>LastName</b></td>
             <td>String</td>
             <td>true/false</td>
             <td>Rodriguez</td>
-            <td><b>Mandatory</b> when entityType = <b> INDIVIDUAL</b>or <b>UNKNOWN</b> <br/> <b>Not Used</b> when entityType = <b>ORGANIZATION</b></td>
+            <td><b>Mandatory</b> when entityType = <b> INDIVIDUAL</b>or <b>UNKNOWN</b><br/> <b>Not Used</b> when entityType = <b>ORGANIZATION</b></td>
         </tr>
         <tr>
             <td><b>Title</b></td>
             <td>String</td>
             <td>true/false</td>
             <td>Moller</td>
-            <td><b>Mandatory</b> when entityType = <b>ORGANIZATION</b>or <b>UNKNOWN</b> <br/> <b>Not Mandatory</b> when entityType = <b>INDIVIDUAL</b></td>
+            <td><b>Mandatory</b> when entityType = <b>ORGANIZATION</b>or <b>UNKNOWN</b><br/> <b>Not Mandatory</b> when entityType = <b>INDIVIDUAL</b></td>
         </tr>
     </tbody>
 </table>
