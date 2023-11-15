@@ -22,7 +22,7 @@
 			<td><b>requester</b></td>
 			<td>String</td>
 			<td>true</td>
-			<td>ComNr_000321</td>
+			<td>financial_institution</td>
 			<td>Name of the system requesting web service</td>
 		</tr>
 		<tr>
@@ -80,7 +80,7 @@
 		</tr>
 		<tr>
 			<td><b>initializeScreeningProcesses</b></td>
-			<td>String</td>
+			<td>String[]</td>
 			<td>false</td>
 			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
 			<td>Defines which screening processes to initiate</td>

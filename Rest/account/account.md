@@ -99,7 +99,7 @@ The Minimalistic request example below shows the minimum required fields to succ
 ```json
 {
   "communicationNumber": "Com_1545",
-  "requester": "Financial_Institution",
+  "requester": "financial_institution",
   "accountExtId": "Ext87887",
   "accountNumber": "LI9208800274335945522",
   "accountStatus": "ACTIVE",

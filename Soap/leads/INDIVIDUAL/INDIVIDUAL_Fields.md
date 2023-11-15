@@ -22,7 +22,7 @@
 			<td><b>Requester</b></td>
 			<td>String</td>
 			<td>true</td>
-			<td>ComNr_000321</td>
+			<td>financial_institution</td>
 			<td>Name of the system requesting web service</td>
 		</tr>
 		<tr>
@@ -60,23 +60,13 @@
 		</tr>
 		<tr>
 			<td><b>SourceOfRiskLevel</b></td>
-			<td>String<br/><b>ENUM</b><br/>[IMPORT,EVALUATE]</td>
+			<td>String<br/><b>ENUM</b><br/>[EVALUATE]</td>
 			<td>true</td>
 			<td>IMPORT</td>
 			<td>
                 Source of risk level<br/> The value <b>"EVALUATE"</b> 
-                should be used for normal business processes - risk assessment will be performed. <br/> 
-                The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and questionnaire information will be imported without risk assessment
+                should be used for normal business processes - risk assessment will be performed
             </td>
-		</tr>
-		<tr>
-			<td><b>RiskLevel</b></td>
-			<td>String<br/><b>ENUM</b><br/>[NONE,<br/> LOW,<br/> MEDIUM,<br/> HIGH,<br/> EXTREME]</td>
-			<td>true/false</td>
-			<td>HIGH</td>
-			<td>
-                The Risk Level of the customer during IMPORT<br/><b>Mandatory</b> when sourceOfRiskLevel = IMPORT<br/>
-                <b>Not Mandatory</b>  when sourceOfRiskLevel = EVALUATE</td>
 		</tr>
 		<tr>
 			<td><b>InitializeScreeningProcesses</b></td>
@@ -84,13 +74,6 @@
 			<td>false</td>
             <td><a href="#Process">Process[]</a></td>
 			<td>Defines which screening processes to initiate</td>
-		</tr>
-		<tr>
-			<td><b>CustomerStatus</b></td>
-			<td>String<br/><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
-			<td>true</td>
-			<td>ACTIVE</td>
-			<td>Customer status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received.<br/> ACTIVE - Customer is onboarded ( account is provided or customer assessment case is resolved)<br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is changed to being disabled</i></td>
 		</tr>
 		<tr>
 			<td><b>CustomerExtId</b></td>

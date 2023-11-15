@@ -106,7 +106,7 @@ The Minimalistic request example below shows the minimum required fields to succ
 ```json
 {
 	"communicationNumber": "ComNr_000321",
-	"requester": "Bank_system",
+	"requester": "financial_institution",
 	"riskManagementCategory": "FAST",
 	"entityType": "INDIVIDUAL",
 	"customerExtId": "cust_1232",

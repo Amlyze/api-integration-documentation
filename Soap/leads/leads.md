@@ -32,7 +32,7 @@
  ( More about the Customer → [<b>Here</b>](../customer/customer.md))
 
  ---
- ![Alt text](image.png)
+ ![Alt text](./image.png)
 
 ## Samples
 [<b>LEAD_INDIVIDUAL Fields</b>](INDIVIDUAL/INDIVIDUAL_Fields.md)
@@ -144,7 +144,7 @@ The Minimalistic request example below shows the minimum required fields to succ
     <soap:Body>
         <AMLYZE_CUSTOMER xmlns="urn:amlyze-services:EvaluateCustomerService_v2r0">
             <CommunicationNumber>ComNr_45</CommunicationNumber>
-            <Requester>Bank_system</Requester>
+            <Requester>financial_institution</Requester>
             <RiskManagementCategory>LEAD_IND</RiskManagementCategory>
             <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
             <CustomerExtId>Lead_ExtaIdaa</CustomerExtId>

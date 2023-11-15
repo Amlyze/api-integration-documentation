@@ -22,7 +22,7 @@
 			<td><b>requester</b></td>
 			<td>String</td>
 			<td>true</td>
-			<td>ComNr_000321</td>
+			<td>financial_institution</td>
 			<td>Name of the system requesting web service</td>
 		</tr>
 		<tr>

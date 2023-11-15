@@ -1,6 +1,6 @@
 {
     "communicationNumber": "commNr_1142",
-    "requester": "FInancial Branch",
+    "requester": "financial_institution",
     "riskManagementCategory": "ORG_AMLYZE",
     "sourceOfRiskLevel": "EVALUATE",
     "customerExtId": "Ext_1457",

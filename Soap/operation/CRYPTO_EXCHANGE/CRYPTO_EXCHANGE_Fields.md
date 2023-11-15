@@ -36,7 +36,7 @@ Crypto_exchange occurs for intra-customer transactions between distinct currency
             <td><b>Requester</b></td>
             <td>String</td>
             <td>true</td>
-            <td>Branch Name</td>
+            <td>financial_institution</td>
             <td>Name of the system requesting web service</td>
         </tr>
         <tr>

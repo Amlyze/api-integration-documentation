@@ -27,7 +27,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td><b>Requester</b></td>
             <td>String</td>
             <td>true</td>
-            <td>Branch Name</td>
+            <td>financial_institution</td>
             <td>Name of the system requesting web service</td>
         </tr>
         <tr>

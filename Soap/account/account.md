@@ -98,12 +98,12 @@ The request body contains the data that you are sending to the API. The data doc
 			</tr>
             <tr>
 				<td><b>ErrorCode</b></td>
-				<td style="text-align:center">String</td>
+				<td>String</td>
 				<td>Error code returns the code of an error</td>
             </tr>
             <tr>
 				<td><b>ErrorDescription</b></td>
-				<td style="text-align:center">String</td>
+				<td>String</td>
 				<td>Error is described in a more detailed manner in error description field</td>
             </tr>
 		</tbody>

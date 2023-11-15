@@ -1,0 +1,13 @@
+{
+	"communicationNumber": "ComNr_00221",
+	"customerExtId": "Lead_extid01",
+	"requester": "Financial_Institution",
+	"riskManagementCategory": "LEAD_AMLYZE",
+	"sourceOfRiskLevel": "EVALUATE",
+	"entityType": "ORGANIZATION",
+	"applicationDate": "2023-05-12",
+	"title": "Lead_Uab'Roxy'",
+    "legalForm": "LTD",
+	"establishmentDate": "2000-05-10",
+	"registrationCountry": "LT"
+}

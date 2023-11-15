@@ -65,12 +65,12 @@ The request body contains the data that you are sending to the API. The data doc
 		<tbody>
 			<tr>
 				<td><b>ResultType</b></td>
-				<td style="text-align:center">String<br/><b>ENUM</b><br/> [REQUEST_ACCEPTED]</td>
+				<td>String<br/><b>ENUM</b><br/> [REQUEST_ACCEPTED]</td>
 				<td>Result type returns the answer that the action was successful</td>
 			</tr>
 			<tr>
 				<td><b>CommunicationStatus</b></td>
-				<td style="text-align:center">String<br/><b>ENUM</b><br/> [COMPLETED]</td>
+				<td>String<br/><b>ENUM</b><br/> [COMPLETED]</td>
 				<td>Indicates that Communication was successful</td>
 		</tbody>
 </table>
@@ -99,22 +99,22 @@ The request body contains the data that you are sending to the API. The data doc
 		<tbody>
 			<tr>
 				<td><b>ResultType</b></td>
-				<td style="text-align:center">String<br/><b>ENUM</b><br/>[REQUEST_REJECTED]</td>
+				<td>String<br/><b>ENUM</b><br/>[REQUEST_REJECTED]</td>
 				<td>Result type returns the answer that the action was not successful</td>
 			</tr>
 			<tr>
 				<td><b>CommunicationStatus</b></td>
-				<td style="text-align:center">String<br/><b>ENUM</b><br/>[INVALID]</td>
+				<td>String<br/><b>ENUM</b><br/>[INVALID]</td>
 				<td>"INVALID" Communication status can be received when some errors or mistakes occur</td>
             </tr>
             <tr>
 				<td><b>ErrorCode</b></td>
-				<td style="text-align:center">String</td>
+				<td>String</td>
 				<td>Error code returns the code of an error</td>
             </tr>
             <tr>
 				<td><b>ErrorDescription</b></td>
-				<td style="text-align:center">String</td>
+				<td>String</td>
 				<td>Error is described in a more detailed manner in error description field</td>
             </tr>
 		</tbody>
@@ -146,7 +146,7 @@ The Minimalistic request example below shows the minimum required fields to succ
 	<soap:Body>
 		<AMLYZE_CUSTOMER xmlns="urn:amlyze-services:EvaluateCustomerService_v2r0">
 			<CommunicationNumber>ComNr_000321</CommunicationNumber>
-			<Requester>Bank_system</Requester>
+			<Requester>financial_institution</Requester>
 			<RiskManagementCategory>FAST</RiskManagementCategory>
 			<EntityType>INDIVIDUAL</EntityType>
 			<CustomerExtId>cust_1232</CustomerExtId>

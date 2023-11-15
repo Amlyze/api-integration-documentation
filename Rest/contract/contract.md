@@ -98,7 +98,7 @@ The Minimalistic request example below shows the minimum required fields to succ
 ```json
 {
     "communicationNumber": "COM216a",
-    "requester": "Financial_Institution",
+    "requester": "financial_institution",
     "classifierType": "LOAN",
     "extId": "any_contract_1232",
     "documentCode": "REG74121101"

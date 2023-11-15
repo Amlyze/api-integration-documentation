@@ -36,15 +36,15 @@ Customers contain identifying information and KYC data. This section provides in
 <table>
 		<thead>
 			<tr>
-				<td style="text-align:center"><b>Code</b></td>
-				<td style="text-align:center"><b>Status</b></td>
-				<td style="text-align:center"><b>Response</b></td>
+				<td><b>Code</b></td>
+				<td><b>Status</b></td>
+				<td><b>Response</b></td>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
 				<td><b>200</b></td>
-				<td style="text-align:center"><i>OK</i></td>
+				<td><i>OK</i></td>
 				<td>
 					<pre>
 {
@@ -55,7 +55,7 @@ Customers contain identifying information and KYC data. This section provides in
 			</tr>
 			<tr>
 				<td><b>400</b></td>
-				<td style="text-align:center"><i>Bad Request</i></td>
+				<td><i>Bad Request</i></td>
 				<td> 
                     <pre>
 {
@@ -68,7 +68,7 @@ Customers contain identifying information and KYC data. This section provides in
 			</tr>
 				<tr>
 				<td><b>404</b></td>
-				<td style="text-align:center"><i>Not Found</i></td>
+				<td><i>Not Found</i></td>
 				<td> 
                     <pre>
 {
@@ -81,7 +81,7 @@ Customers contain identifying information and KYC data. This section provides in
 			</tr>
 			<tr>
 				<td><b>500</b></td>
-				<td style="text-align:center"><i>Internal Server Error</i></td>
+				<td><i>Internal Server Error</i></td>
 				<td> 
                     <pre>
 {
@@ -114,10 +114,10 @@ The Minimalistic request example below shows the minimum required fields to succ
 {
 	"communicationNumber": "ComNr_002",
 	"customerExtId": "Cust_ext145",
-	"requester": "Financial Institution",
+	"requester": "financial_institution",
 	"action": "CREATE",
 	"customerStatus": "ACTIVE",
-	"riskManagementCategory": "IND_PK",
+	"riskManagementCategory": "IND_AMLYZE",
 	"sourceOfRiskLevel": "IMPORT",
 	"riskLevel": "NONE",
 	"entityType": "INDIVIDUAL",
