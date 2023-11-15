@@ -6,7 +6,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
+			<td><b>Example/Ref</b></td>
 			<td width="600px"><b>Description</b></td>
 		</tr>
 	</thead>
@@ -78,9 +78,9 @@
 		</tr>
 		<tr>
 			<td><b>InitializeScreeningProcesses</b></td>
-			<td>String</td>
+			<td>Object</td>
 			<td>false</td>
-			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
+            <td><a href="#Process">Process[]</a></td>
 			<td>Defines which screening processes to initiate</td>
 		</tr>
 		<tr>
@@ -226,7 +226,7 @@
 			<td>Dividend</td>
 			<td>Source of initial deposit</td>
 		</tr>
-        <tr>
+		<tr>
 			<td><b>IsActualAddressDeclared</b></td>
 			<td>Boolean</td>
 			<td>false</td>
@@ -416,128 +416,149 @@
 		</tr>
 		<tr>
 			<td><b>ListActivity</b></td>
-			<td><a href="#ActivityApi">ActivityApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+			<td><a href="#Activity">Activity[]</a></td>
 			<td>List of activities</td>
 		</tr>
 		<tr>
 			<td><b>ListAdditionalValues</b></td>
-			<td><a href="#AdditionalValueApi">AdditionalValueApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+			<td><a href="#AdditionalValue">AdditionalValue[]</a></td>
 			<td>Additional information about businessEntity</td>
 		</tr>
 		<tr>
 			<td><b>ListAddress</b></td>
-            <td><a href="#AddressApi">AddressApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#Address">Address[]</a></td>
 			<td>List of addresses</td>
 		</tr>
 		<tr>
 			<td><b>ListAppealReason</b></td>
-            <td><a href="#AppealReasonApi">AppealReasonApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#AppealReason">AppealReason[]</a></td>
 			<td>List of reasons for the appeal</td>
 		</tr>
 		<tr>
 			<td><b>ListBusinessEntityDocument</b></td>
-            <td><a href="#BusinessEntityDocumentApi">BusinessEntityDocumentApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#BusinessEntityDocument">BusinessEntityDocument[]</a></td>
 			<td>List of related entity documents</td>
 		</tr>
 		<tr>
 			<td><b>ListContact</b></td>
-            <td><a href="#ContactApi">ContactApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#Contact">Contact[]</a></td>
 			<td>List of contacts of related entity</td>
 		</tr>
 		<tr>
 			<td><b>ListCountryOfActivity</b></td>
-            <td><a href="#CountryOfActivityApi">CountryOfActivityApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#CountryOfActivity">CountryOfActivity[]</a></td>
 			<td>List of activity regions</td>
 		</tr>
 		<tr>
 			<td><b>ListCountryOfTaxPayment</b></td>
-            <td><a href="#CountryOfTaxPaymentApi">CountryOfTaxPaymentApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#CountryOfTaxPayment">CountryOfTaxPayment[]</a></td>
 			<td>List of tax payment country</td>
 		</tr>
 		<tr>
 			<td><b>ListDeclaredTurnover</b></td>
-            <td><a href="#DeclaredTurnoverApi">DeclaredTurnoverApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#DeclaredTurnover">DeclaredTurnover[]</a></td>
 			<td>List of declared turnover</td>
 		</tr>
 		<tr>
 			<td><b>ListIncomeSource</b></td>
-			<td><a href="#IncomeSourceApi">IncomeSourceApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+			<td><a href="#IncomeSource">IncomeSource[]</a></td>
 			<td>List of countries of payment</td>
 		</tr>
 		<tr>
 			<td><b>ListIntroductionSource</b></td>
-            <td><a href="#IntroductionSourceApi">IntroductionSourceApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#IntroductionSource">IntroductionSource[]</a></td>
 			<td>List of sources of introduction</td>
 		</tr>
 		<tr>
 			<td><b>ListOrderedService</b></td>
-            <td><a href="#OrderedServiceApi">OrderedServiceApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#OrderedService">OrderedService[]</a></td>
 			<td>List of ordered services</td>
 		</tr>
 		<tr>
 			<td><b>ListPaymentCountry</b></td>
-            <td><a href="#PaymentCountryApi">PaymentCountryApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#PaymentCountry">PaymentCountry[]</a></td>
 			<td>List of payment country</td>
 		</tr>
 		<tr>
 			<td><b>ListPaymentPurpose</b></td>
-            <td><a href="#PaymentPurposeApi">PaymentPurposeApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#PaymentPurpose">PaymentPurpose[]</a></td>
 			<td>List of payment purpose</td>
 		</tr>
 		<tr>
 			<td><b>ListRegionOfActivity</b></td>
-            <td><a href="#RegionOfActivityApi">RegionOfActivityApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#RegionOfActivity">RegionOfActivity[]</a></td>
 			<td>List of activity countries of related entity</td>
 		</tr>
 		<tr>
 			<td><b>ListSourceOfWealth</b></td>
-            <td><a href="#SourceOfWealthApi">SourceOfWealthApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#SourceOfWealth">SourceOfWealth[]</a></td>
 			<td>List of wealth sources</td>
 		</tr>
 		<tr>
 			<td><b>ListRelatedEntity</b></td>
-            <td><a href="#RelatedEntityApi">RelatedEntityApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#RelatedEntity">RelatedEntity[]</a></td>
 			<td>List for related business entities</td>
 		</tr>
 	</tbody>
 </table>
 
 
-## AppealReasonApi
+## Process
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+			<td><b>Example/Ref</b></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><b>Process</b></td>
+            <td>String</td>
+            <td>true</td>
+			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
+		</tr>
+	</tbody>
+</table>
+
+## AppealReason
 
 <table>
 	<thead>
@@ -559,7 +580,7 @@
 	</tbody>
 </table>
 
-## IntroductionSourceApi
+## IntroductionSource
 
 <table>
 	<thead>
@@ -581,7 +602,7 @@
 	</tbody>
 </table>
 
-## OrderedServiceApi
+## OrderedService
 
 <table>
 	<thead>
@@ -603,7 +624,7 @@
 	</tbody>
 </table>
 
-## RegionOfActivityApi
+## RegionOfActivity
 
 <table>
 	<thead>
@@ -625,8 +646,7 @@
 	</tbody>
 </table>
 
-
-## PaymentCountryApi
+## CountryOfActivity
 
 <table>
 	<thead>
@@ -634,7 +654,30 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><b>Country</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
+			<td>true</td>
+		</tr>
+	</tbody>
+</table>
+
+
+## PaymentCountry
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+			<td><b>Example/Ref</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
@@ -659,7 +702,7 @@
 	</tbody>
 </table>
 
-## ActivityApi
+## Activity
 
 <table>
 	<thead>
@@ -667,7 +710,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
+			<td><b>Example/Ref</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
@@ -693,7 +736,7 @@
 </table>
 
 
-## AdditionalValueApi
+## AdditionalValue
 
 <table>
 	<thead>
@@ -701,7 +744,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
+			<td><b>Example/Ref</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
@@ -738,7 +781,7 @@
 </table>
 
 
-## AddressApi
+## Address
 
 <table>
 	<thead>
@@ -746,7 +789,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
+			<td><b>Example/Ref</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
@@ -817,7 +860,7 @@
 </table>
 
 
-## BusinessEntityDocumentApi
+## BusinessEntityDocument
 
 <table>
 	<thead>
@@ -825,7 +868,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
+			<td><b>Example/Ref</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
@@ -889,7 +932,7 @@
 	</tbody>
 </table>
 
-## ContactApi
+## Contact
 
 <table>
 	<thead>
@@ -897,7 +940,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
+			<td><b>Example/Ref</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
@@ -931,7 +974,7 @@
 </table>
 
 
-## CountryOfTaxPaymentApi
+## CountryOfTaxPayment
 
 <table>
 	<thead>
@@ -939,7 +982,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
+			<td><b>Example/Ref</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
@@ -964,7 +1007,7 @@
 	</tbody>
 </table>
 
-## DeclaredTurnoverApi
+## DeclaredTurnover
 
 <table>
 	<thead>
@@ -972,7 +1015,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
+			<td><b>Example/Ref</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
@@ -1011,7 +1054,7 @@
 	</tbody>
 </table>
 
-## IncomeSourceApi
+## IncomeSource
 
 <table>
 	<thead>
@@ -1019,7 +1062,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
+			<td><b>Example/Ref</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
@@ -1059,7 +1102,7 @@
 </table>
 
 
-## PaymentPurposeApi
+## PaymentPurpose
 
 <table>
 	<thead>
@@ -1067,7 +1110,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
+			<td><b>Example/Ref</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
@@ -1092,7 +1135,7 @@
 	</tbody>
 </table>
 
-## SourceOfWealthApi
+## SourceOfWealth
 
 <table>
 	<thead>
@@ -1100,7 +1143,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
+			<td><b>Example/Ref</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
@@ -1132,7 +1175,7 @@
 	</tbody>
 </table>                 
 
-## RelatedEntityApi
+## RelatedEntity
 
 <table>
 	<thead>
@@ -1140,7 +1183,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
+			<td><b>Example/Ref</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
@@ -1203,7 +1246,7 @@
 			<td>LT</td>
 			<td>Country of the related entity</td>
 	    </tr>
-        <tr>
+	    <tr>
 			<td><b>EntityType</b></td>
 			<td>String<br/><b>ENUM</b><br/> [INDIVIDUAL, <br/>ORGANIZATION]</td>
 			<td>true</td>
@@ -1309,58 +1352,58 @@
 	    </tr>
 	    <tr>
 			<td><b>ListActivity</b></td>
-            <td><a href="#ActivityApi">ActivityApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#Activity">Activity[]</a></td>
 			<td>List of activities of related entity</td>
     	</tr>
     	<tr>
 			<td><b>ListAdditionalValues</b></td>
-            <td><a href="#AdditionalValueApi">AdditionalValueApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#AdditionalValue">AdditionalValue[]</a></td>
 			<td>Additional information about businessEntity</td>
     	</tr>
     	<tr>
 			<td><b>ListAddress</b></td>
-            <td><a href="#AddressApi">AddressApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#Address">Address[]</a></td>
 			<td>List of addresses</td>
     	</tr>
     	<tr>
 			<td><b>ListBusinessEntityDocument</b></td>
-            <td><a href="#BusinessEntityDocumentApi">BusinessEntityDocumentApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#BusinessEntityDocument">BusinessEntityDocument[]</a></td>
 			<td>List of related entity document</td>
     	</tr>
     	<tr>
 			<td><b>ListContact</b></td>
-            <td><a href="#ContactApi">ContactApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#Contact">Contact[]</a></td>
 			<td>List of contacts of related entity</td>
     	</tr>
     	<tr>
 			<td><b>ListCountryOfActivity</b></td>
-            <td><a href="#CountryOfActivityApi">CountryOfActivityApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#CountryOfActivity">CountryOfActivity[]</a></td>
 			<td>List of activity countries of related entity</td>
 	    </tr>
 	    <tr>
 			<td><b>ListIncomeSource</b></td>
-			<td><a href="#IncomeSourceApi">IncomeSourceApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+			<td><a href="#IncomeSource">IncomeSource[]</a></td>
 			<td>List of income sources</td>
 	    </tr>
 	    <tr>
 			<td><b>ListRegionOfActivity</b></td>
-            <td><a href="#RegionOfActivityApi">RegionOfActivityApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#RegionOfActivity">RegionOfActivity[]</a></td>
 			<td>List of activity regions of related entity</td>
 	    </tr>
 	</tbody>
