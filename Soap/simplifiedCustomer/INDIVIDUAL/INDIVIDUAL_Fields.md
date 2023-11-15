@@ -6,7 +6,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
+			<td><b>Example/Ref</b></td>
 			<td width="600px"><b>Description</b></td>
 		</tr>
 	</thead>
@@ -56,13 +56,14 @@
 			<td>String<br/><b>ENUM</b><br/>[NONE,<br/> LOW,<br/> MEDIUM,<br/> HIGH,<br/> EXTREME]</td>
 			<td>false</td>
 			<td>HIGH</td>
-			<td>The Risk Level of the customer. Default value is NONE.</td>
+			<td>
+                The Risk Level of the customer. Default value is NONE.</td>
 		</tr>
 		<tr>
 			<td><b>InitializeScreeningProcesses</b></td>
-			<td>String</td>
+			<td>Object</td>
 			<td>false</td>
-			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
+            <td><a href="#Process">Process[]</a></td>
 			<td>Defines which screening processes to initiate</td>
 		</tr>
 		<tr>
@@ -235,7 +236,7 @@
 			<td>Dividend</td>
 			<td>Source of initial deposit</td>
 		</tr>
-        <tr>
+		<tr>
 			<td><b>IsActualAddressDeclared</b></td>
 			<td>Boolean</td>
 			<td>false</td>
@@ -313,30 +314,30 @@
 		</tr>
 		<tr>
 			<td><b>ListAddress</b></td>
-            <td><a href="#AddressApi">AddressApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#Address">Address[]</a></td>
 			<td>List of addresses</td>
 		</tr>
 		<tr>
 			<td><b>ListBusinessEntityDocument</b></td>
-            <td><a href="#BusinessEntityDocumentApi">BusinessEntityDocumentApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#BusinessEntityDocument">BusinessEntityDocument[]</a></td>
 			<td>List of related entity documents</td>
 		</tr>
 		<tr>
 			<td><b>ListContact</b></td>
-            <td><a href="#ContactApi">ContactApi[]</a></td>
+			<td>Object</td>
 			<td>false</td>
-			<td>-</td>
+            <td><a href="#Contact">Contact[]</a></td>
 			<td>List of contacts of related entity</td>
 		</tr>
 	</tbody>
 </table>
 
 
-## AddressApi
+## Process
 
 <table>
 	<thead>
@@ -344,7 +345,28 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
+			<td><b>Example/Ref</b></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><b>Process</b></td>
+            <td>String</td>
+            <td>true</td>
+			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
+		</tr>
+	</tbody>
+</table>
+
+## Address
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+			<td><b>Example/Ref</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
@@ -415,7 +437,7 @@
 </table>
 
 
-## BusinessEntityDocumentApi
+## BusinessEntityDocument
 
 <table>
 	<thead>
@@ -423,7 +445,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
+			<td><b>Example/Ref</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
@@ -487,7 +509,7 @@
 	</tbody>
 </table>
 
-## ContactApi
+## Contact
 
 <table>
 	<thead>
@@ -495,7 +517,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
+			<td><b>Example/Ref</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
