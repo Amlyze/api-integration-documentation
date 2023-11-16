@@ -16,18 +16,20 @@ Customers contain identifying information and KYC data. This section provides in
 
 ## Samples
 
-[<b>INDIVIDUAL Fields</b>](INDIVIDUAL/INDIVIDUAL_FIelds.md)
+To check all possible API fields for `INDIVIDUAL`, click [<b>here</b>](INDIVIDUAL/INDIVIDUAL_FIelds.md)
 
-* [Evaluate_INDIVIDUAL_Mandatory](INDIVIDUAL/INDIVIDUAL_Samples/evaluate_INDIVIDUAL_Mandatory.json) 
-* [Import_INDIVIDUAL_Full](INDIVIDUAL/INDIVIDUAL_Samples/import_INDIVIDUAL_Full.json)
-* [Import_INDIVIDUAL_Full_Related_IND](INDIVIDUAL/INDIVIDUAL_Samples/import_INDIVIDUAL_Full_Related_IND.json)
-
+* [Evaluate Mandatory](INDIVIDUAL/INDIVIDUAL_Samples/evaluate_Mandatory.json) 
+* [Import Mandatory](INDIVIDUAL/INDIVIDUAL_Samples/import_Mandatory.json) 
+* [Import Full](INDIVIDUAL/INDIVIDUAL_Samples/import_Full.json)
+* [Evaluate Full with Related Entities](evaluate_Full_RelatedEntities.json)
+* [Screening Individual](INDIVIDUAL/INDIVIDUAL_Samples/screening_Individual.json)
 --- 
-[<b>ORGANIZATION Fields</b>](ORGANIZATION/ORGANIZATION_FIelds.md)
-* [Evaluate_ORGANIZATION_Mandatory](ORGANIZATION/ORGANIZATION_Samples/evaluate_ORGANIZATION_Mandatory.json) 
-* [Evaluate_ORGANIZATION_Full](ORGANIZATION/ORGANIZATION_Samples/evaluate_ORGANIZATION_Full.json)
-* [Import_ORGANIZATION_Full_Related_ORG](ORGANIZATION/ORGANIZATION_Samples/import_ORGANIZATION_Full_Related_ORG.json)
-* [Evaluate_ORGANIZATION_Full_Related_ORG/IND](ORGANIZATION/ORGANIZATION_Samples/evaluate_ORGANIZATION_Full_Related_ORG_IND.json)
+To check all possible API fields for `ORGANIZATION`, click [<b>here</b>](ORGANIZATION/ORGANIZATION_FIelds.md)
+* [Evaluate Mandatory](ORGANIZATION/ORGANIZATION_Samples/evaluate_Mandatory.json) 
+* [Import Mandatory](ORGANIZATION/ORGANIZATION_Samples/import_Mandatory.json) 
+* [Import Full](ORGANIZATION/ORGANIZATION_Samples/import_Full.json)
+* [Evaluate Full with Related Entities](ORGANIZATION/ORGANIZATION_Samples/evaluate_Full_RelatedEntities.json)
+* [Screening Organization](ORGANIZATION/ORGANIZATION_Samples/screening_Organization.json)
 
 ----------------------
 
@@ -36,56 +38,67 @@ Customers contain identifying information and KYC data. This section provides in
 <table>
 		<thead>
 			<tr>
-				<td style="text-align:center"><b>Code<b></td>
-				<td style="text-align:center"><b>Status<b></td>
-				<td style="text-align:center"><b>Response<b></td>
+				<td><b>Code</b></td>
+				<td><b>Status</b></td>
+				<td><b>Response</b></td>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td><b>200<b></td>
-				<td style="text-align:center"><i>OK<i></td>
+				<td><b>200</b></td>
+				<td><i>OK</i></td>
 				<td>
-					<pre><b>{
+					<pre>
+{
   "resultType": "REQUEST_ACCEPTED"
 }
+                    </pre>
 				</td>
 			</tr>
 			<tr>
-				<td><b>400<b></td>
-				<td style="text-align:center"><i>Bad Request<i></td>
-				<td> <pre><b>{
+				<td><b>400</b></td>
+				<td><i>Bad Request</i></td>
+				<td> 
+                    <pre>
+{
 "errors": [
         "CommunicationNumber is mandatory"
    	]
 }
+                    </pre>
 				</td>
 			</tr>
 				<tr>
-				<td><b>404<b></td>
-				<td style="text-align:center"><i>Not Found<i></td>
-				<td> <pre><b>{
+				<td><b>404</b></td>
+				<td><i>Not Found</i></td>
+				<td> 
+                    <pre>
+{
   "resultType": "REQUEST_REJECTED",
   "status": 404,
   "error": "Not Found"
 }
+                    </pre>
 				</td>
 			</tr>
 			<tr>
-				<td><b>500<b></td>
-				<td style="text-align:center"><i>Internal Server Error<i></td>
-				<td> <pre><b>{
+				<td><b>500</b></td>
+				<td><i>Internal Server Error</i></td>
+				<td> 
+                    <pre>
+{
   "resultType": "REQUEST_REJECTED"
   "status": 500,
   "error": "Internal Server Error"
 }
+                    </pre>
 				</td>
 			</tr>
 		</tbody>
 </table>
 
 
-**Possible errorrs**
+**Possible errors**
 
 All possible errors can be found [*here*](cust_possible_errors.md)  
 
@@ -101,20 +114,17 @@ The Minimalistic request example below shows the minimum required fields to succ
 
 ```json
 {
-	"communicationNumber": "ComNr_002",
-	"customerExtId": "Cust_ext145",
-	"requester": "Financial Institution",
-	"action": "CREATE",
-	"customerStatus": "ACTIVE",
-	"riskManagementCategory": "IND_PK",
-	"sourceOfRiskLevel": "IMPORT",
-	"riskLevel": "NONE",
+    "communicationNumber": "ComNr_0021",
+    "requester": "financial_institution",
+    "riskManagementCategory": "IND_AMLYZE",
+    "sourceOfRiskLevel": "EVALUATE",
+    "customerExtId": "IND20231113T180927",
 	"entityType": "INDIVIDUAL",
 	"applicationDate": "2012-10-01",
 	"firstName": "Geli",
 	"lastName": "Deliono",
-	"birthDate": "2000-05-10",
-	"citizenshipCountry": "LV"
+    "birthDate": "1995-05-24",
+    "citizenshipCountry": "LT"
 }
 ```
 

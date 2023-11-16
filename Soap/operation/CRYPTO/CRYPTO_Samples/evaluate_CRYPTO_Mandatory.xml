@@ -3,10 +3,10 @@
     <soap:Body>
         <AMLYZE_OPERATION xmlns="urn:amlyze-services:EvaluateOperationService_v2r0">
             <CommunicationNumber>ComNr_0062</CommunicationNumber>
-            <Requester>Financial_Institution</Requester>
+            <Requester>financial_institution</Requester>
             <OperationExtId>Op_0062</OperationExtId>
             <OperationType>CRYPTO</OperationType>
-            <RiskManagementCategory>OP_PK</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
             <OperationDateTime>2023-09-23T15:09:33+02:00</OperationDateTime>
             <Currency>ETH</Currency>

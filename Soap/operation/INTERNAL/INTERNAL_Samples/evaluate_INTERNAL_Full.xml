@@ -5,7 +5,7 @@
             <CommunicationNumber>Com_96</CommunicationNumber>
             <Requester>Financial_institution</Requester>
             <OperationType>INTERNAL</OperationType>
-            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <OperationExtId>Op_0096</OperationExtId>
              <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
             <InitializeScreeningProcesses>

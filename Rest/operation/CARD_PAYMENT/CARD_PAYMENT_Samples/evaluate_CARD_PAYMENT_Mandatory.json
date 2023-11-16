@@ -1,10 +1,10 @@
 {
     "communicationNumber": "Com_1454",
-    "requester": "Financial_Institution",
+    "requester": "financial_institution",
     "operationExtId": "ExtId_878",
     "operationType": "CARD_PAYMENT",
     "cardOperationSubType": "CARD_PURCHASE",
-    "riskManagementCategory": "OP_PK",
+    "riskManagementCategory": "OP_DEFAULT",
     "sourceOfRiskLevel": "EVALUATE",
     "operationDateTime": "2023-09-22T15:09:33+02:00",
     "currency": "EUR",

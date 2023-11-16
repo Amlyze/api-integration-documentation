@@ -1,10 +1,10 @@
 {
     "communicationNumber": "Com_458",
-    "requester": "Financial_Institution",
+    "requester": "financial_institution",
     "operationExtId": "ExtId_748",
     "operationType": "CARD_CASH",
     "cardOperationSubType": "CARD_CASH_WITHDRAWAL",
-    "riskManagementCategory": "OP_PK",
+    "riskManagementCategory": "OP_DEFAULT",
     "sourceOfRiskLevel": "IMPORT",
     "operationStatus":"EXECUTED",
     "riskLevel": "LOW",

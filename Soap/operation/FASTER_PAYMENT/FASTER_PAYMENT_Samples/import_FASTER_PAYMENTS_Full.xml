@@ -5,7 +5,7 @@
             <CommunicationNumber>Com_1124</CommunicationNumber>
             <Requester>Financial_institution</Requester>
             <OperationType>FASTER_PAYMENTS</OperationType>
-            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <SourceOfRiskLevel>IMPORT</SourceOfRiskLevel>
             <InitializeScreeningProcesses>
                 <Process>SANCTIONS</Process>

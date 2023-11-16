@@ -1,10 +1,10 @@
 {
     "communicationNumber": "Com_0027",
-    "requester": "Financial_Institution",
+    "requester": "financial_institution",
     "operationExtId": "ExtId_0027",
     "operationType": "CARD_CASH",
     "cardOperationSubType": "CARD_CASH_WITHDRAWAL",
-    "riskManagementCategory": "OP_PK",
+    "riskManagementCategory": "OP_DEFAULT",
     "initializeScreeningProcesses": [
         "SANCTIONS",
         "ADVERSE_MEDIA",

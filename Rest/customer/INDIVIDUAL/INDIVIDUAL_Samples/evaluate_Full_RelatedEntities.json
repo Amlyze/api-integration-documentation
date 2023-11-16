@@ -1,0 +1,353 @@
+{
+	"communicationNumber": "ComNr_0021",
+	"requester": "financial_institution",
+	"riskManagementCategory": "IND_AMLYZE",
+	"action": "UPDATE",
+	"sourceOfRiskLevel": "EVALUATE",
+	"entityType": "INDIVIDUAL",
+	"customerExtId": "IND20231113T180927",
+	"initializeScreeningProcesses": [
+        "SANCTIONS",
+        "ADVERSE_MEDIA",
+        "PEP"
+    ],
+	"applicationDate": "2012-10-01T09:45:00.000+02:00",
+	"firstName": "Vardenis",
+	"lastName": "Pavardenis",
+	"birthDate": "2000-01-01",
+	"citizenshipCountry": "LT",
+	"approvalDate": "2012-10-01T09:45:00.000+02:00",
+	"birthCountry": "LT",
+	"nationalCode": "123456789123",
+	"secondCitizenshipCountry": "LV",
+	"permanentResidenceCountry": "LT",
+	"isLegalResident": true,
+	"isPEP": true,
+	"isSanctioned": false,
+	"isInAdverseMedia": true,
+	"isFamilyPEP": true,
+	"isLitigated": true,
+	"amlOfficer": true,
+	"listPurpose": "BLACK",
+	"fieldOfActivity": {
+		"student": {
+			"isStudent": false,
+			"higherSchoolTitle": "Uni University",
+			"higherSchoolCountry": "LT"
+		},
+		"pension": {
+			"isPensioner": false,
+			"pensionCountry": "LT"
+		},
+		"employment": {
+			"isUnemployed": false,
+			"isSelfEmployed": false,
+			"isEmployee": true,
+			"employerTitle": "founder",
+			"employmentPositionDescription": "Software tester"
+		},
+		"other": {
+			"isOtherStatus": false,
+			"otherStatusDescription": null
+		}
+	},
+	
+	"isActualAddressDeclared": true,
+	"isCorrespondenceAddressDeclared": false,
+	"activityDescription": "financial activity",
+	"incomeSourceDescription": "dividends",
+	"initialDepositSource": "Salary",
+	"initialDepositBank": "TBC",
+	"initialDepositAccount": "LT0089500500000070",
+	"initialDepositAmount": 123456,
+	"initialDepositCurrency": "EUR",
+	"doesCashDominate": false,
+	"listContact": [
+		{
+			"contactType": "MOBILEPHONE",
+			"contactDetails": "+370 68* *****",
+			"useForCommunication": true
+		}
+	],
+	"listAddress": [
+		{
+			"addressType": "RESIDENCE",
+			"addressDetails": "Verkiu g. 1",
+			"country": "LT",
+			"region": "EU",
+			"city": "Vilnius",
+			"streetAddress": "Verkiu g. 1",
+			"zipCode": "04127",
+			"useForCorrespondence": true
+		}
+	],
+	"listBusinessEntityDocument": [
+		{
+			"entityType": "INDIVIDUAL",
+			"identityDocumentType": "PASSPORT",
+			"documentNumber": "123456789",
+			"documentIssueDate": "2020-09-20",
+			"documentExpiryDate": "2030-09-20",
+			"documentIssueCountry": "LT",
+			"documentIssueAuthority": "LT",
+			"description": "identification document"
+		}
+	],
+	"listAppealReason": [
+		{
+			"appealReasonType": "PURPOSE_GET_LOAN"
+		}
+	],
+	"listIntroductionSource": [
+		{
+			"introductionSource": "Internet"
+		}
+	],
+	"listOrderedService": [
+		{
+			"serviceType": "LOANS"
+		}
+	],
+	"listDeclaredTurnover": [
+		{
+			"turnoverType": "FORMER_TURNOVER",
+			"turnoverRange": "MONTHLY",
+			"from": 1020,
+			"to": 1500
+		}
+	],
+	"listIncomeSource": [
+		{
+			"incomeSourceType": "SALARY",
+			"incomePercentage": 100,
+			"from": null,
+			"to": null
+		}
+	],
+	"listPaymentPurpose": [
+		{
+			"turnoverDirection": "OUT",
+			"paymentPurposeType": "MARKETING_SERVICES"
+		},
+		{
+			"turnoverDirection": "IN",
+			"paymentPurposeType": "PAYMENT_FOR_SERVICES"
+		}
+	],
+	"listSourceOfWealth": [
+		{
+			"code": "6",
+			"amount": 123,
+			"comment": "inheritance"
+		}
+	],
+	"listPaymentCountry": [
+		{
+			"country": "LT",
+			"turnoverDirection": "OUT"
+		},
+		{
+			"country": "LV",
+			"turnoverDirection": "IN"
+		}
+	],
+	"listActivity": [
+		{
+			"activityType": "TEST",
+			"incomePercentage": 75
+		}
+	],
+	"listRegionOfActivity": [
+		{
+			"region": "EU"
+		}
+	],
+	"listCountryOfActivity": [
+		{
+			"country": "LT"
+		}
+	],
+	"listCountryOfTaxPayment": [
+		{
+			"country": "LT",
+			"taxpayerNumber": "123456789123"
+		}
+	],
+	"listAdditionalValues": [
+		{
+			"code": "Related_To_Lithuania?",
+			"description": "testineReiksme",
+			"datatype": "BOOLEAN",
+			"value": "true"
+		}
+	],
+	"listRelatedEntity": [
+        {
+            "entityType": "INDIVIDUAL",
+            "relationType": "DIRECTOR",
+            "relationDescription": "founder",
+            "extId": "Rel_entity_ExtID_4051",
+            "share": 75,
+            "votePercentage": 10,
+            "nationalCode": "123456789",
+            "activityDescription": "Represents an organization",
+            "country": "AF",
+            "countryOfBusinessOperations": "LV",
+            "birthCountry": "LT",
+            "firstName": "Teodor",
+            "lastName": "Mariko",
+            "birthDate": "1998-04-07",
+            "isPEP": true,
+            "isSanctioned": true,
+            "isInAdverseMedia": true,
+            "regionOfActivityDescription": "Western Region",
+            "listContact": [
+                {
+                    "contactType": "EMAIL",
+                    "contactDetails": "personalemail@gmail.com",
+                    "useForCommunication": true
+                }
+            ],
+            "listAddress": [
+                {
+                    "addressType": "HEADQUARTERS",
+                    "addressDetails": "Lvovo g. 15/4",
+                    "country": "LT",
+                    "region": "EU",
+                    "city": "Vilnius",
+                    "streetAddress": "Lvovo g.",
+                    "zipCode": "04127",
+                    "useForCorrespondence": true
+                }
+            ],
+            "listBusinessEntityDocument": [
+                {
+                    "entityType": "INDIVIDUAL",
+                    "identityDocumentType": "OTHER",
+                    "documentNumber": "L548:154477425",
+                    "documentIssueDate": "2020-01-03",
+                    "documentExpiryDate": "2025-01-03",
+                    "documentIssueCountry": "LT",
+                    "documentIssueAuthority": "Migration office",
+                    "description": "agreement"
+                }
+            ],
+            "listIncomeSource": [
+                {
+                    "incomeSourceType": "BUSINESS_REVENUE_OR_ASSET_SALE",
+                    "incomePercentage": 10,
+                    "from": 10,
+                    "to": 100
+                }
+            ],
+            "listActivity": [
+                {
+                    "activityType": "ACTIVITY_OTHER",
+                    "incomePercentage": 50
+                }
+            ],
+            "listRegionOfActivity": [
+                {
+                    "region": "EU"
+                }
+            ],
+            "listCountryOfActivity": [
+                {
+                    "country": "LV"
+                }
+            ],
+            "listAdditionalValues": [
+                {
+                    "code": "Relation",
+                    "description": "Is related to US?",
+                    "datatype": "BOOLEAN",
+                    "value": "false"
+                }
+            ]
+        },
+		{
+            "entityType": "ORGANIZATION",
+            "relationType": "HOST",
+            "relationDescription": "founder",
+			"extId": "Rel_entity_ExtID_4052",
+            "share": 10,
+            "votePercentage": 10,
+            "nationalCode": "123456",
+            "activityDescription": "BEARER",
+            "country": "LT",
+            "countryOfBusinessOperations": "LV",
+            "registrationCountry": "LT",
+            "isPEP": true,
+            "iSanctioned": true,
+            "isInAdverseMedia": true,
+            "regionOfActivityDescription": "everywhere",
+            "title": "UAB Karuna",
+            "legalForm": "LTD",
+            "establishmentDate": "1998-04-07",
+
+            "listContact": [
+                {
+                    "contactType": "EMAIL",
+                    "contactDetails": "Karuna.info@gmail.com",
+                    "useForCommunication": true
+                }
+            ],
+            "listAddress": [
+                {
+                    "addressType": "HEADQUARTERS",
+                    "addressDetails": "Panemunių g. 15-4",
+                    "country": "LT",
+                    "region": "EU",
+                    "city": "Vilnius",
+                    "streetAddress": "Panemunių g.",
+                    "zipCode": "048715",
+                    "useForCorrespondence": true
+                }
+            ],
+            "listBusinessEntityDocument": [
+                {
+                    "entityType": "ORGANIZATION",
+                    "identityDocumentType": "REGISTRATIONCERTIFICATE",
+                    "documentNumber": "LT-4574551121",
+                    "documentIssueDate": "2015-01-03",
+                    "documentExpiryDate": "2025-01-03",
+                    "documentIssueCountry": "LT",
+                    "documentIssueAuthority": "VMI",
+                    "description": "Certificate of Registration"
+                }
+            ],
+            "listIncomeSource": [
+                {
+                    "incomeSourceType": "BUSINESS_REVENUE_OR_ASSET_SALE",
+                    "incomePercentage": 10,
+                    "from": 10,
+                    "to": 100
+                }
+            ],
+            "listActivity": [
+                {
+                    "activityType": "ACTIVITY_OTHER",
+                    "incomePercentage": 50
+                }
+            ],
+            "listRegionOfActivity": [
+                {
+                    "region": "EU"
+                }
+            ],
+            "listCountryOfActivity": [
+                {
+                    "country": "LV"
+                }
+            ],
+            "listAdditionalValues": [
+                {
+                    "code": "Related_to_USA",
+                    "description": "Is related to usa?",
+                    "datatype": "BOOLEAN",
+                    "value": "true"
+                }
+            ]
+        }
+    ]
+}

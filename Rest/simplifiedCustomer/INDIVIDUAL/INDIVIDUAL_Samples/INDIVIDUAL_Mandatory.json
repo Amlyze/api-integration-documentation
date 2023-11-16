@@ -1,0 +1,10 @@
+{
+	"communicationNumber": "ComNr_000321",
+	"requester": "Bank_system",
+	"riskManagementCategory": "OCCASIONAL",
+	"entityType": "INDIVIDUAL",
+	"customerExtId": "cust_1232",
+	"firstName": "Jose",
+	"lastName": "Rodriguez",
+	"customerStatus": "ACTIVE"
+}

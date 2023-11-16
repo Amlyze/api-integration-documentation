@@ -6,7 +6,7 @@
             <Requester>Financial_institution</Requester>
             <OperationExtId>Op_00991</OperationExtId>
             <OperationType>SWIFT</OperationType>
-            <RiskManagementCategory>OP_PK</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <SourceOfRiskLevel>IMPORT</SourceOfRiskLevel>
             <OperationStatus>EXECUTED</OperationStatus>
             <RiskLevel>HIGH</RiskLevel>

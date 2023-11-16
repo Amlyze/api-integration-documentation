@@ -1,0 +1,13 @@
+{
+	"communicationNumber": "ComNr_0022",
+	"customerExtId": "Cust_ext1456",
+	"requester": "Financial Institution",
+	"riskManagementCategory": "LEAD_AMLYZE",
+	"sourceOfRiskLevel": "EVALUATE",
+	"entityType": "INDIVIDUAL",
+	"applicationDate": "2023-01-20",
+	"firstName": "Larosa",
+	"lastName": "Rosa",
+	"birthDate": "1975-09-20",
+	"citizenshipCountry": "JP"
+}

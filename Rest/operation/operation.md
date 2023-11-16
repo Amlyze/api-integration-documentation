@@ -83,58 +83,66 @@ An operation is a transaction between two or more parties, where one of the part
 <table>
 		<thead>
 			<tr>
-				<td style="text-align:center"><b>Code<b></td>
-				<td style="text-align:center"><b>Status<b></td>
-				<td style="text-align:center"><b>Response<b></td>
+				<td><b>Code</b></td>
+				<td><b>Status</b></td>
+				<td><b>Response</b></td>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td><b>200<b></td>
-				<td style="text-align:center"><i>OK<i></td>
+				<td><b>200</b></td>
+				<td><i>OK</i></td>
 				<td>
-					<pre><b>{
+					<pre>
+{
   "resultType": "OK"
 }
+                    </pre>
 				</td>
 			</tr>
 			<tr>
-				<td><b>400<b></td>
-				<td style="text-align:center"><i>Bad Request<i></td>
-				<td> <pre><b>
+				<td><b>400</b></td>
+				<td><i>Bad Request</i></td>
+				<td> <pre>
 {
     "errors": [
         "entityType is mandatory"
   ]
 }
+                    </pre>
 				</td>
 			</tr>
             <tr>
-				<td><b>404<b></td>
-				<td style="text-align:center"><i>Not Found<i></td>
-				<td> <pre><b>
+				<td><b>404</b></td>
+				<td><i>Not Found</i></td>
+				<td>
+                    <pre>
 {
     "timestamp": "2023-09-08T05:55:12.219+00:00",
     "status": 404,
     "error": "Not Found",
     "path": "/amlyze-ws-rest/operationn"
 }
+                    </pre>
 				</td>
 			</tr>
 			<tr>
-				<td><b>500<b></td>
-				<td style="text-align:center"><i>Internal Server Error<i></td>
-				<td> <pre><b>{
+				<td><b>500</b></td>
+				<td><i>Internal Server Error</i></td>
+				<td> 
+                    <pre>
+{
     "resultType": "ERROR",
     "errorDescription": "duplicate communicationNumber"
 }
+                    </pre>
 				</td>
 			</tr>
 		</tbody>
 </table>
 
 
-**Possible errorrs**
+**Possible errors**
 
 All possible errors can be found [*here*](op_possible_errors.md)  
 
@@ -148,7 +156,7 @@ The Minimalistic request example below shows the minimum required fields to succ
 ```json
 {
     "communicationNumber": "ComNr_0012",
-    "requester": "Financial_Institution",
+    "requester": "financial_institution",
     "operationExtId": "Op_0013",
     "operationType": "SEPA",
     "riskManagementCategory": "OP_INST",

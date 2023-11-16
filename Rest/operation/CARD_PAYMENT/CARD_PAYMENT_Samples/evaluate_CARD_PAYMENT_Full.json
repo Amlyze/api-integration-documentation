@@ -1,10 +1,10 @@
 {
     "communicationNumber": "Com_0026",
-    "requester": "Financial_Institution",
+    "requester": "financial_institution",
     "operationExtId": "ExtId_0026",
     "operationType": "CARD_PAYMENT",
     "cardOperationSubType": "CARD_PURCHASE",
-    "riskManagementCategory": "OP_PK",
+    "riskManagementCategory": "OP_DEFAULT",
     "initializeScreeningProcesses": [
         "SANCTIONS",
         "ADVERSE_MEDIA",

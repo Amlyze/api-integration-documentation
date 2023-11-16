@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <AMLYZE_CUSTOMER xmlns="urn:amlyze-services:EvaluateCustomerService_v2r0">
+            <CommunicationNumber>ComNr_000321</CommunicationNumber>
+            <Requester>Bank_system</Requester>
+            <RiskManagementCategory>FAST</RiskManagementCategory>
+            <EntityType>ORGANIZATION</EntityType>
+            <CustomerExtId>cust_1232</CustomerExtId>
+            <Title>UAB "Dockers"</Title>
+            <CustomerStatus>ACTIVE</CustomerStatus>
+        </AMLYZE_CUSTOMER>
+    </soap:Body>
+</soap:Envelope>

@@ -43,7 +43,6 @@ The second step. Page provides API fields for adding accounts to the customers
 
 <b>Press [here](account/account.md) and move to Account API page</b>
 
-
 <b>Endpoint</b>
 
 * `POST /amlyze-ws-rest/account`
@@ -75,6 +74,17 @@ The Grand Final. Comprehensive overview of operation types, conditions, and work
 * Checking responses from your system
 * Checking Callbacks (Webhooks)
 ---
+
+## Contract
+
+<b>Endpoint</b>
+
+* [Contract](contract/contract.md) : `POST /amlyze-ws-rest/contract`
+
+<b>Used for:</b>
+* Creating a new contract for the customer
+* Updating data of the contract
+
 ---
 
 ## Classifiers
@@ -83,7 +93,7 @@ Classifiers guide you through extracting needed values for upcoming request fiel
 
 ---
 
-METHOD: `GET`
+METHOD: `GET`
 Auth required: `NO`
 Permissions required: `None`
 

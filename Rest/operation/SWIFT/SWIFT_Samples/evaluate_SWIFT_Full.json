@@ -1,9 +1,9 @@
 {
     "communicationNumber": "ComNr_0022",
-    "requester": "Financial_Institution",
+    "requester": "financial_institution",
     "operationExtId": "Op_0022",
     "operationType": "SWIFT",
-    "riskManagementCategory": "OP_INST",
+    "riskManagementCategory": "OP_DEFAULT",
     "initializeScreeningProcesses": [
         "SANCTIONS",
         "PEP",

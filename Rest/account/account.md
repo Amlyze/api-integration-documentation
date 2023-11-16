@@ -15,70 +15,77 @@ The request body contains the data that you are sending to the API. The data doc
 
 ## Samples
 
-* [account_Active](samples/account_active.json)
-* [account_Suspended](samples/account_suspended.json)
-* [account_Closed](samples/account_closed.json)
-* [account_Minimalistic](samples/account_Minimalistic.json)
+* [account_active](samples/account_active.json)
+* [account_suspended](samples/account_suspended.json)
+* [account_closed](samples/account_closed.json)
+* [account_minimalistic](samples/account_minimalistic.json)
 
 ---
 
 ## Responses
 
 <table>
-		<thead>
-			<tr>
-				<td style="text-align:center"><b>Code<b></td>
-				<td style="text-align:center"><b>Status<b></td>
-				<td style="text-align:center"><b>Response<b></td>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><b>200<b></td>
-				<td style="text-align:center"><i>OK<i></td>
-				<td>
-					<pre><b>{
-  "resultType": "REQUEST_ACCEPTED"
-}
-				</td>
-			</tr>
-			<tr>
-				<td><b>400<b></td>
-				<td style="text-align:center"><i>Bad Request<i></td>
-				<td> <pre><b>
+    <thead>
+        <tr>
+            <td><b>Code</b></td>
+            <td><b>Status</b></td>
+            <td><b>Response</b></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>200</b></td>
+            <td><i>OK</i></td>
+            <td>
+                <pre>
 {
-    "errors": [
-        "entityType is mandatory"
-  ]
+    "resultType": "REQUEST_ACCEPTED"
 }
-				</td>
-			</tr>
-            <tr>
-				<td><b>404<b></td>
-				<td style="text-align:center"><i>Not Found<i></td>
-				<td> <pre><b>
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td><b>400</b></td>
+            <td><i>Bad Request</i></td>
+            <td>
+                <pre>
+{
+    "errors": ["entityType is mandatory"]
+}
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td><b>404</b></td>
+            <td><i>Not Found</i></td>
+            <td> 
+                <pre>
 {
     "timestamp": "2023-09-08T05:55:12.219+00:00",
     "status": 404,
     "error": "Not Found",
     "path": "/amlyze-ws-rest/operationn"
 }
-				</td>
-			</tr>
-			<tr>
-				<td><b>500<b></td>
-				<td style="text-align:center"><i>Internal Server Error<i></td>
-				<td> <pre><b>{
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td><b>500</b></td>
+            <td><i>Internal Server Error</i></td>
+            <td>
+                <pre>
+{
     "resultType": "REQUEST_REJECTED",
     "errorDescription": "duplicate communicationNumber"
 }
-				</td>
-			</tr>
-		</tbody>
+                </pre>
+            </td>
+        </tr>
+    </tbody>
 </table>
 
 ----
-**Possible errorrs**
+**Possible errors**
 
 All possible errors can be found [*here*](acc_possible_errors.md)  
 
@@ -92,7 +99,7 @@ The Minimalistic request example below shows the minimum required fields to succ
 ```json
 {
   "communicationNumber": "Com_1545",
-  "requester": "Financial_Institution",
+  "requester": "financial_institution",
   "accountExtId": "Ext87887",
   "accountNumber": "LI9208800274335945522",
   "accountStatus": "ACTIVE",

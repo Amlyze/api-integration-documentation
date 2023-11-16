@@ -5,7 +5,7 @@
             <CommunicationNumber>Com_9914</CommunicationNumber>
             <Requester>Financial_institution</Requester>
             <OperationType>SWIFT</OperationType>
-            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
             <OperationExtId>Op_009914</OperationExtId>
             <InitializeScreeningProcesses>

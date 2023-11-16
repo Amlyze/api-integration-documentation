@@ -5,7 +5,7 @@
             <CommunicationNumber>Com_97</CommunicationNumber>
             <Requester>Financial_institution</Requester>
             <OperationType>INTERNAL</OperationType>
-            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
             <OperationExtId>Op_0097</OperationExtId>
             <FinancialFlowDirection>NULL</FinancialFlowDirection>

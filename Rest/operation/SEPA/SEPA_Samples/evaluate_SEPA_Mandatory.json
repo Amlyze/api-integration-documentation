@@ -1,9 +1,9 @@
 {
     "communicationNumber": "ComNr_0013",
-    "requester": "Financial_Institution",
+    "requester": "financial_institution",
     "operationExtId": "Op_0014",
     "operationType": "SEPA",
-    "riskManagementCategory": "OP_INST",
+    "riskManagementCategory": "OP_DEFAULT",
     "sourceOfRiskLevel": "EVALUATE",
     "operationDateTime": "2023-09-22T15:09:33+02:00",
     "currency": "EUR",

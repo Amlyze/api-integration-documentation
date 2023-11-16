@@ -1,9 +1,9 @@
 {
     "communicationNumber": "ComNr_0028{{seq}}",
-    "requester": "Financial_Institution",
+    "requester": "financial_institution",
     "operationExtId": "Op_0028{{seq}}",
     "operationType": "CRYPTO",
-    "riskManagementCategory": "OP_INST",
+    "riskManagementCategory": "OP_DEFAULT",
     "initializeScreeningProcesses": [
         "SANCTIONS",
         "PEP",

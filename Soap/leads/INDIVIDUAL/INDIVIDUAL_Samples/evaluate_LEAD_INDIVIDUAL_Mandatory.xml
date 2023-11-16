@@ -4,7 +4,7 @@
         <AMLYZE_CUSTOMER xmlns="urn:amlyze-services:EvaluateCustomerService_v2r0">
             <CommunicationNumber>ComNr_45{{seq}}</CommunicationNumber>
             <Requester>Bank_system</Requester>
-            <RiskManagementCategory>LEAD_IND</RiskManagementCategory>
+            <RiskManagementCategory>LEAD_AMLYZE</RiskManagementCategory>
             <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
             <CustomerExtId>Lead_ExtaId_TESTaa</CustomerExtId>
             <EntityType>INDIVIDUAL</EntityType>

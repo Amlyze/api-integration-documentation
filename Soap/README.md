@@ -5,12 +5,6 @@
 API documentation section covers how to manage the integration and make API requests for the best practise of accessing AMLYZE.
 
 ---
-
-*swagger UI* `GET /swagger-ui/`
-
-*api-doc* `GET /v2/api-docs`
-
----
 ## API Usage
 
 The endpoints for different requests will slightly differ, but the structure of each endpoint remains the same.
@@ -91,7 +85,7 @@ Classifiers guide you through extracting needed values for upcoming request fiel
 
 ---
 
-METHOD: `GET`
+METHOD: `GET`
 Auth required: `NO`
 Permissions required: `None`
 

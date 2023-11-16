@@ -4,7 +4,7 @@
         <AMLYZE_CUSTOMER xmlns="urn:amlyze-services:EvaluateCustomerService_v2r0">
             <CommunicationNumber>ComNr_4554</CommunicationNumber>
             <Requester>Bank system</Requester>
-            <RiskManagementCategory>ORG_PK</RiskManagementCategory>
+            <RiskManagementCategory>ORG_AMLYZE</RiskManagementCategory>
             <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
             <CustomerExtId>Cust_4554</CustomerExtId>
             <EntityType>ORGANIZATION</EntityType>

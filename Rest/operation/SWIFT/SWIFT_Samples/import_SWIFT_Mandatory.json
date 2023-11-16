@@ -1,9 +1,9 @@
 {
     "communicationNumber": "ComNr_0016",
-    "requester": "Financial_Institution",
+    "requester": "financial_institution",
     "operationExtId": "Op_0016",
     "operationType": "SWIFT",
-    "riskManagementCategory": "OP_INST",
+    "riskManagementCategory": "OP_DEFAULT",
     "sourceOfRiskLevel": "IMPORT",
     "operationStatus": "EXECUTED",
     "riskLevel": "HIGH",

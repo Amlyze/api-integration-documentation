@@ -1,0 +1,30 @@
+{
+  "communicationNumber": "COM216a",
+  "requester": "financial_institution",
+  "action": "CREATE",
+  "classifierType": "LOAN",
+  "extId": "any_contract_1232",
+  "documentCode": "REG74121101",
+  "customerExtId": "ExtId_65657999999345",
+  "accountExtId": "Ext87887",
+  "businessUnit": "BU_1",
+  "startDate": "2023-09-05T08:07:34.605Z",
+  "endDate": "2023-09-05T08:07:34.605Z",
+  "additionalProperties": [
+      {
+          "code": "principal_amount",
+          "title": "loan principal amount",
+          "value": "100000",
+          "datatype": "DECIMAL"},
+      {
+          "code": "interest_rate",
+          "title": "loan interest rate",
+          "value": "5",
+          "datatype": "DECIMAL"},
+      {
+          "code": "other_field",
+          "title": "some data",
+          "value": "abc",
+          "datatype": "STRING"}
+  ]
+}

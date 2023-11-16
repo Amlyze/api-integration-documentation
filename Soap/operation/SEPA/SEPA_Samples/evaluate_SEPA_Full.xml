@@ -5,7 +5,7 @@
             <CommunicationNumber>Com_9924</CommunicationNumber>
             <Requester>Financial_institution</Requester>
             <OperationType>SEPA</OperationType>
-            <RiskManagementCategory>OP_INST</RiskManagementCategory>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
             <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
             <OperationExtId>Op_009924</OperationExtId>
             <InitializeScreeningProcesses>

@@ -1,0 +1,19 @@
+{
+	"communicationNumber": "ComNr_000321",
+	"requester": "Financial Institution",
+	"riskManagementCategory": "ORG_AMLYZE",
+    "action": "UPDATE",
+	"sourceOfRiskLevel": "EVALUATE",
+	"entityType": "ORGANIZATION",
+	"customerExtId": "ORG20231114T120945",
+    "initializeScreeningProcesses": [
+        "SANCTIONS",
+        "ADVERSE_MEDIA",
+        "PEP"
+    ],
+	"applicationDate": "2020-01-03",
+	"title": "UAB 'Brotherhood'",
+	"registrationCountry": "LT",
+	"legalForm": "LTD"
+
+}

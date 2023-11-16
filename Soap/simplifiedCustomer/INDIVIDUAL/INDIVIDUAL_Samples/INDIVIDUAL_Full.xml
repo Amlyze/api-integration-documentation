@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <AMLYZE_CUSTOMER xmlns="urn:amlyze-services:EvaluateCustomerService_v2r0">
+            <CommunicationNumber>ComNr_000321</CommunicationNumber>
+            <Requester>Bank_system</Requester>
+            <RiskManagementCategory>FAST</RiskManagementCategory>
+            <EntityType>INDIVIDUAL</EntityType>
+            <CustomerExtId>cust_1232</CustomerExtId>
+            <FirstName>Jose</FirstName>
+            <LastName>Rodriguez</LastName>
+            <CustomerStatus>ACTIVE</CustomerStatus>
+            <RiskLevel>HIGH</RiskLevel>
+            <InitializeScreeningProcesses>
+                <Process>SANCTIONS</Process>
+                <Process>PEP</Process>
+                <Process>ADVERSE_MEDIA</Process>
+            </InitializeScreeningProcesses>
+            <NationalCode>REG74121101</NationalCode>
+            <ApplicationDate>2000-01-03</ApplicationDate>
+            <ActivityDescription>financial activity</ActivityDescription>
+            <ActivityInRestrictedRegionDescription>logistics</ActivityInRestrictedRegionDescription>
+            <AmlOfficer>false</AmlOfficer>
+            <ApprovalDate>2000-01-03</ApprovalDate>
+            <BirthCountry>LT</BirthCountry>
+            <BirthDate>1995-05-24</BirthDate>
+            <CitizenshipCountry>LT</CitizenshipCountry>
+            <ClosingDate>1995-05-24</ClosingDate>
+            <DoesCashDominate>true</DoesCashDominate>
+            <IncomeSourceDescription>work</IncomeSourceDescription>
+            <IncomingPaymentDescription>payment for work</IncomingPaymentDescription>
+            <InitialDepositAccount>LT0000000000000000</InitialDepositAccount>
+            <InitialDepositAmount>10000</InitialDepositAmount>
+            <InitialDepositBank>BankBank</InitialDepositBank>
+            <InitialDepositCurrency>EUR</InitialDepositCurrency>
+            <InitialDepositSource>Dividend</InitialDepositSource>
+            <IsActualAddressDeclared>false</IsActualAddressDeclared>
+            <IsFamilyPEP>false</IsFamilyPEP>
+            <IsInAdverseMedia>true</IsInAdverseMedia>
+            <IsLegalResident>true</IsLegalResident>
+            <IsLitigated>false</IsLitigated>
+            <IsPEP>false</IsPEP>
+            <IsSanctioned>true</IsSanctioned>
+            <PermanentResidenceCountry>LT</PermanentResidenceCountry>
+            <SecondCitizenshipCountry>LT</SecondCitizenshipCountry>
+            <ListPurpose>BLACK</ListPurpose>
+            <ListAddress>
+                <Address>
+                    <AddressType>RESIDENCE</AddressType>
+                    <AddressDetails>Verkiu 1, Vilnius</AddressDetails>
+                    <City>Vilnius</City>
+                    <Country>LT</Country>
+                    <Region>EU</Region>
+                    <StreetAddress>Verkiu 1</StreetAddress>
+                    <ZipCode>04127</ZipCode>
+                    <UseForCorrespondence>true</UseForCorrespondence>
+                </Address>
+            </ListAddress>
+            <ListBusinessEntityDocument>
+                <BusinessEntityDocument>
+                    <EntityType>INDIVIDUAL</EntityType>
+                    <IdentityDocumentType>PASSPORT</IdentityDocumentType>
+                    <DocumentNumber>0123456789</DocumentNumber>
+                    <DocumentIssueDate>2022-01-15</DocumentIssueDate>
+                    <DocumentExpiryDate>2032-01-15</DocumentExpiryDate>
+                    <DocumentIssueCountry>LT</DocumentIssueCountry>
+                    <DocumentIssueAuthority>passport department</DocumentIssueAuthority>
+                    <Description>Main identification document</Description>
+                </BusinessEntityDocument>
+            </ListBusinessEntityDocument>
+            <ListContact>
+                <Contact>
+                    <ContactType>EMAIL</ContactType>
+                    <ContactDetails>test@test-amlyze.com</ContactDetails>
+                    <UseForCommunication>true</UseForCommunication>
+                </Contact>
+            </ListContact>
+        </AMLYZE_CUSTOMER>
+    </soap:Body>
+</soap:Envelope>

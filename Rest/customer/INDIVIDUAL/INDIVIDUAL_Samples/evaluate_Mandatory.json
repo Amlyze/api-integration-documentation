@@ -1,13 +1,13 @@
 {
-	"communicationNumber": "ComNr_0022",
-	"customerExtId": "Cust_ext1456",
-	"requester": "Financial Institution",
+	"communicationNumber": "ComNr_0021",
+	"requester": "financial_institution",
 	"riskManagementCategory": "IND_AMLYZE",
 	"sourceOfRiskLevel": "EVALUATE",
+	"customerExtId": "IND20231113T180927",
 	"entityType": "INDIVIDUAL",
 	"applicationDate": "2012-10-01",
 	"firstName": "Geli",
 	"lastName": "Deliono",
-	"birthDate": "2000-05-10",
-	"citizenshipCountry": "LV"
+	"birthDate": "1995-05-24",
+	"citizenshipCountry": "LT"
 }

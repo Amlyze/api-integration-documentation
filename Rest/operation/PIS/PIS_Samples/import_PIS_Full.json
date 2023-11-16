@@ -1,9 +1,9 @@
 {
     "communicationNumber": "ComNr_0024",
-    "requester": "Financial_Institution",
+    "requester": "financial_institution",
     "operationExtId": "Op_0024",
     "operationType": "PIS",
-    "riskManagementCategory": "OP_INST",
+    "riskManagementCategory": "OP_DEFAULT",
     "initializeScreeningProcesses": [
         "SANCTIONS",
         "PEP",

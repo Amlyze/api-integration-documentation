@@ -6,7 +6,7 @@ This section provides detailed information on the endpoints that can be used to 
 
 ## EndPoint
 
-**swagger** `GET /swagger-ui/`
+**wsdl** `/amlyze-ws/ImportAccountService.wsdl`
 
 **URL structure:** `http://[host][port][path][service]`
 
@@ -16,7 +16,7 @@ This section provides detailed information on the endpoints that can be used to 
 
 ## Additional Info
 
-* METHOD ` POST ` 
+* METHOD ` POST ` 
 * Auth required: `NO`
 * Content-Type: `text/xml`
 ---
@@ -40,10 +40,10 @@ The request body contains the data that you are sending to the API. The data doc
 
 ## Samples
 
-* [account_Active](samples/account_Active.xml)
-* [account_Suspended](samples/account_Suspended.xml)
-* [account_Closed](samples/account_Closed.xml)
-* [account_Minimalistic](samples/account_Minimalistic.xml)
+* [account_active](samples/account_active.xml)
+* [account_suspended](samples/account_suspended.xml)
+* [account_closed](samples/account_closed.xml)
+* [account_minimalistic](samples/account_minimalistic.xml)
 ---
 
 ## Expected Response from your system
@@ -55,16 +55,15 @@ The request body contains the data that you are sending to the API. The data doc
 <table>
 		<thead>
 			<tr>
-				<td ><b>XML TAG<b></td>
-				<td ><b>TYPE<b></td>
-				<td ><b>DESCRIPTION<b></td>
+				<td><b>XML TAG</b></td>
+				<td><b>TYPE</b></td>
+				<td><b>DESCRIPTION</b></td>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td><b>ResultType<b></td>
-				<td style="text-align:center">String</br>Enum:</br>
-[REQUEST_ACCEPTED]</td>
+				<td><b>ResultType</b></td>
+				<td>String<br/><b>ENUM</b><br/>[REQUEST_ACCEPTED]</td>
 				<td>Result type returns the answer that the action was successful</td>
 			</tr>
 		</tbody>
@@ -75,8 +74,8 @@ The request body contains the data that you are sending to the API. The data doc
 `STATUS: 200 OK`
 ```xml
 <ns2:Result xmlns:ns2="urn:amlyze-services:EvaluateOperationService_v2r0">
-            <ns2:ResultType>OK</ns2:ResultType>
-        </ns2:Result>
+	<ns2:ResultType>OK</ns2:ResultType>
+</ns2:Result>
 ```
 ---
 **<span style="color: red;">"Rejected request"</span>**
@@ -86,26 +85,25 @@ The request body contains the data that you are sending to the API. The data doc
 <table>
 		<thead>
 			<tr>
-				<td ><b>XML TAG<b></td>
-				<td ><b>TYPE<b></td>
-				<td ><b>DESCRIPTION<b></td>
+				<td><b>XML TAG</b></td>
+				<td><b>TYPE</b></td>
+				<td><b>DESCRIPTION</b></td>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td><b>ResultType<b></td>
-				<td style="text-align:center"> String</br>Enum:</br>
-[ERROR]</td>
+				<td><b>ResultType</b></td>
+				<td>String<br/><b>ENUM</b><br/>[ERROR]</td>
 				<td>Result type returns the answer that the action was not successful</td>
 			</tr>
             <tr>
-				<td><b>ErrorCode<b></td>
-				<td style="text-align:center">String</td>
+				<td><b>ErrorCode</b></td>
+				<td>String</td>
 				<td>Error code returns the code of an error</td>
             </tr>
             <tr>
-				<td><b>ErrorDescription<b></td>
-				<td style="text-align:center">String</td>
+				<td><b>ErrorDescription</b></td>
+				<td>String</td>
 				<td>Error is described in a more detailed manner in error description field</td>
             </tr>
 		</tbody>
@@ -116,13 +114,13 @@ The request body contains the data that you are sending to the API. The data doc
 `STATUS: 400 Bad Request / 500 Internal Server Error`
 ```xml
 <ns2:Result xmlns:ns2="urn:amlyze-services:EvaluateOperationService_v2r0">
-            <ns2:ResultType>ERROR</ns2:ResultType>
-            <ns2:ErrorCode>500</ns2:ErrorCode>
-            <ns2:ErrorDescription>Error: failed Processing account</ns2:ErrorDescription>
-        </ns2:Result>
+	<ns2:ResultType>ERROR</ns2:ResultType>
+	<ns2:ErrorCode>500</ns2:ErrorCode>
+	<ns2:ErrorDescription>Error: failed Processing account</ns2:ErrorDescription>
+</ns2:Result>
 ```
 ----
-**Possible errorrs**
+**Possible errors**
 
 All possible errors can be found [*here*](acc_possible_errors.md)  
 
@@ -155,5 +153,3 @@ The Minimalistic request example below shows the minimum required fields to succ
     </soap:Body>
 </soap:Envelope>
 ```
-
-
