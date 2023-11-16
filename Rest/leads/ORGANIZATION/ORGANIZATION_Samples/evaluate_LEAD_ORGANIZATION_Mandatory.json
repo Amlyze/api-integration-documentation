@@ -1,7 +1,7 @@
 {
 	"communicationNumber": "ComNr_00221",
 	"customerExtId": "Lead_extid01",
-	"requester": "Financial_Institution",
+	"requester": "financial_institution",
 	"riskManagementCategory": "LEAD_AMLYZE",
 	"sourceOfRiskLevel": "EVALUATE",
 	"entityType": "ORGANIZATION",

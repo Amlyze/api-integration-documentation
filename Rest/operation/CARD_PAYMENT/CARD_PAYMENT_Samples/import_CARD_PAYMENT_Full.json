@@ -1,6 +1,6 @@
 {
     "communicationNumber": "Com_0027",
-    "requester": "Financial_Institution",
+    "requester": "financial_institution",
     "operationExtId": "ExtId_0027",
     "operationType": "CARD_PAYMENT",
     "cardOperationSubType": "CARD_PURCHASE",

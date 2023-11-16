@@ -1,6 +1,6 @@
 {
     "communicationNumber": "ComNr_0025",
-    "requester": "Financial_Institution",
+    "requester": "financial_institution",
     "operationExtId": "Op_0025",
     "operationType": "INTERNAL",
     "riskManagementCategory": "OP_DEFAULT",

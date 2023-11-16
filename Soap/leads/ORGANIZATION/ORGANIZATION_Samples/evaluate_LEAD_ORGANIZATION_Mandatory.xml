@@ -3,7 +3,7 @@
     <soap:Body>
         <AMLYZE_CUSTOMER xmlns="urn:amlyze-services:EvaluateCustomerService_v2r0">
             <CommunicationNumber>ComNr_00221</CommunicationNumber>
-            <Requester>Financial_Institution</Requester>
+            <Requester>financial_institution</Requester>
             <RiskManagementCategory>LEAD_AMLYZE</RiskManagementCategory>
             <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
             <CustomerExtId>Lead_extid01</CustomerExtId>

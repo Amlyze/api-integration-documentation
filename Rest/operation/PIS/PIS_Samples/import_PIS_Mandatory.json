@@ -1,6 +1,6 @@
 {
     "communicationNumber": "ComNr_0017",
-    "requester": "Financial_Institution",
+    "requester": "financial_institution",
     "operationExtId": "Op_0017",
     "operationType": "PIS",
     "riskManagementCategory": "OP_DEFAULT",

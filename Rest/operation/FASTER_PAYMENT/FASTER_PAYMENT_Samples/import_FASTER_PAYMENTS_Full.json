@@ -1,6 +1,6 @@
 {
     "communicationNumber": "ComNr_0034",
-    "requester": "Financial_Institution",
+    "requester": "financial_institution",
     "operationExtId": "Op_0034",
     "operationType": "FASTER_PAYMENTS",
     "riskManagementCategory": "OP_DEFAULT",

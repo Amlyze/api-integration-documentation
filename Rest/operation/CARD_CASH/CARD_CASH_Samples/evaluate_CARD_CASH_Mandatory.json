@@ -1,6 +1,6 @@
 {
     "communicationNumber": "Com_457",
-    "requester": "Financial_Institution",
+    "requester": "financial_institution",
     "operationExtId": "ExtId_747",
     "operationType": "CARD_CASH",
     "cardOperationSubType": "CARD_CASH_WITHDRAWAL",

@@ -1,6 +1,6 @@
 {
     "communicationNumber": "Com_147",
-    "requester": "Financial_Institution",
+    "requester": "financial_institution",
     "operationExtId": "OpExt_145",
     "operationType": "CRYPTO",
     "riskManagementCategory": "OP_DEFAULT",

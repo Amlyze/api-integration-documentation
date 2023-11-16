@@ -2,21 +2,23 @@
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
     <soap:Body>
         <AMLYZE_ACCOUNT xmlns="urn:amlyze-services:ImportAccountService_v1r0">
-            <CommunicationNumber>ComNr_1146</CommunicationNumber>
+            <CommunicationNumber>ComNr_000321</CommunicationNumber>
             <Requester>Financial_Bank</Requester>
             <ListAccount>
                 <Account>
-                    <BusinessEntityExtId>Cust_1145</BusinessEntityExtId>
-                    <AccountExtId>Extid_003</AccountExtId>
-                    <AccountNumber>LT5630800200000011112</AccountNumber>
+                    <BusinessEntityExtId>ORG20231114T110356</BusinessEntityExtId>
+                    <AccountExtId>Acc_00121</AccountExtId>
+                    <AccountNumber>LT705734389447757988</AccountNumber>
+                    <AccountStatus>CLOSED</AccountStatus>
+                    <BIC>BICXX22</BIC>
                     <CurrencyCode>EUR</CurrencyCode>
                     <AccountPurpose>PURPOSE_INVEST</AccountPurpose>
-                    <isOtherFinInstAccount>true</isOtherFinInstAccount>
-                    <BIC>CRYPXX</BIC>
                     <OpeningDate>2023-09-16T12:10:11+02:00</OpeningDate>
-                    <AccountStatus>CLOSED</AccountStatus>
+                    <BankTitle>TBC bank</BankTitle>
+                    <AccountPurpose>PURPOSE_INVEST</AccountPurpose>
+                    <AccountType>ORG_B2B</AccountType>
+                    <isOtherFinInstAccount>true</isOtherFinInstAccount>
                     <ClosingDate>2023-04-20T12:10:11Z</ClosingDate>
-                    <AccountType>IND_COMMERCIAL</AccountType>
                 </Account>
             </ListAccount>
         </AMLYZE_ACCOUNT>

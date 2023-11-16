@@ -1,75 +1,69 @@
 {
-	"communicationNumber": "ComNr_78",
-	"requester": "Financial Institution",
+	"communicationNumber": "ComNr_0021",
+	"requester": "financial_institution",
 	"riskManagementCategory": "IND_AMLYZE",
-	"riskLevel": "EXTREME",
+	"action": "UPDATE",
 	"sourceOfRiskLevel": "IMPORT",
+	"riskLevel": "EXTREME",
 	"customerStatus": "ACTIVE",
-	"customerExtId": "Cust_665",
 	"entityType": "INDIVIDUAL",
+	"customerExtId": "IND20231113T180927",
 	"initializeScreeningProcesses": [
         "SANCTIONS",
         "ADVERSE_MEDIA",
         "PEP"
     ],
-	"nationalCode": "123456789123",
 	"applicationDate": "2012-10-01T09:45:00.000+02:00",
-	"approvalDate": "2012-10-01T09:45:00.000+02:00",
 	"firstName": "Vardenis",
 	"lastName": "Pavardenis",
 	"birthDate": "2000-01-01",
-	"birthCountry": "LT",
 	"citizenshipCountry": "LT",
+	"approvalDate": "2012-10-01T09:45:00.000+02:00",
+	"birthCountry": "LT",
+	"nationalCode": "123456789123",
 	"secondCitizenshipCountry": "LV",
 	"permanentResidenceCountry": "LT",
 	"isLegalResident": true,
 	"isPEP": true,
+	"isSanctioned": false,
+	"isInAdverseMedia": true,
 	"isFamilyPEP": true,
 	"isLitigated": true,
 	"amlOfficer": true,
 	"listPurpose": "BLACK",
-	"sourcesOfWealth": [
-		{
-			"amount": 123,
-			"code": "string",
-			"comment": "string"
-		}
-	],
 	"fieldOfActivity": {
 		"student": {
-			"isStudent": true,
-			"higherSchoolTitle": "ABC",
+			"isStudent": false,
+			"higherSchoolTitle": "Uni University",
 			"higherSchoolCountry": "LT"
 		},
 		"pension": {
-			"isPensioner": true,
+			"isPensioner": false,
 			"pensionCountry": "LT"
 		},
 		"employment": {
 			"isUnemployed": false,
 			"isSelfEmployed": false,
 			"isEmployee": true,
-			"employerTitle": "asdf",
-			"employmentPositionDescription": "laisvo oro direktorius"
+			"employerTitle": "founder",
+			"employmentPositionDescription": "Software tester"
 		},
 		"other": {
 			"isOtherStatus": false,
 			"otherStatusDescription": null
 		}
 	},
-	"isSanctioned": false,
+	
 	"isActualAddressDeclared": true,
 	"isCorrespondenceAddressDeclared": false,
 	"activityDescription": "financial activity",
-	"incomeSourceDescription": "inheritance",
-	"initialDepositSource": "pension",
+	"incomeSourceDescription": "dividends",
+	"initialDepositSource": "Salary",
+	"initialDepositBank": "TBC",
+	"initialDepositAccount": "LT0089500500000070",
 	"initialDepositAmount": 123456,
 	"initialDepositCurrency": "EUR",
-	"initialDepositBank": "LB",
-	"initialDepositAccount": "asdfgfds",
 	"doesCashDominate": false,
-	"incomingPaymentDescription": "Replenishment of funds",
-	"outgoingPaymentDescription": "Replenishment of funds",
 	"listContact": [
 		{
 			"contactType": "MOBILEPHONE",
@@ -136,12 +130,27 @@
 		{
 			"turnoverDirection": "OUT",
 			"paymentPurposeType": "MARKETING_SERVICES"
+		},
+		{
+			"turnoverDirection": "IN",
+			"paymentPurposeType": "PAYMENT_FOR_SERVICES"
+		}
+	],
+	"listSourceOfWealth": [
+		{
+			"code": "6",
+			"amount": 123,
+			"comment": "inheritance"
 		}
 	],
 	"listPaymentCountry": [
 		{
 			"country": "LT",
 			"turnoverDirection": "OUT"
+		},
+		{
+			"country": "LV",
+			"turnoverDirection": "IN"
 		}
 	],
 	"listActivity": [
@@ -168,10 +177,10 @@
 	],
 	"listAdditionalValues": [
 		{
-			"code": "testas.bool",
-			"description": "testineReiksme",
+			"code": "Related_To_Lithuania?",
+			"description": "entity has relation to LT?",
 			"datatype": "BOOLEAN",
-			"value": "true"
+			"value": true
 		}
 	]
 }

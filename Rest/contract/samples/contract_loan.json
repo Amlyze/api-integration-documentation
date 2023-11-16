@@ -1,6 +1,6 @@
 {
   "communicationNumber": "COM216a",
-  "requester": "Financial_Institution",
+  "requester": "financial_institution",
   "action": "CREATE",
   "classifierType": "LOAN",
   "extId": "any_contract_1232",

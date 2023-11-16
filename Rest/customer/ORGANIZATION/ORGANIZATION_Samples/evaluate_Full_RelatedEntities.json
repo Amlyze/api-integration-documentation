@@ -1,75 +1,76 @@
 {
-    "communicationNumber": "ComNr_145",
-    "requester": "Financial Institution",
+    "communicationNumber": "ComNr_000321",
+    "requester": "financial_institution",
     "riskManagementCategory": "ORG_AMLYZE",
+    "action": "UPDATE",
     "sourceOfRiskLevel": "EVALUATE",
-    "customerExtId": "customer1451",
     "entityType": "ORGANIZATION",
+    "customerExtId": "ORG20231114T120945",
     "initializeScreeningProcesses": [
         "SANCTIONS",
         "ADVERSE_MEDIA",
         "PEP"
     ],
-    "nationalCode": "123456789",
-    "applicationDate": "2012-10-01T09:45:00.000+02:00",
-    "approvalDate": "2012-10-01T09:45:00.000+02:00",
-    "closingDate": null,
-    "title": "UAB Brotherhood",
-    "tradingName": "Brotherhood",
-    "establishmentDate": "2012-10-01T09:45:00.000+02:00",
+    "applicationDate": "2020-01-03",
+    "title": "UAB 'Brotherhood'",
     "registrationCountry": "LT",
-    "legalForm": "COOPERATIVE",
-    "isListed": true,
-    "isAudited": true,
-    "numberOfAudits": 2,
-    "periodsOfAuditsInYears": 1,
-    "isFined": true,
-    "periodsOfFiningInYears": 0,
-    "isRegulated": true,
-    "companyAssetValue": 123456789,
-    "numberOfEmployees": 321,
-    "LEI": "LEI124545",
+    "legalForm": "LTD",
+    "tradingName": "Brotherhood",
+    "approvalDate": "2020-01-05",
+    "establishmentDate": "2001-02-23",
+    "nationalCode": "REG74121101",
+    "activityInRestrictedRegionDescription": "Logistics",
+    "isPEP": false,
+    "isSanctioned": false,
+    "isInAdverseMedia": true,
     "GIIN": "GIIN123445",
-    "noMajorShareHolders": true,
-    "isDirectlyManaged": true,
-    "hasMultiLayerStructure": true,
-    "organizationalStructureDescription": "chaos",
-    "regionOfActivityDescription": "Middleearth",
-    "activityInRestrictedRegionDescription": "quest",
-    "isLicenseRequired": true,
-    "licenseDescription": "promise",
-    "isFinancialInstitution": true,
-    "thirdPartyServicesUsed": true,
-    "thirdPartyServicesUsedDescription": "equipment",
-    "isSanctioned": true,
+    "LEI": "LEI124545",
+    "listPurpose": "BLACK",
     "isActualAddressDeclared": true,
-    "isCorrespondenceAddressDeclared": true,
+    "isCorrespondenceAddressDeclared": false,
     "activityDescription": "Logistics",
-    "incomeSourceDescription": "adventure",
-    "initialDepositSource": "promise",
-    "initialDepositAmount": "1234",
+    "incomeSourceDescription": "dividends",
+    "initialDepositSource": "salary",
+    "initialDepositBank": "TBC",
+    "initialDepositAccount": "LT0089500500000070",
+    "initialDepositAmount": "10000",
     "initialDepositCurrency": "EUR",
-    "initialDepositBank": "pocket",
-    "initialDepositAccount": "leather bag",
     "doesCashDominate": true,
-    "incomingPaymentDescription": "for services",
-    "outgoingPaymentDescription": "none",
+    "isAudited": true,
+    "numberOfAudits": 6,
+    "periodsOfAuditsInYears": 3,
+    "organizationalStructureDescription": "Hierarchical",
+    "hasMultiLayerStructure": false,
+    "isFinancialInstitution": false,
+    "isDirectlyManaged": true,
+    "noMajorShareHolders": true,
+    "numberOfEmployees": 25,
+    "companyAssetValue": 100000,
+    "isFined": false,
+    "periodsOfFiningInYears": 3,
+    "isListed": false,
+    "isRegulated": false,
+    "isLicenseRequired": true,
+    "licenseDescription": "Licence No.4012",
+    "thirdPartyServicesUsed": true,
+    "thirdPartyServicesUsedDescription": "Hosting",
+    "regionOfActivityDescription": "State of California",
     "listContact": [
         {
             "contactType": "EMAIL",
-            "contactDetails": "butterfly voicemessage",
+            "contactDetails": "hello@gmail.com",
             "useForCommunication": true
         }
     ],
     "listAddress": [
         {
             "addressType": "HEADQUARTERS",
-            "addressDetails": "Shire",
+            "addressDetails": "Verkiu 1, Vilnius",
             "country": "LT",
             "region": "EU",
-            "city": null,
-            "streetAddress": null,
-            "zipCode": null,
+            "city": "Vilnius",
+            "streetAddress": "Verkiu 1, 5-78",
+            "zipCode": "04128",
             "useForCorrespondence": true
         }
     ],
@@ -77,12 +78,12 @@
         {
             "entityType": "ORGANIZATION",
             "identityDocumentType": "OTHER",
-            "documentNumber": "1",
-            "documentIssueDate": "2000-01-03",
-            "documentExpiryDate": null,
+            "documentNumber": "LK4545587741121",
+            "documentIssueDate": "2020-01-03",
+            "documentExpiryDate": "2030-01-03",
             "documentIssueCountry": "LT",
-            "documentIssueAuthority": "king",
-            "description": "agreement"
+            "documentIssueAuthority": "Migration office",
+            "description": "Main identification document"
         }
     ],
     "listAppealReason": [
@@ -97,7 +98,7 @@
     ],
     "listOrderedService": [
         {
-            "serviceType": "OUT_INTERNATIONAL_PAYMENT"
+            "serviceType": "LOANS"
         }
     ],
     "listDeclaredTurnover": [
@@ -110,28 +111,43 @@
     ],
     "listIncomeSource": [
         {
-            "incomeSourceType": "BUSINESS_REVENUE_OR_ASSET_SALE",
-            "incomePercentage": 100,
-            "from": 121564,
-            "to": 23457
+            "incomeSourceType": "SALARY",
+            "incomePercentage": 95,
+            "from": 2000,
+            "to": 2200
         }
     ],
     "listPaymentPurpose": [
         {
             "turnoverDirection": "OUT",
             "paymentPurposeType": "RENT_AND_UTILITIES"
+        },
+        {
+            "turnoverDirection": "IN",
+            "paymentPurposeType": "MARKETING_SERVICES"
         }
     ],
+    "listSourceOfWealth": [
+		{
+			"code": "6",
+			"amount": 100000,
+			"comment": "Wealth from inheritance"
+		}
+	],
     "listPaymentCountry": [
         {
             "country": "LT",
             "turnoverDirection": "IN"
+        },
+        {
+            "country": "LV",
+            "turnoverDirection": "OUT"
         }
     ],
     "listActivity": [
         {
             "activityType": "ACTIVITY_OTHER",
-            "incomePercentage": 50
+            "incomePercentage": 15
         }
     ],
     "listRegionOfActivity": [
@@ -142,33 +158,129 @@
     "listCountryOfActivity": [
         {
             "country": "LT"
+        },
+        {
+            "country": "LV"
         }
     ],
     "listCountryOfTaxPayment": [
         {
             "country": "LV",
-            "taxpayerNumber": "123456789"
+            "taxpayerNumber": "5541245574"
+        }
+    ],
+    "listAdditionalValues": [
+        {
+            "code": "related_to_usa",
+            "description": "entity has relation to USA?",
+            "datatype": "BOOLEAN",
+            "value": true
         }
     ],
     "listRelatedEntity": [
         {
-			"extId": "Org_1451",
+            "entityType": "INDIVIDUAL",
+            "relationType": "DIRECTOR",
+            "relationDescription": "founder",
+            "extId": "Rel_entity_ExtID_4051",
+            "share": 75,
+            "votePercentage": 10,
+            "nationalCode": "123456789",
+            "activityDescription": "Represents an organization",
+            "country": "AF",
+            "countryOfBusinessOperations": "LV",
+            "birthCountry": "LT",
+            "firstName": "Teodor",
+            "lastName": "Mariko",
+            "birthDate": "1998-04-07",
+            "isPEP": true,
+            "isSanctioned": true,
+            "isInAdverseMedia": true,
+            "regionOfActivityDescription": "Western Region",
+            "listContact": [
+                {
+                    "contactType": "EMAIL",
+                    "contactDetails": "personalemail@gmail.com",
+                    "useForCommunication": true
+                }
+            ],
+            "listAddress": [
+                {
+                    "addressType": "HEADQUARTERS",
+                    "addressDetails": "Lvovo g. 15/4",
+                    "country": "LT",
+                    "region": "EU",
+                    "city": "Vilnius",
+                    "streetAddress": "Lvovo g.",
+                    "zipCode": "04127",
+                    "useForCorrespondence": true
+                }
+            ],
+            "listBusinessEntityDocument": [
+                {
+                    "entityType": "INDIVIDUAL",
+                    "identityDocumentType": "OTHER",
+                    "documentNumber": "L548:154477425",
+                    "documentIssueDate": "2020-01-03",
+                    "documentExpiryDate": "2025-01-03",
+                    "documentIssueCountry": "LT",
+                    "documentIssueAuthority": "Migration office",
+                    "description": "agreement"
+                }
+            ],
+            "listIncomeSource": [
+                {
+                    "incomeSourceType": "BUSINESS_REVENUE_OR_ASSET_SALE",
+                    "incomePercentage": 10,
+                    "from": 10,
+                    "to": 100
+                }
+            ],
+            "listActivity": [
+                {
+                    "activityType": "ACTIVITY_OTHER",
+                    "incomePercentage": 50
+                }
+            ],
+            "listRegionOfActivity": [
+                {
+                    "region": "EU"
+                }
+            ],
+            "listCountryOfActivity": [
+                {
+                    "country": "LV"
+                }
+            ],
+            "listAdditionalValues": [
+                {
+                    "code": "Relation",
+                    "description": "Is related to US?",
+                    "datatype": "BOOLEAN",
+                    "value": "false"
+                }
+            ]
+        },
+		{
             "entityType": "ORGANIZATION",
             "relationType": "HOST",
             "relationDescription": "founder",
+			"extId": "Rel_entity_ExtID_4052",
             "share": 10,
             "votePercentage": 10,
             "nationalCode": "123456",
             "activityDescription": "BEARER",
             "country": "LT",
-            "registrationCountry": "LT",
             "countryOfBusinessOperations": "LV",
+            "registrationCountry": "LT",
+            "isPEP": true,
+            "iSanctioned": true,
+            "isInAdverseMedia": true,
+            "regionOfActivityDescription": "everywhere",
             "title": "UAB Karuna",
             "legalForm": "LTD",
             "establishmentDate": "1998-04-07",
-            "isPEP": true,
-            "region": "LT",
-            "regionOfActivityDescription": "everywhere",
+
             "listContact": [
                 {
                     "contactType": "EMAIL",
@@ -232,96 +344,6 @@
                     "value": "true"
                 }
             ]
-        },
-        {
-			"extId": "extid1245",
-            "entityType": "INDIVIDUAL",
-            "relationType": "HOST",
-            "relationDescription": "founder",
-            "share": 10,
-            "votePercentage": 10,
-            "nationalCode": "123456",
-            "activityDescription": "BEARER",
-            "country": "LT",
-            "registrationCountry": "LT",
-            "countryOfBusinessOperations": "LV",
-            "birthCountry": "LT",
-            "firstName": "Frodo",
-            "lastName": "Baggins",
-            "birthDate": "1998-04-07",
-            "isPEP": true,
-            "regionOfActivityDescription": "everywhere",
-            "listContact": [
-                {
-                    "contactType": "EMAIL",
-                    "contactDetails": "blah",
-                    "useForCommunication": true
-                }
-            ],
-            "listAddress": [
-                {
-                    "addressType": "HEADQUARTERS",
-                    "addressDetails": "Shire",
-                    "country": "LT",
-                    "region": "EU",
-                    "city": null,
-                    "streetAddress": null,
-                    "zipCode": null,
-                    "useForCorrespondence": true
-                }
-            ],
-            "listBusinessEntityDocument": [
-                {
-                    "entityType": "ORGANIZATION",
-                    "identityDocumentType": "OTHER",
-                    "documentNumber": "1",
-                    "documentIssueDate": "2000-01-03",
-                    "documentExpiryDate": null,
-                    "documentIssueCountry": "LT",
-                    "documentIssueAuthority": "king",
-                    "description": "agreement"
-                }
-            ],
-            "listIncomeSource": [
-                {
-                    "incomeSourceType": "BUSINESS_REVENUE_OR_ASSET_SALE",
-                    "incomePercentage": 10,
-                    "from": 10,
-                    "to": 100
-                }
-            ],
-            "listActivity": [
-                {
-                    "activityType": "ACTIVITY_OTHER",
-                    "incomePercentage": 50
-                }
-            ],
-            "listRegionOfActivity": [
-                {
-                    "region": "EU"
-                }
-            ],
-            "listCountryOfActivity": [
-                {
-                    "country": "LV"
-                }
-            ],
-            "listAdditionalValues": [
-                {
-                    "code": "test.string",
-                    "description": "testas",
-                    "datatype": "STRING",
-                    "value": "ASDFG"
-                }
-            ]
         }
-    ],
-    "listAdditionalValues": [
-        {
-            "code": "test.string",
-            "description": "testas",
-            "datatype": "STRING",
-            "value": "ASDFG"
-        }
-    ]
+    ]   
 }
