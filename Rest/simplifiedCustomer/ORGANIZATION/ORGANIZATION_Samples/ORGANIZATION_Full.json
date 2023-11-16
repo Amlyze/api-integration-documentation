@@ -6,7 +6,7 @@
     "customerExtId": "cust_1232",
     "title": "UAB \"Dockers\"",
     "customerStatus": "ACTIVE",
-    "riskLevel": "ACTIVE",
+    "riskLevel": "EXTREME",
     "initializeScreeningProcesses": [
         "SANCTIONS",
         "ADVERSE_MEDIA",
