@@ -2,6 +2,7 @@
     "communicationNumber": "ComNr_0011",
     "requester": "Kauno kredito unija",
     "riskManagementCategory": "OP_DEFAULT",
+    "businessUnit": "BUSINESS_UNIT_NAME",
     "sourceOfRiskLevel": "IMPORT",
     "operationStatus": "EXECUTED",
     "operationType": "CASH",

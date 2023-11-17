@@ -26,5 +26,5 @@ Please note that the `SOAP API is deprecated`. It is recommended to migrate to n
 * [SOAP API](Soap/README.md)
 
 ---
-Information about the Webhooks (Callbacks):
+> Information about the Webhooks (Callbacks):
 * [Webhooks](Webhooks/README.md)
