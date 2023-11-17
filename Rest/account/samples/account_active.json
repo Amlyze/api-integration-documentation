@@ -1,7 +1,7 @@
 {
     "communicationNumber": "ComNr_000321",
-    "requester": "financial_institution",
-    "businessEntityExtId": "IND20231113T180927",
+    "requester": "Financial_Institution",
+	"businessEntityExtId": "IND20231113T180927",
     "accountExtId": "Acc_0011",
     "accountNumber": "LI9208800274335945522",
     "accountStatus": "ACTIVE",
@@ -13,3 +13,5 @@
     "accountType": "ORG_B2B",
     "isOtherFinInstAccount": false
   }
+
+
