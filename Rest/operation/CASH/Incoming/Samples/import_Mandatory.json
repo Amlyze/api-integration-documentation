@@ -1,0 +1,31 @@
+{
+    "communicationNumber": "ComNr_0011",
+    "requester": "Kauno kredito unija",
+    "riskManagementCategory": "OP_DEFAULT",
+    "sourceOfRiskLevel": "IMPORT",
+    "operationStatus": "EXECUTED",
+    "operationType": "CASH",
+    "financialFlowDirection": "INCOMING",
+    "operationExtId": "OP20231114T12",
+    "operationDateTime": "2023-11-15T15:09:33+02:00",
+    "amount": 998,
+    "currency": "EUR",
+    "description": "Depositing money into the account",
+    "listOperationParty": [
+        {
+            "partyRole": "DEBTOR",
+            "accountNumber": "IND20231113T180927",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Geli",
+            "lastName": "Deliono"
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LV6630800200000018155",
+            "bic": "UANFLT21XXX",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Geli",
+            "lastName": "Deliono"
+        }
+    ]
+}

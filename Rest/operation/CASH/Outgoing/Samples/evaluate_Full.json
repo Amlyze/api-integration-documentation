@@ -1,0 +1,36 @@
+{
+    "communicationNumber": "ComNr_0011",
+    "requester": "Kauno kredito unija",
+    "riskManagementCategory": "OP_DEFAULT",
+    "sourceOfRiskLevel": "EVALUATE",
+    "operationType": "CASH",
+    "financialFlowDirection": "OUTGOING",
+    "operationExtId": "OP20231114T12",
+    "operationDateTime": "2023-11-15T15:09:33+02:00",
+    "amount": 998,
+    "currency": "GBP",
+    "amountInEuro": 1140.41,
+    "euroExchangeRate": 1.14,
+    "description": "Cash withdrawal",
+    "sourceCountry": "LT",
+    "destinationCountry": "LT",
+    "listOperationParty": [
+        {
+            "partyRole": "DEBTOR",
+            "accountNumber": "LV6630800200000018155",
+            "bic": "UANFLT21XXX",
+            "currency": "GBP",
+            "bankTitle": "TBC bank",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Geli",
+            "lastName": "Deliono"
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "IND20231113T180927",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Geli",
+            "lastName": "Deliono"
+        }
+    ]
+}
