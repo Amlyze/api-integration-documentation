@@ -112,6 +112,7 @@ Permissions required: `None`
 * `GET /classifier/accountType`
 * `GET /classifier/activityType`
 * `GET /classifier/appealReasonType`
+* `GET /classifier/businessunit`
 * `GET /classifier/serviceType`
 * `GET /classifier/legalForm`
 * `GET /classifier/serviceType`
