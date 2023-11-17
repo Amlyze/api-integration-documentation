@@ -61,6 +61,19 @@
             <td>Code of risk management category of object. Risk management category code from classifier can be checked <a href="../../README.md#classifiers">here</a></td>
         </tr>
         <tr>
+			<td><b>businessUnit</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Business unit classifier)</a>
+            </td>
+			<td>true/false</td>
+			<td>BUSINESS_UNIT_NAME</td>
+			<td>
+                Unit data identification for controllability/observability.
+                <br/>❗NOTE: parameter is required only if business unit strict mode enabled
+            </td>
+		</tr>
+        <tr>
             <td><b>sourceOfRiskLevel</b></td>
             <td>String<br/><b>ENUM</b><br/>[EVALUATE,<br/>IMPORT]</td>
             <td>true</td>
