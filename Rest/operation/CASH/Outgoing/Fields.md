@@ -55,16 +55,17 @@
         </tr>
          <tr>
             <td><b>riskManagementCategory</b></td>
-            <td>String</td>
+            <td>String <br/>
+                <a href="../../../../Classifiers/classifiers.md">(Risk management category classifier)</a></td>
             <td>true</td>
             <td>OP_DEFAULT</td>
-            <td>Code of risk management category of object. Risk management category code from classifier can be checked <a href="../../../Classifiers/classifiers.md">here</a></td>
+            <td>Code of risk management category of object</td>
         </tr>
         <tr>
 			<td><b>businessUnit</b></td>
 			<td>
                 String <br/>
-                <a href="../../../Classifiers/classifiers.md">(Business unit classifier)</a>
+                <a href="../../../../Classifiers/classifiers.md">(Business unit classifier)</a>
             </td>
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>
@@ -124,10 +125,12 @@
         </tr>
         <tr>
             <td><b>currency</b></td>
-            <td>String</td>
+            <td>String <br/>
+                <a href="../../../../Classifiers/classifiers.md">(Currency classifier)</a></td>
+            <td>true</td></td>
             <td>true</td>
             <td>GBP</td>
-            <td>Currency code from classifier.<br/> Currency code from classifier can be checked <a href="../../../Classifiers/classifiers.md">here</a></td> 
+            <td>Currency code from classifier</td> 
         </tr>
         <tr>
             <td><b>amountInEuro</b></td>
@@ -147,7 +150,7 @@
             <td><b>description</b></td>
             <td>String</td>
             <td>true</td>
-            <td>"Depositing money into the account"</td>
+            <td>"Cash withdrawal"</td>
             <td>The purpose of payment is saved under description.<br/> It is necessary for the operation to be proceeded</td>
         </tr>
         <tr>
@@ -159,7 +162,8 @@
         </tr>
         <tr>
             <td><b>sourceCountry</b></td>
-            <td>String</td>
+            <td>String <br/>
+                <a href="../../../../Classifiers/classifiers.md">(Country classifier)</a></td>
             <td>false</td>
             <td>LT</td>
             <td>Source country informs about where the operation was initiated</td>
