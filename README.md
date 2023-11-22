@@ -28,3 +28,8 @@ Please note that the `SOAP API is deprecated`. It is recommended to migrate to n
 ---
 > Information about the Webhooks (Callbacks):
 * [Webhooks](Webhooks/README.md)
+
+---
+
+> All possible Classifiers
+* [Classifiers](Classifiers/classifiers.md)

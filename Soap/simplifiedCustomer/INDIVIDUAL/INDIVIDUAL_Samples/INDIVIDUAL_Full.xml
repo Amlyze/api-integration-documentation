@@ -2,56 +2,66 @@
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
     <soap:Body>
         <AMLYZE_CUSTOMER xmlns="urn:amlyze-services:EvaluateCustomerService_v2r0">
-            <CommunicationNumber>ComNr_000321</CommunicationNumber>
-            <Requester>Bank_system</Requester>
-            <RiskManagementCategory>FAST</RiskManagementCategory>
-            <EntityType>INDIVIDUAL</EntityType>
-            <CustomerExtId>cust_1232</CustomerExtId>
-            <FirstName>Jose</FirstName>
-            <LastName>Rodriguez</LastName>
-            <CustomerStatus>ACTIVE</CustomerStatus>
+            <CommunicationNumber>ComNr_00548</CommunicationNumber>
+            <Requester>AMLYZE_SYSTEM</Requester>
+            <RiskManagementCategory>OCCASIONAL_CUSTOMER</RiskManagementCategory>
             <RiskLevel>HIGH</RiskLevel>
+            <CustomerStatus>ACTIVE</CustomerStatus>
+            <EntityType>INDIVIDUAL</EntityType>
+            <CustomerExtId>IND20231113T18099</CustomerExtId>
             <InitializeScreeningProcesses>
                 <Process>SANCTIONS</Process>
                 <Process>PEP</Process>
                 <Process>ADVERSE_MEDIA</Process>
             </InitializeScreeningProcesses>
-            <NationalCode>REG74121101</NationalCode>
-            <ApplicationDate>2000-01-03</ApplicationDate>
-            <ActivityDescription>financial activity</ActivityDescription>
-            <ActivityInRestrictedRegionDescription>logistics</ActivityInRestrictedRegionDescription>
-            <AmlOfficer>false</AmlOfficer>
-            <ApprovalDate>2000-01-03</ApprovalDate>
-            <BirthCountry>LT</BirthCountry>
+             <ApplicationDate>2000-01-03</ApplicationDate>
+            <FirstName>Jose</FirstName>
+            <LastName>Rodriguez</LastName>
             <BirthDate>1995-05-24</BirthDate>
             <CitizenshipCountry>LT</CitizenshipCountry>
-            <ClosingDate>1995-05-24</ClosingDate>
-            <DoesCashDominate>true</DoesCashDominate>
-            <IncomeSourceDescription>work</IncomeSourceDescription>
-            <IncomingPaymentDescription>payment for work</IncomingPaymentDescription>
-            <InitialDepositAccount>LT0000000000000000</InitialDepositAccount>
-            <InitialDepositAmount>10000</InitialDepositAmount>
-            <InitialDepositBank>BankBank</InitialDepositBank>
-            <InitialDepositCurrency>EUR</InitialDepositCurrency>
-            <InitialDepositSource>Dividend</InitialDepositSource>
-            <IsActualAddressDeclared>false</IsActualAddressDeclared>
-            <IsFamilyPEP>false</IsFamilyPEP>
-            <IsInAdverseMedia>true</IsInAdverseMedia>
+            <ApprovalDate>2000-01-03</ApprovalDate>
+            <BirthCountry>LT</BirthCountry>
+            <NationalCode>REG74121101</NationalCode>
+            <SecondCitizenshipCountry>LT</SecondCitizenshipCountry>
+            <PermanentResidenceCountry>LT</PermanentResidenceCountry>
             <IsLegalResident>true</IsLegalResident>
-            <IsLitigated>false</IsLitigated>
             <IsPEP>false</IsPEP>
             <IsSanctioned>true</IsSanctioned>
-            <PermanentResidenceCountry>LT</PermanentResidenceCountry>
-            <SecondCitizenshipCountry>LT</SecondCitizenshipCountry>
+            <IsInAdverseMedia>true</IsInAdverseMedia>
+            <IsFamilyPEP>false</IsFamilyPEP>
+            <IsLitigated>false</IsLitigated>
+            <AmlOfficer>false</AmlOfficer>
             <ListPurpose>BLACK</ListPurpose>
+            <IsActualAddressDeclared>false</IsActualAddressDeclared>
+            <IsCorrespondenceAddressDeclared>false</IsCorrespondenceAddressDeclared>
+            <ActivityDescription>financial activity</ActivityDescription>
+            <IncomeSourceDescription>Dividends</IncomeSourceDescription> 
+            <InitialDepositSource>Salary</InitialDepositSource>
+            <InitialDepositBank>BankBank</InitialDepositBank>
+            <InitialDepositAccount>LV45547888441236</InitialDepositAccount>
+            <InitialDepositAmount>5000</InitialDepositAmount>
+            <InitialDepositCurrency>EUR</InitialDepositCurrency>  
+            <DoesCashDominate>true</DoesCashDominate>
+            <ListContact>
+                <Contact>
+                    <ContactType>MOBILEPHONE</ContactType>
+                    <ContactDetails>+370 68* *****</ContactDetails>
+                    <UseForCommunication>true</UseForCommunication>
+                </Contact>
+                <Contact>
+                    <ContactType>EMAIL</ContactType>
+                    <ContactDetails>customer64@amlyze-test.com</ContactDetails>
+                    <UseForCommunication>true</UseForCommunication>
+                </Contact>
+            </ListContact>
             <ListAddress>
                 <Address>
                     <AddressType>RESIDENCE</AddressType>
-                    <AddressDetails>Verkiu 1, Vilnius</AddressDetails>
+                    <AddressDetails>Verkiu g. 1/5, Vilnius</AddressDetails>
                     <City>Vilnius</City>
                     <Country>LT</Country>
                     <Region>EU</Region>
-                    <StreetAddress>Verkiu 1</StreetAddress>
+                    <StreetAddress>Verkiu g.</StreetAddress>
                     <ZipCode>04127</ZipCode>
                     <UseForCorrespondence>true</UseForCorrespondence>
                 </Address>
@@ -68,13 +78,7 @@
                     <Description>Main identification document</Description>
                 </BusinessEntityDocument>
             </ListBusinessEntityDocument>
-            <ListContact>
-                <Contact>
-                    <ContactType>EMAIL</ContactType>
-                    <ContactDetails>test@test-amlyze.com</ContactDetails>
-                    <UseForCommunication>true</UseForCommunication>
-                </Contact>
-            </ListContact>
+            
         </AMLYZE_CUSTOMER>
     </soap:Body>
 </soap:Envelope>

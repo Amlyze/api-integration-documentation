@@ -11,7 +11,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
+	<tr>
 			<td><b>communicationNumber</b></td>
 			<td>String</td>
 			<td>true</td>
@@ -22,27 +22,41 @@
 			<td><b>requester</b></td>
 			<td>String</td>
 			<td>true</td>
-			<td>financial_institution</td>
+			<td>AMLYZE_SYSTEM</td>
 			<td>Name of the system requesting web service</td>
 		</tr>
 		<tr>
 			<td><b>riskManagementCategory</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Risk management category classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Risk management category classifier)</a>
             </td>
 			<td>true</td>
-			<td>FAST</td>
+			<td>OCCASIONAL_CUSTOMER</td>
 			<td>
                 Code of risk management category for evaluation of the object.<br/>💡 
                 Possible values here are given just as an example, in the configuration period these could be updated
             </td>
 		</tr>
 		<tr>
+			<td><b>entityType</b></td>
+			<td>String<br/><b>ENUM</b><br/>[INDIVIDUAL]</td>
+			<td>true</td>
+			<td>INDIVIDUAL</td>
+			<td>Whether business or individual entity</td>
+		</tr>
+		<tr>
+			<td><b>customerExtId</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>IND20231117550</td>
+			<td>Unique external customer identifier. The identifier corresponds to the client's identifier in the financial institution</td>
+		</tr>
+		<tr>
 			<td><b>businessUnit</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Business unit classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Business unit classifier)</a>
             </td>
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>
@@ -52,11 +66,18 @@
             </td>
 		</tr>
 		<tr>
+			<td><b>customerStatus</b></td>
+			<td>String<br/><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
+			<td>false</td>
+			<td>ACTIVE</td>
+			<td>Customer status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received.<br/> ACTIVE - Customer is onboarded ( account is provided or customer assessment case is resolved)<br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is changed to being disabled</i></td>
+		</tr>
+		<tr>
 			<td><b>riskLevel</b></td>
 			<td>String<br/><b>ENUM</b><br/>[NONE,<br/> LOW,<br/> MEDIUM,<br/> HIGH,<br/> EXTREME]</td>
 			<td>false</td>
 			<td>HIGH</td>
-			<td>The Risk Level of the customer. Default value is NONE.</td>
+			<td>The Risk Level of the customer during IMPORT</td>
 		</tr>
 		<tr>
 			<td><b>initializeScreeningProcesses</b></td>
@@ -64,27 +85,6 @@
 			<td>false</td>
 			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
 			<td>Defines which screening processes to initiate</td>
-		</tr>
-		<tr>
-			<td><b>customerStatus</b></td>
-			<td>String<br/><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
-			<td>true</td>
-			<td>ACTIVE</td>
-			<td>Customer status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received.<br/> ACTIVE - Customer is onboarded ( account is provided or customer assessment case is resolved)<br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is changed to being disabled</i></td>
-		</tr>
-		<tr>
-			<td><b>customerExtId</b></td>
-			<td>String</td>
-			<td>true</td>
-			<td>cust_1232</td>
-			<td>Unique external customer identifier. The identifier corresponds to the client's identifier in the financial institution</td>
-		</tr>
-		<tr>
-			<td><b>entityType</b></td>
-			<td>String<br/><b>ENUM</b><br/>[INDIVIDUAL]</td>
-			<td>true</td>
-			<td>INDIVIDUAL</td>
-			<td>Whether business or individual entity</td>
 		</tr>
 		<tr>
 			<td><b>nationalCode</b></td>
@@ -96,7 +96,7 @@
 		<tr>
 			<td><b>applicationDate</b></td>
 			<td>Date</td>
-			<td>false</td>
+			<td>true</td>
 			<td>2000-01-03</td>
 			<td>Date when customer first applied</td>
 		</tr>
@@ -108,18 +108,18 @@
 			<td>Description of entity activity</td>
 		</tr>
 		<tr>
-			<td><b>activityInRestrictedRegionDescription</b></td>
-			<td>String</td>
-			<td>false</td>
-			<td>logistics</td>
-			<td>Description of business entities' activities in a restricted region</td>
-		</tr>
-		<tr>
 			<td><b>amlOfficer</b></td>
 			<td>Boolean</td>
 			<td>false</td>
 			<td>false</td>
 			<td>Indicator for the person being AML officer</td>
+		</tr>
+		<tr>
+			<td><b>listPurpose</b></td>
+			<td>String<br/><b>ENUM</b><br/>[BLACK,<br/> WHITE]</td>
+			<td>false</td>
+			<td>-</td>
+			<td>Whether entity is black/white listed</td>
 		</tr>
 		<tr>
 			<td><b>approvalDate</b></td>
@@ -132,16 +132,16 @@
 			<td><b>birthCountry</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
-			<td>false</td>
+			<td>true</td>
 			<td>LT</td>
 			<td>Country of birth of individual entity</td>
 		</tr>
 		<tr>
 			<td><b>birthDate</b></td>
 			<td>Date</td>
-			<td>false</td>
+			<td>true</td>
 			<td>1995-05-24</td>
 			<td>Date of birth of individual entity</td>
 		</tr>
@@ -149,18 +149,18 @@
 			<td><b>citizenshipCountry</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
-			<td>false</td>
+			<td>true</td>
 			<td>LT</td>
 			<td>Country of citizenship of individual entity</td>
 		</tr>
 		<tr>
 			<td><b>closingDate</b></td>
 			<td>Date</td>
-			<td>false</td>
-			<td>1995-05-24</td>
-			<td>Date of closure of all accounts</td>
+			<td>true/false</td>
+			<td>2015-05-24</td>
+			<td>Date of closure of all accounts <br/><b>Mandatory</b> when customerStatus = CLOSED<br/><b>Not Mandatory</b>  when customerStatus = PENDING, ACTIVE, REJECTED, SUSPENDED</td>
 		</tr>
         <tr>
 			<td><b>doesCashDominate</b></td>
@@ -179,7 +179,7 @@
         <tr>
 			<td><b>lastName</b></td>
 			<td>String</td>
-			<td>false</td>
+			<td>true</td>
 			<td>Rodriguez</td>
 			<td>Last name of individual entity</td>
 		</tr>
@@ -191,17 +191,10 @@
 			<td>Description of income source of the entity</td>
 		</tr>
 		<tr>
-			<td><b>incomingPaymentDescription</b></td>
-			<td>String</td>
-			<td>false</td>
-			<td>payment for work</td>
-			<td>Description of incoming payment operation</td>
-		</tr>
-		<tr>
 			<td><b>initialDepositAccount</b></td>
 			<td>String</td>
 			<td>false</td>
-			<td>LT0000000000000000</td>
+			<td>LT0057800085008800</td>
 			<td>Account of initial deposit</td>
 		</tr>
 		<tr>
@@ -222,7 +215,7 @@
 			<td><b>initialDepositCurrency</b></td>
             <td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Currency classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Currency classifier)</a>
             </td>
 			<td>false</td>
 			<td>EUR</td>
@@ -288,7 +281,7 @@
 			<td><b>permanentResidenceCountry</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
 			<td>false</td>
 			<td>LT</td>
@@ -298,18 +291,11 @@
 			<td><b>secondCitizenshipCountry</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
 			<td>false</td>
 			<td>LT</td>
 			<td>Country of second citizenship of individual entity</td>
-		</tr>
-        <tr>
-			<td><b>listPurpose</b></td>
-			<td>String<br/><b>ENUM</b><br/>[BLACK,<br/> WHITE]</td>
-			<td>false</td>
-			<td>-</td>
-			<td>Whether entity is black/white listed</td>
 		</tr>
 		<tr>
 			<td><b>listAddress</b></td>
@@ -335,8 +321,31 @@
 	</tbody>
 </table>
 
+---
 
-## AddressApi
+## Process
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+			<td><b>Example/Ref</b></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><b>Process</b></td>
+            <td>String</td>
+            <td>true</td>
+			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
+		</tr>
+	</tbody>
+</table>
+
+
+## Address
 
 <table>
 	<thead>
@@ -415,7 +424,7 @@
 </table>
 
 
-## BusinessEntityDocumentApi
+## BusinessEntityDocument
 
 <table>
 	<thead>
@@ -487,7 +496,7 @@
 	</tbody>
 </table>
 
-## ContactApi
+## Contact
 
 <table>
 	<thead>
@@ -527,3 +536,5 @@
 	    </tr>
 	</tbody>
 </table>
+
+

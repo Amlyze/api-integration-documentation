@@ -36,7 +36,7 @@
 			<td><b>RiskManagementCategory</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Risk management category classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Risk management category classifier)</a>
             </td>
 			<td>true</td>
 			<td>IND_AMLYZE</td>
@@ -49,7 +49,7 @@
 			<td><b>BusinessUnit</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Business unit classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Business unit classifier)</a>
             </td>
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>
@@ -152,7 +152,7 @@
 			<td><b>BirthCountry</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
 			<td>true</td>
 			<td>LT</td>
@@ -169,7 +169,7 @@
 			<td><b>CitizenshipCountry</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
 			<td>true</td>
 			<td>LT</td>
@@ -242,7 +242,7 @@
 			<td><b>InitialDepositCurrency</b></td>
             <td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Currency classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Currency classifier)</a>
             </td>
 			<td>false</td>
 			<td>EUR</td>
@@ -308,7 +308,7 @@
 			<td><b>PermanentResidenceCountry</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
 			<td>false</td>
 			<td>LT</td>
@@ -318,7 +318,7 @@
 			<td><b>SecondCitizenshipCountry</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
 			<td>false</td>
 			<td>LT</td>
@@ -497,7 +497,7 @@
 			<td><b>AppealReasonType</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Appeal reason type classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Appeal reason type classifier)</a>
             </td>
 			<td>true</td>
 		</tr>
@@ -519,7 +519,7 @@
 			<td><b>IntroductionSource</b></td>
             <td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Introduction source classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Introduction source classifier)</a>
             </td>
 			<td>true</td>
 		</tr>
@@ -541,7 +541,7 @@
 			<td><b>ServiceType</b></td>
             <td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Service type classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Service type classifier)</a>
             </td>
 			<td>true</td>
 		</tr>
@@ -563,7 +563,7 @@
 			<td><b>Region</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
 			<td>true</td>
 		</tr>
@@ -585,7 +585,7 @@
 			<td><b>Country</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
 			<td>true</td>
 		</tr>
@@ -610,7 +610,7 @@
 			<td><b>Country</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
 			<td>true</td>
 			<td>TAXES</td>
@@ -774,7 +774,7 @@
 			<td><b>PensionCountry</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
 			<td>false</td>
 			<td>LT</td>
@@ -838,7 +838,7 @@
 			<td><b>ActivityType</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Activity type classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Activity type classifier)</a>
             </td>
 			<td>true</td>
 			<td>ACTIVITY_OTHER</td>
@@ -924,7 +924,7 @@
 			<td><b>AddressType</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Address type classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Address type classifier)</a>
             </td>
 			<td>false</td>
 			<td>RESIDENCE</td>
@@ -941,7 +941,7 @@
 			<td><b>Country</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country type classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country type classifier)</a>
             </td>
 			<td>true</td>
 			<td>LT</td>
@@ -1110,7 +1110,7 @@
 			<td><b>Country</b></td>
             <td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
 			<td>true</td>
 			<td>LT</td>
@@ -1164,7 +1164,7 @@
 			<td><b>TurnoverType</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Turnover type classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Turnover type classifier)</a>
             </td>
 			<td>true</td>
 			<td>TURNOVER_PER_MONTH</td>
@@ -1204,7 +1204,7 @@
 			<td><b>IncomeSourceType</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Income source type classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Income source type classifier)</a>
             </td>
 			<td>true</td>
 			<td>SALARY</td>
@@ -1238,7 +1238,7 @@
 			<td><b>PaymentPurposeType</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Payment purpose type classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Payment purpose type classifier)</a>
             </td>
 			<td>true</td>
 			<td>TAXES</td>
@@ -1278,7 +1278,7 @@
 			<td><b>SourceOfWealthCode</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Source of wealth type classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Source of wealth type classifier)</a>
             </td>
 			<td>true</td>
 			<td>INHERITANCE</td>
@@ -1311,7 +1311,7 @@
 			<td><b>RelationType</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Relation type classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Relation type classifier)</a>
             </td>
 			<td>true</td>
 			<td>OWNER</td>
@@ -1342,7 +1342,7 @@
 			<td><b>BirthCountry</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
 			<td>false</td>
 			<td>LT</td>
@@ -1359,7 +1359,7 @@
 			<td><b>Country</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
 			<td>false</td>
 			<td>LT</td>
@@ -1425,7 +1425,7 @@
 			<td><b>LegalForm</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Legal form classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Legal form classifier)</a>
             </td>
 			<td>false</td>
 			<td>COOPERATIVE</td>
@@ -1449,7 +1449,7 @@
 			<td><b>RegistrationCountry</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
 			<td>false</td>
 			<td>LT</td>

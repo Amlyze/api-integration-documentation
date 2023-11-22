@@ -29,7 +29,7 @@
 			<td><b>businessUnit</b></td>
 			<td>
                 String <br/>
-                <a href="../README.md#classifiers">(Business unit classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Business unit classifier)</a>
             </td>
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>
@@ -77,7 +77,7 @@
             <td><b>accountType</b></td>
 			<td>
                 String <br/>
-                <a href="../README.md#classifiers">(Account type classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Account type classifier)</a>
             </td>
             <td>false</td>
             <td>ORG_B2B</td>
@@ -115,7 +115,7 @@
             <td><b>currencyCode</b></td>
             <td>
                 String <br/>
-                <a href="../README.md#classifiers">(Currency classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Currency classifier)</a>
             </td>
             <td>true</td>
             <td>EUR</td>

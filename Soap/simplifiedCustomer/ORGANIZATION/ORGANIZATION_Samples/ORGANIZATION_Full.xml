@@ -3,70 +3,60 @@
     <soap:Body>
         <AMLYZE_CUSTOMER xmlns="urn:amlyze-services:EvaluateCustomerService_v2r0">
             <CommunicationNumber>ComNr_000321</CommunicationNumber>
-            <Requester>Bank_system</Requester>
-            <RiskManagementCategory>FAST</RiskManagementCategory>
+            <Requester>AMLYZE_System</Requester>
+            <RiskManagementCategory>OCCASIONAL_CUSTOMER</RiskManagementCategory>
+             <RiskLevel>HIGH</RiskLevel>
+             <CustomerStatus>ACTIVE</CustomerStatus>
             <EntityType>ORGANIZATION</EntityType>
-            <CustomerExtId>cust_1232</CustomerExtId>
-            <Title>UAB "Dockers"</Title>
-            <CustomerStatus>ACTIVE</CustomerStatus>
-            <RiskLevel>HIGH</RiskLevel>
+            <CustomerExtId>ORG20231117550</CustomerExtId>
             <InitializeScreeningProcesses>
                 <Process>SANCTIONS</Process>
                 <Process>PEP</Process>
                 <Process>ADVERSE_MEDIA</Process>
             </InitializeScreeningProcesses>
-            <NationalCode>REG74121101</NationalCode>
             <ApplicationDate>2000-01-03</ApplicationDate>
+            <Title>UAB 'BrotherHood'</Title>
+            <RegistrationCountry>LT</RegistrationCountry>
+            <LegalForm>COOPERATIVE</LegalForm>
+            <ApprovalDate>2000-01-03</ApprovalDate>
+            <EstablishmentDate>2001-02-23</EstablishmentDate>
+            <NationalCode>REG74121101</NationalCode>
             <ActivityDescription>financial activity</ActivityDescription>
             <ActivityInRestrictedRegionDescription>logistics</ActivityInRestrictedRegionDescription>
-            <ApprovalDate>2000-01-03</ApprovalDate>
-            <ClosingDate>2005-05-24</ClosingDate>
-            <CompanyAssetValue>100000</CompanyAssetValue>
-            <DoesCashDominate>true</DoesCashDominate>
-            <EstablishmentDate>2001-02-23</EstablishmentDate>
-            <GIIN>GIN548745122</GIIN>
-            <HasMultiLayerStructure>false</HasMultiLayerStructure>
-            <IncomeSourceDescription>work</IncomeSourceDescription>
-            <InitialDepositAccount>LT0000000000000000</InitialDepositAccount>
-            <InitialDepositAmount>10000</InitialDepositAmount>
-            <InitialDepositBank>BankBank</InitialDepositBank>
-            <InitialDepositCurrency>EUR</InitialDepositCurrency>
-            <InitialDepositSource>Dividend</InitialDepositSource>
-            <IsActualAddressDeclared>false</IsActualAddressDeclared>
-            <IsAudited>false</IsAudited>
-            <IsCorrespondenceAddressDeclared>true</IsCorrespondenceAddressDeclared>
-            <IsDirectlyManaged>false</IsDirectlyManaged>
-            <IsFinancialInstitution>false</IsFinancialInstitution>
-            <IsFined>false</IsFined>
+            <IsSanctioned>true</IsSanctioned>
             <IsInAdverseMedia>true</IsInAdverseMedia>
-            <IsLicenseRequired>true</IsLicenseRequired>
+            <IsPEP>false</IsPEP>
+            <GIIN>GIN548745122</GIIN>
+            <LEI>LEI54511548</LEI>
+            <IsActualAddressDeclared>false</IsActualAddressDeclared>
+            <IsCorrespondenceAddressDeclared>true</IsCorrespondenceAddressDeclared>
+            <IncomeSourceDescription>Salary</IncomeSourceDescription>
+            <InitialDepositSource>Dividends</InitialDepositSource>
+            <InitialDepositBank>BankBank</InitialDepositBank>
+            <InitialDepositAccount>LV445788745120002</InitialDepositAccount>
+            <InitialDepositAmount>10000</InitialDepositAmount>
+            <InitialDepositCurrency>EUR</InitialDepositCurrency>
+            <DoesCashDominate>true</DoesCashDominate>
+            <IsAudited>false</IsAudited>
+            <NumberOfAudits>6</NumberOfAudits>
+            <PeriodsOfAuditsInYears>3</PeriodsOfAuditsInYears>
+            <OrganizationalStructureDescription>Hierarchical</OrganizationalStructureDescription>
+            <HasMultiLayerStructure>false</HasMultiLayerStructure>
+            <IsFinancialInstitution>false</IsFinancialInstitution>
+            <IsDirectlyManaged>false</IsDirectlyManaged>
+            <NoMajorShareHolders>true</NoMajorShareHolders>
+            <NumberOfEmployees>321</NumberOfEmployees>
+            <CompanyAssetValue>100000</CompanyAssetValue>
+            <IsFined>false</IsFined>
+            <PeriodsOfFiningInYears>3</PeriodsOfFiningInYears>
             <IsListed>false</IsListed>
             <IsRegulated>true</IsRegulated>
-            <IsSanctioned>true</IsSanctioned>
-            <LegalForm>LTD</LegalForm>
-            <LEI>LEI54511548</LEI>
+            <IsLicenseRequired>true</IsLicenseRequired>
             <LicenseDescription>Licence No.4012</LicenseDescription>
-            <NoMajorShareHolders>true</NoMajorShareHolders>
-            <NumberOfAudits>6</NumberOfAudits>
-            <NumberOfEmployees>25</NumberOfEmployees>
-            <OrganizationalStructureDescription>Hierarchical</OrganizationalStructureDescription>
-            <PeriodsOfAuditsInYears>3</PeriodsOfAuditsInYears>
-            <PeriodsOfFiningInYears>3</PeriodsOfFiningInYears>
-            <RegionOfActivityDescription>Customer service</RegionOfActivityDescription>
-            <RegistrationCountry>LT</RegistrationCountry>
             <ThirdPartyServicesUsed>true</ThirdPartyServicesUsed>
             <ThirdPartyServicesUsedDescription>hosting</ThirdPartyServicesUsedDescription>
+            <RegionOfActivityDescription>Central Europe</RegionOfActivityDescription>
             <ListAddress>
-                <Address>
-                    <AddressType>REGISTRATION</AddressType>
-                    <AddressDetails>25/3</AddressDetails>
-                    <Country>LV</Country>
-                    <Region>EA</Region>
-                    <City>Riga</City>
-                    <StreetAddress>Vavilova St.</StreetAddress>
-                    <ZipCode>01105</ZipCode>
-                    <UseForCorrespondence>false</UseForCorrespondence>
-                </Address>
                 <Address>
                     <AddressType>RESIDENCE</AddressType>
                     <AddressDetails>19/2</AddressDetails>
@@ -103,17 +93,12 @@
             <ListContact>
                 <Contact>
                     <ContactType>EMAIL</ContactType>
-                    <ContactDetails>PhoneNam@yahoo.com</ContactDetails>
+                    <ContactDetails>Customermail@yahoo.com</ContactDetails>
                     <UseForCommunication>true</UseForCommunication>
                 </Contact>
                 <Contact>
                     <ContactType>MOBILEPHONE</ContactType>
-                    <ContactDetails>+3504872546</ContactDetails>
-                    <UseForCommunication>true</UseForCommunication>
-                </Contact>
-                <Contact>
-                    <ContactType>MOBILEPHONE</ContactType>
-                    <ContactDetails>+3504872575</ContactDetails>
+                    <ContactDetails>+350487254**</ContactDetails>
                     <UseForCommunication>true</UseForCommunication>
                 </Contact>
             </ListContact>

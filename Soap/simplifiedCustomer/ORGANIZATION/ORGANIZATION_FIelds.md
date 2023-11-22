@@ -115,6 +115,13 @@
 			<td>logistics</td>
 			<td>Description of business entities' activities in a restricted region</td>
 		</tr>
+		<tr>
+			<td><b>listPurpose</b></td>
+			<td>String<br/><b>ENUM</b><br/>[BLACK,<br/> WHITE]</td>
+			<td>false</td>
+			<td>-</td>
+			<td>Whether entity is black/white listed</td>
+		</tr>
         <tr>
 			<td><b>ApprovalDate</b></td>
 			<td>Date</td>
@@ -252,12 +259,26 @@
 			<td>Whether entity has fines</td>
 		</tr>
 		<tr>
+			<td><b>IsSanctioned</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>true</td>
+			<td>Whether entity is sanctioned</td>
+		</tr>
+		<tr>
 			<td><b>IsInAdverseMedia</b></td>
 			<td>Boolean</td>
 			<td>false</td>
 			<td>true</td>
 			<td>An indication of the existence of information for an adverse media entity</td>
 		</tr>
+		<tr>
+			<td><b>IsPEP</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>false</td>
+			<td>An indicator than an entity in the organization is a politically exposed person</td>
+	    </tr>
         <tr>
 			<td><b>IsLicenseRequired</b></td>
 			<td>Boolean</td>
@@ -278,13 +299,6 @@
 			<td>false</td>
 			<td>true</td>
 			<td>Indicator for the business entity being regulated by third-party authorities</td>
-		</tr>
-		<tr>
-			<td><b>IsSanctioned</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>true</td>
-			<td>Whether entity is sanctioned</td>
 		</tr>
         <tr>
 			<td><b>LegalForm</b></td>
@@ -356,7 +370,7 @@
 			<td><b>RegionOfActivityDescription</b></td>
 			<td>String</td>
 			<td>false</td>
-			<td>Customer service</td>
+			<td>Central Europe</td>
 			<td>Description of the region for activities</td>
 		</tr>
 		<tr>

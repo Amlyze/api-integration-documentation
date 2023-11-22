@@ -29,7 +29,7 @@
 			<td><b>contractType</b></td>
 			<td>
                 String <br/>
-                <a href="../README.md#classifiers">(Contract type classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Contract type classifier)</a>
             </td>
 			<td>true</td>
 			<td>LOAN_CONTRACT</td>
@@ -67,7 +67,7 @@
 			<td><b>businessUnit</b></td>
 			<td>
                 String <br/>
-                <a href="../README.md#classifiers">(Business unit classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Business unit classifier)</a>
             </td>
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>

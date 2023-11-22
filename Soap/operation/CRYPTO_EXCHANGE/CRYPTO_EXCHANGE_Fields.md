@@ -50,7 +50,7 @@ Crypto_exchange occurs for intra-customer transactions between distinct currency
             <td><b>OperationType</b></td>
             <td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Operation type classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Operation type classifier)</a>
             </td>
             <td>true</td>
             <td>CRYPTO_EXCHANGE</td>
@@ -88,7 +88,7 @@ Crypto_exchange occurs for intra-customer transactions between distinct currency
             <td><b>RiskManagementCategory</b></td>
             <td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Risk management category classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Risk management category classifier)</a>
             </td>
             <td>true</td>
         _    <td>OP_DEFAULT</td>
@@ -98,7 +98,7 @@ Crypto_exchange occurs for intra-customer transactions between distinct currency
 			<td><b>BusinessUnit</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Business unit classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Business unit classifier)</a>
             </td>
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>
@@ -142,7 +142,7 @@ Crypto_exchange occurs for intra-customer transactions between distinct currency
             <td><b>Currency</b></td>
             <td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Currency classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Currency classifier)</a>
             </td>
             <td>true</td>
             <td>EUR</td>
@@ -159,7 +159,7 @@ Crypto_exchange occurs for intra-customer transactions between distinct currency
             <td><b>SourceCountry</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
             <td>false</td>
             <td>LT</td>
@@ -169,7 +169,7 @@ Crypto_exchange occurs for intra-customer transactions between distinct currency
             <td><b>DestinationCountry</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
             <td>false</td>
             <td>LT</td>
@@ -194,7 +194,7 @@ Crypto_exchange occurs for intra-customer transactions between distinct currency
             <td><b>IPAddressCountry</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
             <td>false</td>
             <td>LT</td>
@@ -279,7 +279,7 @@ At least one operation party account must exist in Amlyze (identified by account
             <td><b>Currency</b></td>
             <td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Currency classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Currency classifier)</a>
             </td>
             <td>true</td>
             <td>EUR</td>
