@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <AMLYZE_OPERATION xmlns="urn:amlyze-services:EvaluateOperationService_v2r0">
+            <CommunicationNumber>ComNr_0011</CommunicationNumber>
+            <Requester>Kauno kredito unija</Requester>
+            <RiskManagementCategory>OP_DEFAULT</RiskManagementCategory>
+            <BusinessUnit>BUSINESS_UNIT_NAME</BusinessUnit>
+            <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
+            <OperationType>CASH</OperationType>
+            <FinancialFlowDirection>INCOMING</FinancialFlowDirection>>
+            <OperationExtId>OP20231114T12</OperationExtId>
+            <OperationDateTime>2023-01-08T09:09:33+02:00</OperationDateTime>
+            <Currency>GBP</Currency>
+            <Amount>998</Amount>
+            <AmountInEuro>1140.41</AmountInEuro>
+            <EuroExchangeRate>1.14</EuroExchangeRate>
+            <Description>Depositing money into the account</Description>
+            <SourceCountry>LT</SourceCountry>
+            <DestinationCountry>LT</DestinationCountry>
+            <ListOperationParty>
+                <OperationParty>
+                    <PartyRole>DEBTOR</PartyRole>
+                    <AccountNumber>IND20231113T180927</AccountNumber>
+                    <EntityType>INDIVIDUAL</EntityType>
+                    <FirstName>Geli</FirstName>
+                    <LastName>Deliono</LastName>
+                </OperationParty>
+                <OperationParty>
+                    <PartyRole>CREDITOR</PartyRole>
+                    <AccountNumber>LV6630800200000018155</AccountNumber>
+                    <BIC>UANFLT21XXX</BIC>
+                    <Currency>GBP</Currency>
+                    <BankTitle>TBC Bank</BankTitle>
+                    <EntityType>INDIVIDUAL</EntityType>
+                    <FirstName>Geli</FirstName>
+                    <LastName>Deliono</LastName>
+                </OperationParty>
+            </ListOperationParty>
+        </AMLYZE_OPERATION>
+    </soap:Body>
+</soap:Envelope>

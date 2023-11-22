@@ -9,7 +9,7 @@
     "operationDateTime": "2023-11-15T15:09:33+02:00",
     "amount": 998,
     "currency": "EUR",
-    "description": "Depositing money into the account",
+    "description": "Cash withdrawal",
     "listOperationParty": [
         {
             "partyRole": "DEBTOR",
