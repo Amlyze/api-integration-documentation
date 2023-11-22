@@ -58,13 +58,13 @@
             <td>String</td>
             <td>true</td>
             <td>OP_DEFAULT</td>
-            <td>Code of risk management category of object. Risk management category code from classifier can be checked <a href="../../README.md#classifiers">here</a></td>
+            <td>Code of risk management category of object. Risk management category code from classifier can be checked <a href="../../../Classifiers/classifiers.md">here</a></td>
         </tr>
         <tr>
 			<td><b>businessUnit</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Business unit classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Business unit classifier)</a>
             </td>
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>
@@ -127,7 +127,7 @@
             <td>String</td>
             <td>true</td>
             <td>GBP</td>
-            <td>Currency code from classifier.<br/> Currency code from classifier can be checked <a href="../../README.md#classifiers">here</a></td> 
+            <td>Currency code from classifier.<br/> Currency code from classifier can be checked <a href="../../../Classifiers/classifiers.md">here</a></td> 
         </tr>
         <tr>
             <td><b>amountInEuro</b></td>

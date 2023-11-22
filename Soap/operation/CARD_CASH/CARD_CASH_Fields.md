@@ -41,7 +41,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td><b>OperationType</b></td>
             <td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Operation type classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Operation type classifier)</a>
             </td>
             <td>true</td>
             <td>CARD_CASH</td>
@@ -79,7 +79,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td><b>RiskManagementCategory</b></td>
             <td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Risk management category classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Risk management category classifier)</a>
             </td>
             <td>true</td>
             <td>OP_DEFAULT</td>
@@ -89,7 +89,7 @@ In any type of operation between two or more parties, one of the parties is alwa
 			<td><b>BusinessUnit</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Business unit classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Business unit classifier)</a>
             </td>
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>
@@ -119,7 +119,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td><b>CardOperationSubType</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Card operation subType classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Card operation subType classifier)</a>
             </td>
             <td>true/false</td>
             <td>CARD_CASH_WITHDRAWAL</td>
@@ -143,7 +143,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td><b>Currency</b></td>
             <td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Currency classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Currency classifier)</a>
             </td>
             <td>true</td>
             <td>EUR</td>
@@ -160,7 +160,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td><b>SourceCountry</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
             <td>false</td>
             <td>LT</td>
@@ -170,7 +170,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td><b>DestinationCountry</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
             <td>false</td>
             <td>LT</td>
@@ -195,7 +195,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td><b>IPAddressCountry</b></td>
 			<td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
             <td>false</td>
             <td>LT</td>
@@ -343,7 +343,7 @@ At least one operation party account must exist in Amlyze (identified by account
             <td><b>Currency</b></td>
             <td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Currency classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Currency classifier)</a>
             </td>
             <td>false</td>
             <td>EUR</td>

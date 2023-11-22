@@ -1,9 +1,8 @@
 {
 	"communicationNumber": "ComNr_000321",
-	"requester": "Bank_system",
-	"riskManagementCategory": "FAST",
+	"requester": "AMLYZE_SYSTEM",
+	"riskManagementCategory": "OCCASIONAL_CUSTOMER",
 	"entityType": "ORGANIZATION",
-	"customerExtId": "cust_1232",
-	"title": "UAB \"Dockers\"",
-	"customerStatus": "ACTIVE"
+	"customerExtId": "ORG20231117550",
+	"title": "UAB 'BrotherHood' "
 }

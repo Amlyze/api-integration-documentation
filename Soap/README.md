@@ -79,24 +79,26 @@ Is the first step in creating a customer, which is necessary for all subsequent 
 * Checking Callbacks (Webhooks)
 ---
 
+## Simplified Customer
+
+<b>Endpoint</b>
+
+* [Simplified Customer](simplifiedCustomer/simplifiedCustomer.md) : `POST /amlyze-ws-rest/simplified-customer`
+
+
+<b>Used for:</b>
+* Creating a simplified customer profile
+
+
 ## Classifiers
 
-Classifiers guide you through extracting needed values for upcoming request fields
+<b>Endpoint</b>
 
----
 
-METHOD: `GET`
-Auth required: `NO`
-Permissions required: `None`
+ * [Classifiers ](../Classifiers/classifiers.md)  `GET /classifier/classifierValue`
+  
 
----
-
- `{{baseUrl}}/classifier/classifierValue`
- * {{baseUrl}}- provided IP address that was given by the Amlyze
- * classifierValue   - a particular classifier provided below should be placed
-
- 
-<b>Example:</b> `https://{{host}}:8878/classifier/riskManagementCategory`
+> classifierValue   - a particular classifier should be placed
 
 ---
 

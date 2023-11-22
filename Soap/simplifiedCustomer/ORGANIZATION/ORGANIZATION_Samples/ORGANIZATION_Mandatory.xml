@@ -3,12 +3,11 @@
     <soap:Body>
         <AMLYZE_CUSTOMER xmlns="urn:amlyze-services:EvaluateCustomerService_v2r0">
             <CommunicationNumber>ComNr_000321</CommunicationNumber>
-            <Requester>Bank_system</Requester>
-            <RiskManagementCategory>FAST</RiskManagementCategory>
+            <Requester>AMLYZE_SYSTEM</Requester>
+            <RiskManagementCategory>OCCASIONAL_CUSTOMER</RiskManagementCategory>
             <EntityType>ORGANIZATION</EntityType>
-            <CustomerExtId>cust_1232</CustomerExtId>
-            <Title>UAB "Dockers"</Title>
-            <CustomerStatus>ACTIVE</CustomerStatus>
+            <CustomerExtId>ORG20231118878</CustomerExtId>
+            <Title>UAB 'BrotherHood'</Title>
         </AMLYZE_CUSTOMER>
     </soap:Body>
 </soap:Envelope>
