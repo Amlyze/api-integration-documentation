@@ -1,6 +1,6 @@
 {
     "communicationNumber": "ComNr_000321",
-    "requester": "Bank_system",
+    "requester": "AMLYZE_System",
     "riskManagementCategory": "OCCASIONAL_CUSTOMER",
     "riskLevel": "EXTREME",
     "customerStatus": "ACTIVE",
@@ -18,10 +18,11 @@
     "approvalDate": "2012-10-02",
     "establishmentDate": "2010-10-01",
     "nationalCode": "123456789",
-    "activityDescription": "Logistics",
+    "activityDescription": "Financial activity",
     "activityInRestrictedRegionDescription": "logistics",
     "isSanctioned": false,
     "isInAdverseMedia": true,
+    "isPEP": false,
     "GIIN": "GIIN123445",
     "LEI": "LEI124545",
     "isActualAddressDeclared": true,
@@ -52,35 +53,40 @@
     "closingDate": "2005-05-24",
     "thirdPartyServicesUsed": true,
     "thirdPartyServicesUsedDescription": "hosting",
-    "regionOfActivityDescription": "Customer service",
+    "regionOfActivityDescription": "Central Europe",
     "listAddress": [
         {
             "addressType": "HEADQUARTERS",
-            "addressDetails": "Shire",
+            "addressDetails": "19/2",
             "country": "LT",
             "region": "EU",
-            "city": null,
-            "streetAddress": null,
-            "zipCode": null,
+            "city": "Vilnius",
+            "streetAddress": "vilniaus g.",
+            "zipCode": "04578",
             "useForCorrespondence": true
         }
     ],
     "listBusinessEntityDocument": [
         {
             "entityType": "ORGANIZATION",
-            "identityDocumentType": "OTHER",
-            "documentNumber": "1",
-            "documentIssueDate": "2000-01-03",
-            "documentExpiryDate": null,
+            "identityDocumentType": "REGISTRATIONCERTIFICATE",
+            "documentNumber": "D0KN045454545",
+            "documentIssueDate": "2017-08-20",
+            "documentExpiryDate": "2027-08-20",
             "documentIssueCountry": "LT",
-            "documentIssueAuthority": "king",
-            "description": "agreement"
+            "documentIssueAuthority": "Federal Tax Service",
+            "description": "Main identification document"
         }
     ],
     "listContact": [
         {
             "contactType": "EMAIL",
-            "contactDetails": "scanned letters only",
+            "contactDetails": "Customermail@yahoo.com",
+            "useForCommunication": true
+        },
+        {
+            "contactType": "MOBILEPHONE",
+            "contactDetails": "+350487254**",
             "useForCommunication": true
         }
     ]

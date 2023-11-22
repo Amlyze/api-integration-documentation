@@ -177,6 +177,13 @@
 			<td>An indication of the existence of information for an adverse media entity</td>
 		</tr>
 		<tr>
+			<td><b>isPEP</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>false</td>
+			<td>Identification for whether a person in organization is politically exposed</td>
+		</tr>
+		<tr>
 			<td><b>GIIN</b></td>
 			<td>String</td>
 			<td>false</td>
@@ -386,7 +393,7 @@
 			<td><b>regionOfActivityDescription</b></td>
 			<td>String</td>
 			<td>false</td>
-			<td></td>
+			<td>Central Europe</td>
 			<td>Description of the region for activities</td>
 		</tr>
 		<tr>

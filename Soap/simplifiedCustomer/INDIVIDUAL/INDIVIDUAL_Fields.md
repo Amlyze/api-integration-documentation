@@ -123,6 +123,13 @@
 			<td>Indicator for the person being AML officer</td>
 		</tr>
 		<tr>
+			<td><b>ListPurpose</b></td>
+			<td>String<br/><b>ENUM</b><br/>[BLACK,<br/> WHITE]</td>
+			<td>false</td>
+			<td>-</td>
+			<td>Whether entity is black/white listed</td>
+		</tr>
+		<tr>
 			<td><b>ApprovalDate</b></td>
 			<td>Date</td>
 			<td>false</td>

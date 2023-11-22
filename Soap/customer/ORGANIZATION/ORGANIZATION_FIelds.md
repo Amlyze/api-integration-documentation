@@ -1330,7 +1330,7 @@
 			<td><b>RegionOfActivityDescription</b></td>
 			<td>String</td>
 			<td>false</td>
-			<td>EU</td>
+			<td>Central europe</td>
 			<td>Description of activity region of related entity</td>
 	    </tr>
 	    <tr>
