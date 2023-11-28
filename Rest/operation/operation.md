@@ -42,11 +42,11 @@ An operation is a transaction between two or more parties, where one of the part
 * [Import_INTERNAL_Mandatory.json](INTERNAL/INTERNAL_Samples/import_INTERNAL_Mandatory.json)
 ---
 
-[<b>CARD_PAYMENT Fields</b>](CARD_PAYMENT/CARD_PAYMENT_Fields.md)
-* [Evaluate_CARD_PAYMENT_Full.json](samples/evaluate_CARD_PAYMENT_Full.json)
-* [Evaluate_CARD_PAYMENT_Mandatory.json](samples/evaluate_CARD_PAYMENT_Mandatory.json)
-* [Import_CARD_PAYMENT_Full.json](samples/import_CARD_PAYMENT_Full.json)
-* [Import_CARD_PAYMENT_Mandatory.json](samples/import_CARD_PAYMENT_Mandatory.json)
+[<b>CARD_PAYMENT Fields</b>](CARD_PAYMENTS/CARD_PAYMENT_Fields.md)
+* [Evaluate_CARD_PAYMENT_Full.json](CARD_PAYMENTS/CARD_PAYMENT_Samples/evaluate_CARD_PAYMENT_Full.json)
+* [Evaluate_CARD_PAYMENT_Mandatory.json](CARD_PAYMENTS/CARD_PAYMENT_Samples/samples/evaluate_CARD_PAYMENT_Mandatory.json)
+* [Import_CARD_PAYMENT_Full.json](CARD_PAYMENTS/CARD_PAYMENT_Samples/import_CARD_PAYMENT_Full.json)
+* [Import_CARD_PAYMENT_Mandatory.json](CARD_PAYMENTS/CARD_PAYMENT_Samples/import_CARD_PAYMENT_Mandatory.json)
 ---
 
 [<b>CARD_CASH Fields</b>](CARD_CASH/CARD_CASH_Fields.md)
