@@ -44,7 +44,7 @@ In any type of operation between two or more parties, one of the parties is alwa
                 <a href="../../../Classifiers/classifiers.md">(Operation type classifier)</a>
             </td>
             <td>true</td>
-            <td>FASTER_PAYMENT</td>
+            <td>FASTER_PAYMENTS</td>
             <td>Notifies about what kind of operation was performed</td>
         </tr>
         <tr>
