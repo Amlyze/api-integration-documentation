@@ -22,11 +22,13 @@ URL structure: `https://[host][port][path][service]`
 ## Customer
 
 Is the first step in creating a customer, which is necessary for all subsequent operations in the API. 
-<b> Press [here](customer/customer.md) and move to Customer API page</b>
 
 <b>Endpoint</b>
 
-`POST /amlyze-ws-rest/customer`
+* `POST /amlyze-ws-rest/customer`
+
+> Click [here](customer/customer.md)  to move to <b>Customer</b> page
+
     
 <b>Used for:</b>
 * Checking customers against sanctions lists
@@ -41,12 +43,12 @@ Is the first step in creating a customer, which is necessary for all subsequent 
 ## Account
 The second step. Page provides API fields for adding accounts to the customers
 
-<b>Press [here](account/account.md) and move to Account API page</b>
-
 <b>Endpoint</b>
 
 * `POST /amlyze-ws-rest/account`
-    
+
+
+> Click [here](account/account.md)  to move to <b>Account</b> page
 
 
 <b>Used for:</b>
@@ -59,11 +61,11 @@ The second step. Page provides API fields for adding accounts to the customers
 ## Operations
 The Grand Final. Comprehensive overview of operation types, conditions, and workflows
 
-<b> Press [here](operation/operation.md) and move to Operation API page </b>
-
 <b>Endpoint</b>
 
 * `POST /amlyze-ws-rest/operation`
+
+> Click [here](operation/operation.md) to move to <b>Operation</b> page
 
 
 <b>Used for:</b>
@@ -79,7 +81,9 @@ The Grand Final. Comprehensive overview of operation types, conditions, and work
 
 <b>Endpoint</b>
 
-* [Contract](contract/contract.md) : `POST /amlyze-ws-rest/contract`
+ * `POST /amlyze-ws-rest/contract`
+
+ > Click [here](contract/contract.md) to move to <b>Contract</b> page
 
 <b>Used for:</b>
 * Creating a new contract for the customer
@@ -91,7 +95,9 @@ The Grand Final. Comprehensive overview of operation types, conditions, and work
 
 <b>Endpoint</b>
 
-* [Simplified Customer](simplifiedCustomer/simplifiedCustomer.md) : `POST /amlyze-ws-rest/simplified-customer`
+* `POST /amlyze-ws-rest/simplified-customer`
+
+> Click [here](simplifiedCustomer/simplifiedCustomer.md) to move to <b>Simplified Customer</b> page
 
 
 <b>Used for:</b>
@@ -102,34 +108,10 @@ The Grand Final. Comprehensive overview of operation types, conditions, and work
 
 <b>Endpoint</b>
 
+* `GET /classifier/classifierValue`
 
- * [Classifiers ](../Classifiers/classifiers.md)  `GET /classifier/classifierValue`
+
+ > Click [here](../Classifiers/classifiers.md) to move to <b>Classifiers</b> page 
   
 
->classifierValue   - a particular classifier should be placed
-
-
-* `GET /classifier/relationType`
-* `GET /classifier/accountType`
-* `GET /classifier/activityType`
-* `GET /classifier/appealReasonType`
-* `GET /classifier/businessunit`
-* `GET /classifier/serviceType`
-* `GET /classifier/legalForm`
-* `GET /classifier/serviceType`
-* `GET /classifier/legalForm`
-* `GET /classifier/incomeSourceType`
-* `GET /classifier/sourceOfWealth`
-* `GET /classifier/currency`
-* `GET /classifier/country`
-* `GET /classifier/decisionGround`
-* `GET /classifier/operationType`
-* `GET /classifier/fnttOperationType`
-* `GET /classifier/fnttReportType`
-* `GET /classifier/fnttSuspicionCriteria`
-* `GET /classifier/introductionSourceType`
-* `GET /classifier/paymentPurposeType`
-* `GET /classifier/managementActionType`
-* `GET /classifier/riskManagementCategory`
-* `GET /classifier/turnoverType`
-* `GET /classifier/addressType`
+* classifierValue   - a particular classifier should be placed
