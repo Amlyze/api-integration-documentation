@@ -21,7 +21,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td>String</td>
             <td>true</td>
             <td>ComNr_0011</td>
-            <td>Unique number of communication</td>
+            <td>Unique number of communication. This field can store up to 256 characters</td>
         </tr>
         <tr>
             <td><b>Requester</b></td>

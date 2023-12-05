@@ -16,7 +16,7 @@
 			<td>String</td>
 			<td>true</td>
 			<td>ComNr_000321</td>
-			<td>Unique number of communication. used for risk assessment callback</td>
+			<td>Unique number of communication. Used for risk assessment callback. This field can store up to 256 characters</td>
 		</tr>
 		<tr>
 			<td><b>requester</b></td>

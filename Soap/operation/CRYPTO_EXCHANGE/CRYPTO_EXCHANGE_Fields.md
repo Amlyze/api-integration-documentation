@@ -30,7 +30,7 @@ Crypto_exchange occurs for intra-customer transactions between distinct currency
             <td>String</td>
             <td>true</td>
             <td>ComNr_0011</td>
-            <td>Unique number of communication</td>
+            <td>Unique number of communication. This field can store up to 256 characters</td>
         </tr>
         <tr>
             <td><b>Requester</b></td>

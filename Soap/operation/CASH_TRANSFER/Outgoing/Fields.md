@@ -45,7 +45,7 @@
             <td>String</td>
             <td>true</td>
             <td>ComNr_0011</td>
-            <td>Unique number of communication</td>
+            <td>Unique number of communication. This field can store up to 256 characters</td>
         </tr>
         <tr>
             <td><b>            <td><b>Requester</b></td>
