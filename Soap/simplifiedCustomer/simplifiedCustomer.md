@@ -39,15 +39,15 @@ therefore workflows for these two separate servers differ.
 ## Samples
 >Simplified Individual API Fields [*here*](INDIVIDUAL/INDIVIDUAL_Fields.md) 
 
-* [Individual Mandatory](INDIVIDUAL/INDIVIDUAL_Samples/individual_Mandatory.xml) 
-* [Individual Full](INDIVIDUAL/INDIVIDUAL_Samples/individual_Full.xml)
+* [Individual Mandatory](../simplifiedCustomer/INDIVIDUAL/INDIVIDUAL_Samples/individual_Mandatory.xml) 
+* [Individual Full](../simplifiedCustomer/INDIVIDUAL/INDIVIDUAL_Samples/individual_Full.xml)
 
 --- 
 
 >Simplified Organization API Fields [*here*](ORGANIZATION/ORGANIZATION_Fields.md) 
 
-* [Organization Mandatory](ORGANIZATION/ORGANIZATION_Samples/organization_Mandatory.xml) 
-* [Organization Full](ORGANIZATION/ORGANIZATION_Samples/organization_Full.xml)
+* [Organization Mandatory](../simplifiedCustomer/ORGANIZATION/ORGANIZATION_Samples/organization_Mandatory.xml) 
+* [Organization Full](../simplifiedCustomer/ORGANIZATION/ORGANIZATION_Samples/organization_Full.xml)
 
 ----------------------
 

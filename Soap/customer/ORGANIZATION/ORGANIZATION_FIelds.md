@@ -52,10 +52,8 @@
             </td>
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>
-			<td>
-                Unit data identification for controllability/observability.
-                <br/>❗NOTE: parameter is required only if business unit strict mode enabled
-            </td>
+			<td>This parameter is mandatory only for clients utilizing a multi-organizational solution. 
+            ❗<b>Omit this parameter unless instructed about it.</b>❗</br> It serves to specify the unique identifier for the business unit. Business units are logical groupings of users and data. Each business unit can have its own set of users, permissions, and data access rules. </br><i>(Upcoming feature)</i></td>
 		<tr>
 			<td><b>SourceOfRiskLevel</b></td>
 			<td>String<br/><b>ENUM</b><br/>[IMPORT,EVALUATE]</td>
@@ -227,6 +225,13 @@
 			<td>Source of initial deposit</td>
 		</tr>
 		<tr>
+			<td><b>IsCorrespondenceAddressDeclared</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>false</td>
+			<td>Indicator for correspondence address declaration</td>
+		</tr>
+		<tr>
 			<td><b>IsActualAddressDeclared</b></td>
 			<td>Boolean</td>
 			<td>false</td>
@@ -239,13 +244,6 @@
 			<td>false</td>
 			<td>false</td>
 			<td>Indicator for the business entity being audited</td>
-		</tr>
-		<tr>
-			<td><b>IsCorrespondenceAddressDeclared</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>true</td>
-			<td>Indicator for correspondence address declaration.</td>
 		</tr>
 		<tr>
 			<td><b>IsDirectlyManaged</b></td>

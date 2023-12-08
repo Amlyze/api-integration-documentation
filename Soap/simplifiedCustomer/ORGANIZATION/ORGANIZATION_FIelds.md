@@ -6,7 +6,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example/Ref</b></td>
+			<td><b>Example</b></td>
 			<td width="600px"><b>Description</b></td>
 		</tr>
 	</thead>
@@ -22,7 +22,7 @@
 			<td><b>Requester</b></td>
 			<td>String</td>
 			<td>true</td>
-			<td>financial_institution</td>
+			<td>AMLYZE_SYSTEM</td>
 			<td>Name of the system requesting web service</td>
 		</tr>
 		<tr>
@@ -32,23 +32,10 @@
                 <a href="../../README.md#classifiers">(Risk management category classifier)</a>
             </td>
 			<td>true</td>
-			<td>FAST</td>
+			<td>OCCASIONAL_CUSTOMER</td>
 			<td>
                 Code of risk management category for evaluation of the object.<br/>💡 
                 Possible values here are given just as an example, in the configuration period these could be updated
-            </td>
-		</tr>
-		<tr>
-			<td><b>BusinessUnit</b></td>
-			<td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Business unit classifier)</a>
-            </td>
-			<td>true/false</td>
-			<td>BUSINESS_UNIT_NAME</td>
-			<td>
-                Unit data identification for controllability/observability.
-                <br/>❗NOTE: parameter is required only if business unit strict mode enabled
             </td>
 		</tr>
 		<tr>
@@ -56,29 +43,14 @@
 			<td>String<br/><b>ENUM</b><br/>[NONE,<br/> LOW,<br/> MEDIUM,<br/> HIGH,<br/> EXTREME]</td>
 			<td>false</td>
 			<td>HIGH</td>
-			<td>
-                The Risk Level of the customer. Default value is NONE.</td>
-		</tr>
-		<tr>
-			<td><b>InitializeScreeningProcesses</b></td>
-			<td>Object</td>
-			<td>false</td>
-            <td><a href="#Process">Process[]</a></td>
-			<td>Defines which screening processes to initiate</td>
+			<td>The Risk Level of the customer. Default value is NONE.</td>
 		</tr>
 		<tr>
 			<td><b>CustomerStatus</b></td>
 			<td>String<br/><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
-			<td>true</td>
+			<td>false</td>
 			<td>ACTIVE</td>
 			<td>Customer status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received.<br/> ACTIVE - Customer is onboarded ( account is provided or customer assessment case is resolved)<br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is changed to being disabled</i></td>
-		</tr>
-		<tr>
-			<td><b>CustomerExtId</b></td>
-			<td>String</td>
-			<td>true</td>
-			<td>cust_1232</td>
-			<td>Unique external customer identifier. The identifier corresponds to the client's identifier in the financial institution</td>
 		</tr>
 		<tr>
 			<td><b>EntityType</b></td>
@@ -88,11 +60,29 @@
 			<td>Type of business entity</td>
 		</tr>
 		<tr>
-			<td><b>NationalCode</b></td>
+			<td><b>CustomerExtId</b></td>
 			<td>String</td>
+			<td>true</td>
+			<td>ORG20231117550</td>
+			<td>Unique external customer identifier. The identifier corresponds to the client's identifier in the financial institution</td>
+		</tr>
+		<tr>
+			<td><b>BusinessUnit</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Business unit classifier)</a>
+            </td>
+			<td>true/false</td>
+			<td>BUSINESS_UNIT_NAME</td>
+			<td>This parameter is mandatory only for clients utilizing a multi-organizational solution. 
+            ❗<b>Omit this parameter unless instructed about it.</b>❗</br> It serves to specify the unique identifier for the business unit. Business units are logical groupings of users and data. Each business unit can have its own set of users, permissions, and data access rules. </br><i>(Upcoming feature)</i></td>
+		</tr>
+		<tr>
+			<td><b>InitializeScreeningProcesses</b></td>
+			<td>String[]</td>
 			<td>false</td>
-			<td>REG74121101</td>
-			<td>National code or national identification number of organization. If a country does not issue national code, any other unique identifier can be used:<br/> <i>* Passport number;<br/>* Social security number of person; <br/> * A number of taxpayer or registration certificate of the company, etc <br/> * A number of taxpayer or registration certificate of the company</i></td>
+			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
+			<td>Defines which screening processes to initiate</td>
 		</tr>
 		<tr>
 			<td><b>ApplicationDate</b></td>
@@ -100,6 +90,61 @@
 			<td>false</td>
 			<td>2000-01-03</td>
 			<td>Date when customer first applied</td>
+		</tr>
+		<tr>
+			<td><b>Title</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>UAB "BrotherHood"</td>
+			<td>Title of organization entity</td>
+		</tr>
+		<tr>
+			<td><b>RegistrationCountry</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
+			<td>false</td>
+			<td>LT</td>
+			<td>Country of registration of the organization</td>
+		</tr>
+		<tr>
+			<td><b>LegalForm</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Legal form classifier)</a>
+            </td>
+			<td>false</td>
+			<td>LTD</td>
+			<td>Legal form of organization</td>
+		</tr>
+		<tr>
+			<td><b>ApprovalDate</b></td>
+			<td>Date</td>
+			<td>false</td>
+			<td>2000-01-03</td>
+			<td>Date of application approval</td>
+		</tr>
+		<tr>
+			<td><b>ClosingDate</b></td>
+			<td>Date</td>
+			<td>false</td>
+			<td>2005-05-24</td>
+			<td>Date of closure of all accounts</td>
+		</tr>
+		<tr>
+			<td><b>EstablishmentDate</b></td>
+			<td>Date</td>
+			<td>false</td>
+			<td>2001-02-23</td>
+			<td>Establishment date for organization type entities</td>
+		</tr>
+		<tr>
+			<td><b>NationalCode</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>REG74121101</td>
+			<td>National code or national identification number of organization. If a country does not issue national code, any other unique identifier can be used:<br/> <i>* Passport number;<br/>* Social security number of person; <br/> * A number of taxpayer or registration certificate of the company, etc <br/> * A number of taxpayer or registration certificate of the company</i></td>
 		</tr>
 		<tr>
 			<td><b>ActivityDescription</b></td>
@@ -114,149 +159,6 @@
 			<td>false</td>
 			<td>logistics</td>
 			<td>Description of business entities' activities in a restricted region</td>
-		</tr>
-		<tr>
-			<td><b>listPurpose</b></td>
-			<td>String<br/><b>ENUM</b><br/>[BLACK,<br/> WHITE]</td>
-			<td>false</td>
-			<td>-</td>
-			<td>Whether entity is black/white listed</td>
-		</tr>
-        <tr>
-			<td><b>ApprovalDate</b></td>
-			<td>Date</td>
-			<td>false</td>
-			<td>2000-01-03</td>
-			<td>Date of application approval</td>
-		</tr>
-        <tr>
-			<td><b>ClosingDate</b></td>
-			<td>Date</td>
-			<td>false</td>
-			<td>2005-05-24</td>
-			<td>Date of closure of all accounts</td>
-		</tr>
-		<tr>
-			<td><b>CompanyAssetValue</b></td>
-			<td>BigInteger</td>
-			<td>false</td>
-			<td>100000</td>
-			<td>value of companies assets</td>
-		</tr>
-		<tr>
-			<td><b>DoesCashDominate</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>true</td>
-			<td>Indicator for cash being the main income source</td>
-		</tr>
-		<tr>
-			<td><b>EstablishmentDate</b></td>
-			<td>Date</td>
-			<td>false</td>
-			<td>2001-02-23</td>
-			<td>Establishment date for organization type entities</td>
-		</tr>
-        <tr>
-			<td><b>GIIN</b></td>
-			<td>String</td>
-			<td>false</td>
-			<td>GIN548745122</td>
-			<td>Global intermediary identification number.</td>
-		</tr>
-		<tr>
-			<td><b>HasMultiLayerStructure</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>false</td>
-			<td>Check for multi-layer organizational structure</td>
-		</tr>
-        <tr>
-			<td><b>IncomeSourceDescription</b></td>
-			<td>String</td>
-			<td>false</td>
-			<td>work</td>
-			<td>Description of income source of the entity</td>
-		</tr>
-		<tr>
-			<td><b>InitialDepositAccount</b></td>
-			<td>String</td>
-			<td>false</td>
-			<td>LT0000000000000000</td>
-			<td>Account of initial deposit</td>
-		</tr>
-		<tr>
-			<td><b>InitialDepositAmount</b></td>
-			<td>Double</td>
-			<td>false</td>
-			<td>10000</td>
-			<td>Amount of initial deposit</td>
-		</tr>
-		<tr>
-			<td><b>InitialDepositBank</b></td>
-			<td>String</td>
-			<td>false</td>
-			<td>BankBank</td>
-			<td>Bank of the initial deposit</td>
-		</tr>
-		<tr>
-			<td><b>InitialDepositCurrency</b></td>
-            <td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Currency classifier)</a>
-            </td>
-			<td>false</td>
-			<td>EUR</td>
-			<td>Currency field notifies about the currency used in a certain operation.</td>
-		</tr>
-		<tr>
-			<td><b>InitialDepositSource</b></td>
-			<td>String</td>
-			<td>false</td>
-			<td>Dividend</td>
-			<td>Source of initial deposit</td>
-		</tr>
-		<tr>
-			<td><b>IsActualAddressDeclared</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>false</td>
-			<td>Whether customer declared ActualAddress</td>
-		</tr>
-		<tr>
-			<td><b>IsAudited</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>false</td>
-			<td>Indicator for the business entity being audited</td>
-		</tr>
-		<tr>
-			<td><b>IsCorrespondenceAddressDeclared</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>true</td>
-			<td>Indicator for correspondence address declaration.</td>
-		</tr>
-		<tr>
-			<td><b>IsDirectlyManaged</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>false</td>
-			<td>Check for direct management</td>
-		</tr>
-        <tr>
-			<td><b>IsFinancialInstitution</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>false</td>
-			<td>Whether entity is financial institution</td>
-		</tr>
-		<tr>
-			<td><b>IsFined</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>false</td>
-			<td>Whether entity has fines</td>
 		</tr>
 		<tr>
 			<td><b>IsSanctioned</b></td>
@@ -277,38 +179,14 @@
 			<td>Boolean</td>
 			<td>false</td>
 			<td>false</td>
-			<td>An indicator than an entity in the organization is a politically exposed person</td>
-	    </tr>
-        <tr>
-			<td><b>IsLicenseRequired</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>true</td>
-			<td>Whether entity activity requires license</td>
+			<td>Identification for whether a person in organization is politically exposed</td>
 		</tr>
 		<tr>
-			<td><b>IsListed</b></td>
-			<td>Boolean</td>
+			<td><b>GIIN</b></td>
+			<td>String</td>
 			<td>false</td>
-			<td>false</td>
-			<td>Indicator for the business entity is listed in stock exchange companies</td>
-		</tr>
-        <tr>
-			<td><b>IsRegulated</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>true</td>
-			<td>Indicator for the business entity being regulated by third-party authorities</td>
-		</tr>
-        <tr>
-			<td><b>LegalForm</b></td>
-			<td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Legal form classifier)</a>
-            </td>
-			<td>false</td>
-			<td>LTD</td>
-			<td>Legal form of organization</td>
+			<td>GIN548745122</td>
+			<td>Global intermediary identification number.</td>
 		</tr>
 		<tr>
 			<td><b>LEI</b></td>
@@ -318,18 +196,77 @@
 			<td>LEI stands for Legal Entity Identifier, which is a unique code used to identify legal entities that participate in financial transactions</td>
 		</tr>
 		<tr>
-			<td><b>LicenseDescription</b></td>
-			<td>String</td>
+			<td><b>IsActualAddressDeclared</b></td>
+			<td>Boolean</td>
 			<td>false</td>
-			<td>Licence No.4012</td>
-			<td>Business entities license description</td>
+			<td>false</td>
+			<td>Whether customer declared ActualAddress</td>
 		</tr>
 		<tr>
-			<td><b>NoMajorShareHolders</b></td>
+			<td><b>isCorrespondenceAddressDeclared</b></td>
 			<td>Boolean</td>
 			<td>false</td>
 			<td>true</td>
-			<td>Check for no major shareholders involved</td>
+			<td>Indicator for correspondence address declaration.</td>
+		</tr>
+		<tr>
+			<td><b>IncomeSourceDescription</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>Salary</td>
+			<td>Description of income source of the entity</td>
+		</tr>
+		<tr>
+			<td><b>InitialDepositSource</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>Dividends</td>
+			<td>Source of initial deposit</td>
+		</tr>
+		<tr>
+			<td><b>InitialDepositBank</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>BankBank</td>
+			<td>Bank of the initial deposit</td>
+		</tr>
+		<tr>
+			<td><b>InitialDepositAccount</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>LT0055874421004578</td>
+			<td>Account of initial deposit</td>
+		</tr>
+		<tr>
+			<td><b>InitialDepositAmount</b></td>
+			<td>Double</td>
+			<td>false</td>
+			<td>10000</td>
+			<td>Amount of initial deposit</td>
+		</tr>
+		<tr>
+			<td><b>InitialDepositCurrency</b></td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Currency classifier)</a>
+            </td>
+			<td>false</td>
+			<td>EUR</td>
+			<td>Currency field notifies about the currency used in a certain operation.</td>
+		</tr>
+		<tr>
+			<td><b>DoesCashDominate</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>true</td>
+			<td>Indicator for cash being the main income source</td>
+		</tr>
+			<tr>
+			<td><b>IsAudited</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>false</td>
+			<td>Indicator for the business entity being audited</td>
 		</tr>
 		<tr>
 			<td><b>NumberOfAudits</b></td>
@@ -339,11 +276,11 @@
 			<td>The number of times a business entity has been audited</td>
 		</tr>
 		<tr>
-			<td><b>NumberOfEmployees</b></td>
-			<td>Integer</td>
+			<td><b>PeriodsOfAuditsInYears</b></td>
+			<td>integer</td>
 			<td>false</td>
-			<td>25</td>
-			<td>The number of employees in the company</td>
+			<td>3</td>
+			<td>The number of years that are in question for being audited</td>
 		</tr>
 		<tr>
 			<td><b>OrganizationalStructureDescription</b></td>
@@ -353,11 +290,53 @@
 			<td>Description of organization structure</td>
 		</tr>
 		<tr>
-			<td><b>PeriodsOfAuditsInYears</b></td>
-			<td>integer</td>
+			<td><b>HasMultiLayerStructure</b></td>
+			<td>Boolean</td>
 			<td>false</td>
-			<td>3</td>
-			<td>The number of years that are in question for being audited</td>
+			<td>false</td>
+			<td>Check for multi-layer organizational structure</td>
+		</tr>
+		  <tr>
+			<td><b>IsFinancialInstitution</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>false</td>
+			<td>Whether entity is financial institution</td>
+		</tr>
+			<tr>
+			<td><b>IsDirectlyManaged</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>false</td>
+			<td>Check for direct management</td>
+		</tr>
+		<tr>
+			<td><b>NoMajorShareHolders</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>true</td>
+			<td>Check for no major shareholders involved</td>
+		</tr>
+		<tr>
+			<td><b>NumberOfEmployees</b></td>
+			<td>Integer</td>
+			<td>false</td>
+			<td>25</td>
+			<td>The number of employees in the company</td>
+		</tr>
+		<tr>
+			<td><b>CompanyAssetValue</b></td>
+			<td>BigInteger</td>
+			<td>false</td>
+			<td>100000</td>
+			<td>value of companies assets</td>
+		</tr>
+		<tr>
+			<td><b>IsFined</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>false</td>
+			<td>Whether entity has fines</td>
 		</tr>
 		<tr>
 			<td><b>PeriodsOfFiningInYears</b></td>
@@ -366,24 +345,35 @@
 			<td>3</td>
 			<td>The number of years that are in question for being fined</td>
 		</tr>
-        <tr>
-			<td><b>RegionOfActivityDescription</b></td>
-			<td>String</td>
+		<tr>
+			<td><b>IsListed</b></td>
+			<td>Boolean</td>
 			<td>false</td>
-			<td>Central Europe</td>
-			<td>Description of the region for activities</td>
+			<td>false</td>
+			<td>Indicator for the business entity is listed in stock exchange companies</td>
 		</tr>
 		<tr>
-			<td><b>RegistrationCountry</b></td>
-			<td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
-            </td>
+			<td><b>IsRegulated</b></td>
+			<td>Boolean</td>
 			<td>false</td>
-			<td>LT</td>
-			<td>Country of registration of the organization</td>
+			<td>true</td>
+			<td>Indicator for the business entity being regulated by third-party authorities</td>
 		</tr>
-        <tr>
+		<tr>
+			<td><b>IsLicenseRequired</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>true</td>
+			<td>Whether entity activity requires license</td>
+		</tr>
+		<tr>
+			<td><b>LicenseDescription</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>LicenceNo:LV57.144</td>
+			<td>Business entities license description</td>
+		</tr>
+		<tr>
 			<td><b>ThirdPartyServicesUsed</b></td>
 			<td>String</td>
 			<td>false</td>
@@ -398,59 +388,37 @@
 			<td>Description of third party services</td>
 		</tr>
 		<tr>
-			<td><b>Title</b></td>
+			<td><b>RegionOfActivityDescription</b></td>
 			<td>String</td>
-			<td>true</td>
-			<td>Moller</td>
-			<td>Title of organization entity</td>
+			<td>false</td>
+			<td>Central Europe</td>
+			<td>Description of the region for activities</td>
 		</tr>
 		<tr>
 			<td><b>ListAddress</b></td>
-			<td>Object</td>
+            <td><a href="#AddressApi">AddressApi[]</a></td>
 			<td>false</td>
-            <td><a href="#Address">Address[]</a></td>
+			<td>-</td>
 			<td>List of addresses</td>
 		</tr>
 		<tr>
 			<td><b>ListBusinessEntityDocument</b></td>
-			<td>Object</td>
+            <td><a href="#BusinessEntityDocumentApi">BusinessEntityDocumentApi[]</a></td>
 			<td>false</td>
-            <td><a href="#BusinessEntityDocument">BusinessEntityDocument[]</a></td>
+			<td>-</td>
 			<td>List of related entity documents</td>
 		</tr>
 		<tr>
 			<td><b>ListContact</b></td>
-			<td>Object</td>
+            <td><a href="#ContactApi">ContactApi[]</a></td>
 			<td>false</td>
-            <td><a href="#Contact">Contact[]</a></td>
+			<td>-</td>
 			<td>List of contacts of related entity</td>
 		</tr>
 	</tbody>
 </table>
 
-
-## Process
-
-<table>
-	<thead>
-		<tr>
-			<td><b>Field</b></td>
-			<td><b>Type</b></td>
-			<td><b>Mandatory</b></td>
-			<td><b>Example/Ref</b></td>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><b>Process</b></td>
-            <td>String</td>
-            <td>true</td>
-			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
-		</tr>
-	</tbody>
-</table>
-
-## Address
+## AddressApi
 
 <table>
 	<thead>
@@ -458,7 +426,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example/Ref</b></td>
+			<td><b>Example</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
@@ -529,7 +497,7 @@
 </table>
 
 
-## BusinessEntityDocument
+## BusinessEntityDocumentApi
 
 <table>
 	<thead>
@@ -537,7 +505,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example/Ref</b></td>
+			<td><b>Example</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
@@ -601,7 +569,7 @@
 	</tbody>
 </table>
 
-## Contact
+## ContactApi
 
 <table>
 	<thead>
@@ -609,7 +577,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example/Ref</b></td>
+			<td><b>Example</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
