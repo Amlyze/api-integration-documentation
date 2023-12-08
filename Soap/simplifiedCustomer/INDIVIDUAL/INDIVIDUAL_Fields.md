@@ -6,23 +6,23 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example/Ref</b></td>
+			<td><b>Example</b></td>
 			<td width="600px"><b>Description</b></td>
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
+	<tr>
 			<td><b>CommunicationNumber</b></td>
 			<td>String</td>
 			<td>true</td>
 			<td>ComNr_000321</td>
-			<td>Unique number of communication. used for risk assessment callback</td>
+			<td>Unique number of communication. Used for risk assessment callback. This field can store up to 256 characters</td>
 		</tr>
 		<tr>
 			<td><b>Requester</b></td>
 			<td>String</td>
 			<td>true</td>
-			<td>financial_institution</td>
+			<td>AMLYZE_SYSTEM</td>
 			<td>Name of the system requesting web service</td>
 		</tr>
 		<tr>
@@ -60,15 +60,13 @@
             </td>
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>
-			<td>
-                Unit data identification for controllability/observability.
-                <br/>❗NOTE: parameter is required only if business unit strict mode enabled
-            </td>
+			<td>This parameter is mandatory only for clients utilizing a multi-organizational solution. 
+            ❗<b>Omit this parameter unless instructed about it.</b>❗</br> It serves to specify the unique identifier for the business unit. Business units are logical groupings of users and data. Each business unit can have its own set of users, permissions, and data access rules. </br><i>(Upcoming feature)</i></td>
 		</tr>
 		<tr>
 			<td><b>CustomerStatus</b></td>
 			<td>String<br/><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
-			<td>true</td>
+			<td>false</td>
 			<td>ACTIVE</td>
 			<td>Customer status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received.<br/> ACTIVE - Customer is onboarded ( account is provided or customer assessment case is resolved)<br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is changed to being disabled</i></td>
 		</tr>
@@ -77,14 +75,13 @@
 			<td>String<br/><b>ENUM</b><br/>[NONE,<br/> LOW,<br/> MEDIUM,<br/> HIGH,<br/> EXTREME]</td>
 			<td>false</td>
 			<td>HIGH</td>
-			<td>
-                The Risk Level of the customer. Default value is NONE.</td>
+			<td>The Risk Level of the customer during IMPORT</td>
 		</tr>
 		<tr>
 			<td><b>InitializeScreeningProcesses</b></td>
-			<td>Object</td>
+			<td>String[]</td>
 			<td>false</td>
-            <td><a href="#Process">Process[]</a></td>
+			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
 			<td>Defines which screening processes to initiate</td>
 		</tr>
 		<tr>
@@ -97,7 +94,7 @@
 		<tr>
 			<td><b>ApplicationDate</b></td>
 			<td>Date</td>
-			<td>false</td>
+			<td>true</td>
 			<td>2000-01-03</td>
 			<td>Date when customer first applied</td>
 		</tr>
@@ -107,13 +104,6 @@
 			<td>false</td>
 			<td>financial activity</td>
 			<td>Description of entity activity</td>
-		</tr>
-		<tr>
-			<td><b>ActivityInRestrictedRegionDescription</b></td>
-			<td>String</td>
-			<td>false</td>
-			<td>logistics</td>
-			<td>Description of business entities' activities in a restricted region</td>
 		</tr>
 		<tr>
 			<td><b>AmlOfficer</b></td>
@@ -142,14 +132,14 @@
                 String <br/>
                 <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
-			<td>false</td>
+			<td>true</td>
 			<td>LT</td>
 			<td>Country of birth of individual entity</td>
 		</tr>
 		<tr>
 			<td><b>BirthDate</b></td>
 			<td>Date</td>
-			<td>false</td>
+			<td>true</td>
 			<td>1995-05-24</td>
 			<td>Date of birth of individual entity</td>
 		</tr>
@@ -159,16 +149,16 @@
                 String <br/>
                 <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
-			<td>false</td>
+			<td>true</td>
 			<td>LT</td>
 			<td>Country of citizenship of individual entity</td>
 		</tr>
 		<tr>
 			<td><b>ClosingDate</b></td>
 			<td>Date</td>
-			<td>false</td>
+			<td>true/false</td>
 			<td>2015-05-24</td>
-			<td>Date of closure of all accounts</td>
+			<td>Date of closure of all accounts <br/><b>Mandatory</b> when customerStatus = CLOSED<br/><b>Not Mandatory</b>  when customerStatus = PENDING, ACTIVE, REJECTED, SUSPENDED</td>
 		</tr>
         <tr>
 			<td><b>DoesCashDominate</b></td>
@@ -236,7 +226,7 @@
 			<td>Dividend</td>
 			<td>Source of initial deposit</td>
 		</tr>
-		<tr>
+        <tr>
 			<td><b>IsActualAddressDeclared</b></td>
 			<td>Boolean</td>
 			<td>false</td>
@@ -307,23 +297,23 @@
 		</tr>
 		<tr>
 			<td><b>ListAddress</b></td>
-			<td>Object</td>
+            <td><a href="#AddressApi">AddressApi[]</a></td>
 			<td>false</td>
-            <td><a href="#Address">Address[]</a></td>
+			<td>-</td>
 			<td>List of addresses</td>
 		</tr>
 		<tr>
 			<td><b>ListBusinessEntityDocument</b></td>
-			<td>Object</td>
+            <td><a href="#BusinessEntityDocumentApi">BusinessEntityDocumentApi[]</a></td>
 			<td>false</td>
-            <td><a href="#BusinessEntityDocument">BusinessEntityDocument[]</a></td>
+			<td>-</td>
 			<td>List of related entity documents</td>
 		</tr>
 		<tr>
 			<td><b>ListContact</b></td>
-			<td>Object</td>
+            <td><a href="#ContactApi">ContactApi[]</a></td>
 			<td>false</td>
-            <td><a href="#Contact">Contact[]</a></td>
+			<td>-</td>
 			<td>List of contacts of related entity</td>
 		</tr>
 	</tbody>
@@ -352,6 +342,7 @@
 	</tbody>
 </table>
 
+
 ## Address
 
 <table>
@@ -360,7 +351,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example/Ref</b></td>
+			<td><b>Example</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
@@ -439,7 +430,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example/Ref</b></td>
+			<td><b>Example</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
@@ -511,7 +502,7 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example/Ref</b></td>
+			<td><b>Example</b></td>
 			<td><b>Description</b></td>
 		</tr>
 	</thead>
@@ -543,3 +534,5 @@
 	    </tr>
 	</tbody>
 </table>
+
+
