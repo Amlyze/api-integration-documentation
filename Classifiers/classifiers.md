@@ -26,8 +26,6 @@ Permissions required: `None`
 * `GET /classifier/businessUnit`
 * `GET /classifier/serviceType`
 * `GET /classifier/legalForm`
-* `GET /classifier/serviceType`
-* `GET /classifier/legalForm`
 * `GET /classifier/incomeSourceType`
 * `GET /classifier/sourceOfWealth`
 * `GET /classifier/currency`
