@@ -26,13 +26,6 @@
 			<td>Name of the system requesting web service</td>
 		</tr>
 		<tr>
-			<td><b>action</b></td>
-			<td>String<br/><b>ENUM</b><br/>[CREATE (<i>default</i>), <br/> UPDATE]</td>
-			<td>false</td>
-			<td>UPDATE</td>
-			<td>Element is used to change the data of an existing Customer. <br/>❗ NOTE: all data will be replaced with newly received ones</td>
-		</tr>
-		<tr>
 			<td><b>riskManagementCategory</b></td>
 			<td>
                 String <br/>
@@ -44,6 +37,13 @@
                 Code of risk management category for evaluation of the object.<br/>💡 
                 Possible values here are given just as an example, in the configuration period these could be updated
             </td>
+		</tr>
+		<tr>
+			<td><b>action</b></td>
+			<td>String<br/><b>ENUM</b><br/>[CREATE (<i>default</i>), <br/> UPDATE]</td>
+			<td>false</td>
+			<td>UPDATE</td>
+			<td>Element is used to change the data of an existing Customer. <br/>❗ NOTE: all data will be replaced with newly received ones</td>
 		</tr>
 		<tr>
 			<td><b>businessUnit</b></td>
@@ -77,13 +77,6 @@
                 <b>Not Mandatory</b>  when sourceOfRiskLevel = EVALUATE</td>
 		</tr>
 		<tr>
-			<td><b>initializeScreeningProcesses</b></td>
-			<td>String[]</td>
-			<td>false</td>
-			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
-			<td>Defines which screening processes to initiate</td>
-		</tr>
-		<tr>
 			<td><b>customerStatus</b></td>
 			<td>String<br/><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
 			<td>true</td>
@@ -91,11 +84,11 @@
 			<td>Customer status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received.<br/> ACTIVE - Customer is onboarded ( account is provided or customer assessment case is resolved)<br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is changed to being disabled</i></td>
 		</tr>
 		<tr>
-			<td><b>customerExtId</b></td>
-			<td>String</td>
-			<td>true</td>
-			<td>cust_1232</td>
-			<td>Unique external customer identifier. The identifier corresponds to the client's identifier in the financial institution</td>
+			<td><b>closingDate</b></td>
+			<td>Date</td>
+			<td>true/false</td>
+			<td>1995-05-24</td>
+			<td>Date of closure of all accounts <br/><b>Mandatory</b> when customerStatus = CLOSED<br/><b>Not Used</b>  when customerStatus = PENDING, ACTIVE, REJECTED, SUSPENDED</td>
 		</tr>
 		<tr>
 			<td><b>entityType</b></td>
@@ -105,11 +98,18 @@
 			<td>Whether business or individual entity</td>
 		</tr>
 		<tr>
-			<td><b>nationalCode</b></td>
+			<td><b>customerExtId</b></td>
 			<td>String</td>
+			<td>true</td>
+			<td>cust_1232</td>
+			<td>Unique external customer identifier. The identifier corresponds to the client's identifier in the financial institution</td>
+		</tr>
+		<tr>
+			<td><b>initializeScreeningProcesses</b></td>
+			<td>String[]</td>
 			<td>false</td>
-			<td>REG74121101</td>
-			<td>National code or national identification number of individual. If a country does not issue national code, any other unique identifier can be used:<br/> <i>* Passport number;<br/>* Social security number of person; <br/> * A number of taxpayer or registration certificate of the company, etc <br/> * A number of taxpayer or registration certificate of the company</i></td>
+			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
+			<td>Defines which screening processes to initiate</td>
 		</tr>
 		<tr>
 			<td><b>applicationDate</b></td>
@@ -118,43 +118,19 @@
 			<td>2000-01-03</td>
 			<td>Date when customer first applied</td>
 		</tr>
-		<tr>
-			<td><b>activityDescription</b></td>
+		 <tr>
+			<td><b>firstName</b></td>
 			<td>String</td>
-			<td>false</td>
-			<td>financial activity</td>
-			<td>Description of entity activity</td>
-		</tr>
-		<tr>
-			<td><b>activityInRestrictedRegionDescription</b></td>
-			<td>String</td>
-			<td>false</td>
-			<td>logistics</td>
-			<td>Description of business entities' activities in a restricted region</td>
-		</tr>
-		<tr>
-			<td><b>amlOfficer</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>false</td>
-			<td>Indicator for the person being AML officer</td>
-		</tr>
-		<tr>
-			<td><b>approvalDate</b></td>
-			<td>Date</td>
-			<td>false</td>
-			<td>2000-01-03</td>
-			<td>Date of application approval</td>
-		</tr>
-		<tr>
-			<td><b>birthCountry</b></td>
-			<td>
-                String <br/>
-                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
-            </td>
 			<td>true</td>
-			<td>LT</td>
-			<td>Country of birth of individual entity</td>
+			<td>Jose</td>
+			<td>First name of individual entity</td>
+		</tr>
+        <tr>
+			<td><b>lastName</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>Rodriguez</td>
+			<td>Last name of individual entity</td>
 		</tr>
 		<tr>
 			<td><b>birthDate</b></td>
@@ -174,34 +150,134 @@
 			<td>Country of citizenship of individual entity</td>
 		</tr>
 		<tr>
-			<td><b>closingDate</b></td>
+			<td><b>approvalDate</b></td>
 			<td>Date</td>
-			<td>true/false</td>
-			<td>1995-05-24</td>
-			<td>Date of closure of all accounts <br/><b>Mandatory</b> when customerStatus = CLOSED<br/><b>Not Mandatory</b>  when customerStatus = PENDING, ACTIVE, REJECTED, SUSPENDED</td>
+			<td>false</td>
+			<td>2000-01-03</td>
+			<td>Date of application approval</td>
 		</tr>
-        <tr>
-			<td><b>doesCashDominate</b></td>
+		<tr>
+			<td><b>birthCountry</b></td>
+			<td>
+                String <br/>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
+            </td>
+			<td>true</td>
+			<td>LT</td>
+			<td>Country of birth of individual entity</td>
+		</tr>
+		<tr>
+			<td><b>nationalCode</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>REG74121101</td>
+			<td>National code or national identification number of individual. If a country does not issue national code, any other unique identifier can be used:<br/> <i>* Passport number;<br/>* Social security number of person; <br/> * A number of taxpayer or registration certificate of the company, etc <br/> * A number of taxpayer or registration certificate of the company</i></td>
+		</tr>
+		 <tr>
+			<td><b>secondCitizenshipCountry</b></td>
+			<td>
+                String <br/>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
+            </td>
+			<td>false</td>
+			<td>LT</td>
+			<td>Country of second citizenship of individual entity</td>
+		</tr>
+		<tr>
+			<td><b>permanentResidenceCountry</b></td>
+			<td>
+                String <br/>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
+            </td>
+			<td>false</td>
+			<td>LT</td>
+			<td>Country of permanent residency of an individual entity</td>
+		</tr>
+		<tr>
+			<td><b>isLegalResident</b></td>
 			<td>Boolean</td>
 			<td>false</td>
 			<td>true</td>
-			<td>Indicator for cash being the main income source</td>
+			<td>Indicator for whether individual entity is a legal resident</td>
+		</tr>
+		<tr>
+			<td><b>isPEP</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>false</td>
+			<td>Identification for whether a person is politically exposed</td>
 		</tr>
         <tr>
-			<td><b>firstName</b></td>
-			<td>String</td>
+			<td><b>isSanctioned</b></td>
+			<td>Boolean</td>
+			<td>false</td>
 			<td>true</td>
-			<td>Jose</td>
-			<td>First name of individual entity</td>
+			<td>Whether entity is sanctioned</td>
 		</tr>
-        <tr>
-			<td><b>lastName</b></td>
-			<td>String</td>
+		 <tr>
+			<td><b>isInAdverseMedia</b></td>
+			<td>Boolean</td>
+			<td>false</td>
 			<td>true</td>
-			<td>Rodriguez</td>
-			<td>Last name of individual entity</td>
+			<td>An indication of the existence of information for an adverse media entity</td>
+		</tr>
+		 <tr>
+			<td><b>isFamilyPEP</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>false</td>
+			<td>Identification of whether a family member of an Individual entity is politically exposed</td>
 		</tr>
         <tr>
+			<td><b>isLitigated</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>false</td>
+			<td>Indicator for the person being litigated</td>
+		</tr>
+		<tr>
+			<td><b>amlOfficer</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>false</td>
+			<td>Indicator for the person being AML officer</td>
+		</tr>
+		<tr>
+			<td><b>listPurpose</b></td>
+			<td>String<br/><b>ENUM</b><br/>[BLACK,<br/> WHITE]</td>
+			<td>false</td>
+			<td>-</td>
+			<td>Whether entity is black/white listed</td>
+		</tr>
+		<tr>
+			<td><b>fieldOfActivity</b></td>
+            <td><a href="#FieldOfActivityApi">[FieldOfActivityApi]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>Information about the activities</td>
+		</tr>
+		<tr>
+			<td><b>isActualAddressDeclared</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>false</td>
+			<td>Whether customer declared ActualAddress</td>
+		</tr>
+		<tr>
+			<td><b>isCorrespondenceAddressDeclared</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>false</td>
+			<td>Whether customer declared CorrespondenceAddress</td>
+		</tr>
+		<tr>
+			<td><b>activityDescription</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>financial activity</td>
+			<td>Description of entity activity</td>
+		</tr>
+		<tr>
 			<td><b>incomeSourceDescription</b></td>
 			<td>String</td>
 			<td>false</td>
@@ -209,11 +285,18 @@
 			<td>Description of income source of the entity</td>
 		</tr>
 		<tr>
-			<td><b>incomingPaymentDescription</b></td>
+			<td><b>initialDepositSource</b></td>
 			<td>String</td>
 			<td>false</td>
-			<td>payment for work</td>
-			<td>Description of incoming payment operation</td>
+			<td>Dividend</td>
+			<td>Source of initial deposit</td>
+		</tr>
+		<tr>
+			<td><b>initialDepositBank</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>BankBank</td>
+			<td>Bank of the initial deposit</td>
 		</tr>
 		<tr>
 			<td><b>initialDepositAccount</b></td>
@@ -230,13 +313,6 @@
 			<td>Amount of initial deposit</td>
 		</tr>
 		<tr>
-			<td><b>initialDepositBank</b></td>
-			<td>String</td>
-			<td>false</td>
-			<td>BankBank</td>
-			<td>Bank of the initial deposit</td>
-		</tr>
-		<tr>
 			<td><b>initialDepositCurrency</b></td>
             <td>
                 String <br/>
@@ -247,129 +323,11 @@
 			<td>Currency field notifies about the currency used in a certain operation.</td>
 		</tr>
 		<tr>
-			<td><b>initialDepositSource</b></td>
-			<td>String</td>
-			<td>false</td>
-			<td>Dividend</td>
-			<td>Source of initial deposit</td>
-		</tr>
-        <tr>
-			<td><b>isActualAddressDeclared</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>false</td>
-			<td>Whether customer declared ActualAddress</td>
-		</tr>
-        <tr>
-			<td><b>isFamilyPEP</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>false</td>
-			<td>Identification of whether a family member of an Individual entity is politically exposed</td>
-		</tr>
-        <tr>
-			<td><b>isInAdverseMedia</b></td>
+			<td><b>doesCashDominate</b></td>
 			<td>Boolean</td>
 			<td>false</td>
 			<td>true</td>
-			<td>An indication of the existence of information for an adverse media entity</td>
-		</tr>
-		<tr>
-			<td><b>isLegalResident</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>true</td>
-			<td>Indicator for whether individual entity is a legal resident</td>
-		</tr>
-        <tr>
-			<td><b>isLitigated</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>false</td>
-			<td>Indicator for the person being litigated</td>
-		</tr>
-		<tr>
-			<td><b>isPEP</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>false</td>
-			<td>Identification for whether a person is politically exposed</td>
-		</tr>
-        <tr>
-			<td><b>isSanctioned</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>true</td>
-			<td>Whether entity is sanctioned</td>
-		</tr>
-        <tr>
-			<td><b>permanentResidenceCountry</b></td>
-			<td>
-                String <br/>
-                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
-            </td>
-			<td>false</td>
-			<td>LT</td>
-			<td>Country of permanent residency of an individual entity</td>
-		</tr>
-        <tr>
-			<td><b>secondCitizenshipCountry</b></td>
-			<td>
-                String <br/>
-                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
-            </td>
-			<td>false</td>
-			<td>LT</td>
-			<td>Country of second citizenship of individual entity</td>
-		</tr>
-        <tr>
-			<td><b>listPurpose</b></td>
-			<td>String<br/><b>ENUM</b><br/>[BLACK,<br/> WHITE]</td>
-			<td>false</td>
-			<td>-</td>
-			<td>Whether entity is black/white listed</td>
-		</tr>
-		<tr>
-			<td><b>fieldOfActivity</b></td>
-            <td><a href="#FieldOfActivityApi">[FieldOfActivityApi]</a></td>
-			<td>false</td>
-			<td>-</td>
-			<td>Information about the activities</td>
-		</tr>
-		<tr>
-			<td><b>listActivity</b></td>
-			<td><a href="#ActivityApi">ActivityApi[]</a></td>
-			<td>false</td>
-			<td>-</td>
-			<td>List of activities</td>
-		</tr>
-		<tr>
-			<td><b>listAdditionalValues</b></td>
-			<td><a href="#AdditionalValueApi">AdditionalValueApi[]</a></td>
-			<td>false</td>
-			<td>-</td>
-			<td>Additional information about businessEntity</td>
-		</tr>
-		<tr>
-			<td><b>listAddress</b></td>
-            <td><a href="#AddressApi">AddressApi[]</a></td>
-			<td>false</td>
-			<td>-</td>
-			<td>List of addresses</td>
-		</tr>
-		<tr>
-			<td><b>listAppealReason</b></td>
-            <td><a href="#AppealReasonApi">AppealReasonApi[]</a></td>
-			<td>false</td>
-			<td>-</td>
-			<td>List of reasons for the appeal</td>
-		</tr>
-		<tr>
-			<td><b>listBusinessEntityDocument</b></td>
-            <td><a href="#BusinessEntityDocumentApi">BusinessEntityDocumentApi[]</a></td>
-			<td>false</td>
-			<td>-</td>
-			<td>List of related entity documents</td>
+			<td>Indicator for cash being the main income source</td>
 		</tr>
 		<tr>
 			<td><b>listContact</b></td>
@@ -379,32 +337,25 @@
 			<td>List of contacts of related entity</td>
 		</tr>
 		<tr>
-			<td><b>listCountryOfActivity</b></td>
-            <td><a href="#CountryOfActivityApi">CountryOfActivityApi[]</a></td>
+			<td><b>listAddress</b></td>
+            <td><a href="#AddressApi">AddressApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
-			<td>List of activity regions</td>
+			<td>List of addresses</td>
 		</tr>
 		<tr>
-			<td><b>listCountryOfTaxPayment</b></td>
-            <td><a href="#CountryOfTaxPaymentApi">CountryOfTaxPaymentApi[]</a></td>
+			<td><b>listBusinessEntityDocument</b></td>
+            <td><a href="#BusinessEntityDocumentApi">BusinessEntityDocumentApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
-			<td>List of tax payment country</td>
+			<td>List of related entity documents</td>
 		</tr>
 		<tr>
-			<td><b>listDeclaredTurnover</b></td>
-            <td><a href="#DeclaredTurnoverApi">DeclaredTurnoverApi[]</a></td>
+			<td><b>listAppealReason</b></td>
+            <td><a href="#AppealReasonApi">AppealReasonApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
-			<td>List of declared turnover</td>
-		</tr>
-		<tr>
-			<td><b>listIncomeSource</b></td>
-			<td><a href="#IncomeSourceApi">IncomeSourceApi[]</a></td>
-			<td>false</td>
-			<td>-</td>
-			<td>List of countries of payment</td>
+			<td>List of reasons for the appeal</td>
 		</tr>
 		<tr>
 			<td><b>listIntroductionSource</b></td>
@@ -421,11 +372,18 @@
 			<td>List of ordered services</td>
 		</tr>
 		<tr>
-			<td><b>listPaymentCountry</b></td>
-            <td><a href="#PaymentCountryApi">PaymentCountryApi[]</a></td>
+			<td><b>listDeclaredTurnover</b></td>
+            <td><a href="#DeclaredTurnoverApi">DeclaredTurnoverApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
-			<td>List of payment country</td>
+			<td>List of declared turnover</td>
+		</tr>
+		<tr>
+			<td><b>listIncomeSource</b></td>
+			<td><a href="#IncomeSourceApi">IncomeSourceApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of countries of payment</td>
 		</tr>
 		<tr>
 			<td><b>listPaymentPurpose</b></td>
@@ -435,6 +393,27 @@
 			<td>List of payment purpose</td>
 		</tr>
 		<tr>
+			<td><b>listSourceOfWealth</b></td>
+            <td><a href="#SourceOfWealthApi">SourceOfWealthApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of wealth sources</td>
+		</tr>
+		<tr>
+			<td><b>listPaymentCountry</b></td>
+            <td><a href="#PaymentCountryApi">PaymentCountryApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of payment country</td>
+		</tr>
+		<tr>
+			<td><b>listActivity</b></td>
+			<td><a href="#ActivityApi">ActivityApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of activities</td>
+		</tr>
+		<tr>
 			<td><b>listRegionOfActivity</b></td>
             <td><a href="#RegionOfActivityApi">RegionOfActivityApi[]</a></td>
 			<td>false</td>
@@ -442,11 +421,25 @@
 			<td>List of activity countries of related entity</td>
 		</tr>
 		<tr>
-			<td><b>listSourceOfWealth</b></td>
-            <td><a href="#SourceOfWealthApi">SourceOfWealthApi[]</a></td>
+			<td><b>listCountryOfActivity</b></td>
+            <td><a href="#CountryOfActivityApi">CountryOfActivityApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
-			<td>List of wealth sources</td>
+			<td>List of activity regions</td>
+		</tr>
+		<tr>
+			<td><b>listCountryOfTaxPayment</b></td>
+            <td><a href="#CountryOfTaxPaymentApi">CountryOfTaxPaymentApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of tax payment country</td>
+		</tr>
+		<tr>
+			<td><b>listAdditionalValues</b></td>
+			<td><a href="#AdditionalValueApi">AdditionalValueApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>Additional information about businessEntity</td>
 		</tr>
 		<tr>
 			<td><b>listRelatedEntity</b></td>
@@ -458,151 +451,7 @@
 	</tbody>
 </table>
 
-
-## AppealReasonApi
-
-<table>
-	<thead>
-		<tr>
-			<td><b>Field</b></td>
-			<td><b>Type</b></td>
-			<td><b>Mandatory</b></td>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><b>appealReasonType</b></td>
-			<td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Appeal reason type classifier)</a>
-            </td>
-			<td>true</td>
-		</tr>
-	</tbody>
-</table>
-
-## IntroductionSourceApi
-
-<table>
-	<thead>
-		<tr>
-			<td><b>Field</b></td>
-			<td><b>Type</b></td>
-			<td><b>Mandatory</b></td>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><b>introductionSource</b></td>
-            <td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Introduction source classifier)</a>
-            </td>
-			<td>true</td>
-		</tr>
-	</tbody>
-</table>
-
-## OrderedServiceApi
-
-<table>
-	<thead>
-		<tr>
-			<td><b>Field</b></td>
-			<td><b>Type</b></td>
-			<td><b>Mandatory</b></td>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><b>serviceType</b></td>
-            <td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Service type classifier)</a>
-            </td>
-			<td>true</td>
-		</tr>
-	</tbody>
-</table>
-
-## RegionOfActivityApi
-
-<table>
-	<thead>
-		<tr>
-			<td><b>Field</b></td>
-			<td><b>Type</b></td>
-			<td><b>Mandatory</b></td>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><b>region</b></td>
-			<td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
-            </td>
-			<td>true</td>
-		</tr>
-	</tbody>
-</table>
-
-## CountryOfActivityApi
-
-<table>
-	<thead>
-		<tr>
-			<td><b>Field</b></td>
-			<td><b>Type</b></td>
-			<td><b>Mandatory</b></td>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><b>country</b></td>
-			<td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
-            </td>
-			<td>true</td>
-		</tr>
-	</tbody>
-</table>
-
-
-## PaymentCountryApi
-
-<table>
-	<thead>
-		<tr>
-			<td><b>Field</b></td>
-			<td><b>Type</b></td>
-			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
-			<td><b>Description</b></td>
-		</tr>
-	</thead>
-	<tbody>
-	    <tr>
-			<td><b>country</b></td>
-			<td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
-            </td>
-			<td>true</td>
-			<td>TAXES</td>
-			<td>Type of income source code.</td>
-	    </tr>
-	    <tr>
-			<td><b>turnoverDirection</b></td>
-			<td>String<br/><b>ENUM</b><br/> [IN,<br/>OUT]</td>
-			<td>true</td>
-			<td>OUT</td>
-			<td>The turnover direction of payment</td>
-	    </tr>
-	</tbody>
-</table>
-
+---
 
 ## FieldOfActivityApi
 
@@ -790,7 +639,7 @@
 	</tbody>
 </table>
 
-## ActivityApi
+## ContactApi
 
 <table>
 	<thead>
@@ -804,70 +653,32 @@
 	</thead>
 	<tbody>
 	    <tr>
-			<td><b>activityType</b></td>
-			<td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Activity type classifier)</a>
-            </td>
+			<td><b>contactType</b></td>
+            <td>String<br/><b>ENUM</b><br/>[MOBILEPHONE, <br/>FIXEDPHONE, <br/>EMAIL,WEBSITE]</td>
 			<td>true</td>
-			<td>ACTIVITY_OTHER</td>
-			<td>Type of business activity.</td>
+			<td>MOBILEPHONE</td>
+			<td>Way of contacting entity.</td>
 	    </tr>
 	    <tr>
-			<td><b>incomePercentage</b></td>
-			<td>BigInteger</td>
+			<td><b>contactDetails</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>
+                868758585<br/>
+                hello@gmail.com<br/>
+                www.website.com<br/>
+            </td>
+			<td>Details of contact.</td>
+	    </tr>
+	    <tr>
+			<td><b>useForCommunication</b></td>
+			<td>Boolean</td>
 			<td>false</td>
-			<td>15</td>
-			<td>Percentage of income from certain activity</td>
+			<td>true/false</td>
+			<td>Indicator for the usage of communication way.</td>
 	    </tr>
 	</tbody>
 </table>
-
-
-## AdditionalValueApi
-
-<table>
-	<thead>
-		<tr>
-			<td><b>Field</b></td>
-			<td><b>Type</b></td>
-			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
-			<td><b>Description</b></td>
-		</tr>
-	</thead>
-	<tbody>
-	    <tr>
-			<td><b>code</b></td>
-			<td>String</td>
-			<td>true</td>
-			<td>related_to_usa</td>
-			<td>Identifier for additional field</td>
-	    </tr>
-	    <tr>
-			<td><b>datatype</b></td>
-			<td>String<br/><b>ENUM</b><br/>[STRING,<br/> INTEGER,<br/> DECIMAL,<br/> DATE,<br/> TIMESTAMP,<br/> BOOLEAN]</td>
-			<td>true</td>
-			<td>STRING</td>
-			<td>Type of provided value</td>
-	    </tr>
-	    <tr>
-			<td><b>description</b></td>
-			<td>String</td>
-			<td>true</td>
-			<td>entity has relation to USA</td>
-			<td>human readable description of field</td>
-	    </tr>
-	    <tr>
-			<td><b>value</b></td>
-			<td>String</td>
-			<td>true</td>
-			<td>true</td>
-			<td>value of field</td>
-	    </tr>
-    </tbody>
-</table>
-
 
 ## AddressApi
 
@@ -1020,7 +831,7 @@
 	</tbody>
 </table>
 
-## ContactApi
+## AppealReasonApi
 
 <table>
 	<thead>
@@ -1028,41 +839,21 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
-			<td><b>Description</b></td>
 		</tr>
 	</thead>
 	<tbody>
-	    <tr>
-			<td><b>contactType</b></td>
-            <td>String<br/><b>ENUM</b><br/>[MOBILEPHONE, <br/>FIXEDPHONE, <br/>EMAIL,WEBSITE]</td>
-			<td>true</td>
-			<td>MOBILEPHONE</td>
-			<td>Way of contacting entity.</td>
-	    </tr>
-	    <tr>
-			<td><b>contactDetails</b></td>
-			<td>String</td>
-			<td>true</td>
+		<tr>
+			<td><b>appealReasonType</b></td>
 			<td>
-                868758585<br/>
-                hello@gmail.com<br/>
-                www.website.com<br/>
+                String <br/>
+                <a href="../../README.md#classifiers">(Appeal reason type classifier)</a>
             </td>
-			<td>Details of contact.</td>
-	    </tr>
-	    <tr>
-			<td><b>useForCommunication</b></td>
-			<td>Boolean</td>
-			<td>false</td>
-			<td>true/false</td>
-			<td>Indicator for the usage of communication way.</td>
-	    </tr>
+			<td>true</td>
+		</tr>
 	</tbody>
 </table>
 
-
-## CountryOfTaxPaymentApi
+## IntroductionSourceApi
 
 <table>
 	<thead>
@@ -1070,28 +861,39 @@
 			<td><b>Field</b></td>
 			<td><b>Type</b></td>
 			<td><b>Mandatory</b></td>
-			<td><b>Example</b></td>
-			<td><b>Description</b></td>
 		</tr>
 	</thead>
 	<tbody>
-	    <tr>
-			<td><b>country</b></td>
+		<tr>
+			<td><b>introductionSource</b></td>
             <td>
                 String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
+                <a href="../../README.md#classifiers">(Introduction source classifier)</a>
             </td>
 			<td>true</td>
-			<td>LT</td>
-			<td>Country of tax payment</td>
-	    </tr>
-	    <tr>
-			<td><b>taxpayerNumber</b></td>
-			<td>String</td>
-			<td>false</td>
-			<td>5541245574</td>
-			<td>The number of tax payer</td>
-	    </tr>
+		</tr>
+	</tbody>
+</table>
+
+## OrderedServiceApi
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><b>serviceType</b></td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Service type classifier)</a>
+            </td>
+			<td>true</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1261,9 +1063,9 @@
 			<td>Additional details about the source of wealth</td>
 	    </tr>
 	</tbody>
-</table>                 
+</table>   
 
-## RelatedEntityApi
+## PaymentCountryApi
 
 <table>
 	<thead>
@@ -1277,6 +1079,209 @@
 	</thead>
 	<tbody>
 	    <tr>
+			<td><b>country</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
+			<td>true</td>
+			<td>TAXES</td>
+			<td>Type of income source code.</td>
+	    </tr>
+	    <tr>
+			<td><b>turnoverDirection</b></td>
+			<td>String<br/><b>ENUM</b><br/> [IN,<br/>OUT]</td>
+			<td>true</td>
+			<td>OUT</td>
+			<td>The turnover direction of payment</td>
+	    </tr>
+	</tbody>
+</table>
+
+
+
+
+## ActivityApi
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+			<td><b>Example</b></td>
+			<td><b>Description</b></td>
+		</tr>
+	</thead>
+	<tbody>
+	    <tr>
+			<td><b>activityType</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Activity type classifier)</a>
+            </td>
+			<td>true</td>
+			<td>ACTIVITY_OTHER</td>
+			<td>Type of business activity.</td>
+	    </tr>
+	    <tr>
+			<td><b>incomePercentage</b></td>
+			<td>BigInteger</td>
+			<td>false</td>
+			<td>15</td>
+			<td>Percentage of income from certain activity</td>
+	    </tr>
+	</tbody>
+</table>
+
+
+## RegionOfActivityApi
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><b>region</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
+			<td>true</td>
+		</tr>
+	</tbody>
+</table>
+
+## CountryOfActivityApi
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><b>country</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
+			<td>true</td>
+		</tr>
+	</tbody>
+</table>
+
+
+## CountryOfTaxPaymentApi
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+			<td><b>Example</b></td>
+			<td><b>Description</b></td>
+		</tr>
+	</thead>
+	<tbody>
+	    <tr>
+			<td><b>country</b></td>
+            <td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
+			<td>true</td>
+			<td>LT</td>
+			<td>Country of tax payment</td>
+	    </tr>
+	    <tr>
+			<td><b>taxpayerNumber</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>5541245574</td>
+			<td>The number of tax payer</td>
+	    </tr>
+	</tbody>
+</table>
+
+
+## AdditionalValueApi
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+			<td><b>Example</b></td>
+			<td><b>Description</b></td>
+		</tr>
+	</thead>
+	<tbody>
+	    <tr>
+			<td><b>code</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>related_to_usa</td>
+			<td>Identifier for additional field</td>
+	    </tr>
+	    <tr>
+			<td><b>datatype</b></td>
+			<td>String<br/><b>ENUM</b><br/>[STRING,<br/> INTEGER,<br/> DECIMAL,<br/> DATE,<br/> TIMESTAMP,<br/> BOOLEAN]</td>
+			<td>true</td>
+			<td>STRING</td>
+			<td>Type of provided value</td>
+	    </tr>
+	    <tr>
+			<td><b>description</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>entity has relation to USA</td>
+			<td>human readable description of field</td>
+	    </tr>
+	    <tr>
+			<td><b>value</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>true</td>
+			<td>value of field</td>
+	    </tr>
+    </tbody>
+</table>
+
+
+         
+
+## RelatedEntityApi INDIVIDUAL
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+			<td><b>Example</b></td>
+			<td><b>Description</b></td>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+			<td><b>entityType</b></td>
+			<td>String<br/><b>ENUM</b><br/> [INDIVIDUAL, <br/>ORGANIZATION]</td>
+			<td>true</td>
+			<td>INDIVIDUAL</td>
+			<td>Entity type describes client status</td>
+	    </tr>
+	    <tr>
 			<td><b>relationType</b></td>
 			<td>
                 String <br/>
@@ -1285,6 +1290,20 @@
 			<td>true</td>
 			<td>OWNER</td>
 			<td>Type of relationship between entities.</td>
+	    </tr>
+		<tr>
+			<td><b>relationDescription</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>founder</td>
+			<td>Description of the relationship between entities</td>
+	    </tr>
+		<tr>
+			<td><b>extId</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>12345678912345</td>
+			<td>Used for screening callbacks to identify entity</td>
 	    </tr>
 	    <tr>
 			<td><b>share</b></td>
@@ -1300,12 +1319,29 @@
 			<td>99</td>
 			<td>Vote percentage of shareholders in the organization of business entity</td>
 	    </tr>
+		<tr>
+			<td><b>nationalCode</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>123456789</td>
+			<td>National code or national identification number of individual or organization. If a country does not issue national code, any other unique identifier can be used</td>
+	    </tr>
 	    <tr>
 			<td><b>activityDescription</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>financial activity</td>
 			<td>Activity description of the related entity</td>
+	    </tr>
+		<tr>
+			<td><b>country</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
+			<td>false</td>
+			<td>LT</td>
+			<td>Country of the related entity</td>
 	    </tr>
 	    <tr>
 			<td><b>birthCountry</b></td>
@@ -1317,57 +1353,36 @@
 			<td>LT</td>
 			<td>The birth country of the related entity</td>
 	    </tr>
-	    <tr>
-			<td><b>birthDate</b></td>
-			<td>Date</td>
-			<td>false</td>
-			<td>2000-05-28</td>
-			<td>Birth date of a related individual entity</td>
-	    </tr>
-	    <tr>
-			<td><b>country</b></td>
+		<tr>
+			<td><b>countryOfBusinessOperations</b></td>
 			<td>
                 String <br/>
                 <a href="../../README.md#classifiers">(Country classifier)</a>
             </td>
 			<td>false</td>
 			<td>LT</td>
-			<td>Country of the related entity</td>
+			<td>ountry of business operations of related individual entity</td>
 	    </tr>
-	    <tr>
-			<td><b>entityType</b></td>
-			<td>String<br/><b>ENUM</b><br/> [INDIVIDUAL, <br/>ORGANIZATION]</td>
-			<td>true</td>
-			<td>INDIVIDUAL</td>
-			<td>Entity type describes client status</td>
-	    </tr>
-	    <tr>
-			<td><b>establishmentDate</b></td>
-			<td>Date</td>
-			<td>false</td>
-			<td>2020-05-30</td>
-			<td>Establishment date of related organization entity</td>
-	    </tr>
-	    <tr>
-			<td><b>extId</b></td>
-			<td>String</td>
-			<td>false</td>
-			<td>12345678912345</td>
-			<td>Used for screening callbacks to identify entity</td>
-	    </tr>
-	    <tr>
+		 <tr>
 			<td><b>firstName</b></td>
 			<td>String</td>
 			<td>true/false</td>
 			<td>John</td>
 			<td>First name of related entity br><b>Mandatory</b> when entityType = INDIVIDUAL <br/><b>Not Used</b>  when entityType = ORGANIZATION</td>
 	    </tr>
+		<tr>
+			<td><b>lastName</b></td>
+			<td>String</td>
+			<td>true/false</td>
+			<td>Rodriguez</td>
+			<td>Last name of related entity <br/><b>Mandatory</b> when entityType = INDIVIDUAL <br/><b>Not Used</b>  when entityType = ORGANIZATION</td>
+	    </tr>
 	    <tr>
-			<td><b>isInAdverseMedia</b></td>
-			<td>Boolean</td>
+			<td><b>birthDate</b></td>
+			<td>Date</td>
 			<td>false</td>
-			<td>false</td>
-			<td>An indication of the existence of information for an adverse media entity</td>
+			<td>2000-05-28</td>
+			<td>Birth date of a related individual entity</td>
 	    </tr>
 	    <tr>
 			<td><b>isPEP</b></td>
@@ -1384,75 +1399,27 @@
 			<td>Indicator for sanctions applied to the entity</td>
 	    </tr>
 	    <tr>
-			<td><b>lastName</b></td>
-			<td>String</td>
-			<td>true/false</td>
-			<td>Rodriguez</td>
-			<td>Last name of related entity <br/><b>Mandatory</b> when entityType = INDIVIDUAL <br/><b>Not Used</b>  when entityType = ORGANIZATION</td>
-	    </tr>
-	    <tr>
-			<td><b>legalForm</b></td>
-			<td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Legal form classifier)</a>
-            </td>
+			<td><b>isInAdverseMedia</b></td>
+			<td>Boolean</td>
 			<td>false</td>
-			<td>COOPERATIVE</td>
-			<td>Legal form of organization</td>
-	    </tr>
-	    <tr>
-			<td><b>nationalCode</b></td>
-			<td>String</td>
 			<td>false</td>
-			<td>123456789</td>
-			<td>National code or national identification number of individual or organization. If a country does not issue national code, any other unique identifier can be used</td>
+			<td>An indication of the existence of information for an adverse media entity</td>
 	    </tr>
-	    <tr>
+	   	<tr>
 			<td><b>regionOfActivityDescription</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>EU</td>
 			<td>Description of activity region of related entity</td>
 	    </tr>
-	    <tr>
-			<td><b>registrationCountry</b></td>
-			<td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
-            </td>
-			<td>false</td>
-			<td>LT</td>
-			<td>Country of registration of related entity</td>
-	    </tr>
-	    <tr>
-			<td><b>relationDescription</b></td>
-			<td>String</td>
-			<td>false</td>
-			<td>founder</td>
-			<td>Description of the relationship between entities</td>
-	    </tr>
-	    <tr>
-			<td><b>title</b></td>
-			<td>String</td>
-			<td>true/ false</td>
-			<td>Beko</td>
-			<td><br/><b>Mandatory</b> when entityType = ORGANIZATION <br/><b>Not Used</b>  when entityType = INDIVIDUAL</td>
-	    </tr>
-	    <tr>
-			<td><b>listActivity</b></td>
-            <td><a href="#ActivityApi">ActivityApi[]</a></td>
+		<tr>
+			<td><b>listContact</b></td>
+            <td><a href="#ContactApi">ContactApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
-			<td>List of activities of related entity</td>
+			<td>List of contacts of related entity</td>
     	</tr>
-    	<tr>
-			<td><b>listAdditionalValues</b></td>
-            <td><a href="#AdditionalValueApi">AdditionalValueApi[]</a></td>
-			<td>false</td>
-			<td>-</td>
-			<td>Additional information about businessEntity</td>
-    	</tr>
-    	<tr>
+		<tr>
 			<td><b>listAddress</b></td>
             <td><a href="#AddressApi">AddressApi[]</a></td>
 			<td>false</td>
@@ -1466,20 +1433,6 @@
 			<td>-</td>
 			<td>List of related entity document</td>
     	</tr>
-    	<tr>
-			<td><b>listContact</b></td>
-            <td><a href="#ContactApi">ContactApi[]</a></td>
-			<td>false</td>
-			<td>-</td>
-			<td>List of contacts of related entity</td>
-    	</tr>
-    	<tr>
-			<td><b>listCountryOfActivity</b></td>
-            <td><a href="#CountryOfActivityApi">CountryOfActivityApi[]</a></td>
-			<td>false</td>
-			<td>-</td>
-			<td>List of activity countries of related entity</td>
-	    </tr>
 	    <tr>
 			<td><b>listIncomeSource</b></td>
 			<td><a href="#IncomeSourceApi">IncomeSourceApi[]</a></td>
@@ -1487,6 +1440,13 @@
 			<td>-</td>
 			<td>List of income sources</td>
 	    </tr>
+		<tr>
+			<td><b>listActivity</b></td>
+            <td><a href="#ActivityApi">ActivityApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of activities of related entity</td>
+    	</tr>
 	    <tr>
 			<td><b>listRegionOfActivity</b></td>
             <td><a href="#RegionOfActivityApi">RegionOfActivityApi[]</a></td>
@@ -1494,5 +1454,237 @@
 			<td>-</td>
 			<td>List of activity regions of related entity</td>
 	    </tr>
+		<tr>
+			<td><b>listCountryOfActivity</b></td>
+            <td><a href="#CountryOfActivityApi">CountryOfActivityApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of activity countries of related entity</td>
+	    </tr>
+		<tr>
+			<td><b>listAdditionalValues</b></td>
+            <td><a href="#AdditionalValueApi">AdditionalValueApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>Additional information about businessEntity</td>
+    	</tr>
+	</tbody>
+</table>
+	    
+	    
+	    
+	    
+	    
+		
+	    
+	    
+	    
+	    
+    	
+    	
+    	
+    	
+
+
+## RelatedEntityApi ORGANIZATION
+
+<table>
+	<thead>
+		<tr>
+			<td><b>Field</b></td>
+			<td><b>Type</b></td>
+			<td><b>Mandatory</b></td>
+			<td><b>Example</b></td>
+			<td><b>Description</b></td>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+			<td><b>entityType</b></td>
+			<td>String<br/><b>ENUM</b><br/> [INDIVIDUAL, <br/>ORGANIZATION]</td>
+			<td>true</td>
+			<td>INDIVIDUAL</td>
+			<td>Entity type describes client status</td>
+	    </tr>
+	    <tr>
+			<td><b>relationType</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Relation type classifier)</a>
+            </td>
+			<td>true</td>
+			<td>OWNER</td>
+			<td>Type of relationship between entities.</td>
+	    </tr>
+		<tr>
+			<td><b>relationDescription</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>founder</td>
+			<td>Description of the relationship between entities</td>
+	    </tr>
+		<tr>
+			<td><b>extId</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>12345678912345</td>
+			<td>Used for screening callbacks to identify entity</td>
+	    </tr>
+	    <tr>
+			<td><b>share</b></td>
+			<td>BigInteger</td>
+			<td>false</td>
+			<td>75</td>
+			<td>Shares owned by shareholders in the organization of the business entity</td>
+	    </tr>
+	    <tr>
+			<td><b>votePercentage</b></td>
+			<td>BigInteger</td>
+			<td>false</td>
+			<td>99</td>
+			<td>Vote percentage of shareholders in the organization of business entity</td>
+	    </tr>
+		<tr>
+			<td><b>nationalCode</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>123456789</td>
+			<td>National code or national identification number of individual or organization. If a country does not issue national code, any other unique identifier can be used</td>
+	    </tr>
+	    <tr>
+			<td><b>activityDescription</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>financial activity</td>
+			<td>Activity description of the related entity</td>
+	    </tr>
+		<tr>
+			<td><b>country</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
+			<td>false</td>
+			<td>LT</td>
+			<td>Country of the related entity</td>
+	    </tr>
+		<tr>
+			<td><b>registrationCountry</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Country classifier)</a>
+            </td>
+			<td>false</td>
+			<td>LT</td>
+			<td>Country of business operations of related individual entity.</td>
+	    </tr>
+		<tr>
+			<td><b>isPEP</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>false</td>
+			<td>An indicator for a related individual entity is a politically exposed person</td>
+	    </tr>
+	    <tr>
+			<td><b>isSanctioned</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>false</td>
+			<td>Indicator for sanctions applied to the entity</td>
+	    </tr>
+	    <tr>
+			<td><b>isInAdverseMedia</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>false</td>
+			<td>An indication of the existence of information for an adverse media entity</td>
+	    </tr>
+	   	<tr>
+			<td><b>regionOfActivityDescription</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>EU</td>
+			<td>Description of activity region of related entity</td>
+	    </tr>
+		<tr>
+			<td><b>title</b></td>
+			<td>String</td>
+			<td>true/ false</td>
+			<td>Beko</td>
+			<td><br/><b>Mandatory</b> when entityType = ORGANIZATION <br/><b>Not Used</b>  when entityType = INDIVIDUAL</td>
+	    </tr>
+		<tr>
+			<td><b>legalForm</b></td>
+			<td>
+                String <br/>
+                <a href="../../README.md#classifiers">(Legal form classifier)</a>
+            </td>
+			<td>false</td>
+			<td>COOPERATIVE</td>
+			<td>Legal form of organization</td>
+	    </tr>
+		<tr>
+			<td><b>establishmentDate</b></td>
+			<td>Date</br><b>Format: ISO 8601</b></br><b>YYYY-MM-DD</b></td>
+			<td>false</td>
+			<td>1998-04-07</td>
+			<td>Establishment date of related organization entity.</td>
+	    </tr>
+		<tr>
+			<td><b>listContact</b></td>
+            <td><a href="#ContactApi">ContactApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of contacts of related entity</td>
+    	</tr>
+		<tr>
+			<td><b>listAddress</b></td>
+            <td><a href="#AddressApi">AddressApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of addresses</td>
+    	</tr>
+    	<tr>
+			<td><b>listBusinessEntityDocument</b></td>
+            <td><a href="#BusinessEntityDocumentApi">BusinessEntityDocumentApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of related entity document</td>
+    	</tr>
+	    <tr>
+			<td><b>listIncomeSource</b></td>
+			<td><a href="#IncomeSourceApi">IncomeSourceApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of income sources</td>
+	    </tr>
+		<tr>
+			<td><b>listActivity</b></td>
+            <td><a href="#ActivityApi">ActivityApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of activities of related entity</td>
+    	</tr>
+	    <tr>
+			<td><b>listRegionOfActivity</b></td>
+            <td><a href="#RegionOfActivityApi">RegionOfActivityApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of activity regions of related entity</td>
+	    </tr>
+		<tr>
+			<td><b>listCountryOfActivity</b></td>
+            <td><a href="#CountryOfActivityApi">CountryOfActivityApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>List of activity countries of related entity</td>
+	    </tr>
+		<tr>
+			<td><b>listAdditionalValues</b></td>
+            <td><a href="#AdditionalValueApi">AdditionalValueApi[]</a></td>
+			<td>false</td>
+			<td>-</td>
+			<td>Additional information about businessEntity</td>
+    	</tr>
 	</tbody>
 </table>

@@ -35,12 +35,17 @@ Customers contain identifying information and KYC data. This section provides in
  ![Alt text](./image.png)
 
 ## Samples
-[<b>LEAD_INDIVIDUAL Fields</b>](INDIVIDUAL/INDIVIDUAL_Fields.md)
+All <b>Individual</b> lead fields [<b>here</b>](INDIVIDUAL/INDIVIDUAL_Fields.md)
 
-* [Evaluate_LEAD_INDIVIDUAL_Mandatory](INDIVIDUAL/INDIVIDUAL_Samples/evaluate_LEAD_INDIVIDUAL_Mandatory.xml) 
+>> <b>EVALUATE Example</b>
 
-[<b>LEAD_ORGANIZATION Fields</b>](ORGANIZATION\ORGANIZATION_Fields.md) 
-* [Evaluate_LEAD_ORGANIZATION_Mandatory](ORGANIZATION/ORGANIZATION_Samples/evaluate_LEAD_ORGANIZATION_Mandatory.xml) 
+* Mandatory Fields [LEAD_Individual](INDIVIDUAL/INDIVIDUAL_Samples/evaluate_LEAD_INDIVIDUAL_Mandatory.json) 
+
+All <b>Organization</b> lead fields [<b>here</b>](ORGANIZATION\ORGANIZATION_Fields.md) 
+
+>> <b>EVALUATE Example</b>
+
+* Mandatory Fields [LEAD_Organization](ORGANIZATION/ORGANIZATION_Samples/evaluate_LEAD_ORGANIZATION_Mandatory.json) 
 
 ---
 
