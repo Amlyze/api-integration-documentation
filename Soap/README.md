@@ -1,7 +1,7 @@
 # api-integration-documentation
 
 ## SOAP Introduction
->
+
 > [!CAUTION]
 > **SOAP API is deprecated**. We recommend migrating to [REST API](../Rest/README.md).
 
