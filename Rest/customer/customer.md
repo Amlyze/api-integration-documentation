@@ -20,14 +20,14 @@ To check all possible API fields for `INDIVIDUAL`, click [<b>here</b>](INDIVIDUA
 
 * [Evaluate Mandatory](INDIVIDUAL/INDIVIDUAL_Samples/evaluate_Mandatory.json) 
 * [Import Mandatory](INDIVIDUAL/INDIVIDUAL_Samples/import_Mandatory.json) 
-* [Import Full](INDIVIDUAL/INDIVIDUAL_Samples/import_Full.json)
+* [Import Fully Updated](INDIVIDUAL/INDIVIDUAL_Samples/import_Update_Full.json)
 * [Evaluate Full with Related Entities](INDIVIDUAL/INDIVIDUAL_Samples/evaluate_Full_RelatedEntities.json)
 * [Screening Individual](INDIVIDUAL/INDIVIDUAL_Samples/screening_Individual.json)
 --- 
 To check all possible API fields for `ORGANIZATION`, click [<b>here</b>](ORGANIZATION/ORGANIZATION_FIelds.md)
 * [Evaluate Mandatory](ORGANIZATION/ORGANIZATION_Samples/evaluate_Mandatory.json) 
 * [Import Mandatory](ORGANIZATION/ORGANIZATION_Samples/import_Mandatory.json) 
-* [Import Full](ORGANIZATION/ORGANIZATION_Samples/import_Full.json)
+* [Import Fully Updated](ORGANIZATION/ORGANIZATION_Samples/import_Update_Full.json)
 * [Evaluate Full with Related Entities](ORGANIZATION/ORGANIZATION_Samples/evaluate_Full_RelatedEntities.json)
 * [Screening Organization](ORGANIZATION/ORGANIZATION_Samples/screening_Organization.json)
 

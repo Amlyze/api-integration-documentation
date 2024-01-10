@@ -2,7 +2,7 @@
     "communicationNumber": "ComNr_000321",
     "requester": "financial_institution",
     "riskManagementCategory": "ORG_AMLYZE",
-    "action": "UPDATE",
+    "action": "CREATE",
     "sourceOfRiskLevel": "EVALUATE",
     "entityType": "ORGANIZATION",
     "customerExtId": "ORG20231114T120945",
