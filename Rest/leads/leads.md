@@ -20,7 +20,7 @@ Customers contain identifying information and KYC data. This section provides in
 * Leads are NOT customers yet
 * For a Lead, only <b>"SourceOfRiskLevel"</b> = `EVALUATE` is possible
 * <b>"RiskManagementCategory"</b> is specified with a prefix or suffix LEAD_ (example - `LEAD_IND / LEAD_ORG`)
-* The following fields must be completed in the same manner as for a [<b>Customer</b>](../customer/customer.md.md)
+* The following fields must be completed in the same manner as for a [<b>Customer</b>](../customer/customer.md)
 * Lead status will always stay `PENDING` regardless of the decision made
 ---
 
@@ -39,9 +39,9 @@ All <b>Individual</b> lead fields [<b>here</b>](INDIVIDUAL/INDIVIDUAL_Fields.md)
 
 >> <b>EVALUATE Example</b>
 
-* Mandatory Fields [LEAD_Individual](INDIVIDUAL/INDIVIDUAL_Samples/evaluate_LEAD_INDIVIDUAL_Mandatory.json) 
+* Mandatory Fields [LEAD_Individual](../leads/INDIVIDUAL/INDIVIDUAL_Fields.md) 
 
-All <b>Organization</b> lead fields [<b>here</b>](ORGANIZATION\ORGANIZATION_Fields.md) 
+All <b>Organization</b> lead fields [<b>here</b>](../leads/ORGANIZATION/ORGANIZATION_Fields.md) 
 
 >> <b>EVALUATE Example</b>
 

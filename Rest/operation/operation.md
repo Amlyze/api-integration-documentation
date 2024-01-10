@@ -42,18 +42,41 @@ An operation is a transaction between two or more parties, where one of the part
 * [Import_INTERNAL_Mandatory.json](INTERNAL/INTERNAL_Samples/import_INTERNAL_Mandatory.json)
 ---
 
-[<b>CARD_PAYMENT Fields</b>](CARD_PAYMENTS/CARD_PAYMENT_Fields.md)
-* [Evaluate_CARD_PAYMENT_Full.json](CARD_PAYMENTS/CARD_PAYMENT_Samples/evaluate_CARD_PAYMENT_Full.json)
-* [Evaluate_CARD_PAYMENT_Mandatory.json](CARD_PAYMENTS/CARD_PAYMENT_Samples/samples/evaluate_CARD_PAYMENT_Mandatory.json)
-* [Import_CARD_PAYMENT_Full.json](CARD_PAYMENTS/CARD_PAYMENT_Samples/import_CARD_PAYMENT_Full.json)
-* [Import_CARD_PAYMENT_Mandatory.json](CARD_PAYMENTS/CARD_PAYMENT_Samples/import_CARD_PAYMENT_Mandatory.json)
+[<b>CARD_PAYMENT Fields</b>](CARD_PAYMENT/CARD_PAYMENT_Fields.md)
+* [Evaluate_CARD_PAYMENT_Full.json](CARD_PAYMENT/CARD_PAYMENT_Samples/evaluate_CARD_PAYMENT_Full.json)
+* [Evaluate_CARD_PAYMENT_Mandatory.json](CARD_PAYMENT/CARD_PAYMENT_Samples/evaluate_CARD_PAYMENT_Mandatory.json)
+* [Import_CARD_PAYMENT_Full.json](CARD_PAYMENT/CARD_PAYMENT_Samples/import_CARD_PAYMENT_Full.json)
+* [Import_CARD_PAYMENT_Mandatory.json](CARD_PAYMENT/CARD_PAYMENT_Samples/import_CARD_PAYMENT_Mandatory.json)
 ---
 
 [<b>CARD_CASH Fields</b>](CARD_CASH/CARD_CASH_Fields.md)
-* [Evaluate_CARD_CASH_Full.json](CARD_CASH/CARD_CASH_Samples/evaluate_CARD_PAYMENT_Full.json)
+* [Evaluate_CARD_CASH_Full.json](CARD_CASH/CARD_CASH_Samples/evaluate_CARD_CASH_Full.json)
 * [Evaluate_CARD_CASH_Mandatory.json](CARD_CASH/CARD_CASH_Samples/evaluate_CARD_CASH_Mandatory.json)
 * [Import_CARD_CASH_Full.json](CARD_CASH/CARD_CASH_Samples/import_CARD_CASH_Full.json)
 * [Import_CARD_CASH_Mandatory.json](CARD_CASH/CARD_CASH_Samples/import_CARD_CASH_Mandatory.json)
+---
+
+[<b>CASH Incoming Fields</b>](CASH/Incoming/Fields.md)
+* [evaluate_Mandatory.json](CASH/Incoming/Samples/evaluate_Mandatory.json)
+* [evaluate_Full.json](CASH/Incoming/Samples/evaluate_Full.json)
+* [import_Mandatory.json](CASH/Incoming/Samples/import_Mandatory.json)
+* [import_Full.json](CASH/Incoming/Samples/import_Full.json)
+
+
+[<b>CASH Outgoing Fields</b>](CASH/Outgoing/Fields.md)
+* [evaluate_Mandatory.json](CASH/Outgoing/Samples/evaluate_Mandatory.json)
+* [evaluate_Full.json](CASH/Outgoing/Samples/evaluate_Full.json)
+* [import_Mandatory.json](CASH/Outgoing/Samples/import_Mandatory.json)
+* [import_Full.json](CASH/Outgoing/Samples/import_Full.json)
+
+---
+
+[<b>CASH_TRANSFER Outgoing Fields</b>](CASH_TRANSFER/Outgoing/Fields.md)
+* [evaluate_Mandatory.json](CASH_TRANSFER/Outgoing/Samples/evaluate_Mandatory.json)
+* [evaluate_Full.json](CASH_TRANSFER/Outgoing/Samples/evaluate_Full.json)
+* [import_Mandatory.json](CASH_TRANSFER/Outgoing/Samples/import_Mandatory.json)
+* [import_Full.json](CASH_TRANSFER/Outgoing/Samples/import_Full.json)
+
 ---
 
 [<b>FASTER_PAYMENTS Fields</b>](FASTER_PAYMENTS/FASTER_PAYMENTS_Fields.md)

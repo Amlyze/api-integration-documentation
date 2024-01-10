@@ -3,7 +3,7 @@
 	"requester": "financial_institution",
 	"riskManagementCategory": "IND_AMLYZE",
 	"sourceOfRiskLevel": "EVALUATE",
-    "screeningLists": [
+	"initializeScreeningProcesses": [
         "SANCTIONS",
         "ADVERSE_MEDIA",
         "PEP"
