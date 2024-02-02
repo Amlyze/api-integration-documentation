@@ -265,21 +265,21 @@ At least one operation party account must exist in Amlyze (identified by account
             <td>String</td>
             <td>true/false</td>
             <td>Eduardo</td>
-            <td><b>Mandatory</b> when entityType = <b> INDIVIDUAL</b>or <b>UNKNOWN</b><br/> <b>Not Used</b> when entityType = <b>ORGANIZATION</b></td>
+             <td><b>Mandatory</b> when entityType = <b> INDIVIDUAL</b>, <br/> <b>Not Used</b> when entityType = <b>ORGANIZATION</b>, </br> <b>Optional</b> when entityType = <b>UNKNOWN</b></td>
         </tr>
         <tr>
             <td><b>lastName</b></td>
             <td>String</td>
             <td>true/false</td>
             <td>Rodriguez</td>
-            <td><b>Mandatory</b> when entityType = <b> INDIVIDUAL</b>or <b>UNKNOWN</b><br/> <b>Not Used</b> when entityType = <b>ORGANIZATION</b></td>
+             <td><b>Mandatory</b> when entityType = <b> INDIVIDUAL</b>, <br/> <b>Not Used</b> when entityType = <b>ORGANIZATION</b>, </br> <b>Optional</b> when entityType = <b>UNKNOWN</b></td>
         </tr>
         <tr>
             <td><b>title</b></td>
             <td>String</td>
             <td>true/false</td>
             <td>Moller</td>
-            <td><b>Mandatory</b> when entityType = <b>ORGANIZATION</b>or <b>UNKNOWN</b><br/> <b>Not Mandatory</b> when entityType = <b>INDIVIDUAL</b></td>
+            <td><b>Mandatory</b> when entityType = <b>ORGANIZATION</b>, <br/> <b>Not Used </b> when entityType = <b>INDIVIDUAL</b>, </br> <b>Optional</b> when entityType = <b>UNKNOWN</b></td>
         </tr>
     </tbody>
 </table>

@@ -1,32 +1,31 @@
 {
     "communicationNumber": "Com_458",
-    "requester": "financial_institution",
-    "operationExtId": "ExtId_748",
+    "requester": "ATM",
+    "operationExtId": "ExtId_458",
     "operationType": "CARD_CASH",
     "cardOperationSubType": "CARD_CASH_WITHDRAWAL",
     "riskManagementCategory": "OP_DEFAULT",
     "sourceOfRiskLevel": "IMPORT",
     "operationStatus":"EXECUTED",
-    "riskLevel": "LOW",
-    "operationDateTime": "2023-09-22T15:09:33+02:00",
+    "operationDateTime": "2024-01-22T15:09:33+02:00",
     "currency": "EUR",
-    "amount": 760,
+    "amount": 2000,
     "financialFlowDirection": "OUTGOING",
-    "description": "invoice 'LT523460'",
+    "description": "ATM TBCBANK CEN: Cash Withdrawal",
     "listOperationParty": [
         {
             "partyRole": "DEBTOR",
             "accountNumber": "LT933520036948858623",
-            "bic": "UANFLT21XXX",
+            "bic": "BIC21XXX",
             "entityType": "INDIVIDUAL",
             "firstName": "Geli",
             "lastName": "Deliono"
         },
         {
             "partyRole": "CREDITOR",
-            "accountNumber": "LT12345678901234567890",
-            "entityType": "ORGANIZATION",
-            "title": "HAMMER"
+            "accountNumber": "ATM TBCBANK CEN ",
+            "entityType": "UNKNOWN",
+            "title": "ATM"
         }
     ]
 }
