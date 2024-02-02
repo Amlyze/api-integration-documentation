@@ -32,12 +32,8 @@ Permissions required: `None`
 * `GET /classifier/country`
 * `GET /classifier/decisionGround`
 * `GET /classifier/operationType`
-* `GET /classifier/fnttOperationType`
-* `GET /classifier/fnttReportType`
-* `GET /classifier/fnttSuspicionCriteria`
 * `GET /classifier/introductionSourceType`
 * `GET /classifier/paymentPurposeType`
-* `GET /classifier/managementActionType`
 * `GET /classifier/riskManagementCategory`
 * `GET /classifier/turnoverType`
 * `GET /classifier/addressType`
