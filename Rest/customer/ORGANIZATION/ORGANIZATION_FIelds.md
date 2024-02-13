@@ -73,8 +73,15 @@
 			<td>true/false</td>
 			<td>HIGH</td>
 			<td>
-                The Risk Level of the customer during IMPORT<br/><b>Mandatory</b> when sourceOfRiskLevel = IMPORT<br/>
-                <b>Not Mandatory</b>  when sourceOfRiskLevel = EVALUATE</td>
+                Customer's predefined  risk based on historical data <br/><b>Mandatory</b> when sourceOfRiskLevel = IMPORT<br/>
+                <b>Not used</b>  when sourceOfRiskLevel = EVALUATE</td>
+		</tr>
+		<tr>
+			<td><b>customerStatus</b></td>
+			<td>String<br/><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
+			<td>true/false</td>
+			<td>ACTIVE</td>
+			<td>Customer's predefined status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received but not yet prepared for upcoming workflow <br/> ACTIVE - Customer is onboarded and ready for workflow <br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is disabled</i></br> <b>Mandatory</b> when sourceOfRiskLevel = IMPORT<br/> <b>Not Used</b>  when sourceOfRiskLevel = EVALUATE</td>
 		</tr>
 		<tr>
 			<td><b>initializeScreeningProcesses</b></td>
@@ -82,13 +89,6 @@
 			<td>false</td>
 			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
 			<td>Defines which screening processes to initiate</td>
-		</tr>
-		<tr>
-			<td><b>customerStatus</b></td>
-			<td>String<br/><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
-			<td>true</td>
-			<td>ACTIVE</td>
-			<td>Customer status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received.<br/> ACTIVE - Customer is onboarded ( account is provided or customer assessment case is resolved)<br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is changed to being disabled</i></td>
 		</tr>
 		<tr>
 			<td><b>customerExtId</b></td>
