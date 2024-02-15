@@ -34,7 +34,7 @@
                 <OperationParty>
                     <PartyRole>CREDITOR</PartyRole>
                     <AccountNumber>LV6630800200000018155</AccountNumber>
-                    <BIC>UANFLT21XXX</BIC>
+                    <BIC>BICXX22</BIC>
                     <Currency>GBP</Currency>
                     <BankTitle>TBC bank</BankTitle>
                     <EntityType>INDIVIDUAL</EntityType>
