@@ -25,7 +25,7 @@ therefore workflows for these two separate servers differ.
 
 *swagger UI* `GET /swagger-ui/`
 
-`POST /amlyze-ws-rest/simplified-customer (application/json)`
+`POST /amlyze-ws-rest/simplifiedCustomer (application/json)`
 
   ## Additional Info
 
@@ -35,17 +35,20 @@ therefore workflows for these two separate servers differ.
 ---
 
 ## Samples
->Simplified Individual API Fields [*here*](INDIVIDUAL/INDIVIDUAL_Fields.md) 
+>Simplified Individual API Fields [*here*](../simplifiedCustomer/INDIVIDUAL/simplified_INDIVIDUAL_Fields.md) 
 
-* [Individual Mandatory](INDIVIDUAL/INDIVIDUAL_Samples/individual_Mandatory.json) 
-* [Individual Full](INDIVIDUAL/INDIVIDUAL_Samples/individual_Full.json)
+* [Individual Mandatory](../simplifiedCustomer/INDIVIDUAL/INDIVIDUAL_Samples/simplified_Mandatory.json) 
+* [Individual Full](../simplifiedCustomer/INDIVIDUAL/INDIVIDUAL_Samples/simplified_Full.json)
 
+C:\GIT\src\github.com\Amlyze\api-integration-documentation\Rest\simplifiedCustomer\INDIVIDUAL\INDIVIDUAL_Samples\individual_Full.json
+C:\GIT\src\github.com\Amlyze\api-integration-documentation\Rest\simplifiedCustomer\ORGANIZATION\ORGANIZATION_Samples\organization_Full.json
+api-integration-documentation\Rest\simplifiedCustomer\ORGANIZATION\ORGANIZATION_Samples\organization_Full.json
 --- 
 
-  >Simplified Organization API Fields [*here*](ORGANIZATION/ORGANIZATION_Fields.md) 
+  >Simplified Organization API Fields [*here*](../simplifiedCustomer/ORGANIZATION/simplified_ORGANIZATION_Fields.md) 
 
-* [Organization Mandatory](ORGANIZATION/ORGANIZATION_Samples/organization_Mandatory.json) 
-* [Organization Full](ORGANIZATION/ORGANIZATION_Samples/organization_Full.json)
+* [Organization Mandatory](../simplifiedCustomer/ORGANIZATION/ORGANIZATION_Samples/simplified_Mandatory.json) 
+* [Organization Full](../simplifiedCustomer/ORGANIZATION/ORGANIZATION_Samples/simplified_Full.json)
 ----------------------
 
 ## Responses
