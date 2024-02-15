@@ -21,8 +21,9 @@
         {
             "partyRole": "CREDITOR",
             "accountNumber": "LV6630800200000018155",
+            "bic": "BICXX22",
             "entityType": "INDIVIDUAL",
-            "firstName": "Geli",
+            "firstName": "Luka",
             "lastName": "Deliono"
         }
     ]

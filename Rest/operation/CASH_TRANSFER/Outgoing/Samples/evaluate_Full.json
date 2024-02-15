@@ -29,11 +29,11 @@
         {
             "partyRole": "CREDITOR",
             "accountNumber": "LV6630800200000018155",
-            "bic": "UANFLT21XXX",
+            "bic": "BICXX22",
             "currency": "GBP",
             "bankTitle": "TBC bank",
             "entityType": "INDIVIDUAL",
-            "firstName": "Geli",
+            "firstName": "Luka",
             "lastName": "Deliono"
         }
     ]

@@ -27,7 +27,7 @@
                     <PartyRole>DEBTOR</PartyRole>
                     <AccountNumber>LV6630800200000018155</AccountNumber>
                     <Currency>EUR</Currency> 
-                    <BIC>UANFLT21XXX</BIC>
+                    <BIC>BICXX22</BIC>
                     <BankTitle>AMLYZE UAB</BankTitle>
                     <EntityType>INDIVIDUAL</EntityType>
                     <FirstName>Geli</FirstName>
@@ -37,7 +37,7 @@
                     <PartyRole>CREDITOR</PartyRole>
                     <AccountNumber>LV7730800200000018166</AccountNumber>
                     <Currency>EUR</Currency> 
-                    <BIC>UANFLT21XXX</BIC>
+                    <BIC>BICXX22</BIC>
                     <BankTitle>AMLYZE UAB</BankTitle>
                     <EntityType>INDIVIDUAL</EntityType>
                     <FirstName>Geli</FirstName>

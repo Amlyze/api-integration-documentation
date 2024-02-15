@@ -19,7 +19,7 @@
                 <OperationParty>
                     <PartyRole>DEBTOR</PartyRole>
                     <AccountNumber>LV6630800200000018155</AccountNumber>
-                    <BIC>UANFLT21XXX</BIC>
+                    <BIC>BICXX22</BIC>
                     <EntityType>INDIVIDUAL</EntityType>
                     <FirstName>Geli</FirstName>
                     <LastName>Deliono</LastName>
@@ -27,7 +27,7 @@
                 <OperationParty>
                     <PartyRole>CREDITOR</PartyRole>
                     <AccountNumber>LV7730800200000018166</AccountNumber>
-                    <BIC>UANFLT21XXX</BIC>
+                    <BIC>BICXX22</BIC>
                     <EntityType>INDIVIDUAL</EntityType>
                     <FirstName>Geli</FirstName>
                     <LastName>Deliono</LastName>
