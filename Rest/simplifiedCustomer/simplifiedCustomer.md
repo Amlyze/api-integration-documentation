@@ -40,9 +40,7 @@ therefore workflows for these two separate servers differ.
 * [Individual Mandatory](../simplifiedCustomer/INDIVIDUAL/INDIVIDUAL_Samples/simplified_Mandatory.json) 
 * [Individual Full](../simplifiedCustomer/INDIVIDUAL/INDIVIDUAL_Samples/simplified_Full.json)
 
-C:\GIT\src\github.com\Amlyze\api-integration-documentation\Rest\simplifiedCustomer\INDIVIDUAL\INDIVIDUAL_Samples\individual_Full.json
-C:\GIT\src\github.com\Amlyze\api-integration-documentation\Rest\simplifiedCustomer\ORGANIZATION\ORGANIZATION_Samples\organization_Full.json
-api-integration-documentation\Rest\simplifiedCustomer\ORGANIZATION\ORGANIZATION_Samples\organization_Full.json
+
 --- 
 
   >Simplified Organization API Fields [*here*](../simplifiedCustomer/ORGANIZATION/simplified_ORGANIZATION_Fields.md) 
