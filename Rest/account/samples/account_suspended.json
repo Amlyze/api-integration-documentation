@@ -12,5 +12,5 @@
     "accountPurpose": "PURPOSE_INVEST",
     "accountType": "ORG_B2B",
     "isOtherFinInstAccount": false,
-    "suspensionReason": "Potential money laundering"
+    "suspensionReasons": "Potential money laundering"
   }

@@ -86,7 +86,8 @@
             <td>String</td>
             <td>true</td>
             <td>BICXX22</td>
-            <td>Bank identifier code for account number</td>
+            <td>Bank identifier code for account number</br>
+            <b>Mandatory</b> when "IsOtherFinInstAccount" = "true" </td>
         </tr>
         <tr>
             <td><b>BusinessEntityExtId</b></td>
@@ -120,7 +121,7 @@
             <td>International currency code</td>
         </tr>
         <tr>
-            <td><b>isOtherFinInstAccount</b></td>
+            <td><b>IsOtherFinInstAccount</b></td>
             <td>Boolean</td>
             <td>false</td>
             <td>false</td>

@@ -454,14 +454,14 @@
             <td><a href="#BusinessEntityDocumentApi">BusinessEntityDocumentApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
-			<td>List of related entity documents</td>
+			<td>List of business entity documents</td>
 		</tr>
 		<tr>
 			<td><b>listContact</b></td>
             <td><a href="#ContactApi">ContactApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
-			<td>List of contacts of related entity</td>
+			<td>List of contacts of business entity</td>
 		</tr>
 		<tr>
 			<td><b>listCountryOfActivity</b></td>
@@ -524,7 +524,7 @@
             <td><a href="#RegionOfActivityApi">RegionOfActivityApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
-			<td>List of activity countries of related entity</td>
+			<td>List of activity countries of business entity</td>
 		</tr>
 		<tr>
 			<td><b>listSourceOfWealth</b></td>

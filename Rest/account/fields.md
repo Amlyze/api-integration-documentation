@@ -67,9 +67,10 @@
         <tr>
             <td><b>bic</b></td>
             <td>String</td>
-            <td>true</td>
+            <td>true/false</td>
             <td>BICXX22</td>
-            <td>Bank identifier code for account number</td>
+            <td>Bank identifier code for account number</br>
+            <b>Mandatory</b> when "isOtherFinInstAccount" = "true"</td>
         </tr>
            <tr>
             <td><b>currencyCode</b></td>
