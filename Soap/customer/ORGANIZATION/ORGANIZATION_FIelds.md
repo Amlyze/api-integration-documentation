@@ -452,14 +452,14 @@
 			<td>Object</td>
 			<td>false</td>
             <td><a href="#BusinessEntityDocument">BusinessEntityDocument[]</a></td>
-			<td>List of related entity documents</td>
+			<td>List of business entity documents</td>
 		</tr>
 		<tr>
 			<td><b>ListContact</b></td>
 			<td>Object</td>
 			<td>false</td>
             <td><a href="#Contact">Contact[]</a></td>
-			<td>List of contacts of related entity</td>
+			<td>List of contacts of business entity</td>
 		</tr>
 		<tr>
 			<td><b>ListCountryOfActivity</b></td>
@@ -522,7 +522,7 @@
 			<td>Object</td>
 			<td>false</td>
             <td><a href="#RegionOfActivity">RegionOfActivity[]</a></td>
-			<td>List of activity countries of related entity</td>
+			<td>List of activity countries of business entity</td>
 		</tr>
 		<tr>
 			<td><b>ListSourceOfWealth</b></td>

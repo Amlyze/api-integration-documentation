@@ -334,7 +334,7 @@
             <td><a href="#ContactApi">ContactApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
-			<td>List of contacts of related entity</td>
+			<td>List of contacts</td>
 		</tr>
 		<tr>
 			<td><b>listAddress</b></td>
@@ -348,7 +348,7 @@
             <td><a href="#BusinessEntityDocumentApi">BusinessEntityDocumentApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
-			<td>List of related entity documents</td>
+			<td>List of business entity documents</td>
 		</tr>
 		<tr>
 			<td><b>listAppealReason</b></td>
@@ -418,7 +418,7 @@
             <td><a href="#RegionOfActivityApi">RegionOfActivityApi[]</a></td>
 			<td>false</td>
 			<td>-</td>
-			<td>List of activity countries of related entity</td>
+			<td>List of activity countries of business entity</td>
 		</tr>
 		<tr>
 			<td><b>listCountryOfActivity</b></td>
