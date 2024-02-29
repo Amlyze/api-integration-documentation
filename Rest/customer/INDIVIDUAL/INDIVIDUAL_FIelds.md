@@ -1353,16 +1353,6 @@
 			<td>LT</td>
 			<td>The birth country of the related entity</td>
 	    </tr>
-		<tr>
-			<td><b>countryOfBusinessOperations</b></td>
-			<td>
-                String <br/>
-                <a href="../../README.md#classifiers">(Country classifier)</a>
-            </td>
-			<td>false</td>
-			<td>LT</td>
-			<td>ountry of business operations of related individual entity</td>
-	    </tr>
 		 <tr>
 			<td><b>firstName</b></td>
 			<td>String</td>
