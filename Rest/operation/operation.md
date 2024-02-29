@@ -118,7 +118,7 @@ An operation is a transaction between two or more parties, where one of the part
 				<td>
 					<pre>
 {
-  "resultType": "OK"
+  "resultType": "REQUEST_ACCEPTED"
 }
                     </pre>
 				</td>
