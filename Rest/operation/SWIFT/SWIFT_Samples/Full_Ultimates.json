@@ -1,0 +1,75 @@
+{
+    "communicationNumber": "ComNr_0020",
+    "requester": "financial_institution",
+    "operationExtId": "Op_0020",
+    "operationType": "SWIFT",
+    "riskManagementCategory": "OP_DEFAULT",
+    "initializeScreeningProcesses": [
+        "SANCTIONS",
+        "PEP",
+        "ADVERSE_MEDIA"
+    ],
+    "sourceOfRiskLevel": "EVALUATE",
+    "operationDateTime": "2023-09-22T15:09:33+02:00",
+    "sourceCountry": "LT",
+    "destinationCountry": "LV",
+    "currency": "GBP",
+    "amount": 123,
+    "euroExchangeRate": 1.16,
+    "amountInEuro": 143,
+    "financialFlowDirection": "INCOMING",
+    "description": "invoice '123456'",
+    "ipAddress": "555.222.4545.144",
+    "ipAddressCountry": "LT",
+    "listOperationParty": [
+        {
+            "partyRole": "ULTIMATE_DEBTOR",
+            "accountNumber": "LT20240226T133450",
+            "currency": "EUR",
+            "bic": "BIC",
+            "bankTitle": "TBC",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Hakaka",
+            "lastName": "Luka",
+            "identifier": "50007102289",
+            "address": "Verkių g. 7-8, Vilnius",
+            "country": "LT"
+        },
+        {
+            "partyRole": "DEBTOR",
+             "accountNumber": "LT5630800200000011112",
+            "currency": "EUR",
+            "bic": "BIC22XX",
+            "bankTitle": "TBC",
+            "entityType": "ORGANIZATION",
+            "title": "Komapnele"
+            
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LA5558885487878222",
+            "currency": "EUR",
+            "bic": "BIC22XX",
+            "bankTitle": "TBC",
+            "entityType": "UNKNOWN",
+            "firstName": "Migeli"
+            
+           
+            
+        },
+        {
+            "partyRole": "ULTIMATE_CREDITOR",
+            "accountNumber": "LT20240226T133633",
+            "currency": "EUR",
+            "bic": "BIC",
+            "bankTitle": "TBC",
+            "entityType": "INDIVIDUAL",
+            "title": "Dona Murara",
+            "identifier": "60007102289",
+            "address": "Kauno g. 9, Vilnius",
+            "country": "LT"
+            
+        }
+       
+    ]
+}
