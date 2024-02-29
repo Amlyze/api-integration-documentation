@@ -39,7 +39,7 @@ The request body contains the data that you are sending to the API. The data doc
             <td>
                 <pre>
 {
-    "resultType": "REQUEST_ACCEPTED"
+    "resultType": "OK"
 }
                 </pre>
             </td>
