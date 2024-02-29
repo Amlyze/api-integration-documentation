@@ -168,7 +168,7 @@
 			<td>Establishment date for organization type entities</td>
 		</tr>
         <tr>
-			<td><b>GIIN</b></td>
+			<td><b>giin</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>GIN548745122</td>
@@ -321,7 +321,7 @@
 			<td>Legal form of organization</td>
 		</tr>
 		<tr>
-			<td><b>LEI</b></td>
+			<td><b>lei</b></td>
 			<td>String</td>
 			<td>false</td>
 			<td>LEI54511548</td>
