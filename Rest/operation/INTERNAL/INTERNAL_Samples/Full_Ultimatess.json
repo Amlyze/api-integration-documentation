@@ -1,0 +1,71 @@
+{
+    "communicationNumber": "ComNr_0020",
+    "requester": "financial_institution",
+    "operationExtId": "Op_0020",
+    "operationType": "INTERNAL",
+    "riskManagementCategory": "OP_DEFAULT",
+    "initializeScreeningProcesses": [
+        "SANCTIONS",
+        "PEP",
+        "ADVERSE_MEDIA"
+    ],
+    "sourceOfRiskLevel": "EVALUATE",
+    "operationDateTime": "2023-09-22T15:09:33+02:00",
+    "sourceCountry": "LT",
+    "destinationCountry": "LV",
+    "currency": "GBP",
+    "amount": 123,
+    "euroExchangeRate": 1.16,
+    "amountInEuro": 143,
+    "financialFlowDirection": "NULL",
+    "description": "invoice '123456'",
+    "ipAddress": "555.222.4545.144",
+    "ipAddressCountry": "LT",
+    "listOperationParty": [
+        {
+            "partyRole": "ULTIMATE_DEBTOR",
+            "accountNumber": "LT20240226T133450",
+            "currency": "EUR",
+            "bic": "BIC",
+            "bankTitle": "TBC",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Hakaka",
+            "lastName": "Luka",
+            "identifier": "50007102289",
+            "address": "Verkių g. 7-8, Vilnius",
+            "country": "LT"
+        },
+        {
+            "partyRole": "DEBTOR",
+            "accountNumber": "LV6630800200000018155",
+            "currency": "EUR",
+            "bic": "BICXX22",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Geli",
+            "lastName": "Deliono"
+        },
+        {
+            "partyRole": "CREDITOR",
+           "accountNumber": "LV7730800200000018166",
+            "currency": "EUR",
+            "bic": "BICXX22",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Geli",
+            "lastName": "Deliono"
+        },
+        {
+            "partyRole": "ULTIMATE_CREDITOR",
+            "accountNumber": "LT20240226T133633",
+            "currency": "EUR",
+            "bic": "BIC",
+            "bankTitle": "TBC",
+            "entityType": "INDIVIDUAL",
+            "title": "Dona Murara",
+            "identifier": "60007102289",
+            "address": "Kauno g. 9, Vilnius",
+            "country": "LT"
+            
+        }
+       
+    ]
+}

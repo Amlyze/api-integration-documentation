@@ -48,6 +48,33 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td>Notifies about what kind of operation was performed</td>
         </tr>
         <tr>
+            <td><b>cardOperationSubType</b></td>
+			<td>
+                String <br/>
+                <a href="../../../Classifiers/classifiers.md">(Card operation subType classifier)</a>
+            </td>
+            <td>true</td>
+            <td>CARD_CASH_WITHDRAWAL</td>
+            <td>Card operation subtype code</td>
+        </tr>
+        <tr>
+            <td><b>riskManagementCategory</b></td>
+            <td>
+                String <br/>
+                <a href="../../../Classifiers/classifiers.md">(Risk management category classifier)</a>
+            </td>
+            <td>true</td>
+            <td>OP_DEFAULT</td>
+            <td>Code of risk management category of object.</td>
+        </tr>
+        <tr>
+            <td><b>initializeScreeningProcesses</b></td>
+            <td>String[]</td>
+            <td>false</td>
+            <td>PEP,<br/>ADVERSE_MEDIA,<br/> SANCTIONS</td>
+            <td>Defines which lists to check during screening process.</td>
+        </tr>
+        <tr>
             <td><b>sourceOfRiskLevel</b></td>
             <td>String<br/><b>ENUM</b><br/>[EVALUATE,<br/>IMPORT]</td>
             <td>true</td>
@@ -75,16 +102,6 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td>LOW</td>
             <td>The risk level of imported operation</td>
         </tr>
-        <tr>
-            <td><b>riskManagementCategory</b></td>
-            <td>
-                String <br/>
-                <a href="../../../Classifiers/classifiers.md">(Risk management category classifier)</a>
-            </td>
-            <td>true</td>
-            <td>OP_DEFAULT</td>
-            <td>Code of risk management category of object.</td>
-        </tr>
 		<tr>
 			<td><b>businessUnit</b></td>
 			<td>
@@ -105,22 +122,15 @@ In any type of operation between two or more parties, one of the parties is alwa
            <br/>  direction = <b>OUTGOING</b> your customer = <b>DEBTOR</b>
             </td>
         </tr>
-        <tr>
-            <td><b>initializeScreeningProcesses</b></td>
-            <td>String[]</td>
-            <td>false</td>
-            <td>PEP,<br/>ADVERSE_MEDIA,<br/> SANCTIONS</td>
-            <td>Defines which lists to check during screening process.</td>
-        </tr>
-        <tr>
-            <td><b>cardOperationSubType</b></td>
-			<td>
+         <tr>
+            <td><b>currency</b></td>
+            <td>
                 String <br/>
-                <a href="../../../Classifiers/classifiers.md">(Card operation subtype classifier)</a>
+                <a href="../../../Classifiers/classifiers.md">(Currency classifier)</a>
             </td>
-            <td>true/false</td>
-            <td>CARD_CASH_WITHDRAWAL</td>
-            <td>Card operation subtype code</td>
+            <td>true</td>
+            <td>EUR</td>
+            <td>Currency code.</td> 
         </tr>
         <tr>
             <td><b>amount</b></td>
@@ -137,14 +147,12 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td>amount of money in euro currency</td>
         </tr>
         <tr>
-            <td><b>currency</b></td>
-            <td>
-                String <br/>
-                <a href="../../../Classifiers/classifiers.md">(Currency classifier)</a>
-            </td>
-            <td>true</td>
-            <td>EUR</td>
-            <td>Currency code.</td> 
+            <td><b>euroExchangeRate</b></td>
+            <td>BigDecimal</td>
+            <td>true/false</td>
+            <td>0.93</td>
+            <td>Euro exchange rate for other than Euro currency<br/> 
+            <b>Mandatory</b> when currency =! <b>eur</b><br/> <b>Not Used</b> when currency = <b>eur</b></td>
         </tr>
         <tr>
             <td><b>description</b></td>
@@ -174,14 +182,6 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td>Country of operation's destination</td>
         </tr>
         <tr>
-            <td><b>euroExchangeRate</b></td>
-            <td>BigDecimal</td>
-            <td>true/false</td>
-            <td>0.93</td>
-            <td>Euro exchange rate for other than Euro currency<br/> 
-            <b>Mandatory</b> when currency =! <b>eur</b><br/> <b>Not Used</b> when currency = <b>eur</b></td>
-        </tr>
-        <tr>
             <td><b>ipAddress</b></td>
             <td>String</td>
             <td>false</td>
@@ -200,68 +200,68 @@ In any type of operation between two or more parties, one of the parties is alwa
         </tr>
         <tr>
             <td><b>merchantCode</b></td>
-            <td>String </td>
-            <td>false </td>
-            <td>5541 </td>
-            <td> External identifier of the seller-mediator </td>
+            <td>String</td>
+            <td>false</td>
+            <td>5541</td>
+            <td>External identifier of the seller-mediator</td>
         </tr>
         <tr>
             <td><b>merchantCountryCode</b></td>
-            <td>String </td>
-            <td>false </td>
-            <td>LT </td>
-            <td> Seller-mediator Country code </td>
+            <td>String</td>
+            <td>false</td>
+            <td>LT</td>
+            <td>Seller-mediator Country code</td>
         </tr>
         <tr>
             <td><b>merchantDescription</b></td>
-            <td>String </td>
-            <td>false </td>
+            <td>String</td>
+            <td>false</td>
             <td>"Ecommerce merchants"</td>
-            <td> Seller-mediator description </td>
+            <td>Seller-mediator description</td>
         </tr>
         <tr>
             <td><b>merchantExtId</b></td>
-            <td>String </td>
-            <td>false </td>
-            <td>External_0112 </td>
-            <td> External identifier of the seller-mediator </td>
+            <td>String</td>
+            <td>false</td>
+            <td>External_0112</td>
+            <td>External identifier of the seller-mediator</td>
         </tr>
         <tr>
             <td><b>merchantName</b></td>
-            <td>String </td>
-            <td>false </td>
-            <td>Costco </td>
-            <td> Name of the seller-mediator </td>
+            <td>String</td>
+            <td>false</td>
+            <td>Costco</td>
+            <td>Name of the seller-mediator</td>
         </tr>
          <tr>
             <td><b>salesPointCode</b></td>
-            <td>String </td>
-            <td>false </td>
-            <td>54574 </td>
-            <td> External code of the sales point </td>
+            <td>String</td>
+            <td>false</td>
+            <td>54574</td>
+            <td>External code of the sales point</td>
         </tr>
          <tr>
             <td><b>salesPointExtId</b></td>
-            <td>String </td>
-            <td>false </td>
-            <td>S_extid_0145 </td>
-            <td> External identifier of the sales point </td>
+            <td>String</td>
+            <td>false</td>
+            <td>S_extid_0145</td>
+            <td>External identifier of the sales point</td>
         </tr>
          <tr>
             <td><b>terminalCode</b></td>
-            <td>String </td>
-            <td>false </td>
-            <td>57455 </td>
-            <td> External code of terminal </td>
+            <td>String</td>
+            <td>false</td>
+            <td>57455</td>
+            <td>External code of terminal</td>
         </tr>
          <tr>
             <td><b>terminalExtId</b></td>
-            <td>String </td>
-            <td>false </td>
-            <td>t_extid_145 </td>
-            <td> External identifier of the terminal </td>
+            <td>String</td>
+            <td>false</td>
+            <td>t_extid_145</td>
+            <td>External identifier of the terminal</td>
         </tr>
-         <tr>
+        <tr>
             <td><b>ListOperationParty</b></td>
             <td><a href="#OperationPartyApi">OperationPartyApi[]</a></td>
             <td>true</td>
@@ -288,12 +288,33 @@ At least one operation party account must exist in Amlyze (identified by account
         </tr>
     </thead>
     <tbody>
+     <tr>
+            <td><b>partyRole</b></td>
+            <td>String<br/><b>ENUM</b><br/>[DEBTOR,<br/>CREDITOR,<br/>ULTIMATE_DEBTOR,<br/>ULTIMATE_CREDITOR]</td>
+            <td>true</td>
+            <td>CREDITOR</td>
+            <td>The role of the party in ongoing operation. </br> When "partyRole", is one of <b>"ULTIMATE_"</b>, only two variations of elements becomes <b>mandatory</b> to provide:</br> 1. "entityType",</br> 2. "identifier" | "firstName" + "lastName" | "title"</td>
+        </tr>
         <tr>
             <td><b>accountNumber</b></td>
             <td>String</td>
-            <td>true</td>
+            <td>true/false</td>
             <td>LT038625979279192518</td>
-            <td>Unique account identification number used in performing operations</td>
+            <td>Unique account identification number used in performing operations. </br> <b>Mandatory</b> only when <b>"partyRole" = "DEBTOR" | "CREDITOR"</b> </td>
+        </tr>
+        <tr>
+            <td><b>currency</b></td>
+            <td>String <br/><a href="../../../Classifiers/classifiers.md">(Currency classifier)</a></td>
+            <td>false</td>
+            <td>GBP</td>
+            <td>Currency code of operation</td>
+        </tr>
+        <tr>
+            <td><b>bic</b></td>
+            <td>String</td>
+            <td>true/false</td>
+            <td>BICXX22</td>
+            <td>Bank identifier code for account number<br/> <b>Mandatory</b> for customer<br/> <b>Not Mandatory</b> for counterparties</td>
         </tr>
         <tr>
             <td><b>bankTitle</b></td>
@@ -303,76 +324,73 @@ At least one operation party account must exist in Amlyze (identified by account
             <td>Title of bank with which the operation is happening</td>
         </tr>
         <tr>
-            <td><b>bic</b></td>
-            <td>String</td>
-            <td>true/false</td>
-            <td>BICXX22</td>
-            <td>Bank identifier code for account number<br/> <b>Mandatory</b> for customer<br/> <b>Not Mandatory</b> for counterparty</td>
-        </tr>
-        <tr>
             <td><b>entityType</b></td>
             <td>String<br/><b>ENUM</b><br/>[INDIVIDUAL,<br/>ORGANIZATION,<br/>UNKNOWN]</td>
             <td>true</td>
             <td>INDIVIDUAL</td>
-            <td>Describes client status.<br/>  UNKNOWN is valid only for counterparty (not a customer)</td>
-        </tr>
-        <tr>
-            <td><b>currency</b></td>
-            <td>
-                String <br/>
-                <a href="../../../Classifiers/classifiers.md">(Currency classifier)</a>
-            </td>
-            <td>false</td>
-            <td>EUR</td>
-            <td>Currency code of operation</td>
-        </tr>
-        <tr>
-            <td><b>partyRole</b></td>
-            <td>String<br/><b>ENUM</b><br/>[DEBTOR,<br/>CREDITOR]</td>
-            <td>true</td>
-            <td>CREDITOR</td>
-            <td>The role of the party in ongoing operation</td>
+            <td>Describes client status.<br/> <b>UNKNOWN</b> is valid only for counterparties</td>
         </tr>
         <tr>
             <td><b>firstName</b></td>
             <td>String</td>
             <td>true/false</td>
             <td>Eduardo</td>
-            <td><b>Mandatory</b> when entityType = <b> INDIVIDUAL</b>, <br/> <b>Not Used</b> when entityType = <b>ORGANIZATION</b>, </br> <b>Optional</b> when entityType = <b>UNKNOWN</b></td>
+            <td>Individual's or Unknown entity's first name, <b>used only together with "lastName"</b> and never alone</td>
         </tr>
         <tr>
             <td><b>lastName</b></td>
             <td>String</td>
             <td>true/false</td>
             <td>Rodriguez</td>
-            <td><b>Mandatory</b> when entityType = <b> INDIVIDUAL</b>, <br/> <b>Not Used</b> when entityType = <b>ORGANIZATION</b>, </br> <b>Optional</b> when entityType = <b>UNKNOWN</b></td>
+            <td>Individual's or Unknown entity's last name, <b>used only together with "firstName"</b> and never alone</td>
         </tr>
         <tr>
             <td><b>title</b></td>
-            <td>String </td>
-            <td>true/false </td>
-            <td>Moller </td>
-            <td><b>Mandatory</b> when entityType = <b>ORGANIZATION</b>, <br/> <b>Not Used </b> when entityType = <b>INDIVIDUAL</b>, </br> <b>Optional</b> when entityType = <b>UNKNOWN</b></td>
+            <td>String</td>
+            <td>true/false</td>
+            <td>Moller</td>
+		    <td>Identifies a party (individual, organization, or unknown) without requiring "firstName" or "lastName."</td>
         </tr>
         <tr>
+            <td><b>identifier</b></td>
+			<td>String </td>
+            <td>true/false</td>
+            <td>50007153359</td>
+            <td>Unique identification number (e.g., personal ID, company VAT code) to distinguish the payer and the transaction. </br> Becomes <b>Mandatory</b> only when <b>"partyRole" = "ULTIMATE_"</b> and no more elements are provided for that party </td>
+        </tr>
+        <tr>
+            <td><b>address</b></td>
+			<td>String </td>
+            <td>false</td>
+            <td>Verkių g. 7-8, Vilnius</td>
+            <td>Contact information including street address, city, and possibly other relevant details</td>
+        </tr>
+        <tr>
+            <td><b>country</b></td>
+			<td>String <br/><a href="../../../Classifiers/classifiers.md">(Country classifier)</a></td>
+            <td>false</td>
+            <td>LT</td>
+            <td>Two-letter country code (e.g., US, DE) specifying the participant's country</td>
+        </tr>
+         <tr>
             <td><b>cardHolderName</b></td>
             <td>String </td>
-            <td>false </td>
-            <td>Eduardo Rodrigues </td>
+            <td>false</td>
+            <td>Eduardo Rodrigues</td>
             <td>Data from card</td>
         </tr>
         <tr>
             <td><b>cardNumber</b></td>
-            <td>String </td>
-            <td>false </td>
-            <td>4720582145647937 </td>
-            <td> Data from card </td>
+            <td>String</td>
+            <td>false</td>
+            <td>4720582145647937</td>
+            <td>Data from card</td>
         </tr>
         <tr>
             <td><b>cardValidTill</b></td>
-            <td>String </td>
-            <td>false </td>
-            <td>2025-06-07 </td>
+            <td>String</td>
+            <td>false</td>
+            <td>2025-06-07</td>
             <td>Data from card</td>
         </tr>
     </tbody>
