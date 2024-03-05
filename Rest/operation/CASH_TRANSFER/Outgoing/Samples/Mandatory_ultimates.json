@@ -1,0 +1,41 @@
+{
+    "communicationNumber": "ComNr_0011",
+    "requester": "Kauno kredito unija",
+    "riskManagementCategory": "OP_DEFAULT",
+    "sourceOfRiskLevel": "EVALUATE",
+    "operationType": "CASH_TRANSFER",
+    "financialFlowDirection": "OUTGOING",
+    "operationExtId": "OP20231114T12",
+    "operationDateTime": "2023-11-15T15:09:33+02:00",
+    "amount": 998,
+    "currency": "EUR",
+    "description": "Transfer of funds by cash payment",
+    "listOperationParty": [
+        {
+            "partyRole": "ULTIMATE_DEBTOR",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Hakaka",
+            "lastName": "Luka"
+        },
+        {
+            "partyRole": "DEBTOR",
+            "accountNumber": "IND20231113T180927",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Geli",
+            "lastName": "Deliono"
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LV6630800200000018155",
+            "bic": "BICXX22",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Luka",
+            "lastName": "Deliono"
+        },
+        {
+            "partyRole": "ULTIMATE_CREDITOR",
+            "entityType": "ORGANIZATION",
+            "identifier": "60007102289"
+        }
+    ]
+}
