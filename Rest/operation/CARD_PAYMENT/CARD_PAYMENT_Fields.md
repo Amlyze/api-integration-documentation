@@ -115,7 +115,7 @@ In any type of operation between two or more parties, one of the parties is alwa
 		</tr>
         <tr>
             <td><b>financialFlowDirection</b></td>
-            <td>String<br/><b>ENUM</b><br/>[INCOMING,<br/>LOW,<br/>OUTGOING,<br/>NULL]</td>
+            <td>String<br/><b>ENUM</b><br/>[INCOMING,<br/>OUTGOING,<br/>NULL]</td>
             <td>true</td>
             <td>INCOMING</td>
             <td>Refers to the movement of money between entities or accounts<br/>  direction = <b>INCOMING</b> your customer = <b>CREDITOR</b> 
@@ -335,14 +335,14 @@ At least one operation party account must exist in Amlyze (identified by account
             <td>String</td>
             <td>true/false</td>
             <td>Eduardo</td>
-            <td>Individual's or Unknown entity's first name, <b>used only together with "lastName"</b> and never alone</td>
+            <td>Individual entity's first name, <b>used only together with "lastName"</b> and never alone</td>
         </tr>
         <tr>
             <td><b>lastName</b></td>
             <td>String</td>
             <td>true/false</td>
             <td>Rodriguez</td>
-            <td>Individual's or Unknown entity's last name, <b>used only together with "firstName"</b> and never alone</td>
+            <td>Individual entity's last name, <b>used only together with "firstName"</b> and never alone</td>
         </tr>
         <tr>
             <td><b>title</b></td>
