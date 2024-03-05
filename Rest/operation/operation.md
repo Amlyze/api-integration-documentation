@@ -15,6 +15,8 @@ An operation is a transaction between two or more parties, where one of the part
 
 
 [<b>SEPA Fields</b>](SEPA/SEPA_Fields.md)
+* [Evaluate_SEPA_Full_Ultimates](SEPA/SEPA_Samples/Full_Ultimates.json)
+* [Evaluate_SEPA_Mandatory_Ultimates](SEPA/SEPA_Samples/Mandatory_Ultimates.json)
 * [Evaluate_SEPA_Full.json](SEPA/SEPA_Samples/evaluate_SEPA_Full.json)
 * [Evaluate_SEPA_Mandatory.json](SEPA/SEPA_Samples/evaluate_SEPA_Mandatory.json)
 * [Import_SEPA_Full.json](SEPA/SEPA_Samples/import_SEPA_Full.json)
@@ -22,6 +24,8 @@ An operation is a transaction between two or more parties, where one of the part
 ---
 
 [<b>SWIFT Fields</b>](SWIFT/SWIFT_Fields.md)
+* [Evaluate_SWIFT_Full_Ultimates.json](SWIFT/SWIFT_Samples/Full_Ultimates.json)
+* [Evaluate_SWIFT_Mandatory_Ultimates.json](SWIFT/SWIFT_Samples/Mandatory_Ultimates.json)
 * [Evaluate_SWIFT_Full.json](SWIFT/SWIFT_Samples/evaluate_SWIFT_Full.json)
 * [Evaluate_SWIFT_Mandatory.json](SWIFT/SWIFT_Samples/evaluate_SWIFT_Mandatory.json)
 * [Import_SWIFT_Full.json](SWIFT/SWIFT_Samples/import_SWIFT_Full.json)
@@ -36,6 +40,8 @@ An operation is a transaction between two or more parties, where one of the part
 ---
 
 [<b>INTERNAL Fields</b>](INTERNAL/INTERNAL_Fields.md)
+* [Evaluate_INTERNAL_Full_Ultimates.json](INTERNAL/INTERNAL_Samples/Full_Ultimates.json)
+* [Evaluate_INTERNAL_Mandatory_Ultimates.json](INTERNAL/INTERNAL_Samples/Mandatory_Ultimates.json)
 * [Evaluate_INTERNAL_Full.json](INTERNAL/INTERNAL_Samples/evaluate_INTERNAL_Full.json)
 * [Evaluate_INTERNAL_Mandatory.json](INTERNAL/INTERNAL_Samples/evaluate_INTERNAL_Mandatory.json)
 * [Import_INTERNAL_Full.json](INTERNAL/INTERNAL_Samples/import_INTERNAL_Full.json)
@@ -72,6 +78,8 @@ An operation is a transaction between two or more parties, where one of the part
 ---
 
 [<b>CASH_TRANSFER Outgoing Fields</b>](CASH_TRANSFER/Outgoing/Fields.md)
+* [evaluate_Full_ultimates.json](CASH_TRANSFER/Outgoing/Samples/Full_ultimates.json)
+* [evaluate_Mandatory_ultimates.json](CASH_TRANSFER/Outgoing/Samples/Mandatory_ultimates.json)
 * [evaluate_Mandatory.json](CASH_TRANSFER/Outgoing/Samples/evaluate_Mandatory.json)
 * [evaluate_Full.json](CASH_TRANSFER/Outgoing/Samples/evaluate_Full.json)
 * [import_Mandatory.json](CASH_TRANSFER/Outgoing/Samples/import_Mandatory.json)
