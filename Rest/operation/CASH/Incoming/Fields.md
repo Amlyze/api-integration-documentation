@@ -175,7 +175,8 @@
         </tr>
         <tr>
             <td><b>destinationCountry</b></td>
-            <td>String</td>
+            <td>String <br/>
+                <a href="../../../../Classifiers/classifiers.md">(Country classifier)</a></td>
             <td>false</td>
             <td>LT</td>
             <td>Country of operation's destination</td>
@@ -238,7 +239,7 @@ At least one operation party account must exist in Amlyze (identified by account
         </tr>
         <tr>
             <td><b>bankTitle</b></td>
-            <td>String <br/><a href="../../../Classifiers/classifiers.md">(Currency classifier)</a></td>
+            <td>String</td>
             <td>false</td>
             <td>TBC bank</td>
             <td>Title of bank with which the operation is happening</td>
@@ -269,7 +270,7 @@ At least one operation party account must exist in Amlyze (identified by account
             <td>String</td>
             <td>true/false</td>
             <td>Moller</td>
-	    <td>Identifies a party (individual, organization, or unknown) without requiring "firstName" or "lastName."</td>
+	    <td>Identifies a party (individual, organization) without requiring "firstName" or "lastName."</td>
         </tr>
         <tr>
             <td><b>identifier</b></td>
