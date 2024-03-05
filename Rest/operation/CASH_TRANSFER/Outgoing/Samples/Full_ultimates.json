@@ -1,0 +1,66 @@
+{
+    "communicationNumber": "ComNr_0011",
+    "requester": "Kauno kredito unija",
+    "riskManagementCategory": "OP_DEFAULT",
+    "businessUnit": "BUSINESS_UNIT_NAME",
+    "sourceOfRiskLevel": "EVALUATE",
+    "operationType": "CASH_TRANSFER",
+    "financialFlowDirection": "OUTGOING",
+    "operationExtId": "OP20231114T12",
+    "operationDateTime": "2023-11-15T15:09:33+02:00",
+    "amount": 998,
+    "currency": "GBP",
+    "amountInEuro": 1140.41,
+    "euroExchangeRate": 1.14,
+    "initializeScreeningProcesses": [
+        "SANCTIONS",
+        "ADVERSE_MEDIA",
+        "PEP"
+    ],
+    "description": "Transfer of funds by cash payment",
+    "listOperationParty": [
+        {
+            "partyRole": "ULTIMATE_DEBTOR",
+            "accountNumber": "LT20240226T133450",
+            "currency": "EUR",
+            "bic": "BIC",
+            "bankTitle": "TBC",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Hakaka",
+            "lastName": "Luka",
+            "identifier": "50007102289",
+            "address": "Verkių g. 7-8, Vilnius",
+            "country": "LT"
+        },
+        {
+            "partyRole": "DEBTOR",
+            "accountNumber": "IND20231113T180927",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Geli",
+            "lastName": "Deliono"
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LV6630800200000018155",
+            "bic": "BICXX22",
+            "currency": "GBP",
+            "bankTitle": "TBC bank",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Luka",
+            "lastName": "Deliono"
+        },
+        {
+            "partyRole": "ULTIMATE_CREDITOR",
+            "accountNumber": "LT20240226T133633",
+            "currency": "EUR",
+            "bic": "BIC",
+            "bankTitle": "TBC",
+            "entityType": "INDIVIDUAL",
+            "title": "Dona Murara",
+            "identifier": "60007102289",
+            "address": "Kauno g. 9, Vilnius",
+            "country": "LT"
+            
+        }
+    ]
+}
