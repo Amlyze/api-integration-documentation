@@ -47,6 +47,22 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td>CRYPTO_EXCHANGE</td>
             <td>Notifies about what kind of operation was performed</td>
         </tr>
+	<tr>
+            <td><b>riskManagementCategory</b></td>
+            <td>String <br/>
+                <a href="../../../Classifiers/classifiers.md">(Risk management category classifier)</a>
+            </td>
+            <td>true</td>
+            <td>OP_DEFAULT</td>
+            <td>Code of risk management category of object.</td>
+        </tr>
+	<tr>
+            <td><b>initializeScreeningProcesses</b></td>
+            <td>String[]</td>
+            <td>false</td>
+            <td>PEP,<br/>ADVERSE_MEDIA,<br/> SANCTIONS</td>
+            <td>Defines which lists to check during screening process.</td>
+        </tr>
         <tr>
             <td><b>sourceOfRiskLevel</b></td>
             <td>String<br/><b>ENUM</b><br/>[EVALUATE,<br/>IMPORT]</td>
@@ -75,30 +91,19 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td>LOW</td>
             <td>The risk level of imported operation</td>
         </tr>
-        <tr>
-            <td><b>riskManagementCategory</b></td>
-            <td>
-                String <br/>
-                <a href="../../../Classifiers/classifiers.md">(Risk management category classifier)</a>
-            </td>
-            <td>true</td>
-            <td>OP_DEFAULT</td>
-            <td>Code of risk management category of object.</td>
-        </tr>
-		<tr>
-			<td><b>businessUnit</b></td>
-			<td>
-                String <br/>
+	<tr>
+	    <td><b>businessUnit</b></td>
+	    <td>String <br/>
                 <a href="../../../Classifiers/classifiers.md">(Business unit classifier)</a>
             </td>
-			<td>true/false</td>
-			<td>BUSINESS_UNIT_NAME</td>
-			<td>This parameter is mandatory only for clients utilizing a multi-organizational solution. 
+	    <td>true/false</td>
+	    <td>BUSINESS_UNIT_NAME</td>
+	    <td>This parameter is mandatory only for clients utilizing a multi-organizational solution. 
             ❗<b>Omit this parameter unless instructed about it.</b>❗</br> It serves to specify the unique identifier for the business unit. Business units are logical groupings of users and data. Each business unit can have its own set of users, permissions, and data access rules. </br><i>(Upcoming feature)</i></td>
-		</tr>
+	</tr>
         <tr>
             <td><b>financialFlowDirection</b></td>
-            <td>String<br/><b>ENUM</b><br/>[INCOMING,<br/>LOW,<br/>OUTGOING,<br/>NULL]</td>
+            <td>String<br/><b>ENUM</b><br/>[INCOMING,<br/>OUTGOING,<br/>NULL]</td>
             <td>true</td>
             <td>INCOMING</td>
             <td>
@@ -106,12 +111,14 @@ In any type of operation between two or more parties, one of the parties is alwa
                 <br/>  direction = <b>OUTGOING</b> your customer = <b>DEBTOR</b>
             </td>
         </tr>
-        <tr>
-            <td><b>initializeScreeningProcesses</b></td>
-            <td>String[]</td>
-            <td>false</td>
-            <td>PEP,<br/>ADVERSE_MEDIA,<br/> SANCTIONS</td>
-            <td>Defines which lists to check during screening process.</td>
+	<tr>
+            <td><b>currency</b></td>
+            <td>String <br/>
+                <a href="../../../Classifiers/classifiers.md">(Currency classifier)</a>
+            </td>
+            <td>true</td>
+            <td>EUR</td>
+            <td>Currency code.</td> 
         </tr>
         <tr>
             <td><b>amount</b></td>
@@ -127,15 +134,13 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td>1399</td>
             <td>amount of money in euro currency</td>
         </tr>
-        <tr>
-            <td><b>currency</b></td>
-            <td>
-                String <br/>
-                <a href="../../../Classifiers/classifiers.md">(Currency classifier)</a>
-            </td>
-            <td>true</td>
-            <td>EUR</td>
-            <td>Currency code.</td> 
+	<tr>
+            <td><b>euroExchangeRate</b></td>
+            <td>BigDecimal</td>
+            <td>true/false</td>
+            <td>0.93</td>
+            <td>Euro exchange rate for other than Euro currency<br/> 
+            <b>Mandatory</b> when currency =! <b>eur</b><br/> <b>Not Used</b> when currency = <b>eur</b></td>
         </tr>
         <tr>
             <td><b>description</b></td>
@@ -146,8 +151,7 @@ In any type of operation between two or more parties, one of the parties is alwa
         </tr>
         <tr>
             <td><b>sourceCountry</b></td>
-			<td>
-                String <br/>
+	    <td>String <br/>
                 <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
             <td>false</td>
@@ -156,21 +160,12 @@ In any type of operation between two or more parties, one of the parties is alwa
         </tr>
         <tr>
             <td><b>destinationCountry</b></td>
-			<td>
-                String <br/>
+	    <td>String <br/>
                 <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
             <td>false</td>
             <td>LT</td>
             <td>Country of operation's destination</td>
-        </tr>
-        <tr>
-            <td><b>euroExchangeRate</b></td>
-            <td>BigDecimal</td>
-            <td>true/false</td>
-            <td>0.93</td>
-            <td>Euro exchange rate for other than Euro currency<br/> 
-            <b>Mandatory</b> when currency =! <b>eur</b><br/> <b>Not Used</b> when currency = <b>eur</b></td>
         </tr>
         <tr>
             <td><b>ipAddress</b></td>
@@ -181,8 +176,7 @@ In any type of operation between two or more parties, one of the parties is alwa
         </tr>
         <tr>
             <td><b>ipAddressCountry</b></td>
-			<td>
-                String <br/>
+	    <td>String <br/>
                 <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
             <td>false</td>
@@ -216,12 +210,35 @@ At least one operation party account must exist in Amlyze (identified by account
         </tr>
     </thead>
     <tbody>
+	<tr>
+            <td><b>partyRole</b></td>
+            <td>String<br/><b>ENUM</b><br/>[DEBTOR,<br/>CREDITOR,<br/>ULTIMATE_DEBTOR,<br/>ULTIMATE_CREDITOR]</td>
+            <td>true</td>
+            <td>CREDITOR</td>
+            <td>The role of the party in ongoing operation. </br> When "partyRole", is one of <b>"ULTIMATE_"</b>, only two variations of elements becomes <b>mandatory</b> to provide:</br> 1. "entityType",</br> 2. "identifier" | "firstName" + "lastName" | "title"</td>
+        </tr>
         <tr>
             <td><b>accountNumber</b></td>
             <td>String</td>
             <td>true</td>
             <td>447548-784aaa-85s4s</td>
             <td>Unique account identification number used in performing operations</td>
+        </tr>
+	<tr>
+            <td><b>currency</b></td>
+            <td>String <br/>
+                <a href="../../../Classifiers/classifiers.md">(Currency classifier)</a>
+            </td>
+            <td>true</td>
+            <td>ETH</td>
+            <td>Currency code of operation</td>
+        </tr>
+	<tr>
+            <td><b>bic</b></td>
+            <td>String</td>
+            <td>true</td>
+            <td>BICXX22</td>
+            <td>Bank identifier code for account number</td>
         </tr>
         <tr>
             <td><b>bankTitle</b></td>
@@ -231,13 +248,6 @@ At least one operation party account must exist in Amlyze (identified by account
             <td>Title of bank with which the operation is happening</td>
         </tr>
         <tr>
-            <td><b>bic</b></td>
-            <td>String</td>
-            <td>true</td>
-            <td>BICXX22</td>
-            <td>Bank identifier code for account number</td>
-        </tr>
-        <tr>
             <td><b>entityType</b></td>
             <td>String<br/><b>ENUM</b><br/>[INDIVIDUAL,<br/>ORGANIZATION,<br/>UNKNOWN]</td>
             <td>true</td>
@@ -245,42 +255,46 @@ At least one operation party account must exist in Amlyze (identified by account
             <td>Describes client status.<br/>  UNKNOWN is valid only for counterparty (not a customer)</td>
         </tr>
         <tr>
-            <td><b>currency</b></td>
-            <td>
-                String <br/>
-                <a href="../../../Classifiers/classifiers.md">(Currency classifier)</a>
-            </td>
-            <td>true</td>
-            <td>ETH</td>
-            <td>Currency code of operation</td>
-        </tr>
-        <tr>
-            <td><b>partyRole</b></td>
-            <td>String<br/><b>ENUM</b><br/>[DEBTOR,<br/>CREDITOR]</td>
-            <td>true</td>
-            <td>CREDITOR</td>
-            <td>The role of the party in ongoing operation</td>
-        </tr>
-        <tr>
             <td><b>firstName</b></td>
             <td>String</td>
             <td>true/false</td>
             <td>Eduardo</td>
-             <td><b>Mandatory</b> when entityType = <b> INDIVIDUAL</b>, <br/> <b>Not Used</b> when entityType = <b>ORGANIZATION</b>, </br> <b>Optional</b> when entityType = <b>UNKNOWN</b></td>
+            <td>Individual entity's first name, <b>used only together with "lastName"</b> and never alone</td>
         </tr>
         <tr>
             <td><b>lastName</b></td>
             <td>String</td>
             <td>true/false</td>
             <td>Rodriguez</td>
-             <td><b>Mandatory</b> when entityType = <b> INDIVIDUAL</b>, <br/> <b>Not Used</b> when entityType = <b>ORGANIZATION</b>, </br> <b>Optional</b> when entityType = <b>UNKNOWN</b></td>
+            <td>Individual entity's last name, <b>used only together with "firstName"</b> and never alone</td>
         </tr>
         <tr>
             <td><b>title</b></td>
             <td>String</td>
             <td>true/false</td>
             <td>Moller</td>
-            <td><b>Mandatory</b> when entityType = <b>ORGANIZATION</b>, <br/> <b>Not Used </b> when entityType = <b>INDIVIDUAL</b>, </br> <b>Optional</b> when entityType = <b>UNKNOWN</b></td>
+	    <td>Identifies a party (individual, organization, or unknown) without requiring "firstName" or "lastName."</td>
+        </tr>
+        <tr>
+            <td><b>identifier</b></td>
+	    <td>String </td>
+            <td>true/false</td>
+            <td>50007153359</td>
+            <td>Unique identification number (e.g., personal ID, company VAT code) to distinguish the payer and the transaction. </br> Becomes <b>Mandatory</b> only when <b>"partyRole" = "ULTIMATE_"</b> and no more elements are provided for that party </td>
+        </tr>
+        <tr>
+            <td><b>address</b></td>
+	    <td>String </td>
+            <td>false</td>
+            <td>Verkių g. 7-8, Vilnius</td>
+            <td>Contact information including street address, city, and possibly other relevant details</td>
+        </tr>
+        <tr>
+            <td><b>country</b></td>
+	    <td>String <br/><a href="../../../Classifiers/classifiers.md">(Country classifier)</a></td>
+            <td>false</td>
+            <td>LT</td>
+            <td>Two-letter country code (e.g., US, DE) specifying the participant's country</td>
         </tr>
     </tbody>
 </table>
