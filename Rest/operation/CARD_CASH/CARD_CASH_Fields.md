@@ -115,7 +115,7 @@ In any type of operation between two or more parties, one of the parties is alwa
 		</tr>
         <tr>
             <td><b>financialFlowDirection</b></td>
-            <td>String<br/><b>ENUM</b><br/>[INCOMING,<br/>LOW,<br/>OUTGOING,<br/>NULL]</td>
+            <td>String<br/><b>ENUM</b><br/>[INCOMING,<br/>OUTGOING]</td>
             <td>true</td>
             <td>INCOMING</td>
             <td>Refers to the movement of money between entities or accounts<br/>  direction = <b>INCOMING</b> your customer = <b>CREDITOR</b> 
