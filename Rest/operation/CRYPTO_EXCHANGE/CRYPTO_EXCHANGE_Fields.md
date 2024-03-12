@@ -106,9 +106,8 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td>String<br/><b>ENUM</b><br/>[INCOMING,<br/>OUTGOING,<br/>NULL]</td>
             <td>true</td>
             <td>INCOMING</td>
-            <td>
-                Refers to the movement of money between entities or accounts<br/>  direction = <b>INCOMING</b> your customer = <b>CREDITOR</b> 
-                <br/>  direction = <b>OUTGOING</b> your customer = <b>DEBTOR</b>
+            <td>Refers to the movement of money between entities or accounts<br/>  direction = <b>INCOMING</b> your customer = <b>CREDITOR,</b> 
+                <br/>  direction = <b>OUTGOING</b> your customer = <b>DEBTOR</b>, <br/>  direction = <b>NULL</b> customer = both  <b>DEBTOR</b> and <b>CREDITOR</b> (different accounts)
             </td>
         </tr>
 	<tr>

@@ -1,5 +1,5 @@
 # Operation
-In any type of operation between two or more parties, one of the parties is always the customer. The other party(ies) are called counterparties. Every possible operation with its own mandatory and possible fields is provided below.
+In any type of operation between two or more parties, one of the parties is always the customer. The other party(ies) are called counterparty(ies). Below are all mandatory and optional fields.
 
 ---
 
@@ -45,7 +45,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             </td>
             <td>true</td>
             <td>SEPA</td>
-            <td>Notifies about what kind of operation was performed</td>
+            <td>Notifies about which kind of operation type was performed</td>
         </tr>
         <tr>
             <td><b>riskManagementCategory</b></td>
@@ -55,14 +55,14 @@ In any type of operation between two or more parties, one of the parties is alwa
             </td>
             <td>true</td>
             <td>OP_DEFAULT</td>
-            <td>Code of risk management category of object.</td>
+            <td>Code of risk management category of object</td>
         </tr>
         <tr>
             <td><b>initializeScreeningProcesses</b></td>
             <td>String[]</td>
             <td>false</td>
             <td>PEP,<br/>ADVERSE_MEDIA,<br/> SANCTIONS</td>
-            <td>Defines which lists to check during screening process.</td>
+            <td>Defines which lists to check during screening process</td>
         </tr>
         <tr>
             <td><b>sourceOfRiskLevel</b></td>
