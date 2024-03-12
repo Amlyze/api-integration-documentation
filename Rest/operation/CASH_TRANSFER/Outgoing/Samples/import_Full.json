@@ -23,10 +23,10 @@
     "listOperationParty": [
         {
             "partyRole": "DEBTOR",
-            "accountNumber": "IND20231113T180927",
+            "accountNumber": "IND20231113T18099asa",
             "entityType": "INDIVIDUAL",
-            "firstName": "Geli",
-            "lastName": "Deliono"
+            "firstName": "Jose",
+            "lastName": "Rodriguez"
         },
         {
             "partyRole": "CREDITOR",

@@ -12,6 +12,12 @@
     "description": "Transfer of funds by cash payment",
     "listOperationParty": [
         {
+            "partyRole": "ULTIMATE_DEBTOR",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Hakaka",
+            "lastName": "Luka"
+        },
+        {
             "partyRole": "DEBTOR",
             "accountNumber": "IND20231113T18099asa",
             "entityType": "INDIVIDUAL",
@@ -25,6 +31,11 @@
             "entityType": "INDIVIDUAL",
             "firstName": "Luka",
             "lastName": "Deliono"
+        },
+        {
+            "partyRole": "ULTIMATE_CREDITOR",
+            "entityType": "ORGANIZATION",
+            "identifier": "60007102289"
         }
     ]
 }

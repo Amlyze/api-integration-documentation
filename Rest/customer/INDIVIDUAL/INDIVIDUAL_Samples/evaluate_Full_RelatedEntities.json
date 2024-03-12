@@ -276,7 +276,7 @@
             "country": "LT",
             "registrationCountry": "LT",
             "isPEP": true,
-            "iSanctioned": true,
+            "isSanctioned": true,
             "isInAdverseMedia": true,
             "regionOfActivityDescription": "everywhere",
             "title": "UAB Karuna",

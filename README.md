@@ -1,35 +1,24 @@
-# api-integration-documentation
+# AMLYZE Api Integration Documentation
 
-## Welcome
+AMLYZE is SaaS that, through integration, will help you with:
 
-AMLYZE is SaaS, which integrated will allow and help you with:
 * Risk Assessment on new and existing clients;
 * Transaction monitoring and analysis of suspicious financial transactions;
 * Screening (Sanctions, PEPs, Adverse media);
-* Reconcile previous request data and retrieve classifier values.
 
----
-In order to integrate - many steps must be done, therefore we will try to ease that with the help of API documentation.
+## API
 
----
+Information about [REST API](Rest/README.md).
 
-Currently two `SOAP/REST` API integrations are offered. 
+> [!WARNING]  
+> **SOAP API is deprecated**. Instead we recommend using [**REST API**](Rest/README.md).
+>
+> Legacy documentation for [SOAP API](Soap/README.md).
 
----
-Please note that the `SOAP API is deprecated`. It is recommended to migrate to newer alternative such as REST API.
+## Webhooks
 
----
+Information about the [Webhooks (Callbacks)](Webhooks/README.md).
 
+## Classifiers
 
-* [REST API](Rest/README.md)
-
-* [SOAP API](Soap/README.md)
-
----
-> Information about the Webhooks (Callbacks):
-* [Webhooks](Webhooks/README.md)
-
----
-
-> All possible Classifiers
-* [Classifiers](Classifiers/classifiers.md)
+Information about the about all possible [Classifiers](Classifiers/classifiers.md).
