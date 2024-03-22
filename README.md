@@ -19,6 +19,10 @@ Information about [REST API](Rest/README.md).
 
 Information about the [Webhooks (Callbacks)](Webhooks/README.md).
 
+## Communication event services
+
+Information about the [communication events services](CommunicationEvents/README.md).
+
 ## Classifiers
 
 Information about the about all possible [Classifiers](Classifiers/classifiers.md).
