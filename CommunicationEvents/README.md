@@ -92,11 +92,11 @@ With communication events, you gain unprecedented control over your communicatio
   ],
   "errors": [
     {
-        "code": "500",
+        "code": "INTERNAL_SERVER_ERROR",
         "description": "Internal server error"
     },
     {
-      "code": "400",
+      "code": "BAD_REQUEST",
       "description": "Communication number is required"
     }
   ]
