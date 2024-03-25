@@ -1,4 +1,4 @@
-# Screening webhooks (Callbacks)
+# Screening events
 
 # Envelope
 
@@ -19,14 +19,8 @@
             <td>Unique event type. Check documentation below to see available types</td>
         </tr>
         <tr>
-            <td><b>specversion</b></td>
-            <td>String</td>
-            <td>"1.0"</td>
-            <td><a href="https://cloudevents.io/"> Cloud Events Specification version that is being used</td>
-        </tr>
-        <tr>
             <td><b>source</b></td>
-             <td>URI-reference</br><a href="https://datatracker.ietf.org/doc/html/rfc3986#section-4.1">FC 3986 - Uniform Resource Identifier (URI): Generic Syntax</a></td> 
+            <td>String</td> 
             <td>"893af30c-7dda-44b2-bf98-476da6ca4326"</td>
             <td>Event source - request ID (communication number)</td>
         </tr>
@@ -37,26 +31,8 @@
             <td>Event subject represents a resource external id</td>
         </tr>
         <tr>
-            <td><b>id</b></td>
-            <td>String</td>
-            <td>"0412a5ca-3be7-46b7-87de-38366397602e"</td>
-            <td>Unique event ID</td>
-        </tr>
-        <tr>
-            <td><b>time</b></td>
-            <td>Timestamp</td>
-            <td>"2023-06-16T09:23:21.575405178Z"</td>
-            <td>Event time</td>
-        </tr>
-        <tr>
-            <td><b>datacontenttype</b></td>
-            <td>String</td>
-            <td>"application/json"</td>
-            <td>Data content type</td>
-        </tr>
-        <tr>
             <td><b>data</b></td>
-            <td>String</td>
+            <td>Object</td>
             <td></td>
             <td>Event response. Differs on the event type</td>
         </tr>
