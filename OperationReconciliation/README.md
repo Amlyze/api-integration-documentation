@@ -20,7 +20,7 @@ Returns all registered operation for given timeframe.
 	</thead>
 	<tbody>
 		<tr>
-			<td><b>from</b></td>
+			<td><b>registeredFrom</b></td>
 			<td>timestamp</td>
 			<td>
                 format: yyyy-MM-dd'T'HH:mm:ss.SSSX
@@ -28,7 +28,7 @@ Returns all registered operation for given timeframe.
             </td>
 		</tr>
 		<tr>
-			<td><b>till</b></td>
+			<td><b>registeredTill</b></td>
 			<td>timestamp</td>
 			<td>
                 format: yyyy-MM-dd'T'HH:mm:ss.SSSX
