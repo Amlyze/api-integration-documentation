@@ -21,7 +21,7 @@ URL structure: `https://[host][port][path][service]`
 ---
 ## Customer
 
-Is the first step in creating a customer, which is necessary for all subsequent operations in the API. 
+Is the first step in creating a customer, which is necessary for all subsequent operations in the API.
 
 <b>Endpoint</b>
 
