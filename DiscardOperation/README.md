@@ -14,6 +14,7 @@ Moves operation to archive, operation will not be included in retro processes
 	<thead>
 		<tr>
 			<td><b>Parameter</b></td>
+            <td><b>Mandatory</b></td>
 			<td><b>Type</b></td>
 			<td><b>Description</b></td>
 		</tr>
@@ -21,6 +22,7 @@ Moves operation to archive, operation will not be included in retro processes
 	<tbody>
 		<tr>
 			<td><b>extId</b></td>
+            <td><b>true</b></td>
 			<td>String</td>
 			<td>
                 operation extId 
@@ -28,6 +30,7 @@ Moves operation to archive, operation will not be included in retro processes
 		</tr>
 		<tr>
 			<td><b>businessUnit</b></td>
+            <td><b>false</b></td>
 			<td>String</td>
 			<td>
                 which businessUnit operation belongs to

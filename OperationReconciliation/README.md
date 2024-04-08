@@ -14,6 +14,7 @@ Returns all registered operation for given timeframe.
 	<thead>
 		<tr>
 			<td><b>Parameter</b></td>
+            <td><b>Mandatory</b></td>
 			<td><b>Type</b></td>
 			<td><b>Description</b></td>
 		</tr>
@@ -21,6 +22,7 @@ Returns all registered operation for given timeframe.
 	<tbody>
 		<tr>
 			<td><b>registeredFrom</b></td>
+            <td><b>true</b></td>
 			<td>
                 Timestamp
                 Format: ISO 8601
@@ -31,6 +33,7 @@ Returns all registered operation for given timeframe.
 		</tr>
 		<tr>
 			<td><b>registeredTill</b></td>
+ <td><b>false</b></td>
 			<td>
                 Timestamp
                 Format: ISO 8601
