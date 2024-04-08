@@ -6,7 +6,7 @@ Returns all registered operation for given timeframe.
 
 ## Integration and details
 
-`GET https://[host]:[port]/api/integration-services/v1/operations-reconcilation`
+`GET https://[host]:[port]/api/integration-services/v1/operations-reconciliation`
 
 ### Request
 
@@ -21,18 +21,22 @@ Returns all registered operation for given timeframe.
 	<tbody>
 		<tr>
 			<td><b>registeredFrom</b></td>
-			<td>timestamp</td>
 			<td>
-                format: yyyy-MM-dd'T'HH:mm:ss.SSSX
+                Timestamp
+                Format: ISO 8601
+                yyyy-MM-dd'T'HH:mm:ss.SSSX</td>
+			<td>
                 eg: 2023-08-21T08:07:34.605Z
             </td>
 		</tr>
 		<tr>
 			<td><b>registeredTill</b></td>
-			<td>timestamp</td>
 			<td>
-                format: yyyy-MM-dd'T'HH:mm:ss.SSSX
-                eg: 2024-08-21T08:07:34.605Z
+                Timestamp
+                Format: ISO 8601
+                yyyy-MM-dd'T'HH:mm:ss.SSSX</td>
+			<td>
+                eg: 2023-08-28T08:07:34.605Z
             </td>
 		</tr>
 </tbody>
