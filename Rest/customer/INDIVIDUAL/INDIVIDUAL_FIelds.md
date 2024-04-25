@@ -16,34 +16,21 @@
 			<td>String</td>
 			<td>true</td>
 			<td>ComNr_000321</td>
-			<td>Unique number of communication. used for risk assessment callback. This field can store up to 256 characters</td>
+			<td>Unique number of communication. Used for risk assessment callback. This field can store up to 256 characters</td>
 		</tr>
 		<tr>
 			<td><b>requester</b></td>
 			<td>String</td>
 			<td>true</td>
-			<td>financial_institution</td>
+			<td>Financial Institution</td>
 			<td>Name of the system requesting web service</td>
-		</tr>
-		<tr>
-			<td><b>riskManagementCategory</b></td>
-			<td>
-                String <br/>
-                <a href="../../../Classifiers/classifiers.md">(Risk management category classifier)</a>
-            </td>
-			<td>true</td>
-			<td>IND_AMLYZE</td>
-			<td>
-                Code of risk management category for evaluation of the object.<br/>💡 
-                Possible values here are given just as an example, in the configuration period these could be updated
-            </td>
 		</tr>
 		<tr>
 			<td><b>action</b></td>
 			<td>String<br/><b>ENUM</b><br/>[CREATE (<i>default</i>), <br/> UPDATE]</td>
 			<td>false</td>
 			<td>UPDATE</td>
-			<td>Element is used to change the data of an existing Customer. <br/>❗ NOTE: all data will be replaced with newly received ones</td>
+			<td>Element is used to change data of the existing Customer. <br/>❗ NOTE: all data will be replaced with newly received one</td>
 		</tr>
 		<tr>
 			<td><b>businessUnit</b></td>
@@ -57,15 +44,48 @@
             ❗<b>Omit this parameter unless instructed about it.</b>❗</br> It serves to specify the unique identifier for the business unit. Business units are logical groupings of users and data. Each business unit can have its own set of users, permissions, and data access rules. </br><i>(Upcoming feature)</i></td>
 		</tr>
 		<tr>
+			<td><b>riskManagementCategory</b></td>
+			<td>
+                String <br/>
+                <a href="../../../Classifiers/classifiers.md">(Risk management category classifier)</a>
+            </td>
+			<td>true</td>
+			<td>IND_AMLYZE</td>
+			<td>
+                Code of risk management category for evaluation of the object.<br/>💡 
+                Possible value here is given just as an example
+            </td>
+		</tr>
+		<tr>
+			<td><b>customerExtId</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>cust_1232</td>
+			<td>Unique external customer identifier. Identifier corresponds to the client's identifier in the financial institution</td>
+		</tr>
+		<tr>
 			<td><b>sourceOfRiskLevel</b></td>
-			<td>String<br/><b>ENUM</b><br/>[IMPORT,EVALUATE]</td>
+			<td>String<br/><b>ENUM</b><br/>[IMPORT, EVALUATE]</td>
 			<td>true</td>
 			<td>IMPORT</td>
 			<td>
-                Source of risk level<br/> The value <b>"EVALUATE"</b> 
+                Source of risk level<br/><b>"EVALUATE"</b> 
                 should be used for normal business processes - risk assessment will be performed. <br/> 
-                The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and questionnaire information will be imported without risk assessment
+                <b>"IMPORT"</b> should be used for migration purposes only – the customer and questionnaire information will be imported without risk assessment
             </td>
+		<tr>
+			<td><b>entityType</b></td>
+			<td>String<br/><b>ENUM</b><br/>[INDIVIDUAL]</td>
+			<td>true</td>
+			<td>INDIVIDUAL</td>
+			<td>Whether business or individual entity</td>
+		</tr>
+		<tr>
+			<td><b>customerStatus</b></td>
+			<td>String<br/><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
+			<td>true/false</td>
+			<td>ACTIVE</td>
+			<td>Customer's predefined status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received but not yet prepared for upcoming workflow <br/> ACTIVE - Customer is onboarded and ready for workflow <br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is disabled</i></br> <b>Mandatory</b> when sourceOfRiskLevel = IMPORT<br/> <b>Not Used</b>  when sourceOfRiskLevel = EVALUATE</td>
 		</tr>
 		<tr>
 			<td><b>riskLevel</b></td>
@@ -77,39 +97,11 @@
                 <b>Not used</b>  when sourceOfRiskLevel = EVALUATE</td>
 		</tr>
 		<tr>
-			<td><b>customerStatus</b></td>
-			<td>String<br/><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
-			<td>true/false</td>
-			<td>ACTIVE</td>
-			<td>Customer's predefined status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received but not yet prepared for upcoming workflow <br/> ACTIVE - Customer is onboarded and ready for workflow <br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is disabled</i></br> <b>Mandatory</b> when sourceOfRiskLevel = IMPORT<br/> <b>Not Used</b>  when sourceOfRiskLevel = EVALUATE</td>
-		</tr>
-		<tr>
 			<td><b>initializeScreeningProcesses</b></td>
 			<td>String[]</td>
 			<td>false</td>
 			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
 			<td>Defines which screening processes to initiate</td>
-		</tr>
-		<tr>
-			<td><b>closingDate</b></td>
-			<td>Date</td>
-			<td>true/false</td>
-			<td>1995-05-24</td>
-			<td>Date of closure of all accounts <br/><b>Mandatory</b> when customerStatus = CLOSED<br/><b>Not Used</b>  when customerStatus = PENDING, ACTIVE, REJECTED, SUSPENDED</td>
-		</tr>
-		<tr>
-			<td><b>entityType</b></td>
-			<td>String<br/><b>ENUM</b><br/>[INDIVIDUAL]</td>
-			<td>true</td>
-			<td>INDIVIDUAL</td>
-			<td>Whether business or individual entity</td>
-		</tr>
-		<tr>
-			<td><b>customerExtId</b></td>
-			<td>String</td>
-			<td>true</td>
-			<td>cust_1232</td>
-			<td>Unique external customer identifier. The identifier corresponds to the client's identifier in the financial institution</td>
 		</tr>
 		<tr>
 			<td><b>applicationDate</b></td>
@@ -157,12 +149,19 @@
 			<td>Date of application approval</td>
 		</tr>
 		<tr>
+			<td><b>closingDate</b></td>
+			<td>Date</td>
+			<td>true/false</td>
+			<td>1995-05-24</td>
+			<td>Date of closure of all accounts <br/><b>Mandatory</b> when customerStatus = CLOSED<br/><b>Not Used</b>  when customerStatus = PENDING, ACTIVE, REJECTED, SUSPENDED</td>
+		</tr>
+		<tr>
 			<td><b>birthCountry</b></td>
 			<td>
                 String <br/>
                 <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
             </td>
-			<td>true</td>
+			<td>false</td>
 			<td>LT</td>
 			<td>Country of birth of individual entity</td>
 		</tr>
@@ -246,7 +245,7 @@
 			<td><b>listPurpose</b></td>
 			<td>String<br/><b>ENUM</b><br/>[BLACK,<br/> WHITE]</td>
 			<td>false</td>
-			<td>-</td>
+			<td>WHITE</td>
 			<td>Whether entity is black/white listed</td>
 		</tr>
 		<tr>
@@ -274,14 +273,14 @@
 			<td><b>activityDescription</b></td>
 			<td>String</td>
 			<td>false</td>
-			<td>financial activity</td>
+			<td>Financial activity</td>
 			<td>Description of entity activity</td>
 		</tr>
 		<tr>
 			<td><b>incomeSourceDescription</b></td>
 			<td>String</td>
 			<td>false</td>
-			<td>work</td>
+			<td>Job salary</td>
 			<td>Description of income source of the entity</td>
 		</tr>
 		<tr>
@@ -697,7 +696,7 @@
 			<td><b>addressDetails</b></td>
 			<td>String</td>
 			<td>true</td>
-			<td>Verkiu 1, Vilnius</td>
+			<td>Building B</td>
 			<td>Full address description</td>
 	    </tr>
 	    <tr>
@@ -738,7 +737,7 @@
 			<td><b>streetAddress</b></td>
 			<td>String</td>
 			<td>false</td>
-			<td>Verkiu 1</td>
+			<td>Verkių g. 1-9, Vilnius</td>
 			<td>Street, house and flat of given address</td>
 	    </tr>
 	    <tr>
@@ -790,7 +789,7 @@
 			<td><b>documentIssueAuthority</b></td>
 			<td>String</td>
 			<td>true</td>
-			<td>migration office</td>
+			<td>Migration office</td>
 			<td>An authority that issued the document.</td>
 	    </tr>
 	    <tr>
@@ -1059,7 +1058,7 @@
 			<td><b>comment</b></td>
 			<td>String</td>
 			<td>false</td>
-			<td></td>
+			<td>text</td>
 			<td>Additional details about the source of wealth</td>
 	    </tr>
 	</tbody>
@@ -1245,7 +1244,7 @@
 			<td><b>description</b></td>
 			<td>String</td>
 			<td>true</td>
-			<td>entity has relation to USA</td>
+			<td>Entity has relation to USA</td>
 			<td>human readable description of field</td>
 	    </tr>
 	    <tr>
@@ -1295,14 +1294,14 @@
 			<td><b>relationDescription</b></td>
 			<td>String</td>
 			<td>false</td>
-			<td>founder</td>
+			<td>Founder</td>
 			<td>Description of the relationship between entities</td>
 	    </tr>
 		<tr>
 			<td><b>extId</b></td>
 			<td>String</td>
 			<td>false</td>
-			<td>12345678912345</td>
+			<td>Related_extID_000</td>
 			<td>Used for screening callbacks to identify entity</td>
 	    </tr>
 	    <tr>
@@ -1330,7 +1329,7 @@
 			<td><b>activityDescription</b></td>
 			<td>String</td>
 			<td>false</td>
-			<td>financial activity</td>
+			<td>Financial activity</td>
 			<td>Activity description of the related entity</td>
 	    </tr>
 		<tr>
