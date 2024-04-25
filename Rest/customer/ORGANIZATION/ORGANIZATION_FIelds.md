@@ -33,6 +33,17 @@
 			<td>Element is used to change the data of an existing Customer. <br/>❗ NOTE: all data will be replaced with newly received ones</td>
 		</tr>
 		<tr>
+			<td><b>businessUnit</b></td>
+			<td>
+                String <br/>
+                <a href="../../../Classifiers/classifiers.md">(Business unit classifier)</a>
+            </td>
+			<td>true/false</td>
+			<td>BUSINESS_UNIT_NAME</td>
+			<td>This parameter is mandatory only for clients utilizing a multi-organizational solution. 
+            ❗<b>Omit this parameter unless instructed about it.</b>❗</br> It serves to specify the unique identifier for the business unit. Business units are logical groupings of users and data. Each business unit can have its own set of users, permissions, and data access rules. </br><i>(Upcoming feature)</i></td>
+		</tr>
+		<tr>
 			<td><b>riskManagementCategory</b></td>
 			<td>
                 String <br/>
@@ -46,15 +57,11 @@
             </td>
 		</tr>
 		<tr>
-			<td><b>businessUnit</b></td>
-			<td>
-                String <br/>
-                <a href="../../../Classifiers/classifiers.md">(Business unit classifier)</a>
-            </td>
-			<td>true/false</td>
-			<td>BUSINESS_UNIT_NAME</td>
-			<td>This parameter is mandatory only for clients utilizing a multi-organizational solution. 
-            ❗<b>Omit this parameter unless instructed about it.</b>❗</br> It serves to specify the unique identifier for the business unit. Business units are logical groupings of users and data. Each business unit can have its own set of users, permissions, and data access rules. </br><i>(Upcoming feature)</i></td>
+			<td><b>customerExtId</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>cust_1232</td>
+			<td>Unique external customer identifier. The identifier corresponds to the client's identifier in the financial institution</td>
 		</tr>
 		<tr>
 			<td><b>sourceOfRiskLevel</b></td>
@@ -68,20 +75,11 @@
             </td>
 		</tr>
 		<tr>
-			<td><b>riskLevel</b></td>
-			<td>String<br/><b>ENUM</b><br/>[NONE,<br/> LOW,<br/> MEDIUM,<br/> HIGH,<br/> EXTREME]</td>
-			<td>true/false</td>
-			<td>HIGH</td>
-			<td>
-                Customer's predefined  risk based on historical data <br/><b>Mandatory</b> when sourceOfRiskLevel = IMPORT<br/>
-                <b>Not used</b>  when sourceOfRiskLevel = EVALUATE</td>
-		</tr>
-		<tr>
-			<td><b>customerStatus</b></td>
-			<td>String<br/><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
-			<td>true/false</td>
-			<td>ACTIVE</td>
-			<td>Customer's predefined status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received but not yet prepared for upcoming workflow <br/> ACTIVE - Customer is onboarded and ready for workflow <br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is disabled</i></br> <b>Mandatory</b> when sourceOfRiskLevel = IMPORT<br/> <b>Not Used</b>  when sourceOfRiskLevel = EVALUATE</td>
+			<td><b>entityType</b></td>
+			<td>String<br/><b>ENUM</b><br/>[ORGANIZATION]</td>
+			<td>true</td>
+			<td>ORGANIZATION</td>
+			<td>Type of business entity</td>
 		</tr>
 		<tr>
 			<td><b>initializeScreeningProcesses</b></td>
@@ -91,25 +89,20 @@
 			<td>Defines which screening processes to initiate</td>
 		</tr>
 		<tr>
-			<td><b>customerExtId</b></td>
-			<td>String</td>
-			<td>true</td>
-			<td>cust_1232</td>
-			<td>Unique external customer identifier. The identifier corresponds to the client's identifier in the financial institution</td>
+			<td><b>customerStatus</b></td>
+			<td>String<br/><b>ENUM</b><br/>[PENDING,<br/>ACTIVE,<br/> REJECTED,<br/> SUSPENDED,<br/>CLOSED]</td>
+			<td>true/false</td>
+			<td>ACTIVE</td>
+			<td>Customer's predefined status represents the current standing or state of a customer's relationship with a business or organization <br/> <i> PENDING - Customer application is received but not yet prepared for upcoming workflow <br/> ACTIVE - Customer is onboarded and ready for workflow <br/> REJECTED - the customer for some reasons was rejected before opening an account for him. <br/>SUSPENDED - Customer's activities for some reasons are restricted <br/> CLOSED - Customer's profile is disabled</i></br> <b>Mandatory</b> when sourceOfRiskLevel = IMPORT<br/> <b>Not Used</b>  when sourceOfRiskLevel = EVALUATE</td>
 		</tr>
 		<tr>
-			<td><b>entityType</b></td>
-			<td>String<br/><b>ENUM</b><br/>[ORGANIZATION]</td>
-			<td>true</td>
-			<td>ORGANIZATION</td>
-			<td>Type of business entity</td>
-		</tr>
-		<tr>
-			<td><b>nationalCode</b></td>
-			<td>String</td>
-			<td>false</td>
-			<td>REG74121101</td>
-			<td>National code or national identification number of organization. If a country does not issue national code, any other unique identifier can be used:<br/> <i>* Passport number;<br/>* Social security number of person; <br/> * A number of taxpayer or registration certificate of the company, etc <br/> * A number of taxpayer or registration certificate of the company</i></td>
+			<td><b>riskLevel</b></td>
+			<td>String<br/><b>ENUM</b><br/>[NONE,<br/> LOW,<br/> MEDIUM,<br/> HIGH,<br/> EXTREME]</td>
+			<td>true/false</td>
+			<td>HIGH</td>
+			<td>
+                Customer's predefined  risk based on historical data <br/><b>Mandatory</b> when sourceOfRiskLevel = IMPORT<br/>
+                <b>Not used</b>  when sourceOfRiskLevel = EVALUATE</td>
 		</tr>
 		<tr>
 			<td><b>applicationDate</b></td>
@@ -117,6 +110,40 @@
 			<td>true</td>
 			<td>2000-01-03</td>
 			<td>Date when customer first applied</td>
+		</tr>
+		<tr>
+			<td><b>title</b></td>
+			<td>String</td>
+			<td>true</td>
+			<td>Moller</td>
+			<td>Title of organization entity</td>
+		</tr>
+		<tr>
+			<td><b>legalForm</b></td>
+			<td>
+                String <br/>
+                <a href="../../../Classifiers/classifiers.md">(Legal form classifier)</a>
+            </td>
+			<td>true</td>
+			<td>LTD</td>
+			<td>Legal form of organization</td>
+		</tr>
+		<tr>
+			<td><b>registrationCountry</b></td>
+			<td>
+                String <br/>
+                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
+            </td>
+			<td>true</td>
+			<td>LT</td>
+			<td>Country of registration of the organization</td>
+		</tr>
+		<tr>
+			<td><b>nationalCode</b></td>
+			<td>String</td>
+			<td>false</td>
+			<td>REG74121101</td>
+			<td>National code or national identification number of organization. If a country does not issue national code, any other unique identifier can be used:<br/> <i>* Passport number;<br/>* Social security number of person; <br/> * A number of taxpayer or registration certificate of the company, etc <br/> * A number of taxpayer or registration certificate of the company</i></td>
 		</tr>
 		<tr>
 			<td><b>activityDescription</b></td>
@@ -310,16 +337,6 @@
 			<td>true</td>
 			<td>Whether entity is sanctioned</td>
 		</tr>
-        <tr>
-			<td><b>legalForm</b></td>
-			<td>
-                String <br/>
-                <a href="../../../Classifiers/classifiers.md">(Legal form classifier)</a>
-            </td>
-			<td>true</td>
-			<td>LTD</td>
-			<td>Legal form of organization</td>
-		</tr>
 		<tr>
 			<td><b>lei</b></td>
 			<td>String</td>
@@ -383,16 +400,6 @@
 			<td>Customer service</td>
 			<td>Description of the region for activities</td>
 		</tr>
-		<tr>
-			<td><b>registrationCountry</b></td>
-			<td>
-                String <br/>
-                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
-            </td>
-			<td>true</td>
-			<td>LT</td>
-			<td>Country of registration of the organization</td>
-		</tr>
         <tr>
 			<td><b>thirdPartyServicesUsed</b></td>
 			<td>String</td>
@@ -406,13 +413,6 @@
 			<td>false</td>
 			<td>hosting</td>
 			<td>Description of third party services</td>
-		</tr>
-		<tr>
-			<td><b>title</b></td>
-			<td>String</td>
-			<td>true</td>
-			<td>Moller</td>
-			<td>Title of organization entity</td>
 		</tr>
         <tr>
 			<td><b>listPurpose</b></td>
@@ -1311,16 +1311,6 @@
 			<td>false</td>
 			<td>Central Europe</td>
 			<td>Description of activity region of related entity</td>
-	    </tr>
-	    <tr>
-			<td><b>registrationCountry</b></td>
-			<td>
-                String <br/>
-                <a href="../../../Classifiers/classifiers.md">(Country classifier)</a>
-            </td>
-			<td>false</td>
-			<td>LT</td>
-			<td>Country of registration of related entity</td>
 	    </tr>
 	    <tr>
 			<td><b>relationDescription</b></td>
