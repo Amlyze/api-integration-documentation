@@ -4,7 +4,7 @@
 
 * **URL Structure:**  `http://[host][port][path][service]`
 
-* **Example:** `http://{{host}}:8878/amlyze-ws/EvaluateOperationV2Service`
+* **Example:** `http://{{host}}:8878//amlyze-ws-rest/operation`
 
 ---
 # Additional info
