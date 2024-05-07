@@ -3,7 +3,7 @@
     "requester": "financial_institution",
     "operationExtId": "ExtId_878",
     "operationType": "CARD_PAYMENT",
-    "cardOperationSubType": "CARD_PURCHASE",
+    "cardOperationSubType": "CARD_REFUND",
     "riskManagementCategory": "OP_DEFAULT",
     "sourceOfRiskLevel": "EVALUATE",
     "operationDateTime": "2023-09-22T15:09:33+02:00",

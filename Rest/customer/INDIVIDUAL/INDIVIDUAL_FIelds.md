@@ -695,7 +695,7 @@
 	    <tr>
 			<td><b>addressDetails</b></td>
 			<td>String</td>
-			<td>true</td>
+			<td>false</td>
 			<td>Building B</td>
 			<td>Full address description</td>
 	    </tr>
@@ -1340,7 +1340,7 @@
             </td>
 			<td>false</td>
 			<td>LT</td>
-			<td>Country of the related entity</td>
+			<td>Citizenship country of the related entity</td>
 	    </tr>
 	    <tr>
 			<td><b>birthCountry</b></td>
