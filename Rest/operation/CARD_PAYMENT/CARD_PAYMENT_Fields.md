@@ -52,7 +52,7 @@ In any type of operation between two or more parties, one of the parties is alwa
 			<td>String </td>
             <td>true</td>
             <td>CARD_PURCHASE</td>
-            <td>Card operation subtype code (generated during onboarding process). </br> Common examples: </br> [CARD_PURCHASE,</br> CARD_CASH_WITHDRAWAL,</br> CARD_ACCOUNT_FUNDING_TRANSACTION,</br> CARD_PAYMENT_CREDIT </br> CARD_REFUND] </td>
+            <td>Card operation subtype code. Configurable values. </br> Common examples: </br> [CARD_PURCHASE,</br> CARD_CASH_WITHDRAWAL,</br> CARD_ACCOUNT_FUNDING_TRANSACTION,</br> CARD_PAYMENT_CREDIT </br> CARD_REFUND] </td>
         </tr>
         <tr>
             <td><b>riskManagementCategory</b></td>

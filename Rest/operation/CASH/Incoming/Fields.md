@@ -221,7 +221,7 @@ At least one operation party account must exist in Amlyze (identified by account
             <td>String</td>
             <td>true</td>
             <td>LT038625979279192518</br> IND20231113T180927</td>
-            <td>Unique account identification number used in performing operations. </br> when direction "INCOMING" Debtor's account number = customer's externalId & Creditor's account number = customer account</td>
+            <td>IBAN or any unique identification number generated during account creation. If unique identification number was not created - customer's "customerExtId" (used during customer creation ) can be used. </br> when direction "INCOMING" Debtor's account number = unique identification number/customer's externalId & Creditor's account number = customer account</td>
         </tr>
         <tr>
             <td><b>currency</b></td>
