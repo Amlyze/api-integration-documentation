@@ -1,0 +1,19 @@
+{
+    "communicationNumber": "Test_ComNr0004",
+    "requester": "Company Name Amlyze",
+    "businessEntityExtId": "IND_A1_TEST",
+    "accountExtId": "ACC_004",
+    "accountNumber": "LI7208800274335945522",
+
+    "accountStatus": "SUSPENDED",
+    "suspensionReasons": "Potential money laundering",
+
+    "currencyCode": "EUR",
+    "openingDate": "2023-11-10T12:10:11+02:00",
+    "bic": "BICXX22",
+    "isOtherFinInstAccount": false,
+    "bankTitle": "TBC bank",
+    "accountPurpose": "PURPOSE_INVEST",
+    "accountType": "IND_B2B"
+
+  }

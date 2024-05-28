@@ -15,21 +15,21 @@
 			<td><b>communicationNumber</b></td>
 			<td>String</td>
 			<td>true</td>
-			<td>ComNr_000321</td>
+			<td>Test_ComNr000</td>
 			<td>Unique number of communication. Used for risk assessment callback. This field can store up to 256 characters</td>
 		</tr>
         <tr>
 			<td><b>requester</b></td>
 			<td>String</td>
 			<td>true</td>
-			<td>financial_institution</td>
+			<td>Company Name Amlyze</td>
 			<td>Name of the system requesting web service</td>
 		</tr>
          <tr>
             <td><b>businessEntityExtId</b></td>
             <td>String</td>
             <td>true</td>
-            <td>ExtId_0012</td>
+            <td>IND_A1_TEST</td>
             <td>External business entity indicator. Refers to the same value used for the <br/><b>customerExtId</b>, which helps to identify external business entity</td>
         </tr>
 		<tr>
@@ -47,14 +47,14 @@
             <td><b>accountExtId</b></td>
             <td>String</td>
             <td>true</td>
-            <td>Acc_0011</td>
+            <td>ACC_001</td>
             <td>External account identification number used to track activity regarding the specific account</td>
         </tr>
         <tr>
             <td><b>accountNumber</b></td>
             <td>String</td>
             <td>true</td>
-            <td>LT705734389447757988</td>
+            <td>LI9208800274335945522</td>
             <td>Unique account identification number used in performing operations</td>
         </tr>
           <tr>
@@ -64,13 +64,6 @@
             <td>ACTIVE</td>
             <td>Refers to the current condition or state of an account</td>
         </tr>
-        <tr>
-            <td><b>bic</b></td>
-            <td>String</td>
-            <td>true/false</td>
-            <td>BICXX22</td>
-            <td>Bank identifier code for account number</br>
-            <b>Mandatory</b> when "isOtherFinInstAccount" = "true"</td>
         </tr>
            <tr>
             <td><b>currencyCode</b></td>
@@ -86,8 +79,23 @@
             <td><b>openingDate</b></td>
             <td>Date</td>
             <td>true</td>
-            <td>2022-12-10T12:10:11+02:00</td>
+            <td>2023-09-05T08:07:34.605Z</td>
             <td>Account opening date</td>
+        </tr>
+        <tr>
+            <td><b>bic</b></td>
+            <td>String</td>
+            <td>true/false</td>
+            <td>BICXX22</td>
+            <td>Bank identifier code for account number</br>
+            <b>Mandatory</b> when "isOtherFinInstAccount" = "true"</td>
+        </tr>
+        <tr>
+            <td><b>isOtherFinInstAccount</b></td>
+            <td>Boolean</td>
+            <td>false</td>
+            <td>false</td>
+            <td>Declaring whether the account belongs to other financial institution. If true - bic value needs to be provided </td>
         </tr>
         <tr>
             <td><b>bankTitle</b></td>
@@ -112,13 +120,6 @@
             <td>false</td>
             <td>ORG_B2B</td>
             <td>Categorizes accounts by their intended purposes and features</td>
-        </tr>
-        <tr>
-            <td><b>isOtherFinInstAccount</b></td>
-            <td>Boolean</td>
-            <td>false</td>
-            <td>false</td>
-            <td>Declaring whether the account belongs to other financial institution</td>
         </tr>
         <tr>
             <td><b>closingDate</b></td>

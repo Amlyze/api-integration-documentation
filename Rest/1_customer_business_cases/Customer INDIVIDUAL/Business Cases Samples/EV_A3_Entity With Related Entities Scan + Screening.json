@@ -1,186 +1,31 @@
 {
-	"communicationNumber": "ComNr_0021",
-	"requester": "financial_institution",
-	"riskManagementCategory": "IND_AMLYZE",
-	"action": "CREATE",
-	"sourceOfRiskLevel": "EVALUATE",
-	"entityType": "INDIVIDUAL",
-	"customerExtId": "IND20231113T180927",
-	"initializeScreeningProcesses": [
+	"communicationNumber" : "Test_ComNr_002mHzZZZ",
+	"requester" : "Company Name Amlyze",
+
+
+	"action" : "CREATE",
+
+
+	"sourceOfRiskLevel" : "EVALUATE",
+    
+
+    "initializeScreeningProcesses": [
         "SANCTIONS",
         "ADVERSE_MEDIA",
         "PEP"
     ],
-	"applicationDate": "2012-10-01T09:45:00.000+02:00",
-	"firstName": "Vardenis",
-	"lastName": "Pavardenis",
-	"birthDate": "2000-01-01",
-	"citizenshipCountry": "LT",
-	"approvalDate": "2012-10-01T09:45:00.000+02:00",
-	"birthCountry": "LT",
-	"nationalCode": "123456789123",
-	"secondCitizenshipCountry": "LV",
-	"permanentResidenceCountry": "LT",
-	"isLegalResident": true,
-	"isPEP": true,
-	"isSanctioned": false,
-	"isInAdverseMedia": true,
-	"isFamilyPEP": true,
-	"isLitigated": true,
-	"amlOfficer": true,
-	"listPurpose": "BLACK",
-	"fieldOfActivity": {
-		"student": {
-			"isStudent": false,
-			"higherSchoolTitle": "Uni University",
-			"higherSchoolCountry": "LT"
-		},
-		"pension": {
-			"isPensioner": false,
-			"pensionCountry": "LT"
-		},
-		"employment": {
-			"isUnemployed": false,
-			"isSelfEmployed": false,
-			"isEmployee": true,
-			"employerTitle": "founder",
-			"employmentPositionDescription": "Software tester"
-		},
-		"other": {
-			"isOtherStatus": false,
-			"otherStatusDescription": null
-		}
-	},
+
 	
-	"isActualAddressDeclared": true,
-	"isCorrespondenceAddressDeclared": false,
-	"activityDescription": "financial activity",
-	"incomeSourceDescription": "dividends",
-	"initialDepositSource": "Salary",
-	"initialDepositBank": "TBC",
-	"initialDepositAccount": "LT0089500500000070",
-	"initialDepositAmount": 123456,
-	"initialDepositCurrency": "EUR",
-	"doesCashDominate": false,
-	"listContact": [
-		{
-			"contactType": "MOBILEPHONE",
-			"contactDetails": "+370 68* *****",
-			"useForCommunication": true
-		}
-	],
-	"listAddress": [
-		{
-			"addressType": "RESIDENCE",
-			"addressDetails": "Verkiu g. 1",
-			"country": "LT",
-			"region": "EU",
-			"city": "Vilnius",
-			"streetAddress": "Verkiu g. 1",
-			"zipCode": "04127",
-			"useForCorrespondence": true
-		}
-	],
-	"listBusinessEntityDocument": [
-		{
-			"entityType": "INDIVIDUAL",
-			"identityDocumentType": "PASSPORT",
-			"documentNumber": "123456789",
-			"documentIssueDate": "2020-09-20",
-			"documentExpiryDate": "2030-09-20",
-			"documentIssueCountry": "LT",
-			"documentIssueAuthority": "LT",
-			"description": "identification document"
-		}
-	],
-	"listAppealReason": [
-		{
-			"appealReasonType": "PURPOSE_GET_LOAN"
-		}
-	],
-	"listIntroductionSource": [
-		{
-			"introductionSource": "Internet"
-		}
-	],
-	"listOrderedService": [
-		{
-			"serviceType": "LOANS"
-		}
-	],
-	"listDeclaredTurnover": [
-		{
-			"turnoverType": "FORMER_TURNOVER",
-			"turnoverRange": "MONTHLY",
-			"from": 1020,
-			"to": 1500
-		}
-	],
-	"listIncomeSource": [
-		{
-			"incomeSourceType": "SALARY",
-			"incomePercentage": 100,
-			"from": null,
-			"to": null
-		}
-	],
-	"listPaymentPurpose": [
-		{
-			"turnoverDirection": "OUT",
-			"paymentPurposeType": "MARKETING_SERVICES"
-		},
-		{
-			"turnoverDirection": "IN",
-			"paymentPurposeType": "PAYMENT_FOR_SERVICES"
-		}
-	],
-	"listSourceOfWealth": [
-		{
-			"code": "6",
-			"amount": 123,
-			"comment": "inheritance"
-		}
-	],
-	"listPaymentCountry": [
-		{
-			"country": "LT",
-			"turnoverDirection": "OUT"
-		},
-		{
-			"country": "LV",
-			"turnoverDirection": "IN"
-		}
-	],
-	"listActivity": [
-		{
-			"activityType": "TEST",
-			"incomePercentage": 75
-		}
-	],
-	"listRegionOfActivity": [
-		{
-			"region": "EU"
-		}
-	],
-	"listCountryOfActivity": [
-		{
-			"country": "LT"
-		}
-	],
-	"listCountryOfTaxPayment": [
-		{
-			"country": "LT",
-			"taxpayerNumber": "123456789123"
-		}
-	],
-	"listAdditionalValues": [
-		{
-			"code": "Related_To_Lithuania?",
-			"description": "testineReiksme",
-			"datatype": "BOOLEAN",
-			"value": "true"
-		}
-	],
+	"riskManagementCategory": "IND",
+    "customerStatus" : "ACTIVE",
+	"customerExtId" : "IND_A3_TEST",
+	"entityType" : "INDIVIDUAL",
+	"applicationDate": "2023-10-01",
+	"firstName" : "Mikas",
+	"lastName" : "Garcia",
+	"citizenshipCountry" : "LT",
+
+	
 	"listRelatedEntity": [
         {
             "entityType": "INDIVIDUAL",
@@ -197,8 +42,8 @@
             "lastName": "Mariko",
             "birthDate": "1998-04-07",
             "isPEP": true,
-            "isSanctioned": true,
-            "isInAdverseMedia": true,
+            "isSanctioned": false,
+            "isInAdverseMedia": false,
             "regionOfActivityDescription": "Western Region",
             "listContact": [
                 {
@@ -257,7 +102,7 @@
             ],
             "listAdditionalValues": [
                 {
-                    "code": "Relation",
+                    "code": "relation_us",
                     "description": "Is related to US?",
                     "datatype": "BOOLEAN",
                     "value": "false"
@@ -271,22 +116,22 @@
 			"extId": "Rel_entity_ExtID_4052",
             "share": 10,
             "votePercentage": 10,
-            "nationalCode": "123456",
+            "nationalCode": "50007422259",
             "activityDescription": "BEARER",
             "country": "LT",
             "registrationCountry": "LT",
-            "isPEP": true,
+            "isPEP": false,
             "isSanctioned": true,
             "isInAdverseMedia": true,
-            "regionOfActivityDescription": "everywhere",
-            "title": "UAB Karuna",
+            "regionOfActivityDescription": "Eastern region",
+            "title": "LTD 'VitaGold'",
             "legalForm": "LTD",
             "establishmentDate": "1998-04-07",
 
             "listContact": [
                 {
                     "contactType": "EMAIL",
-                    "contactDetails": "Karuna.info@gmail.com",
+                    "contactDetails": "vitaGold.info@gmail.com",
                     "useForCommunication": true
                 }
             ],
@@ -308,7 +153,7 @@
                     "identityDocumentType": "REGISTRATIONCERTIFICATE",
                     "documentNumber": "LT-4574551121",
                     "documentIssueDate": "2015-01-03",
-                    "documentExpiryDate": "2025-01-03",
+                    "documentExpiryDate": "2020-01-03",
                     "documentIssueCountry": "LT",
                     "documentIssueAuthority": "VMI",
                     "description": "Certificate of Registration"
@@ -340,10 +185,10 @@
             ],
             "listAdditionalValues": [
                 {
-                    "code": "Related_to_USA",
-                    "description": "Is related to usa?",
+                    "code": "relation_russia",
+                    "description": "Related to Russia?",
                     "datatype": "BOOLEAN",
-                    "value": "true"
+                    "value": "false"
                 }
             ]
         }

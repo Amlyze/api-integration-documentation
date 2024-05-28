@@ -1,38 +1,47 @@
 {
-    "communicationNumber": "commNr_1142",
-    "requester": "financial_institution",
-    "riskManagementCategory": "ORG_AMLYZE",
-    "action": "UPDATE",
+    "communicationNumber": "Test_ComNr_003ZZZD",
+    "requester": "Company Name Amlyze",
+
+	"action": "CREATE",
+
     "sourceOfRiskLevel": "IMPORT",
     "riskLevel": "HIGH",
     "customerStatus": "ACTIVE",
-    "entityType": "ORGANIZATION",
-    "customerExtId": "ORG20231114T120945",
-    "initializeScreeningProcesses": [
+
+
+	"initializeScreeningProcesses": [
         "SANCTIONS",
         "ADVERSE_MEDIA",
         "PEP"
     ],
+
+
+    "riskManagementCategory": "ORG",
+    "entityType": "ORGANIZATION",
+    "customerExtId": "ORG_C1_TEST",
     "applicationDate": "2020-01-03",
-    "title": "UAB 'Brotherhood'",
+    "title": "LTD 'MinorMajor'",
     "registrationCountry": "LT",
     "legalForm": "LTD",
-    "tradingName": "Brotherhood",
+
+    "tradingName": "MinorMajor",
     "approvalDate": "2020-01-05",
     "establishmentDate": "2001-02-23",
     "nationalCode": "REG74121101",
+    "activityDescription": "Logistics",
     "activityInRestrictedRegionDescription": "Logistics",
+
     "isPEP": false,
     "isSanctioned": false,
     "isInAdverseMedia": true,
+
     "giin": "GIIN123445",
     "lei": "LEI124545",
     "listPurpose": "BLACK",
     "isActualAddressDeclared": true,
     "isCorrespondenceAddressDeclared": false,
-    "activityDescription": "Logistics",
-    "incomeSourceDescription": "dividends",
-    "initialDepositSource": "salary",
+    "incomeSourceDescription": "Salary",
+    "initialDepositSource": "Salary",
     "initialDepositBank": "TBC",
     "initialDepositAccount": "LT0089500500000070",
     "initialDepositAmount": "10000",
@@ -56,22 +65,22 @@
     "licenseDescription": "Licence No.4012",
     "thirdPartyServicesUsed": true,
     "thirdPartyServicesUsedDescription": "Hosting",
-    "regionOfActivityDescription": "State of California",
+    "regionOfActivityDescription": "Wester region",
     "listContact": [
         {
             "contactType": "EMAIL",
-            "contactDetails": "hello@gmail.com",
+            "contactDetails": "companyMail@gmail.com",
             "useForCommunication": true
         }
     ],
     "listAddress": [
         {
             "addressType": "HEADQUARTERS",
-            "addressDetails": "Verkiu 1, Vilnius",
+            "addressDetails": "Verkiu g. 1-53, Vilnius",
             "country": "LT",
             "region": "EU",
             "city": "Vilnius",
-            "streetAddress": "Verkiu 1, 5-78",
+            "streetAddress": "Verkiu g.",
             "zipCode": "04128",
             "useForCorrespondence": true
         }
@@ -173,10 +182,96 @@
     ],
     "listAdditionalValues": [
         {
-            "code": "related_to_usa",
-            "description": "entity has relation to USA?",
+            "code": "relation_usa",
+            "description": "Entity related to USA?",
             "datatype": "BOOLEAN",
             "value": true
         }
-    ]
+    ],
+	"listRelatedEntity": [
+		{
+			"entityType" : "ORGANIZATION",
+			"relationType" : "OWNER",
+			"relationDescription" : "Founder",
+			"extId" : "Rel_entity_ExtID_4052",
+			"share" : 10,
+			"votePercentage" : 10,
+			"activityDescription" : "Financial activity",
+            "regionOfActivityDescription" : "Eastern Europe",
+            "nationalCode" : "554555447884557",
+			"country" : "LT",
+			"registrationCountry" : "LT",
+			"isPEP" : true,
+			"isSanctioned" : true,
+			"isInAdverseMedia" : true,
+
+			"title" : "LTD 'Fokusmano'",
+			"legalForm" : "LTD",
+			"establishmentDate" : "1998-04-07",
+
+			"listContact": [
+				{
+					"contactType" : "EMAIL",
+					"contactDetails" : "Karuna.info@gmail.com",
+					"useForCommunication" : true
+				}
+			],
+			"listAddress": [
+				{
+					"addressType" : "HEADQUARTERS",
+					"addressDetails" : "Panemunių g. 15-4",
+					"country" : "LT",
+					"region" : "EU",
+					"city" : "Vilnius",
+					"streetAddress" : "Panemunių g.",
+					"zipCode" : "048715",
+					"useForCorrespondence" : true
+				}
+			],
+			"listBusinessEntityDocument": [
+				{
+					"entityType": "ORGANIZATION",
+					"identityDocumentType": "REGISTRATIONCERTIFICATE",
+					"documentNumber": "LT-4574551121",
+					"documentIssueDate": "2015-01-03",
+					"documentExpiryDate": "2025-01-03",
+					"documentIssueCountry": "LT",
+					"documentIssueAuthority": "VMI",
+					"description": "Certificate of Registration"
+				}
+			],
+			"listIncomeSource": [
+				{
+					"incomeSourceType": "BUSINESS_REVENUE_OR_ASSET_SALE",
+					"incomePercentage": 10,
+					"from": 10,
+					"to": 100
+				}
+			],
+			"listActivity": [
+				{
+					"activityType": "ACTIVITY_OTHER",
+					"incomePercentage": 50
+				}
+			],
+			"listRegionOfActivity": [
+				{
+					"region": "EU"
+				}
+			],
+			"listCountryOfActivity": [
+				{
+					"country": "LV"
+				}
+			],
+			"listAdditionalValues": [
+				{
+					"code": "identity_verification_passed",
+					"description": "Verification has been passed?",
+					"datatype": "BOOLEAN",
+					"value": "true"
+				}
+			]
+		}
+	]
 }
