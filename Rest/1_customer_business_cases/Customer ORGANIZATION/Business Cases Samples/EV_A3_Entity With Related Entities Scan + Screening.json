@@ -1,182 +1,28 @@
 {
-    "communicationNumber": "ComNr_000321",
-    "requester": "financial_institution",
-    "riskManagementCategory": "ORG_AMLYZE",
+    "communicationNumber": "Test_ComNr_003ZZZb",
+    "requester": "Company Name Amlyze",
+
     "action": "CREATE",
+
+
     "sourceOfRiskLevel": "EVALUATE",
-    "entityType": "ORGANIZATION",
-    "customerExtId": "ORG20231114T120945",
+
+
     "initializeScreeningProcesses": [
         "SANCTIONS",
         "ADVERSE_MEDIA",
         "PEP"
     ],
+
+
+    "riskManagementCategory": "ORG",
+    "entityType": "ORGANIZATION",
+    "customerExtId": "ORG_A3_TEST",
     "applicationDate": "2020-01-03",
-    "title": "UAB 'Brotherhood'",
+    "title": "LTD 'Brotherhood'",
     "registrationCountry": "LT",
     "legalForm": "LTD",
-    "tradingName": "Brotherhood",
-    "approvalDate": "2020-01-05",
-    "establishmentDate": "2001-02-23",
-    "nationalCode": "REG74121101",
-    "activityInRestrictedRegionDescription": "Logistics",
-    "isPEP": false,
-    "isSanctioned": false,
-    "isInAdverseMedia": true,
-    "giin": "GIIN123445",
-    "lei": "LEI124545",
-    "listPurpose": "BLACK",
-    "isActualAddressDeclared": true,
-    "isCorrespondenceAddressDeclared": false,
-    "activityDescription": "Logistics",
-    "incomeSourceDescription": "dividends",
-    "initialDepositSource": "salary",
-    "initialDepositBank": "TBC",
-    "initialDepositAccount": "LT0089500500000070",
-    "initialDepositAmount": "10000",
-    "initialDepositCurrency": "EUR",
-    "doesCashDominate": true,
-    "isAudited": true,
-    "numberOfAudits": 6,
-    "periodsOfAuditsInYears": 3,
-    "organizationalStructureDescription": "Hierarchical",
-    "hasMultiLayerStructure": false,
-    "isFinancialInstitution": false,
-    "isDirectlyManaged": true,
-    "noMajorShareHolders": true,
-    "numberOfEmployees": 25,
-    "companyAssetValue": 100000,
-    "isFined": false,
-    "periodsOfFiningInYears": 3,
-    "isListed": false,
-    "isRegulated": false,
-    "isLicenseRequired": true,
-    "licenseDescription": "Licence No.4012",
-    "thirdPartyServicesUsed": true,
-    "thirdPartyServicesUsedDescription": "Hosting",
-    "regionOfActivityDescription": "State of California",
-    "listContact": [
-        {
-            "contactType": "EMAIL",
-            "contactDetails": "hello@gmail.com",
-            "useForCommunication": true
-        }
-    ],
-    "listAddress": [
-        {
-            "addressType": "HEADQUARTERS",
-            "addressDetails": "Verkiu 1, Vilnius",
-            "country": "LT",
-            "region": "EU",
-            "city": "Vilnius",
-            "streetAddress": "Verkiu 1, 5-78",
-            "zipCode": "04128",
-            "useForCorrespondence": true
-        }
-    ],
-    "listBusinessEntityDocument": [
-        {
-            "entityType": "ORGANIZATION",
-            "identityDocumentType": "OTHER",
-            "documentNumber": "LK4545587741121",
-            "documentIssueDate": "2020-01-03",
-            "documentExpiryDate": "2030-01-03",
-            "documentIssueCountry": "LT",
-            "documentIssueAuthority": "Migration office",
-            "description": "Main identification document"
-        }
-    ],
-    "listAppealReason": [
-        {
-            "appealReasonType": "RECOMMENDATIONS"
-        }
-    ],
-    "listIntroductionSource": [
-        {
-            "introductionSource": "Internet"
-        }
-    ],
-    "listOrderedService": [
-        {
-            "serviceType": "LOANS"
-        }
-    ],
-    "listDeclaredTurnover": [
-        {
-            "turnoverType": "PLANNED_FUTURE_INCOME",
-            "turnoverRange": "MONTHLY",
-            "from": 1000,
-            "to": 2000
-        }
-    ],
-    "listIncomeSource": [
-        {
-            "incomeSourceType": "SALARY",
-            "incomePercentage": 95,
-            "from": 2000,
-            "to": 2200
-        }
-    ],
-    "listPaymentPurpose": [
-        {
-            "turnoverDirection": "OUT",
-            "paymentPurposeType": "RENT_AND_UTILITIES"
-        },
-        {
-            "turnoverDirection": "IN",
-            "paymentPurposeType": "MARKETING_SERVICES"
-        }
-    ],
-    "listSourceOfWealth": [
-		{
-			"code": "6",
-			"amount": 100000,
-			"comment": "Wealth from inheritance"
-		}
-	],
-    "listPaymentCountry": [
-        {
-            "country": "LT",
-            "turnoverDirection": "IN"
-        },
-        {
-            "country": "LV",
-            "turnoverDirection": "OUT"
-        }
-    ],
-    "listActivity": [
-        {
-            "activityType": "ACTIVITY_OTHER",
-            "incomePercentage": 15
-        }
-    ],
-    "listRegionOfActivity": [
-        {
-            "region": "EU"
-        }
-    ],
-    "listCountryOfActivity": [
-        {
-            "country": "LT"
-        },
-        {
-            "country": "LV"
-        }
-    ],
-    "listCountryOfTaxPayment": [
-        {
-            "country": "LV",
-            "taxpayerNumber": "5541245574"
-        }
-    ],
-    "listAdditionalValues": [
-        {
-            "code": "related_to_usa",
-            "description": "entity has relation to USA?",
-            "datatype": "BOOLEAN",
-            "value": true
-        }
-    ],
+
     "listRelatedEntity": [
         {
             "entityType": "INDIVIDUAL",
@@ -336,8 +182,8 @@
             ],
             "listAdditionalValues": [
                 {
-                    "code": "Related_to_USA",
-                    "description": "Is related to usa?",
+                    "code": "identity_verification_passed",
+                    "description": "Verification has been passed?",
                     "datatype": "BOOLEAN",
                     "value": "true"
                 }

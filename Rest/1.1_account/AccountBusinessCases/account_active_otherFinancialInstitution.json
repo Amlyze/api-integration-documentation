@@ -1,0 +1,19 @@
+{
+    "communicationNumber": "Test_ComNr0002",
+    "requester": "Company Name Amlyze",
+	"businessEntityExtId": "IND_A1_TEST",
+    "accountExtId": "ACC_002",
+    "accountNumber": "LI8208800274335945522",
+    "accountStatus": "ACTIVE",
+    "currencyCode": "EUR",
+    "openingDate": "2023-09-05T08:07:34.605Z",
+
+    "bic": "BICXX22",
+    "isOtherFinInstAccount": true,
+    
+    "bankTitle": "TBC bank",
+    "accountPurpose": "PURPOSE_INVEST",
+    "accountType": "IND_B2B"
+  }
+
+

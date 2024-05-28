@@ -1,0 +1,12 @@
+{
+    "communicationNumber": "Test_ComNr000",
+    "requester": "Company Name Amlyze",
+    "businessEntityExtId": "IND_A1_TEST", 
+    "accountExtId": "ACC_001",
+    "accountNumber": "LI9208800274335945522",
+    "accountStatus": "ACTIVE",
+    "currencyCode": "EUR",
+    "openingDate": "2023-09-05T08:07:34.605Z",
+    "isOtherFinInstAccount": false 
+    
+  }
