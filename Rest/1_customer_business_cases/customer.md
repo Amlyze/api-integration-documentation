@@ -65,8 +65,8 @@ All payload fields & descriptions suitable for customer - `INDIVIDUAL` request -
 --- 
 >Customer - ORGANIZATION
 1. [Entity Data Scan Initiation](../1_customer_business_cases/Customer%20ORGANIZATION/Business%20Cases%20Samples/EV_A1_Entity%20Data%20Scan%20Initiation.json) 
-1.1 [Entity Data Overwrite + Scan Reinitiation](../1_customer_business_cases/Customer%20ORGANIZATION/Business%20Cases%20Samples/EV_A1.1_%20Entity%20Data%20Overwrite%20+%20Scan%20Reinitiation.json) 
-1. [Entity Data Scan + Screening](../1_customer_business_cases/Customer%20ORGANIZATION/Business%20Cases%20Samples/EV_A2_Entity%20Data%20Scan%20+%20Screening.json)
+1.1 [Entity Data Overwrite + Scan Reinitiation](../1.1_customer_business_cases/Customer%20ORGANIZATION/Business%20Cases%20Samples/EV_A1.1_%20Entity%20Data%20Overwrite%20+%20Scan%20Reinitiation.json) 
+1. [Entity Data Scan + Screening](../1.1_customer_business_cases/Customer%20ORGANIZATION/Business%20Cases%20Samples/EV_A2_Entity%20Data%20Scan%20+%20Screening.json)
 2. [Entity With Related Entities Scan + Screening](../1_customer_business_cases/Customer%20ORGANIZATION/Business%20Cases%20Samples/EV_A3_Entity%20With%20Related%20Entities%20Scan%20+%20Screening.json)
 3. [Entity Historical Data Transfer](../1_customer_business_cases/Customer%20ORGANIZATION/Business%20Cases%20Samples/IMP_B1_Entity%20Historical%20Data%20Transfer.json)
 4.1 [Entity Data Overwrite](../1_customer_business_cases/Customer%20ORGANIZATION/Business%20Cases%20Samples/IMP_B1.1_Entity%20Data%20Overwrite.json)
