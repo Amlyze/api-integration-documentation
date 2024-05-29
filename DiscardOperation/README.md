@@ -6,14 +6,14 @@ Moves operation to archive, operation will not be included in retro processes
 
 ## Integration and details
 
-`DELETE https://[host]:[port]/api/integration-services/v1/discard-operations`
+`DELETE https://[host]:[port]/api/integration-services/v1/discard-operations?extId={operationExtId}&businessUnit={businessUnit}`
 
 ### Request
 
 <table>
 	<thead>
 		<tr>
-			<td><b>Parameter</b></td>
+			<td><b>Query parameters</b></td>
             <td><b>Mandatory</b></td>
 			<td><b>Type</b></td>
 			<td><b>Description</b></td>
@@ -42,7 +42,7 @@ Moves operation to archive, operation will not be included in retro processes
 
 ### Response
 
-200 ok
+200 OK
 
 
 ### ErrorMessage
@@ -70,8 +70,7 @@ Moves operation to archive, operation will not be included in retro processes
 </table>
 
 
-
-## Example
+## Response example
 
 ```json
 {
