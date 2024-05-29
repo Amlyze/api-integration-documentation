@@ -266,7 +266,7 @@ At least one operation party account must exist in Amlyze (identified by account
             <td>String</td>
             <td>true/false</td>
             <td>BICXX22</td>
-            <td>Bank identifier code for account number<br/> <b>Mandatory</b> for CREDITOR only <br/> <b>Not Mandatory</b> counterparties</td>
+            <td>Bank identifier code for account number<br/> <b>Mandatory</b> for CUSTOMER <br/> <b>Not Mandatory</b> for counterparties</td>
         </tr>
         <tr>
             <td><b>bankTitle</b></td>
