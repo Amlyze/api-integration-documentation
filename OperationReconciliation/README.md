@@ -6,14 +6,14 @@ Returns all registered operation for given timeframe.
 
 ## Integration and details
 
-`GET https://[host]:[port]/api/integration-services/v1/operations-reconciliation`
+`GET https://[host]:[port]/api/integration-services/v1/operations-reconciliation?registeredFrom={registeredFromDate}&registeredTill={registeredTillDate}`
 
 ### Request
 
 <table>
 	<thead>
 		<tr>
-			<td><b>Parameter</b></td>
+			<td><b>Query Parameters</b></td>
             <td><b>Mandatory</b></td>
 			<td><b>Type</b></td>
 			<td><b>Description</b></td>
