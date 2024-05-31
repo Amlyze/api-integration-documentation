@@ -1,29 +1,31 @@
 {
-    "communicationNumber": "ComNr_0013",
-    "requester": "financial_institution",
-    "operationExtId": "Op_0014",
-    "operationType": "SWIFT",
-    "riskManagementCategory": "OP_DEFAULT",
+    "communicationNumber": "Test_ComNr_SEPA_03",
+    "requester": "Company Name Amlyze",
+
     "sourceOfRiskLevel": "EVALUATE",
+    "riskManagementCategory": "OP_TRANSFER",
+    "operationType": "SEPA",
+
+    "operationExtId": "Op_03_SEPA_ULTIMATES_TEST",
+    "financialFlowDirection": "OUTGOING",
+
     "operationDateTime": "2023-09-22T15:09:33+02:00",
     "currency": "EUR",
     "amount": 200,
-    "financialFlowDirection": "OUTGOING",
-    "description": "invoice '123456'",
+    "description": "invoice 'Nr.03'",
     "listOperationParty": [
         {
             "partyRole": "ULTIMATE_DEBTOR",
-            "entityType": "INDIVIDUAL",
-            "firstName": "Hakaka",
-            "lastName": "Luka"
+            "entityType": "UNKNOWN",
+            "identifier": "85007102280"
         },
          {
             "partyRole": "DEBTOR",
-            "accountNumber": "LV5630800200000018112",
-            "bic": "BICXX22",
+            "accountNumber": "LI9208800274335945522",
+            "bic": "AmlyzeXX22",
             "entityType": "INDIVIDUAL",
-            "firstName": "Geli",
-            "lastName": "Deliono"
+           	"firstName" : "Tomas",
+	        "lastName" : "Garcia"
         },
         {
             "partyRole": "CREDITOR",
@@ -34,7 +36,7 @@
         {
             "partyRole": "ULTIMATE_CREDITOR",
             "entityType": "ORGANIZATION",
-            "title": "UAB 'Noreika'"
+            "identifier": "60007102289"
             
         }
        

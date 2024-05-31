@@ -90,7 +90,7 @@
 <table>
 
 
-## app.amlyze.customter.screening.sanctions.completed
+## app.amlyze.customer.screening.sanctions.completed
 > The event is always fired on screening finished with resolution
 
 

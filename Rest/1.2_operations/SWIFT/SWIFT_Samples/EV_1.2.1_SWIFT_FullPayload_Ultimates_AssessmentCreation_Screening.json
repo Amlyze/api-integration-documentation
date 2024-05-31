@@ -1,38 +1,43 @@
 {
-    "communicationNumber": "ComNr_0020",
-    "requester": "financial_institution",
-    "operationExtId": "Op_0020",
+    "communicationNumber": "Test_ComNr_SWIFT_04",
+    "requester": "Company Name Amlyze",
+
+    "sourceOfRiskLevel": "EVALUATE",
+    "riskManagementCategory": "OP_TRANSFER",
     "operationType": "SWIFT",
-    "riskManagementCategory": "OP_DEFAULT",
+
+    "operationExtId": "Op_04_SWIFT_ULTIMATES_TEST",
+    "financialFlowDirection": "INCOMING",
+
     "initializeScreeningProcesses": [
         "SANCTIONS",
         "PEP",
         "ADVERSE_MEDIA"
     ],
-    "sourceOfRiskLevel": "EVALUATE",
-    "operationDateTime": "2023-09-22T15:09:33+02:00",
-    "sourceCountry": "LT",
-    "destinationCountry": "LV",
+
+    "operationDateTime": "2023-09-23T15:09:33+02:00",
     "currency": "GBP",
     "amount": 123,
     "euroExchangeRate": 1.16,
     "amountInEuro": 143,
-    "financialFlowDirection": "INCOMING",
-    "description": "invoice '123456'",
+
+    "description": "invoice '04'",
+    "sourceCountry": "LT",
+    "destinationCountry": "LT",
     "ipAddress": "555.222.4545.144",
     "ipAddressCountry": "LT",
     "listOperationParty": [
         {
             "partyRole": "ULTIMATE_DEBTOR",
-            "accountNumber": "LT20240226T133450",
+            "accountNumber": "LT580240226T13340",
             "currency": "EUR",
             "bic": "BIC",
             "bankTitle": "TBC",
             "entityType": "INDIVIDUAL",
-            "firstName": "Hakaka",
-            "lastName": "Luka",
-            "identifier": "50007102289",
-            "address": "Verkių g. 7-8, Vilnius",
+            "firstName": "Lukas",
+            "lastName": "Antusas",
+            "identifier": "50007102275",
+            "address": "Verkių g. 5-8, Vilnius",
             "country": "LT"
         },
         {
@@ -46,27 +51,25 @@
             
         },
         {
-            "partyRole": "CREDITOR",
-            "accountNumber": "LA5558885487878222",
+            "partyRole": "DEBTOR",
+            "accountNumber": "LT8208800274335945525",
             "currency": "EUR",
-            "bic": "BIC22XX",
-            "bankTitle": "TBC",
-            "entityType": "UNKNOWN",
-            "firstName": "Migeli"
-            
-           
+            "bic": "BICXX22",
+            "bankTitle": "TBC bank",
+            "entityType": "ORGANIZATION",
+            "title": "LTD 'Bull'"
             
         },
         {
             "partyRole": "ULTIMATE_CREDITOR",
-            "accountNumber": "LT20240226T133633",
+            "accountNumber": "LT20240226T133600",
             "currency": "EUR",
             "bic": "BIC",
             "bankTitle": "TBC",
             "entityType": "INDIVIDUAL",
-            "title": "Dona Murara",
-            "identifier": "60007102289",
-            "address": "Kauno g. 9, Vilnius",
+            "title": "Mika Murara",
+            "identifier": "68007102200",
+            "address": "Kauno g. 5, Vilnius",
             "country": "LT"
             
         }
