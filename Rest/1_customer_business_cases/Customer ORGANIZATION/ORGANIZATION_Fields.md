@@ -37,11 +37,7 @@
 			<td>String<br/><b>ENUM</b><br/>[IMPORT,EVALUATE]</td>
 			<td>true</td>
 			<td>IMPORT</td>
-			<td>
-                Source of risk level<br/> The value <b>"EVALUATE"</b> 
-                should be used for normal business processes - risk assessment will be performed. <br/> 
-                The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and questionnaire information will be imported without risk assessment
-            </td>
+			<td>The value <b>EVALUATE</b> is used for initiating a customer risk assessment.<br/> The value <b>IMPORT</b> is used for customer import or customer data updates where initiation of new risk assessment is not needed. This typically applies to customer migration or updating customer data that do not affect customer risk level and automatic customer reassessment is not needed.</td>
 		</tr>
 		<tr>
 			<td><b>riskLevel</b></td>
