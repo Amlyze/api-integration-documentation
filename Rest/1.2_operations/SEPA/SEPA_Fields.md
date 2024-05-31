@@ -160,7 +160,7 @@ In any type of operation between two or more parties, one of the parties is alwa
             </td>
             <td>false</td>
             <td>LT</td>
-            <td>Source country informs about where the operation was initiated</td>
+            <td>Source country informs about from where the operation was initiated.</td>
         </tr>
         <tr>
             <td><b>destinationCountry</b></td>
@@ -284,7 +284,7 @@ At least one operation party account must exist in Amlyze (identified by account
 			<td>String </td>
             <td>true/false</td>
             <td>50007153359</td>
-            <td>Unique identification number (e.g., personal ID, company VAT code) to distinguish the payer and the transaction. </br> Becomes <b>Mandatory</b> only when <b>"partyRole" = "ULTIMATE_"</b> and no more elements are provided for that party </td>
+            <td>Unique identification number (e.g., personal ID, company VAT code) to distinguish the payer and the transaction. Can be used for customer, counterparty and ultimateparty</br> Becomes <b>Mandatory</b> only when <b>"partyRole" = "ULTIMATE_"</b> and no more elements are provided for that party </td>
         </tr>
         <tr>
             <td><b>address</b></td>
@@ -298,7 +298,7 @@ At least one operation party account must exist in Amlyze (identified by account
 			<td>String <br/><a href="../../../Classifiers/classifiers.md">(Country classifier)</a></td>
             <td>false</td>
             <td>LT</td>
-            <td>Two-letter country code (e.g., US, DE) specifying the participant's country</td>
+            <td>Two-letter country code (e.g., US, DE) specifying the participant's country. When screening process is initiated - ultimate_DEBTOR and ultimate_CREDITOR are screened based on provided country. </td>
         </tr>
     </tbody>
 </table>

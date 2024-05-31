@@ -10,7 +10,7 @@
     "operationType": "SEPA",
 
     "operationExtId": "Op_06_SEPA_TEST",
-    "financialFlowDirection": "OUTGOING",
+    "financialFlowDirection": "INCOMING",
 
     "initializeScreeningProcesses": [
         "SANCTIONS",
@@ -30,18 +30,8 @@
     "ipAddress": "555.222.4545.144",
     "ipAddressCountry": "LT",
     "listOperationParty": [
-         {
-            "partyRole": "DEBTOR",
-            "accountNumber": "LI9208800274335945522",
-            "currency": "EUR",
-            "bic": "AmlyzeXX22",
-            "bankTitle": "TBC bank",
-            "entityType": "INDIVIDUAL",
-           	"firstName" : "Tomas",
-	        "lastName" : "Garcia"
-        },
         {
-            "partyRole": "CREDITOR",
+            "partyRole": "DEBTOR",
             "accountNumber": "LV11245541148212335",
             "currency": "EUR",
             "bic": "BIC22XX",
@@ -49,6 +39,16 @@
             "entityType": "INDIVIDUAL",
             "firstName": "Antonio",
             "lastName": "Murara"
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LI9208800274335945522",
+            "currency": "EUR",
+            "bic": "AmlyzeXX22",
+            "bankTitle": "TBC bank",
+            "entityType": "INDIVIDUAL",
+           	"firstName" : "Tomas",
+	        "lastName" : "Garcia"
         }
        
     ]
