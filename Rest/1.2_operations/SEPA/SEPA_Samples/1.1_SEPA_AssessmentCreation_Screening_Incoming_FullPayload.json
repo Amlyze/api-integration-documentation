@@ -39,7 +39,7 @@
             "lastName": "Murara"
         },
         {
-            "partyRole": "DEBTOR",
+            "partyRole": "CREDITOR",
             "accountNumber": "LI9208800274335945522",
             "bic": "AmlyzeXX22",
             "bankTitle": "TBC bank",
