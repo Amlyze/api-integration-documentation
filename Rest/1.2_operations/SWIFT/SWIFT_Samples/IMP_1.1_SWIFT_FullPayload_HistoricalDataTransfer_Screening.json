@@ -1,0 +1,49 @@
+{
+    "communicationNumber": "Test_ComNr_SWIFT_06",
+    "requester": "Company Name Amlyze",
+
+    
+    "sourceOfRiskLevel": "IMPORT",
+    "operationStatus":"EXECUTED",
+    "riskLevel": "HIGH",
+
+    "riskManagementCategory": "OP_TRANSFER",
+    "operationType": "SWIFT",
+
+    "operationExtId": "Op_06_SWIFT_TEST",
+    "financialFlowDirection": "OUTGOING",
+
+    "initializeScreeningProcesses": [
+        "SANCTIONS",
+        "PEP",
+        "ADVERSE_MEDIA"
+    ],
+
+    "operationDateTime": "2023-09-23T15:09:33+02:00",
+    "currency": "GBP",
+    "amount": 123,
+    "euroExchangeRate": 1.16,
+    "amountInEuro": 143,
+
+    "description": "invoice '06'",
+    "sourceCountry": "LT",
+    "destinationCountry": "LT",
+    "ipAddress": "555.222.4545.144",
+    "ipAddressCountry": "LT",
+    "listOperationParty": [
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LT8208800274335945525",
+            "currency": "EUR",
+            "bic": "BICXX22",
+            "entityType": "ORGANIZATION",
+            "title": "LTD 'Bull'"
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LT5630800200000745112",
+            "entityType": "ORGANIZATION",
+            "title": "LTD 'CoNetwork'"
+        }
+    ]
+}

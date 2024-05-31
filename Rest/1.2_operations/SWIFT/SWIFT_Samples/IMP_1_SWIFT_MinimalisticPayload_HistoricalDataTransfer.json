@@ -1,0 +1,36 @@
+{
+    "communicationNumber": "Test_ComNr_SWIFT_05",
+    "requester": "Company Name Amlyze",
+
+    
+    "sourceOfRiskLevel": "IMPORT",
+    "operationStatus":"EXECUTED",
+    "riskLevel": "HIGH",
+
+    "riskManagementCategory": "OP_TRANSFER",
+    "operationType": "SWIFT",
+
+    "operationExtId": "Op_05_SWIFT_TEST",
+    "financialFlowDirection": "OUTGOING",
+
+    "operationDateTime": "2023-09-22T15:09:33+02:00",
+    "currency": "EUR",
+    "amount": 2000,
+    "description": "invoice '05'",
+    "listOperationParty": [
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LI8208800274335945525",
+            "currency": "EUR",
+            "bic": "BICXX22",
+            "entityType": "ORGANIZATION",
+            "title": "LTD 'Bull'"
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LT5630800200000745112",
+            "entityType": "ORGANIZATION",
+            "title": "LTD 'CoNetwork'"
+        }
+    ]
+}

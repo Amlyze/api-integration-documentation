@@ -20,49 +20,15 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td><b>communicationNumber</b></td>
             <td>String</td>
             <td>true</td>
-            <td>ComNr_0011</td>
+            <td>ComNr_01_TEST</td>
             <td>Unique number of communication. This field can store up to 256 characters</td>
         </tr>
         <tr>
             <td><b>requester</b></td>
             <td>String</td>
             <td>true</td>
-            <td>financial_institution</td>
+            <td>Company Name Amlyze</td>
             <td>Name of the system requesting web service</td>
-        </tr>
-        <tr>
-            <td><b>operationExtId</b></td>
-            <td>String</td>
-            <td>true</td>
-            <td>Op_22xx22</td>
-            <td>External identifier of operation</td>
-        </tr>
-        <tr>
-            <td><b>operationType</b></td>
-            <td>
-                String <br/>
-                <a href="../../../Classifiers/classifiers.md">(Operation type classifier)</a>
-            </td>
-            <td>true</td>
-            <td>SEPA</td>
-            <td>Notifies about which kind of operation type was performed</td>
-        </tr>
-        <tr>
-            <td><b>riskManagementCategory</b></td>
-            <td>
-                String <br/>
-                <a href="../../../Classifiers/classifiers.md">(Risk management category classifier)</a>
-            </td>
-            <td>true</td>
-            <td>OP_DEFAULT</td>
-            <td>Code of risk management category of object</td>
-        </tr>
-        <tr>
-            <td><b>initializeScreeningProcesses</b></td>
-            <td>String[]</td>
-            <td>false</td>
-            <td>PEP,<br/>ADVERSE_MEDIA,<br/> SANCTIONS</td>
-            <td>Defines which lists to check during screening process</td>
         </tr>
         <tr>
             <td><b>sourceOfRiskLevel</b></td>
@@ -70,13 +36,6 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td>true</td>
             <td>EVALUATE</td>
             <td>Source of risk level<br/> The value <b>"EVALUATE"</b> should be used for normal business processes - risk assessment will be performed.<br/> The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and it's questionnaire will be imported without risk assessment</td>
-        </tr>
-        <tr>
-            <td><b>operationDateTime</b></td>
-            <td>Date</td>
-            <td>true</td>
-            <td>2023-03-16T13:00:00Z</td>
-            <td>The operation date and time show when the operation proceeded with</td>
         </tr>
         <tr>
             <td><b>operationStatus</b></td>
@@ -92,7 +51,27 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td>LOW</td>
             <td>The risk level of imported operation</td>
         </tr>
-		<tr>
+        <tr>
+            <td><b>riskManagementCategory</b></td>
+            <td>
+                String <br/>
+                <a href="../../../Classifiers/classifiers.md">(Risk management category classifier)</a>
+            </td>
+            <td>true</td>
+            <td>OP_TRANSFER</td>
+            <td>Code of risk management category of object</td>
+        </tr>
+        <tr>
+            <td><b>operationType</b></td>
+            <td>
+                String <br/>
+                <a href="../../../Classifiers/classifiers.md">(Operation type classifier)</a>
+            </td>
+            <td>true</td>
+            <td>SEPA</td>
+            <td>Notifies about which kind of operation type was performed</td>
+        </tr>
+        <tr>
 			<td><b>businessUnit</b></td>
 			<td>
                 String <br/>
@@ -104,6 +83,13 @@ In any type of operation between two or more parties, one of the parties is alwa
             ❗<b>Omit this parameter unless instructed about it.</b>❗</br> It serves to specify the unique identifier for the business unit. Business units are logical groupings of users and data. Each business unit can have its own set of users, permissions, and data access rules. </br><i>(Upcoming feature)</i></td>
 		</tr>
         <tr>
+            <td><b>operationExtId</b></td>
+            <td>String</td>
+            <td>true</td>
+            <td>Op_01_SEPA_TEST</td>
+            <td>External identifier of operation</td>
+        </tr>
+        <tr>
             <td><b>financialFlowDirection</b></td>
             <td>String<br/><b>ENUM</b><br/>[INCOMING,<br/>OUTGOING]</td>
             <td>true</td>
@@ -112,6 +98,20 @@ In any type of operation between two or more parties, one of the parties is alwa
                 Refers to the movement of money between entities or accounts<br/>  direction = <b>INCOMING</b> your customer = <b>CREDITOR</b> 
                 <br/>  direction = <b>OUTGOING</b> your customer = <b>DEBTOR</b>
             </td>
+        </tr>
+        <tr>
+            <td><b>initializeScreeningProcesses</b></td>
+            <td>String[]</td>
+            <td>false</td>
+            <td>PEP,<br/>ADVERSE_MEDIA,<br/> SANCTIONS</td>
+            <td>Defines which lists to check during screening process</td>
+        </tr>
+        <tr>
+            <td><b>operationDateTime</b></td>
+            <td>Date</td>
+            <td>true</td>
+            <td>2023-03-16T13:00:00Z</td>
+            <td>The operation date and time show when the operation proceeded with</td>
         </tr>
         <tr>
             <td><b>currency</b></td>
@@ -131,13 +131,6 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td>Field for the money amount sent in an operation</td>
         </tr>
         <tr>
-            <td><b>amountInEuro</b></td>
-            <td>BigDecimal</td>
-            <td>true/ false</td>
-            <td>1399</td>
-            <td>amount of money in euro currency</td>
-        </tr>
-        <tr>
             <td><b>euroExchangeRate</b></td>
             <td>BigDecimal</td>
             <td>true/false</td>
@@ -146,10 +139,17 @@ In any type of operation between two or more parties, one of the parties is alwa
             <b>Mandatory</b> when currency =! <b>eur</b><br/> <b>Not Used</b> when currency = <b>eur</b></td>
         </tr>
         <tr>
+            <td><b>amountInEuro</b></td>
+            <td>BigDecimal</td>
+            <td>true/ false</td>
+            <td>1399</td>
+            <td>amount of money in euro currency</td>
+        </tr>
+        <tr>
             <td><b>description</b></td>
             <td>String</td>
             <td>true</td>
-            <td>"Fund Transfer"</td>
+            <td>Invoice '02'</td>
             <td>The purpose of payment is saved under description.<br/> It is necessary for the operation to be proceeded</td>
         </tr>
         <tr>

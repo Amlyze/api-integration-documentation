@@ -49,7 +49,7 @@ The Minimalistic request represents SEPA operation with the minimum required fie
             "bic": "AmlyzeXX22",
             "entityType": "INDIVIDUAL",
            	"firstName" : "Tomas",
-	        "lastName" : "Garcia",
+	        "lastName" : "Garcia"
         },
         {
             "partyRole": "CREDITOR",

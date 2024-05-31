@@ -1,0 +1,41 @@
+{
+    "communicationNumber": "Test_ComNr_PIS_02",
+    "requester": "Company Name Amlyze",
+
+    "sourceOfRiskLevel": "EVALUATE",
+    "riskManagementCategory": "OP_TRANSFER",
+    "operationType": "PIS",
+
+    "operationExtId": "Op_02_PIS_TEST",
+    "financialFlowDirection": "INCOMING",
+
+    "initializeScreeningProcesses": [
+        "SANCTIONS",
+        "PEP",
+        "ADVERSE_MEDIA"
+    ],
+ 
+    "operationDateTime": "2023-09-22T15:09:33+02:00",
+    "currency": "GBP",
+    "amount": 100,
+    "euroExchangeRate": 1.16,
+    "amountInEuro": 116,
+
+    "description": "Invoice '02'",
+    "sourceCountry": "LT",
+    "destinationCountry": "LV",
+    "ipAddress": "555.222.4545.144",
+    "ipAddressCountry": "LT",
+    "listOperationParty": [
+         {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LI9208800274335945522",
+            "bic": "AmlyzeXX22",
+            "bankTitle": "TBC bank",
+            "entityType": "INDIVIDUAL",
+           	"firstName" : "Tomas",
+	        "lastName" : "Garcia"
+        }
+       
+    ]
+}
