@@ -12,10 +12,10 @@
 	
 	"riskManagementCategory": "IND",
     "customerStatus" : "ACTIVE",
-	"customerExtId" : "IND_A1_TEST",
+	"customerExtId" : "IND_EVALUATE_A1_TEST",
 	"entityType" : "INDIVIDUAL",
 	"applicationDate": "2023-10-01",
 	"firstName" : "Tomas",
 	"lastName" : "Garcia",
-	"citizenshipCountry" : "LT"
+	"citizenshipCountry" : "LV"
 }
