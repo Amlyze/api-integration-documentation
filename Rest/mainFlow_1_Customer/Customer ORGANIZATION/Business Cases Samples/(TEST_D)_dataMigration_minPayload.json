@@ -3,17 +3,17 @@
 	"requester": "Company Name Amlyze",
 
 
-	"action" : "UPDATE",
+	"action" : "CREATE",
 
 
 	"sourceOfRiskLevel": "IMPORT",
     "riskLevel": "HIGH",
-    "customerStatus": "ACTIVE",
-    
+	"customerStatus": "ACTIVE",
+	
 
 	"riskManagementCategory": "ORG",
 	"entityType": "ORGANIZATION",
-	"customerExtId": "ORG_B1_TEST_OVERWRITE",
+	"customerExtId": "ORG_IMPORT_B1_TEST",
 	"applicationDate": "2020-01-03",
 	"title": "LTD 'VivaElementus'",
 	"registrationCountry": "LV",
