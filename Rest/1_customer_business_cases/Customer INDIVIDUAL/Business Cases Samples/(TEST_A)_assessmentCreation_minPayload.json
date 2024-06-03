@@ -1,22 +1,20 @@
 
 {
-	"communicationNumber" : "Test_ComNr_002mHzZZ",
+	"communicationNumber" : "Test_ComNr_002mHzZZZ",
 	"requester" : "Company Name Amlyze",
 
 
 	"action" : "CREATE",
 
+
+	"sourceOfRiskLevel" : "EVALUATE",
+
 	
-	"sourceOfRiskLevel" : "IMPORT",
-    "riskLevel" : "HIGH",
-    "customerStatus" : "ACTIVE",
-
-
 	"riskManagementCategory": "IND",
+	"customerExtId" : "IND_EVALUATE_A1_TEST",
 	"entityType" : "INDIVIDUAL",
-	"customerExtId" : "IND_B1_TEST",
 	"applicationDate": "2023-10-01",
 	"firstName" : "Tomas",
 	"lastName" : "Garcia",
-	"citizenshipCountry" : "LT"
+	"citizenshipCountry" : "LV"
 }
