@@ -17,7 +17,7 @@
 
 	"riskManagementCategory" : "ORG",
 	"entityType" : "ORGANIZATION",
-	"customerExtId" : "ORG_A2_TEST_SCREENING",
+	"customerExtId" : "ORG_EVALUATE_A2_TEST_SCREENING",
 	"applicationDate" : "2023-10-01",
 	"title" : "LTD 'Bull'",
 	"registrationCountry" : "LV",
