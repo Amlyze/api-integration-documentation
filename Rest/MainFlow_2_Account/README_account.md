@@ -45,14 +45,14 @@ The Minimalistic request represents scenario of already onboarded customer (`IND
 
 ```
 
-## Account | Payload Samples
+<!-- ## Account | Payload Samples
 
 1. [Minimalistic Active Account Payload](../1.1_account/AccountBusinessCases/account_active_minimalistic.json)
 2. [Account Belongs To Other Financial Institution](../1.1_account/AccountBusinessCases/account_active_otherFinancialInstitution.json)
 3. [Account Is Closed](../1.1_account/AccountBusinessCases/account_closed.json)
 4. [Account Is Suspended](../1.1_account/AccountBusinessCases/account_suspended.json)
 
----
+--- -->
 
 ## Possible Responses
 

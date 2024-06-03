@@ -1,0 +1,19 @@
+{
+  "communicationNumber": "Test_ComNr003",
+  "requester": "Company Name Amlyze",
+  "businessEntityExtId": "ORG_IMPORT_C1_All_Fields_TEST",
+  "accountExtId": "ACC_ORG_C1_closed",
+  "accountNumber": "LI9208800274335945588",
+
+  "accountStatus": "CLOSED",
+  "closingDate": "2023-11-13T08:08:38.605Z",
+
+  "currencyCode": "EUR",
+  "openingDate": "2023-11-10T12:10:11+02:00",
+  "bic": "BICXX22",
+  "isOtherFinInstAccount": false,
+  "bankTitle": "TBC bank",
+  "accountPurpose": "PURPOSE_INVEST",
+  "accountType": "IND_B2B"
+
+}

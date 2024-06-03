@@ -48,7 +48,7 @@
 ```
 ---
 
-## Customer Business Cases | Payload Samples
+<!-- ## Customer Business Cases | Payload Samples
 
 >Customer - INDIVIDUAL
 
@@ -74,7 +74,7 @@ All payload fields & descriptions suitable for customer - `INDIVIDUAL` request -
 
 All payload fields & descriptions suitable for customer - `ORGANIZATION` request - [<u>here</u>](ORGANIZATION/ORGANIZATION_FIelds.md)
 
----
+--- -->
 ## Possible Responses
 
 ```json
