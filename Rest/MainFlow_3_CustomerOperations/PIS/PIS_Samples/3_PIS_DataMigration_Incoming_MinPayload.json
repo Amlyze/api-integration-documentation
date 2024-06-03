@@ -1,0 +1,30 @@
+{
+    "communicationNumber": "Test_ComNr_PIS_05",
+    "requester": "Company Name Amlyze",
+
+    "sourceOfRiskLevel": "IMPORT",
+    "operationStatus":"EXECUTED",
+    "riskLevel": "LOW",
+    "riskManagementCategory": "OP_TRANSFER",
+    "operationType": "PIS",
+    
+    "operationExtId": "Op_05_PIS_IMPORT_TEST",
+    "financialFlowDirection": "INCOMING",
+
+    "operationDateTime": "2023-09-22T15:09:33+02:00",
+    "currency": "EUR",
+    "amount": 550,
+
+    "description": "invoice '05'",
+    
+    "listOperationParty": [
+         {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LT9208800274335945522",
+            "bic": "AmlyzeXX22",
+            "entityType": "INDIVIDUAL",
+           	"firstName" : "Tomas",
+	        "lastName" : "Garcia"
+        }       
+    ]
+}

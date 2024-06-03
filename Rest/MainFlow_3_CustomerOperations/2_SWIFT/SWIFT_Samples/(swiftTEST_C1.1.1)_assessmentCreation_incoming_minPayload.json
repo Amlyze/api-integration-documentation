@@ -1,0 +1,35 @@
+{
+    "communicationNumber": "Test_ComNr_SWIFT_01",
+    "requester": "Company Name Amlyze",
+
+    "sourceOfRiskLevel": "EVALUATE",
+    "riskManagementCategory": "OP_TRANSFER",
+    "operationType": "SWIFT",
+
+    "operationExtId": "Op_01_SWIFT_TEST",
+    "financialFlowDirection": "INCOMING",
+
+
+    "operationDateTime": "2023-09-22T15:09:33+02:00",
+    "currency": "EUR",
+    "amount": 1000,
+    "description": "Invoice '01'",
+    "listOperationParty": [
+         {
+            "partyRole": "DEBTOR",
+            "accountNumber": "LV11245541148212335",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Antonio",
+            "lastName": "Murara"
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LT9208800274335945544",
+            "currency": "EUR",
+            "bic": "BICXX22",
+            "entityType": "ORGANIZATION",
+            "title": "LTD 'Bull'"
+        }
+       
+    ]
+}

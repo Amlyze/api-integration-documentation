@@ -1,0 +1,54 @@
+{
+    "communicationNumber": "Test_ComNr_SWIFT_02",
+    "requester": "Company Name Amlyze",
+
+    "sourceOfRiskLevel": "EVALUATE",
+    "riskManagementCategory": "OP_TRANSFER",
+    "operationType": "SWIFT",
+
+    "operationExtId": "Op_02_SWIFT_TEST",
+    "financialFlowDirection": "OUTGOING",
+
+
+    "initializeScreeningProcesses": [
+        "SANCTIONS",
+        "PEP",
+        "ADVERSE_MEDIA"
+    ],
+ 
+    "operationDateTime": "2023-09-22T15:09:33+02:00",
+    "currency": "GBP",
+    "amount": 123,
+    "euroExchangeRate": 1.16,
+    "amountInEuro": 143,
+
+    "description": "Invoice '02'",
+    "sourceCountry": "LV",
+    "destinationCountry": "LT",
+    "ipAddress": "555.222.4545.144",
+    "ipAddressCountry": "LT",
+    "listOperationParty": [
+         {
+            "partyRole": "DEBTOR",
+            "accountNumber": "LT9208800274335945544",
+            "currency": "EUR",
+            "bic": "BICXX22",
+            "bankTitle": "TBC bank",
+            "entityType": "ORGANIZATION",
+            "title": "LTD 'Bull'"
+
+           
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LV11245541148212335",
+            "currency": "EUR",
+            "bic": "BIC22XX",
+            "bankTitle": "TBC",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Antonio",
+            "lastName": "Murara"
+        }
+       
+    ]
+}

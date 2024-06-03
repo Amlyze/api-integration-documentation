@@ -1,0 +1,52 @@
+{
+    "communicationNumber": "Test_ComNr_INTERNAL_05",
+    "requester": "Company Name Amlyze",
+
+    "sourceOfRiskLevel": "IMPORT",
+    "operationStatus":"EXECUTED",
+    "riskLevel": "HIGH",
+
+    "riskManagementCategory": "OP_TRANSFER",
+    "operationType": "INTERNAL",
+
+    "operationExtId": "Op_05_INTERNAL_ULTIMATES_TEST",
+    "financialFlowDirection": "NULL",
+
+    "operationDateTime": "2023-09-22T15:09:33+02:00",
+    "currency": "EUR",
+    "amount": 200,
+    "description": "invoice '123456'",
+    "listOperationParty": [
+        {
+            "partyRole": "ULTIMATE_DEBTOR",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Hakaka",
+            "lastName": "Luka"
+        },
+        {
+            "partyRole": "DEBTOR",
+            "accountNumber": "LT9208800274335945522",
+            "currency": "EUR",
+            "bic": "AmlyzeXX22",
+            "entityType": "INDIVIDUAL",
+            "firstName" : "Tomas",
+	        "lastName" : "Garcia"
+        },
+        {
+            "partyRole": "CREDITOR",
+           "accountNumber": "LT9208800274335945500",
+            "currency": "EUR",
+            "bic": "AmlyzeXX22",
+            "entityType": "INDIVIDUAL",
+            "firstName" : "Tomas",
+	        "lastName" : "Garcia"
+        },
+        {
+            "partyRole": "ULTIMATE_CREDITOR",
+            "entityType": "ORGANIZATION",
+            "identifier": "60007102289"
+            
+        }
+       
+    ]
+}

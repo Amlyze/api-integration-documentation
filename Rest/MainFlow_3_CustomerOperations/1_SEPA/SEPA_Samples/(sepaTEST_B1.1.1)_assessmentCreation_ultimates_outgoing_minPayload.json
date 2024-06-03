@@ -1,0 +1,44 @@
+{
+    "communicationNumber": "Test_ComNr_SEPA_03",
+    "requester": "Company Name Amlyze",
+
+    "sourceOfRiskLevel": "EVALUATE",
+    "riskManagementCategory": "OP_TRANSFER",
+    "operationType": "SEPA",
+
+    "operationExtId": "Op_03_SEPA_ULTIMATES_TEST",
+    "financialFlowDirection": "OUTGOING",
+
+    "operationDateTime": "2023-09-22T15:09:33+02:00",
+    "currency": "EUR",
+    "amount": 200,
+    "description": "invoice 'Nr.03'",
+    "listOperationParty": [
+        {
+            "partyRole": "ULTIMATE_DEBTOR",
+            "entityType": "UNKNOWN",
+            "identifier": "85007102280"
+        },
+         {
+            "partyRole": "DEBTOR",
+            "accountNumber": "LT9208800274335945533",
+            "bic": "AmlyzeXX22",
+            "entityType": "INDIVIDUAL",
+           	"firstName" : "Lukas",
+	        "lastName" : "Garcia"
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LT5630800200000745112",
+            "entityType": "ORGANIZATION",
+            "title": "Komele"
+        },
+        {
+            "partyRole": "ULTIMATE_CREDITOR",
+            "entityType": "ORGANIZATION",
+            "identifier": "60007102289"
+            
+        }
+       
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "communicationNumber": "Test_ComNr_INTERNAL_04",
+    "requester": "Company Name Amlyze",
+
+    "sourceOfRiskLevel": "EVALUATE",
+
+    "riskManagementCategory": "OP_TRANSFER",
+    "operationType": "INTERNAL",
+
+    
+    "operationExtId": "Op_04_INTERNAL_ULTIMATES_SCREENING_TEST",
+    "financialFlowDirection": "NULL",
+
+
+    "initializeScreeningProcesses": [
+        "SANCTIONS",
+        "PEP",
+        "ADVERSE_MEDIA"
+    ],
+
+    "operationDateTime": "2023-09-22T15:09:33+02:00",
+    "sourceCountry": "LT",
+    "destinationCountry": "LV",
+    "currency": "GBP",
+    "amount": 1000,
+    "euroExchangeRate": 1.16,
+    "amountInEuro": 1160,
+    "description": "invoice '123456'",
+    "ipAddress": "555.222.4545.144",
+    "ipAddressCountry": "LT",
+    "listOperationParty": [
+        {
+            "partyRole": "ULTIMATE_DEBTOR",
+            "accountNumber": "LT20240226T133450",
+            "currency": "EUR",
+            "bic": "BIC",
+            "bankTitle": "TBC",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Hakaka",
+            "lastName": "Luka",
+            "identifier": "50007102289",
+            "address": "Verkių g. 7-8, Vilnius",
+            "country": "LT"
+        },
+        {
+            "partyRole": "DEBTOR",
+            "accountNumber": "LT9208800274335945522",
+            "currency": "EUR",
+            "bic": "AmlyzeXX22",
+            "bankTitle": "TBC",
+            "entityType": "INDIVIDUAL",
+            "firstName" : "Tomas",
+	        "lastName" : "Garcia"
+        },
+        {
+            "partyRole": "CREDITOR",
+           "accountNumber": "LT9208800274335945555",
+            "currency": "EUR",
+            "bic": "AmlyzeXX22",
+            "bankTitle": "TBC",
+            "entityType": "ORGANIZATION",
+            "title" : "LTD 'VivaElementus'"
+        },
+        {
+            "partyRole": "ULTIMATE_CREDITOR",
+            "accountNumber": "LT20240226T133633",
+            "currency": "EUR",
+            "bic": "BIC",
+            "bankTitle": "TBC",
+            "entityType": "INDIVIDUAL",
+            "title": "Dona Murara",
+            "identifier": "60007102289",
+            "address": "Kauno g. 9, Vilnius",
+            "country": "LT"
+            
+        }
+       
+    ]
+}

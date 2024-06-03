@@ -1,0 +1,84 @@
+{
+    "communicationNumber": "Test_ComNr_SWIFT_04",
+    "requester": "Company Name Amlyze",
+
+    "sourceOfRiskLevel": "EVALUATE",
+    "riskManagementCategory": "OP_TRANSFER",
+    "operationType": "SWIFT",
+
+    "operationExtId": "Op_04_SWIFT_ULTIMATES_TEST",
+    "financialFlowDirection": "INCOMING",
+
+    "initializeScreeningProcesses": [
+        "SANCTIONS",
+        "PEP",
+        "ADVERSE_MEDIA"
+    ],
+
+    "operationDateTime": "2023-09-23T15:09:33+02:00",
+    "currency": "GBP",
+    "amount": 123,
+    "euroExchangeRate": 1.16,
+    "amountInEuro": 143,
+
+    "description": "invoice '04'",
+    "sourceCountry": "LT",
+    "destinationCountry": "LT",
+    "ipAddress": "555.222.4545.144",
+    "ipAddressCountry": "LT",
+    "listOperationParty": [
+        {
+            "partyRole": "ULTIMATE_DEBTOR",
+            "accountNumber": "LT580240226T13340",
+            "currency": "EUR",
+            "bic": "BIC",
+            "bankTitle": "TBC",
+            "entityType": "INDIVIDUAL",
+            "firstName": "Lukas",
+            "lastName": "Antusas",
+            "identifier": "50007102275",
+            "address": "Verkių g. 5-8, Vilnius",
+            "country": "LT"
+        },
+        {
+            "partyRole": "DEBTOR",
+             "accountNumber": "LT5630800200000011112",
+            "currency": "EUR",
+            "bic": "BIC22XX",
+            "bankTitle": "TBC",
+            "entityType": "ORGANIZATION",
+            "title": "Komapnele",
+            "identifier": "00007102289",
+            "address": "Gyneju g. 85, Vilnius",
+            "country": "LT"
+            
+        },
+        {
+            "partyRole": "DEBTOR",
+            "accountNumber": "LT9208800274335945555",
+            "currency": "EUR",
+            "bic": "BICXX22",
+            "bankTitle": "TBC bank",
+            "entityType": "ORGANIZATION",
+            "title": "LTD 'VivaElementus'",
+            "identifier": "998007102289",
+            "address": "S.Daukanto g. 9, Vilnius",
+            "country": "LT"
+            
+        },
+        {
+            "partyRole": "ULTIMATE_CREDITOR",
+            "accountNumber": "LT20240226T133600",
+            "currency": "EUR",
+            "bic": "BIC",
+            "bankTitle": "TBC",
+            "entityType": "INDIVIDUAL",
+            "title": "Mika Murara",
+            "identifier": "68007102200",
+            "address": "Kauno g. 5, Vilnius",
+            "country": "LT"
+            
+        }
+       
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "communicationNumber": "Test_ComNr_INTERNAL_03",
+    "requester": "Company Name Amlyze",
+
+    "sourceOfRiskLevel": "IMPORT",
+    "operationStatus":"EXECUTED",
+    "riskLevel": "HIGH",
+
+    
+    "riskManagementCategory": "OP_TRANSFER",
+    "operationType": "INTERNAL",
+
+    "operationExtId": "Op_03_INTERNAL_TEST",
+    "financialFlowDirection": "NULL",
+ 
+    "initializeScreeningProcesses": [
+        "SANCTIONS",
+        "PEP",
+        "ADVERSE_MEDIA"
+    ],
+
+    "operationDateTime": "2023-09-22T15:09:33+02:00",
+    "sourceCountry": "LT",
+    "destinationCountry": "LT",
+    "currency": "GBP",
+    "amount": 123,
+    "euroExchangeRate": 1.16,
+    "amountInEuro": 143,
+    "description": "invoice '123458'",
+    "ipAddress": "555.222.4545.144",
+    "ipAddressCountry": "LT",
+    "listOperationParty": [
+         {
+            "partyRole": "DEBTOR",
+            "accountNumber": "LT9208800274335945522",
+            "currency": "EUR",
+            "bic": "AmlyzeXX22",
+            "bankTitle": "TBC",
+            "entityType": "INDIVIDUAL",
+            "firstName" : "Tomas",
+	        "lastName" : "Garcia"
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LT9208800274335945555",
+            "currency": "EUR",
+            "bic": "AmlyzeXX22",
+            "bankTitle": "TBC",
+            "entityType": "ORGANIZATION",
+           	"title" : "LTD 'VivaElementus'"
+        }
+       
+    ]
+}
