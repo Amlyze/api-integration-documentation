@@ -17,8 +17,7 @@
 
 	
 	"riskManagementCategory": "IND",
-    "customerStatus" : "ACTIVE",
-	"customerExtId" : "IND_A3_TEST",
+	"customerExtId" : "IND_EVALUATE_A3_TEST",
 	"entityType" : "INDIVIDUAL",
 	"applicationDate": "2023-10-01",
 	"firstName" : "Mikas",

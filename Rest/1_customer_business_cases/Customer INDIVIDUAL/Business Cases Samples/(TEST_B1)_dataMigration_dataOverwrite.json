@@ -1,21 +1,22 @@
 
 {
-	"communicationNumber" : "Test_ComNr_002mHzZZZz",
+	"communicationNumber" : "Test_ComNr_002mHzZZZ_OVERWRITE",
 	"requester" : "Company Name Amlyze",
 
 
 	"action" : "UPDATE",
 
 
-	"sourceOfRiskLevel" : "EVALUATE",
+	"sourceOfRiskLevel" : "IMPORT",
+    "riskLevel" : "HIGH",
+    "customerStatus" : "ACTIVE",
 
 	
 	"riskManagementCategory": "IND",
-    "customerStatus" : "ACTIVE",
-	"customerExtId" : "IND_A1_TEST_OVERWRITE",
 	"entityType" : "INDIVIDUAL",
+	"customerExtId" : "IND_IMPORT_B1_TEST",
 	"applicationDate": "2023-10-01",
-	"firstName" : "Tomas",
+	"firstName" : "Lukas",
 	"lastName" : "Garcia",
 	"citizenshipCountry" : "LT"
 }
