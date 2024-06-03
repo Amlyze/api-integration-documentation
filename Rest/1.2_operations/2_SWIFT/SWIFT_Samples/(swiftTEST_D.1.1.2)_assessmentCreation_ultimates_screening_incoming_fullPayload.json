@@ -47,17 +47,23 @@
             "bic": "BIC22XX",
             "bankTitle": "TBC",
             "entityType": "ORGANIZATION",
-            "title": "Komapnele"
+            "title": "Komapnele",
+            "identifier": "00007102289",
+            "address": "Gyneju g. 85, Vilnius",
+            "country": "LT"
             
         },
         {
             "partyRole": "DEBTOR",
-            "accountNumber": "LT8208800274335945525",
+            "accountNumber": "LT9208800274335945555",
             "currency": "EUR",
             "bic": "BICXX22",
             "bankTitle": "TBC bank",
             "entityType": "ORGANIZATION",
-            "title": "LTD 'Bull'"
+            "title": "LTD 'VivaElementus'",
+            "identifier": "998007102289",
+            "address": "S.Daukanto g. 9, Vilnius",
+            "country": "LT"
             
         },
         {

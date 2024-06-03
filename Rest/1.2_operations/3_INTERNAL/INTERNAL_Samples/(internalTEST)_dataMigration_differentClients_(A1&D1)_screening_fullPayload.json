@@ -1,48 +1,53 @@
 {
-    "communicationNumber": "ComNr_0025",
-    "requester": "financial_institution",
-    "operationExtId": "Op_0025",
+    "communicationNumber": "Test_ComNr_INTERNAL_03",
+    "requester": "Company Name Amlyze",
+
+    "sourceOfRiskLevel": "IMPORT",
+    "operationStatus":"EXECUTED",
+    "riskLevel": "HIGH",
+
+    
+    "riskManagementCategory": "OP_TRANSFER",
     "operationType": "INTERNAL",
-    "riskManagementCategory": "OP_DEFAULT",
+
+    "operationExtId": "Op_03_INTERNAL_TEST",
+    "financialFlowDirection": "NULL",
+ 
     "initializeScreeningProcesses": [
         "SANCTIONS",
         "PEP",
         "ADVERSE_MEDIA"
     ],
-    "sourceOfRiskLevel": "IMPORT",
-    "operationStatus":"EXECUTED",
-    "riskLevel": "HIGH",
+
     "operationDateTime": "2023-09-22T15:09:33+02:00",
     "sourceCountry": "LT",
-    "destinationCountry": "LV",
+    "destinationCountry": "LT",
     "currency": "GBP",
     "amount": 123,
     "euroExchangeRate": 1.16,
     "amountInEuro": 143,
-    "financialFlowDirection": "NULL",
     "description": "invoice '123458'",
     "ipAddress": "555.222.4545.144",
     "ipAddressCountry": "LT",
     "listOperationParty": [
          {
             "partyRole": "DEBTOR",
-            "accountNumber": "LV6630800200000018155",
+            "accountNumber": "LT9208800274335945522",
             "currency": "EUR",
-            "bic": "BICXX22",
+            "bic": "AmlyzeXX22",
             "bankTitle": "TBC",
             "entityType": "INDIVIDUAL",
-            "firstName": "Geli",
-            "lastName": "Deliono"
+            "firstName" : "Tomas",
+	        "lastName" : "Garcia"
         },
         {
             "partyRole": "CREDITOR",
-            "accountNumber": "LV7730800200000018166",
+            "accountNumber": "LT9208800274335945555",
             "currency": "EUR",
-            "bic": "BICXX22",
+            "bic": "AmlyzeXX22",
             "bankTitle": "TBC",
-            "entityType": "INDIVIDUAL",
-            "firstName": "Geli",
-            "lastName": "Deliono"
+            "entityType": "ORGANIZATION",
+           	"title" : "LTD 'VivaElementus'"
         }
        
     ]

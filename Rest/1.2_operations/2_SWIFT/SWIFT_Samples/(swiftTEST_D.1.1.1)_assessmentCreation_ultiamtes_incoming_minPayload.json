@@ -29,11 +29,11 @@
         },
         {
             "partyRole": "CREDITOR",
-            "accountNumber": "LT8208800274335945525",
+            "accountNumber": "LT9208800274335945555",
             "currency": "EUR",
             "bic": "BICXX22",
             "entityType": "ORGANIZATION",
-            "title": "LTD 'Bull'"
+            "title": "LTD 'VivaElementus'"
         }
        
     ]
