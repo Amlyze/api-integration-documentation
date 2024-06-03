@@ -47,18 +47,24 @@
             "bic": "BIC22XX",
             "bankTitle": "TBC",
             "entityType": "ORGANIZATION",
-            "title": "Komapnele"
+            "title": "Komapnele",
+            "identifier": "998007102289",
+            "address": "Minties g. 8, Vilnius",
+            "country": "LT"
             
         },
         {
             "partyRole": "DEBTOR",
-            "accountNumber": "LI9208800274335945522",
+            "accountNumber": "LT9208800274335945533",
             "currency": "EUR",
             "bic": "AmlyzeXX22",
             "bankTitle": "TBC bank",
             "entityType": "INDIVIDUAL",
-           	"firstName" : "Tomas",
-	        "lastName" : "Garcia"
+           	"firstName" : "Lukas",
+	        "lastName" : "Garcia",
+            "identifier": "588007102289",
+            "address": "Riomerio g. 9, Vilnius",
+            "country": "LT"
             
         },
         {

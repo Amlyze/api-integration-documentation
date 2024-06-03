@@ -1,25 +1,23 @@
 {
-    "communicationNumber": "Test_ComNr_SEPA_05",
+    "communicationNumber": "Test_ComNr_SEPA_01",
     "requester": "Company Name Amlyze",
 
-    "sourceOfRiskLevel": "IMPORT",
-    "operationStatus":"EXECUTED",
-    "riskLevel": "LOW",
-
+    "sourceOfRiskLevel": "EVALUATE",
     "riskManagementCategory": "OP_TRANSFER",
     "operationType": "SEPA",
 
-    "operationExtId": "Op_05_SEPA_TEST",
+    "operationExtId": "Op_01_SEPA_TEST",
     "financialFlowDirection": "OUTGOING",
+    
   
-    "operationDateTime": "2023-09-22T15:09:33+02:00",
+    "operationDateTime": "2023-09-23T15:09:33+02:00",
     "currency": "EUR",
-    "amount": 200,
-    "description": "invoice '05'",
+    "amount": 10000,
+    "description": "Invoice 'Nr.01'",
     "listOperationParty": [
          {
             "partyRole": "DEBTOR",
-            "accountNumber": "LI9208800274335945522",
+            "accountNumber": "LT9208800274335945522",
             "bic": "AmlyzeXX22",
             "entityType": "INDIVIDUAL",
            	"firstName" : "Tomas",
@@ -27,9 +25,9 @@
         },
         {
             "partyRole": "CREDITOR",
-            "accountNumber": "LT5630800200000745112",
+            "accountNumber": "LV11245541148212335",
             "entityType": "ORGANIZATION",
-            "title": "Komele"
+            "title": "LTD 'VivaFocus'"
         }
        
     ]

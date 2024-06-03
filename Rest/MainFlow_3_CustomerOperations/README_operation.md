@@ -63,7 +63,7 @@ The Minimalistic request represents SEPA operation with the minimum required fie
 ```
 
 
-## Operation Business Cases | Payload Samples
+<!-- ## Operation Business Cases | Payload Samples
 
 > Operation Type - **SEPA**
 
@@ -173,7 +173,7 @@ The Minimalistic request represents SEPA operation with the minimum required fie
 * [Evaluate_CRYPTO_EXCHANGE_Mandatory.json](CRYPTO_EXCHANGE/CRYPTO_EXCHANGE_Samples/evaluate_CRYPTO_EXCHANGE_Mandatory.json)
 * [Import_CRYPTO_EXCHANGE_Full.json](CRYPTO_EXCHANGE/CRYPTO_EXCHANGE_Samples/import_CRYPTO_EXCHANGE_Full.json)
 * [Import_CRYPTO_EXCHANGE_Mandatory.json](CRYPTO_EXCHANGE/CRYPTO_EXCHANGE_Samples/import_CRYPTO_EXCHANGE_Mandatory.json)
----
+--- -->
 
 
 ## Possible Responses

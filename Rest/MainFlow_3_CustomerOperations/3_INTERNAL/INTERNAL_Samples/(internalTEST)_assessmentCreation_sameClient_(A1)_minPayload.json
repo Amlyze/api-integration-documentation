@@ -1,0 +1,35 @@
+{
+    "communicationNumber": "Test_ComNr_INTERNAL_01",
+    "requester": "Company Name Amlyze",
+
+    "sourceOfRiskLevel": "EVALUATE",
+    "riskManagementCategory": "OP_TRANSFER",
+    "operationType": "INTERNAL",
+
+    "operationExtId": "Op_01_INTERNAL_SameClient_DifferentAccounts_TEST",
+    "financialFlowDirection": "NULL",
+
+    "operationDateTime": "2023-09-22T15:09:33+02:00",
+    "currency": "EUR",
+    "amount": 1000,
+    "description": "invoice '01'",
+    "listOperationParty": [
+         {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LT9208800274335945522",
+            "bic": "AmlyzeXX22",
+            "entityType": "INDIVIDUAL",
+           	"firstName" : "Tomas",
+	        "lastName" : "Garcia"
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LT9208800274335945500",
+            "bic": "AmlyzeXX22",
+            "entityType": "INDIVIDUAL",
+           	"firstName" : "Tomas",
+	        "lastName" : "Garcia"
+        }
+       
+    ]
+}

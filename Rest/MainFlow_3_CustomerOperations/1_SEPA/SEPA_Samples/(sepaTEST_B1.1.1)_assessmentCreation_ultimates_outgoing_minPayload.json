@@ -21,10 +21,10 @@
         },
          {
             "partyRole": "DEBTOR",
-            "accountNumber": "LI9208800274335945522",
+            "accountNumber": "LT9208800274335945533",
             "bic": "AmlyzeXX22",
             "entityType": "INDIVIDUAL",
-           	"firstName" : "Tomas",
+           	"firstName" : "Lukas",
 	        "lastName" : "Garcia"
         },
         {

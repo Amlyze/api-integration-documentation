@@ -1,14 +1,20 @@
 {
-    "communicationNumber": "ComNr_0018",
-    "requester": "financial_institution",
-    "operationExtId": "Op_0018",
+    "communicationNumber": "Test_ComNr_INTERNAL_05",
+    "requester": "Company Name Amlyze",
+
+    "sourceOfRiskLevel": "IMPORT",
+    "operationStatus":"EXECUTED",
+    "riskLevel": "HIGH",
+
+    "riskManagementCategory": "OP_TRANSFER",
     "operationType": "INTERNAL",
-    "riskManagementCategory": "OP_DEFAULT",
-    "sourceOfRiskLevel": "EVALUATE",
+
+    "operationExtId": "Op_05_INTERNAL_ULTIMATES_TEST",
+    "financialFlowDirection": "NULL",
+
     "operationDateTime": "2023-09-22T15:09:33+02:00",
     "currency": "EUR",
     "amount": 200,
-    "financialFlowDirection": "NULL",
     "description": "invoice '123456'",
     "listOperationParty": [
         {
@@ -19,21 +25,21 @@
         },
         {
             "partyRole": "DEBTOR",
-            "accountNumber": "LV6630800200000018155",
+            "accountNumber": "LT9208800274335945522",
             "currency": "EUR",
-            "bic": "BICXX22",
+            "bic": "AmlyzeXX22",
             "entityType": "INDIVIDUAL",
-            "firstName": "Geli",
-            "lastName": "Deliono"
+            "firstName" : "Tomas",
+	        "lastName" : "Garcia"
         },
         {
             "partyRole": "CREDITOR",
-           "accountNumber": "LV7730800200000018166",
+           "accountNumber": "LT9208800274335945500",
             "currency": "EUR",
-            "bic": "BICXX22",
+            "bic": "AmlyzeXX22",
             "entityType": "INDIVIDUAL",
-            "firstName": "Geli",
-            "lastName": "Deliono"
+            "firstName" : "Tomas",
+	        "lastName" : "Garcia"
         },
         {
             "partyRole": "ULTIMATE_CREDITOR",
