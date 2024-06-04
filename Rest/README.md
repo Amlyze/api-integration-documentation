@@ -27,7 +27,7 @@ Is the first step in creating a customer, which is necessary for all subsequent 
 
 * `POST /amlyze-ws-rest/customer`
 
-> Click [here](customer/customer.md)  to move to <b>Customer</b> page
+> Click [here](../Rest/mainFlow_1_Customer/README_customer.md)  to move to <b>Customer</b> page
 
     
 <b>Used for:</b>
@@ -48,7 +48,7 @@ The second step. Page provides API fields for adding accounts to the customers
 * `POST /amlyze-ws-rest/account`
 
 
-> Click [here](account/account.md)  to move to <b>Account</b> page
+> Click [here](../Rest/mainFlow_2_AccountsForCustomers/README_account.md)  to move to <b>Account</b> page
 
 
 <b>Used for:</b>
@@ -65,7 +65,7 @@ The Grand Final. Comprehensive overview of operation types, conditions, and work
 
 * `POST /amlyze-ws-rest/operation`
 
-> Click [here](operation/operation.md) to move to <b>Operation</b> page
+> Click [here](../Rest/mainFlow_3_CustomerOperations/README_operation.md) to move to <b>Operation</b> page
 
 
 <b>Used for:</b>
