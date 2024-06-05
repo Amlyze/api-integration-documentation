@@ -1,6 +1,6 @@
 
 {
-	"communicationNumber" : "Test_ComNr_00xx_OVERWRITE",
+	"communicationNumber" : "Test_ComNr_00xx_CLOSED",
 	"requester" : "Company Name Amlyze",
 
 
@@ -8,12 +8,14 @@
 
 
 	"sourceOfRiskLevel" : "EVALUATE",
+    "customerStatus" : "CLOSED",
+    "closingDate" : "2024-04-12T09:45:00.000+02:00",
 
 	
 	"riskManagementCategory": "IND",
 	"customerExtId" : "IND_EVALUATE_A1_TEST",
 	"entityType" : "INDIVIDUAL",
-	"applicationDate": "2023-10-01",
+	"applicationDate": "2024-04-10T09:45:00.000+02:00",
 	"firstName" : "Tomas",
 	"lastName" : "Garcia",
 	"citizenshipCountry" : "LT"

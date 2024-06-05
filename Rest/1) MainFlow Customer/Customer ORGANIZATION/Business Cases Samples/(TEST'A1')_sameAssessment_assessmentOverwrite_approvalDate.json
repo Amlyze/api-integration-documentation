@@ -14,9 +14,11 @@
 	"riskManagementCategory": "ORG",
 	"entityType": "ORGANIZATION",
 	"customerExtId": "ORG_IMPORT_B1_TEST",
-	"applicationDate": "2020-01-03",
+	"applicationDate": "2024-04-08T10:45:00.000+02:00",
 	"title": "LTD 'VivaElementus'",
 	"registrationCountry": "LT",
-	"legalForm": "LTD"
+	"legalForm": "LTD",
+
+	"approvalDate": "2024-04-10T10:45:00.000+02:00"
 
 }
