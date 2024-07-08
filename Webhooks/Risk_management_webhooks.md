@@ -29,7 +29,7 @@
         </tr>
         <tr>
             <td><b>source</b></td>
-            <td>URI-reference</br><a href="https://datatracker.ietf.org/doc/html/rfc3986#section-4.1">FC 3986 - Uniform Resource Identifier (URI): Generic Syntax</a></td>
+            <td>URI-reference</br><a href="https://datatracker.ietf.org/doc/html/rfc3986#section-4.1">RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax</a></td>
             <td>Header: <b>Ce-Source</b></td>
             <td>"893af30c-7dda-44b2-bf98-476da6ca4326"</td>
             <td>Event source - request ID (communication number)</td>
