@@ -56,12 +56,12 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td>OP_DEFAULT</td>
             <td>Code of risk management category of object.</td>
         </tr>
-	<tr>
+        <tr>
             <td><b>initializeScreeningProcesses</b></td>
             <td>String[]</td>
             <td>false</td>
-            <td>PEP,<br/>ADVERSE_MEDIA,<br/> SANCTIONS</td>
-            <td>Defines which lists to check during screening process.</td>
+            <td>PEP,<br/>ADVERSE_MEDIA,<br/> SANCTIONS, <br/>INTERNAL_LIST</td>
+            <td>Defines which lists to check during screening process</td>
         </tr>
         <tr>
             <td><b>sourceOfRiskLevel</b></td>

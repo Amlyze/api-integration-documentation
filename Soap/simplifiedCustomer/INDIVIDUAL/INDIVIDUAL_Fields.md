@@ -81,7 +81,7 @@
 			<td><b>InitializeScreeningProcesses</b></td>
 			<td>String[]</td>
 			<td>false</td>
-			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
+			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA,<br/>INTERNAL_LIST</td>
 			<td>Defines which screening processes to initiate</td>
 		</tr>
 		<tr>
@@ -337,7 +337,7 @@
 			<td><b>Process</b></td>
             <td>String</td>
             <td>true</td>
-			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
+			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA,<br/>INTERNAL_LIST</td>
 		</tr>
 	</tbody>
 </table>

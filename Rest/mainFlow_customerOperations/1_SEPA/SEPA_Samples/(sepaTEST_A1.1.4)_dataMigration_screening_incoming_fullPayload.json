@@ -15,7 +15,8 @@
     "initializeScreeningProcesses": [
         "SANCTIONS",
         "PEP",
-        "ADVERSE_MEDIA"
+        "ADVERSE_MEDIA",
+        "INTERNAL_LIST"
     ],
 
     "operationDateTime": "2023-09-22T15:09:33+02:00",

@@ -458,7 +458,7 @@
 			<td><b>Process</b></td>
             <td>String</td>
             <td>true</td>
-			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
+			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA,<br>INTERNAL_LIST</td>
 		</tr>
 	</tbody>
 </table>

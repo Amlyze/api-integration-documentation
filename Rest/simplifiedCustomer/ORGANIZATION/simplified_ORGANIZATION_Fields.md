@@ -77,13 +77,13 @@
 			<td>This parameter is mandatory only for clients utilizing a multi-organizational solution. 
             ❗<b>Omit this parameter unless instructed about it.</b>❗</br> It serves to specify the unique identifier for the business unit. Business units are logical groupings of users and data. Each business unit can have its own set of users, permissions, and data access rules. </br><i>(Upcoming feature)</i></td>
 		</tr>
-		<tr>
-			<td><b>initializeScreeningProcesses</b></td>
-			<td>String[]</td>
-			<td>false</td>
-			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
-			<td>Defines which screening processes to initiate</td>
-		</tr>
+        <tr>
+            <td><b>initializeScreeningProcesses</b></td>
+            <td>String[]</td>
+            <td>false</td>
+            <td>PEP,<br/>ADVERSE_MEDIA,<br/> SANCTIONS, <br/>INTERNAL_LIST</td>
+            <td>Defines which lists to check during screening process</td>
+        </tr>
 		<tr>
 			<td><b>applicationDate</b></td>
 			<td>Date</td>

@@ -12,7 +12,8 @@
 	"initializeScreeningProcesses": [
         "SANCTIONS",
         "ADVERSE_MEDIA",
-        "PEP"
+        "PEP",
+        "INTERNAL_LIST"
     ],
 
 

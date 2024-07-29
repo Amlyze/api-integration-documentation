@@ -77,13 +77,13 @@
 			<td>HIGH</td>
 			<td>The Risk Level of the customer during IMPORT</td>
 		</tr>
-		<tr>
-			<td><b>initializeScreeningProcesses</b></td>
-			<td>String[]</td>
-			<td>false</td>
-			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
-			<td>Defines which screening processes to initiate</td>
-		</tr>
+        <tr>
+            <td><b>initializeScreeningProcesses</b></td>
+            <td>String[]</td>
+            <td>false</td>
+            <td>PEP,<br/>ADVERSE_MEDIA,<br/> SANCTIONS, <br/>INTERNAL_LIST</td>
+            <td>Defines which lists to check during screening process</td>
+        </tr>
 		<tr>
 			<td><b>nationalCode</b></td>
 			<td>String</td>

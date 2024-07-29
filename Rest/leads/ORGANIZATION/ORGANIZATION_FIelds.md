@@ -70,7 +70,7 @@
 			<td><b>initializeScreeningProcesses</b></td>
 			<td>String[]</td>
 			<td>false</td>
-			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
+			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA <br/> INTERNAL_LIST</td>
 			<td>Defines which screening processes to initiate</td>
 		</tr>
 		<tr>
