@@ -20,7 +20,7 @@
 * Leads are NOT customers yet
 * For a Lead, only <b>"SourceOfRiskLevel"</b> = `EVALUATE` is possible
 * <b>"RiskManagementCategory"</b> is specified with a prefix or suffix LEAD_ (example - `LEAD_IND / LEAD_ORG`)
-* The following fields must be completed in the same manner as for a [<b>Customer</b>](../customer/customer.md.md)
+* The following fields must be completed in the same manner as for a [<b>Customer</b>](../customer/customer.md)
 * Lead status will always stay `PENDING` regardless of the decision made
 ---
 
