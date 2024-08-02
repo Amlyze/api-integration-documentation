@@ -9,7 +9,7 @@
 > Check related pages for events envelopes and events payloads details.
 
 
-* [Customer update webhooks (callbacks)](Customer_update_webhooks.md)
+* [Customer update webhooks (callbacks)](CustomerUpdateWebhooks.md)
 * [Risk management webhooks (callbacks)](RiskManagementWebhooks.md)
 * [Screening webhooks (callbacks)](ScreeningWebhooks.md)
 
