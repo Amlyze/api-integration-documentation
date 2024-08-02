@@ -17,7 +17,7 @@
             <td><b>type</b></td>
             <td>String</td>
             <td>Header: <b>Ce-Type</b></td>
-            <td>com.amlyze.customer.<event-type></td>
+            <td>com.amlyze.customer.&lt;event-type&gt;</td>
             <td>Unique event type. Check documentation below to see available types</td>
         </tr>
         <tr>
@@ -70,7 +70,7 @@
             <td>Event response. Differs on the event type</td>
         </tr>
     </tbody>
-<table>
+</table>
 
 ---
 
@@ -100,7 +100,7 @@
         </tr>
         <tr>
             <td><b>pep</b></td>
-            <td>StrBoolean (optional)ing</td>
+            <td>Boolean (optional)</td>
             <td>true</td>
             <td>The customer is/isn't a politically exposed person status</td>
         </tr>
@@ -109,6 +109,12 @@
             <td>Boolean (optional)</td>
             <td>true</td>
             <td>Customer found in adverse media or not</td>
+        </tr>
+        <tr>
+            <td><b>inInternalList</b></td>
+            <td>Boolean (optional)</td>
+            <td>true</td>
+            <td>Customer found in internal list or not</td>
         </tr>
         <tr>
             <td><b>riskLevel</b></td>
@@ -141,6 +147,7 @@
   "sanctioned": true,
   "pep": true,
   "inAdverseMedia":true,
+  "inInternalList":true,
   "riskLevel": "EXTREME",
   "status": "PENDING",
   "updateAt": "2019-12-13T12:01:02.694Z"
