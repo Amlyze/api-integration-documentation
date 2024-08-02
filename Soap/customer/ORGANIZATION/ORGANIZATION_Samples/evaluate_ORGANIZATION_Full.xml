@@ -46,6 +46,7 @@
             <IsSanctioned>false</IsSanctioned>
             <IsPEP>false</IsPEP>
             <IsInAdverseMedia>false</IsInAdverseMedia>
+            <IsInInternalList>false</IsInInternalList>
             <IsActualAddressDeclared>true</IsActualAddressDeclared>
             <IsCorrespondenceAddressDeclared>true</IsCorrespondenceAddressDeclared>
             <ActivityDescription>financial products and services, including retail banking, corporate banking, investment banking, and insurance services.</ActivityDescription>

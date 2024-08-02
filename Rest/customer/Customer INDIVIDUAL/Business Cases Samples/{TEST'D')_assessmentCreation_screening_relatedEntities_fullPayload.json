@@ -44,6 +44,7 @@
             "isPEP": true,
             "isSanctioned": false,
             "isInAdverseMedia": false,
+            "isInInternalList": false,
             "regionOfActivityDescription": "Western Region",
             "listContact": [
                 {
@@ -123,6 +124,7 @@
             "isPEP": false,
             "isSanctioned": true,
             "isInAdverseMedia": true,
+            "isInInternalList": true,
             "regionOfActivityDescription": "Eastern region",
             "title": "LTD 'VitaGold'",
             "legalForm": "LTD",

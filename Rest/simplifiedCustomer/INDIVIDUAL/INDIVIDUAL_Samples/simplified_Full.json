@@ -26,6 +26,7 @@
 	"isPEP": true,
 	"isSanctioned": false,
 	"isInAdverseMedia": true,
+	"isInInternalList": true,
 	"isFamilyPEP": true,
 	"isLitigated": true,
 	"amlOfficer": true,

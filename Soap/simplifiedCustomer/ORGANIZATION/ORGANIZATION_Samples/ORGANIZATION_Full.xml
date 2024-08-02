@@ -25,6 +25,7 @@
             <ActivityInRestrictedRegionDescription>logistics</ActivityInRestrictedRegionDescription>
             <IsSanctioned>true</IsSanctioned>
             <IsInAdverseMedia>true</IsInAdverseMedia>
+            <IsInInternalList>true</IsInInternalList>
             <IsPEP>false</IsPEP>
             <GIIN>GIN548745122</GIIN>
             <LEI>LEI54511548</LEI>

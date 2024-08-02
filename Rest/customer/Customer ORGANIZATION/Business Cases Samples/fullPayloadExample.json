@@ -35,6 +35,7 @@
     "isPEP": false,
     "isSanctioned": false,
     "isInAdverseMedia": true,
+    "isInInternalList": true,
 
     "giin": "GIIN123445",
     "lei": "LEI124545",
@@ -205,7 +206,7 @@
 			"isPEP" : true,
 			"isSanctioned" : true,
 			"isInAdverseMedia" : true,
-
+			"isInInternalList" : true,
 			"title" : "LTD 'Fokusmano'",
 			"legalForm" : "LTD",
 			"establishmentDate" : "1998-04-07",

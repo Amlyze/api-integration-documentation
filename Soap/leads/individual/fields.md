@@ -257,6 +257,13 @@
 			<td>true</td>
 			<td>An indication of the existence of information for an adverse media entity</td>
 		</tr>
+        <tr>
+			<td><b>IsInInternalList</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>true</td>
+			<td>An indication of the existence of information for an internal list entity</td>
+		</tr>
 		<tr>
 			<td><b>IsLegalResident</b></td>
 			<td>Boolean</td>
@@ -1380,6 +1387,13 @@
 			<td>false</td>
 			<td>false</td>
 			<td>An indication of the existence of information for an adverse media entity</td>
+	    </tr>
+	    <tr>
+			<td><b>IsInInternalList</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>false</td>
+			<td>An indication of the existence of information for an internal list entity</td>
 	    </tr>
 	    <tr>
 			<td><b>IsPEP</b></td>
