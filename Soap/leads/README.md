@@ -35,12 +35,12 @@
  ![Alt text](./image.png)
 
 ## Samples
-[<b>LEAD_INDIVIDUAL Fields</b>](INDIVIDUAL/INDIVIDUAL_Fields.md)
+[<b>LEAD_INDIVIDUAL Fields</b>](individual/fields.md)
 
-* [Evaluate_LEAD_INDIVIDUAL_Mandatory](INDIVIDUAL/INDIVIDUAL_Samples/evaluate_LEAD_INDIVIDUAL_Mandatory.xml) 
+* [Evaluate_LEAD_INDIVIDUAL_Mandatory](individual/Samples/evaluateMandatory.xml) 
 
-[<b>LEAD_ORGANIZATION Fields</b>](ORGANIZATION\ORGANIZATION_Fields.md) 
-* [Evaluate_LEAD_ORGANIZATION_Mandatory](ORGANIZATION/ORGANIZATION_Samples/evaluate_LEAD_ORGANIZATION_Mandatory.xml) 
+[<b>LEAD_ORGANIZATION Fields</b>](organization/fields.md) 
+* [Evaluate_LEAD_ORGANIZATION_Mandatory](organization/Samples/evaluateMandatory.xml) 
 
 ---
 
