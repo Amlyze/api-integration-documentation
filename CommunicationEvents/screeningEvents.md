@@ -66,7 +66,7 @@
 </table>
 
 
-## app.amlyze.customter.screening.sanctions.completed
+## app.amlyze.customer.screening.sanctions.completed
 > The event is always fired on screening finished with resolution
 
 
@@ -256,7 +256,32 @@
 ```json
 { "inAdverseMedia": true, "externalId": "bb2274b1-6804-41f3-9e6f-81b9eb6700e3", "screeningMatch": true }
 ```
+
 ---
+
+# Customer internal list screening
+
+## app.amlyze.customer.screening.internal_list.pending
+> The event is fired when a human decision is needed
+
+<table>
+    <thead>
+        <tr>
+            <td><b>Field</b></td>
+            <td><b>Type</b></td>
+            <td><b>Exemplary JSON Value</b></td>
+            <td><b>Description</b></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>externalId</b></td>
+            <td>String</td>
+            <td>bb2274b1-6804-41f3-9e6f-81b9eb6700e3</td>
+            <td>Lead external id</td>
+        </tr>
+    </tbody>
+</table>
 
 ## app.amlyze.customer.screening.internal_list.completed
 > The event is always fired on screening finished with resolution
@@ -528,8 +553,8 @@
 
 ---
 
-# Lead adverse media screening
-## app.amlyze.lead.screening.adverse_media.pending
+# Lead internal list screening
+## app.amlyze.lead.screening.internal_list.pending
 > The event is always fired on screening finished with resolution
 
 <table>

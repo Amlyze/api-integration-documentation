@@ -29,7 +29,7 @@
         </tr>
         <tr>
             <td><b>source</b></td>
-            <td>URI-reference</br><a href="https://datatracker.ietf.org/doc/html/rfc3986#section-4.1">RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax</a></td>
+            <td>URI-reference<br/><a href="https://datatracker.ietf.org/doc/html/rfc3986#section-4.1">RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax</a></td>
             <td>Header: <b>Ce-Source</b></td>
             <td>"893af30c-7dda-44b2-bf98-476da6ca4326"</td>
             <td>Event source - request ID (communication number)</td>
@@ -70,7 +70,7 @@
             <td>Event response. Differs on the event type</td>
         </tr>
     </tbody>
-<table>
+</table>
 
 ---
 
@@ -91,12 +91,12 @@
     <tbody>
         <tr>
             <td><b>initialRiskLevel</b></td>
-            <td>String</br><b>Enum</b></br>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
+            <td>String<br/><b>Enum</b><br/>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
             <td>"LOW"</td>
             <td>The initial risk level is shown based on during evaluation given result</td>
         </tr>
     </tbody>
-<table>
+</table>
 
 * **Example:**
 ```json
@@ -119,31 +119,31 @@
     <tbody>
         <tr>
             <td><b>initialRiskLevel</b></td>
-            <td>String</br><b>Enum</b></br>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
+            <td>String<br/><b>Enum</b><br/>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
             <td>"LOW"</td>
             <td>The initial risk level is shown based on during evaluation given result</td>
         </tr>
         <tr>
             <td><b>finalRiskLevel</b></td>
-            <td>String</br><b>Enum</b></br>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
+            <td>String<br/><b>Enum</b><br/>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
             <td>"LOW"</td>
             <td>The final risk level</td>
         </tr>
         <tr>
             <td><b>decisionType</b></td>
-            <td>String</br><b>Enum</b></br>[ACCEPTED, REJECTED]</td>
+            <td>String<br/><b>Enum</b><br/>[ACCEPTED, REJECTED]</td>
             <td>"ACCEPTED"</td>
             <td>Decision type</td>
         </tr>
         <tr>
             <td><b>decisionGroundCode</b></td>
-            <td>String <i>(optional)</i></br>
+            <td>String <i>(optional)</i><br/>
 Decision grounds can be checked by reaching <a href="../Rest/README.md/#classifiers">(Decision Ground classifier)</a></td>
             <td>"anystring"</td>
             <td>description which indicates the selected decision for resolving a case.<br/><i>Return only if a human decision were needed</i></td>
         </tr>
     </tbody>
-<table>
+</table>
 
 * **Example:**
 
@@ -172,37 +172,37 @@ Decision grounds can be checked by reaching <a href="../Rest/README.md/#classifi
     <tbody>
         <tr>
             <td><b>initialRiskLevel</b></td>
-            <td>String</br><b>Enum</b></br>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
+            <td>String<br/><b>Enum</b><br/>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
             <td>"LOW"</td>
             <td>The initial risk level is shown based on during evaluation given result</td>
         </tr>
         <tr>
             <td><b>finalRiskLevel</b></td>
-            <td>String</br><b>Enum</b></br>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
+            <td>String<br/><b>Enum</b><br/>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
             <td>"LOW"</td>
             <td>The final risk level</td>
         </tr>
         <tr>
             <td><b>decisionType</b></td>
-            <td>String</br><b>Enum</b></br>[ACCEPTED, REJECTED]</td>
+            <td>String<br/><b>Enum</b><br/>[ACCEPTED, REJECTED]</td>
             <td>"ACCEPTED"</td>
             <td>Decision type</td>
         </tr>
         <tr>
             <td><b>decisionGroundCode</b></td>
-            <td>String <i>(optional)</i></br>
+            <td>String <i>(optional)</i><br/>
 Decision grounds can be checked by reaching <a href="../Rest/README.md/#classifiers">(Decision Ground classifier)</a></td>
             <td>"anystring"</td>
             <td>description which indicates the selected decision for resolving a case.<br/><i>Return only if a human decision were needed</i></td>
         </tr>
         <tr>
             <td><b>approvedAt</b></td>
-            <td>Timestamp <i>(optional)</i></br>RFC 3339 (ISO 8601)</td>
+            <td>Timestamp <i>(optional)</i><br/>RFC 3339 (ISO 8601)</td>
             <td>"2018-04-05T17:31:00Z"</td>
-            <td>Approval date.</br><i>Set first time in the system</i></td>
+            <td>Approval date.<br/><i>Set first time in the system</i></td>
         </tr>
     </tbody>
-<table>
+</table>
 
 
 * **Example:**
@@ -235,12 +235,12 @@ Decision grounds can be checked by reaching <a href="../Rest/README.md/#classifi
     <tbody>
         <tr>
             <td><b>initialRiskLevel</b></td>
-            <td>String</br><b>Enum</b></br>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
+            <td>String<br/><b>Enum</b><br/>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
             <td>"LOW"</td>
             <td>The initial risk level is shown based on during evaluation given result</td>
         </tr>
     </tbody>
-<table>
+</table>
 
 * **Example:**
 
@@ -265,31 +265,31 @@ Decision grounds can be checked by reaching <a href="../Rest/README.md/#classifi
     <tbody>
         <tr>
             <td><b>initialRiskLevel</b></td>
-            <td>String</br><b>Enum</b></br>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
+            <td>String<br/><b>Enum</b><br/>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
             <td>"LOW"</td>
             <td>The initial risk level is shown based on during evaluation given result</td>
         </tr>
         <tr>
             <td><b>finalRiskLevel</b></td>
-            <td>String</br><b>Enum</b></br>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
+            <td>String<br/><b>Enum</b><br/>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
             <td>"LOW"</td>
             <td>The final risk level.</td>
         </tr>
         <tr>
             <td><b>decisionType</b></td>
-            <td>String</br><b>Enum</b></br>[ACCEPTED, REJECTED]</td>
+            <td>String<br/><b>Enum</b><br/>[ACCEPTED, REJECTED]</td>
             <td>"ACCEPTED"</td>
             <td>Decision type</td>
         </tr>
         <tr>
             <td><b>decisionGroundCode</b></td>
-            <td>String <i>(optional)</i></br>
+            <td>String <i>(optional)</i><br/>
 Decision grounds can be checked by reaching <a href="../Rest/README.md/#classifiers">(Decision Ground classifier)</a></td>
             <td>"anystring"</td>
             <td>Every decision ground code has its own description which indicates the selected decision for resolving a case.<br><i>Return only if a human decision were needed</i></td>
         </tr>
     </tbody>
-<table>
+</table>
 
 
 * **Example:**
@@ -299,7 +299,7 @@ Decision grounds can be checked by reaching <a href="../Rest/README.md/#classifi
   "initialRiskLevel": "LOW",
    "finalRiskLevel": "LOW",
    "decisionType": "ACCEPTED",
-   "decisionGroundCode": "01",
+   "decisionGroundCode": "01"
 }
 ```
 
@@ -322,12 +322,12 @@ Decision grounds can be checked by reaching <a href="../Rest/README.md/#classifi
     <tbody>
         <tr>
             <td><b>initialRiskLevel</b></td>
-            <td>String</br><b>Enum</b></br>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
+            <td>String<br/><b>Enum</b><br/>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
             <td>"LOW"</td>
             <td>The initial risk level is shown based on during evaluation given result</td>
         </tr>
     </tbody>
-<table>
+</table>
 
 * **Example:**
 
@@ -351,31 +351,31 @@ Decision grounds can be checked by reaching <a href="../Rest/README.md/#classifi
     <tbody>
         <tr>
             <td><b>initialRiskLevel</b></td>
-            <td>String</br><b>Enum</b></br>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
+            <td>String<br/><b>Enum</b><br/>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
             <td>"LOW"</td>
             <td>The initial risk level is shown based on during evaluation given result</td>
         </tr>
         <tr>
             <td><b>finalRiskLevel</b></td>
-            <td>String</br><b>Enum</b></br>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
+            <td>String<br/><b>Enum</b><br/>[NONE, LOW, MEDIUM, HIGH, EXTREME]</td>
             <td>"LOW"</td>
             <td>The final risk level</td>
         </tr>
         <tr>
             <td><b>decisionType</b></td>
-            <td> <td>String</br><b>Enum</b></br>[ACCEPTED, REJECTED]</td></td>
+            <td> <td>String<br/><b>Enum</b><br/>[ACCEPTED, REJECTED]</td>
             <td>"ACCEPTED"</td>
             <td>Decision type</td>
         </tr>
         <tr>
             <td><b>decisionGroundCode</b></td>
-            <td>String <i>(optional)</i></br>
+            <td>String <i>(optional)</i><br/>
 Decision grounds can be checked by reaching <a href="../Rest/README.md/#classifiers">(Decision Ground classifier)</a></td>
             <td>"anystring"</td>
             <td>Every decision ground code has its own description which indicates the selected decision for resolving a case.<br><i>Return only if a human decision were needed</i></td>
         </tr>
     </tbody>
-<table>
+</table>
 
 * **Example:**
   
