@@ -81,7 +81,7 @@ Is the first step in creating a customer, which is necessary for all subsequent 
 
 **Endpoint**
 
-* [Leads](leads/leads.md) : `POST /amlyze-ws/EvaluateCustomerV2Service`
+* [Leads](leads/README.md) : `POST /amlyze-ws/EvaluateCustomerV2Service`
 
 **Used for:**
 
