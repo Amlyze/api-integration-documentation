@@ -11,6 +11,6 @@
 
 * [Customer update webhooks (callbacks)](Customer_update_webhooks.md)
 * [Risk management webhooks (callbacks)](Risk_management_webhooks.md)
-* [Screening webhooks (callbacks)](Screening_webhooks.md)
+* [Screening webhooks (callbacks)](ScreeningWebhooks.md)
 
 ![Alt text](image.png)
