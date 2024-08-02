@@ -29,7 +29,7 @@
         </tr>
         <tr>
             <td><b>source</b></td>
-            <td>URI-reference</br><a href="https://datatracker.ietf.org/doc/html/rfc3986#section-4.1">RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax</a></td>
+            <td>URI-reference<br/><a href="https://datatracker.ietf.org/doc/html/rfc3986#section-4.1">RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax</a></td>
             <td>Header: <b>Ce-Source</b></td>
             <td>customer</td>
             <td>Event source</td>
@@ -118,14 +118,14 @@
         </tr>
         <tr>
             <td><b>riskLevel</b></td>
-            <td>String (optional)</br><b>Enum:</b></br>
+            <td>String (optional)<br/><b>Enum:</b><br/>
 [NONE,LOW,MEDIUM,HIGH,EXTREME]</td>
             <td>EXTREME</td>
             <td>Customer risk level</td>
         </tr>
         <tr>
             <td><b>status</b></td>
-            <td>String (optional)</br><b>Enum:</b></br>
+            <td>String (optional)<br/><b>Enum:</b><br/>
 [ACTIVE, PENDING, REJECTED, SUSPENDED, CLOSED]</td>
             <td>ACTIVE</td>
             <td>Customer status in Amlyze system</td>

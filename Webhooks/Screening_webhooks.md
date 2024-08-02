@@ -26,7 +26,7 @@
         </tr>
         <tr>
             <td><b>source</b></td>
-             <td>URI-reference</br><a href="https://datatracker.ietf.org/doc/html/rfc3986#section-4.1">RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax</a></td> 
+             <td>URI-reference<br/><a href="https://datatracker.ietf.org/doc/html/rfc3986#section-4.1">RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax</a></td> 
             <td>"893af30c-7dda-44b2-bf98-476da6ca4326"</td>
             <td>Event source - request ID (communication number)</td>
         </tr>
@@ -108,7 +108,7 @@
             <td><b>sanctioned</b></td>
             <td>Boolean <i>(optional)</i></td>
             <td>true</td>
-            <td>Customer sanctioned or not. </br> When a screening match is not found then this value is empty because there is no decision.</td>
+            <td>Customer sanctioned or not. <br/> When a screening match is not found then this value is empty because there is no decision.</td>
         </tr>
         <tr>
             <td><b>externalId</b></td>
@@ -178,7 +178,7 @@
             <td><b>pep</b></td>
             <td>Boolean <i>(optional)</i></td>
             <td>true</td>
-            <td>The customer is or is not a politically exposed person status. </br> When a screening match is not found then this value is empty because there is no decision.</td>
+            <td>The customer is or is not a politically exposed person status. <br/> When a screening match is not found then this value is empty because there is no decision.</td>
         </tr>
         <tr>
             <td><b>externalId</b></td>
@@ -252,7 +252,7 @@
             <td><b>inAdverseMedia</b></td>
             <td>Boolean <i>(optional)</i></td>
             <td>true</td>
-            <td>Customer found in adverse media or not.</br> When a screening match is not found then this value is empty because there is no decision.</td>
+            <td>Customer found in adverse media or not.<br/> When a screening match is not found then this value is empty because there is no decision.</td>
         </tr>
         <tr>
             <td><b>externalId</b></td>
@@ -324,7 +324,7 @@
             <td><b>inInternalList</b></td>
             <td>Boolean <i>(optional)</i></td>
             <td>true</td>
-            <td>Customer found in internal list or not.</br> When a screening match is not found then this value is empty because there is no decision.</td>
+            <td>Customer found in internal list or not.<br/> When a screening match is not found then this value is empty because there is no decision.</td>
         </tr>
         <tr>
             <td><b>externalId</b></td>
@@ -397,7 +397,7 @@
             <td><b>sanctioned</b></td>
             <td>Boolean <i>(optional)</i></td>
             <td>true</td>
-            <td>Lead sanctioned or not.</br> When a screening match is not found then this value is empty because there is no decision.</td>
+            <td>Lead sanctioned or not.<br/> When a screening match is not found then this value is empty because there is no decision.</td>
         </tr>
         <tr>
             <td><b>externalId</b></td>
@@ -470,7 +470,7 @@
             <td><b>pep</b></td>
             <td>Boolean <i>(optional)</i></td>
             <td>true</td>
-            <td>The lead is or is not a politically exposed person status.</br> When a screening match is not found then this value is empty because there is no decision.</td>
+            <td>The lead is or is not a politically exposed person status.<br/> When a screening match is not found then this value is empty because there is no decision.</td>
         </tr>
         <tr>
             <td><b>externalId</b></td>
@@ -544,7 +544,7 @@
             <td><b>inAdverseMedia</b></td>
             <td>Boolean <i>(optional)</i></td>
             <td>true</td>
-            <td>Lead is found in adverse media or not.</br> When a screening match is not found then this value is empty because there is no decision.</td>
+            <td>Lead is found in adverse media or not.<br/> When a screening match is not found then this value is empty because there is no decision.</td>
         </tr>
         <tr>
             <td><b>externalId</b></td>
@@ -617,7 +617,7 @@
             <td><b>inInternalList</b></td>
             <td>Boolean <i>(optional)</i></td>
             <td>true</td>
-            <td>Lead is found in internal list or not.</br> When a screening match is not found then this value is empty because there is no decision.</td>
+            <td>Lead is found in internal list or not.<br/> When a screening match is not found then this value is empty because there is no decision.</td>
         </tr>
         <tr>
             <td><b>externalId</b></td>
@@ -678,19 +678,19 @@
         </tr>
         <tr>
             <td><b>birthDate</b></td>
-            <td>String (optional)</br>Format: ISO 8601</br>YYYY-MM-DD</td>
+            <td>String (optional)<br/>Format: ISO 8601<br/>YYYY-MM-DD</td>
             <td>1981-08-06</td>
             <td>Related entity birth date</td>
         </tr>
         <tr>
             <td><b>establishmentDate</b></td>
-            <td>String (optional)</br>Format: ISO 8601</br>YYYY-MM-DD</td>
+            <td>String (optional)<br/>Format: ISO 8601<br/>YYYY-MM-DD</td>
             <td>2021-08-06</td>
             <td>Related entity establishment date</td>
         </tr>
         <tr>
             <td><b>type</b></td>
-            <td>String (optional)</br><b>Enum:</b></br>[INDIVIDUAL, ORGANIZATION, UNKNOWN]</td>
+            <td>String (optional)<br/><b>Enum:</b><br/>[INDIVIDUAL, ORGANIZATION, UNKNOWN]</td>
             <td>INDIVIDUAL</td>
             <td>Related entity type</td>
         </tr>
@@ -726,9 +726,9 @@
         </tr>
         <tr>
             <td><b>countryCode</b></td>
-            <td>String (optional)</br>Format: ISO-3166 alpha-2</td>
+            <td>String (optional)<br/>Format: ISO-3166 alpha-2</td>
             <td>LT</td>
-            <td>For Individual related entity:</br><i>Citizenship country</i></br>For Organization related entity:</br><i>Registration country</i></br><a href="../Rest/README.md/#classifiers">(Countries Classifier)</a></td>
+            <td>For Individual related entity:<br/><i>Citizenship country</i><br/>For Organization related entity:<br/><i>Registration country</i><br/><a href="../Rest/README.md/#classifiers">(Countries Classifier)</a></td>
         </tr>
     </tbody>
 </table>
@@ -750,7 +750,7 @@
             <td><b>sanctioned</b></td>
             <td>Boolean (optional)</td>
             <td>true</td>
-            <td>Related entity sanctioned or not.</br> When a screening match is not found then this value is empty because there is no decision.</td>
+            <td>Related entity sanctioned or not.<br/> When a screening match is not found then this value is empty because there is no decision.</td>
         </tr>
         <tr>
             <td><b>customerExternalId</b></td>
@@ -766,19 +766,19 @@
         </tr>
         <tr>
             <td><b>birthDate</b></td>
-            <td>String (optional)</br>Format: ISO 8601</br>YYYY-MM-DD</td>
+            <td>String (optional)<br/>Format: ISO 8601<br/>YYYY-MM-DD</td>
             <td>1981-08-06</td>
             <td>Related entity birth date</td>
         </tr>
         <tr>
             <td><b>establishmentDate</b></td>
-            <td>String (optional)</br>Format: ISO 8601</br>YYYY-MM-DD</td>
+            <td>String (optional)<br/>Format: ISO 8601<br/>YYYY-MM-DD</td>
             <td>2021-08-06</td>
             <td>Related entity establishment date</td>
         </tr>
         <tr>
             <td><b>type</b></td>
-            <td>String (optional)</br><b>Enum:</b></br>[INDIVIDUAL, ORGANIZATION, UNKNOWN]</td>
+            <td>String (optional)<br/><b>Enum:</b><br/>[INDIVIDUAL, ORGANIZATION, UNKNOWN]</td>
             <td>INDIVIDUAL</td>
             <td>Related entity type</td>
         </tr>
@@ -814,9 +814,9 @@
         </tr>
         <tr>
             <td><b>countryCode</b></td>
-            <td>String (optional)</br>Format: ISO-3166 alpha-2</td>
+            <td>String (optional)<br/>Format: ISO-3166 alpha-2</td>
             <td>LT</td>
-            <td>For Individual related entity:</br><i>Citizenship country</i></br>For Organization related entity:</br><i>Registration country</i></br><a href="../Rest/README.md/#classifiers">(Countries Classifier)</a></td>
+            <td>For Individual related entity:<br/><i>Citizenship country</i><br/>For Organization related entity:<br/><i>Registration country</i><br/><a href="../Rest/README.md/#classifiers">(Countries Classifier)</a></td>
         </tr>
         <tr>
             <td><b>screeningMatch</b></td>
@@ -903,19 +903,19 @@
         </tr>
         <tr>
             <td><b>birthDate</b></td>
-            <td>String (optional)</br>Format: ISO 8601</br>YYYY-MM-DD</td>
+            <td>String (optional)<br/>Format: ISO 8601<br/>YYYY-MM-DD</td>
             <td>1981-08-06</td>
             <td>Related entity birth date</td>
         </tr>
         <tr>
             <td><b>establishmentDate</b></td>
-            <td>String (optional)</br>Format: ISO 8601</br>YYYY-MM-DD</td>
+            <td>String (optional)<br/>Format: ISO 8601<br/>YYYY-MM-DD</td>
             <td>2021-08-06</td>
             <td>Related entity establishment date</td>
         </tr>
         <tr>
             <td><b>type</b></td>
-            <td>String (optional)</br><b>Enum:</b></br>[INDIVIDUAL, ORGANIZATION, UNKNOWN]</td>
+            <td>String (optional)<br/><b>Enum:</b><br/>[INDIVIDUAL, ORGANIZATION, UNKNOWN]</td>
             <td>INDIVIDUAL</td>
             <td>Related entity type</td>
         </tr>
@@ -951,9 +951,9 @@
         </tr>
         <tr>
             <td><b>countryCode</b></td>
-            <td>String (optional)</br>Format: ISO-3166 alpha-2</td>
+            <td>String (optional)<br/>Format: ISO-3166 alpha-2</td>
             <td>LT</td>
-            <td>For Individual related entity:</br><i>Citizenship country</i></br>For Organization related entity:</br><i>Registration country</i></br><a href="../Rest/README.md/#classifiers">(Countries Classifier)</a></td>
+            <td>For Individual related entity:<br/><i>Citizenship country</i><br/>For Organization related entity:<br/><i>Registration country</i><br/><a href="../Rest/README.md/#classifiers">(Countries Classifier)</a></td>
         </tr>
     </tbody>
 </table>
@@ -975,7 +975,7 @@
             <td><b>pep</b></td>
             <td>Boolean (optional)</td>
             <td>true</td>
-            <td>Related entity pep or not.</br> When a screening match is not found then this value is empty because there is no decision.</td>
+            <td>Related entity pep or not.<br/> When a screening match is not found then this value is empty because there is no decision.</td>
         </tr>
         <tr>
             <td><b>customerExternalId</b></td>
@@ -991,19 +991,19 @@
         </tr>
         <tr>
             <td><b>birthDate</b></td>
-            <td>String (optional)</br>Format: ISO 8601</br>YYYY-MM-DD</td>
+            <td>String (optional)<br/>Format: ISO 8601<br/>YYYY-MM-DD</td>
             <td>1981-08-06</td>
             <td>Related entity birth date</td>
         </tr>
         <tr>
             <td><b>establishmentDate</b></td>
-            <td>String (optional)</br>Format: ISO 8601</br>YYYY-MM-DD</td>
+            <td>String (optional)<br/>Format: ISO 8601<br/>YYYY-MM-DD</td>
             <td>2021-08-06</td>
             <td>Related entity establishment date</td>
         </tr>
         <tr>
             <td><b>type</b></td>
-            <td>String (optional)</br><b>Enum:</b></br>[INDIVIDUAL, ORGANIZATION, UNKNOWN]</td>
+            <td>String (optional)<br/><b>Enum:</b><br/>[INDIVIDUAL, ORGANIZATION, UNKNOWN]</td>
             <td>INDIVIDUAL</td>
             <td>Related entity type</td>
         </tr>
@@ -1039,9 +1039,9 @@
         </tr>
         <tr>
             <td><b>countryCode</b></td>
-            <td>String (optional)</br>Format: ISO-3166 alpha-2</td>
+            <td>String (optional)<br/>Format: ISO-3166 alpha-2</td>
             <td>LT</td>
-            <td>For Individual related entity:</br><i>Citizenship country</i></br>For Organization related entity:</br><i>Registration country</i></br><a href="../Rest/README.md/#classifiers">(Countries Classifier)</a></td>
+            <td>For Individual related entity:<br/><i>Citizenship country</i><br/>For Organization related entity:<br/><i>Registration country</i><br/><a href="../Rest/README.md/#classifiers">(Countries Classifier)</a></td>
         </tr>
         <tr>
             <td><b>screeningMatch</b></td>
@@ -1128,19 +1128,19 @@
         </tr>
         <tr>
             <td><b>birthDate</b></td>
-            <td>String (optional)</br>Format: ISO 8601</br>YYYY-MM-DD</td>
+            <td>String (optional)<br/>Format: ISO 8601<br/>YYYY-MM-DD</td>
             <td>1981-08-06</td>
             <td>Related entity birth date</td>
         </tr>
         <tr>
             <td><b>establishmentDate</b></td>
-            <td>String (optional)</br>Format: ISO 8601</br>YYYY-MM-DD</td>
+            <td>String (optional)<br/>Format: ISO 8601<br/>YYYY-MM-DD</td>
             <td>2021-08-06</td>
             <td>Related entity establishment date</td>
         </tr>
         <tr>
             <td><b>type</b></td>
-            <td>String (optional)</br><b>Enum:</b></br>[INDIVIDUAL, ORGANIZATION, UNKNOWN]</td>
+            <td>String (optional)<br/><b>Enum:</b><br/>[INDIVIDUAL, ORGANIZATION, UNKNOWN]</td>
             <td>INDIVIDUAL</td>
             <td>Related entity type</td>
         </tr>
@@ -1176,9 +1176,9 @@
         </tr>
         <tr>
             <td><b>countryCode</b></td>
-            <td>String (optional)</br>Format: ISO-3166 alpha-2</td>
+            <td>String (optional)<br/>Format: ISO-3166 alpha-2</td>
             <td>LT</td>
-            <td>For Individual related entity:</br><i>Citizenship country</i></br>For Organization related entity:</br><i>Registration country</i></br><a href="../Rest/README.md/#classifiers">(Countries Classifier)</a></td>
+            <td>For Individual related entity:<br/><i>Citizenship country</i><br/>For Organization related entity:<br/><i>Registration country</i><br/><a href="../Rest/README.md/#classifiers">(Countries Classifier)</a></td>
         </tr>
     </tbody>
 </table>
@@ -1200,7 +1200,7 @@
             <td><b>inAdverseMedia</b></td>
             <td>Boolean (optional)</td>
             <td>true</td>
-            <td>Related entity in adverse media or not.</br> When a screening match is not found then this value is empty because there is no decision.</td>
+            <td>Related entity in adverse media or not.<br/> When a screening match is not found then this value is empty because there is no decision.</td>
         </tr>
         <tr>
             <td><b>customerExternalId</b></td>
@@ -1216,19 +1216,19 @@
         </tr>
         <tr>
             <td><b>birthDate</b></td>
-            <td>String (optional)</br>Format: ISO 8601</br>YYYY-MM-DD</td>
+            <td>String (optional)<br/>Format: ISO 8601<br/>YYYY-MM-DD</td>
             <td>1981-08-06</td>
             <td>Related entity birth date</td>
         </tr>
         <tr>
             <td><b>establishmentDate</b></td>
-            <td>String (optional)</br>Format: ISO 8601</br>YYYY-MM-DD</td>
+            <td>String (optional)<br/>Format: ISO 8601<br/>YYYY-MM-DD</td>
             <td>2021-08-06</td>
             <td>Related entity establishment date</td>
         </tr>
         <tr>
             <td><b>type</b></td>
-            <td>String (optional)</br><b>Enum:</b></br>[INDIVIDUAL, ORGANIZATION, UNKNOWN]</td>
+            <td>String (optional)<br/><b>Enum:</b><br/>[INDIVIDUAL, ORGANIZATION, UNKNOWN]</td>
             <td>INDIVIDUAL</td>
             <td>Related entity type</td>
         </tr>
@@ -1264,9 +1264,9 @@
         </tr>
         <tr>
             <td><b>countryCode</b></td>
-            <td>String (optional)</br>Format: ISO-3166 alpha-2</td>
+            <td>String (optional)<br/>Format: ISO-3166 alpha-2</td>
             <td>LT</td>
-            <td>For Individual related entity:</br><i>Citizenship country</i></br>For Organization related entity:</br><i>Registration country</i></br><a href="../Rest/README.md/#classifiers">(Countries Classifier)</a></td>
+            <td>For Individual related entity:<br/><i>Citizenship country</i><br/>For Organization related entity:<br/><i>Registration country</i><br/><a href="../Rest/README.md/#classifiers">(Countries Classifier)</a></td>
         </tr>
         <tr>
             <td><b>screeningMatch</b></td>
@@ -1354,19 +1354,19 @@
         </tr>
         <tr>
             <td><b>birthDate</b></td>
-            <td>String (optional)</br>Format: ISO 8601</br>YYYY-MM-DD</td>
+            <td>String (optional)<br/>Format: ISO 8601<br/>YYYY-MM-DD</td>
             <td>1981-08-06</td>
             <td>Related entity birth date</td>
         </tr>
         <tr>
             <td><b>establishmentDate</b></td>
-            <td>String (optional)</br>Format: ISO 8601</br>YYYY-MM-DD</td>
+            <td>String (optional)<br/>Format: ISO 8601<br/>YYYY-MM-DD</td>
             <td>2021-08-06</td>
             <td>Related entity establishment date</td>
         </tr>
         <tr>
             <td><b>type</b></td>
-            <td>String (optional)</br><b>Enum:</b></br>[INDIVIDUAL, ORGANIZATION, UNKNOWN]</td>
+            <td>String (optional)<br/><b>Enum:</b><br/>[INDIVIDUAL, ORGANIZATION, UNKNOWN]</td>
             <td>INDIVIDUAL</td>
             <td>Related entity type</td>
         </tr>
@@ -1402,9 +1402,9 @@
         </tr>
         <tr>
             <td><b>countryCode</b></td>
-            <td>String (optional)</br>Format: ISO-3166 alpha-2</td>
+            <td>String (optional)<br/>Format: ISO-3166 alpha-2</td>
             <td>LT</td>
-            <td>For Individual related entity:</br><i>Citizenship country</i></br>For Organization related entity:</br><i>Registration country</i></br><a href="../Rest/README.md/#classifiers">(Countries Classifier)</a></td>
+            <td>For Individual related entity:<br/><i>Citizenship country</i><br/>For Organization related entity:<br/><i>Registration country</i><br/><a href="../Rest/README.md/#classifiers">(Countries Classifier)</a></td>
         </tr>
     </tbody>
 </table>
@@ -1426,7 +1426,7 @@
             <td><b>inInternalList</b></td>
             <td>Boolean (optional)</td>
             <td>true</td>
-            <td>Related entity in internal list or not.</br> When a screening match is not found then this value is empty because there is no decision.</td>
+            <td>Related entity in internal list or not.<br/> When a screening match is not found then this value is empty because there is no decision.</td>
         </tr>
         <tr>
             <td><b>customerExternalId</b></td>
@@ -1442,19 +1442,19 @@
         </tr>
         <tr>
             <td><b>birthDate</b></td>
-            <td>String (optional)</br>Format: ISO 8601</br>YYYY-MM-DD</td>
+            <td>String (optional)<br/>Format: ISO 8601<br/>YYYY-MM-DD</td>
             <td>1981-08-06</td>
             <td>Related entity birth date</td>
         </tr>
         <tr>
             <td><b>establishmentDate</b></td>
-            <td>String (optional)</br>Format: ISO 8601</br>YYYY-MM-DD</td>
+            <td>String (optional)<br/>Format: ISO 8601<br/>YYYY-MM-DD</td>
             <td>2021-08-06</td>
             <td>Related entity establishment date</td>
         </tr>
         <tr>
             <td><b>type</b></td>
-            <td>String (optional)</br><b>Enum:</b></br>[INDIVIDUAL, ORGANIZATION, UNKNOWN]</td>
+            <td>String (optional)<br/><b>Enum:</b><br/>[INDIVIDUAL, ORGANIZATION, UNKNOWN]</td>
             <td>INDIVIDUAL</td>
             <td>Related entity type</td>
         </tr>
@@ -1490,9 +1490,9 @@
         </tr>
         <tr>
             <td><b>countryCode</b></td>
-            <td>String (optional)</br>Format: ISO-3166 alpha-2</td>
+            <td>String (optional)<br/>Format: ISO-3166 alpha-2</td>
             <td>LT</td>
-            <td>For Individual related entity:</br><i>Citizenship country</i></br>For Organization related entity:</br><i>Registration country</i></br><a href="../Rest/README.md/#classifiers">(Countries Classifier)</a></td>
+            <td>For Individual related entity:<br/><i>Citizenship country</i><br/>For Organization related entity:<br/><i>Registration country</i><br/><a href="../Rest/README.md/#classifiers">(Countries Classifier)</a></td>
         </tr>
         <tr>
             <td><b>screeningMatch</b></td>

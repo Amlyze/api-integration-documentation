@@ -120,7 +120,7 @@
 	    <td>true/false</td>
 	    <td>BUSINESS_UNIT_NAME</td>
 	    <td>This parameter is mandatory only for clients utilizing a multi-organizational solution. 
-            ❗<b>Omit this parameter unless instructed about it.</b>❗</br> It serves to specify the unique identifier for the business unit. Business units are logical groupings of users and data. Each business unit can have its own set of users, permissions, and data access rules. </br><i>(Upcoming feature)</i></td>
+            ❗<b>Omit this parameter unless instructed about it.</b>❗<br/> It serves to specify the unique identifier for the business unit. Business units are logical groupings of users and data. Each business unit can have its own set of users, permissions, and data access rules. <br/><i>(Upcoming feature)</i></td>
 	</tr>
         <tr>
             <td><b>financialFlowDirection</b></td>
@@ -214,14 +214,14 @@ At least one operation party account must exist in Amlyze (identified by account
             <td>String<br/><b>ENUM</b><br/>[DEBTOR,<br/>CREDITOR,<br/>ULTIMATE_DEBTOR,<br/>ULTIMATE_CREDITOR]</td>
             <td>true</td>
             <td>DEBTOR</td>
-            <td>The role of the party in ongoing operation. </br> When "partyRole", is one of <b>"ULTIMATE_"</b>, only two variations of elements becomes <b>mandatory</b> to provide:</br> 1. "entityType",</br> 2. "identifier" | "firstName" + "lastName" | "title"</td>
+            <td>The role of the party in ongoing operation. <br/> When "partyRole", is one of <b>"ULTIMATE_"</b>, only two variations of elements becomes <b>mandatory</b> to provide:<br/> 1. "entityType",<br/> 2. "identifier" | "firstName" + "lastName" | "title"</td>
         </tr>
         <tr>
             <td><b>accountNumber</b></td>
             <td>String</td>
             <td>true</td>
             <td>LT038625979279192518</td>
-            <td>IBAN or any unique identification number generated during account creation. If unique identification number was not created - customer's "customerExtId" (used during customer creation ) can be used. </br> when direction "OUTGOING" Debtor's account number = customer account & Creditor's account number =  unique identification number/customer's externalId</td>
+            <td>IBAN or any unique identification number generated during account creation. If unique identification number was not created - customer's "customerExtId" (used during customer creation ) can be used. <br/> when direction "OUTGOING" Debtor's account number = customer account & Creditor's account number =  unique identification number/customer's externalId</td>
         </tr>
         <tr>
             <td><b>currency</b></td>
@@ -277,7 +277,7 @@ At least one operation party account must exist in Amlyze (identified by account
 	    <td>String </td>
             <td>true/false</td>
             <td>50007153359</td>
-            <td>Unique identification number (e.g., personal ID, company VAT code) to distinguish the payer and the transaction. </br> Becomes <b>Mandatory</b> only when <b>"partyRole" = "ULTIMATE_"</b> and no more elements are provided for that party </td>
+            <td>Unique identification number (e.g., personal ID, company VAT code) to distinguish the payer and the transaction. <br/> Becomes <b>Mandatory</b> only when <b>"partyRole" = "ULTIMATE_"</b> and no more elements are provided for that party </td>
         </tr>
         <tr>
             <td><b>address</b></td>
