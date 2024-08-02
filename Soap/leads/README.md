@@ -20,7 +20,7 @@
 * Leads are NOT customers yet
 * For a Lead, only <b>"SourceOfRiskLevel"</b> = `EVALUATE` is possible
 * <b>"RiskManagementCategory"</b> is specified with a prefix or suffix LEAD_ (example - `LEAD_IND / LEAD_ORG`)
-* The following fields must be completed in the same manner as for a [<b>Customer</b>](../customer/customer.md)
+* The following fields must be completed in the same manner as for a [<b>Customer</b>](../customer/README.md)
 * Lead status will always stay `PENDING` regardless of the decision made
 ---
 
@@ -29,7 +29,7 @@
 * During `UPDATE` → <b>"RiskManagementCategory"</b> must be changed into Customer's one
 * With the <b>"UPDATE"</b>, additional information should be provided including an important one → <b>"ApprovalDate"</b>
 * After successful <b>"UPDATE"</b> → LEAD becomes a Customer and casual Customer Workflow takes place.
- ( More about the Customer → [<b>Here</b>](../customer/customer.md))
+ ( More about the Customer → [<b>Here</b>](../customer/README.md))
 
  ---
  ![Alt text](./image.png)

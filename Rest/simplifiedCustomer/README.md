@@ -3,7 +3,7 @@
 
 ## Information to know
 
->Simplified Customer API contains less Mandatory fields than a regular [*Customer*](../customer/customer.md),
+>Simplified Customer API contains less Mandatory fields than a regular [*Customer*](../customer/README.md),
 therefore workflows for these two separate servers differ.
 
 * Simplified customers contain a minimum ammount of identifying information and KYC data;

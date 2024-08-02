@@ -20,7 +20,7 @@ URL structure: `https://[host][port][path][service]`
 ## Customer
 
 Is the first step in creating a customer, which is necessary for all subsequent operations in the API.
-**Press [here](customer/customer.md) and move to Customer API page**
+**Press [here](customer/README.md) and move to Customer API page**
 
 **Endpoint**
 
@@ -96,7 +96,7 @@ Is the first step in creating a customer, which is necessary for all subsequent 
 
 **Endpoint**
 
-* [Simplified Customer](simplifiedCustomer/simplifiedCustomer.md) : `POST /amlyze-ws-rest/simplified-customer`
+* [Simplified Customer](simplifiedCustomer/README.md) : `POST /amlyze-ws-rest/simplified-customer`
 
 **Used for:**
 
