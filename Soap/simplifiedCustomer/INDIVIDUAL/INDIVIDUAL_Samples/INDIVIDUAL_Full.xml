@@ -28,6 +28,7 @@
             <IsPEP>false</IsPEP>
             <IsSanctioned>true</IsSanctioned>
             <IsInAdverseMedia>true</IsInAdverseMedia>
+            <IsInInternalList>true</IsInInternalList>
             <IsFamilyPEP>false</IsFamilyPEP>
             <IsLitigated>false</IsLitigated>
             <AmlOfficer>false</AmlOfficer>

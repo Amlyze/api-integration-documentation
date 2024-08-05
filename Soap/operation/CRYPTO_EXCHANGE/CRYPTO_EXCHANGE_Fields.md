@@ -103,7 +103,7 @@ Crypto_exchange occurs for intra-customer transactions between distinct currency
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>
 			<td>This parameter is mandatory only for clients utilizing a multi-organizational solution. 
-            ❗<b>Omit this parameter unless instructed about it.</b>❗</br> It serves to specify the unique identifier for the business unit. Business units are logical groupings of users and data. Each business unit can have its own set of users, permissions, and data access rules. </br><i>(Upcoming feature)</i></td>
+            ❗<b>Omit this parameter unless instructed about it.</b>❗<br/> It serves to specify the unique identifier for the business unit. Business units are logical groupings of users and data. Each business unit can have its own set of users, permissions, and data access rules. <br/><i>(Upcoming feature)</i></td>
 		</tr>
         <tr>
             <td><b>FinancialFlowDirection</b></td>
@@ -224,7 +224,7 @@ Crypto_exchange occurs for intra-customer transactions between distinct currency
 			<td><b>Process</b></td>
             <td>String</td>
             <td>true</td>
-			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
+			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA,<br>INTERNAL_LIST</td>
 		</tr>
 	</tbody>
 </table>

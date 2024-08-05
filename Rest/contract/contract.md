@@ -17,7 +17,7 @@ The request body contains the data that you are sending to the API. The data doc
 
 ## Samples
 
-* [contract_loan](samples/contract_loan.json)
+* [contract_loan](samples/contractLoan.json)
 
 ---
 
@@ -86,7 +86,7 @@ The request body contains the data that you are sending to the API. The data doc
 ----
 **Possible errors**
 
-All possible errors can be found [*here*](possible_errors.md)  
+All possible errors can be found [*here*](possibleErrors.md)  
 
 
 ----

@@ -61,7 +61,7 @@
 			<td>true/false</td>
 			<td>BUSINESS_UNIT_NAME</td>
 			<td>This parameter is mandatory only for clients utilizing a multi-organizational solution. 
-            ❗<b>Omit this parameter unless instructed about it.</b>❗</br> It serves to specify the unique identifier for the business unit. Business units are logical groupings of users and data. Each business unit can have its own set of users, permissions, and data access rules. </br><i>(Upcoming feature)</i></td>
+            ❗<b>Omit this parameter unless instructed about it.</b>❗<br/> It serves to specify the unique identifier for the business unit. Business units are logical groupings of users and data. Each business unit can have its own set of users, permissions, and data access rules. <br/><i>(Upcoming feature)</i></td>
 		</tr>
 		<tr>
 			<td><b>CustomerStatus</b></td>
@@ -81,7 +81,7 @@
 			<td><b>InitializeScreeningProcesses</b></td>
 			<td>String[]</td>
 			<td>false</td>
-			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
+			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA,<br/>INTERNAL_LIST</td>
 			<td>Defines which screening processes to initiate</td>
 		</tr>
 		<tr>
@@ -247,6 +247,13 @@
 			<td>true</td>
 			<td>An indication of the existence of information for an adverse media entity</td>
 		</tr>
+        <tr>
+			<td><b>IsInInternalList</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>true</td>
+			<td>An indication of the existence of information for an internal list entity</td>
+		</tr>
 		<tr>
 			<td><b>IsLegalResident</b></td>
 			<td>Boolean</td>
@@ -337,7 +344,7 @@
 			<td><b>Process</b></td>
             <td>String</td>
             <td>true</td>
-			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA</td>
+			<td>SANCTIONS,<br/>PEP,<br/> ADVERSE_MEDIA,<br/>INTERNAL_LIST</td>
 		</tr>
 	</tbody>
 </table>

@@ -22,6 +22,7 @@
     "activityInRestrictedRegionDescription": "logistics",
     "isSanctioned": false,
     "isInAdverseMedia": true,
+    "isInInternalList": true,
     "isPEP": false,
     "GIIN": "GIIN123445",
     "LEI": "LEI124545",

@@ -33,6 +33,7 @@
             <IsPEP>true</IsPEP>
             <IsSanctioned>true</IsSanctioned>
             <IsInAdverseMedia>true</IsInAdverseMedia>
+            <IsInInternalList>true</IsInInternalList>
             <FieldOfActivity>
                 <Student>
                     <IsStudent>true</IsStudent>
@@ -74,6 +75,7 @@
                     <IsPEP>true</IsPEP>
                     <IsSanctioned>true</IsSanctioned>
                     <IsInAdverseMedia>true</IsInAdverseMedia>
+                    <IsInInternalList>true</IsInInternalList>
                     <RegionOfActivityDescription>Western Region</RegionOfActivityDescription>
                     <ListContact>
                         <Contact>
