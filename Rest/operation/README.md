@@ -63,7 +63,7 @@ The Minimalistic request represents SEPA operation with the minimum required fie
 ```
 
 
-<!-- ## Operation Business Cases | Payload Samples
+## Operation Business Cases | Payload Samples
 
 > Operation Type - **SEPA**
 
@@ -90,20 +90,21 @@ The Minimalistic request represents SEPA operation with the minimum required fie
 > Operation Type - **PIS**
 > 
 [<b>PIS Fields</b>](PIS/PIS_Fields.md)
-* [Evaluate_PIS_Full.json](PIS/PIS_Samples/evaluate_PIS_Full.json)
-* [Evaluate_PIS_Mandatory.json](PIS/PIS_Samples/evaluate_PIS_Mandatory.json)
-* [Import_PIS_Full.json](PIS/PIS_Samples/import_PIS_Full.json)
-* [Import_PIS_Mandatory.json](PIS/PIS_Samples/import_PIS_Mandatory.json)
+* [FullPayload_Evaluate_Screening.json](PIS/PIS_Samples/FullPayload_Evaluate_Screening.json)
+* [FullPayload_Import_Screening.json](PIS/PIS_Samples/FullPayload_Import_Screening.json)
+* [FullPayload_Ultimates_Evaluate_Screening.json](PIS/PIS_Samples/FullPayload_Ultimates_Evaluate_Screening.json)
+* [MinimalisticPayload_Evaluate.json](PIS/PIS_Samples/MinimalisticPayload_Evaluate.json)
+* [MinimalisticPayload_Import.json](PIS/PIS_Samples/MinimalisticPayload_Import.json)
+* [MinimalisticPayload_Ultimates_Evaluate.json](PIS/PIS_Samples/MinimalisticPayload_Ultimates_Evaluate.json)
 ---
 > Operation Type - **INTERNAL**
 
 [<b>INTERNAL Fields</b>](INTERNAL/INTERNAL_Fields.md)
 * [Evaluate_INTERNAL_Full_Ultimates.json](INTERNAL/INTERNAL_Samples/Full_Ultimates.json)
 * [Evaluate_INTERNAL_Mandatory_Ultimates.json](INTERNAL/INTERNAL_Samples/Mandatory_Ultimates.json)
-* [Evaluate_INTERNAL_Full.json](INTERNAL/INTERNAL_Samples/evaluate_INTERNAL_Full.json)
+* [Evaluate_INTERNAL_Mandatory_Same_Customer.json](INTERNAL/INTERNAL_Samples/Evaluate_INTERNAL_Mandatory_Same_Customer.json)
 * [Evaluate_INTERNAL_Mandatory.json](INTERNAL/INTERNAL_Samples/evaluate_INTERNAL_Mandatory.json)
 * [Import_INTERNAL_Full.json](INTERNAL/INTERNAL_Samples/import_INTERNAL_Full.json)
-* [Import_INTERNAL_Mandatory.json](INTERNAL/INTERNAL_Samples/import_INTERNAL_Mandatory.json)
 ---
 
 > Operation Type - **CARD_PAYMENT**
@@ -173,7 +174,7 @@ The Minimalistic request represents SEPA operation with the minimum required fie
 * [Evaluate_CRYPTO_EXCHANGE_Mandatory.json](CRYPTO_EXCHANGE/CRYPTO_EXCHANGE_Samples/evaluate_CRYPTO_EXCHANGE_Mandatory.json)
 * [Import_CRYPTO_EXCHANGE_Full.json](CRYPTO_EXCHANGE/CRYPTO_EXCHANGE_Samples/import_CRYPTO_EXCHANGE_Full.json)
 * [Import_CRYPTO_EXCHANGE_Mandatory.json](CRYPTO_EXCHANGE/CRYPTO_EXCHANGE_Samples/import_CRYPTO_EXCHANGE_Mandatory.json)
---- -->
+---
 
 
 ## Possible Responses
