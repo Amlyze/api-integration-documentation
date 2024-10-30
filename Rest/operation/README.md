@@ -10,10 +10,84 @@ An operation is the transaction between two or more parties, where one of the pa
 
 **Authorization** `Basic Auth`/`Bearer Token`
 
+
+`POST https://[host]:[port]/amlyze-ws-rest/validate-batch-operations (application/json)`
+
+`POST https://[host]:[port]/amlyze-ws-rest/batch-operations (application/json)`
+
+### POST /amlyze-ws-rest/operation
+
 `POST https://[host]:[port]/amlyze-ws-rest/operation (application/json)`
 
+The minimalistic request represents operation with the minimum required fields.
+```json
+{
+    "communicationNumber": "Test_ComNr0010",
+    "requester": "Company Name Amlyze",
+    "sourceOfRiskLevel": "EVALUATE",
+    "riskManagementCategory": "OP_TRANSFER",
+    "operationType": "SEPA",
+    "operationExtId": "Op_0001_TEST",
+    "financialFlowDirection": "OUTGOING",
+    "operationDateTime": "2023-09-23T15:09:33+02:00",
+    "currency": "EUR",
+    "amount": 10000,
+    "description": "Invoice 'Nr.01'",
+    "listOperationParty": [
+         {
+            "partyRole": "DEBTOR",
+            "accountNumber": "LI9208800274335945522",
+            "bic": "AmlyzeXX22",
+            "entityType": "INDIVIDUAL",
+           	"firstName" : "Tomas",
+	        "lastName" : "Garcia"
+        },
+        {
+            "partyRole": "CREDITOR",
+            "accountNumber": "LV11245541148212335",
+            "entityType": "ORGANIZATION",
+            "title": "LTD 'VivaFocus'"
+        }
+       
+    ]
+}
+```
+Possible Responses
 
-## Operation types
+All possible errors can be found [<u>here.</u>](op_possible_errors.md)
+
+```json lines
+200 OK
+{
+  "resultType": "REQUEST_ACCEPTED"
+}
+
+400 Bad Request
+{
+  "resultType": "REQUEST_REJECTED",
+  "errorCode": "O005",
+  "errorDescription": "Operation with given OperationExtId already exists in Amlyze"
+}
+
+404 Not Found
+{
+  "timestamp": "2024-05-26T16:49:50.237+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/amlyze-ws-rest/operationn" //--> mistake inside the endpoint
+}
+
+500 Internal Server Error
+{
+  "resultType": "REQUEST_REJECTED",
+  "errorCode": "500",
+  "errorDescription": "failed Processing operation"
+}
+```
+
+------
+
+## Available operation types
 
 [<b>SEPA operation</b>](SEPA/fields.md)
 
@@ -58,83 +132,3 @@ An operation is the transaction between two or more parties, where one of the pa
 [<b>CRYPTO_EXCHANGE operation</b>](CRYPTO_EXCHANGE/fields.md)
 
 ---
-
-## Minimalistic request | SEPA
-
-The Minimalistic request represents SEPA operation with the minimum required fields.
-```json
-{
-    "communicationNumber": "Test_ComNr0010",
-    "requester": "Company Name Amlyze",
-    "sourceOfRiskLevel": "EVALUATE",
-    "riskManagementCategory": "OP_TRANSFER",
-    "operationType": "SEPA",
-    "operationExtId": "Op_0001_TEST",
-    "financialFlowDirection": "OUTGOING",
-    "operationDateTime": "2023-09-23T15:09:33+02:00",
-    "currency": "EUR",
-    "amount": 10000,
-    "description": "Invoice 'Nr.01'",
-    "listOperationParty": [
-         {
-            "partyRole": "DEBTOR",
-            "accountNumber": "LI9208800274335945522",
-            "bic": "AmlyzeXX22",
-            "entityType": "INDIVIDUAL",
-           	"firstName" : "Tomas",
-	        "lastName" : "Garcia"
-        },
-        {
-            "partyRole": "CREDITOR",
-            "accountNumber": "LV11245541148212335",
-            "entityType": "ORGANIZATION",
-            "title": "LTD 'VivaFocus'"
-        }
-       
-    ]
-}
-```
-
-
-## Possible Responses
-
-```json lines
-200 OK
-{
-  "resultType": "REQUEST_ACCEPTED"
-}
-```
-```json lines
-400 Bad Request
-{
-  "resultType": "REQUEST_REJECTED",
-  "errorCode": "O005",
-  "errorDescription": "Operation with given OperationExtId already exists in Amlyze"
-}
-```
-```json lines
-404 Not Found
-{
-  "timestamp": "2024-05-26T16:49:50.237+00:00",
-  "status": 404,
-  "error": "Not Found",
-  "path": "/amlyze-ws-rest/operationn" //--> mistake inside the endpoint
-}
-```
-```json lines
-500 Internal Server Error
-{
-  "resultType": "REQUEST_REJECTED",
-  "errorCode": "500",
-  "errorDescription": "failed Processing operation"
-}
-```
-
-
-**Possible Errors | Error Codes**
-
-All possible errors can be found [<u>here</u>](op_possible_errors.md)  
-
-
-------
-
