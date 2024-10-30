@@ -1,9 +1,14 @@
-# Operation
+# Sepa operation
 In any type of operation between two or more parties, one of the parties is always the customer. The other party(ies) are called counterparty(ies). Below are all mandatory and optional fields.
 
 ---
-
-# SEPA
+**Samples**
+* [EvaluateFullUltimates](./samples/FullUltimates.json)
+* [EvaluateMandatoryUltimates](./samples/MandatoryUltimates.json)
+* [EvaluateFull.json](SEPA/./evaluateFull.json)
+* [EvaluateMandatory.json](./samples/evaluateMandatory.json)
+* [ImportFull.json](./samples/importFull.json)
+* [ImportMandatory.json](./samples/importMandatory.json)
 
 <table>
     <thead>

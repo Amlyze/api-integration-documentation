@@ -1,32 +1,11 @@
-# Cash Outgoing
+# Cash outgoing operation
 
-# API Endpoint
+**Samples**
 
-* **URL Structure:**  `http://[host][port][path][service]`
-
-* **Example:** `http://{{host}}:8878//amlyze-ws-rest/operation`
-
----
-# Additional info
-
-* **METHOD:** `POST`
-* **Auth required:** `NO`
-* **Content-Type:** `application/json`
-
----
-# Conditions
-
-* Both `OperationParty` sides covers the same entity
-* `DEBTOR` is the sender
-* `CREDITOR` is the receiver
-  
-# Workflow
-
-* Creating a new operation→ <SourceOfRiskLevel>EVALUATE</SourceOfRiskLevel>
-* An operation that took place in the past → <SourceOfRiskLevel>IMPORT</SourceOfRiskLevel>
-* If during EVALUATE, case was generated → Human decision is required
-  
----
+* [evaluateMandatory.json](CASH/outgoing/samples/evaluateMandatory.json)
+* [evaluateFull.json](CASH/outgoing/samples/evaluateFull.json)
+* [importMandatory.json](CASH/outgoing/samples/importMandatory.json)
+* [importFull.json](CASH/outgoing/samples/importFull.json)
 
 <table>
     <thead>

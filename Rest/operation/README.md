@@ -1,26 +1,63 @@
-# Operations
+# Operation service
 
+<p>
 An operation is the transaction between two or more parties, where one of the parties is always the customer. The other party(ies) are called counterparties. The documentation provides information on the endpoints, responses, and possible errors for API requests for operations. It also includes minimalistic request examples.
+</p>
+
+## Integration and details
+
+<!-- Swagger Ui `GET https://[host]:[port]/swagger-ui/` (in progress) -->
+
+**Authorization** `Basic Auth`/`Bearer Token`
+
+`POST https://[host]:[port]/amlyze-ws-rest/operation (application/json)`
+
+
+## Operation types
+
+[<b>SEPA operation</b>](SEPA/fields.md)
+
+---
+[<b>SWIFT operation</b>](SWIFT/fields.md)
 
 ---
 
-**EndPoint**
+[<b>PIS operation</b>](PIS/fields.md)
 
-<!-- *swagger UI*  `GET / swagger-ui/` -->
+---
 
-`HTTP Method:  POST`
+[<b>INTERNAL operation</b>](INTERNAL/fields.md)
 
-*{{client_test_environment}}*`/amlyze-ws-rest/operation 
+---
 
- **Headers**
+[<b>CARD_PAYMENT operation</b>](CARD_PAYMENT/fields.md)
 
-`ContentType: (application/json)`
+---
 
-**Authorization**
+[<b>CARD_CASH operation</b>](CARD_CASH/fields.md)
 
-`Basic Auth`
-`Bearer Token`
+---
 
+[<b>CASH incoming operation</b>](CASH/incoming/fields.md)
+
+[<b>CASH outgoing operation</b>](CASH/outgoing/fields.md)
+
+---
+[<b>CASH_TRANSFER operation</b>](CASH_TRANSFER/outgoing/fields.md)
+
+---
+
+[<b>FASTER_PAYMENTS operation</b>](FASTER_PAYMENTS/fields.md)
+
+---
+
+[<b>CRYPTO operation</b>](CRYPTO/fields.md)
+
+---
+
+[<b>CRYPTO_EXCHANGE operation</b>](CRYPTO_EXCHANGE/fields.md)
+
+---
 
 ## Minimalistic request | SEPA
 
@@ -29,15 +66,11 @@ The Minimalistic request represents SEPA operation with the minimum required fie
 {
     "communicationNumber": "Test_ComNr0010",
     "requester": "Company Name Amlyze",
-
     "sourceOfRiskLevel": "EVALUATE",
     "riskManagementCategory": "OP_TRANSFER",
     "operationType": "SEPA",
-
     "operationExtId": "Op_0001_TEST",
     "financialFlowDirection": "OUTGOING",
-    
-  
     "operationDateTime": "2023-09-23T15:09:33+02:00",
     "currency": "EUR",
     "amount": 10000,
@@ -63,143 +96,38 @@ The Minimalistic request represents SEPA operation with the minimum required fie
 ```
 
 
-## Operation Business Cases | Payload Samples
-
-> Operation Type - **SEPA**
-
-* [EvaluateFullUltimates](SEPA/samples/FullUltimates.json)
-* [EvaluateMandatoryUltimates](SEPA/samples/MandatoryUltimates.json)
-* [EvaluateFull.json](SEPA/samples/evaluateFull.json)
-* [EvaluateMandatory.json](SEPA/samples/evaluateMandatory.json)
-* [ImportFull.json](SEPA/samples/importFull.json)
-* [ImportMandatory.json](SEPA/samples/importMandatory.json)
-
->All payload fields & descriptions suitable for SEPA operation request - [<b>here</b>](SEPA/fields.md)
----
-
-> Operation Type - **SWIFT**
-* [EvaluateFullUltimates.json](SWIFT/samples/FullUltimates.json)
-* [EvaluateMandatoryUltimates.json](SWIFT/samples/MandatoryUltimates.json)
-* [EvaluateFull.json](SWIFT/samples/evaluateFull.json)
-* [EvaluateMandatory.json](SWIFT/samples/evaluateMandatory.json)
-* [ImportFull.json](SWIFT/samples/importFull.json)
-* [ImportMandatory.json](SWIFT/samples/importMandatory.json)
-
->All payload fields & descriptions suitable for SWIFT operation request - [<b>here</b>](SWIFT/fields.md)
----
-> Operation Type - **PIS**
-> 
-[<b>PIS Fields</b>](PIS/fields.md)
-* [FullPayloadEvaluateScreening.json](PIS/samples/FullPayloadEvaluateScreening.json)
-* [FullPayloadImportScreening.json](PIS/samples/FullPayloadImportScreening.json)
-* [FullPayloadUltimatesEvaluateScreening.json](PIS/samples/FullPayloadUltimatesEvaluateScreening.json)
-* [MinimalisticPayloadEvaluate.json](PIS/samples/MinimalisticPayloadEvaluate.json)
-* [MinimalisticPayloadImport.json](PIS/samples/MinimalisticPayloadImport.json)
-* [MinimalisticPayloadUltimatesEvaluate.json](PIS/samples/MinimalisticPayloadUltimatesEvaluate.json)
----
-> Operation Type - **INTERNAL**
-
-[<b>INTERNAL Fields</b>](INTERNAL/fields.md)
-* [EvaluateFullUltimates.json](INTERNAL/samples/FullUltimates.json)
-* [EvaluateMandatoryUltimates.json](INTERNAL/samples/MandatoryUltimates.json)
-* [EvaluateMandatorySameCustomer.json](INTERNAL/samples/EvaluateMandatorySameCustomer.json)
-* [EvaluateMandatory.json](INTERNAL/samples/evaluateMandatory.json)
-* [ImportFull.json](INTERNAL/samples/importFull.json)
----
-
-> Operation Type - **CARD_PAYMENT**
-
-[<b>CARD_PAYMENT Fields</b>](CARD_PAYMENT/fields.md)
-* [EvaluateFull.json](CARD_PAYMENT/samples/evaluateFull.json)
-* [EvaluateMandatory.json](CARD_PAYMENT/samples/evaluateMandatory.json)
-* [ImportFull.json](CARD_PAYMENT/samples/importFull.json)
-* [ImportMandatory.json](CARD_PAYMENT/samples/importMandatory.json)
----
-> Operation Type - **CARD_CASH**
-
-[<b>CARD_CASH Fields</b>](CARD_CASH/fields.md)
-* [EvaluateFull.json](CARD_CASH/samples/evaluateFull.json)
-* [ImportFull.json](CARD_CASH/samples/importFull.json)
-* [ImportMandatory.json](CARD_CASH/samples/importMandatory.json)
----
-> Operation Type - **CASH**
-
-[<b>CASH Incoming Fields</b>](CASH/incoming/fields.md)
-* [evaluateMandatory.json](CASH/incoming/samples/evaluateMandatory.json)
-* [evaluateFull.json](CASH/incoming/samples/evaluateFull.json)
-* [importMandatory.json](CASH/incoming/samples/importMandatory.json)
-* [importFull.json](CASH/incoming/samples/importFull.json)
-
-
-[<b>CASH Outgoing Fields</b>](CASH/outgoing/fields.md)
-* [evaluateMandatory.json](CASH/outgoing/samples/evaluateMandatory.json)
-* [evaluateFull.json](CASH/outgoing/samples/evaluateFull.json)
-* [importMandatory.json](CASH/outgoing/samples/importMandatory.json)
-* [importFull.json](CASH/outgoing/samples/importFull.json)
-
----
-> Operation Type - **CASH_TRANSFER**
-
-[<b>CASH_TRANSFER Outgoing Fields</b>](CASH_TRANSFER/outgoing/fields.md)
-* [evaluateFullUltimates.json](CASH_TRANSFER/outgoing/samples/FullUltimates.json)
-* [evaluateMandatoryUltimates.json](CASH_TRANSFER/outgoing/samples/MandatoryUltimates.json)
-* [evaluateMandatory.json](CASH_TRANSFER/outgoing/samples/evaluateMandatory.json)
-* [evaluateFull.json](CASH_TRANSFER/outgoing/samples/evaluateFull.json)
-* [importMandatory.json](CASH_TRANSFER/outgoing/samples/importMandatory.json)
-* [importFull.json](CASH_TRANSFER/outgoing/samples/importFull.json)
-
----
-> Operation Type - **FASTER_PAYMENTS**
-
-[<b>FASTER_PAYMENTS Fields</b>](FASTER_PAYMENTS/fields.md)
-* [EvaluateFull.json](FASTER_PAYMENTS/samples/evaluateFull.json)
-* [EvaluateMandatory.json](FASTER_PAYMENTS/samples/evaluateMandatory.json)
-* [ImportFull.json](FASTER_PAYMENTS/samples/importFull.json)
-* [ImportMandatory.json](FASTER_PAYMENTS/samples/importMandatory.json)
----
-
-> Operation Type - **CRYPTO**
-
-[<b>CRYPTO Fields</b>](CRYPTO/fields.md)
-* [EvaluateFull.json](CRYPTO/samples/evaluateFull.json)
-* [EvaluateMandatory.json](CRYPTO/samples/evaluateMandatory.json)
-* [ImportFull.json](CRYPTO/samples/importFull.json)
-* [ImportMandatory.json](CRYPTO/samples/importMandatory.json)
----
-> Operation Type - **CRYPTO_EXCHANGE**
-
-[<b>CRYPTO_EXCHANGE Fields</b>](CRYPTO_EXCHANGE/fields.md)
-* [EvaluateFull.json](CRYPTO_EXCHANGE/samples/evaluateFull.json)
-* [EvaluateMandatory.json](CRYPTO_EXCHANGE/samples/evaluateMandatory.json)
-* [ImportFull.json](CRYPTO_EXCHANGE/samples/importFull.json)
-* [ImportMandatory.json](CRYPTO_EXCHANGE/samples/importMandatory.json)
----
-
-
 ## Possible Responses
 
-```json
+```json lines
 200 OK
+{
   "resultType": "REQUEST_ACCEPTED"
-
-
+}
+```
+```json lines
 400 Bad Request
-    "resultType": "REQUEST_REJECTED",
-    "errorCode": "O005",
-    "errorDescription": "Operation with given OperationExtId already exists in Amlyze"
-
-
+{
+  "resultType": "REQUEST_REJECTED",
+  "errorCode": "O005",
+  "errorDescription": "Operation with given OperationExtId already exists in Amlyze"
+}
+```
+```json lines
 404 Not Found
-    "timestamp": "2024-05-26T16:49:50.237+00:00",
-    "status": 404,
-    "error": "Not Found",
-    "path": "/amlyze-ws-rest/operationn" --> mistake inside the endpoint
-
-
+{
+  "timestamp": "2024-05-26T16:49:50.237+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/amlyze-ws-rest/operationn" //--> mistake inside the endpoint
+}
+```
+```json lines
 500 Internal Server Error
-    "resultType": "REQUEST_REJECTED",
-    "errorCode": "500",
-    "errorDescription": "failed Processing operation"
+{
+  "resultType": "REQUEST_REJECTED",
+  "errorCode": "500",
+  "errorDescription": "failed Processing operation"
+}
 ```
 
 

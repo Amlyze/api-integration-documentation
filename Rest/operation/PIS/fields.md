@@ -1,9 +1,14 @@
-# Operation
+# Pis operation
 In any type of operation between two or more parties, one of the parties is always the customer. The other party(ies) are called counterparties. Every possible operation with its own mandatory and possible fields is provided below.
 
 ---
-
-# PIS
+**Samples**
+* [FullPayloadEvaluateScreening.json](./samples/FullPayloadEvaluateScreening.json)
+* [FullPayloadImportScreening.json](./samples/FullPayloadImportScreening.json)
+* [FullPayloadUltimatesEvaluateScreening.json](./samples/FullPayloadUltimatesEvaluateScreening.json)
+* [MinimalisticPayloadEvaluate.json](./samples/MinimalisticPayloadEvaluate.json)
+* [MinimalisticPayloadImport.json](./samples/MinimalisticPayloadImport.json)
+* [MinimalisticPayloadUltimatesEvaluate.json](./samples/MinimalisticPayloadUltimatesEvaluate.json)
 
 <table>
     <thead>

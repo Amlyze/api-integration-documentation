@@ -1,9 +1,14 @@
-# Operation
+# Swift operation
 In any type of operation between two or more parties, one of the parties is always the customer. The other party(ies) are called counterparties. Every possible operation with its own mandatory and possible fields is provided below.
 
 ---
-
-# SWIFT
+**Samples**
+* [EvaluateFullUltimates.json](./samples/FullUltimates.json)
+* [EvaluateMandatoryUltimates.json](./samples/MandatoryUltimates.json)
+* [EvaluateFull.json](./samples/evaluateFull.json)
+* [EvaluateMandatory.json](./samples/evaluateMandatory.json)
+* [ImportFull.json](./samples/importFull.json)
+* [ImportMandatory.json](./samples/importMandatory.json)
 
 <table>
     <thead>
