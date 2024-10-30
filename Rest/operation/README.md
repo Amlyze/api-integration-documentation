@@ -109,34 +109,33 @@ The Minimalistic request represents SEPA operation with the minimum required fie
 
 > Operation Type - **CARD_PAYMENT**
 
-[<b>CARD_PAYMENT Fields</b>](CARD_PAYMENT/CARD_PAYMENT_Fields.md)
-* [Evaluate_CARD_PAYMENT_Full.json](CARD_PAYMENT/CARD_PAYMENT_Samples/evaluate_CARD_PAYMENT_Full.json)
-* [Evaluate_CARD_PAYMENT_Mandatory.json](CARD_PAYMENT/CARD_PAYMENT_Samples/evaluate_CARD_PAYMENT_Mandatory.json)
-* [Import_CARD_PAYMENT_Full.json](CARD_PAYMENT/CARD_PAYMENT_Samples/import_CARD_PAYMENT_Full.json)
-* [Import_CARD_PAYMENT_Mandatory.json](CARD_PAYMENT/CARD_PAYMENT_Samples/import_CARD_PAYMENT_Mandatory.json)
+[<b>CARD_PAYMENT Fields</b>](CARD_PAYMENT/fields.md)
+* [Evaluate_CARD_PAYMENT_Full.json](CARD_PAYMENT/samples/evaluateFull.json)
+* [Evaluate_CARD_PAYMENT_Mandatory.json](CARD_PAYMENT/samples/evaluateMandatory.json)
+* [Import_CARD_PAYMENT_Full.json](CARD_PAYMENT/samples/importFull.json)
+* [Import_CARD_PAYMENT_Mandatory.json](CARD_PAYMENT/samples/importMandatory.json)
 ---
 > Operation Type - **CARD_CASH**
 
-[<b>CARD_CASH Fields</b>](CARD_CASH/CARD_CASH_Fields.md)
-* [Evaluate_CARD_CASH_Full.json](CARD_CASH/CARD_CASH_Samples/evaluate_CARD_CASH_Full.json)
-* [Evaluate_CARD_CASH_Mandatory.json](CARD_CASH/CARD_CASH_Samples/evaluate_CARD_CASH_Mandatory.json)
-* [Import_CARD_CASH_Full.json](CARD_CASH/CARD_CASH_Samples/import_CARD_CASH_Full.json)
-* [Import_CARD_CASH_Mandatory.json](CARD_CASH/CARD_CASH_Samples/import_CARD_CASH_Mandatory.json)
+[<b>CARD_CASH Fields</b>](CARD_CASH/fields.md)
+* [Evaluate_CARD_CASH_Full.json](CARD_CASH/samples/evaluateFull.json)
+* [Import_CARD_CASH_Full.json](CARD_CASH/samples/importFull.json)
+* [ImportMandatory.json](CARD_CASH/samples/importMandatory.json)
 ---
 > Operation Type - **CASH**
 
-[<b>CASH Incoming Fields</b>](CASH/Incoming/Fields.md)
-* [evaluate_Mandatory.json](CASH/Incoming/Samples/evaluate_Mandatory.json)
-* [evaluate_Full.json](CASH/Incoming/Samples/evaluate_Full.json)
-* [import_Mandatory.json](CASH/Incoming/Samples/import_Mandatory.json)
-* [import_Full.json](CASH/Incoming/Samples/import_Full.json)
+[<b>CASH Incoming Fields</b>](CASH/incoming/fields.md)
+* [evaluate_Mandatory.json](CASH/incoming/samples/evaluateMandatory.json)
+* [evaluate_Full.json](CASH/incoming/samples/evaluateFull.json)
+* [import_Mandatory.json](CASH/incoming/samples/importMandatory.json)
+* [import_Full.json](CASH/incoming/samples/importFull.json)
 
 
-[<b>CASH Outgoing Fields</b>](CASH/Outgoing/Fields.md)
-* [evaluate_Mandatory.json](CASH/Outgoing/Samples/evaluate_Mandatory.json)
-* [evaluate_Full.json](CASH/Outgoing/Samples/evaluate_Full.json)
-* [import_Mandatory.json](CASH/Outgoing/Samples/import_Mandatory.json)
-* [import_Full.json](CASH/Outgoing/Samples/import_Full.json)
+[<b>CASH Outgoing Fields</b>](CASH/outgoing/fields.md)
+* [evaluate_Mandatory.json](CASH/outgoing/samples/evaluateMandatory.json)
+* [evaluate_Full.json](CASH/outgoing/samples/evaluateFull.json)
+* [import_Mandatory.json](CASH/outgoing/samples/importMandatory.json)
+* [import_Full.json](CASH/outgoing/samples/importFull.json)
 
 ---
 > Operation Type - **CASH_TRANSFER**
