@@ -110,43 +110,43 @@ The Minimalistic request represents SEPA operation with the minimum required fie
 > Operation Type - **CARD_PAYMENT**
 
 [<b>CARD_PAYMENT Fields</b>](CARD_PAYMENT/fields.md)
-* [Evaluate_CARD_PAYMENT_Full.json](CARD_PAYMENT/samples/evaluateFull.json)
-* [Evaluate_CARD_PAYMENT_Mandatory.json](CARD_PAYMENT/samples/evaluateMandatory.json)
-* [Import_CARD_PAYMENT_Full.json](CARD_PAYMENT/samples/importFull.json)
-* [Import_CARD_PAYMENT_Mandatory.json](CARD_PAYMENT/samples/importMandatory.json)
+* [EvaluateFull.json](CARD_PAYMENT/samples/evaluateFull.json)
+* [EvaluateMandatory.json](CARD_PAYMENT/samples/evaluateMandatory.json)
+* [ImportFull.json](CARD_PAYMENT/samples/importFull.json)
+* [ImportMandatory.json](CARD_PAYMENT/samples/importMandatory.json)
 ---
 > Operation Type - **CARD_CASH**
 
 [<b>CARD_CASH Fields</b>](CARD_CASH/fields.md)
-* [Evaluate_CARD_CASH_Full.json](CARD_CASH/samples/evaluateFull.json)
-* [Import_CARD_CASH_Full.json](CARD_CASH/samples/importFull.json)
+* [EvaluateFull.json](CARD_CASH/samples/evaluateFull.json)
+* [ImportFull.json](CARD_CASH/samples/importFull.json)
 * [ImportMandatory.json](CARD_CASH/samples/importMandatory.json)
 ---
 > Operation Type - **CASH**
 
 [<b>CASH Incoming Fields</b>](CASH/incoming/fields.md)
-* [evaluate_Mandatory.json](CASH/incoming/samples/evaluateMandatory.json)
-* [evaluate_Full.json](CASH/incoming/samples/evaluateFull.json)
-* [import_Mandatory.json](CASH/incoming/samples/importMandatory.json)
-* [import_Full.json](CASH/incoming/samples/importFull.json)
+* [evaluateMandatory.json](CASH/incoming/samples/evaluateMandatory.json)
+* [evaluateFull.json](CASH/incoming/samples/evaluateFull.json)
+* [importMandatory.json](CASH/incoming/samples/importMandatory.json)
+* [importFull.json](CASH/incoming/samples/importFull.json)
 
 
 [<b>CASH Outgoing Fields</b>](CASH/outgoing/fields.md)
-* [evaluate_Mandatory.json](CASH/outgoing/samples/evaluateMandatory.json)
-* [evaluate_Full.json](CASH/outgoing/samples/evaluateFull.json)
-* [import_Mandatory.json](CASH/outgoing/samples/importMandatory.json)
-* [import_Full.json](CASH/outgoing/samples/importFull.json)
+* [evaluateMandatory.json](CASH/outgoing/samples/evaluateMandatory.json)
+* [evaluateFull.json](CASH/outgoing/samples/evaluateFull.json)
+* [importMandatory.json](CASH/outgoing/samples/importMandatory.json)
+* [importFull.json](CASH/outgoing/samples/importFull.json)
 
 ---
 > Operation Type - **CASH_TRANSFER**
 
-[<b>CASH_TRANSFER Outgoing Fields</b>](CASH_TRANSFER/Outgoing/Fields.md)
-* [evaluate_Full_ultimates.json](CASH_TRANSFER/Outgoing/Samples/Full_ultimates.json)
-* [evaluate_Mandatory_ultimates.json](CASH_TRANSFER/Outgoing/Samples/Mandatory_ultimates.json)
-* [evaluate_Mandatory.json](CASH_TRANSFER/Outgoing/Samples/evaluate_Mandatory.json)
-* [evaluate_Full.json](CASH_TRANSFER/Outgoing/Samples/evaluate_Full.json)
-* [import_Mandatory.json](CASH_TRANSFER/Outgoing/Samples/import_Mandatory.json)
-* [import_Full.json](CASH_TRANSFER/Outgoing/Samples/import_Full.json)
+[<b>CASH_TRANSFER Outgoing Fields</b>](CASH_TRANSFER/outgoing/fields.md)
+* [evaluateFullUltimates.json](CASH_TRANSFER/outgoing/samples/FullUltimates.json)
+* [evaluateMandatoryUltimates.json](CASH_TRANSFER/outgoing/samples/MandatoryUltimates.json)
+* [evaluateMandatory.json](CASH_TRANSFER/outgoing/samples/evaluateMandatory.json)
+* [evaluateFull.json](CASH_TRANSFER/outgoing/samples/evaluateFull.json)
+* [importMandatory.json](CASH_TRANSFER/outgoing/samples/importMandatory.json)
+* [importFull.json](CASH_TRANSFER/outgoing/samples/importFull.json)
 
 ---
 > Operation Type - **FASTER_PAYMENTS**
@@ -160,19 +160,19 @@ The Minimalistic request represents SEPA operation with the minimum required fie
 
 > Operation Type - **CRYPTO**
 
-[<b>CRYPTO Fields</b>](CRYPTO/CRYPTO_Fields.md)
-* [Evaluate_CRYPTO_Full.json](CRYPTO/CRYPTO_Samples/evaluate_CRYPTO_Full.json)
-* [Evaluate_CRYPTO_Mandatory.json](CRYPTO/CRYPTO_Samples/evaluate_CRYPTO_Mandatory.json)
-* [Import_CRYPTO_Full.json](CRYPTO/CRYPTO_Samples/import_CRYPTO_Full.json)
-* [Import_CRYPTO_Mandatory.json](CRYPTO/CRYPTO_Samples/import_CRYPTO_Mandatory.json)
+[<b>CRYPTO Fields</b>](CRYPTO/fields.md)
+* [EvaluateFull.json](CRYPTO/samples/evaluateFull.json)
+* [EvaluateMandatory.json](CRYPTO/samples/evaluateMandatory.json)
+* [ImportFull.json](CRYPTO/samples/importFull.json)
+* [ImportMandatory.json](CRYPTO/samples/importMandatory.json)
 ---
 > Operation Type - **CRYPTO_EXCHANGE**
 
-[<b>CRYPTO_EXCHANGE Fields</b>](CRYPTO_EXCHANGE/CRYPTO_EXCHANGE_Fields.md)
-* [Evaluate_CRYPTO_EXCHANGE_Full.json](CRYPTO_EXCHANGE/CRYPTO_EXCHANGE_Samples/evaluate_CRYPTO_EXCHANGE_Full.json)
-* [Evaluate_CRYPTO_EXCHANGE_Mandatory.json](CRYPTO_EXCHANGE/CRYPTO_EXCHANGE_Samples/evaluate_CRYPTO_EXCHANGE_Mandatory.json)
-* [Import_CRYPTO_EXCHANGE_Full.json](CRYPTO_EXCHANGE/CRYPTO_EXCHANGE_Samples/import_CRYPTO_EXCHANGE_Full.json)
-* [Import_CRYPTO_EXCHANGE_Mandatory.json](CRYPTO_EXCHANGE/CRYPTO_EXCHANGE_Samples/import_CRYPTO_EXCHANGE_Mandatory.json)
+[<b>CRYPTO_EXCHANGE Fields</b>](CRYPTO_EXCHANGE/fields.md)
+* [EvaluateFull.json](CRYPTO_EXCHANGE/samples/evaluateFull.json)
+* [EvaluateMandatory.json](CRYPTO_EXCHANGE/samples/evaluateMandatory.json)
+* [ImportFull.json](CRYPTO_EXCHANGE/samples/importFull.json)
+* [ImportMandatory.json](CRYPTO_EXCHANGE/samples/importMandatory.json)
 ---
 
 
