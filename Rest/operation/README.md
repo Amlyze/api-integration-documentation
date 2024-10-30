@@ -99,12 +99,12 @@ The Minimalistic request represents SEPA operation with the minimum required fie
 ---
 > Operation Type - **INTERNAL**
 
-[<b>INTERNAL Fields</b>](INTERNAL/INTERNAL_Fields.md)
-* [Evaluate_INTERNAL_Full_Ultimates.json](INTERNAL/INTERNAL_Samples/Full_Ultimates.json)
-* [Evaluate_INTERNAL_Mandatory_Ultimates.json](INTERNAL/INTERNAL_Samples/Mandatory_Ultimates.json)
-* [Evaluate_INTERNAL_Mandatory_Same_Customer.json](INTERNAL/INTERNAL_Samples/Evaluate_INTERNAL_Mandatory_Same_Customer.json)
-* [Evaluate_INTERNAL_Mandatory.json](INTERNAL/INTERNAL_Samples/evaluate_INTERNAL_Mandatory.json)
-* [Import_INTERNAL_Full.json](INTERNAL/INTERNAL_Samples/import_INTERNAL_Full.json)
+[<b>INTERNAL Fields</b>](INTERNAL/fields.md)
+* [EvaluateFullUltimates.json](INTERNAL/samples/FullUltimates.json)
+* [EvaluateMandatoryUltimates.json](INTERNAL/samples/MandatoryUltimates.json)
+* [EvaluateMandatorySameCustomer.json](INTERNAL/samples/EvaluateMandatorySameCustomer.json)
+* [EvaluateMandatory.json](INTERNAL/samples/evaluateMandatory.json)
+* [ImportFull.json](INTERNAL/samples/importFull.json)
 ---
 
 > Operation Type - **CARD_PAYMENT**
@@ -151,11 +151,11 @@ The Minimalistic request represents SEPA operation with the minimum required fie
 ---
 > Operation Type - **FASTER_PAYMENTS**
 
-[<b>FASTER_PAYMENTS Fields</b>](FASTER_PAYMENTS/FASTER_PAYMENTS_Fields.md)
-* [Evaluate_FASTER_PAYMENTS_Full.json](FASTER_PAYMENTS/FASTER_PAYMENTS_Samples/evaluate_FASTER_PAYMENTS_Full.json)
-* [Evaluate_FASTER_PAYMENTS_Mandatory.json](FASTER_PAYMENTS/FASTER_PAYMENTS_Samples/evaluate_FASTER_PAYMENTS_Mandatory.json)
-* [Import_FASTER_PAYMENTS_Full.json](FASTER_PAYMENTS/FASTER_PAYMENTS_Samples/import_FASTER_PAYMENTS_Full.json)
-* [Import_FASTER_PAYMENTS_Mandatory.json](FASTER_PAYMENTS/FASTER_PAYMENTS_Samples/import_FASTER_PAYMENTS_Mandatory.json)
+[<b>FASTER_PAYMENTS Fields</b>](FASTER_PAYMENTS/fields.md)
+* [EvaluateFull.json](FASTER_PAYMENTS/samples/evaluateFull.json)
+* [EvaluateMandatory.json](FASTER_PAYMENTS/samples/evaluateMandatory.json)
+* [ImportFull.json](FASTER_PAYMENTS/samples/importFull.json)
+* [ImportMandatory.json](FASTER_PAYMENTS/samples/importMandatory.json)
 ---
 
 > Operation Type - **CRYPTO**
