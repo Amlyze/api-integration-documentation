@@ -67,35 +67,35 @@ The Minimalistic request represents SEPA operation with the minimum required fie
 
 > Operation Type - **SEPA**
 
-* [Evaluate_SEPA_Full_Ultimates](SEPA/SEPA_Samples/Full_Ultimates.json)
-* [Evaluate_SEPA_Mandatory_Ultimates](SEPA/SEPA_Samples/Mandatory_Ultimates.json)
-* [Evaluate_SEPA_Full.json](SEPA/SEPA_Samples/evaluate_SEPA_Full.json)
-* [Evaluate_SEPA_Mandatory.json](SEPA/SEPA_Samples/evaluate_SEPA_Mandatory.json)
-* [Import_SEPA_Full.json](SEPA/SEPA_Samples/import_SEPA_Full.json)
-* [Import_SEPA_Mandatory.json](SEPA/SEPA_Samples/import_SEPA_Mandatory.json)
+* [EvaluateFullUltimates](SEPA/samples/FullUltimates.json)
+* [EvaluateMandatoryUltimates](SEPA/samples/MandatoryUltimates.json)
+* [EvaluateFull.json](SEPA/samples/evaluateFull.json)
+* [EvaluateMandatory.json](SEPA/samples/evaluateMandatory.json)
+* [ImportFull.json](SEPA/samples/importFull.json)
+* [ImportMandatory.json](SEPA/samples/importMandatory.json)
 
->All payload fields & descriptions suitable for SEPA operation request - [<b>here</b>](SEPA/SEPA_Fields.md)
+>All payload fields & descriptions suitable for SEPA operation request - [<b>here</b>](SEPA/fields.md)
 ---
 
 > Operation Type - **SWIFT**
-* [Evaluate_SWIFT_Full_Ultimates.json](SWIFT/SWIFT_Samples/Full_Ultimates.json)
-* [Evaluate_SWIFT_Mandatory_Ultimates.json](SWIFT/SWIFT_Samples/Mandatory_Ultimates.json)
-* [Evaluate_SWIFT_Full.json](SWIFT/SWIFT_Samples/evaluate_SWIFT_Full.json)
-* [Evaluate_SWIFT_Mandatory.json](SWIFT/SWIFT_Samples/evaluate_SWIFT_Mandatory.json)
-* [Import_SWIFT_Full.json](SWIFT/SWIFT_Samples/import_SWIFT_Full.json)
-* [Import_SWIFT_Mandatory.json](SWIFT/SWIFT_Samples/import_SWIFT_Mandatory.json)
+* [EvaluateFullUltimates.json](SWIFT/samples/FullUltimates.json)
+* [EvaluateMandatoryUltimates.json](SWIFT/samples/MandatoryUltimates.json)
+* [EvaluateFull.json](SWIFT/samples/evaluateFull.json)
+* [EvaluateMandatory.json](SWIFT/samples/evaluateMandatory.json)
+* [ImportFull.json](SWIFT/samples/importFull.json)
+* [ImportMandatory.json](SWIFT/samples/importMandatory.json)
 
->All payload fields & descriptions suitable for SWIFT operation request - [<b>here</b>](SWIFT/SWIFT_Fields.md)
+>All payload fields & descriptions suitable for SWIFT operation request - [<b>here</b>](SWIFT/fields.md)
 ---
 > Operation Type - **PIS**
 > 
-[<b>PIS Fields</b>](PIS/PIS_Fields.md)
-* [FullPayload_Evaluate_Screening.json](PIS/PIS_Samples/FullPayload_Evaluate_Screening.json)
-* [FullPayload_Import_Screening.json](PIS/PIS_Samples/FullPayload_Import_Screening.json)
-* [FullPayload_Ultimates_Evaluate_Screening.json](PIS/PIS_Samples/FullPayload_Ultimates_Evaluate_Screening.json)
-* [MinimalisticPayload_Evaluate.json](PIS/PIS_Samples/MinimalisticPayload_Evaluate.json)
-* [MinimalisticPayload_Import.json](PIS/PIS_Samples/MinimalisticPayload_Import.json)
-* [MinimalisticPayload_Ultimates_Evaluate.json](PIS/PIS_Samples/MinimalisticPayload_Ultimates_Evaluate.json)
+[<b>PIS Fields</b>](PIS/fields.md)
+* [FullPayloadEvaluateScreening.json](PIS/samples/FullPayloadEvaluateScreening.json)
+* [FullPayloadImportScreening.json](PIS/samples/FullPayloadImportScreening.json)
+* [FullPayloadUltimatesEvaluateScreening.json](PIS/samples/FullPayloadUltimatesEvaluateScreening.json)
+* [MinimalisticPayloadEvaluate.json](PIS/samples/MinimalisticPayloadEvaluate.json)
+* [MinimalisticPayloadImport.json](PIS/samples/MinimalisticPayloadImport.json)
+* [MinimalisticPayloadUltimatesEvaluate.json](PIS/samples/MinimalisticPayloadUltimatesEvaluate.json)
 ---
 > Operation Type - **INTERNAL**
 
