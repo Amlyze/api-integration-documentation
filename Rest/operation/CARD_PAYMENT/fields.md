@@ -72,14 +72,14 @@ In any type of operation between two or more parties, one of the parties is alwa
             <td>String[]</td>
             <td>false</td>
             <td>PEP,<br/>ADVERSE_MEDIA,<br/> SANCTIONS, <br/>INTERNAL_LIST</td>
-            <td>Defines which lists to check during screening process</td>
+            <td><div>🚨<b>Alert:</b> Field omitted in batch request.</div>Defines which lists to check during screening process</td>
         </tr>
         <tr>
             <td><b>sourceOfRiskLevel</b></td>
             <td>String<br/><b>ENUM</b><br/>[EVALUATE,<br/>IMPORT]</td>
             <td>true</td>
             <td>EVALUATE</td>
-            <td>Source of risk level<br/> The value <b>"EVALUATE"</b> should be used for normal business processes - risk assessment will be performed.<br/> The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and it's questionnaire will be imported without risk assessment</td>
+            <td><div>🚨<b>Alert:</b> Field omitted in batch request and by default is <b>IMPORT</b>.</div> Source of risk level<br/> The value <b>"EVALUATE"</b> should be used for normal business processes - risk assessment will be performed.<br/> The value <b>"IMPORT"</b> should be used for migration purposes only – the customer and it's questionnaire will be imported without risk assessment</td>
         </tr>
         <tr>
             <td><b>operationDateTime</b></td>

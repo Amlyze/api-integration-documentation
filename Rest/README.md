@@ -64,6 +64,8 @@ The Grand Final. Comprehensive overview of operation types, conditions, and work
 <b>Endpoint</b>
 
 * `POST /amlyze-ws-rest/operation`
+* `POST /amlyze-ws-rest/validate-batch-operations`
+* `POST /amlyze-ws-rest/batch-operations`
 
 > Click [here](operation/README.md) to move to <b>Operation</b> page
 
