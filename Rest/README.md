@@ -26,6 +26,8 @@ Is the first step in creating a customer, which is necessary for all subsequent 
 <b>Endpoint</b>
 
 * `POST /amlyze-ws-rest/customer`
+* `POST /amlyze-ws-rest/validate-batch-customers`
+* `POST /amlyze-ws-rest/batch-customers`
 
 > Click [here](customer/README.md)  to move to <b>Customer</b> page
 
