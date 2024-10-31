@@ -1,42 +1,33 @@
 {
     "communicationNumber": "Test_ComNr_003ZZZD",
     "requester": "Company Name Amlyze",
-
 	"action": "CREATE",
-
     "sourceOfRiskLevel": "IMPORT",
     "riskLevel": "HIGH",
     "customerStatus": "ACTIVE",
-
-
 	"initializeScreeningProcesses": [
         "SANCTIONS",
         "ADVERSE_MEDIA",
         "PEP",
         "INTERNAL_LIST"
     ],
-
-
     "riskManagementCategory": "ORG",
     "entityType": "ORGANIZATION",
-    "customerExtId": "ORG_IMPORT_C1_All_Fields_TEST",
-    "applicationDate": "2024-04-07T10:45:00.000+02:00",
+    "customerExtId": "ORG_C1_TEST",
+    "applicationDate": "2020-01-03",
     "title": "LTD 'MinorMajor'",
     "registrationCountry": "LT",
     "legalForm": "LTD",
-
     "tradingName": "MinorMajor",
-    "approvalDate": "2024-04-08T10:45:00.000+02:00",
+    "approvalDate": "2020-01-05",
     "establishmentDate": "2001-02-23",
     "nationalCode": "REG74121101",
     "activityDescription": "Logistics",
     "activityInRestrictedRegionDescription": "Logistics",
-
     "isPEP": false,
     "isSanctioned": false,
     "isInAdverseMedia": true,
     "isInInternalList": true,
-
     "giin": "GIIN123445",
     "lei": "LEI124545",
     "listPurpose": "BLACK",
@@ -207,7 +198,6 @@
 			"isSanctioned" : true,
 			"isInAdverseMedia" : true,
 			"isInInternalList" : true,
-
 			"title" : "LTD 'Fokusmano'",
 			"legalForm" : "LTD",
 			"establishmentDate" : "1998-04-07",

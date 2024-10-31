@@ -1,16 +1,17 @@
 {
-	"communicationNumber" : "Test_ComNr_003ZZZ",
+	"communicationNumber" : "Test_ComNr_003ZZZb",
 	"requester" : "Company Name Amlyze",
-
 	"action" : "CREATE",
-
-	
 	"sourceOfRiskLevel" : "EVALUATE",
-
-
+    "initializeScreeningProcesses": [
+        "SANCTIONS",
+        "ADVERSE_MEDIA",
+        "PEP",
+		"INTERNAL_LIST"
+    ],
 	"riskManagementCategory" : "ORG",
 	"entityType" : "ORGANIZATION",
-	"customerExtId" : "ORG_EVALUATE_A1_TEST",
+	"customerExtId" : "ORG_EVALUATE_A2_TEST_SCREENING",
 	"applicationDate" : "2024-04-08T10:45:00.000+02:00",
 	"title" : "LTD 'Bull'",
 	"registrationCountry" : "LV",

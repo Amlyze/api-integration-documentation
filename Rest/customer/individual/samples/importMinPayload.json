@@ -2,16 +2,10 @@
 {
 	"communicationNumber" : "Test_ComNr_002mHzZZ",
 	"requester" : "Company Name Amlyze",
-
-
 	"action" : "CREATE",
-
-	
 	"sourceOfRiskLevel" : "IMPORT",
     "riskLevel" : "HIGH",
     "customerStatus" : "ACTIVE",
-
-
 	"riskManagementCategory": "IND",
 	"entityType" : "INDIVIDUAL",
 	"customerExtId" : "IND_IMPORT_B1_TEST",
