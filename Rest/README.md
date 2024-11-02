@@ -87,9 +87,12 @@ The Grand Final. Comprehensive overview of operation types, conditions, and work
 
 <b>Endpoint</b>
 
- * `POST /amlyze-ws-rest/contract`
+* `POST /amlyze-ws-rest/contract`
+* `PUT /amlyze-ws-rest/contract`
+* `POST /amlyze-ws-rest/validate-batch-contracts`
+* `POST /amlyze-ws-rest/batch-contracts`
 
- > Click [here](contract/contract.md) to move to <b>Contract</b> page
+ > Click [here](contract/README.md) to move to <b>Contract</b> page
 
 <b>Used for:</b>
 * Creating a new contract for the customer

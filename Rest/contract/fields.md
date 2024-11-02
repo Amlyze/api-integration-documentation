@@ -1,5 +1,9 @@
 # CONTRACT Fields 
 
+**Samples**
+
+* [Load contract](./samples/loanContract.json)
+
 <table>
 	<thead>
 		<tr>
@@ -24,6 +28,16 @@
 			<td>true</td>
 			<td>financial_institution</td>
 			<td>Name of the system requesting web service</td>
+		</tr>
+		<tr>
+			<td><b>action</b></td>
+			<td>String<br/><b>ENUM</b><br/>[CREATE (<i>default</i>), <br/> UPDATE]</td>
+			<td>false</td>
+			<td>CREATE</td>
+			<td>
+                <div>🚨<b>Alert:</b> Field omitted in single request.</div><br/>
+                Element is used to create/update data of the contract.
+            </td>
 		</tr>
 		<tr>
 			<td><b>contractType</b></td>

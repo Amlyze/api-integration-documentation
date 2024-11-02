@@ -89,7 +89,6 @@ All possible errors can be found [<u>here.</u>](possibleErrors.md)
 
 200 OK
 {
-  "resultType": "REQUEST_ACCEPTED",
   "results": [
     {
       "resultType": "REQUEST_ACCEPTED",
