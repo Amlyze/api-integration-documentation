@@ -48,6 +48,8 @@ The second step. Page provides API fields for adding accounts to the customers
 <b>Endpoint</b>
 
 * `POST /amlyze-ws-rest/account`
+* `POST /amlyze-ws-rest/validate-batch-accounts`
+* `POST /amlyze-ws-rest/batch-accounts`
 
 
 > Click [here](account/README.md)  to move to <b>Account</b> page

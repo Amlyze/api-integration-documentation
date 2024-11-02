@@ -1,5 +1,12 @@
 # Account
 
+**Samples**
+
+1. [Minimalistic Active Account Payload](./samples/activeMinPayload.json)
+2. [Account Belongs To Other Financial Institution](./samples/activeOtherFinancialInstitution.json)
+3. [Account Is Closed](./samples/closedFullPayload.json)
+4. [Account Is Suspended](./samples/suspendedFullPayload.json)
+
 <table>
 	<thead>
 		<tr>

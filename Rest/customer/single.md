@@ -46,7 +46,7 @@ All possible errors can be found [<u>here.</u>](possibleErrors.md)
   "timestamp": "2024-05-26T16:49:50.237+00:00",
   "status": 404,
   "error": "Not Found",
-  "path": "/amlyze-ws-rest/customerr" //--> mistake inside the endpoint
+  "path": "/amlyze-ws-rest/customer" //--> mistake inside the endpoint
 }
 
 500 Internal Server Error
