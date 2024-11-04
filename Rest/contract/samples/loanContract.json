@@ -1,14 +1,14 @@
 {
   "communicationNumber": "COM216a",
   "requester": "financial_institution",
-  "classifierType": "LOAN",
+  "contractType": "LOAN",
   "extId": "any_contract_1232",
   "documentCode": "REG74121101",
   "customerExtId": "ExtId_65657999999345",
   "accountExtId": "Ext87887",
   "businessUnit": "BU_1",
-  "startDate": "2023-09-05T08:07:34.605Z",
-  "endDate": "2023-09-05T08:07:34.605Z",
+  "startAt": "2023-09-05T08:07:34.605Z",
+  "endAt": "2023-09-05T08:07:34.605Z",
   "additionalProperties": [
       {
           "code": "principal_amount",

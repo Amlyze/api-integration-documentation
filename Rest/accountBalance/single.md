@@ -1,6 +1,6 @@
-# Contract registration (coming soon❗)
+# Account balance registration (coming soon❗)
 
-This section provides detailed information on the endpoints that can be used to create and manage contracts. Contracts can be any type of documents with custom set of fields/elements.
+This section provides detailed information on the endpoints that can be used to create and manage account balances..
 
 
 ----
@@ -9,9 +9,7 @@ This section provides detailed information on the endpoints that can be used to 
 
 <!-- *swagger UI*  `GET / swagger-ui/` -->
 
-`POST /amlyze-ws-rest/contract (application/json)` (Create contract)
-
-`PUT /amlyze-ws-rest/contract (application/json)` (Update contract)
+`PUT /amlyze-ws-rest/account-balance (application/json)` (Update account balance)
 
 The request body contains the data that you are sending to the API. The data documentation can be found [*here*](fields.md)
 
@@ -23,11 +21,14 @@ The minimalistic request example below shows the minimum required fields to succ
 
 ```json lines
 {
-    "communicationNumber": "COM216a",
-    "requester": "financial_institution",
-    "contractType": "LOAN",
-    "extId": "any_contract_1232",
-    "documentCode": "REG74121101"
+  "communicationNumber": "COM216a",
+  "requester": "financial_institution",
+  "balanceType": "DAILY_BALANCE",
+  "accountExtId": "any_account_ext_id_1232",
+  "businessUnit": "BU_1",
+  "updateAt": "2023-09-05T08:07:34.605Z",
+  "value": 11111111111.00,
+  "equivalentValue": 33333.00
 }
 ```
 
@@ -53,7 +54,7 @@ All possible errors can be found [<u>here.</u>](possibleErrors.md)
   "timestamp": "2024-05-26T16:49:50.237+00:00",
   "status": 404,
   "error": "Not Found",
-  "path": "/amlyze-ws-rest/contract" //--> mistake inside the endpoint
+  "path": "/amlyze-ws-rest/account-balance" //--> mistake inside the endpoint
 }
 
 500 Internal Server Error

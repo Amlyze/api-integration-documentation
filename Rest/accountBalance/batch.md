@@ -1,6 +1,6 @@
-# Batch contract registration (coming soon❗)
+# Batch account balances registration (coming soon❗)
 
-This section provides detailed information on the endpoints that can be used to create and manage contracts. Contracts can be any type of documents with custom set of fields/elements.
+This section provides detailed information on the endpoints that can be used to create and manage account balances.
 
 
 ----
@@ -9,8 +9,7 @@ This section provides detailed information on the endpoints that can be used to 
 
 <!-- *swagger UI*  `GET / swagger-ui/` -->
 
-`POST /amlyze-ws-rest/validate-batch-contracts (application/json)`
-`POST /amlyze-ws-rest/batch-contracts (application/json)`
+`PUT /amlyze-ws-rest/batch-account-balances (application/json)`
 
 The request body contains the data that you are sending to the API. The data documentation can be found [*here*](./fields.md)
 
@@ -22,22 +21,25 @@ The minimalistic request example below shows the minimum required fields to succ
 
 ```json lines
 {
-  "contracts": [
+  "accountBalances": [
     {
-      "action": "CREATE",
-      "communicationNumber": "CommNumber0",
+      "communicationNumber": "commNumber0",
       "requester": "financial_institution",
-      "contractType": "LOAN",
-      "extId": "any_contract_1",
-      "documentCode": "REG74121101"
+      "balanceType": "DAILY_BALANCE",
+      "accountExtId": "accountExtId0",
+      "businessUnit": "businessUnit0",
+      "updateAt": "2023-09-05T08:07:34.605Z",
+      "value": 11111111111.00,
+      "equivalentValue": 33333.00
     },
     {
-      "action": "UPDATE",
-      "communicationNumber": "CommNumber1",
+      "communicationNumber": "commNumber1",
       "requester": "financial_institution",
-      "contractType": "LOAN",
-      "extId": "any_contract_2",
-      "documentCode": "REG74121102"
+      "balanceType": "DAILY_BALANCE",
+      "accountExtId": "accountExtId1",
+      "businessUnit": "businessUnit1",
+      "updateAt": "2023-09-05T08:07:34.605Z",
+      "value": 11111111111.00
     }
   ]
 }
@@ -53,15 +55,15 @@ All possible errors can be found [<u>here.</u>](possibleErrors.md)
   "results": [
     {
       "resultType": "REQUEST_ACCEPTED",
-      "communicationNumber": "CommNumber0",
-      "extId": "any_contract_1",
+      "communicationNumber": "commNumber0",
+      "accountExtId": "accountExtId0",
       "businessUnit": "businessUnit0",
       "timeElapsedMs": 203
     },
     {
       "resultType": "REQUEST_REJECTED",
       "communicationNumber": "CommNumber1",
-      "extId": "any_contract_2",
+      "accountExtId": "accountExtId1",
       "businessUnit": "businessUnit1",
       "errorCode": "O005",
       "errorDescription": "CommunicationNumber already used in amlyze",
@@ -76,7 +78,7 @@ All possible errors can be found [<u>here.</u>](possibleErrors.md)
   "timestamp": "2024-05-26T16:49:50.237+00:00",
   "status": 404,
   "error": "Not Found",
-  "path": "/amlyze-ws-rest/batch-contracts" //--> mistake inside the endpoint
+  "path": "/amlyze-ws-rest/batch-account-balances" //--> mistake inside the endpoint
 }
 
 500 Internal Server Error

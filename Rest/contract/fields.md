@@ -89,14 +89,14 @@
             ❗<b>Omit this parameter unless instructed about it.</b>❗<br/> It serves to specify the unique identifier for the business unit. Business units are logical groupings of users and data. Each business unit can have its own set of users, permissions, and data access rules. <br/><i>(Upcoming feature)</i></td>
 		</tr>
 		<tr>
-			<td><b>startDate</b></td>
+			<td><b>startAt</b></td>
 			<td>Date</td>
 			<td>false</td>
 			<td>2000-01-03</td>
 			<td>Contract start date or any other date that covers starting point</td>
 		</tr>
 		<tr>
-			<td><b>endDate</b></td>
+			<td><b>endAt</b></td>
 			<td>Date</td>
 			<td>false</td>
 			<td>1995-05-24</td>

@@ -23,7 +23,7 @@ URL structure: `https://[host][port][path][service]`
 
 Is the first step in creating a customer, which is necessary for all subsequent operations in the API.
 
-<b>Endpoint</b>
+<b>Endpoints</b>
 
 * `POST /amlyze-ws-rest/customer`
 * `POST /amlyze-ws-rest/validate-batch-customers`
@@ -45,7 +45,7 @@ Is the first step in creating a customer, which is necessary for all subsequent 
 ## Account
 The second step. Page provides API fields for adding accounts to the customers
 
-<b>Endpoint</b>
+<b>Endpoints</b>
 
 * `POST /amlyze-ws-rest/account`
 * `POST /amlyze-ws-rest/validate-batch-accounts`
@@ -62,10 +62,23 @@ The second step. Page provides API fields for adding accounts to the customers
 
 ---
 
+## Account balances
+The second step. Page provides API fields for adding accounts to the customers
+
+<b>Endpoints</b>
+
+* `PUT /amlyze-ws-rest/account-balance (application/json)`
+* `PUT /amlyze-ws-rest/batch-account-balances (application/json)`
+
+
+> Click [here](./accountBalance/README.md) to move to <b>account balance details</b> page
+
+---
+
 ## Operations
 The Grand Final. Comprehensive overview of operation types, conditions, and workflows
 
-<b>Endpoint</b>
+<b>Endpoints</b>
 
 * `POST /amlyze-ws-rest/operation`
 * `POST /amlyze-ws-rest/validate-batch-operations`
@@ -85,7 +98,7 @@ The Grand Final. Comprehensive overview of operation types, conditions, and work
 
 ## Contract
 
-<b>Endpoint</b>
+<b>Endpoints</b>
 
 * `POST /amlyze-ws-rest/contract`
 * `PUT /amlyze-ws-rest/contract`
