@@ -28,7 +28,7 @@ The minimalistic request example below shows the minimum required fields to succ
       "balanceType": "DAILY_BALANCE",
       "accountExtId": "accountExtId0",
       "businessUnit": "businessUnit0",
-      "updateAt": "2023-09-05T08:07:34.605Z",
+      "balanceAt": "2023-09-05T08:07:34.605Z",
       "value": 11111111111.00,
       "equivalentValue": 33333.00
     },
@@ -38,7 +38,7 @@ The minimalistic request example below shows the minimum required fields to succ
       "balanceType": "DAILY_BALANCE",
       "accountExtId": "accountExtId1",
       "businessUnit": "businessUnit1",
-      "updateAt": "2023-09-05T08:07:34.605Z",
+      "balanceAt": "2023-09-05T08:07:34.605Z",
       "value": 11111111111.00
     }
   ]

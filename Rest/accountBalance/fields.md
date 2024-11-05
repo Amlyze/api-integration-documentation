@@ -58,11 +58,11 @@
             ❗<b>Omit this parameter unless instructed about it.</b>❗<br/> It serves to specify the unique identifier for the business unit. Business units are logical groupings of users and data.</td>
 		</tr>
 		<tr>
-			<td><b>updateAt</b></td>
-			<td>Date</td>
+			<td><b>balanceAt</b></td>
+			<td>Timestamp<br/>RFC 3339 (ISO 8601)</td>
 			<td>false</td>
 			<td>2000-01-03</td>
-			<td>Balance update date.</td>
+			<td>Balance datetime.</td>
 		</tr>
 		<tr>
 			<td><b>value</b></td>
