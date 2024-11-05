@@ -61,7 +61,7 @@
 			<td><b>balanceAt</b></td>
 			<td>Timestamp<br/>RFC 3339 (ISO 8601)</td>
 			<td>false</td>
-			<td>2000-01-03</td>
+			<td>2024-05-26T16:49:50.237</td>
 			<td>Balance datetime.</td>
 		</tr>
 		<tr>
