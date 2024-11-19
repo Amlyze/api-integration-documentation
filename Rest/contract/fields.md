@@ -59,7 +59,7 @@
 		<tr>
 			<td><b>contractCode</b></td>
 			<td>String</td>
-			<td>true</td>
+			<td>false</td>
 			<td>REG74121101</td>
 			<td>Contract code or number</td>
 		</tr>
