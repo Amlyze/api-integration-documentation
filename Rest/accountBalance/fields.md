@@ -67,7 +67,7 @@
 		<tr>
 			<td><b>value</b></td>
 			<td>BigDecimal</td>
-			<td>true</td>
+			<td>false</td>
 			<td>100000.5665</td>
 			<td>Balance value.</td>
 		</tr>
