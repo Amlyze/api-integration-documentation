@@ -42,7 +42,7 @@
         <tr>
 			<td><b>contractStatus</b></td>
 			<td>String<br/><b>ENUM</b><br/>[ACTIVE, <br/> CLOSED]</td>
-			<td>false</td>
+			<td>true</td>
 			<td>ACTIVE</td>
 			<td>
                 A contract status.
