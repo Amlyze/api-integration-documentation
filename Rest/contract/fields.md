@@ -39,6 +39,15 @@
                 Element is used to create/update data of the contract.
             </td>
 		</tr>
+        <tr>
+			<td><b>contractStatus</b></td>
+			<td>String<br/><b>ENUM</b><br/>[ACTIVE, <br/> CLOSED]</td>
+			<td>false</td>
+			<td>ACTIVE</td>
+			<td>
+                A contract status.
+            </td>
+		</tr>
 		<tr>
 			<td><b>contractType</b></td>
 			<td>
