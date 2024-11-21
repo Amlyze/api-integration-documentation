@@ -40,12 +40,12 @@
             </td>
 		</tr>
         <tr>
-			<td><b>contractStatus</b></td>
-			<td>String<br/><b>ENUM</b><br/>[ACTIVE, <br/> CLOSED]</td>
+			<td><b>active</b></td>
+			<td>Boolean</td>
+			<td>false</td>
 			<td>true</td>
-			<td>ACTIVE</td>
 			<td>
-                A contract status.
+                A contract is active or not.
             </td>
 		</tr>
 		<tr>
