@@ -75,7 +75,7 @@
 		<tr>
 			<td><b>customerExtId</b></td>
 			<td>String</td>
-			<td>false</td>
+			<td>true</td>
 			<td>cust_1232</td>
 			<td>External customer identifier. The identifier corresponds to the client's identifier in the financial institution</td>
 		</tr>
