@@ -27,7 +27,7 @@ The minimalistic request example below shows the minimum required fields to succ
     "requester": "financial_institution",
     "contractType": "LOAN",
     "extId": "any_contract_1232",
-    "documentCode": "REG74121101"
+    "contractCode": "REG74121101"
 }
 ```
 

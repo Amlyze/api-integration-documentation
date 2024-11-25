@@ -3,7 +3,7 @@
   "requester": "financial_institution",
   "contractType": "LOAN",
   "extId": "any_contract_1232",
-  "documentCode": "REG74121101",
+  "contractCode": "REG74121101",
   "customerExtId": "ExtId_65657999999345",
   "accountExtId": "Ext87887",
   "businessUnit": "BU_1",

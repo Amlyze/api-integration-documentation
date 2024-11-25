@@ -29,7 +29,7 @@ The minimalistic request example below shows the minimum required fields to succ
       "requester": "financial_institution",
       "contractType": "LOAN",
       "extId": "any_contract_1",
-      "documentCode": "REG74121101"
+      "contractCode": "REG74121101"
     },
     {
       "action": "UPDATE",
@@ -37,7 +37,7 @@ The minimalistic request example below shows the minimum required fields to succ
       "requester": "financial_institution",
       "contractType": "LOAN",
       "extId": "any_contract_2",
-      "documentCode": "REG74121102"
+      "contractCode": "REG74121102"
     }
   ]
 }
