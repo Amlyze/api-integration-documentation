@@ -162,5 +162,12 @@
             <td>STRING</td>
             <td>Default 'STRING'</td>
 	    </tr>
+        <tr>
+            <td><b>changedAt</b></td>
+            <td>Timestamp<br/>RFC 3339 (ISO 8601)</td>
+            <td>false</td>
+            <td>2024-05-26T16:49:50.237</td>
+            <td>The date and time of a property change.</td>
+	    </tr>
 	</tbody>
 </table>
