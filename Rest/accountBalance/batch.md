@@ -9,7 +9,7 @@ This section provides detailed information on the endpoints that can be used to 
 
 <!-- *swagger UI*  `GET / swagger-ui/` -->
 
-`PUT /amlyze-ws-rest/batch-account-balances (application/json)`
+`POST /amlyze-ws-rest/batch-account-balances (application/json)`
 
 The request body contains the data that you are sending to the API. The data documentation can be found [*here*](./fields.md)
 

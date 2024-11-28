@@ -68,7 +68,7 @@ The second step. Page provides API fields for adding accounts to the customers
 <b>Endpoints</b>
 
 * `PUT /amlyze-ws-rest/account-balance (application/json)`
-* `PUT /amlyze-ws-rest/batch-account-balances (application/json)`
+* `POST /amlyze-ws-rest/batch-account-balances (application/json)`
 * `POST /amlyze-ws-rest/validate-batch-account-balances (application/json)`
 
 
