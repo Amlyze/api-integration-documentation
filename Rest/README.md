@@ -69,6 +69,7 @@ The second step. Page provides API fields for adding accounts to the customers
 
 * `PUT /amlyze-ws-rest/account-balance (application/json)`
 * `PUT /amlyze-ws-rest/batch-account-balances (application/json)`
+* `POST /amlyze-ws-rest/validate-batch-account-balances (application/json)`
 
 
 > Click [here](./accountBalance/README.md) to move to <b>account balance details</b> page
