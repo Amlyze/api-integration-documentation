@@ -42,7 +42,7 @@
         <tr>
             <td><b>accountExtId</b></td>
             <td>String</td>
-            <td>false</td>
+            <td>true</td>
             <td>Acc_0011</td>
             <td>External account identification number. Corresponds to the account's identifier in the financial institution</td>
         </tr>
