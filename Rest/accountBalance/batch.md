@@ -1,4 +1,4 @@
-# Batch account balances registration (coming soon❗)
+# Batch account balances registration
 
 This section provides detailed information on the endpoints that can be used to create and manage account balances.
 
