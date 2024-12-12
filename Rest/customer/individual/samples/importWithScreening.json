@@ -1,0 +1,19 @@
+{
+	"communicationNumber" : "Test_ComNr_002mHzZZZ",
+	"requester" : "Company Name Amlyze",
+	"action" : "CREATE",
+	"sourceOfRiskLevel" : "IMPORT",
+    "initializeScreeningProcesses": [
+        "SANCTIONS",
+        "ADVERSE_MEDIA",
+        "PEP",
+        "INTERNAL_LIST"
+    ],
+	"riskManagementCategory": "IND",
+	"customerExtId" : "IND_EVALUATE_A3_TEST",
+	"entityType" : "INDIVIDUAL",
+	"applicationDate": "2023-10-01",
+	"firstName" : "Mikas",
+	"lastName" : "Garcia",
+	"citizenshipCountry" : "LT"
+}

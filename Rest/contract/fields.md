@@ -1,5 +1,9 @@
 # CONTRACT Fields 
 
+**Samples**
+
+* [Load contract](./samples/loanContract.json)
+
 <table>
 	<thead>
 		<tr>
@@ -26,6 +30,25 @@
 			<td>Name of the system requesting web service</td>
 		</tr>
 		<tr>
+			<td><b>action</b></td>
+			<td>String<br/><b>ENUM</b><br/>[CREATE (<i>default</i>), <br/> UPDATE]</td>
+			<td>false</td>
+			<td>CREATE</td>
+			<td>
+                <div>🚨<b>Alert:</b> Field omitted in single request.</div><br/>
+                Element is used to create/update data of the contract.
+            </td>
+		</tr>
+        <tr>
+			<td><b>active</b></td>
+			<td>Boolean</td>
+			<td>false</td>
+			<td>true</td>
+			<td>
+                A contract is active or not.
+            </td>
+		</tr>
+		<tr>
 			<td><b>contractType</b></td>
 			<td>
                 String <br/>
@@ -45,14 +68,14 @@
 		<tr>
 			<td><b>contractCode</b></td>
 			<td>String</td>
-			<td>true</td>
+			<td>false</td>
 			<td>REG74121101</td>
 			<td>Contract code or number</td>
 		</tr>
 		<tr>
 			<td><b>customerExtId</b></td>
 			<td>String</td>
-			<td>false</td>
+			<td>true</td>
 			<td>cust_1232</td>
 			<td>External customer identifier. The identifier corresponds to the client's identifier in the financial institution</td>
 		</tr>
@@ -75,14 +98,14 @@
             ❗<b>Omit this parameter unless instructed about it.</b>❗<br/> It serves to specify the unique identifier for the business unit. Business units are logical groupings of users and data. Each business unit can have its own set of users, permissions, and data access rules. <br/><i>(Upcoming feature)</i></td>
 		</tr>
 		<tr>
-			<td><b>startDate</b></td>
+			<td><b>startAt</b></td>
 			<td>Date</td>
 			<td>false</td>
 			<td>2000-01-03</td>
 			<td>Contract start date or any other date that covers starting point</td>
 		</tr>
 		<tr>
-			<td><b>endDate</b></td>
+			<td><b>endAt</b></td>
 			<td>Date</td>
 			<td>false</td>
 			<td>1995-05-24</td>
@@ -138,6 +161,13 @@
             <td>false</td>
             <td>STRING</td>
             <td>Default 'STRING'</td>
+	    </tr>
+        <tr>
+            <td><b>at</b></td>
+            <td>Timestamp<br/>RFC 3339 (ISO 8601)</td>
+            <td>false</td>
+            <td>2024-05-26T16:49:50.237</td>
+            <td>The date and time of a property.</td>
 	    </tr>
 	</tbody>
 </table>

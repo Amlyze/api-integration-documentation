@@ -1,0 +1,16 @@
+{
+	"communicationNumber": "Test_ComNr_003ZZZc_OVERWRITE",
+	"requester": "Company Name Amlyze",
+	"action" : "UPDATE",
+	"sourceOfRiskLevel": "IMPORT",
+    "riskLevel": "HIGH",
+    "customerStatus": "CLOSED",
+    "closingDate": "2024-04-10T10:45:00.000+02:00",
+	"riskManagementCategory": "ORG",
+	"entityType": "ORGANIZATION",
+	"customerExtId": "ORG_IMPORT_B1_TEST",
+	"applicationDate": "2024-04-08T10:45:00.000+02:00",
+	"title": "LTD 'VivaElementus'",
+	"registrationCountry": "LT",
+	"legalForm": "LTD"
+}

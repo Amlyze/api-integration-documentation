@@ -23,9 +23,11 @@ URL structure: `https://[host][port][path][service]`
 
 Is the first step in creating a customer, which is necessary for all subsequent operations in the API.
 
-<b>Endpoint</b>
+<b>Endpoints</b>
 
 * `POST /amlyze-ws-rest/customer`
+* `POST /amlyze-ws-rest/validate-batch-customers`
+* `POST /amlyze-ws-rest/batch-customers`
 
 > Click [here](customer/README.md)  to move to <b>Customer</b> page
 
@@ -43,9 +45,11 @@ Is the first step in creating a customer, which is necessary for all subsequent 
 ## Account
 The second step. Page provides API fields for adding accounts to the customers
 
-<b>Endpoint</b>
+<b>Endpoints</b>
 
 * `POST /amlyze-ws-rest/account`
+* `POST /amlyze-ws-rest/validate-batch-accounts`
+* `POST /amlyze-ws-rest/batch-accounts`
 
 
 > Click [here](account/README.md)  to move to <b>Account</b> page
@@ -58,12 +62,28 @@ The second step. Page provides API fields for adding accounts to the customers
 
 ---
 
+## Account balances
+The second step. Page provides API fields for adding accounts to the customers
+
+<b>Endpoints</b>
+
+* `PUT /amlyze-ws-rest/account-balance (application/json)`
+* `POST /amlyze-ws-rest/batch-account-balances (application/json)`
+* `POST /amlyze-ws-rest/validate-batch-account-balances (application/json)`
+
+
+> Click [here](./accountBalance/README.md) to move to <b>account balance details</b> page
+
+---
+
 ## Operations
 The Grand Final. Comprehensive overview of operation types, conditions, and workflows
 
-<b>Endpoint</b>
+<b>Endpoints</b>
 
 * `POST /amlyze-ws-rest/operation`
+* `POST /amlyze-ws-rest/validate-batch-operations`
+* `POST /amlyze-ws-rest/batch-operations`
 
 > Click [here](operation/README.md) to move to <b>Operation</b> page
 
@@ -79,11 +99,14 @@ The Grand Final. Comprehensive overview of operation types, conditions, and work
 
 ## Contract
 
-<b>Endpoint</b>
+<b>Endpoints</b>
 
- * `POST /amlyze-ws-rest/contract`
+* `POST /amlyze-ws-rest/contract`
+* `PUT /amlyze-ws-rest/contract`
+* `POST /amlyze-ws-rest/validate-batch-contracts`
+* `POST /amlyze-ws-rest/batch-contracts`
 
- > Click [here](contract/contract.md) to move to <b>Contract</b> page
+ > Click [here](contract/README.md) to move to <b>Contract</b> page
 
 <b>Used for:</b>
 * Creating a new contract for the customer

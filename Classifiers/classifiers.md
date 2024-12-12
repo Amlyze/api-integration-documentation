@@ -5,13 +5,13 @@ Classifiers guide you through extracting needed values for upcoming request fiel
 ---
 
 METHOD: `GET`
-Auth required: `NO`
+Auth required: `No`
 Permissions required: `None`
 
 ---
 
- `{{baseUrl}}/classifier/classifierValue`
- * {{baseUrl}}- provided IP address that was given by the Amlyze
+ `{{baseUrl}}/classifier/{{classifierValue}}`
+ * baseUrl- provided IP address that was given by the Amlyze
  * classifierValue   - a particular classifier provided below should be placed
 
  
