@@ -1293,7 +1293,7 @@
 			<td>String</td>
 			<td>false</td>
 			<td>ind1234567</td>
-			<td>fill when related entity is also a customer </td>
+			<td>Fill when related entity is also a customer </td>
 	    </tr>
 	    <tr>
 			<td><b>entityType</b></td>
@@ -1522,7 +1522,7 @@
 			<td>String</td>
 			<td>false</td>
 			<td>ind1234567</td>
-			<td>fill when related entity is also a customer </td>
+			<td>Fill when related entity is also a customer </td>
 	    </tr>
 	    <tr>
 			<td><b>entityType</b></td>
